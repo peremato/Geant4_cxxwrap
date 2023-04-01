@@ -28,3 +28,4 @@ install(TARGETS Geant4Wrap
         LIBRARY DESTINATION lib
         ARCHIVE DESTINATION lib
         RUNTIME DESTINATION lib)
+install(FILES src/jl/Geant4-export.jl DESTINATION .)
