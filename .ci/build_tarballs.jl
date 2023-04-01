@@ -40,7 +40,7 @@ platforms = filter(p -> libc(p) != "musl" && os(p) != "windows" && os(p) != "fre
 # The products that we will ensure are always built
 products = [
     LibraryProduct("libGeant4Wrap", :libGeant4Wrap),
-    FileProduct("FileProduct("sourcedir/src/jll/Geant4-export.jl", :Geant4_exports)
+    FileProduct("sourcedir/src/jll/Geant4-export.jl", :Geant4_exports),
 ]
 
 # Dependencies that must be installed before this package can be built
