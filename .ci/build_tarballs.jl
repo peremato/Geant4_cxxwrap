@@ -29,7 +29,7 @@ cmake ${WORKSPACE}/srcdir -B build \
 
 VERBOSE=ON cmake --build build --config Release --target install -- -j${nproc}
 
-install_license libpolymake-j*/LICENSE.md
+install_license LICENSE
 """
 
 # These are the platforms we will build for by default, unless further
@@ -40,13 +40,14 @@ platforms = filter(p -> libc(p) != "musl" && os(p) != "windows" && os(p) != "fre
 # The products that we will ensure are always built
 products = [
     LibraryProduct("libGeant4Wrap", :libGeant4Wrap),
+    FileProduct("FileProduct("sourcedir/src/jll/Geant4-export.jl", :Geant4_exports)
 ]
 
 # Dependencies that must be installed before this package can be built
 dependencies = [
     BuildDependency("libjulia_jll"),
     Dependency("libcxxwrap_julia_jll"),
-    Dependency("Geant4_jll"),
+    Dependency("Geant4_jll", v"11.1.1"),
     Dependency("Expat_jll"),
     Dependency("Xerces_jll"),
 ]
