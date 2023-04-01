@@ -1,7 +1,6 @@
 project(Geant4Wrap)
 cmake_minimum_required(VERSION 3.21)
 
-set(CMAKE_MACOSX_RPATH 1)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
 
 #---Find JlCxx package-------------------------------------------------------------
