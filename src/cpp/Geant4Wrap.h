@@ -74,7 +74,7 @@ typedef  void (*build_f)(const G4JLActionInitialization*);
 class G4JLActionInitialization : public G4VUserActionInitialization
 {
   public:
-    G4JLActionInitialization(build_f f, build_f mf) : build(f), master_build(mf) {}
+    G4JLActionInitialization(build_f f, build_f mf = nullptr) : build(f), master_build(mf) {}
     G4JLActionInitialization() : build(nullptr), master_build(nullptr) {}
     ~G4JLActionInitialization() override = default;
     void BuildForMaster() const override;
