@@ -16,8 +16,8 @@ include(${Geant4_USE_FILE})
 
 #  Files are in gen folder
 file(REAL_PATH ${CMAKE_SOURCE_DIR}/src SOURCE_DIR)
-
-add_library(Geant4Wrap SHARED ${SOURCE_DIR}/cpp/Geant4Wrap.cxx ${SOURCE_DIR}/cpp/jlGeant4.cxx)
+file(GLOB GEN_SOURCES CONFIGURE_DEPENDS  ${SOURCE_DIR}/cpp/jl_*.cxx)
+add_library(Geant4Wrap SHARED ${SOURCE_DIR}/cpp/Geant4Wrap.cxx ${SOURCE_DIR}/cpp/jlGeant4.cxx ${GEN_SOURCES})
 
 #target_compile_definitions(Geant4Wrap PUBLIC VERBOSE_IMPORT)
 target_include_directories(Geant4Wrap PRIVATE ${SOURCE_DIR})

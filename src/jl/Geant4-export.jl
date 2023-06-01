@@ -36,12 +36,12 @@ export G4Element!GetNumberOfElements, G4Event, G4ExceptionSeverity, G4FastSimula
 export G4GDMLParser, G4GDMLReadStructure, G4GDMLWriteStructure, G4GRSSolid, G4GRSVolume, G4HCofThisEvent, G4HCtable
 export G4ICRU90StoppingData, G4IonisParamElm, G4IonisParamMat, G4Isotope, G4Isotope!GetIsotope, G4Isotope!GetNumberOfIsotopes
 export G4JLActionInitialization, G4JLDetectorConstruction, G4JLEventAction, G4JLExceptionHandler, G4JLGeneratorAction, G4JLParticleGun
-export G4JLRunAction, G4JLSensDet, G4JLSteppingAction, G4JLTrackingAction, G4JL_getenv, G4JL_init, G4JL_setenv, G4LVData
-export G4LogicalVolume, G4LogicalVolume!Clean, G4LogicalVolume!GetSolid, G4LogicalVolume!SetSolid, G4MTRunManager
-export G4MTRunManager!ENDWORKER, G4MTRunManager!GetMTMasterRunManagerKernel, G4MTRunManager!GetMasterRunManager
-export G4MTRunManager!GetMasterRunManagerKernel, G4MTRunManager!GetMasterScoringManager, G4MTRunManager!NEXTITERATION, G4MTRunManager!PROCESSUI
-export G4MTRunManager!SeedOncePerCommunication, G4MTRunManager!SetSeedOncePerCommunication, G4MTRunManager!UNDEFINED, G4MTRunManager!WorkerActionRequest
-export G4MTRunManager!addWorld, G4MTRunManagerKernel, G4Material, G4Material!GetMaterial, G4Material!GetMaterialTable
+export G4JLRunAction, G4JLSensDet, G4JLSteppingAction, G4JLTrackingAction, G4JLWorkerInitialization, G4JL_getenv, G4JL_init
+export G4JL_println, G4JL_setenv, G4LVData, G4LogicalVolume, G4LogicalVolume!Clean, G4LogicalVolume!GetSolid
+export G4LogicalVolume!SetSolid, G4MTRunManager, G4MTRunManager!ENDWORKER, G4MTRunManager!GetMTMasterRunManagerKernel
+export G4MTRunManager!GetMasterRunManager, G4MTRunManager!GetMasterRunManagerKernel, G4MTRunManager!GetMasterScoringManager, G4MTRunManager!NEXTITERATION
+export G4MTRunManager!PROCESSUI, G4MTRunManager!SeedOncePerCommunication, G4MTRunManager!SetSeedOncePerCommunication, G4MTRunManager!UNDEFINED
+export G4MTRunManager!WorkerActionRequest, G4MTRunManager!addWorld, G4MTRunManagerKernel, G4Material, G4Material!GetMaterial, G4Material!GetMaterialTable
 export G4Material!GetNumberOfMaterials, G4MaterialCutsCouple, G4MaterialPropertiesTable, G4NavigationHistory, G4Navigator, G4NistManager
 export G4NistManager!Instance, G4Orb, G4PDefManager, G4PVData, G4PVPlacement, G4PVReplica, G4ParticleDefinition, G4ParticleDefinition!Clean
 export G4ParticleDefinition!GetSubInstanceManager, G4ParticleGun, G4ParticleTable, G4PhysicsListHelper, G4Polyhedron, G4PrimaryParticle, G4PrimaryTransformer
@@ -51,18 +51,22 @@ export G4RunManagerKernel, G4SafetyHelper, G4SandiaTable, G4ScoringManager, G4Sc
 export G4ScoringManager!GetScoringManager, G4ScoringManager!GetScoringManagerIfExist, G4ScoringManager!SetReplicaLevel, G4SmartVoxelHeader, G4Sphere
 export G4State, G4State_Abort, G4State_EventProc, G4State_GeomClosed, G4State_Idle, G4State_Init, G4State_PreInit, G4State_Quit
 export G4Step, G4StepPoint, G4StepStatus, G4SteppingControl, G4SteppingManager, G4SteppingVerbose
-export G4SteppingVerbose!BestUnitPrecision, G4SteppingVerbose!UseBestUnit, G4String, G4TouchableHistory, G4Track, G4TrackStatus, G4TrajectoryContainer
+export G4SteppingVerbose!BestUnitPrecision, G4SteppingVerbose!UseBestUnit, G4String, G4Threading!G4GetNumberOfCores, G4Threading!G4GetPidId
+export G4Threading!G4GetThreadId, G4Threading!G4SetPinAffinity, G4Threading!G4SetThreadId, G4Threading!GENERICTHREAD_ID
+export G4Threading!GetNumberOfRunningWorkerThreads, G4Threading!IsMasterThread, G4Threading!IsMultithreadedApplication, G4Threading!IsWorkerThread
+export G4Threading!MASTER_ID, G4Threading!SEQUENTIAL_ID, G4Threading!SetMultithreadedApplication, G4Threading!WORKER_ID
+export G4Threading!WorkerThreadJoinsPool, G4Threading!WorkerThreadLeavesPool, G4TouchableHistory, G4Track, G4TrackStatus, G4TrajectoryContainer
 export G4TransportationManager, G4TransportationManager!GetFirstTrackingNavigator, G4TransportationManager!GetInstanceIfExist
 export G4TransportationManager!GetTransportationManager, G4TransportationManager!SetFirstTrackingNavigator, G4TransportationManager!kMassNavigatorId, G4Trd, G4Tubs
 export G4UIcommand, G4UImanager, G4UImanager!DoublePrecisionStr, G4UImanager!GetMasterUIpointer, G4UImanager!GetUIpointer
 export G4UImanager!UseDoublePrecisionStr, G4UserEventAction, G4UserLimits, G4UserPhysicsListMessenger, G4UserRunAction, G4UserStackingAction
-export G4UserSteppingAction, G4UserTrackingAction, G4VExternalNavigation, G4VFastSimulationModel, G4VHitsCollection, G4VMPLData
-export G4VModularPhysicsList, G4VPVParameterisation, G4VParticleChange, G4VPhysicalVolume, G4VPhysicalVolume!Clean, G4VPhysicsConstructor
-export G4VPrimaryGenerator, G4VPrimaryGenerator!CheckVertexInsideWorld, G4VProcess, G4VReadOutGeometry, G4VSDFilter, G4VScoreWriter
-export G4VScoringMesh, G4VSensitiveDetector, G4VSolid, G4VSteppingVerbose, G4VTouchable, G4VUPLData, G4VUserActionInitialization
-export G4VUserDetectorConstruction, G4VUserEventInformation, G4VUserPhysicsList, G4VUserPrimaryGeneratorAction, G4VUserTrackInformation
-export G4VisAttributes, G4VisAttributes!ForcedDrawingStyle, G4VisAttributes!GetInvisible, G4VisAttributes!GetMinLineSegmentsPerCircle
-export G4VisAttributes!LineStyle, G4VisAttributes!cloud, G4VisAttributes!dashed, G4VisAttributes!dotted
+export G4UserSteppingAction, G4UserTrackingAction, G4UserWorkerInitialization, G4VExternalNavigation, G4VFastSimulationModel
+export G4VHitsCollection, G4VMPLData, G4VModularPhysicsList, G4VPVParameterisation, G4VParticleChange, G4VPhysicalVolume
+export G4VPhysicalVolume!Clean, G4VPhysicsConstructor, G4VPrimaryGenerator, G4VPrimaryGenerator!CheckVertexInsideWorld, G4VProcess
+export G4VReadOutGeometry, G4VSDFilter, G4VScoreWriter, G4VScoringMesh, G4VSensitiveDetector, G4VSolid, G4VSteppingVerbose, G4VTouchable
+export G4VUPLData, G4VUserActionInitialization, G4VUserDetectorConstruction, G4VUserEventInformation, G4VUserPhysicsList
+export G4VUserPrimaryGeneratorAction, G4VUserTrackInformation, G4VisAttributes, G4VisAttributes!ForcedDrawingStyle, G4VisAttributes!GetInvisible
+export G4VisAttributes!GetMinLineSegmentsPerCircle, G4VisAttributes!LineStyle, G4VisAttributes!cloud, G4VisAttributes!dashed, G4VisAttributes!dotted
 export G4VisAttributes!fMinLineSegmentsPerCircle, G4VisAttributes!fVeryLongTime, G4VisAttributes!solid, G4VisAttributes!unbroken, G4VisAttributes!wireframe
 export G4VoxelNavigation, GenerateEvent, GeneratePrimaries, GeneratePrimaryVertex, GeometryDirectlyUpdated, GeometryHasBeenModified, GetA
 export GetA27, GetAlpha, GetAntiPDGEncoding, GetAntiQuarkContent, GetApplyCuts, GetApplyCutsFlag, GetAtomicMass
@@ -88,54 +92,55 @@ export GetMasterSolid, GetMaterial, GetMaterialCutsCouple, GetMaterialProperties
 export GetMaxHistSize, GetMeanIonisationEnergy, GetMesh, GetMomentum, GetMomentumDirection, GetMotherLogical
 export GetMotherToDaughterTransform, GetMultiplicity, GetN, GetName, GetNaturalAbundanceFlag, GetNavigator, GetNavigatorForTracking
 export GetNbOfAtomicShells, GetNbOfShellElectrons, GetNext, GetNextMaterial, GetNextMaterialCutsCouple, GetNextTouchable, GetNextVolume
-export GetNistElementNames, GetNistFirstIsotopeN, GetNistMaterialNames, GetNoActiveNavigators, GetNoDaughters, GetNoWorlds
-export GetNominalDensity, GetNonConstCurrentRun, GetNonConstUserActionInitialization, GetNonIonizingEnergyDeposit, GetNuclearInterLength
-export GetNumberActiveThreads, GetNumberOfAntiLambdasInAntiHypernucleus, GetNumberOfCollections, GetNumberOfElements, GetNumberOfEvent
-export GetNumberOfEventToBeProcessed, GetNumberOfEventsToBeProcessed, GetNumberOfGrips, GetNumberOfHistory, GetNumberOfIsotopes
-export GetNumberOfLambdasInHypernucleus, GetNumberOfMaterials, GetNumberOfMesh, GetNumberOfNistIsotopes, GetNumberOfParallelWorld, GetNumberOfParticle
-export GetNumberOfParticles, GetNumberOfPrimaryVertex, GetNumberOfSecondariesInCurrentStep, GetNumberOfSelectEvents, GetNumberOfThreads
-export GetObjectRotation, GetObjectRotationValue, GetObjectTranslation, GetOriginTouchable, GetOuterRadius, GetOuterRadiusMinusZ
-export GetOuterRadiusPlusZ, GetPDGCharge, GetPDGEncoding, GetPDGIsospin, GetPDGIsospin3, GetPDGLifeTime, GetPDGMagneticMoment, GetPDGMass
-export GetPDGSpin, GetPDGStable, GetPDGWidth, GetPDGcode, GetPDGiConjugation, GetPDGiGParity, GetPDGiIsospin, GetPDGiIsospin3
-export GetPDGiParity, GetPDGiSpin, GetParallelWorld, GetParameterisation, GetParentID, GetParentResonanceDef, GetParentResonanceID
-export GetParentResonanceMass, GetParentResonanceName, GetParentResonancePDGEncoding, GetParticleCharge, GetParticleDefinition
-export GetParticleDefinitionID, GetParticleEnergy, GetParticleMomentum, GetParticleMomentumDirection, GetParticleName, GetParticlePolarization
-export GetParticlePosition, GetParticleSubType, GetParticleTable, GetParticleTime, GetParticleType, GetPathName, GetPauseAtBeginOfEvent
-export GetPauseAtEndOfEvent, GetPhysVolume, GetPhysicalVolume, GetPhysics, GetPhysicsTableDirectory, GetPhysicsWithType, GetPinAffinity
-export GetPointOnSurface, GetPointerToVectorOfAuxiliaryPoints, GetPolX, GetPolY, GetPolZ, GetPolarization, GetPolyhedron, GetPosition
-export GetPostStepPoint, GetPreStepPoint, GetPressure, GetPreviousCommand, GetPreviousEvent, GetPrimary, GetPrimaryVertex
-export GetPrintProgress, GetProcessDefinedStep, GetProcessManager, GetProperTime, GetPx, GetPy, GetPz, GetQuantity, GetQuarkContent
-export GetROgeometry, GetRadialTolerance, GetRadius, GetRadlen, GetRandomNumberStatus, GetRandomNumberStatusForProcessing
-export GetRandomNumberStatusForThisEvent, GetRandomNumberStatusForThisRun, GetRandomNumberStore, GetRandomNumberStoreDir, GetRandomNumberStorePerEvent
-export GetRed, GetRegion, GetRegularStructureId, GetRelativeAbundanceVector, GetReplicaNumber, GetReplicationData, GetRotation
-export GetRunID, GetRunManagerType, GetSafety, GetSafetyHelper, GetSandiaTable, GetScale, GetSecondary, GetSelectMacro
-export GetSensitiveDetector, GetSinEndPhi, GetSinEndTheta, GetSinStartPhi, GetSinStartTheta, GetSmartless, GetSolid, GetStartPhiAngle
-export GetStartThetaAngle, GetStartTime, GetState, GetStep, GetStepLength, GetStepStatus, GetSurfaceArea, GetSymbol, GetT0, GetTemperature
-export GetThreadID, GetTolerance, GetTotNbOfAtomsPerVolume, GetTotNbOfElectPerVolume, GetTotalElectronBindingEnergy, GetTotalEnergy
+export GetNistElementNames, GetNistFirstIsotopeN, GetNistMaterialNames, GetNominalDensity, GetNonConstCurrentRun
+export GetNonConstUserActionInitialization, GetNonIonizingEnergyDeposit, GetNuclearInterLength, GetNumberActiveThreads
+export GetNumberOfAntiLambdasInAntiHypernucleus, GetNumberOfCollections, GetNumberOfElements, GetNumberOfEvent, GetNumberOfEventToBeProcessed
+export GetNumberOfEventsToBeProcessed, GetNumberOfGrips, GetNumberOfHistory, GetNumberOfIsotopes, GetNumberOfLambdasInHypernucleus
+export GetNumberOfMaterials, GetNumberOfMesh, GetNumberOfNistIsotopes, GetNumberOfParallelWorld, GetNumberOfParticle, GetNumberOfParticles
+export GetNumberOfPrimaryVertex, GetNumberOfSelectEvents, GetNumberOfThreads, GetObjectRotation, GetObjectRotationValue, GetObjectTranslation
+export GetOriginTouchable, GetOuterRadius, GetOuterRadiusMinusZ, GetOuterRadiusPlusZ, GetPDGCharge, GetPDGEncoding, GetPDGIsospin
+export GetPDGIsospin3, GetPDGLifeTime, GetPDGMagneticMoment, GetPDGMass, GetPDGSpin, GetPDGStable, GetPDGWidth, GetPDGcode
+export GetPDGiConjugation, GetPDGiGParity, GetPDGiIsospin, GetPDGiIsospin3, GetPDGiParity, GetPDGiSpin, GetParallelWorld
+export GetParameterisation, GetParentID, GetParentResonanceDef, GetParentResonanceID, GetParentResonanceMass, GetParentResonanceName
+export GetParentResonancePDGEncoding, GetParticleCharge, GetParticleDefinition, GetParticleDefinitionID, GetParticleEnergy, GetParticleMomentum
+export GetParticleMomentumDirection, GetParticleName, GetParticlePolarization, GetParticlePosition, GetParticleSubType, GetParticleTable
+export GetParticleTime, GetParticleType, GetPathName, GetPauseAtBeginOfEvent, GetPauseAtEndOfEvent, GetPhysVolume, GetPhysicalVolume
+export GetPhysics, GetPhysicsTableDirectory, GetPhysicsWithType, GetPinAffinity, GetPointOnSurface
+export GetPointerToVectorOfAuxiliaryPoints, GetPolX, GetPolY, GetPolZ, GetPolarization, GetPolyhedron, GetPosition, GetPostStepPoint, GetPreStepPoint
+export GetPressure, GetPreviousCommand, GetPreviousEvent, GetPrimary, GetPrimaryVertex, GetPrintProgress, GetProcessDefinedStep
+export GetProcessManager, GetProperTime, GetPx, GetPy, GetPz, GetQuantity, GetQuarkContent, GetROgeometry, GetRadialTolerance, GetRadius
+export GetRadlen, GetRandomNumberStatus, GetRandomNumberStatusForProcessing, GetRandomNumberStatusForThisEvent
+export GetRandomNumberStatusForThisRun, GetRandomNumberStore, GetRandomNumberStoreDir, GetRandomNumberStorePerEvent, GetRed, GetRegion
+export GetRegularStructureId, GetRelativeAbundanceVector, GetReplicaNumber, GetReplicationData, GetRotation, GetRunID, GetRunManagerType
+export GetSafety, GetSafetyHelper, GetSandiaTable, GetScale, GetSecondary, GetSelectMacro, GetSensitiveDetector, GetSinEndPhi
+export GetSinEndTheta, GetSinStartPhi, GetSinStartTheta, GetSmartless, GetSolid, GetStartPhiAngle, GetStartThetaAngle, GetStartTime
+export GetState, GetStep, GetStepLength, GetStepStatus, GetSurfaceArea, GetSymbol, GetT0, GetTemperature, GetThreadID
+export GetTolerance, GetTotNbOfAtomsPerVolume, GetTotNbOfElectPerVolume, GetTotalElectronBindingEnergy, GetTotalEnergy
 export GetTotalEnergyDeposit, GetTotalMomentum, GetTouchable, GetTrack, GetTrackID, GetTrackLength, GetTrackStatus, GetTrajectoryContainer
 export GetTranslation, GetType, GetUserActionInitialization, GetUserDetectorConstruction, GetUserEventAction, GetUserInformation
 export GetUserLimits, GetUserMaxTime, GetUserMaxTrackLength, GetUserMinEkine, GetUserMinRange, GetUserPhysicsList
-export GetUserPrimaryGeneratorAction, GetUserRunAction, GetUserStackingAction, GetUserSteppingAction, GetUserTrackingAction, GetVariable
-export GetVecNbOfAtomsPerVolume, GetVelocity, GetVerbose, GetVerboseLevel, GetVersionString, GetVertexKineticEnergy, GetVertexMomentumDirection
-export GetVertexPosition, GetVisAttributes, GetVolume, GetVolumeAuxiliaryInformation, GetVoxelHeader, GetWeight, GetWorldName
-export GetWorldVolume, GetX0, GetXHalfLength, GetXHalfLength1, GetXHalfLength2, GetY0, GetYHalfLength, GetYHalfLength1
-export GetYHalfLength2, GetZ, GetZ0, GetZ13, GetZHalfLength, GetZasInt, GetfCoulomb, GetfRadTsai, GetfSecondary, Getm
-export HasParentResonance, HepGeom!Reflect3D, HepGeom!ReflectX3D, HepGeom!ReflectY3D, HepGeom!ReflectZ3D, HepGeom!Rotate3D
-export HepGeom!RotateX3D, HepGeom!RotateY3D, HepGeom!RotateZ3D, HepGeom!Scale3D, HepGeom!ScaleX3D, HepGeom!ScaleY3D, HepGeom!ScaleZ3D
-export HepGeom!Transform3D, HepGeom!Transform3D!Identity, HepGeom!Transform3D!Transform3D_row, HepGeom!Translate3D, HepGeom!TranslateX3D
-export HepGeom!TranslateY3D, HepGeom!TranslateZ3D, Hit, InActivateFastSimulationModel, InactivateAll, IncrementCurrentStepNumber
-export InformLastStep, InitialiseWorker, Initialize, InitializeEventLoop, InitializeGeometry, InitializePhysics, InitializeStep
-export InitializeSteppingVerbose, InitializeThreadPool, InitializeWorker, Inside, InvokeAtRestDoIt, InvokePostStepDoIt, IsAborted, IsActive
-export IsAncestor, IsAntiHypernucleus, IsBelowThreshold, IsCheckModeActive, IsDaughter, IsDaughtersInvisible, IsExtended
-export IsFirstStepInVolume, IsForceAuxEdgeVisible, IsForceDrawingStyle, IsForceLineSegmentsPerCircle, IsForcedAuxEdgeVisible, IsGeneralIon
-export IsGoodForTracking, IsHypernucleus, IsLastCommandOutputTreated, IsLastStepInVolume, IsMany, IsMuonicAtom, IsParameterised
-export IsPhysicsTableRetrieved, IsRegion, IsRegularStructure, IsReplicated, IsRootRegion, IsShortLived, IsStoredInAscii, IsToOptimise, IsValid
-export IsVisible, IsWorldExisting, JustWarning, KeepForPostProcessing, KeepTheEvent, List, ListAlias, ListCommands, ListMaterials
-export ListModels, ListScoreColorMaps, ListTitle, LocateGlobalPointAndSetup, LocateGlobalPointAndUpdateTouchable
-export LocateGlobalPointWithinVolume, Lock, Loop, LoopS, Merge, MergeRun, MergeScores, MoveUpHistory, NTP_Temperature, NetRotation, NetTranslation
-export NewSecondaryVector, NewStep, NormalCondition, Notify, ParseMacroSearchPath, ParseST, PhysicsHasBeenModified, PostProcessingFinished
-export PostStepDoItAllDone, PostStepDoItOneByOne, PostStepGetFastSimulationManagerTrigger, PostUserTrackingAction, PreUserTrackingAction
-export PreparePhysicsTable, Print, PrintAll, PrintElement, PrintG4Element, PrintG4Material, PrintState, ProcessHits, ProcessOneEvent
+export GetUserPrimaryGeneratorAction, GetUserRunAction, GetUserStackingAction, GetUserSteppingAction, GetUserTrackingAction
+export GetUserWorkerInitialization, GetVariable, GetVecNbOfAtomsPerVolume, GetVelocity, GetVerbose, GetVerboseLevel, GetVersionString
+export GetVertexKineticEnergy, GetVertexMomentumDirection, GetVertexPosition, GetVisAttributes, GetVolume, GetVolumeAuxiliaryInformation
+export GetVoxelHeader, GetWeight, GetWorldName, GetWorldVolume, GetX0, GetXHalfLength, GetXHalfLength1, GetXHalfLength2, GetY0
+export GetYHalfLength, GetYHalfLength1, GetYHalfLength2, GetZ, GetZ0, GetZ13, GetZHalfLength, GetZasInt, GetfCoulomb, GetfRadTsai
+export GetfSecondary, Getm, HasParentResonance, HepGeom!Reflect3D, HepGeom!ReflectX3D, HepGeom!ReflectY3D, HepGeom!ReflectZ3D
+export HepGeom!Rotate3D, HepGeom!RotateX3D, HepGeom!RotateY3D, HepGeom!RotateZ3D, HepGeom!Scale3D, HepGeom!ScaleX3D, HepGeom!ScaleY3D
+export HepGeom!ScaleZ3D, HepGeom!Transform3D, HepGeom!Transform3D!Identity, HepGeom!Transform3D!Transform3D_row, HepGeom!Translate3D
+export HepGeom!TranslateX3D, HepGeom!TranslateY3D, HepGeom!TranslateZ3D, Hit, InActivateFastSimulationModel, InactivateAll
+export IncrementCurrentStepNumber, InformLastStep, InitialiseWorker, Initialize, InitializeEventLoop, InitializeGeometry, InitializePhysics
+export InitializeStep, InitializeSteppingVerbose, InitializeThreadPool, InitializeWorker, Inside, InvokeAtRestDoIt, InvokePostStepDoIt
+export IsAborted, IsActive, IsAncestor, IsAntiHypernucleus, IsBelowThreshold, IsCheckModeActive, IsDaughter, IsDaughtersInvisible
+export IsExtended, IsFirstStepInVolume, IsForceAuxEdgeVisible, IsForceDrawingStyle, IsForceLineSegmentsPerCircle
+export IsForcedAuxEdgeVisible, IsGeneralIon, IsGoodForTracking, IsHypernucleus, IsLastCommandOutputTreated, IsLastStepInVolume, IsMany
+export IsMuonicAtom, IsParameterised, IsPhysicsTableRetrieved, IsRegion, IsRegularStructure, IsReplicated, IsRootRegion
+export IsShortLived, IsStoredInAscii, IsToOptimise, IsValid, IsVisible, IsWorldExisting, JustWarning, KeepForPostProcessing
+export KeepTheEvent, List, ListAlias, ListCommands, ListMaterials, ListModels, ListScoreColorMaps, ListTitle
+export LocateGlobalPointAndSetup, LocateGlobalPointAndUpdateTouchable, LocateGlobalPointWithinVolume, Lock, Loop, LoopS, Merge, MergeRun
+export MergeScores, MoveUpHistory, NTP_Temperature, NetRotation, NetTranslation, NewSecondaryVector, NewStep, NormalCondition
+export Notify, ParseMacroSearchPath, ParseST, PhysicsHasBeenModified, PostProcessingFinished, PostStepDoItAllDone
+export PostStepDoItOneByOne, PostStepGetFastSimulationManagerTrigger, PostUserTrackingAction, PreUserTrackingAction, PreparePhysicsTable
+export Print, PrintAll, PrintElement, PrintG4Element, PrintG4Material, PrintState, ProcessHits, ProcessOneEvent
 export PropagateRegion, QBBC, QGS_BIC, ReOptimize, ReOptimizeMotherOf, Read, ReadModule, RecordEvent, RegisterPhysics
 export RegisterScoringMesh, RegisterWorld, ReinitializeGeometry, RemoveAlias, RemoveAuxiliaryTrackInformation, RemoveCommand
 export RemoveDaughter, RemoveFastSimulationModel, RemovePhysics, RemoveProcessManager, RemoveTrackingManager, ReplacePhysics
@@ -177,22 +182,23 @@ export SetXHalfLength2, SetYHalfLength, SetYHalfLength1, SetYHalfLength2, SetZHa
 export StepInfo, StoreEvent, StoreHistory, StorePhysicsTable, StoreRandomNumberStatusToG4Event, StripNamePointers, SurfaceNormal
 export TerminateEventLoop, TerminateOneEvent, TerminateWorker, ThisWorkerEndEventLoop, ThisWorkerProcessCommandsStackDone, ThisWorkerReady
 export ThisWorkerWaitForNextAction, ToBeKept, TotalVolumeEntities, TrackingStarted, UpdateMaterial, UpdateTrack, UpdateYourself
-export UseCoupledTransportation, UseGivenVelocity, UserSteppingAction, VerboseParticleChange, VerboseTrack, VolumeType, Write
-export _fDisplayThreshold, _fDisplayThreshold!, _fIsPhysicsTableBuilt, _fIsPhysicsTableBuilt!, _theMessenger, _theMessenger!, _thePLHelper
-export _thePLHelper!, add!, angle, assign, axis, axisAngle, azimAngle, beta, boost, boostVector, boostX, boostY, boostZ, clear
-export coLinearRapidity, col1, col2, col3, col4, colX, colY, colZ, compare, cos2Theta, cosTheta, cross, decompose, delta, deltaPhi
-export deltaR, diff2, direction, distance2, dot, dx, dy, dz, eta, eulerAngles, fAlive, fAlongStepDoItProc, fAtRestDoItProc
-export fCutsCouple, fCutsCouple!, fExclusivelyForcedProc, fFieldManager, fFieldManager!, fGeomBoundary, fKillTrackAndSecondaries
-export fMass, fMass!, fMaterial, fMaterial!, fPostStepDoItProc, fPostponeToNextEvent, fSensitiveDetector, fSensitiveDetector!
-export fSolid, fSolid!, fStopAndKill, fStopButAlive, fSuspend, fUndefined, fUserDefinedLimit, fWorldBoundary, fcopyNo
-export fcopyNo!, fdiv!, frot, frot!, gamma, getAngleAxis, getAxis, getDecomposition, getDelta, getDirection, getEta
-export getMasterRandomEngine, getPhi, getPsi, getR, getRho, getRotation, getTheta, getTranslation, getX, getY, getZ, howNear, howOrthogonal
-export howParallel, initialize, inverse, invert, isActive, isIdentity, isNear, isOrthogonal, isParallel, kExternal, kInside
-export kNormal, kOutside, kParameterised, kPhi, kRadial3D, kReplica, kRho, kStateGas, kStateLiquid, kStateSolid
-export kStateUndefined, kSurface, kUndefined, kXAxis, kYAxis, kZAxis, mag, mag2, make_G4String, matrixMultiplication, mult!, norm2
-export orthogonal, paren, perp, perp2, perpPart, phi, phiX, phiY, phiZ, physicsVector, physicsVector!, polarAngle, project
-export pseudoRapidity, psi, r, rapidity, rectify, rep3x3, rep4x4, rep4x4Symmetric, rho, rndmSaveThisEvent, rndmSaveThisRun, rotate
-export rotateAxes, rotateUz, rotateX, rotateY, rotateZ, row1, row2, row3, row4, rowX, rowY, rowZ, set, setAxis, setCylEta
-export setCylTheta, setDelta, setEta, setIdentity, setMag, setPerp, setPhi, setPsi, setR, setREtaPhi, setRThetaPhi, setRho
-export setRhoPhiEta, setRhoPhiTheta, setRhoPhiZ, setRows, setTheta, setX, setY, setZ, sub!, theta, thetaX, thetaY, thetaZ, transform
-export tt, tx, tx!, ty, ty!, tz, tz!, unit, vectorMultiplication, x, xt, xx, xy, xz, y, yt, yx, yy, yz, z, zt, zx, zy, zz
+export UseCoupledTransportation, UseGivenVelocity, UserSteppingAction, VerboseParticleChange, VerboseTrack, VolumeType, WorkerInitialize
+export WorkerRunEnd, WorkerRunStart, WorkerStart, WorkerStop, Write, _fDisplayThreshold, _fDisplayThreshold!, _fIsPhysicsTableBuilt
+export _fIsPhysicsTableBuilt!, _theMessenger, _theMessenger!, _thePLHelper, _thePLHelper!, add!, angle, assign, axis, axisAngle, azimAngle
+export beta, boost, boostVector, boostX, boostY, boostZ, clear, coLinearRapidity, col1, col2, col3, col4, colX, colY, colZ
+export compare, cos2Theta, cosTheta, cross, decompose, delta, deltaPhi, deltaR, diff2, direction, distance2, dot, dx, dy, dz
+export eta, eulerAngles, fAlive, fAlongStepDoItProc, fAtRestDoItProc, fCutsCouple, fCutsCouple!, fExclusivelyForcedProc
+export fFieldManager, fFieldManager!, fGeomBoundary, fKillTrackAndSecondaries, fMass, fMass!, fMaterial, fMaterial!
+export fPostStepDoItProc, fPostponeToNextEvent, fSensitiveDetector, fSensitiveDetector!, fSolid, fSolid!, fStopAndKill, fStopButAlive
+export fSuspend, fUndefined, fUserDefinedLimit, fWorldBoundary, fcopyNo, fcopyNo!, fdiv!, frot, frot!, gamma, getAngleAxis
+export getAxis, getDecomposition, getDelta, getDirection, getEta, getMasterRandomEngine, getPhi, getPsi, getR, getRho
+export getRotation, getTheta, getTranslation, getX, getY, getZ, howNear, howOrthogonal, howParallel, initialize, inverse, invert
+export isActive, isIdentity, isNear, isOrthogonal, isParallel, kExternal, kInside, kNormal, kOutside, kParameterised, kPhi
+export kRadial3D, kReplica, kRho, kStateGas, kStateLiquid, kStateSolid, kStateUndefined, kSurface, kUndefined, kXAxis, kYAxis
+export kZAxis, mag, mag2, make_G4String, matrixMultiplication, mult!, norm2, orthogonal, paren, perp, perp2, perpPart, phi
+export phiX, phiY, phiZ, physicsVector, physicsVector!, polarAngle, project, pseudoRapidity, psi, r, rapidity, rectify
+export rep3x3, rep4x4, rep4x4Symmetric, rho, rndmSaveThisEvent, rndmSaveThisRun, rotate, rotateAxes, rotateUz, rotateX
+export rotateY, rotateZ, row1, row2, row3, row4, rowX, rowY, rowZ, set, setAxis, setCylEta, setCylTheta, setDelta, setEta
+export setIdentity, setMag, setPerp, setPhi, setPsi, setR, setREtaPhi, setRThetaPhi, setRho, setRhoPhiEta, setRhoPhiTheta
+export setRhoPhiZ, setRows, setTheta, setX, setY, setZ, sub!, theta, thetaX, thetaY, thetaZ, transform, tt, tx, tx!, ty, ty!, tz
+export tz!, unit, vectorMultiplication, x, xt, xx, xy, xz, y, yt, yx, yy, yz, z, zt, zx, zy, zz

@@ -7,6 +7,7 @@
 #include "G4RunManager.hh"
 #include "G4MTRunManager.hh"
 #include "G4MTRunManagerKernel.hh"
+#include "G4UserWorkerInitialization.hh"
 #include "G4UImanager.hh"
 #include "G4VUserDetectorConstruction.hh"
 #include "G4VUserActionInitialization.hh"
@@ -63,3 +64,4 @@
 #include "G4VisAttributes.hh"
 #include "G4Colour.hh"
 #include "G4ScoringManager.hh"
+#include "G4Threading.hh"
