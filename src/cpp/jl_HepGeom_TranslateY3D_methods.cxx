@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_HepGeom_TranslateY3D(jlcxx::Module& types, jlcxx::TypeWrapper<HepGeom::TranslateY3D>& t73) {
+void add_methods_for_HepGeom_TranslateY3D(jlcxx::Module& types, jlcxx::TypeWrapper<HepGeom::TranslateY3D>& t75) {
 
 
   /**********************************************************************/
@@ -24,8 +24,8 @@ void add_methods_for_HepGeom_TranslateY3D(jlcxx::Module& types, jlcxx::TypeWrapp
 
 
   DEBUG_MSG("Adding wrapper for void HepGeom::TranslateY3D::TranslateY3D(double) (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/CLHEP/Geometry/Transform3D.h:574:5
-  t73.constructor<double>(/*finalize=*/true);
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Geometry/Transform3D.h:574:5
+  t75.constructor<double>(/*finalize=*/true);
 
   /* End of HepGeom::TranslateY3D class method wrappers
    **********************************************************************/

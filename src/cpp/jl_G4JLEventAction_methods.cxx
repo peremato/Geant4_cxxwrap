@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4JLEventAction(jlcxx::Module& types, jlcxx::TypeWrapper<G4JLEventAction>& t113) {
+void add_methods_for_G4JLEventAction(jlcxx::Module& types, jlcxx::TypeWrapper<G4JLEventAction>& t115) {
 
 
   /**********************************************************************/
@@ -25,18 +25,18 @@ void add_methods_for_G4JLEventAction(jlcxx::Module& types, jlcxx::TypeWrapper<G4
 
   DEBUG_MSG("Adding wrapper for void G4JLEventAction::G4JLEventAction(eventaction_f, eventaction_f) (" __HERE__ ")");
   // defined in ./cpp/Geant4Wrap.h:173:5
-  t113.constructor<eventaction_f>(/*finalize=*/true);
-  t113.constructor<eventaction_f, eventaction_f>(/*finalize=*/true);
+  t115.constructor<eventaction_f>(/*finalize=*/true);
+  t115.constructor<eventaction_f, eventaction_f>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for void G4JLEventAction::BeginOfEventAction(const G4Event *) (" __HERE__ ")");
   // signature to use in the veto list: void G4JLEventAction::BeginOfEventAction(const G4Event *)
   // defined in ./cpp/Geant4Wrap.h:175:18
-  t113.method("BeginOfEventAction", static_cast<void (G4JLEventAction::*)(const G4Event *) >(&G4JLEventAction::BeginOfEventAction));
+  t115.method("BeginOfEventAction", static_cast<void (G4JLEventAction::*)(const G4Event *) >(&G4JLEventAction::BeginOfEventAction));
 
   DEBUG_MSG("Adding wrapper for void G4JLEventAction::EndOfEventAction(const G4Event *) (" __HERE__ ")");
   // signature to use in the veto list: void G4JLEventAction::EndOfEventAction(const G4Event *)
   // defined in ./cpp/Geant4Wrap.h:176:20
-  t113.method("EndOfEventAction", static_cast<void (G4JLEventAction::*)(const G4Event *) >(&G4JLEventAction::EndOfEventAction));
+  t115.method("EndOfEventAction", static_cast<void (G4JLEventAction::*)(const G4Event *) >(&G4JLEventAction::EndOfEventAction));
 
   /* End of G4JLEventAction class method wrappers
    **********************************************************************/

@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_QGS_BIC(jlcxx::Module& types, jlcxx::TypeWrapper<QGS_BIC>& t168) {
+void add_methods_for_QGS_BIC(jlcxx::Module& types, jlcxx::TypeWrapper<QGS_BIC>& t173) {
 
 
   /**********************************************************************/
@@ -24,8 +24,8 @@ void add_methods_for_QGS_BIC(jlcxx::Module& types, jlcxx::TypeWrapper<QGS_BIC>& 
 
 
   DEBUG_MSG("Adding wrapper for void QGS_BIC::QGS_BIC(G4int) (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/QGS_BIC.hh:48:3
-  t168.constructor<G4int>(/*finalize=*/true);
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/QGS_BIC.hh:48:3
+  t173.constructor<G4int>(/*finalize=*/true);
 
   /* End of QGS_BIC class method wrappers
    **********************************************************************/

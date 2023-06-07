@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_HepGeom_Reflect3D(jlcxx::Module& types, jlcxx::TypeWrapper<HepGeom::Reflect3D>& t75) {
+void add_methods_for_HepGeom_Reflect3D(jlcxx::Module& types, jlcxx::TypeWrapper<HepGeom::Reflect3D>& t77) {
 
 
   /**********************************************************************/
@@ -24,8 +24,8 @@ void add_methods_for_HepGeom_Reflect3D(jlcxx::Module& types, jlcxx::TypeWrapper<
 
 
   DEBUG_MSG("Adding wrapper for void HepGeom::Reflect3D::Reflect3D(double, double, double, double) (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/CLHEP/Geometry/Transform3D.h:634:5
-  t75.constructor<double, double, double, double>(/*finalize=*/true);
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Geometry/Transform3D.h:634:5
+  t77.constructor<double, double, double, double>(/*finalize=*/true);
 
   /* End of HepGeom::Reflect3D class method wrappers
    **********************************************************************/

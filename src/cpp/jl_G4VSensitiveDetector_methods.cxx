@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4VSensitiveDetector(jlcxx::Module& types, jlcxx::TypeWrapper<G4VSensitiveDetector>& t42) {
+void add_methods_for_G4VSensitiveDetector(jlcxx::Module& types, jlcxx::TypeWrapper<G4VSensitiveDetector>& t46) {
 
 
   /**********************************************************************/
@@ -26,116 +26,116 @@ void add_methods_for_G4VSensitiveDetector(jlcxx::Module& types, jlcxx::TypeWrapp
 
   DEBUG_MSG("Adding wrapper for G4VSensitiveDetector & G4VSensitiveDetector::operator=(const G4VSensitiveDetector &) (" __HERE__ ")");
   // signature to use in the veto list: G4VSensitiveDetector & G4VSensitiveDetector::operator=(const G4VSensitiveDetector &)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4VSensitiveDetector.hh:61:25
-  t42.method("assign", static_cast<G4VSensitiveDetector & (G4VSensitiveDetector::*)(const G4VSensitiveDetector &) >(&G4VSensitiveDetector::operator=));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VSensitiveDetector.hh:61:25
+  t46.method("assign", static_cast<G4VSensitiveDetector & (G4VSensitiveDetector::*)(const G4VSensitiveDetector &) >(&G4VSensitiveDetector::operator=));
   types.set_override_module(jl_base_module);
 
   DEBUG_MSG("Adding wrapper for G4bool G4VSensitiveDetector::operator==(const G4VSensitiveDetector &) (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4VSensitiveDetector::operator==(const G4VSensitiveDetector &)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4VSensitiveDetector.hh:63:10
-  t42.method("==", static_cast<G4bool (G4VSensitiveDetector::*)(const G4VSensitiveDetector &)  const>(&G4VSensitiveDetector::operator==));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VSensitiveDetector.hh:63:10
+  t46.method("==", static_cast<G4bool (G4VSensitiveDetector::*)(const G4VSensitiveDetector &)  const>(&G4VSensitiveDetector::operator==));
 
   DEBUG_MSG("Adding wrapper for G4bool G4VSensitiveDetector::operator!=(const G4VSensitiveDetector &) (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4VSensitiveDetector::operator!=(const G4VSensitiveDetector &)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4VSensitiveDetector.hh:64:10
-  t42.method("!=", static_cast<G4bool (G4VSensitiveDetector::*)(const G4VSensitiveDetector &)  const>(&G4VSensitiveDetector::operator!=));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VSensitiveDetector.hh:64:10
+  t46.method("!=", static_cast<G4bool (G4VSensitiveDetector::*)(const G4VSensitiveDetector &)  const>(&G4VSensitiveDetector::operator!=));
 
   types.unset_override_module();
 
   DEBUG_MSG("Adding wrapper for void G4VSensitiveDetector::Initialize(G4HCofThisEvent *) (" __HERE__ ")");
   // signature to use in the veto list: void G4VSensitiveDetector::Initialize(G4HCofThisEvent *)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4VSensitiveDetector.hh:67:16
-  t42.method("Initialize", static_cast<void (G4VSensitiveDetector::*)(G4HCofThisEvent *) >(&G4VSensitiveDetector::Initialize));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VSensitiveDetector.hh:67:16
+  t46.method("Initialize", static_cast<void (G4VSensitiveDetector::*)(G4HCofThisEvent *) >(&G4VSensitiveDetector::Initialize));
 
   DEBUG_MSG("Adding wrapper for void G4VSensitiveDetector::EndOfEvent(G4HCofThisEvent *) (" __HERE__ ")");
   // signature to use in the veto list: void G4VSensitiveDetector::EndOfEvent(G4HCofThisEvent *)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4VSensitiveDetector.hh:68:16
-  t42.method("EndOfEvent", static_cast<void (G4VSensitiveDetector::*)(G4HCofThisEvent *) >(&G4VSensitiveDetector::EndOfEvent));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VSensitiveDetector.hh:68:16
+  t46.method("EndOfEvent", static_cast<void (G4VSensitiveDetector::*)(G4HCofThisEvent *) >(&G4VSensitiveDetector::EndOfEvent));
 
   DEBUG_MSG("Adding wrapper for void G4VSensitiveDetector::clear() (" __HERE__ ")");
   // signature to use in the veto list: void G4VSensitiveDetector::clear()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4VSensitiveDetector.hh:72:16
-  t42.method("clear", static_cast<void (G4VSensitiveDetector::*)() >(&G4VSensitiveDetector::clear));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VSensitiveDetector.hh:72:16
+  t46.method("clear", static_cast<void (G4VSensitiveDetector::*)() >(&G4VSensitiveDetector::clear));
 
   DEBUG_MSG("Adding wrapper for void G4VSensitiveDetector::DrawAll() (" __HERE__ ")");
   // signature to use in the veto list: void G4VSensitiveDetector::DrawAll()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4VSensitiveDetector.hh:79:16
-  t42.method("DrawAll", static_cast<void (G4VSensitiveDetector::*)() >(&G4VSensitiveDetector::DrawAll));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VSensitiveDetector.hh:79:16
+  t46.method("DrawAll", static_cast<void (G4VSensitiveDetector::*)() >(&G4VSensitiveDetector::DrawAll));
 
   DEBUG_MSG("Adding wrapper for void G4VSensitiveDetector::PrintAll() (" __HERE__ ")");
   // signature to use in the veto list: void G4VSensitiveDetector::PrintAll()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4VSensitiveDetector.hh:80:16
-  t42.method("PrintAll", static_cast<void (G4VSensitiveDetector::*)() >(&G4VSensitiveDetector::PrintAll));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VSensitiveDetector.hh:80:16
+  t46.method("PrintAll", static_cast<void (G4VSensitiveDetector::*)() >(&G4VSensitiveDetector::PrintAll));
 
   DEBUG_MSG("Adding wrapper for G4bool G4VSensitiveDetector::Hit(G4Step *) (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4VSensitiveDetector::Hit(G4Step *)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4VSensitiveDetector.hh:112:17
-  t42.method("Hit", static_cast<G4bool (G4VSensitiveDetector::*)(G4Step *) >(&G4VSensitiveDetector::Hit));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VSensitiveDetector.hh:112:17
+  t46.method("Hit", static_cast<G4bool (G4VSensitiveDetector::*)(G4Step *) >(&G4VSensitiveDetector::Hit));
 
   DEBUG_MSG("Adding wrapper for void G4VSensitiveDetector::SetROgeometry(G4VReadOutGeometry *) (" __HERE__ ")");
   // signature to use in the veto list: void G4VSensitiveDetector::SetROgeometry(G4VReadOutGeometry *)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4VSensitiveDetector.hh:133:15
-  t42.method("SetROgeometry", static_cast<void (G4VSensitiveDetector::*)(G4VReadOutGeometry *) >(&G4VSensitiveDetector::SetROgeometry));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VSensitiveDetector.hh:133:15
+  t46.method("SetROgeometry", static_cast<void (G4VSensitiveDetector::*)(G4VReadOutGeometry *) >(&G4VSensitiveDetector::SetROgeometry));
 
   DEBUG_MSG("Adding wrapper for void G4VSensitiveDetector::SetFilter(G4VSDFilter *) (" __HERE__ ")");
   // signature to use in the veto list: void G4VSensitiveDetector::SetFilter(G4VSDFilter *)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4VSensitiveDetector.hh:135:15
-  t42.method("SetFilter", static_cast<void (G4VSensitiveDetector::*)(G4VSDFilter *) >(&G4VSensitiveDetector::SetFilter));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VSensitiveDetector.hh:135:15
+  t46.method("SetFilter", static_cast<void (G4VSensitiveDetector::*)(G4VSDFilter *) >(&G4VSensitiveDetector::SetFilter));
 
   DEBUG_MSG("Adding wrapper for G4int G4VSensitiveDetector::GetNumberOfCollections() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4VSensitiveDetector::GetNumberOfCollections()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4VSensitiveDetector.hh:139:16
-  t42.method("GetNumberOfCollections", static_cast<G4int (G4VSensitiveDetector::*)()  const>(&G4VSensitiveDetector::GetNumberOfCollections));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VSensitiveDetector.hh:139:16
+  t46.method("GetNumberOfCollections", static_cast<G4int (G4VSensitiveDetector::*)()  const>(&G4VSensitiveDetector::GetNumberOfCollections));
 
   DEBUG_MSG("Adding wrapper for G4String G4VSensitiveDetector::GetCollectionName(G4int) (" __HERE__ ")");
   // signature to use in the veto list: G4String G4VSensitiveDetector::GetCollectionName(G4int)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4VSensitiveDetector.hh:143:19
-  t42.method("GetCollectionName", static_cast<G4String (G4VSensitiveDetector::*)(G4int)  const>(&G4VSensitiveDetector::GetCollectionName));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VSensitiveDetector.hh:143:19
+  t46.method("GetCollectionName", static_cast<G4String (G4VSensitiveDetector::*)(G4int)  const>(&G4VSensitiveDetector::GetCollectionName));
 
   DEBUG_MSG("Adding wrapper for void G4VSensitiveDetector::SetVerboseLevel(G4int) (" __HERE__ ")");
   // signature to use in the veto list: void G4VSensitiveDetector::SetVerboseLevel(G4int)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4VSensitiveDetector.hh:147:15
-  t42.method("SetVerboseLevel", static_cast<void (G4VSensitiveDetector::*)(G4int) >(&G4VSensitiveDetector::SetVerboseLevel));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VSensitiveDetector.hh:147:15
+  t46.method("SetVerboseLevel", static_cast<void (G4VSensitiveDetector::*)(G4int) >(&G4VSensitiveDetector::SetVerboseLevel));
 
   DEBUG_MSG("Adding wrapper for void G4VSensitiveDetector::Activate(G4bool) (" __HERE__ ")");
   // signature to use in the veto list: void G4VSensitiveDetector::Activate(G4bool)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4VSensitiveDetector.hh:148:15
-  t42.method("Activate", static_cast<void (G4VSensitiveDetector::*)(G4bool) >(&G4VSensitiveDetector::Activate));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VSensitiveDetector.hh:148:15
+  t46.method("Activate", static_cast<void (G4VSensitiveDetector::*)(G4bool) >(&G4VSensitiveDetector::Activate));
 
   DEBUG_MSG("Adding wrapper for G4bool G4VSensitiveDetector::isActive() (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4VSensitiveDetector::isActive()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4VSensitiveDetector.hh:149:17
-  t42.method("isActive", static_cast<G4bool (G4VSensitiveDetector::*)()  const>(&G4VSensitiveDetector::isActive));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VSensitiveDetector.hh:149:17
+  t46.method("isActive", static_cast<G4bool (G4VSensitiveDetector::*)()  const>(&G4VSensitiveDetector::isActive));
 
   DEBUG_MSG("Adding wrapper for G4String G4VSensitiveDetector::GetName() (" __HERE__ ")");
   // signature to use in the veto list: G4String G4VSensitiveDetector::GetName()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4VSensitiveDetector.hh:150:19
-  t42.method("GetName", static_cast<G4String (G4VSensitiveDetector::*)()  const>(&G4VSensitiveDetector::GetName));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VSensitiveDetector.hh:150:19
+  t46.method("GetName", static_cast<G4String (G4VSensitiveDetector::*)()  const>(&G4VSensitiveDetector::GetName));
 
   DEBUG_MSG("Adding wrapper for G4String G4VSensitiveDetector::GetPathName() (" __HERE__ ")");
   // signature to use in the veto list: G4String G4VSensitiveDetector::GetPathName()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4VSensitiveDetector.hh:151:19
-  t42.method("GetPathName", static_cast<G4String (G4VSensitiveDetector::*)()  const>(&G4VSensitiveDetector::GetPathName));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VSensitiveDetector.hh:151:19
+  t46.method("GetPathName", static_cast<G4String (G4VSensitiveDetector::*)()  const>(&G4VSensitiveDetector::GetPathName));
 
   DEBUG_MSG("Adding wrapper for G4String G4VSensitiveDetector::GetFullPathName() (" __HERE__ ")");
   // signature to use in the veto list: G4String G4VSensitiveDetector::GetFullPathName()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4VSensitiveDetector.hh:152:19
-  t42.method("GetFullPathName", static_cast<G4String (G4VSensitiveDetector::*)()  const>(&G4VSensitiveDetector::GetFullPathName));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VSensitiveDetector.hh:152:19
+  t46.method("GetFullPathName", static_cast<G4String (G4VSensitiveDetector::*)()  const>(&G4VSensitiveDetector::GetFullPathName));
 
   DEBUG_MSG("Adding wrapper for G4VReadOutGeometry * G4VSensitiveDetector::GetROgeometry() (" __HERE__ ")");
   // signature to use in the veto list: G4VReadOutGeometry * G4VSensitiveDetector::GetROgeometry()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4VSensitiveDetector.hh:153:30
-  t42.method("GetROgeometry", static_cast<G4VReadOutGeometry * (G4VSensitiveDetector::*)()  const>(&G4VSensitiveDetector::GetROgeometry));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VSensitiveDetector.hh:153:30
+  t46.method("GetROgeometry", static_cast<G4VReadOutGeometry * (G4VSensitiveDetector::*)()  const>(&G4VSensitiveDetector::GetROgeometry));
 
   DEBUG_MSG("Adding wrapper for G4VSDFilter * G4VSensitiveDetector::GetFilter() (" __HERE__ ")");
   // signature to use in the veto list: G4VSDFilter * G4VSensitiveDetector::GetFilter()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4VSensitiveDetector.hh:154:23
-  t42.method("GetFilter", static_cast<G4VSDFilter * (G4VSensitiveDetector::*)()  const>(&G4VSensitiveDetector::GetFilter));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VSensitiveDetector.hh:154:23
+  t46.method("GetFilter", static_cast<G4VSDFilter * (G4VSensitiveDetector::*)()  const>(&G4VSensitiveDetector::GetFilter));
 
   DEBUG_MSG("Adding wrapper for G4VSensitiveDetector * G4VSensitiveDetector::Clone() (" __HERE__ ")");
   // signature to use in the veto list: G4VSensitiveDetector * G4VSensitiveDetector::Clone()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4VSensitiveDetector.hh:157:33
-  t42.method("Clone", static_cast<G4VSensitiveDetector * (G4VSensitiveDetector::*)()  const>(&G4VSensitiveDetector::Clone));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VSensitiveDetector.hh:157:33
+  t46.method("Clone", static_cast<G4VSensitiveDetector * (G4VSensitiveDetector::*)()  const>(&G4VSensitiveDetector::Clone));
 
   /* End of G4VSensitiveDetector class method wrappers
    **********************************************************************/

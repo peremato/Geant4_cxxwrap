@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4Track(jlcxx::Module& types, jlcxx::TypeWrapper<G4Track>& t54) {
+void add_methods_for_G4Track(jlcxx::Module& types, jlcxx::TypeWrapper<G4Track>& t11) {
 
 
   /**********************************************************************/
@@ -24,440 +24,440 @@ void add_methods_for_G4Track(jlcxx::Module& types, jlcxx::TypeWrapper<G4Track>& 
 
 
   DEBUG_MSG("Adding wrapper for void G4Track::G4Track(G4DynamicParticle *, G4double, const G4ThreeVector &) (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:74:5
-  t54.constructor<G4DynamicParticle *, G4double, const G4ThreeVector &>(/*finalize=*/true);
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:74:5
+  t11.constructor<G4DynamicParticle *, G4double, const G4ThreeVector &>(/*finalize=*/true);
 
 
   DEBUG_MSG("Adding wrapper for void G4Track::G4Track(const G4Track &) (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:79:5
-  t54.constructor<const G4Track &>(/*finalize=*/true);
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:79:5
+  t11.constructor<const G4Track &>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for G4Track & G4Track::operator=(const G4Track &) (" __HERE__ ")");
   // signature to use in the veto list: G4Track & G4Track::operator=(const G4Track &)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:90:14
-  t54.method("assign", static_cast<G4Track & (G4Track::*)(const G4Track &) >(&G4Track::operator=));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:90:14
+  t11.method("assign", static_cast<G4Track & (G4Track::*)(const G4Track &) >(&G4Track::operator=));
   types.set_override_module(jl_base_module);
 
   DEBUG_MSG("Adding wrapper for G4bool G4Track::operator==(const G4Track &) (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4Track::operator==(const G4Track &)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:93:19
-  t54.method("==", static_cast<G4bool (G4Track::*)(const G4Track &) >(&G4Track::operator==));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:93:19
+  t11.method("==", static_cast<G4bool (G4Track::*)(const G4Track &) >(&G4Track::operator==));
 
   DEBUG_MSG("Adding wrapper for G4bool G4Track::operator!=(const G4Track &) (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4Track::operator!=(const G4Track &)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:94:19
-  t54.method("!=", static_cast<G4bool (G4Track::*)(const G4Track &) >(&G4Track::operator!=));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:94:19
+  t11.method("!=", static_cast<G4bool (G4Track::*)(const G4Track &) >(&G4Track::operator!=));
 
   types.unset_override_module();
 
   DEBUG_MSG("Adding wrapper for void G4Track::CopyTrackInfo(const G4Track &) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::CopyTrackInfo(const G4Track &)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:97:10
-  t54.method("CopyTrackInfo", static_cast<void (G4Track::*)(const G4Track &) >(&G4Track::CopyTrackInfo));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:97:10
+  t11.method("CopyTrackInfo", static_cast<void (G4Track::*)(const G4Track &) >(&G4Track::CopyTrackInfo));
 
   DEBUG_MSG("Adding wrapper for G4int G4Track::GetTrackID() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4Track::GetTrackID()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:100:11
-  t54.method("GetTrackID", static_cast<G4int (G4Track::*)()  const>(&G4Track::GetTrackID));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:100:11
+  t11.method("GetTrackID", static_cast<G4int (G4Track::*)()  const>(&G4Track::GetTrackID));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetTrackID(const G4int) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetTrackID(const G4int)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:101:10
-  t54.method("SetTrackID", static_cast<void (G4Track::*)(const G4int) >(&G4Track::SetTrackID));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:101:10
+  t11.method("SetTrackID", static_cast<void (G4Track::*)(const G4int) >(&G4Track::SetTrackID));
 
   DEBUG_MSG("Adding wrapper for G4int G4Track::GetParentID() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4Track::GetParentID()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:104:11
-  t54.method("GetParentID", static_cast<G4int (G4Track::*)()  const>(&G4Track::GetParentID));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:104:11
+  t11.method("GetParentID", static_cast<G4int (G4Track::*)()  const>(&G4Track::GetParentID));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetParentID(const G4int) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetParentID(const G4int)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:105:10
-  t54.method("SetParentID", static_cast<void (G4Track::*)(const G4int) >(&G4Track::SetParentID));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:105:10
+  t11.method("SetParentID", static_cast<void (G4Track::*)(const G4int) >(&G4Track::SetParentID));
 
   DEBUG_MSG("Adding wrapper for const G4DynamicParticle * G4Track::GetDynamicParticle() (" __HERE__ ")");
   // signature to use in the veto list: const G4DynamicParticle * G4Track::GetDynamicParticle()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:107:30
-  t54.method("GetDynamicParticle", static_cast<const G4DynamicParticle * (G4Track::*)()  const>(&G4Track::GetDynamicParticle));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:107:30
+  t11.method("GetDynamicParticle", static_cast<const G4DynamicParticle * (G4Track::*)()  const>(&G4Track::GetDynamicParticle));
 
   DEBUG_MSG("Adding wrapper for const G4ParticleDefinition * G4Track::GetParticleDefinition() (" __HERE__ ")");
   // signature to use in the veto list: const G4ParticleDefinition * G4Track::GetParticleDefinition()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:110:33
-  t54.method("GetParticleDefinition", static_cast<const G4ParticleDefinition * (G4Track::*)()  const>(&G4Track::GetParticleDefinition));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:110:33
+  t11.method("GetParticleDefinition", static_cast<const G4ParticleDefinition * (G4Track::*)()  const>(&G4Track::GetParticleDefinition));
 
   DEBUG_MSG("Adding wrapper for G4ParticleDefinition * G4Track::GetDefinition() (" __HERE__ ")");
   // signature to use in the veto list: G4ParticleDefinition * G4Track::GetDefinition()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:112:27
-  t54.method("GetDefinition", static_cast<G4ParticleDefinition * (G4Track::*)()  const>(&G4Track::GetDefinition));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:112:27
+  t11.method("GetDefinition", static_cast<G4ParticleDefinition * (G4Track::*)()  const>(&G4Track::GetDefinition));
 
   DEBUG_MSG("Adding wrapper for const G4ThreeVector & G4Track::GetPosition() (" __HERE__ ")");
   // signature to use in the veto list: const G4ThreeVector & G4Track::GetPosition()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:115:26
-  t54.method("GetPosition", static_cast<const G4ThreeVector & (G4Track::*)()  const>(&G4Track::GetPosition));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:115:26
+  t11.method("GetPosition", static_cast<const G4ThreeVector & (G4Track::*)()  const>(&G4Track::GetPosition));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetPosition(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetPosition(const G4ThreeVector &)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:116:10
-  t54.method("SetPosition", static_cast<void (G4Track::*)(const G4ThreeVector &) >(&G4Track::SetPosition));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:116:10
+  t11.method("SetPosition", static_cast<void (G4Track::*)(const G4ThreeVector &) >(&G4Track::SetPosition));
 
   DEBUG_MSG("Adding wrapper for G4double G4Track::GetGlobalTime() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Track::GetGlobalTime()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:119:14
-  t54.method("GetGlobalTime", static_cast<G4double (G4Track::*)()  const>(&G4Track::GetGlobalTime));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:119:14
+  t11.method("GetGlobalTime", static_cast<G4double (G4Track::*)()  const>(&G4Track::GetGlobalTime));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetGlobalTime(const G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetGlobalTime(const G4double)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:120:10
-  t54.method("SetGlobalTime", static_cast<void (G4Track::*)(const G4double) >(&G4Track::SetGlobalTime));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:120:10
+  t11.method("SetGlobalTime", static_cast<void (G4Track::*)(const G4double) >(&G4Track::SetGlobalTime));
 
   DEBUG_MSG("Adding wrapper for G4double G4Track::GetLocalTime() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Track::GetLocalTime()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:123:14
-  t54.method("GetLocalTime", static_cast<G4double (G4Track::*)()  const>(&G4Track::GetLocalTime));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:123:14
+  t11.method("GetLocalTime", static_cast<G4double (G4Track::*)()  const>(&G4Track::GetLocalTime));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetLocalTime(const G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetLocalTime(const G4double)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:124:10
-  t54.method("SetLocalTime", static_cast<void (G4Track::*)(const G4double) >(&G4Track::SetLocalTime));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:124:10
+  t11.method("SetLocalTime", static_cast<void (G4Track::*)(const G4double) >(&G4Track::SetLocalTime));
 
   DEBUG_MSG("Adding wrapper for G4double G4Track::GetProperTime() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Track::GetProperTime()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:127:14
-  t54.method("GetProperTime", static_cast<G4double (G4Track::*)()  const>(&G4Track::GetProperTime));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:127:14
+  t11.method("GetProperTime", static_cast<G4double (G4Track::*)()  const>(&G4Track::GetProperTime));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetProperTime(const G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetProperTime(const G4double)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:128:10
-  t54.method("SetProperTime", static_cast<void (G4Track::*)(const G4double) >(&G4Track::SetProperTime));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:128:10
+  t11.method("SetProperTime", static_cast<void (G4Track::*)(const G4double) >(&G4Track::SetProperTime));
 
   DEBUG_MSG("Adding wrapper for G4VPhysicalVolume * G4Track::GetVolume() (" __HERE__ ")");
   // signature to use in the veto list: G4VPhysicalVolume * G4Track::GetVolume()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:131:24
-  t54.method("GetVolume", static_cast<G4VPhysicalVolume * (G4Track::*)()  const>(&G4Track::GetVolume));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:131:24
+  t11.method("GetVolume", static_cast<G4VPhysicalVolume * (G4Track::*)()  const>(&G4Track::GetVolume));
 
   DEBUG_MSG("Adding wrapper for G4VPhysicalVolume * G4Track::GetNextVolume() (" __HERE__ ")");
   // signature to use in the veto list: G4VPhysicalVolume * G4Track::GetNextVolume()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:132:24
-  t54.method("GetNextVolume", static_cast<G4VPhysicalVolume * (G4Track::*)()  const>(&G4Track::GetNextVolume));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:132:24
+  t11.method("GetNextVolume", static_cast<G4VPhysicalVolume * (G4Track::*)()  const>(&G4Track::GetNextVolume));
 
   DEBUG_MSG("Adding wrapper for G4Material * G4Track::GetMaterial() (" __HERE__ ")");
   // signature to use in the veto list: G4Material * G4Track::GetMaterial()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:135:17
-  t54.method("GetMaterial", static_cast<G4Material * (G4Track::*)()  const>(&G4Track::GetMaterial));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:135:17
+  t11.method("GetMaterial", static_cast<G4Material * (G4Track::*)()  const>(&G4Track::GetMaterial));
 
   DEBUG_MSG("Adding wrapper for G4Material * G4Track::GetNextMaterial() (" __HERE__ ")");
   // signature to use in the veto list: G4Material * G4Track::GetNextMaterial()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:136:17
-  t54.method("GetNextMaterial", static_cast<G4Material * (G4Track::*)()  const>(&G4Track::GetNextMaterial));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:136:17
+  t11.method("GetNextMaterial", static_cast<G4Material * (G4Track::*)()  const>(&G4Track::GetNextMaterial));
 
   DEBUG_MSG("Adding wrapper for const G4MaterialCutsCouple * G4Track::GetMaterialCutsCouple() (" __HERE__ ")");
   // signature to use in the veto list: const G4MaterialCutsCouple * G4Track::GetMaterialCutsCouple()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:138:33
-  t54.method("GetMaterialCutsCouple", static_cast<const G4MaterialCutsCouple * (G4Track::*)()  const>(&G4Track::GetMaterialCutsCouple));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:138:33
+  t11.method("GetMaterialCutsCouple", static_cast<const G4MaterialCutsCouple * (G4Track::*)()  const>(&G4Track::GetMaterialCutsCouple));
 
   DEBUG_MSG("Adding wrapper for const G4MaterialCutsCouple * G4Track::GetNextMaterialCutsCouple() (" __HERE__ ")");
   // signature to use in the veto list: const G4MaterialCutsCouple * G4Track::GetNextMaterialCutsCouple()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:139:33
-  t54.method("GetNextMaterialCutsCouple", static_cast<const G4MaterialCutsCouple * (G4Track::*)()  const>(&G4Track::GetNextMaterialCutsCouple));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:139:33
+  t11.method("GetNextMaterialCutsCouple", static_cast<const G4MaterialCutsCouple * (G4Track::*)()  const>(&G4Track::GetNextMaterialCutsCouple));
 
   DEBUG_MSG("Adding wrapper for const G4VTouchable * G4Track::GetTouchable() (" __HERE__ ")");
   // signature to use in the veto list: const G4VTouchable * G4Track::GetTouchable()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:141:25
-  t54.method("GetTouchable", static_cast<const G4VTouchable * (G4Track::*)()  const>(&G4Track::GetTouchable));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:141:25
+  t11.method("GetTouchable", static_cast<const G4VTouchable * (G4Track::*)()  const>(&G4Track::GetTouchable));
 
   DEBUG_MSG("Adding wrapper for const G4VTouchable * G4Track::GetNextTouchable() (" __HERE__ ")");
   // signature to use in the veto list: const G4VTouchable * G4Track::GetNextTouchable()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:145:25
-  t54.method("GetNextTouchable", static_cast<const G4VTouchable * (G4Track::*)()  const>(&G4Track::GetNextTouchable));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:145:25
+  t11.method("GetNextTouchable", static_cast<const G4VTouchable * (G4Track::*)()  const>(&G4Track::GetNextTouchable));
 
   DEBUG_MSG("Adding wrapper for const G4VTouchable * G4Track::GetOriginTouchable() (" __HERE__ ")");
   // signature to use in the veto list: const G4VTouchable * G4Track::GetOriginTouchable()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:149:25
-  t54.method("GetOriginTouchable", static_cast<const G4VTouchable * (G4Track::*)()  const>(&G4Track::GetOriginTouchable));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:149:25
+  t11.method("GetOriginTouchable", static_cast<const G4VTouchable * (G4Track::*)()  const>(&G4Track::GetOriginTouchable));
 
   DEBUG_MSG("Adding wrapper for G4double G4Track::GetKineticEnergy() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Track::GetKineticEnergy()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:153:14
-  t54.method("GetKineticEnergy", static_cast<G4double (G4Track::*)()  const>(&G4Track::GetKineticEnergy));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:153:14
+  t11.method("GetKineticEnergy", static_cast<G4double (G4Track::*)()  const>(&G4Track::GetKineticEnergy));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetKineticEnergy(const G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetKineticEnergy(const G4double)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:154:10
-  t54.method("SetKineticEnergy", static_cast<void (G4Track::*)(const G4double) >(&G4Track::SetKineticEnergy));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:154:10
+  t11.method("SetKineticEnergy", static_cast<void (G4Track::*)(const G4double) >(&G4Track::SetKineticEnergy));
 
   DEBUG_MSG("Adding wrapper for G4double G4Track::GetTotalEnergy() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Track::GetTotalEnergy()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:157:14
-  t54.method("GetTotalEnergy", static_cast<G4double (G4Track::*)()  const>(&G4Track::GetTotalEnergy));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:157:14
+  t11.method("GetTotalEnergy", static_cast<G4double (G4Track::*)()  const>(&G4Track::GetTotalEnergy));
 
   DEBUG_MSG("Adding wrapper for const G4ThreeVector & G4Track::GetMomentumDirection() (" __HERE__ ")");
   // signature to use in the veto list: const G4ThreeVector & G4Track::GetMomentumDirection()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:159:26
-  t54.method("GetMomentumDirection", static_cast<const G4ThreeVector & (G4Track::*)()  const>(&G4Track::GetMomentumDirection));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:159:26
+  t11.method("GetMomentumDirection", static_cast<const G4ThreeVector & (G4Track::*)()  const>(&G4Track::GetMomentumDirection));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetMomentumDirection(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetMomentumDirection(const G4ThreeVector &)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:160:10
-  t54.method("SetMomentumDirection", static_cast<void (G4Track::*)(const G4ThreeVector &) >(&G4Track::SetMomentumDirection));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:160:10
+  t11.method("SetMomentumDirection", static_cast<void (G4Track::*)(const G4ThreeVector &) >(&G4Track::SetMomentumDirection));
 
   DEBUG_MSG("Adding wrapper for G4ThreeVector G4Track::GetMomentum() (" __HERE__ ")");
   // signature to use in the veto list: G4ThreeVector G4Track::GetMomentum()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:163:19
-  t54.method("GetMomentum", static_cast<G4ThreeVector (G4Track::*)()  const>(&G4Track::GetMomentum));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:163:19
+  t11.method("GetMomentum", static_cast<G4ThreeVector (G4Track::*)()  const>(&G4Track::GetMomentum));
 
   DEBUG_MSG("Adding wrapper for G4double G4Track::GetVelocity() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Track::GetVelocity()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:165:14
-  t54.method("GetVelocity", static_cast<G4double (G4Track::*)()  const>(&G4Track::GetVelocity));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:165:14
+  t11.method("GetVelocity", static_cast<G4double (G4Track::*)()  const>(&G4Track::GetVelocity));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetVelocity(G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetVelocity(G4double)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:166:10
-  t54.method("SetVelocity", static_cast<void (G4Track::*)(G4double) >(&G4Track::SetVelocity));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:166:10
+  t11.method("SetVelocity", static_cast<void (G4Track::*)(G4double) >(&G4Track::SetVelocity));
 
   DEBUG_MSG("Adding wrapper for G4double G4Track::CalculateVelocity() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Track::CalculateVelocity()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:169:14
-  t54.method("CalculateVelocity", static_cast<G4double (G4Track::*)()  const>(&G4Track::CalculateVelocity));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:169:14
+  t11.method("CalculateVelocity", static_cast<G4double (G4Track::*)()  const>(&G4Track::CalculateVelocity));
 
   DEBUG_MSG("Adding wrapper for G4double G4Track::CalculateVelocityForOpticalPhoton() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Track::CalculateVelocityForOpticalPhoton()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:170:14
-  t54.method("CalculateVelocityForOpticalPhoton", static_cast<G4double (G4Track::*)()  const>(&G4Track::CalculateVelocityForOpticalPhoton));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:170:14
+  t11.method("CalculateVelocityForOpticalPhoton", static_cast<G4double (G4Track::*)()  const>(&G4Track::CalculateVelocityForOpticalPhoton));
 
   DEBUG_MSG("Adding wrapper for G4bool G4Track::UseGivenVelocity() (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4Track::UseGivenVelocity()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:172:12
-  t54.method("UseGivenVelocity", static_cast<G4bool (G4Track::*)()  const>(&G4Track::UseGivenVelocity));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:172:12
+  t11.method("UseGivenVelocity", static_cast<G4bool (G4Track::*)()  const>(&G4Track::UseGivenVelocity));
 
   DEBUG_MSG("Adding wrapper for void G4Track::UseGivenVelocity(G4bool) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::UseGivenVelocity(G4bool)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:173:10
-  t54.method("UseGivenVelocity", static_cast<void (G4Track::*)(G4bool) >(&G4Track::UseGivenVelocity));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:173:10
+  t11.method("UseGivenVelocity", static_cast<void (G4Track::*)(G4bool) >(&G4Track::UseGivenVelocity));
 
   DEBUG_MSG("Adding wrapper for const G4ThreeVector & G4Track::GetPolarization() (" __HERE__ ")");
   // signature to use in the veto list: const G4ThreeVector & G4Track::GetPolarization()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:175:26
-  t54.method("GetPolarization", static_cast<const G4ThreeVector & (G4Track::*)()  const>(&G4Track::GetPolarization));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:175:26
+  t11.method("GetPolarization", static_cast<const G4ThreeVector & (G4Track::*)()  const>(&G4Track::GetPolarization));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetPolarization(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetPolarization(const G4ThreeVector &)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:176:10
-  t54.method("SetPolarization", static_cast<void (G4Track::*)(const G4ThreeVector &) >(&G4Track::SetPolarization));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:176:10
+  t11.method("SetPolarization", static_cast<void (G4Track::*)(const G4ThreeVector &) >(&G4Track::SetPolarization));
 
   DEBUG_MSG("Adding wrapper for G4TrackStatus G4Track::GetTrackStatus() (" __HERE__ ")");
   // signature to use in the veto list: G4TrackStatus G4Track::GetTrackStatus()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:179:19
-  t54.method("GetTrackStatus", static_cast<G4TrackStatus (G4Track::*)()  const>(&G4Track::GetTrackStatus));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:179:19
+  t11.method("GetTrackStatus", static_cast<G4TrackStatus (G4Track::*)()  const>(&G4Track::GetTrackStatus));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetTrackStatus(const G4TrackStatus) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetTrackStatus(const G4TrackStatus)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:180:10
-  t54.method("SetTrackStatus", static_cast<void (G4Track::*)(const G4TrackStatus) >(&G4Track::SetTrackStatus));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:180:10
+  t11.method("SetTrackStatus", static_cast<void (G4Track::*)(const G4TrackStatus) >(&G4Track::SetTrackStatus));
 
   DEBUG_MSG("Adding wrapper for G4bool G4Track::IsBelowThreshold() (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4Track::IsBelowThreshold()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:183:12
-  t54.method("IsBelowThreshold", static_cast<G4bool (G4Track::*)()  const>(&G4Track::IsBelowThreshold));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:183:12
+  t11.method("IsBelowThreshold", static_cast<G4bool (G4Track::*)()  const>(&G4Track::IsBelowThreshold));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetBelowThresholdFlag(G4bool) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetBelowThresholdFlag(G4bool)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:184:10
-  t54.method("SetBelowThresholdFlag", static_cast<void (G4Track::*)(G4bool) >(&G4Track::SetBelowThresholdFlag));
-  t54.method("SetBelowThresholdFlag", [](G4Track& a)->void{ a.SetBelowThresholdFlag(); });
-  t54.method("SetBelowThresholdFlag", [](G4Track* a)->void{ a->SetBelowThresholdFlag(); });
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:184:10
+  t11.method("SetBelowThresholdFlag", static_cast<void (G4Track::*)(G4bool) >(&G4Track::SetBelowThresholdFlag));
+  t11.method("SetBelowThresholdFlag", [](G4Track& a)->void{ a.SetBelowThresholdFlag(); });
+  t11.method("SetBelowThresholdFlag", [](G4Track* a)->void{ a->SetBelowThresholdFlag(); });
 
   DEBUG_MSG("Adding wrapper for G4bool G4Track::IsGoodForTracking() (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4Track::IsGoodForTracking()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:189:12
-  t54.method("IsGoodForTracking", static_cast<G4bool (G4Track::*)()  const>(&G4Track::IsGoodForTracking));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:189:12
+  t11.method("IsGoodForTracking", static_cast<G4bool (G4Track::*)()  const>(&G4Track::IsGoodForTracking));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetGoodForTrackingFlag(G4bool) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetGoodForTrackingFlag(G4bool)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:190:10
-  t54.method("SetGoodForTrackingFlag", static_cast<void (G4Track::*)(G4bool) >(&G4Track::SetGoodForTrackingFlag));
-  t54.method("SetGoodForTrackingFlag", [](G4Track& a)->void{ a.SetGoodForTrackingFlag(); });
-  t54.method("SetGoodForTrackingFlag", [](G4Track* a)->void{ a->SetGoodForTrackingFlag(); });
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:190:10
+  t11.method("SetGoodForTrackingFlag", static_cast<void (G4Track::*)(G4bool) >(&G4Track::SetGoodForTrackingFlag));
+  t11.method("SetGoodForTrackingFlag", [](G4Track& a)->void{ a.SetGoodForTrackingFlag(); });
+  t11.method("SetGoodForTrackingFlag", [](G4Track* a)->void{ a->SetGoodForTrackingFlag(); });
 
   DEBUG_MSG("Adding wrapper for G4double G4Track::GetTrackLength() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Track::GetTrackLength()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:195:14
-  t54.method("GetTrackLength", static_cast<G4double (G4Track::*)()  const>(&G4Track::GetTrackLength));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:195:14
+  t11.method("GetTrackLength", static_cast<G4double (G4Track::*)()  const>(&G4Track::GetTrackLength));
 
   DEBUG_MSG("Adding wrapper for void G4Track::AddTrackLength(const G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::AddTrackLength(const G4double)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:196:10
-  t54.method("AddTrackLength", static_cast<void (G4Track::*)(const G4double) >(&G4Track::AddTrackLength));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:196:10
+  t11.method("AddTrackLength", static_cast<void (G4Track::*)(const G4double) >(&G4Track::AddTrackLength));
 
   DEBUG_MSG("Adding wrapper for const G4Step * G4Track::GetStep() (" __HERE__ ")");
   // signature to use in the veto list: const G4Step * G4Track::GetStep()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:199:19
-  t54.method("GetStep", static_cast<const G4Step * (G4Track::*)()  const>(&G4Track::GetStep));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:199:19
+  t11.method("GetStep", static_cast<const G4Step * (G4Track::*)()  const>(&G4Track::GetStep));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetStep(const G4Step *) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetStep(const G4Step *)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:200:10
-  t54.method("SetStep", static_cast<void (G4Track::*)(const G4Step *) >(&G4Track::SetStep));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:200:10
+  t11.method("SetStep", static_cast<void (G4Track::*)(const G4Step *) >(&G4Track::SetStep));
 
   DEBUG_MSG("Adding wrapper for G4int G4Track::GetCurrentStepNumber() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4Track::GetCurrentStepNumber()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:203:11
-  t54.method("GetCurrentStepNumber", static_cast<G4int (G4Track::*)()  const>(&G4Track::GetCurrentStepNumber));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:203:11
+  t11.method("GetCurrentStepNumber", static_cast<G4int (G4Track::*)()  const>(&G4Track::GetCurrentStepNumber));
 
   DEBUG_MSG("Adding wrapper for void G4Track::IncrementCurrentStepNumber() (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::IncrementCurrentStepNumber()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:204:10
-  t54.method("IncrementCurrentStepNumber", static_cast<void (G4Track::*)() >(&G4Track::IncrementCurrentStepNumber));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:204:10
+  t11.method("IncrementCurrentStepNumber", static_cast<void (G4Track::*)() >(&G4Track::IncrementCurrentStepNumber));
 
   DEBUG_MSG("Adding wrapper for G4double G4Track::GetStepLength() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Track::GetStepLength()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:206:14
-  t54.method("GetStepLength", static_cast<G4double (G4Track::*)()  const>(&G4Track::GetStepLength));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:206:14
+  t11.method("GetStepLength", static_cast<G4double (G4Track::*)()  const>(&G4Track::GetStepLength));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetStepLength(G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetStepLength(G4double)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:207:10
-  t54.method("SetStepLength", static_cast<void (G4Track::*)(G4double) >(&G4Track::SetStepLength));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:207:10
+  t11.method("SetStepLength", static_cast<void (G4Track::*)(G4double) >(&G4Track::SetStepLength));
 
   DEBUG_MSG("Adding wrapper for const G4ThreeVector & G4Track::GetVertexPosition() (" __HERE__ ")");
   // signature to use in the veto list: const G4ThreeVector & G4Track::GetVertexPosition()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:213:26
-  t54.method("GetVertexPosition", static_cast<const G4ThreeVector & (G4Track::*)()  const>(&G4Track::GetVertexPosition));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:213:26
+  t11.method("GetVertexPosition", static_cast<const G4ThreeVector & (G4Track::*)()  const>(&G4Track::GetVertexPosition));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetVertexPosition(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetVertexPosition(const G4ThreeVector &)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:214:10
-  t54.method("SetVertexPosition", static_cast<void (G4Track::*)(const G4ThreeVector &) >(&G4Track::SetVertexPosition));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:214:10
+  t11.method("SetVertexPosition", static_cast<void (G4Track::*)(const G4ThreeVector &) >(&G4Track::SetVertexPosition));
 
   DEBUG_MSG("Adding wrapper for const G4ThreeVector & G4Track::GetVertexMomentumDirection() (" __HERE__ ")");
   // signature to use in the veto list: const G4ThreeVector & G4Track::GetVertexMomentumDirection()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:217:26
-  t54.method("GetVertexMomentumDirection", static_cast<const G4ThreeVector & (G4Track::*)()  const>(&G4Track::GetVertexMomentumDirection));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:217:26
+  t11.method("GetVertexMomentumDirection", static_cast<const G4ThreeVector & (G4Track::*)()  const>(&G4Track::GetVertexMomentumDirection));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetVertexMomentumDirection(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetVertexMomentumDirection(const G4ThreeVector &)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:218:10
-  t54.method("SetVertexMomentumDirection", static_cast<void (G4Track::*)(const G4ThreeVector &) >(&G4Track::SetVertexMomentumDirection));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:218:10
+  t11.method("SetVertexMomentumDirection", static_cast<void (G4Track::*)(const G4ThreeVector &) >(&G4Track::SetVertexMomentumDirection));
 
   DEBUG_MSG("Adding wrapper for G4double G4Track::GetVertexKineticEnergy() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Track::GetVertexKineticEnergy()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:220:14
-  t54.method("GetVertexKineticEnergy", static_cast<G4double (G4Track::*)()  const>(&G4Track::GetVertexKineticEnergy));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:220:14
+  t11.method("GetVertexKineticEnergy", static_cast<G4double (G4Track::*)()  const>(&G4Track::GetVertexKineticEnergy));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetVertexKineticEnergy(const G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetVertexKineticEnergy(const G4double)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:221:10
-  t54.method("SetVertexKineticEnergy", static_cast<void (G4Track::*)(const G4double) >(&G4Track::SetVertexKineticEnergy));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:221:10
+  t11.method("SetVertexKineticEnergy", static_cast<void (G4Track::*)(const G4double) >(&G4Track::SetVertexKineticEnergy));
 
   DEBUG_MSG("Adding wrapper for const G4LogicalVolume * G4Track::GetLogicalVolumeAtVertex() (" __HERE__ ")");
   // signature to use in the veto list: const G4LogicalVolume * G4Track::GetLogicalVolumeAtVertex()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:223:28
-  t54.method("GetLogicalVolumeAtVertex", static_cast<const G4LogicalVolume * (G4Track::*)()  const>(&G4Track::GetLogicalVolumeAtVertex));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:223:28
+  t11.method("GetLogicalVolumeAtVertex", static_cast<const G4LogicalVolume * (G4Track::*)()  const>(&G4Track::GetLogicalVolumeAtVertex));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetLogicalVolumeAtVertex(const G4LogicalVolume *) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetLogicalVolumeAtVertex(const G4LogicalVolume *)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:224:10
-  t54.method("SetLogicalVolumeAtVertex", static_cast<void (G4Track::*)(const G4LogicalVolume *) >(&G4Track::SetLogicalVolumeAtVertex));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:224:10
+  t11.method("SetLogicalVolumeAtVertex", static_cast<void (G4Track::*)(const G4LogicalVolume *) >(&G4Track::SetLogicalVolumeAtVertex));
 
   DEBUG_MSG("Adding wrapper for const G4VProcess * G4Track::GetCreatorProcess() (" __HERE__ ")");
   // signature to use in the veto list: const G4VProcess * G4Track::GetCreatorProcess()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:226:23
-  t54.method("GetCreatorProcess", static_cast<const G4VProcess * (G4Track::*)()  const>(&G4Track::GetCreatorProcess));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:226:23
+  t11.method("GetCreatorProcess", static_cast<const G4VProcess * (G4Track::*)()  const>(&G4Track::GetCreatorProcess));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetCreatorProcess(const G4VProcess *) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetCreatorProcess(const G4VProcess *)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:227:10
-  t54.method("SetCreatorProcess", static_cast<void (G4Track::*)(const G4VProcess *) >(&G4Track::SetCreatorProcess));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:227:10
+  t11.method("SetCreatorProcess", static_cast<void (G4Track::*)(const G4VProcess *) >(&G4Track::SetCreatorProcess));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetCreatorModelID(const G4int) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetCreatorModelID(const G4int)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:229:17
-  t54.method("SetCreatorModelID", static_cast<void (G4Track::*)(const G4int) >(&G4Track::SetCreatorModelID));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:229:17
+  t11.method("SetCreatorModelID", static_cast<void (G4Track::*)(const G4int) >(&G4Track::SetCreatorModelID));
 
   DEBUG_MSG("Adding wrapper for G4int G4Track::GetCreatorModelID() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4Track::GetCreatorModelID()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:230:18
-  t54.method("GetCreatorModelID", static_cast<G4int (G4Track::*)()  const>(&G4Track::GetCreatorModelID));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:230:18
+  t11.method("GetCreatorModelID", static_cast<G4int (G4Track::*)()  const>(&G4Track::GetCreatorModelID));
 
   DEBUG_MSG("Adding wrapper for G4int G4Track::GetCreatorModelIndex() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4Track::GetCreatorModelIndex()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:231:18
-  t54.method("GetCreatorModelIndex", static_cast<G4int (G4Track::*)()  const>(&G4Track::GetCreatorModelIndex));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:231:18
+  t11.method("GetCreatorModelIndex", static_cast<G4int (G4Track::*)()  const>(&G4Track::GetCreatorModelIndex));
 
   DEBUG_MSG("Adding wrapper for const G4String G4Track::GetCreatorModelName() (" __HERE__ ")");
   // signature to use in the veto list: const G4String G4Track::GetCreatorModelName()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:232:27
-  t54.method("GetCreatorModelName", static_cast<const G4String (G4Track::*)()  const>(&G4Track::GetCreatorModelName));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:232:27
+  t11.method("GetCreatorModelName", static_cast<const G4String (G4Track::*)()  const>(&G4Track::GetCreatorModelName));
 
   DEBUG_MSG("Adding wrapper for const G4ParticleDefinition * G4Track::GetParentResonanceDef() (" __HERE__ ")");
   // signature to use in the veto list: const G4ParticleDefinition * G4Track::GetParentResonanceDef()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:238:40
-  t54.method("GetParentResonanceDef", static_cast<const G4ParticleDefinition * (G4Track::*)()  const>(&G4Track::GetParentResonanceDef));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:238:40
+  t11.method("GetParentResonanceDef", static_cast<const G4ParticleDefinition * (G4Track::*)()  const>(&G4Track::GetParentResonanceDef));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetParentResonanceDef(const G4ParticleDefinition *) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetParentResonanceDef(const G4ParticleDefinition *)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:239:17
-  t54.method("SetParentResonanceDef", static_cast<void (G4Track::*)(const G4ParticleDefinition *) >(&G4Track::SetParentResonanceDef));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:239:17
+  t11.method("SetParentResonanceDef", static_cast<void (G4Track::*)(const G4ParticleDefinition *) >(&G4Track::SetParentResonanceDef));
 
   DEBUG_MSG("Adding wrapper for G4int G4Track::GetParentResonanceID() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4Track::GetParentResonanceID()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:240:18
-  t54.method("GetParentResonanceID", static_cast<G4int (G4Track::*)()  const>(&G4Track::GetParentResonanceID));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:240:18
+  t11.method("GetParentResonanceID", static_cast<G4int (G4Track::*)()  const>(&G4Track::GetParentResonanceID));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetParentResonanceID(const G4int) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetParentResonanceID(const G4int)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:241:17
-  t54.method("SetParentResonanceID", static_cast<void (G4Track::*)(const G4int) >(&G4Track::SetParentResonanceID));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:241:17
+  t11.method("SetParentResonanceID", static_cast<void (G4Track::*)(const G4int) >(&G4Track::SetParentResonanceID));
 
   DEBUG_MSG("Adding wrapper for G4bool G4Track::HasParentResonance() (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4Track::HasParentResonance()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:242:19
-  t54.method("HasParentResonance", static_cast<G4bool (G4Track::*)()  const>(&G4Track::HasParentResonance));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:242:19
+  t11.method("HasParentResonance", static_cast<G4bool (G4Track::*)()  const>(&G4Track::HasParentResonance));
 
   DEBUG_MSG("Adding wrapper for G4int G4Track::GetParentResonancePDGEncoding() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4Track::GetParentResonancePDGEncoding()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:243:18
-  t54.method("GetParentResonancePDGEncoding", static_cast<G4int (G4Track::*)()  const>(&G4Track::GetParentResonancePDGEncoding));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:243:18
+  t11.method("GetParentResonancePDGEncoding", static_cast<G4int (G4Track::*)()  const>(&G4Track::GetParentResonancePDGEncoding));
 
   DEBUG_MSG("Adding wrapper for G4String G4Track::GetParentResonanceName() (" __HERE__ ")");
   // signature to use in the veto list: G4String G4Track::GetParentResonanceName()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:244:21
-  t54.method("GetParentResonanceName", static_cast<G4String (G4Track::*)()  const>(&G4Track::GetParentResonanceName));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:244:21
+  t11.method("GetParentResonanceName", static_cast<G4String (G4Track::*)()  const>(&G4Track::GetParentResonanceName));
 
   DEBUG_MSG("Adding wrapper for G4double G4Track::GetParentResonanceMass() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Track::GetParentResonanceMass()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:245:21
-  t54.method("GetParentResonanceMass", static_cast<G4double (G4Track::*)()  const>(&G4Track::GetParentResonanceMass));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:245:21
+  t11.method("GetParentResonanceMass", static_cast<G4double (G4Track::*)()  const>(&G4Track::GetParentResonanceMass));
 
   DEBUG_MSG("Adding wrapper for G4double G4Track::GetWeight() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Track::GetWeight()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:261:14
-  t54.method("GetWeight", static_cast<G4double (G4Track::*)()  const>(&G4Track::GetWeight));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:261:14
+  t11.method("GetWeight", static_cast<G4double (G4Track::*)()  const>(&G4Track::GetWeight));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetWeight(G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetWeight(G4double)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:262:10
-  t54.method("SetWeight", static_cast<void (G4Track::*)(G4double) >(&G4Track::SetWeight));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:262:10
+  t11.method("SetWeight", static_cast<void (G4Track::*)(G4double) >(&G4Track::SetWeight));
 
   DEBUG_MSG("Adding wrapper for G4VUserTrackInformation * G4Track::GetUserInformation() (" __HERE__ ")");
   // signature to use in the veto list: G4VUserTrackInformation * G4Track::GetUserInformation()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:265:30
-  t54.method("GetUserInformation", static_cast<G4VUserTrackInformation * (G4Track::*)()  const>(&G4Track::GetUserInformation));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:265:30
+  t11.method("GetUserInformation", static_cast<G4VUserTrackInformation * (G4Track::*)()  const>(&G4Track::GetUserInformation));
 
   DEBUG_MSG("Adding wrapper for void G4Track::SetUserInformation(G4VUserTrackInformation *) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::SetUserInformation(G4VUserTrackInformation *)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:266:10
-  t54.method("SetUserInformation", static_cast<void (G4Track::*)(G4VUserTrackInformation *)  const>(&G4Track::SetUserInformation));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:266:10
+  t11.method("SetUserInformation", static_cast<void (G4Track::*)(G4VUserTrackInformation *)  const>(&G4Track::SetUserInformation));
 
   DEBUG_MSG("Adding wrapper for void G4Track::RemoveAuxiliaryTrackInformation(G4int) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::RemoveAuxiliaryTrackInformation(G4int)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:275:10
-  t54.method("RemoveAuxiliaryTrackInformation", static_cast<void (G4Track::*)(G4int) >(&G4Track::RemoveAuxiliaryTrackInformation));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:275:10
+  t11.method("RemoveAuxiliaryTrackInformation", static_cast<void (G4Track::*)(G4int) >(&G4Track::RemoveAuxiliaryTrackInformation));
 
   DEBUG_MSG("Adding wrapper for void G4Track::RemoveAuxiliaryTrackInformation(G4String &) (" __HERE__ ")");
   // signature to use in the veto list: void G4Track::RemoveAuxiliaryTrackInformation(G4String &)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Track.hh:276:10
-  t54.method("RemoveAuxiliaryTrackInformation", static_cast<void (G4Track::*)(G4String &) >(&G4Track::RemoveAuxiliaryTrackInformation));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Track.hh:276:10
+  t11.method("RemoveAuxiliaryTrackInformation", static_cast<void (G4Track::*)(G4String &) >(&G4Track::RemoveAuxiliaryTrackInformation));
 
   /* End of G4Track class method wrappers
    **********************************************************************/

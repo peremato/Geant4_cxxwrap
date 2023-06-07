@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_CLHEP_HepEulerAngles(jlcxx::Module& types, jlcxx::TypeWrapper<CLHEP::HepEulerAngles>& t13) {
+void add_methods_for_CLHEP_HepEulerAngles(jlcxx::Module& types, jlcxx::TypeWrapper<CLHEP::HepEulerAngles>& t17) {
 
 
   /**********************************************************************/
@@ -24,48 +24,48 @@ void add_methods_for_CLHEP_HepEulerAngles(jlcxx::Module& types, jlcxx::TypeWrapp
 
 
   DEBUG_MSG("Adding wrapper for void CLHEP::HepEulerAngles::HepEulerAngles(double, double, double) (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/CLHEP/Vector/EulerAngles.h:48:10
-  t13.constructor<double, double, double>(/*finalize=*/true);
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Vector/EulerAngles.h:48:10
+  t17.constructor<double, double, double>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for double CLHEP::HepEulerAngles::getPhi() (" __HERE__ ")");
   // signature to use in the veto list: double CLHEP::HepEulerAngles::getPhi()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/CLHEP/Vector/EulerAngles.h:56:19
-  t13.method("getPhi", static_cast<double (CLHEP::HepEulerAngles::*)()  const>(&CLHEP::HepEulerAngles::getPhi));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Vector/EulerAngles.h:56:19
+  t17.method("getPhi", static_cast<double (CLHEP::HepEulerAngles::*)()  const>(&CLHEP::HepEulerAngles::getPhi));
 
   DEBUG_MSG("Adding wrapper for double CLHEP::HepEulerAngles::phi() (" __HERE__ ")");
   // signature to use in the veto list: double CLHEP::HepEulerAngles::phi()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/CLHEP/Vector/EulerAngles.h:57:19
-  t13.method("phi", static_cast<double (CLHEP::HepEulerAngles::*)()  const>(&CLHEP::HepEulerAngles::phi));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Vector/EulerAngles.h:57:19
+  t17.method("phi", static_cast<double (CLHEP::HepEulerAngles::*)()  const>(&CLHEP::HepEulerAngles::phi));
 
   DEBUG_MSG("Adding wrapper for double CLHEP::HepEulerAngles::getTheta() (" __HERE__ ")");
   // signature to use in the veto list: double CLHEP::HepEulerAngles::getTheta()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/CLHEP/Vector/EulerAngles.h:60:19
-  t13.method("getTheta", static_cast<double (CLHEP::HepEulerAngles::*)()  const>(&CLHEP::HepEulerAngles::getTheta));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Vector/EulerAngles.h:60:19
+  t17.method("getTheta", static_cast<double (CLHEP::HepEulerAngles::*)()  const>(&CLHEP::HepEulerAngles::getTheta));
 
   DEBUG_MSG("Adding wrapper for double CLHEP::HepEulerAngles::theta() (" __HERE__ ")");
   // signature to use in the veto list: double CLHEP::HepEulerAngles::theta()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/CLHEP/Vector/EulerAngles.h:61:19
-  t13.method("theta", static_cast<double (CLHEP::HepEulerAngles::*)()  const>(&CLHEP::HepEulerAngles::theta));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Vector/EulerAngles.h:61:19
+  t17.method("theta", static_cast<double (CLHEP::HepEulerAngles::*)()  const>(&CLHEP::HepEulerAngles::theta));
 
   DEBUG_MSG("Adding wrapper for double CLHEP::HepEulerAngles::getPsi() (" __HERE__ ")");
   // signature to use in the veto list: double CLHEP::HepEulerAngles::getPsi()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/CLHEP/Vector/EulerAngles.h:64:19
-  t13.method("getPsi", static_cast<double (CLHEP::HepEulerAngles::*)()  const>(&CLHEP::HepEulerAngles::getPsi));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Vector/EulerAngles.h:64:19
+  t17.method("getPsi", static_cast<double (CLHEP::HepEulerAngles::*)()  const>(&CLHEP::HepEulerAngles::getPsi));
 
   DEBUG_MSG("Adding wrapper for double CLHEP::HepEulerAngles::psi() (" __HERE__ ")");
   // signature to use in the veto list: double CLHEP::HepEulerAngles::psi()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/CLHEP/Vector/EulerAngles.h:65:19
-  t13.method("psi", static_cast<double (CLHEP::HepEulerAngles::*)()  const>(&CLHEP::HepEulerAngles::psi));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Vector/EulerAngles.h:65:19
+  t17.method("psi", static_cast<double (CLHEP::HepEulerAngles::*)()  const>(&CLHEP::HepEulerAngles::psi));
 
   DEBUG_MSG("Adding wrapper for double CLHEP::HepEulerAngles::getTolerance() (" __HERE__ ")");
   // signature to use in the veto list: double CLHEP::HepEulerAngles::getTolerance()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/CLHEP/Vector/EulerAngles.h:83:24
-  t13.method("CLHEP!HepEulerAngles!getTolerance", static_cast<double (*)() >(&CLHEP::HepEulerAngles::getTolerance));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Vector/EulerAngles.h:83:24
+  t17.method("CLHEP!HepEulerAngles!getTolerance", static_cast<double (*)() >(&CLHEP::HepEulerAngles::getTolerance));
 
   DEBUG_MSG("Adding wrapper for double CLHEP::HepEulerAngles::setTolerance(double) (" __HERE__ ")");
   // signature to use in the veto list: double CLHEP::HepEulerAngles::setTolerance(double)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/CLHEP/Vector/EulerAngles.h:84:24
-  t13.method("CLHEP!HepEulerAngles!setTolerance", static_cast<double (*)(double) >(&CLHEP::HepEulerAngles::setTolerance));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Vector/EulerAngles.h:84:24
+  t17.method("CLHEP!HepEulerAngles!setTolerance", static_cast<double (*)(double) >(&CLHEP::HepEulerAngles::setTolerance));
 
   /* End of CLHEP::HepEulerAngles class method wrappers
    **********************************************************************/

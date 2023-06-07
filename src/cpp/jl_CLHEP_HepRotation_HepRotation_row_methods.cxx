@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_CLHEP_HepRotation_HepRotation_row(jlcxx::Module& types, jlcxx::TypeWrapper<CLHEP::HepRotation::HepRotation_row>& t18) {
+void add_methods_for_CLHEP_HepRotation_HepRotation_row(jlcxx::Module& types, jlcxx::TypeWrapper<CLHEP::HepRotation::HepRotation_row>& t22) {
 
 
   /**********************************************************************/
@@ -24,14 +24,14 @@ void add_methods_for_CLHEP_HepRotation_HepRotation_row(jlcxx::Module& types, jlc
 
 
   DEBUG_MSG("Adding wrapper for void CLHEP::HepRotation::HepRotation_row::HepRotation_row(const CLHEP::HepRotation &, int) (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/CLHEP/Vector/Rotation.h:149:12
-  t18.constructor<const CLHEP::HepRotation &, int>(/*finalize=*/true);
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Vector/Rotation.h:149:12
+  t22.constructor<const CLHEP::HepRotation &, int>(/*finalize=*/true);
   types.set_override_module(jl_base_module);
 
 
   DEBUG_MSG("Adding getindex method to wrap double CLHEP::HepRotation::HepRotation_row::operator[](int) (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/CLHEP/Vector/Rotation.h:150:19
-  t18.method("getindex",
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Vector/Rotation.h:150:19
+  t22.method("getindex",
     [](CLHEP::HepRotation::HepRotation_row& a, int i){
     return a[i];
   });

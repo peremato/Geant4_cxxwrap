@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4JLSensDet(jlcxx::Module& types, jlcxx::TypeWrapper<G4JLSensDet>& t99) {
+void add_methods_for_G4JLSensDet(jlcxx::Module& types, jlcxx::TypeWrapper<G4JLSensDet>& t101) {
 
 
   /**********************************************************************/
@@ -25,32 +25,32 @@ void add_methods_for_G4JLSensDet(jlcxx::Module& types, jlcxx::TypeWrapper<G4JLSe
 
   DEBUG_MSG("Adding wrapper for void G4JLSensDet::G4JLSensDet(const G4String &, processhits_f) (" __HERE__ ")");
   // defined in ./cpp/Geant4Wrap.h:43:5
-  t99.constructor<const G4String &, processhits_f>(/*finalize=*/false);
+  t101.constructor<const G4String &, processhits_f>(/*finalize=*/false);
 
   DEBUG_MSG("Adding wrapper for void G4JLSensDet::Initialize(G4HCofThisEvent *) (" __HERE__ ")");
   // signature to use in the veto list: void G4JLSensDet::Initialize(G4HCofThisEvent *)
   // defined in ./cpp/Geant4Wrap.h:47:18
-  t99.method("Initialize", static_cast<void (G4JLSensDet::*)(G4HCofThisEvent *) >(&G4JLSensDet::Initialize));
+  t101.method("Initialize", static_cast<void (G4JLSensDet::*)(G4HCofThisEvent *) >(&G4JLSensDet::Initialize));
 
   DEBUG_MSG("Adding wrapper for void G4JLSensDet::EndOfEvent(G4HCofThisEvent *) (" __HERE__ ")");
   // signature to use in the veto list: void G4JLSensDet::EndOfEvent(G4HCofThisEvent *)
   // defined in ./cpp/Geant4Wrap.h:48:18
-  t99.method("EndOfEvent", static_cast<void (G4JLSensDet::*)(G4HCofThisEvent *) >(&G4JLSensDet::EndOfEvent));
+  t101.method("EndOfEvent", static_cast<void (G4JLSensDet::*)(G4HCofThisEvent *) >(&G4JLSensDet::EndOfEvent));
 
   DEBUG_MSG("Adding wrapper for G4bool G4JLSensDet::ProcessHits(G4Step *, G4TouchableHistory *) (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4JLSensDet::ProcessHits(G4Step *, G4TouchableHistory *)
   // defined in ./cpp/Geant4Wrap.h:49:20
-  t99.method("ProcessHits", static_cast<G4bool (G4JLSensDet::*)(G4Step *, G4TouchableHistory *) >(&G4JLSensDet::ProcessHits));
+  t101.method("ProcessHits", static_cast<G4bool (G4JLSensDet::*)(G4Step *, G4TouchableHistory *) >(&G4JLSensDet::ProcessHits));
 
   DEBUG_MSG("Adding wrapper for void G4JLSensDet::SetInitialize(initend_f) (" __HERE__ ")");
   // signature to use in the veto list: void G4JLSensDet::SetInitialize(initend_f)
   // defined in ./cpp/Geant4Wrap.h:50:10
-  t99.method("SetInitialize", static_cast<void (G4JLSensDet::*)(initend_f) >(&G4JLSensDet::SetInitialize));
+  t101.method("SetInitialize", static_cast<void (G4JLSensDet::*)(initend_f) >(&G4JLSensDet::SetInitialize));
 
   DEBUG_MSG("Adding wrapper for void G4JLSensDet::SetEndOfEvent(initend_f) (" __HERE__ ")");
   // signature to use in the veto list: void G4JLSensDet::SetEndOfEvent(initend_f)
   // defined in ./cpp/Geant4Wrap.h:51:10
-  t99.method("SetEndOfEvent", static_cast<void (G4JLSensDet::*)(initend_f) >(&G4JLSensDet::SetEndOfEvent));
+  t101.method("SetEndOfEvent", static_cast<void (G4JLSensDet::*)(initend_f) >(&G4JLSensDet::SetEndOfEvent));
 
   /* End of G4JLSensDet class method wrappers
    **********************************************************************/

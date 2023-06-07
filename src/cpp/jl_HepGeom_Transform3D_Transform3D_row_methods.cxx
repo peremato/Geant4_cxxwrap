@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_HepGeom_Transform3D_Transform3D_row(jlcxx::Module& types, jlcxx::TypeWrapper<HepGeom::Transform3D::Transform3D_row>& t65) {
+void add_methods_for_HepGeom_Transform3D_Transform3D_row(jlcxx::Module& types, jlcxx::TypeWrapper<HepGeom::Transform3D::Transform3D_row>& t67) {
 
 
   /**********************************************************************/
@@ -26,14 +26,14 @@ void add_methods_for_HepGeom_Transform3D_Transform3D_row(jlcxx::Module& types, j
 
 
   DEBUG_MSG("Adding wrapper for void HepGeom::Transform3D::Transform3D_row::Transform3D_row(const HepGeom::Transform3D &, int) (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/CLHEP/Geometry/Transform3D.h:201:14
-  t65.constructor<const HepGeom::Transform3D &, int>(/*finalize=*/true);
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Geometry/Transform3D.h:201:14
+  t67.constructor<const HepGeom::Transform3D &, int>(/*finalize=*/true);
   types.set_override_module(jl_base_module);
 
 
   DEBUG_MSG("Adding getindex method to wrap double HepGeom::Transform3D::Transform3D_row::operator[](int) (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/CLHEP/Geometry/Transform3D.h:202:21
-  t65.method("getindex",
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Geometry/Transform3D.h:202:21
+  t67.method("getindex",
     [](HepGeom::Transform3D::Transform3D_row& a, int i){
     return a[i];
   });

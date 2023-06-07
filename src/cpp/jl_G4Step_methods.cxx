@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4Step(jlcxx::Module& types, jlcxx::TypeWrapper<G4Step>& t53) {
+void add_methods_for_G4Step(jlcxx::Module& types, jlcxx::TypeWrapper<G4Step>& t56) {
 
 
   /**********************************************************************/
@@ -24,217 +24,222 @@ void add_methods_for_G4Step(jlcxx::Module& types, jlcxx::TypeWrapper<G4Step>& t5
 
 
   DEBUG_MSG("Adding wrapper for void G4Step::G4Step(const G4Step &) (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:71:5
-  t53.constructor<const G4Step &>(/*finalize=*/true);
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:71:5
+  t56.constructor<const G4Step &>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for G4Step & G4Step::operator=(const G4Step &) (" __HERE__ ")");
   // signature to use in the veto list: G4Step & G4Step::operator=(const G4Step &)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:72:13
-  t53.method("assign", static_cast<G4Step & (G4Step::*)(const G4Step &) >(&G4Step::operator=));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:72:13
+  t56.method("assign", static_cast<G4Step & (G4Step::*)(const G4Step &) >(&G4Step::operator=));
 
   DEBUG_MSG("Adding wrapper for G4Track * G4Step::GetTrack() (" __HERE__ ")");
   // signature to use in the veto list: G4Track * G4Step::GetTrack()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:75:14
-  t53.method("GetTrack", static_cast<G4Track * (G4Step::*)()  const>(&G4Step::GetTrack));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:75:14
+  t56.method("GetTrack", static_cast<G4Track * (G4Step::*)()  const>(&G4Step::GetTrack));
 
   DEBUG_MSG("Adding wrapper for void G4Step::SetTrack(G4Track *) (" __HERE__ ")");
   // signature to use in the veto list: void G4Step::SetTrack(G4Track *)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:76:10
-  t53.method("SetTrack", static_cast<void (G4Step::*)(G4Track *) >(&G4Step::SetTrack));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:76:10
+  t56.method("SetTrack", static_cast<void (G4Step::*)(G4Track *) >(&G4Step::SetTrack));
 
   DEBUG_MSG("Adding wrapper for G4StepPoint * G4Step::GetPreStepPoint() (" __HERE__ ")");
   // signature to use in the veto list: G4StepPoint * G4Step::GetPreStepPoint()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:79:18
-  t53.method("GetPreStepPoint", static_cast<G4StepPoint * (G4Step::*)()  const>(&G4Step::GetPreStepPoint));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:79:18
+  t56.method("GetPreStepPoint", static_cast<G4StepPoint * (G4Step::*)()  const>(&G4Step::GetPreStepPoint));
 
   DEBUG_MSG("Adding wrapper for void G4Step::SetPreStepPoint(G4StepPoint *) (" __HERE__ ")");
   // signature to use in the veto list: void G4Step::SetPreStepPoint(G4StepPoint *)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:80:10
-  t53.method("SetPreStepPoint", static_cast<void (G4Step::*)(G4StepPoint *) >(&G4Step::SetPreStepPoint));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:80:10
+  t56.method("SetPreStepPoint", static_cast<void (G4Step::*)(G4StepPoint *) >(&G4Step::SetPreStepPoint));
 
   DEBUG_MSG("Adding wrapper for G4StepPoint * G4Step::ResetPreStepPoint(G4StepPoint *) (" __HERE__ ")");
   // signature to use in the veto list: G4StepPoint * G4Step::ResetPreStepPoint(G4StepPoint *)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:81:18
-  t53.method("ResetPreStepPoint", static_cast<G4StepPoint * (G4Step::*)(G4StepPoint *) >(&G4Step::ResetPreStepPoint));
-  t53.method("ResetPreStepPoint", [](G4Step& a)->G4StepPoint *{ return a.ResetPreStepPoint(); });
-  t53.method("ResetPreStepPoint", [](G4Step* a)->G4StepPoint *{ return a->ResetPreStepPoint(); });
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:81:18
+  t56.method("ResetPreStepPoint", static_cast<G4StepPoint * (G4Step::*)(G4StepPoint *) >(&G4Step::ResetPreStepPoint));
+  t56.method("ResetPreStepPoint", [](G4Step& a)->G4StepPoint *{ return a.ResetPreStepPoint(); });
+  t56.method("ResetPreStepPoint", [](G4Step* a)->G4StepPoint *{ return a->ResetPreStepPoint(); });
 
   DEBUG_MSG("Adding wrapper for G4StepPoint * G4Step::GetPostStepPoint() (" __HERE__ ")");
   // signature to use in the veto list: G4StepPoint * G4Step::GetPostStepPoint()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:88:18
-  t53.method("GetPostStepPoint", static_cast<G4StepPoint * (G4Step::*)()  const>(&G4Step::GetPostStepPoint));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:88:18
+  t56.method("GetPostStepPoint", static_cast<G4StepPoint * (G4Step::*)()  const>(&G4Step::GetPostStepPoint));
 
   DEBUG_MSG("Adding wrapper for void G4Step::SetPostStepPoint(G4StepPoint *) (" __HERE__ ")");
   // signature to use in the veto list: void G4Step::SetPostStepPoint(G4StepPoint *)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:89:10
-  t53.method("SetPostStepPoint", static_cast<void (G4Step::*)(G4StepPoint *) >(&G4Step::SetPostStepPoint));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:89:10
+  t56.method("SetPostStepPoint", static_cast<void (G4Step::*)(G4StepPoint *) >(&G4Step::SetPostStepPoint));
 
   DEBUG_MSG("Adding wrapper for G4StepPoint * G4Step::ResetPostStepPoint(G4StepPoint *) (" __HERE__ ")");
   // signature to use in the veto list: G4StepPoint * G4Step::ResetPostStepPoint(G4StepPoint *)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:90:18
-  t53.method("ResetPostStepPoint", static_cast<G4StepPoint * (G4Step::*)(G4StepPoint *) >(&G4Step::ResetPostStepPoint));
-  t53.method("ResetPostStepPoint", [](G4Step& a)->G4StepPoint *{ return a.ResetPostStepPoint(); });
-  t53.method("ResetPostStepPoint", [](G4Step* a)->G4StepPoint *{ return a->ResetPostStepPoint(); });
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:90:18
+  t56.method("ResetPostStepPoint", static_cast<G4StepPoint * (G4Step::*)(G4StepPoint *) >(&G4Step::ResetPostStepPoint));
+  t56.method("ResetPostStepPoint", [](G4Step& a)->G4StepPoint *{ return a.ResetPostStepPoint(); });
+  t56.method("ResetPostStepPoint", [](G4Step* a)->G4StepPoint *{ return a->ResetPostStepPoint(); });
 
   DEBUG_MSG("Adding wrapper for G4double G4Step::GetStepLength() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Step::GetStepLength()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:97:14
-  t53.method("GetStepLength", static_cast<G4double (G4Step::*)()  const>(&G4Step::GetStepLength));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:97:14
+  t56.method("GetStepLength", static_cast<G4double (G4Step::*)()  const>(&G4Step::GetStepLength));
 
   DEBUG_MSG("Adding wrapper for void G4Step::SetStepLength(G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4Step::SetStepLength(G4double)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:98:10
-  t53.method("SetStepLength", static_cast<void (G4Step::*)(G4double) >(&G4Step::SetStepLength));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:98:10
+  t56.method("SetStepLength", static_cast<void (G4Step::*)(G4double) >(&G4Step::SetStepLength));
 
   DEBUG_MSG("Adding wrapper for G4double G4Step::GetTotalEnergyDeposit() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Step::GetTotalEnergyDeposit()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:104:14
-  t53.method("GetTotalEnergyDeposit", static_cast<G4double (G4Step::*)()  const>(&G4Step::GetTotalEnergyDeposit));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:104:14
+  t56.method("GetTotalEnergyDeposit", static_cast<G4double (G4Step::*)()  const>(&G4Step::GetTotalEnergyDeposit));
 
   DEBUG_MSG("Adding wrapper for void G4Step::SetTotalEnergyDeposit(G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4Step::SetTotalEnergyDeposit(G4double)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:105:10
-  t53.method("SetTotalEnergyDeposit", static_cast<void (G4Step::*)(G4double) >(&G4Step::SetTotalEnergyDeposit));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:105:10
+  t56.method("SetTotalEnergyDeposit", static_cast<void (G4Step::*)(G4double) >(&G4Step::SetTotalEnergyDeposit));
 
   DEBUG_MSG("Adding wrapper for G4double G4Step::GetNonIonizingEnergyDeposit() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Step::GetNonIonizingEnergyDeposit()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:108:14
-  t53.method("GetNonIonizingEnergyDeposit", static_cast<G4double (G4Step::*)()  const>(&G4Step::GetNonIonizingEnergyDeposit));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:108:14
+  t56.method("GetNonIonizingEnergyDeposit", static_cast<G4double (G4Step::*)()  const>(&G4Step::GetNonIonizingEnergyDeposit));
 
   DEBUG_MSG("Adding wrapper for void G4Step::SetNonIonizingEnergyDeposit(G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4Step::SetNonIonizingEnergyDeposit(G4double)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:109:10
-  t53.method("SetNonIonizingEnergyDeposit", static_cast<void (G4Step::*)(G4double) >(&G4Step::SetNonIonizingEnergyDeposit));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:109:10
+  t56.method("SetNonIonizingEnergyDeposit", static_cast<void (G4Step::*)(G4double) >(&G4Step::SetNonIonizingEnergyDeposit));
 
   DEBUG_MSG("Adding wrapper for G4SteppingControl G4Step::GetControlFlag() (" __HERE__ ")");
   // signature to use in the veto list: G4SteppingControl G4Step::GetControlFlag()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:112:23
-  t53.method("GetControlFlag", static_cast<G4SteppingControl (G4Step::*)()  const>(&G4Step::GetControlFlag));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:112:23
+  t56.method("GetControlFlag", static_cast<G4SteppingControl (G4Step::*)()  const>(&G4Step::GetControlFlag));
 
   DEBUG_MSG("Adding wrapper for void G4Step::SetControlFlag(G4SteppingControl) (" __HERE__ ")");
   // signature to use in the veto list: void G4Step::SetControlFlag(G4SteppingControl)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:113:10
-  t53.method("SetControlFlag", static_cast<void (G4Step::*)(G4SteppingControl) >(&G4Step::SetControlFlag));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:113:10
+  t56.method("SetControlFlag", static_cast<void (G4Step::*)(G4SteppingControl) >(&G4Step::SetControlFlag));
 
   DEBUG_MSG("Adding wrapper for void G4Step::AddTotalEnergyDeposit(G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4Step::AddTotalEnergyDeposit(G4double)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:116:10
-  t53.method("AddTotalEnergyDeposit", static_cast<void (G4Step::*)(G4double) >(&G4Step::AddTotalEnergyDeposit));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:116:10
+  t56.method("AddTotalEnergyDeposit", static_cast<void (G4Step::*)(G4double) >(&G4Step::AddTotalEnergyDeposit));
 
   DEBUG_MSG("Adding wrapper for void G4Step::ResetTotalEnergyDeposit() (" __HERE__ ")");
   // signature to use in the veto list: void G4Step::ResetTotalEnergyDeposit()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:117:10
-  t53.method("ResetTotalEnergyDeposit", static_cast<void (G4Step::*)() >(&G4Step::ResetTotalEnergyDeposit));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:117:10
+  t56.method("ResetTotalEnergyDeposit", static_cast<void (G4Step::*)() >(&G4Step::ResetTotalEnergyDeposit));
 
   DEBUG_MSG("Adding wrapper for void G4Step::AddNonIonizingEnergyDeposit(G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4Step::AddNonIonizingEnergyDeposit(G4double)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:120:10
-  t53.method("AddNonIonizingEnergyDeposit", static_cast<void (G4Step::*)(G4double) >(&G4Step::AddNonIonizingEnergyDeposit));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:120:10
+  t56.method("AddNonIonizingEnergyDeposit", static_cast<void (G4Step::*)(G4double) >(&G4Step::AddNonIonizingEnergyDeposit));
 
   DEBUG_MSG("Adding wrapper for void G4Step::ResetNonIonizingEnergyDeposit() (" __HERE__ ")");
   // signature to use in the veto list: void G4Step::ResetNonIonizingEnergyDeposit()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:121:10
-  t53.method("ResetNonIonizingEnergyDeposit", static_cast<void (G4Step::*)() >(&G4Step::ResetNonIonizingEnergyDeposit));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:121:10
+  t56.method("ResetNonIonizingEnergyDeposit", static_cast<void (G4Step::*)() >(&G4Step::ResetNonIonizingEnergyDeposit));
 
   DEBUG_MSG("Adding wrapper for G4bool G4Step::IsFirstStepInVolume() (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4Step::IsFirstStepInVolume()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:124:12
-  t53.method("IsFirstStepInVolume", static_cast<G4bool (G4Step::*)()  const>(&G4Step::IsFirstStepInVolume));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:124:12
+  t56.method("IsFirstStepInVolume", static_cast<G4bool (G4Step::*)()  const>(&G4Step::IsFirstStepInVolume));
 
   DEBUG_MSG("Adding wrapper for G4bool G4Step::IsLastStepInVolume() (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4Step::IsLastStepInVolume()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:125:12
-  t53.method("IsLastStepInVolume", static_cast<G4bool (G4Step::*)()  const>(&G4Step::IsLastStepInVolume));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:125:12
+  t56.method("IsLastStepInVolume", static_cast<G4bool (G4Step::*)()  const>(&G4Step::IsLastStepInVolume));
 
   DEBUG_MSG("Adding wrapper for void G4Step::SetFirstStepFlag() (" __HERE__ ")");
   // signature to use in the veto list: void G4Step::SetFirstStepFlag()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:127:10
-  t53.method("SetFirstStepFlag", static_cast<void (G4Step::*)() >(&G4Step::SetFirstStepFlag));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:127:10
+  t56.method("SetFirstStepFlag", static_cast<void (G4Step::*)() >(&G4Step::SetFirstStepFlag));
 
   DEBUG_MSG("Adding wrapper for void G4Step::ClearFirstStepFlag() (" __HERE__ ")");
   // signature to use in the veto list: void G4Step::ClearFirstStepFlag()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:128:10
-  t53.method("ClearFirstStepFlag", static_cast<void (G4Step::*)() >(&G4Step::ClearFirstStepFlag));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:128:10
+  t56.method("ClearFirstStepFlag", static_cast<void (G4Step::*)() >(&G4Step::ClearFirstStepFlag));
 
   DEBUG_MSG("Adding wrapper for void G4Step::SetLastStepFlag() (" __HERE__ ")");
   // signature to use in the veto list: void G4Step::SetLastStepFlag()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:129:10
-  t53.method("SetLastStepFlag", static_cast<void (G4Step::*)() >(&G4Step::SetLastStepFlag));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:129:10
+  t56.method("SetLastStepFlag", static_cast<void (G4Step::*)() >(&G4Step::SetLastStepFlag));
 
   DEBUG_MSG("Adding wrapper for void G4Step::ClearLastStepFlag() (" __HERE__ ")");
   // signature to use in the veto list: void G4Step::ClearLastStepFlag()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:130:10
-  t53.method("ClearLastStepFlag", static_cast<void (G4Step::*)() >(&G4Step::ClearLastStepFlag));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:130:10
+  t56.method("ClearLastStepFlag", static_cast<void (G4Step::*)() >(&G4Step::ClearLastStepFlag));
 
   DEBUG_MSG("Adding wrapper for G4ThreeVector G4Step::GetDeltaPosition() (" __HERE__ ")");
   // signature to use in the veto list: G4ThreeVector G4Step::GetDeltaPosition()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:134:19
-  t53.method("GetDeltaPosition", static_cast<G4ThreeVector (G4Step::*)()  const>(&G4Step::GetDeltaPosition));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:134:19
+  t56.method("GetDeltaPosition", static_cast<G4ThreeVector (G4Step::*)()  const>(&G4Step::GetDeltaPosition));
 
   DEBUG_MSG("Adding wrapper for G4double G4Step::GetDeltaTime() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Step::GetDeltaTime()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:135:14
-  t53.method("GetDeltaTime", static_cast<G4double (G4Step::*)()  const>(&G4Step::GetDeltaTime));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:135:14
+  t56.method("GetDeltaTime", static_cast<G4double (G4Step::*)()  const>(&G4Step::GetDeltaTime));
 
   DEBUG_MSG("Adding wrapper for G4ThreeVector G4Step::GetDeltaMomentum() (" __HERE__ ")");
   // signature to use in the veto list: G4ThreeVector G4Step::GetDeltaMomentum()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:138:19
-  t53.method("GetDeltaMomentum", static_cast<G4ThreeVector (G4Step::*)()  const>(&G4Step::GetDeltaMomentum));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:138:19
+  t56.method("GetDeltaMomentum", static_cast<G4ThreeVector (G4Step::*)()  const>(&G4Step::GetDeltaMomentum));
 
   DEBUG_MSG("Adding wrapper for G4double G4Step::GetDeltaEnergy() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Step::GetDeltaEnergy()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:139:14
-  t53.method("GetDeltaEnergy", static_cast<G4double (G4Step::*)()  const>(&G4Step::GetDeltaEnergy));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:139:14
+  t56.method("GetDeltaEnergy", static_cast<G4double (G4Step::*)()  const>(&G4Step::GetDeltaEnergy));
 
   DEBUG_MSG("Adding wrapper for void G4Step::InitializeStep(G4Track *) (" __HERE__ ")");
   // signature to use in the veto list: void G4Step::InitializeStep(G4Track *)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:143:10
-  t53.method("InitializeStep", static_cast<void (G4Step::*)(G4Track *) >(&G4Step::InitializeStep));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:143:10
+  t56.method("InitializeStep", static_cast<void (G4Step::*)(G4Track *) >(&G4Step::InitializeStep));
 
   DEBUG_MSG("Adding wrapper for void G4Step::UpdateTrack() (" __HERE__ ")");
   // signature to use in the veto list: void G4Step::UpdateTrack()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:146:10
-  t53.method("UpdateTrack", static_cast<void (G4Step::*)() >(&G4Step::UpdateTrack));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:146:10
+  t56.method("UpdateTrack", static_cast<void (G4Step::*)() >(&G4Step::UpdateTrack));
 
   DEBUG_MSG("Adding wrapper for void G4Step::CopyPostToPreStepPoint() (" __HERE__ ")");
   // signature to use in the veto list: void G4Step::CopyPostToPreStepPoint()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:149:10
-  t53.method("CopyPostToPreStepPoint", static_cast<void (G4Step::*)() >(&G4Step::CopyPostToPreStepPoint));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:149:10
+  t56.method("CopyPostToPreStepPoint", static_cast<void (G4Step::*)() >(&G4Step::CopyPostToPreStepPoint));
 
   DEBUG_MSG("Adding wrapper for void G4Step::SetPointerToVectorOfAuxiliaryPoints(std::vector<G4ThreeVector> *) (" __HERE__ ")");
   // signature to use in the veto list: void G4Step::SetPointerToVectorOfAuxiliaryPoints(std::vector<G4ThreeVector> *)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:155:17
-  t53.method("SetPointerToVectorOfAuxiliaryPoints", static_cast<void (G4Step::*)(std::vector<G4ThreeVector> *) >(&G4Step::SetPointerToVectorOfAuxiliaryPoints));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:155:17
+  t56.method("SetPointerToVectorOfAuxiliaryPoints", static_cast<void (G4Step::*)(std::vector<G4ThreeVector> *) >(&G4Step::SetPointerToVectorOfAuxiliaryPoints));
 
   DEBUG_MSG("Adding wrapper for std::vector<G4ThreeVector> * G4Step::GetPointerToVectorOfAuxiliaryPoints() (" __HERE__ ")");
   // signature to use in the veto list: std::vector<G4ThreeVector> * G4Step::GetPointerToVectorOfAuxiliaryPoints()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:156:40
-  t53.method("GetPointerToVectorOfAuxiliaryPoints", static_cast<std::vector<G4ThreeVector> * (G4Step::*)()  const>(&G4Step::GetPointerToVectorOfAuxiliaryPoints));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:156:40
+  t56.method("GetPointerToVectorOfAuxiliaryPoints", static_cast<std::vector<G4ThreeVector> * (G4Step::*)()  const>(&G4Step::GetPointerToVectorOfAuxiliaryPoints));
+
+  DEBUG_MSG("Adding wrapper for size_t G4Step::GetNumberOfSecondariesInCurrentStep() (" __HERE__ ")");
+  // signature to use in the veto list: size_t G4Step::GetNumberOfSecondariesInCurrentStep()
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:161:17
+  t56.method("GetNumberOfSecondariesInCurrentStep", static_cast<size_t (G4Step::*)()  const>(&G4Step::GetNumberOfSecondariesInCurrentStep));
 
   DEBUG_MSG("Adding wrapper for const G4TrackVector * G4Step::GetSecondary() (" __HERE__ ")");
   // signature to use in the veto list: const G4TrackVector * G4Step::GetSecondary()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:166:26
-  t53.method("GetSecondary", static_cast<const G4TrackVector * (G4Step::*)()  const>(&G4Step::GetSecondary));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:166:26
+  t56.method("GetSecondary", static_cast<const G4TrackVector * (G4Step::*)()  const>(&G4Step::GetSecondary));
 
   DEBUG_MSG("Adding wrapper for G4TrackVector * G4Step::GetfSecondary() (" __HERE__ ")");
   // signature to use in the veto list: G4TrackVector * G4Step::GetfSecondary()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:167:20
-  t53.method("GetfSecondary", static_cast<G4TrackVector * (G4Step::*)() >(&G4Step::GetfSecondary));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:167:20
+  t56.method("GetfSecondary", static_cast<G4TrackVector * (G4Step::*)() >(&G4Step::GetfSecondary));
 
   DEBUG_MSG("Adding wrapper for G4TrackVector * G4Step::NewSecondaryVector() (" __HERE__ ")");
   // signature to use in the veto list: G4TrackVector * G4Step::NewSecondaryVector()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:168:20
-  t53.method("NewSecondaryVector", static_cast<G4TrackVector * (G4Step::*)() >(&G4Step::NewSecondaryVector));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:168:20
+  t56.method("NewSecondaryVector", static_cast<G4TrackVector * (G4Step::*)() >(&G4Step::NewSecondaryVector));
 
   DEBUG_MSG("Adding wrapper for void G4Step::DeleteSecondaryVector() (" __HERE__ ")");
   // signature to use in the veto list: void G4Step::DeleteSecondaryVector()
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:175:10
-  t53.method("DeleteSecondaryVector", static_cast<void (G4Step::*)() >(&G4Step::DeleteSecondaryVector));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:175:10
+  t56.method("DeleteSecondaryVector", static_cast<void (G4Step::*)() >(&G4Step::DeleteSecondaryVector));
 
   DEBUG_MSG("Adding wrapper for void G4Step::SetSecondary(G4TrackVector *) (" __HERE__ ")");
   // signature to use in the veto list: void G4Step::SetSecondary(G4TrackVector *)
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/G4Step.hh:179:10
-  t53.method("SetSecondary", static_cast<void (G4Step::*)(G4TrackVector *) >(&G4Step::SetSecondary));
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Step.hh:179:10
+  t56.method("SetSecondary", static_cast<void (G4Step::*)(G4TrackVector *) >(&G4Step::SetSecondary));
 
   /* End of G4Step class method wrappers
    **********************************************************************/

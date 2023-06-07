@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_HepGeom_ScaleX3D(jlcxx::Module& types, jlcxx::TypeWrapper<HepGeom::ScaleX3D>& t79) {
+void add_methods_for_HepGeom_ScaleX3D(jlcxx::Module& types, jlcxx::TypeWrapper<HepGeom::ScaleX3D>& t81) {
 
 
   /**********************************************************************/
@@ -24,8 +24,8 @@ void add_methods_for_HepGeom_ScaleX3D(jlcxx::Module& types, jlcxx::TypeWrapper<H
 
 
   DEBUG_MSG("Adding wrapper for void HepGeom::ScaleX3D::ScaleX3D(double) (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/CLHEP/Geometry/Transform3D.h:761:5
-  t79.constructor<double>(/*finalize=*/true);
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Geometry/Transform3D.h:761:5
+  t81.constructor<double>(/*finalize=*/true);
 
   /* End of HepGeom::ScaleX3D class method wrappers
    **********************************************************************/

@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_FTFP_BERT(jlcxx::Module& types, jlcxx::TypeWrapper<FTFP_BERT>& t170) {
+void add_methods_for_FTFP_BERT(jlcxx::Module& types, jlcxx::TypeWrapper<FTFP_BERT>& t175) {
 
 
   /**********************************************************************/
@@ -24,8 +24,8 @@ void add_methods_for_FTFP_BERT(jlcxx::Module& types, jlcxx::TypeWrapper<FTFP_BER
 
 
   DEBUG_MSG("Adding wrapper for void FTFP_BERT::FTFP_BERT(G4int) (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/3ddffb81697f6dd4742c75d8b8d14865fe8a388c/include/Geant4/FTFP_BERT.hh:49:3
-  t170.constructor<G4int>(/*finalize=*/true);
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/FTFP_BERT.hh:49:3
+  t175.constructor<G4int>(/*finalize=*/true);
 
   /* End of FTFP_BERT class method wrappers
    **********************************************************************/

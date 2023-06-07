@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4JLActionInitialization(jlcxx::Module& types, jlcxx::TypeWrapper<G4JLActionInitialization>& t101) {
+void add_methods_for_G4JLActionInitialization(jlcxx::Module& types, jlcxx::TypeWrapper<G4JLActionInitialization>& t103) {
 
 
   /**********************************************************************/
@@ -25,48 +25,48 @@ void add_methods_for_G4JLActionInitialization(jlcxx::Module& types, jlcxx::TypeW
 
   DEBUG_MSG("Adding wrapper for void G4JLActionInitialization::G4JLActionInitialization(build_f, build_f) (" __HERE__ ")");
   // defined in ./cpp/Geant4Wrap.h:79:5
-  t101.constructor<build_f>(/*finalize=*/true);
-  t101.constructor<build_f, build_f>(/*finalize=*/true);
+  t103.constructor<build_f>(/*finalize=*/true);
+  t103.constructor<build_f, build_f>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for void G4JLActionInitialization::BuildForMaster() (" __HERE__ ")");
   // signature to use in the veto list: void G4JLActionInitialization::BuildForMaster()
   // defined in ./cpp/Geant4Wrap.h:82:10
-  t101.method("BuildForMaster", static_cast<void (G4JLActionInitialization::*)()  const>(&G4JLActionInitialization::BuildForMaster));
+  t103.method("BuildForMaster", static_cast<void (G4JLActionInitialization::*)()  const>(&G4JLActionInitialization::BuildForMaster));
 
   DEBUG_MSG("Adding wrapper for void G4JLActionInitialization::Build() (" __HERE__ ")");
   // signature to use in the veto list: void G4JLActionInitialization::Build()
   // defined in ./cpp/Geant4Wrap.h:83:10
-  t101.method("Build", static_cast<void (G4JLActionInitialization::*)()  const>(&G4JLActionInitialization::Build));
+  t103.method("Build", static_cast<void (G4JLActionInitialization::*)()  const>(&G4JLActionInitialization::Build));
 
   DEBUG_MSG("Adding wrapper for void G4JLActionInitialization::SetUserAction(G4VUserPrimaryGeneratorAction *) (" __HERE__ ")");
   // signature to use in the veto list: void G4JLActionInitialization::SetUserAction(G4VUserPrimaryGeneratorAction *)
   // defined in ./cpp/Geant4Wrap.h:85:10
-  t101.method("SetUserAction", static_cast<void (G4JLActionInitialization::*)(G4VUserPrimaryGeneratorAction *)  const>(&G4JLActionInitialization::SetUserAction));
+  t103.method("SetUserAction", static_cast<void (G4JLActionInitialization::*)(G4VUserPrimaryGeneratorAction *)  const>(&G4JLActionInitialization::SetUserAction));
 
   DEBUG_MSG("Adding wrapper for void G4JLActionInitialization::SetUserAction(G4UserRunAction *) (" __HERE__ ")");
   // signature to use in the veto list: void G4JLActionInitialization::SetUserAction(G4UserRunAction *)
   // defined in ./cpp/Geant4Wrap.h:86:10
-  t101.method("SetUserAction", static_cast<void (G4JLActionInitialization::*)(G4UserRunAction *)  const>(&G4JLActionInitialization::SetUserAction));
+  t103.method("SetUserAction", static_cast<void (G4JLActionInitialization::*)(G4UserRunAction *)  const>(&G4JLActionInitialization::SetUserAction));
 
   DEBUG_MSG("Adding wrapper for void G4JLActionInitialization::SetUserAction(G4UserEventAction *) (" __HERE__ ")");
   // signature to use in the veto list: void G4JLActionInitialization::SetUserAction(G4UserEventAction *)
   // defined in ./cpp/Geant4Wrap.h:87:10
-  t101.method("SetUserAction", static_cast<void (G4JLActionInitialization::*)(G4UserEventAction *)  const>(&G4JLActionInitialization::SetUserAction));
+  t103.method("SetUserAction", static_cast<void (G4JLActionInitialization::*)(G4UserEventAction *)  const>(&G4JLActionInitialization::SetUserAction));
 
   DEBUG_MSG("Adding wrapper for void G4JLActionInitialization::SetUserAction(G4UserStackingAction *) (" __HERE__ ")");
   // signature to use in the veto list: void G4JLActionInitialization::SetUserAction(G4UserStackingAction *)
   // defined in ./cpp/Geant4Wrap.h:88:10
-  t101.method("SetUserAction", static_cast<void (G4JLActionInitialization::*)(G4UserStackingAction *)  const>(&G4JLActionInitialization::SetUserAction));
+  t103.method("SetUserAction", static_cast<void (G4JLActionInitialization::*)(G4UserStackingAction *)  const>(&G4JLActionInitialization::SetUserAction));
 
   DEBUG_MSG("Adding wrapper for void G4JLActionInitialization::SetUserAction(G4UserTrackingAction *) (" __HERE__ ")");
   // signature to use in the veto list: void G4JLActionInitialization::SetUserAction(G4UserTrackingAction *)
   // defined in ./cpp/Geant4Wrap.h:89:10
-  t101.method("SetUserAction", static_cast<void (G4JLActionInitialization::*)(G4UserTrackingAction *)  const>(&G4JLActionInitialization::SetUserAction));
+  t103.method("SetUserAction", static_cast<void (G4JLActionInitialization::*)(G4UserTrackingAction *)  const>(&G4JLActionInitialization::SetUserAction));
 
   DEBUG_MSG("Adding wrapper for void G4JLActionInitialization::SetUserAction(G4UserSteppingAction *) (" __HERE__ ")");
   // signature to use in the veto list: void G4JLActionInitialization::SetUserAction(G4UserSteppingAction *)
   // defined in ./cpp/Geant4Wrap.h:90:10
-  t101.method("SetUserAction", static_cast<void (G4JLActionInitialization::*)(G4UserSteppingAction *)  const>(&G4JLActionInitialization::SetUserAction));
+  t103.method("SetUserAction", static_cast<void (G4JLActionInitialization::*)(G4UserSteppingAction *)  const>(&G4JLActionInitialization::SetUserAction));
 
   /* End of G4JLActionInitialization class method wrappers
    **********************************************************************/
