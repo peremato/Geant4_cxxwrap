@@ -1137,11 +1137,11 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& types){
   auto t101 = types.add_type<G4JLSensDet>("G4JLSensDet", jlcxx::julia_base_type<G4VSensitiveDetector>());
 
   DEBUG_MSG("Adding wrapper for type G4JLDetectorConstruction (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:61:7
+  // defined in ./cpp/Geant4Wrap.h:67:7
   auto t102 = types.add_type<G4JLDetectorConstruction>("G4JLDetectorConstruction", jlcxx::julia_base_type<G4VUserDetectorConstruction>());
 
   DEBUG_MSG("Adding wrapper for type G4JLActionInitialization (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:76:7
+  // defined in ./cpp/Geant4Wrap.h:86:7
   auto t103 = types.add_type<G4JLActionInitialization>("G4JLActionInitialization", jlcxx::julia_base_type<G4VUserActionInitialization>());
   t103.template constructor<>(/*finalize=*/true);
 
@@ -1166,30 +1166,30 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& types){
   t107.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4JLParticleGun (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:98:7
+  // defined in ./cpp/Geant4Wrap.h:112:7
   auto t108 = types.add_type<G4JLParticleGun>("G4JLParticleGun", jlcxx::julia_base_type<G4VUserPrimaryGeneratorAction>());
   t108.template constructor<>(/*finalize=*/false);
 
   DEBUG_MSG("Adding wrapper for type G4JLWorkerInitialization (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:109:7
+  // defined in ./cpp/Geant4Wrap.h:123:7
   auto t109 = types.add_type<G4JLWorkerInitialization>("G4JLWorkerInitialization", jlcxx::julia_base_type<G4UserWorkerInitialization>());
   t109.template constructor<>(/*finalize=*/false);
 
   DEBUG_MSG("Adding wrapper for type G4JLGeneratorAction (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:122:7
+  // defined in ./cpp/Geant4Wrap.h:136:7
   auto t110 = types.add_type<G4JLGeneratorAction>("G4JLGeneratorAction", jlcxx::julia_base_type<G4VUserPrimaryGeneratorAction>());
 
   DEBUG_MSG("Adding wrapper for type G4JLSteppingAction (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:133:7
+  // defined in ./cpp/Geant4Wrap.h:148:7
   auto t111 = types.add_type<G4JLSteppingAction>("G4JLSteppingAction", jlcxx::julia_base_type<G4UserSteppingAction>());
 
   DEBUG_MSG("Adding wrapper for type G4JLTrackingAction (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:144:7
+  // defined in ./cpp/Geant4Wrap.h:160:7
   auto t112 = types.add_type<G4JLTrackingAction>("G4JLTrackingAction", jlcxx::julia_base_type<G4UserTrackingAction>());
   t112.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4JLRunAction (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:158:7
+  // defined in ./cpp/Geant4Wrap.h:178:7
   auto t113 = types.add_type<G4JLRunAction>("G4JLRunAction", jlcxx::julia_base_type<G4UserRunAction>());
   t113.template constructor<>(/*finalize=*/false);
 
@@ -1199,7 +1199,7 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& types){
   t114.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4JLEventAction (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:171:7
+  // defined in ./cpp/Geant4Wrap.h:195:7
   auto t115 = types.add_type<G4JLEventAction>("G4JLEventAction", jlcxx::julia_base_type<G4UserEventAction>());
   t115.template constructor<>(/*finalize=*/true);
 
@@ -1909,42 +1909,42 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& types){
 
   DEBUG_MSG("Adding wrapper for G4PolyconeSideRZ & GetPolyCorner(const G4Polycone &, G4int) (" __HERE__ ")");
   // signature to use in the veto list: G4PolyconeSideRZ & GetPolyCorner(const G4Polycone &, G4int)
-  // defined in ./cpp/Geant4Wrap.h:184:19
+  // defined in ./cpp/Geant4Wrap.h:212:19
   types.method("GetPolyCorner", static_cast<G4PolyconeSideRZ & (*)(const G4Polycone &, G4int) >(&GetPolyCorner));
 
   DEBUG_MSG("Adding wrapper for void SetParticleByName(G4ParticleGun *, const char *) (" __HERE__ ")");
   // signature to use in the veto list: void SetParticleByName(G4ParticleGun *, const char *)
-  // defined in ./cpp/Geant4Wrap.h:186:6
+  // defined in ./cpp/Geant4Wrap.h:214:6
   types.method("SetParticleByName", static_cast<void (*)(G4ParticleGun *, const char *) >(&SetParticleByName));
 
   DEBUG_MSG("Adding wrapper for G4ParticleDefinition * FindParticle(const char *) (" __HERE__ ")");
   // signature to use in the veto list: G4ParticleDefinition * FindParticle(const char *)
-  // defined in ./cpp/Geant4Wrap.h:187:23
+  // defined in ./cpp/Geant4Wrap.h:215:23
   types.method("FindParticle", static_cast<G4ParticleDefinition * (*)(const char *) >(&FindParticle));
 
   DEBUG_MSG("Adding wrapper for G4String make_G4String(const char *) (" __HERE__ ")");
   // signature to use in the veto list: G4String make_G4String(const char *)
-  // defined in ./cpp/Geant4Wrap.h:188:17
+  // defined in ./cpp/Geant4Wrap.h:216:17
   types.method("make_G4String", static_cast<G4String (*)(const char *) >(&make_G4String));
 
   DEBUG_MSG("Adding wrapper for char * G4JL_getenv(const char *) (" __HERE__ ")");
   // signature to use in the veto list: char * G4JL_getenv(const char *)
-  // defined in ./cpp/Geant4Wrap.h:189:7
+  // defined in ./cpp/Geant4Wrap.h:217:7
   types.method("G4JL_getenv", static_cast<char * (*)(const char *) >(&G4JL_getenv));
 
   DEBUG_MSG("Adding wrapper for int G4JL_setenv(const char *, const char *) (" __HERE__ ")");
   // signature to use in the veto list: int G4JL_setenv(const char *, const char *)
-  // defined in ./cpp/Geant4Wrap.h:190:7
+  // defined in ./cpp/Geant4Wrap.h:218:7
   types.method("G4JL_setenv", static_cast<int (*)(const char *, const char *) >(&G4JL_setenv));
 
   DEBUG_MSG("Adding wrapper for void G4JL_init() (" __HERE__ ")");
   // signature to use in the veto list: void G4JL_init()
-  // defined in ./cpp/Geant4Wrap.h:191:7
+  // defined in ./cpp/Geant4Wrap.h:219:7
   types.method("G4JL_init", static_cast<void (*)() >(&G4JL_init));
 
   DEBUG_MSG("Adding wrapper for void G4JL_println(const char *) (" __HERE__ ")");
   // signature to use in the veto list: void G4JL_println(const char *)
-  // defined in ./cpp/Geant4Wrap.h:192:7
+  // defined in ./cpp/Geant4Wrap.h:220:7
   types.method("G4JL_println", static_cast<void (*)(const char *) >(&G4JL_println));
 
   DEBUG_MSG("Adding wrapper for CLHEP::HepBoost CLHEP::inverseOf(const CLHEP::HepBoost &) (" __HERE__ ")");

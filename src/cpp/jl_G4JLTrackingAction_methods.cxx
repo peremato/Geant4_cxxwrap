@@ -23,19 +23,21 @@ void add_methods_for_G4JLTrackingAction(jlcxx::Module& types, jlcxx::TypeWrapper
    */
 
 
-  DEBUG_MSG("Adding wrapper for void G4JLTrackingAction::G4JLTrackingAction(trackaction_f, trackaction_f) (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:146:5
+  DEBUG_MSG("Adding wrapper for void G4JLTrackingAction::G4JLTrackingAction(trackaction_f, void *, trackaction_f, void *) (" __HERE__ ")");
+  // defined in ./cpp/Geant4Wrap.h:162:5
   t112.constructor<trackaction_f>(/*finalize=*/true);
-  t112.constructor<trackaction_f, trackaction_f>(/*finalize=*/true);
+  t112.constructor<trackaction_f, void *>(/*finalize=*/true);
+  t112.constructor<trackaction_f, void *, trackaction_f>(/*finalize=*/true);
+  t112.constructor<trackaction_f, void *, trackaction_f, void *>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for void G4JLTrackingAction::PreUserTrackingAction(const G4Track *) (" __HERE__ ")");
   // signature to use in the veto list: void G4JLTrackingAction::PreUserTrackingAction(const G4Track *)
-  // defined in ./cpp/Geant4Wrap.h:148:10
+  // defined in ./cpp/Geant4Wrap.h:166:10
   t112.method("PreUserTrackingAction", static_cast<void (G4JLTrackingAction::*)(const G4Track *) >(&G4JLTrackingAction::PreUserTrackingAction));
 
   DEBUG_MSG("Adding wrapper for void G4JLTrackingAction::PostUserTrackingAction(const G4Track *) (" __HERE__ ")");
   // signature to use in the veto list: void G4JLTrackingAction::PostUserTrackingAction(const G4Track *)
-  // defined in ./cpp/Geant4Wrap.h:149:10
+  // defined in ./cpp/Geant4Wrap.h:167:10
   t112.method("PostUserTrackingAction", static_cast<void (G4JLTrackingAction::*)(const G4Track *) >(&G4JLTrackingAction::PostUserTrackingAction));
 
   /* End of G4JLTrackingAction class method wrappers

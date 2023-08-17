@@ -24,27 +24,27 @@ void add_methods_for_G4JLWorkerInitialization(jlcxx::Module& types, jlcxx::TypeW
 
   DEBUG_MSG("Adding wrapper for void G4JLWorkerInitialization::WorkerInitialize() (" __HERE__ ")");
   // signature to use in the veto list: void G4JLWorkerInitialization::WorkerInitialize()
-  // defined in ./cpp/Geant4Wrap.h:113:18
+  // defined in ./cpp/Geant4Wrap.h:127:18
   t109.method("WorkerInitialize", static_cast<void (G4JLWorkerInitialization::*)()  const>(&G4JLWorkerInitialization::WorkerInitialize));
 
   DEBUG_MSG("Adding wrapper for void G4JLWorkerInitialization::WorkerStart() (" __HERE__ ")");
   // signature to use in the veto list: void G4JLWorkerInitialization::WorkerStart()
-  // defined in ./cpp/Geant4Wrap.h:114:18
+  // defined in ./cpp/Geant4Wrap.h:128:18
   t109.method("WorkerStart", static_cast<void (G4JLWorkerInitialization::*)()  const>(&G4JLWorkerInitialization::WorkerStart));
 
   DEBUG_MSG("Adding wrapper for void G4JLWorkerInitialization::WorkerRunStart() (" __HERE__ ")");
   // signature to use in the veto list: void G4JLWorkerInitialization::WorkerRunStart()
-  // defined in ./cpp/Geant4Wrap.h:115:18
+  // defined in ./cpp/Geant4Wrap.h:129:18
   t109.method("WorkerRunStart", static_cast<void (G4JLWorkerInitialization::*)()  const>(&G4JLWorkerInitialization::WorkerRunStart));
 
   DEBUG_MSG("Adding wrapper for void G4JLWorkerInitialization::WorkerRunEnd() (" __HERE__ ")");
   // signature to use in the veto list: void G4JLWorkerInitialization::WorkerRunEnd()
-  // defined in ./cpp/Geant4Wrap.h:116:18
+  // defined in ./cpp/Geant4Wrap.h:130:18
   t109.method("WorkerRunEnd", static_cast<void (G4JLWorkerInitialization::*)()  const>(&G4JLWorkerInitialization::WorkerRunEnd));
 
   DEBUG_MSG("Adding wrapper for void G4JLWorkerInitialization::WorkerStop() (" __HERE__ ")");
   // signature to use in the veto list: void G4JLWorkerInitialization::WorkerStop()
-  // defined in ./cpp/Geant4Wrap.h:117:18
+  // defined in ./cpp/Geant4Wrap.h:131:18
   t109.method("WorkerStop", static_cast<void (G4JLWorkerInitialization::*)()  const>(&G4JLWorkerInitialization::WorkerStop));
 
   /* End of G4JLWorkerInitialization class method wrappers

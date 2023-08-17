@@ -24,12 +24,12 @@ void add_methods_for_G4JLParticleGun(jlcxx::Module& types, jlcxx::TypeWrapper<G4
 
   DEBUG_MSG("Adding wrapper for G4ParticleGun * G4JLParticleGun::GetGun() (" __HERE__ ")");
   // signature to use in the veto list: G4ParticleGun * G4JLParticleGun::GetGun()
-  // defined in ./cpp/Geant4Wrap.h:102:18
+  // defined in ./cpp/Geant4Wrap.h:116:18
   t108.method("GetGun", static_cast<G4ParticleGun * (G4JLParticleGun::*)()  const>(&G4JLParticleGun::GetGun));
 
   DEBUG_MSG("Adding wrapper for void G4JLParticleGun::GeneratePrimaries(G4Event *) (" __HERE__ ")");
   // signature to use in the veto list: void G4JLParticleGun::GeneratePrimaries(G4Event *)
-  // defined in ./cpp/Geant4Wrap.h:103:8
+  // defined in ./cpp/Geant4Wrap.h:117:8
   t108.method("GeneratePrimaries", static_cast<void (G4JLParticleGun::*)(G4Event *) >(&G4JLParticleGun::GeneratePrimaries));
 
   /* End of G4JLParticleGun class method wrappers
