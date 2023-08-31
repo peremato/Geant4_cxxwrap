@@ -24,24 +24,24 @@ void add_methods_for_G4JLDetectorConstruction(jlcxx::Module& types, jlcxx::TypeW
 
 
   DEBUG_MSG("Adding wrapper for void G4JLDetectorConstruction::G4JLDetectorConstruction(construct_f, void *, sdandf_f, void *) (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:69:5
+  // defined in ./cpp/Geant4Wrap.h:70:5
   t102.constructor<construct_f, void *>(/*finalize=*/false);
   t102.constructor<construct_f, void *, sdandf_f>(/*finalize=*/false);
   t102.constructor<construct_f, void *, sdandf_f, void *>(/*finalize=*/false);
 
   DEBUG_MSG("Adding wrapper for G4VPhysicalVolume * G4JLDetectorConstruction::Construct() (" __HERE__ ")");
   // signature to use in the veto list: G4VPhysicalVolume * G4JLDetectorConstruction::Construct()
-  // defined in ./cpp/Geant4Wrap.h:73:32
+  // defined in ./cpp/Geant4Wrap.h:74:32
   t102.method("Construct", static_cast<G4VPhysicalVolume * (G4JLDetectorConstruction::*)() >(&G4JLDetectorConstruction::Construct));
 
   DEBUG_MSG("Adding wrapper for void G4JLDetectorConstruction::ConstructSDandField() (" __HERE__ ")");
   // signature to use in the veto list: void G4JLDetectorConstruction::ConstructSDandField()
-  // defined in ./cpp/Geant4Wrap.h:74:18
+  // defined in ./cpp/Geant4Wrap.h:75:18
   t102.method("ConstructSDandField", static_cast<void (G4JLDetectorConstruction::*)() >(&G4JLDetectorConstruction::ConstructSDandField));
 
   DEBUG_MSG("Adding wrapper for void G4JLDetectorConstruction::SetSensitiveDetector(const G4String &, G4JLSensDet *, G4bool) (" __HERE__ ")");
   // signature to use in the veto list: void G4JLDetectorConstruction::SetSensitiveDetector(const G4String &, G4JLSensDet *, G4bool)
-  // defined in ./cpp/Geant4Wrap.h:75:10
+  // defined in ./cpp/Geant4Wrap.h:76:10
   t102.method("SetSensitiveDetector", static_cast<void (G4JLDetectorConstruction::*)(const G4String &, G4JLSensDet *, G4bool) >(&G4JLDetectorConstruction::SetSensitiveDetector));
   t102.method("SetSensitiveDetector", [](G4JLDetectorConstruction& a, const G4String & arg0, G4JLSensDet * arg1)->void{ a.SetSensitiveDetector(arg0, arg1); });
   t102.method("SetSensitiveDetector", [](G4JLDetectorConstruction* a, const G4String & arg0, G4JLSensDet * arg1)->void{ a->SetSensitiveDetector(arg0, arg1); });

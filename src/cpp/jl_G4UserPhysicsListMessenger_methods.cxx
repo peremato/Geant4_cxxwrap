@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4UserPhysicsListMessenger(jlcxx::Module& types, jlcxx::TypeWrapper<G4UserPhysicsListMessenger>& t184) {
+void add_methods_for_G4UserPhysicsListMessenger(jlcxx::Module& types, jlcxx::TypeWrapper<G4UserPhysicsListMessenger>& t185) {
 
 
   /**********************************************************************/
@@ -25,17 +25,17 @@ void add_methods_for_G4UserPhysicsListMessenger(jlcxx::Module& types, jlcxx::Typ
 
   DEBUG_MSG("Adding wrapper for void G4UserPhysicsListMessenger::G4UserPhysicsListMessenger(G4VUserPhysicsList *) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4UserPhysicsListMessenger.hh:67:5
-  t184.constructor<G4VUserPhysicsList *>(/*finalize=*/true);
+  t185.constructor<G4VUserPhysicsList *>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for void G4UserPhysicsListMessenger::SetNewValue(G4UIcommand *, G4String) (" __HERE__ ")");
   // signature to use in the veto list: void G4UserPhysicsListMessenger::SetNewValue(G4UIcommand *, G4String)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4UserPhysicsListMessenger.hh:70:18
-  t184.method("SetNewValue", static_cast<void (G4UserPhysicsListMessenger::*)(G4UIcommand *, G4String) >(&G4UserPhysicsListMessenger::SetNewValue));
+  t185.method("SetNewValue", static_cast<void (G4UserPhysicsListMessenger::*)(G4UIcommand *, G4String) >(&G4UserPhysicsListMessenger::SetNewValue));
 
   DEBUG_MSG("Adding wrapper for G4String G4UserPhysicsListMessenger::GetCurrentValue(G4UIcommand *) (" __HERE__ ")");
   // signature to use in the veto list: G4String G4UserPhysicsListMessenger::GetCurrentValue(G4UIcommand *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4UserPhysicsListMessenger.hh:71:22
-  t184.method("GetCurrentValue", static_cast<G4String (G4UserPhysicsListMessenger::*)(G4UIcommand *) >(&G4UserPhysicsListMessenger::GetCurrentValue));
+  t185.method("GetCurrentValue", static_cast<G4String (G4UserPhysicsListMessenger::*)(G4UIcommand *) >(&G4UserPhysicsListMessenger::GetCurrentValue));
 
   /* End of G4UserPhysicsListMessenger class method wrappers
    **********************************************************************/

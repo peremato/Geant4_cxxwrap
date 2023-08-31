@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_CLHEP_HepLorentzRotation_HepLorentzRotation_row(jlcxx::Module& types, jlcxx::TypeWrapper<CLHEP::HepLorentzRotation::HepLorentzRotation_row>& t207) {
+void add_methods_for_CLHEP_HepLorentzRotation_HepLorentzRotation_row(jlcxx::Module& types, jlcxx::TypeWrapper<CLHEP::HepLorentzRotation::HepLorentzRotation_row>& t208) {
 
 
   /**********************************************************************/
@@ -25,13 +25,13 @@ void add_methods_for_CLHEP_HepLorentzRotation_HepLorentzRotation_row(jlcxx::Modu
 
   DEBUG_MSG("Adding wrapper for void CLHEP::HepLorentzRotation::HepLorentzRotation_row::HepLorentzRotation_row(const CLHEP::HepLorentzRotation &, int) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Vector/LorentzRotation.h:178:12
-  t207.constructor<const CLHEP::HepLorentzRotation &, int>(/*finalize=*/true);
+  t208.constructor<const CLHEP::HepLorentzRotation &, int>(/*finalize=*/true);
   types.set_override_module(jl_base_module);
 
 
   DEBUG_MSG("Adding getindex method to wrap double CLHEP::HepLorentzRotation::HepLorentzRotation_row::operator[](int) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Vector/LorentzRotation.h:179:19
-  t207.method("getindex",
+  t208.method("getindex",
     [](CLHEP::HepLorentzRotation::HepLorentzRotation_row& a, int i){
     return a[i];
   });

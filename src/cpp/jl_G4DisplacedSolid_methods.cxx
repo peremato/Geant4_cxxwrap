@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4DisplacedSolid(jlcxx::Module& types, jlcxx::TypeWrapper<G4DisplacedSolid>& t124) {
+void add_methods_for_G4DisplacedSolid(jlcxx::Module& types, jlcxx::TypeWrapper<G4DisplacedSolid>& t127) {
 
 
   /**********************************************************************/
@@ -25,188 +25,188 @@ void add_methods_for_G4DisplacedSolid(jlcxx::Module& types, jlcxx::TypeWrapper<G
 
   DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::G4DisplacedSolid(const G4String &, G4VSolid *, G4RotationMatrix *, const G4ThreeVector &) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:49:5
-  t124.constructor<const G4String &, G4VSolid *, G4RotationMatrix *, const G4ThreeVector &>(/*finalize=*/true);
+  t127.constructor<const G4String &, G4VSolid *, G4RotationMatrix *, const G4ThreeVector &>(/*finalize=*/true);
 
 
   DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::G4DisplacedSolid(const G4String &, G4VSolid *, const G4Transform3D &) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:54:5
-  t124.constructor<const G4String &, G4VSolid *, const G4Transform3D &>(/*finalize=*/true);
+  t127.constructor<const G4String &, G4VSolid *, const G4Transform3D &>(/*finalize=*/true);
 
 
   DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::G4DisplacedSolid(const G4String &, G4VSolid *, const G4AffineTransform) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:58:5
-  t124.constructor<const G4String &, G4VSolid *, const G4AffineTransform>(/*finalize=*/true);
+  t127.constructor<const G4String &, G4VSolid *, const G4AffineTransform>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for EInside G4DisplacedSolid::Inside(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: EInside G4DisplacedSolid::Inside(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:65:13
-  t124.method("Inside", static_cast<EInside (G4DisplacedSolid::*)(const G4ThreeVector &)  const>(&G4DisplacedSolid::Inside));
+  t127.method("Inside", static_cast<EInside (G4DisplacedSolid::*)(const G4ThreeVector &)  const>(&G4DisplacedSolid::Inside));
 
   DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::BoundingLimits(G4ThreeVector &, G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: void G4DisplacedSolid::BoundingLimits(G4ThreeVector &, G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:67:10
-  t124.method("BoundingLimits", static_cast<void (G4DisplacedSolid::*)(G4ThreeVector &, G4ThreeVector &)  const>(&G4DisplacedSolid::BoundingLimits));
+  t127.method("BoundingLimits", static_cast<void (G4DisplacedSolid::*)(G4ThreeVector &, G4ThreeVector &)  const>(&G4DisplacedSolid::BoundingLimits));
 
   DEBUG_MSG("Adding wrapper for G4ThreeVector G4DisplacedSolid::SurfaceNormal(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4ThreeVector G4DisplacedSolid::SurfaceNormal(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:74:19
-  t124.method("SurfaceNormal", static_cast<G4ThreeVector (G4DisplacedSolid::*)(const G4ThreeVector &)  const>(&G4DisplacedSolid::SurfaceNormal));
+  t127.method("SurfaceNormal", static_cast<G4ThreeVector (G4DisplacedSolid::*)(const G4ThreeVector &)  const>(&G4DisplacedSolid::SurfaceNormal));
 
   DEBUG_MSG("Adding wrapper for G4double G4DisplacedSolid::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4DisplacedSolid::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:76:14
-  t124.method("DistanceToIn", static_cast<G4double (G4DisplacedSolid::*)(const G4ThreeVector &, const G4ThreeVector &)  const>(&G4DisplacedSolid::DistanceToIn));
+  t127.method("DistanceToIn", static_cast<G4double (G4DisplacedSolid::*)(const G4ThreeVector &, const G4ThreeVector &)  const>(&G4DisplacedSolid::DistanceToIn));
 
   DEBUG_MSG("Adding wrapper for G4double G4DisplacedSolid::DistanceToIn(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4DisplacedSolid::DistanceToIn(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:79:14
-  t124.method("DistanceToIn", static_cast<G4double (G4DisplacedSolid::*)(const G4ThreeVector &)  const>(&G4DisplacedSolid::DistanceToIn));
+  t127.method("DistanceToIn", static_cast<G4double (G4DisplacedSolid::*)(const G4ThreeVector &)  const>(&G4DisplacedSolid::DistanceToIn));
 
   DEBUG_MSG("Adding wrapper for G4double G4DisplacedSolid::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4DisplacedSolid::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:81:14
-  t124.method("DistanceToOut", static_cast<G4double (G4DisplacedSolid::*)(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)  const>(&G4DisplacedSolid::DistanceToOut));
-  t124.method("DistanceToOut", [](G4DisplacedSolid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a.DistanceToOut(arg0, arg1); });
-  t124.method("DistanceToOut", [](G4DisplacedSolid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a.DistanceToOut(arg0, arg1, arg2); });
-  t124.method("DistanceToOut", [](G4DisplacedSolid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a.DistanceToOut(arg0, arg1, arg2, arg3); });
-  t124.method("DistanceToOut", [](G4DisplacedSolid const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a->DistanceToOut(arg0, arg1); });
-  t124.method("DistanceToOut", [](G4DisplacedSolid const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a->DistanceToOut(arg0, arg1, arg2); });
-  t124.method("DistanceToOut", [](G4DisplacedSolid const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a->DistanceToOut(arg0, arg1, arg2, arg3); });
+  t127.method("DistanceToOut", static_cast<G4double (G4DisplacedSolid::*)(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)  const>(&G4DisplacedSolid::DistanceToOut));
+  t127.method("DistanceToOut", [](G4DisplacedSolid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a.DistanceToOut(arg0, arg1); });
+  t127.method("DistanceToOut", [](G4DisplacedSolid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a.DistanceToOut(arg0, arg1, arg2); });
+  t127.method("DistanceToOut", [](G4DisplacedSolid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a.DistanceToOut(arg0, arg1, arg2, arg3); });
+  t127.method("DistanceToOut", [](G4DisplacedSolid const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a->DistanceToOut(arg0, arg1); });
+  t127.method("DistanceToOut", [](G4DisplacedSolid const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a->DistanceToOut(arg0, arg1, arg2); });
+  t127.method("DistanceToOut", [](G4DisplacedSolid const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a->DistanceToOut(arg0, arg1, arg2, arg3); });
 
   DEBUG_MSG("Adding wrapper for G4double G4DisplacedSolid::DistanceToOut(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4DisplacedSolid::DistanceToOut(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:87:14
-  t124.method("DistanceToOut", static_cast<G4double (G4DisplacedSolid::*)(const G4ThreeVector &)  const>(&G4DisplacedSolid::DistanceToOut));
+  t127.method("DistanceToOut", static_cast<G4double (G4DisplacedSolid::*)(const G4ThreeVector &)  const>(&G4DisplacedSolid::DistanceToOut));
 
   DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::ComputeDimensions(G4VPVParameterisation *, const G4int, const G4VPhysicalVolume *) (" __HERE__ ")");
   // signature to use in the veto list: void G4DisplacedSolid::ComputeDimensions(G4VPVParameterisation *, const G4int, const G4VPhysicalVolume *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:90:10
-  t124.method("ComputeDimensions", static_cast<void (G4DisplacedSolid::*)(G4VPVParameterisation *, const G4int, const G4VPhysicalVolume *) >(&G4DisplacedSolid::ComputeDimensions));
+  t127.method("ComputeDimensions", static_cast<void (G4DisplacedSolid::*)(G4VPVParameterisation *, const G4int, const G4VPhysicalVolume *) >(&G4DisplacedSolid::ComputeDimensions));
 
   DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::CleanTransformations() (" __HERE__ ")");
   // signature to use in the veto list: void G4DisplacedSolid::CleanTransformations()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:94:10
-  t124.method("CleanTransformations", static_cast<void (G4DisplacedSolid::*)() >(&G4DisplacedSolid::CleanTransformations));
+  t127.method("CleanTransformations", static_cast<void (G4DisplacedSolid::*)() >(&G4DisplacedSolid::CleanTransformations));
 
   DEBUG_MSG("Adding wrapper for G4double G4DisplacedSolid::GetCubicVolume() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4DisplacedSolid::GetCubicVolume()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:96:14
-  t124.method("GetCubicVolume", static_cast<G4double (G4DisplacedSolid::*)() >(&G4DisplacedSolid::GetCubicVolume));
+  t127.method("GetCubicVolume", static_cast<G4double (G4DisplacedSolid::*)() >(&G4DisplacedSolid::GetCubicVolume));
 
   DEBUG_MSG("Adding wrapper for G4double G4DisplacedSolid::GetSurfaceArea() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4DisplacedSolid::GetSurfaceArea()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:97:14
-  t124.method("GetSurfaceArea", static_cast<G4double (G4DisplacedSolid::*)() >(&G4DisplacedSolid::GetSurfaceArea));
+  t127.method("GetSurfaceArea", static_cast<G4double (G4DisplacedSolid::*)() >(&G4DisplacedSolid::GetSurfaceArea));
 
   DEBUG_MSG("Adding wrapper for G4ThreeVector G4DisplacedSolid::GetPointOnSurface() (" __HERE__ ")");
   // signature to use in the veto list: G4ThreeVector G4DisplacedSolid::GetPointOnSurface()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:99:19
-  t124.method("GetPointOnSurface", static_cast<G4ThreeVector (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::GetPointOnSurface));
+  t127.method("GetPointOnSurface", static_cast<G4ThreeVector (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::GetPointOnSurface));
 
   DEBUG_MSG("Adding wrapper for G4GeometryType G4DisplacedSolid::GetEntityType() (" __HERE__ ")");
   // signature to use in the veto list: G4GeometryType G4DisplacedSolid::GetEntityType()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:101:21
-  t124.method("GetEntityType", static_cast<G4GeometryType (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::GetEntityType));
+  t127.method("GetEntityType", static_cast<G4GeometryType (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::GetEntityType));
 
   DEBUG_MSG("Adding wrapper for G4VSolid * G4DisplacedSolid::Clone() (" __HERE__ ")");
   // signature to use in the veto list: G4VSolid * G4DisplacedSolid::Clone()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:102:15
-  t124.method("Clone", static_cast<G4VSolid * (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::Clone));
+  t127.method("Clone", static_cast<G4VSolid * (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::Clone));
 
   DEBUG_MSG("Adding wrapper for const G4DisplacedSolid * G4DisplacedSolid::GetDisplacedSolidPtr() (" __HERE__ ")");
   // signature to use in the veto list: const G4DisplacedSolid * G4DisplacedSolid::GetDisplacedSolidPtr()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:104:29
-  t124.method("GetDisplacedSolidPtr", static_cast<const G4DisplacedSolid * (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::GetDisplacedSolidPtr));
+  t127.method("GetDisplacedSolidPtr", static_cast<const G4DisplacedSolid * (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::GetDisplacedSolidPtr));
 
   DEBUG_MSG("Adding wrapper for G4DisplacedSolid * G4DisplacedSolid::GetDisplacedSolidPtr() (" __HERE__ ")");
   // signature to use in the veto list: G4DisplacedSolid * G4DisplacedSolid::GetDisplacedSolidPtr()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:105:29
-  t124.method("GetDisplacedSolidPtr", static_cast<G4DisplacedSolid * (G4DisplacedSolid::*)() >(&G4DisplacedSolid::GetDisplacedSolidPtr));
+  t127.method("GetDisplacedSolidPtr", static_cast<G4DisplacedSolid * (G4DisplacedSolid::*)() >(&G4DisplacedSolid::GetDisplacedSolidPtr));
 
   DEBUG_MSG("Adding wrapper for G4VSolid * G4DisplacedSolid::GetConstituentMovedSolid() (" __HERE__ ")");
   // signature to use in the veto list: G4VSolid * G4DisplacedSolid::GetConstituentMovedSolid()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:109:15
-  t124.method("GetConstituentMovedSolid", static_cast<G4VSolid * (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::GetConstituentMovedSolid));
+  t127.method("GetConstituentMovedSolid", static_cast<G4VSolid * (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::GetConstituentMovedSolid));
 
   DEBUG_MSG("Adding wrapper for G4AffineTransform G4DisplacedSolid::GetTransform() (" __HERE__ ")");
   // signature to use in the veto list: G4AffineTransform G4DisplacedSolid::GetTransform()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:111:23
-  t124.method("GetTransform", static_cast<G4AffineTransform (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::GetTransform));
+  t127.method("GetTransform", static_cast<G4AffineTransform (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::GetTransform));
 
   DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::SetTransform(G4AffineTransform &) (" __HERE__ ")");
   // signature to use in the veto list: void G4DisplacedSolid::SetTransform(G4AffineTransform &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:112:16
-  t124.method("SetTransform", static_cast<void (G4DisplacedSolid::*)(G4AffineTransform &) >(&G4DisplacedSolid::SetTransform));
+  t127.method("SetTransform", static_cast<void (G4DisplacedSolid::*)(G4AffineTransform &) >(&G4DisplacedSolid::SetTransform));
 
   DEBUG_MSG("Adding wrapper for G4AffineTransform G4DisplacedSolid::GetDirectTransform() (" __HERE__ ")");
   // signature to use in the veto list: G4AffineTransform G4DisplacedSolid::GetDirectTransform()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:114:23
-  t124.method("GetDirectTransform", static_cast<G4AffineTransform (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::GetDirectTransform));
+  t127.method("GetDirectTransform", static_cast<G4AffineTransform (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::GetDirectTransform));
 
   DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::SetDirectTransform(G4AffineTransform &) (" __HERE__ ")");
   // signature to use in the veto list: void G4DisplacedSolid::SetDirectTransform(G4AffineTransform &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:115:16
-  t124.method("SetDirectTransform", static_cast<void (G4DisplacedSolid::*)(G4AffineTransform &) >(&G4DisplacedSolid::SetDirectTransform));
+  t127.method("SetDirectTransform", static_cast<void (G4DisplacedSolid::*)(G4AffineTransform &) >(&G4DisplacedSolid::SetDirectTransform));
 
   DEBUG_MSG("Adding wrapper for G4RotationMatrix G4DisplacedSolid::GetFrameRotation() (" __HERE__ ")");
   // signature to use in the veto list: G4RotationMatrix G4DisplacedSolid::GetFrameRotation()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:118:22
-  t124.method("GetFrameRotation", static_cast<G4RotationMatrix (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::GetFrameRotation));
+  t127.method("GetFrameRotation", static_cast<G4RotationMatrix (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::GetFrameRotation));
 
   DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::SetFrameRotation(const G4RotationMatrix &) (" __HERE__ ")");
   // signature to use in the veto list: void G4DisplacedSolid::SetFrameRotation(const G4RotationMatrix &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:119:10
-  t124.method("SetFrameRotation", static_cast<void (G4DisplacedSolid::*)(const G4RotationMatrix &) >(&G4DisplacedSolid::SetFrameRotation));
+  t127.method("SetFrameRotation", static_cast<void (G4DisplacedSolid::*)(const G4RotationMatrix &) >(&G4DisplacedSolid::SetFrameRotation));
 
   DEBUG_MSG("Adding wrapper for G4ThreeVector G4DisplacedSolid::GetFrameTranslation() (" __HERE__ ")");
   // signature to use in the veto list: G4ThreeVector G4DisplacedSolid::GetFrameTranslation()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:121:19
-  t124.method("GetFrameTranslation", static_cast<G4ThreeVector (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::GetFrameTranslation));
+  t127.method("GetFrameTranslation", static_cast<G4ThreeVector (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::GetFrameTranslation));
 
   DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::SetFrameTranslation(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: void G4DisplacedSolid::SetFrameTranslation(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:122:10
-  t124.method("SetFrameTranslation", static_cast<void (G4DisplacedSolid::*)(const G4ThreeVector &) >(&G4DisplacedSolid::SetFrameTranslation));
+  t127.method("SetFrameTranslation", static_cast<void (G4DisplacedSolid::*)(const G4ThreeVector &) >(&G4DisplacedSolid::SetFrameTranslation));
 
   DEBUG_MSG("Adding wrapper for G4RotationMatrix G4DisplacedSolid::GetObjectRotation() (" __HERE__ ")");
   // signature to use in the veto list: G4RotationMatrix G4DisplacedSolid::GetObjectRotation()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:125:22
-  t124.method("GetObjectRotation", static_cast<G4RotationMatrix (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::GetObjectRotation));
+  t127.method("GetObjectRotation", static_cast<G4RotationMatrix (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::GetObjectRotation));
 
   DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::SetObjectRotation(const G4RotationMatrix &) (" __HERE__ ")");
   // signature to use in the veto list: void G4DisplacedSolid::SetObjectRotation(const G4RotationMatrix &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:126:10
-  t124.method("SetObjectRotation", static_cast<void (G4DisplacedSolid::*)(const G4RotationMatrix &) >(&G4DisplacedSolid::SetObjectRotation));
+  t127.method("SetObjectRotation", static_cast<void (G4DisplacedSolid::*)(const G4RotationMatrix &) >(&G4DisplacedSolid::SetObjectRotation));
 
   DEBUG_MSG("Adding wrapper for G4ThreeVector G4DisplacedSolid::GetObjectTranslation() (" __HERE__ ")");
   // signature to use in the veto list: G4ThreeVector G4DisplacedSolid::GetObjectTranslation()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:128:19
-  t124.method("GetObjectTranslation", static_cast<G4ThreeVector (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::GetObjectTranslation));
+  t127.method("GetObjectTranslation", static_cast<G4ThreeVector (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::GetObjectTranslation));
 
   DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::SetObjectTranslation(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: void G4DisplacedSolid::SetObjectTranslation(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:129:10
-  t124.method("SetObjectTranslation", static_cast<void (G4DisplacedSolid::*)(const G4ThreeVector &) >(&G4DisplacedSolid::SetObjectTranslation));
+  t127.method("SetObjectTranslation", static_cast<void (G4DisplacedSolid::*)(const G4ThreeVector &) >(&G4DisplacedSolid::SetObjectTranslation));
 
 
   DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::G4DisplacedSolid(const G4DisplacedSolid &) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:139:5
-  t124.constructor<const G4DisplacedSolid &>(/*finalize=*/true);
+  t127.constructor<const G4DisplacedSolid &>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for G4DisplacedSolid & G4DisplacedSolid::operator=(const G4DisplacedSolid &) (" __HERE__ ")");
   // signature to use in the veto list: G4DisplacedSolid & G4DisplacedSolid::operator=(const G4DisplacedSolid &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:140:23
-  t124.method("assign", static_cast<G4DisplacedSolid & (G4DisplacedSolid::*)(const G4DisplacedSolid &) >(&G4DisplacedSolid::operator=));
+  t127.method("assign", static_cast<G4DisplacedSolid & (G4DisplacedSolid::*)(const G4DisplacedSolid &) >(&G4DisplacedSolid::operator=));
 
   DEBUG_MSG("Adding wrapper for G4Polyhedron * G4DisplacedSolid::CreatePolyhedron() (" __HERE__ ")");
   // signature to use in the veto list: G4Polyhedron * G4DisplacedSolid::CreatePolyhedron()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:144:19
-  t124.method("CreatePolyhedron", static_cast<G4Polyhedron * (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::CreatePolyhedron));
+  t127.method("CreatePolyhedron", static_cast<G4Polyhedron * (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::CreatePolyhedron));
 
   DEBUG_MSG("Adding wrapper for G4Polyhedron * G4DisplacedSolid::GetPolyhedron() (" __HERE__ ")");
   // signature to use in the veto list: G4Polyhedron * G4DisplacedSolid::GetPolyhedron()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:145:19
-  t124.method("GetPolyhedron", static_cast<G4Polyhedron * (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::GetPolyhedron));
+  t127.method("GetPolyhedron", static_cast<G4Polyhedron * (G4DisplacedSolid::*)()  const>(&G4DisplacedSolid::GetPolyhedron));
 
   /* End of G4DisplacedSolid class method wrappers
    **********************************************************************/

@@ -6,6 +6,7 @@
 #include "G4PVPlacement.hh"
 #include "G4ParticleTable.hh"
 #include "G4Polycone.hh"
+#include "G4Polyhedra.hh"
 
 #include <stdexcept>
 
@@ -111,4 +112,18 @@ G4PolyconeSideRZ& GetPolyCorner(const G4Polycone& pc, G4int index) {
   static G4PolyconeSideRZ side;
   side = pc.GetCorner(index);
   return side;
+}
+G4PolyhedraSideRZ& GetPolyCorner(const G4Polyhedra& pc, G4int index) {
+  static G4PolyhedraSideRZ side;
+  side = pc.GetCorner(index);
+  return side;
+}
+
+void G4JLMagField::GetFieldValue( const G4double point[3], G4double* field) const {
+  auto position = G4ThreeVector(point[0], point[1], point[2]);
+  auto vfield =  G4ThreeVector();
+  getfield(vfield, position, field_d);
+  field[0] = vfield.x();
+  field[1] = vfield.y();
+  field[2] = vfield.z();
 }

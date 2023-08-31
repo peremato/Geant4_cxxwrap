@@ -15,19 +15,19 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_QGS_BIC(jlcxx::Module& types, jlcxx::TypeWrapper<QGS_BIC>& t190) {
+void add_methods_for_G4JLMagField(jlcxx::Module& types, jlcxx::TypeWrapper<G4JLMagField>& t111) {
 
 
   /**********************************************************************/
-  /* Wrappers for the methods of class QGS_BIC
+  /* Wrappers for the methods of class G4JLMagField
    */
 
 
-  DEBUG_MSG("Adding wrapper for void QGS_BIC::QGS_BIC(G4int) (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/QGS_BIC.hh:48:3
-  t190.constructor<G4int>(/*finalize=*/true);
+  DEBUG_MSG("Adding wrapper for void G4JLMagField::G4JLMagField(getfield_f, void *) (" __HERE__ ")");
+  // defined in ./cpp/Geant4Wrap.h:151:3
+  t111.constructor<getfield_f, void *>(/*finalize=*/true);
 
-  /* End of QGS_BIC class method wrappers
+  /* End of G4JLMagField class method wrappers
    **********************************************************************/
 
 }

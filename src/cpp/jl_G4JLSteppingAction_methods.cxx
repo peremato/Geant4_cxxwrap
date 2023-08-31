@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4JLSteppingAction(jlcxx::Module& types, jlcxx::TypeWrapper<G4JLSteppingAction>& t111) {
+void add_methods_for_G4JLSteppingAction(jlcxx::Module& types, jlcxx::TypeWrapper<G4JLSteppingAction>& t112) {
 
 
   /**********************************************************************/
@@ -24,13 +24,13 @@ void add_methods_for_G4JLSteppingAction(jlcxx::Module& types, jlcxx::TypeWrapper
 
 
   DEBUG_MSG("Adding wrapper for void G4JLSteppingAction::G4JLSteppingAction(stepaction_f, void *) (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:150:3
-  t111.constructor<stepaction_f, void *>(/*finalize=*/true);
+  // defined in ./cpp/Geant4Wrap.h:163:3
+  t112.constructor<stepaction_f, void *>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for void G4JLSteppingAction::UserSteppingAction(const G4Step *) (" __HERE__ ")");
   // signature to use in the veto list: void G4JLSteppingAction::UserSteppingAction(const G4Step *)
-  // defined in ./cpp/Geant4Wrap.h:152:16
-  t111.method("UserSteppingAction", static_cast<void (G4JLSteppingAction::*)(const G4Step *) >(&G4JLSteppingAction::UserSteppingAction));
+  // defined in ./cpp/Geant4Wrap.h:165:16
+  t112.method("UserSteppingAction", static_cast<void (G4JLSteppingAction::*)(const G4Step *) >(&G4JLSteppingAction::UserSteppingAction));
 
   /* End of G4JLSteppingAction class method wrappers
    **********************************************************************/

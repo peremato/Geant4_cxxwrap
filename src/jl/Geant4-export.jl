@@ -40,9 +40,9 @@ export G4FieldManager, G4FieldManager!GetMaxAcceptedEpsilon, G4FieldManager!SetM
 export G4GDMLParser, G4GDMLReadStructure, G4GDMLWriteStructure, G4GRSSolid, G4GRSVolume, G4GenericTrap, G4HCofThisEvent, G4HCtable
 export G4Hype, G4ICRU90StoppingData, G4IntersectionSolid, G4IonisParamElm, G4IonisParamMat, G4Isotope, G4Isotope!GetIsotope
 export G4Isotope!GetNumberOfIsotopes, G4JLActionInitialization, G4JLDetectorConstruction, G4JLEventAction, G4JLExceptionHandler, G4JLGeneratorAction
-export G4JLParticleGun, G4JLRunAction, G4JLSensDet, G4JLSteppingAction, G4JLTrackingAction, G4JLWorkerInitialization, G4JL_getenv
-export G4JL_init, G4JL_println, G4JL_setenv, G4LVData, G4LogicalVolume, G4LogicalVolume!Clean, G4LogicalVolume!GetSolid
-export G4LogicalVolume!SetSolid, G4MTRunManager, G4MTRunManager!ENDWORKER, G4MTRunManager!GetMTMasterRunManagerKernel
+export G4JLMagField, G4JLParticleGun, G4JLRunAction, G4JLSensDet, G4JLSteppingAction, G4JLTrackingAction, G4JLWorkerInitialization
+export G4JL_getenv, G4JL_init, G4JL_println, G4JL_setenv, G4LVData, G4LogicalVolume, G4LogicalVolume!Clean
+export G4LogicalVolume!GetSolid, G4LogicalVolume!SetSolid, G4MTRunManager, G4MTRunManager!ENDWORKER, G4MTRunManager!GetMTMasterRunManagerKernel
 export G4MTRunManager!GetMasterRunManager, G4MTRunManager!GetMasterRunManagerKernel, G4MTRunManager!GetMasterScoringManager, G4MTRunManager!NEXTITERATION
 export G4MTRunManager!PROCESSUI, G4MTRunManager!SeedOncePerCommunication, G4MTRunManager!SetSeedOncePerCommunication, G4MTRunManager!UNDEFINED
 export G4MTRunManager!WorkerActionRequest, G4MTRunManager!addWorld, G4MTRunManagerKernel, G4MagneticField, G4Material, G4Material!GetMaterial

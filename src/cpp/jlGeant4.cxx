@@ -78,12 +78,14 @@ void add_methods_for_G4JLActionInitialization(jlcxx::Module&, jlcxx::TypeWrapper
 void add_methods_for_G4JLParticleGun(jlcxx::Module&, jlcxx::TypeWrapper<G4JLParticleGun>&);
 void add_methods_for_G4JLWorkerInitialization(jlcxx::Module&, jlcxx::TypeWrapper<G4JLWorkerInitialization>&);
 void add_methods_for_G4JLGeneratorAction(jlcxx::Module&, jlcxx::TypeWrapper<G4JLGeneratorAction>&);
+void add_methods_for_G4JLMagField(jlcxx::Module&, jlcxx::TypeWrapper<G4JLMagField>&);
 void add_methods_for_G4JLSteppingAction(jlcxx::Module&, jlcxx::TypeWrapper<G4JLSteppingAction>&);
 void add_methods_for_G4JLTrackingAction(jlcxx::Module&, jlcxx::TypeWrapper<G4JLTrackingAction>&);
 void add_methods_for_G4JLRunAction(jlcxx::Module&, jlcxx::TypeWrapper<G4JLRunAction>&);
 void add_methods_for_G4Run(jlcxx::Module&, jlcxx::TypeWrapper<G4Run>&);
 void add_methods_for_G4JLEventAction(jlcxx::Module&, jlcxx::TypeWrapper<G4JLEventAction>&);
 void add_methods_for_G4VCSGfaceted(jlcxx::Module&, jlcxx::TypeWrapper<G4VCSGfaceted>&);
+void add_methods_for_G4Polyhedra(jlcxx::Module&, jlcxx::TypeWrapper<G4Polyhedra>&);
 void add_methods_for_G4DisplacedSolid(jlcxx::Module&, jlcxx::TypeWrapper<G4DisplacedSolid>&);
 void add_methods_for_G4Navigator(jlcxx::Module&, jlcxx::TypeWrapper<G4Navigator>&);
 void add_methods_for_G4RunManager(jlcxx::Module&, jlcxx::TypeWrapper<G4RunManager>&);
@@ -110,7 +112,6 @@ void add_methods_for_G4Sphere(jlcxx::Module&, jlcxx::TypeWrapper<G4Sphere>&);
 void add_methods_for_G4Orb(jlcxx::Module&, jlcxx::TypeWrapper<G4Orb>&);
 void add_methods_for_G4Ellipsoid(jlcxx::Module&, jlcxx::TypeWrapper<G4Ellipsoid>&);
 void add_methods_for_G4Polycone(jlcxx::Module&, jlcxx::TypeWrapper<G4Polycone>&);
-void add_methods_for_G4Polyhedra(jlcxx::Module&, jlcxx::TypeWrapper<G4Polyhedra>&);
 void add_methods_for_G4Torus(jlcxx::Module&, jlcxx::TypeWrapper<G4Torus>&);
 void add_methods_for_G4Para(jlcxx::Module&, jlcxx::TypeWrapper<G4Para>&);
 void add_methods_for_G4Hype(jlcxx::Module&, jlcxx::TypeWrapper<G4Hype>&);
@@ -333,6 +334,8 @@ namespace jlcxx {
   template<> struct DefaultConstructible<G4JLWorkerInitialization> : std::false_type { };
   template<> struct IsMirroredType<G4JLGeneratorAction> : std::false_type { };
   template<> struct DefaultConstructible<G4JLGeneratorAction> : std::false_type { };
+  template<> struct IsMirroredType<G4JLMagField> : std::false_type { };
+  template<> struct DefaultConstructible<G4JLMagField> : std::false_type { };
   template<> struct IsMirroredType<G4JLSteppingAction> : std::false_type { };
   template<> struct DefaultConstructible<G4JLSteppingAction> : std::false_type { };
   template<> struct IsMirroredType<G4JLTrackingAction> : std::false_type { };
@@ -347,6 +350,10 @@ namespace jlcxx {
   template<> struct DefaultConstructible<G4PolyconeSideRZ> : std::false_type { };
   template<> struct IsMirroredType<G4VCSGfaceted> : std::false_type { };
   template<> struct DefaultConstructible<G4VCSGfaceted> : std::false_type { };
+  template<> struct IsMirroredType<G4PolyhedraSideRZ> : std::false_type { };
+  template<> struct DefaultConstructible<G4PolyhedraSideRZ> : std::false_type { };
+  template<> struct IsMirroredType<G4Polyhedra> : std::false_type { };
+  template<> struct DefaultConstructible<G4Polyhedra> : std::false_type { };
   template<> struct IsMirroredType<G4DCofThisEvent> : std::false_type { };
   template<> struct DefaultConstructible<G4DCofThisEvent> : std::false_type { };
   template<> struct IsMirroredType<G4TrajectoryContainer> : std::false_type { };
@@ -441,10 +448,6 @@ namespace jlcxx {
   template<> struct DefaultConstructible<G4Polycone> : std::false_type { };
   template<> struct IsMirroredType<G4PolyconeHistorical> : std::false_type { };
   template<> struct DefaultConstructible<G4PolyconeHistorical> : std::false_type { };
-  template<> struct IsMirroredType<G4Polyhedra> : std::false_type { };
-  template<> struct DefaultConstructible<G4Polyhedra> : std::false_type { };
-  template<> struct IsMirroredType<G4PolyhedraSideRZ> : std::false_type { };
-  template<> struct DefaultConstructible<G4PolyhedraSideRZ> : std::false_type { };
   template<> struct IsMirroredType<G4PolyhedraHistorical> : std::false_type { };
   template<> struct DefaultConstructible<G4PolyhedraHistorical> : std::false_type { };
   template<> struct IsMirroredType<G4Torus> : std::false_type { };
@@ -557,11 +560,13 @@ namespace jlcxx {
   template<> struct SuperType<G4JLParticleGun> { typedef G4VUserPrimaryGeneratorAction type; };
   template<> struct SuperType<G4JLWorkerInitialization> { typedef G4UserWorkerInitialization type; };
   template<> struct SuperType<G4JLGeneratorAction> { typedef G4VUserPrimaryGeneratorAction type; };
+  template<> struct SuperType<G4JLMagField> { typedef G4MagneticField type; };
   template<> struct SuperType<G4JLSteppingAction> { typedef G4UserSteppingAction type; };
   template<> struct SuperType<G4JLTrackingAction> { typedef G4UserTrackingAction type; };
   template<> struct SuperType<G4JLRunAction> { typedef G4UserRunAction type; };
   template<> struct SuperType<G4JLEventAction> { typedef G4UserEventAction type; };
   template<> struct SuperType<G4VCSGfaceted> { typedef G4VSolid type; };
+  template<> struct SuperType<G4Polyhedra> { typedef G4VCSGfaceted type; };
   template<> struct SuperType<G4DisplacedSolid> { typedef G4VSolid type; };
   template<> struct SuperType<G4GRSVolume> { typedef G4VTouchable type; };
   template<> struct SuperType<G4GRSSolid> { typedef G4VTouchable type; };
@@ -580,7 +585,6 @@ namespace jlcxx {
   template<> struct SuperType<G4Orb> { typedef G4CSGSolid type; };
   template<> struct SuperType<G4Ellipsoid> { typedef G4VSolid type; };
   template<> struct SuperType<G4Polycone> { typedef G4VCSGfaceted type; };
-  template<> struct SuperType<G4Polyhedra> { typedef G4VCSGfaceted type; };
   template<> struct SuperType<G4Torus> { typedef G4CSGSolid type; };
   template<> struct SuperType<G4Para> { typedef G4CSGSolid type; };
   template<> struct SuperType<G4Hype> { typedef G4VSolid type; };
@@ -1128,20 +1132,20 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& types){
   t98.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4JLExceptionHandler (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:28:7
+  // defined in ./cpp/Geant4Wrap.h:29:7
   auto t99 = types.add_type<G4JLExceptionHandler>("G4JLExceptionHandler");
   t99.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4JLSensDet (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:41:7
+  // defined in ./cpp/Geant4Wrap.h:42:7
   auto t101 = types.add_type<G4JLSensDet>("G4JLSensDet", jlcxx::julia_base_type<G4VSensitiveDetector>());
 
   DEBUG_MSG("Adding wrapper for type G4JLDetectorConstruction (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:67:7
+  // defined in ./cpp/Geant4Wrap.h:68:7
   auto t102 = types.add_type<G4JLDetectorConstruction>("G4JLDetectorConstruction", jlcxx::julia_base_type<G4VUserDetectorConstruction>());
 
   DEBUG_MSG("Adding wrapper for type G4JLActionInitialization (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:86:7
+  // defined in ./cpp/Geant4Wrap.h:87:7
   auto t103 = types.add_type<G4JLActionInitialization>("G4JLActionInitialization", jlcxx::julia_base_type<G4VUserActionInitialization>());
   t103.template constructor<>(/*finalize=*/true);
 
@@ -1166,61 +1170,74 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& types){
   t107.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4JLParticleGun (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:112:7
+  // defined in ./cpp/Geant4Wrap.h:113:7
   auto t108 = types.add_type<G4JLParticleGun>("G4JLParticleGun", jlcxx::julia_base_type<G4VUserPrimaryGeneratorAction>());
   t108.template constructor<>(/*finalize=*/false);
 
   DEBUG_MSG("Adding wrapper for type G4JLWorkerInitialization (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:123:7
+  // defined in ./cpp/Geant4Wrap.h:124:7
   auto t109 = types.add_type<G4JLWorkerInitialization>("G4JLWorkerInitialization", jlcxx::julia_base_type<G4UserWorkerInitialization>());
   t109.template constructor<>(/*finalize=*/false);
 
   DEBUG_MSG("Adding wrapper for type G4JLGeneratorAction (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:136:7
+  // defined in ./cpp/Geant4Wrap.h:137:7
   auto t110 = types.add_type<G4JLGeneratorAction>("G4JLGeneratorAction", jlcxx::julia_base_type<G4VUserPrimaryGeneratorAction>());
 
+  DEBUG_MSG("Adding wrapper for type G4JLMagField (" __HERE__ ")");
+  // defined in ./cpp/Geant4Wrap.h:149:7
+  auto t111 = types.add_type<G4JLMagField>("G4JLMagField", jlcxx::julia_base_type<G4MagneticField>());
+
   DEBUG_MSG("Adding wrapper for type G4JLSteppingAction (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:148:7
-  auto t111 = types.add_type<G4JLSteppingAction>("G4JLSteppingAction", jlcxx::julia_base_type<G4UserSteppingAction>());
+  // defined in ./cpp/Geant4Wrap.h:161:7
+  auto t112 = types.add_type<G4JLSteppingAction>("G4JLSteppingAction", jlcxx::julia_base_type<G4UserSteppingAction>());
 
   DEBUG_MSG("Adding wrapper for type G4JLTrackingAction (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:160:7
-  auto t112 = types.add_type<G4JLTrackingAction>("G4JLTrackingAction", jlcxx::julia_base_type<G4UserTrackingAction>());
-  t112.template constructor<>(/*finalize=*/true);
+  // defined in ./cpp/Geant4Wrap.h:173:7
+  auto t113 = types.add_type<G4JLTrackingAction>("G4JLTrackingAction", jlcxx::julia_base_type<G4UserTrackingAction>());
+  t113.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4JLRunAction (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:178:7
-  auto t113 = types.add_type<G4JLRunAction>("G4JLRunAction", jlcxx::julia_base_type<G4UserRunAction>());
-  t113.template constructor<>(/*finalize=*/false);
+  // defined in ./cpp/Geant4Wrap.h:191:7
+  auto t114 = types.add_type<G4JLRunAction>("G4JLRunAction", jlcxx::julia_base_type<G4UserRunAction>());
+  t114.template constructor<>(/*finalize=*/false);
 
   DEBUG_MSG("Adding wrapper for type G4Run (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Run.hh:48:7
-  auto t114 = types.add_type<G4Run>("G4Run");
-  t114.template constructor<>(/*finalize=*/true);
+  auto t115 = types.add_type<G4Run>("G4Run");
+  t115.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4JLEventAction (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:195:7
-  auto t115 = types.add_type<G4JLEventAction>("G4JLEventAction", jlcxx::julia_base_type<G4UserEventAction>());
-  t115.template constructor<>(/*finalize=*/true);
+  // defined in ./cpp/Geant4Wrap.h:208:7
+  auto t116 = types.add_type<G4JLEventAction>("G4JLEventAction", jlcxx::julia_base_type<G4UserEventAction>());
+  t116.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4PolyconeSideRZ (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4PolyconeSide.hh:52:8
-  auto t116 = types.add_type<G4PolyconeSideRZ>("G4PolyconeSideRZ");
-  t116.template constructor<>(/*finalize=*/true);
+  auto t117 = types.add_type<G4PolyconeSideRZ>("G4PolyconeSideRZ");
+  t117.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4VCSGfaceted (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VCSGfaceted.hh:43:7
-  auto t169 = types.add_type<G4VCSGfaceted>("G4VCSGfaceted", jlcxx::julia_base_type<G4VSolid>());
+  auto t172 = types.add_type<G4VCSGfaceted>("G4VCSGfaceted", jlcxx::julia_base_type<G4VSolid>());
+
+  DEBUG_MSG("Adding wrapper for type G4PolyhedraSideRZ (" __HERE__ ")");
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4PolyhedraSide.hh:54:8
+  auto t119 = types.add_type<G4PolyhedraSideRZ>("G4PolyhedraSideRZ");
+  t119.template constructor<>(/*finalize=*/true);
+
+  DEBUG_MSG("Adding wrapper for type G4Polyhedra (" __HERE__ ")");
+  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:74:7
+  auto t120 = types.add_type<G4Polyhedra>("G4Polyhedra", jlcxx::julia_base_type<G4VCSGfaceted>());
 
   DEBUG_MSG("Adding wrapper for type G4DCofThisEvent (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DCofThisEvent.hh:49:7
-  auto t118 = types.add_type<G4DCofThisEvent>("G4DCofThisEvent");
-  t118.template constructor<>(/*finalize=*/true);
+  auto t121 = types.add_type<G4DCofThisEvent>("G4DCofThisEvent");
+  t121.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4TrajectoryContainer (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TrajectoryContainer.hh:47:7
-  auto t119 = types.add_type<G4TrajectoryContainer>("G4TrajectoryContainer");
-  t119.template constructor<>(/*finalize=*/true);
+  auto t122 = types.add_type<G4TrajectoryContainer>("G4TrajectoryContainer");
+  t122.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4VUserEventInformation (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VUserEventInformation.hh:51:7
@@ -1228,22 +1245,22 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& types){
 
   DEBUG_MSG("Adding wrapper for type G4AffineTransform (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4AffineTransform.hh:69:7
-  auto t121 = types.add_type<G4AffineTransform>("G4AffineTransform");
-  t121.template constructor<>(/*finalize=*/true);
+  auto t124 = types.add_type<G4AffineTransform>("G4AffineTransform");
+  t124.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4Polyhedron (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedron.hh:132:7
-  auto t123 = types.add_type<G4Polyhedron>("G4Polyhedron");
-  t123.template constructor<>(/*finalize=*/true);
+  auto t126 = types.add_type<G4Polyhedron>("G4Polyhedron");
+  t126.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4DisplacedSolid (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4DisplacedSolid.hh:45:7
-  auto t124 = types.add_type<G4DisplacedSolid>("G4DisplacedSolid", jlcxx::julia_base_type<G4VSolid>());
+  auto t127 = types.add_type<G4DisplacedSolid>("G4DisplacedSolid", jlcxx::julia_base_type<G4VSolid>());
 
   DEBUG_MSG("Adding wrapper for type G4Navigator (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Navigator.hh:71:7
-  auto t125 = types.add_type<G4Navigator>("G4Navigator");
-  t125.template constructor<>(/*finalize=*/true);
+  auto t128 = types.add_type<G4Navigator>("G4Navigator");
+  t128.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4GRSVolume (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GRSVolume.hh:47:7
@@ -1259,31 +1276,31 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& types){
 
   DEBUG_MSG("Adding wrapper for type G4VoxelNavigation (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VoxelNavigation.hh:63:7
-  auto t129 = types.add_type<G4VoxelNavigation>("G4VoxelNavigation");
-  t129.template constructor<>(/*finalize=*/true);
+  auto t132 = types.add_type<G4VoxelNavigation>("G4VoxelNavigation");
+  t132.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4RunManager (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4RunManager.hh:137:7
-  auto t130 = types.add_type<G4RunManager>("G4RunManager");
-  t130.template constructor<>(/*finalize=*/true);
+  auto t133 = types.add_type<G4RunManager>("G4RunManager");
+  t133.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4VUserPhysicsList (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VUserPhysicsList.hh:106:7
-  auto t133 = types.add_type<G4VUserPhysicsList>("G4VUserPhysicsList");
+  auto t136 = types.add_type<G4VUserPhysicsList>("G4VUserPhysicsList");
 
   DEBUG_MSG("Adding wrapper for type G4PrimaryTransformer (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4PrimaryTransformer.hh:47:7
-  auto t134 = types.add_type<G4PrimaryTransformer>("G4PrimaryTransformer");
-  t134.template constructor<>(/*finalize=*/true);
+  auto t137 = types.add_type<G4PrimaryTransformer>("G4PrimaryTransformer");
+  t137.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4MTRunManager (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4MTRunManager.hh:58:7
-  auto t136 = types.add_type<G4MTRunManager>("G4MTRunManager", jlcxx::julia_base_type<G4RunManager>());
-  t136.template constructor<>(/*finalize=*/true);
+  auto t139 = types.add_type<G4MTRunManager>("G4MTRunManager", jlcxx::julia_base_type<G4RunManager>());
+  t139.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4ScoringManager (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ScoringManager.hh:61:7
-  auto t137 = types.add_type<G4ScoringManager>("G4ScoringManager");
+  auto t140 = types.add_type<G4ScoringManager>("G4ScoringManager");
 
   DEBUG_MSG("Adding wrapper for type CLHEP::HepRandomEngine (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandomEngine.h:53:7
@@ -1291,22 +1308,22 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& types){
 
   DEBUG_MSG("Adding wrapper for type G4RunManagerKernel (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4RunManagerKernel.hh:64:7
-  auto t139 = types.add_type<G4RunManagerKernel>("G4RunManagerKernel");
-  t139.template constructor<>(/*finalize=*/true);
+  auto t142 = types.add_type<G4RunManagerKernel>("G4RunManagerKernel");
+  t142.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4MTRunManagerKernel (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4MTRunManagerKernel.hh:66:7
-  auto t140 = types.add_type<G4MTRunManagerKernel>("G4MTRunManagerKernel", jlcxx::julia_base_type<G4RunManagerKernel>());
-  t140.template constructor<>(/*finalize=*/true);
+  auto t143 = types.add_type<G4MTRunManagerKernel>("G4MTRunManagerKernel", jlcxx::julia_base_type<G4RunManagerKernel>());
+  t143.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4UImanager (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4UImanager.hh:57:7
-  auto t142 = types.add_type<G4UImanager>("G4UImanager");
+  auto t145 = types.add_type<G4UImanager>("G4UImanager");
 
   DEBUG_MSG("Adding wrapper for type G4UIcommand (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4UIcommand.hh:51:7
-  auto t143 = types.add_type<G4UIcommand>("G4UIcommand");
-  t143.template constructor<>(/*finalize=*/true);
+  auto t146 = types.add_type<G4UIcommand>("G4UIcommand");
+  t146.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4VFastSimulationModel (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VFastSimulationModel.hh:60:8
@@ -1314,178 +1331,169 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& types){
 
   DEBUG_MSG("Adding wrapper for type G4VParticleChange (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VParticleChange.hh:68:7
-  auto t146 = types.add_type<G4VParticleChange>("G4VParticleChange");
-  t146.template constructor<>(/*finalize=*/true);
+  auto t149 = types.add_type<G4VParticleChange>("G4VParticleChange");
+  t149.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4NistManager (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4NistManager.hh:82:7
-  auto t147 = types.add_type<G4NistManager>("G4NistManager");
+  auto t150 = types.add_type<G4NistManager>("G4NistManager");
 
   DEBUG_MSG("Adding wrapper for type G4ICRU90StoppingData (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ICRU90StoppingData.hh:56:7
-  auto t148 = types.add_type<G4ICRU90StoppingData>("G4ICRU90StoppingData");
-  t148.template constructor<>(/*finalize=*/true);
+  auto t151 = types.add_type<G4ICRU90StoppingData>("G4ICRU90StoppingData");
+  t151.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4CSGSolid (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4CSGSolid.hh:41:7
-  auto t149 = types.add_type<G4CSGSolid>("G4CSGSolid", jlcxx::julia_base_type<G4VSolid>());
+  auto t152 = types.add_type<G4CSGSolid>("G4CSGSolid", jlcxx::julia_base_type<G4VSolid>());
 
   DEBUG_MSG("Adding wrapper for type G4SteppingVerbose (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4SteppingVerbose.hh:42:7
-  auto t150 = types.add_type<G4SteppingVerbose>("G4SteppingVerbose", jlcxx::julia_base_type<G4VSteppingVerbose>());
-  t150.template constructor<>(/*finalize=*/true);
+  auto t153 = types.add_type<G4SteppingVerbose>("G4SteppingVerbose", jlcxx::julia_base_type<G4VSteppingVerbose>());
+  t153.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4PVPlacement (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4PVPlacement.hh:43:7
-  auto t151 = types.add_type<G4PVPlacement>("G4PVPlacement", jlcxx::julia_base_type<G4VPhysicalVolume>());
+  auto t154 = types.add_type<G4PVPlacement>("G4PVPlacement", jlcxx::julia_base_type<G4VPhysicalVolume>());
 
   DEBUG_MSG("Adding wrapper for type G4ReplicaData (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4PVReplica.hh:73:7
-  auto t152 = types.add_type<G4ReplicaData>("G4ReplicaData");
-  t152.template constructor<>(/*finalize=*/true);
+  auto t155 = types.add_type<G4ReplicaData>("G4ReplicaData");
+  t155.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4PVReplica (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4PVReplica.hh:90:7
-  auto t153 = types.add_type<G4PVReplica>("G4PVReplica", jlcxx::julia_base_type<G4VPhysicalVolume>());
+  auto t156 = types.add_type<G4PVReplica>("G4PVReplica", jlcxx::julia_base_type<G4VPhysicalVolume>());
 
   DEBUG_MSG("Adding wrapper for type G4TransportationManager (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TransportationManager.hh:53:7
-  auto t154 = types.add_type<G4TransportationManager>("G4TransportationManager");
+  auto t157 = types.add_type<G4TransportationManager>("G4TransportationManager");
 
   DEBUG_MSG("Adding wrapper for type G4SafetyHelper (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4SafetyHelper.hh:46:7
-  auto t155 = types.add_type<G4SafetyHelper>("G4SafetyHelper");
-  t155.template constructor<>(/*finalize=*/true);
+  auto t158 = types.add_type<G4SafetyHelper>("G4SafetyHelper");
+  t158.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4Box (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Box.hh:55:7
-  auto t156 = types.add_type<G4Box>("G4Box", jlcxx::julia_base_type<G4CSGSolid>());
+  auto t159 = types.add_type<G4Box>("G4Box", jlcxx::julia_base_type<G4CSGSolid>());
 
   DEBUG_MSG("Adding wrapper for type G4ExtrudedSolid (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:71:7
-  auto t157 = types.add_type<G4ExtrudedSolid>("G4ExtrudedSolid");
+  auto t160 = types.add_type<G4ExtrudedSolid>("G4ExtrudedSolid");
 
   DEBUG_MSG("Adding wrapper for type G4ExtrudedSolid::ZSection (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:76:12
-  auto t158 = types.add_type<G4ExtrudedSolid::ZSection>("G4ExtrudedSolid!ZSection");
-  t158.template constructor<>(/*finalize=*/true);
+  auto t161 = types.add_type<G4ExtrudedSolid::ZSection>("G4ExtrudedSolid!ZSection");
+  t161.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type CLHEP::Hep2Vector (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Vector/TwoVector.h:44:7
-  auto t159 = types.add_type<CLHEP::Hep2Vector>("CLHEP!Hep2Vector");
-  t159.template constructor<>(/*finalize=*/true);
+  auto t162 = types.add_type<CLHEP::Hep2Vector>("CLHEP!Hep2Vector");
+  t162.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4MultiUnion (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4MultiUnion.hh:53:7
-  auto t160 = types.add_type<G4MultiUnion>("G4MultiUnion", jlcxx::julia_base_type<G4VSolid>());
-  t160.template constructor<>(/*finalize=*/true);
+  auto t163 = types.add_type<G4MultiUnion>("G4MultiUnion", jlcxx::julia_base_type<G4VSolid>());
+  t163.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4Voxelizer (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Voxelizer.hh:62:7
-  auto t161 = types.add_type<G4Voxelizer>("G4Voxelizer");
-  t161.template constructor<>(/*finalize=*/true);
+  auto t164 = types.add_type<G4Voxelizer>("G4Voxelizer");
+  t164.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4Trd (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Trd.hh:62:7
-  auto t162 = types.add_type<G4Trd>("G4Trd", jlcxx::julia_base_type<G4CSGSolid>());
+  auto t165 = types.add_type<G4Trd>("G4Trd", jlcxx::julia_base_type<G4CSGSolid>());
 
   DEBUG_MSG("Adding wrapper for type TrapSidePlane (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Trap.hh:90:8
-  auto t163 = types.add_type<TrapSidePlane>("TrapSidePlane");
-  t163.template constructor<>(/*finalize=*/true);
+  auto t166 = types.add_type<TrapSidePlane>("TrapSidePlane");
+  t166.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4Trap (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Trap.hh:109:7
-  auto t164 = types.add_type<G4Trap>("G4Trap", jlcxx::julia_base_type<G4CSGSolid>());
+  auto t167 = types.add_type<G4Trap>("G4Trap", jlcxx::julia_base_type<G4CSGSolid>());
 
   DEBUG_MSG("Adding wrapper for type G4Cons (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Cons.hh:77:7
-  auto t165 = types.add_type<G4Cons>("G4Cons", jlcxx::julia_base_type<G4CSGSolid>());
+  auto t168 = types.add_type<G4Cons>("G4Cons", jlcxx::julia_base_type<G4CSGSolid>());
 
   DEBUG_MSG("Adding wrapper for type G4Sphere (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Sphere.hh:80:7
-  auto t166 = types.add_type<G4Sphere>("G4Sphere", jlcxx::julia_base_type<G4CSGSolid>());
+  auto t169 = types.add_type<G4Sphere>("G4Sphere", jlcxx::julia_base_type<G4CSGSolid>());
 
   DEBUG_MSG("Adding wrapper for type G4Orb (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Orb.hh:55:7
-  auto t167 = types.add_type<G4Orb>("G4Orb", jlcxx::julia_base_type<G4CSGSolid>());
+  auto t170 = types.add_type<G4Orb>("G4Orb", jlcxx::julia_base_type<G4CSGSolid>());
 
   DEBUG_MSG("Adding wrapper for type G4Ellipsoid (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Ellipsoid.hh:63:7
-  auto t168 = types.add_type<G4Ellipsoid>("G4Ellipsoid", jlcxx::julia_base_type<G4VSolid>());
+  auto t171 = types.add_type<G4Ellipsoid>("G4Ellipsoid", jlcxx::julia_base_type<G4VSolid>());
 
   DEBUG_MSG("Adding wrapper for type G4Polycone (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:75:7
-  auto t117 = types.add_type<G4Polycone>("G4Polycone", jlcxx::julia_base_type<G4VCSGfaceted>());
+  auto t118 = types.add_type<G4Polycone>("G4Polycone", jlcxx::julia_base_type<G4VCSGfaceted>());
 
   DEBUG_MSG("Adding wrapper for type G4PolyconeHistorical (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4PolyconeHistorical.hh:39:7
-  auto t170 = types.add_type<G4PolyconeHistorical>("G4PolyconeHistorical");
-  t170.template constructor<>(/*finalize=*/true);
-
-  DEBUG_MSG("Adding wrapper for type G4Polyhedra (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:74:7
-  auto t171 = types.add_type<G4Polyhedra>("G4Polyhedra", jlcxx::julia_base_type<G4VCSGfaceted>());
-
-  DEBUG_MSG("Adding wrapper for type G4PolyhedraSideRZ (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4PolyhedraSide.hh:54:8
-  auto t172 = types.add_type<G4PolyhedraSideRZ>("G4PolyhedraSideRZ");
-  t172.template constructor<>(/*finalize=*/true);
+  auto t173 = types.add_type<G4PolyconeHistorical>("G4PolyconeHistorical");
+  t173.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4PolyhedraHistorical (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4PolyhedraHistorical.hh:39:7
-  auto t173 = types.add_type<G4PolyhedraHistorical>("G4PolyhedraHistorical");
-  t173.template constructor<>(/*finalize=*/true);
+  auto t174 = types.add_type<G4PolyhedraHistorical>("G4PolyhedraHistorical");
+  t174.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4Torus (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Torus.hh:91:7
-  auto t174 = types.add_type<G4Torus>("G4Torus", jlcxx::julia_base_type<G4CSGSolid>());
+  auto t175 = types.add_type<G4Torus>("G4Torus", jlcxx::julia_base_type<G4CSGSolid>());
 
   DEBUG_MSG("Adding wrapper for type G4Para (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Para.hh:78:7
-  auto t175 = types.add_type<G4Para>("G4Para", jlcxx::julia_base_type<G4CSGSolid>());
+  auto t176 = types.add_type<G4Para>("G4Para", jlcxx::julia_base_type<G4CSGSolid>());
 
   DEBUG_MSG("Adding wrapper for type G4Hype (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Hype.hh:68:7
-  auto t176 = types.add_type<G4Hype>("G4Hype", jlcxx::julia_base_type<G4VSolid>());
+  auto t177 = types.add_type<G4Hype>("G4Hype", jlcxx::julia_base_type<G4VSolid>());
 
   DEBUG_MSG("Adding wrapper for type G4Tubs (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Tubs.hh:74:7
-  auto t177 = types.add_type<G4Tubs>("G4Tubs", jlcxx::julia_base_type<G4CSGSolid>());
+  auto t178 = types.add_type<G4Tubs>("G4Tubs", jlcxx::julia_base_type<G4CSGSolid>());
 
   DEBUG_MSG("Adding wrapper for type G4GDMLParser (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GDMLParser.hh:51:7
-  auto t178 = types.add_type<G4GDMLParser>("G4GDMLParser");
-  t178.template constructor<>(/*finalize=*/true);
+  auto t179 = types.add_type<G4GDMLParser>("G4GDMLParser");
+  t179.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4GDMLReadStructure (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GDMLReadStructure.hh:51:7
-  auto t179 = types.add_type<G4GDMLReadStructure>("G4GDMLReadStructure");
-  t179.template constructor<>(/*finalize=*/true);
+  auto t180 = types.add_type<G4GDMLReadStructure>("G4GDMLReadStructure");
+  t180.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4GDMLWriteStructure (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GDMLWriteStructure.hh:51:7
-  auto t180 = types.add_type<G4GDMLWriteStructure>("G4GDMLWriteStructure");
-  t180.template constructor<>(/*finalize=*/true);
+  auto t181 = types.add_type<G4GDMLWriteStructure>("G4GDMLWriteStructure");
+  t181.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4GDMLMatrix (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GDMLReadDefine.hh:45:7
-  auto t181 = types.add_type<G4GDMLMatrix>("G4GDMLMatrix");
-  t181.template constructor<>(/*finalize=*/true);
+  auto t182 = types.add_type<G4GDMLMatrix>("G4GDMLMatrix");
+  t182.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4GDMLAuxStructType (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GDMLAuxStructType.hh:36:8
-  auto t182 = types.add_type<G4GDMLAuxStructType>("G4GDMLAuxStructType");
-  t182.template constructor<>(/*finalize=*/true);
+  auto t183 = types.add_type<G4GDMLAuxStructType>("G4GDMLAuxStructType");
+  t183.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4VUPLData (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VUserPhysicsList.hh:60:7
-  auto t183 = types.add_type<G4VUPLData>("G4VUPLData");
-  t183.template constructor<>(/*finalize=*/true);
+  auto t184 = types.add_type<G4VUPLData>("G4VUPLData");
+  t184.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4UserPhysicsListMessenger (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4UserPhysicsListMessenger.hh:63:7
-  auto t184 = types.add_type<G4UserPhysicsListMessenger>("G4UserPhysicsListMessenger");
+  auto t185 = types.add_type<G4UserPhysicsListMessenger>("G4UserPhysicsListMessenger");
 
   DEBUG_MSG("Adding wrapper for type G4PhysicsListHelper (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4PhysicsListHelper.hh:50:7
@@ -1493,13 +1501,13 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& types){
 
   DEBUG_MSG("Adding wrapper for type G4VMPLData (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VModularPhysicsList.hh:54:7
-  auto t186 = types.add_type<G4VMPLData>("G4VMPLData");
-  t186.template constructor<>(/*finalize=*/true);
+  auto t187 = types.add_type<G4VMPLData>("G4VMPLData");
+  t187.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4VModularPhysicsList (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VModularPhysicsList.hh:86:7
-  auto t187 = types.add_type<G4VModularPhysicsList>("G4VModularPhysicsList", jlcxx::julia_base_type<G4VUserPhysicsList>());
-  t187.template constructor<>(/*finalize=*/true);
+  auto t188 = types.add_type<G4VModularPhysicsList>("G4VModularPhysicsList", jlcxx::julia_base_type<G4VUserPhysicsList>());
+  t188.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4VPhysicsConstructor (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VPhysicsConstructor.hh:108:7
@@ -1507,112 +1515,112 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& types){
 
   DEBUG_MSG("Adding wrapper for type QGS_BIC (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/QGS_BIC.hh:45:7
-  auto t189 = types.add_type<QGS_BIC>("QGS_BIC", jlcxx::julia_base_type<G4VModularPhysicsList>());
-  t189.template constructor<>(/*finalize=*/true);
+  auto t190 = types.add_type<QGS_BIC>("QGS_BIC", jlcxx::julia_base_type<G4VModularPhysicsList>());
+  t190.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type QBBC (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/QBBC.hh:43:7
-  auto t190 = types.add_type<QBBC>("QBBC", jlcxx::julia_base_type<G4VModularPhysicsList>());
-  t190.template constructor<>(/*finalize=*/true);
+  auto t191 = types.add_type<QBBC>("QBBC", jlcxx::julia_base_type<G4VModularPhysicsList>());
+  t191.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type FTFP_BERT (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/FTFP_BERT.hh:46:7
-  auto t191 = types.add_type<FTFP_BERT>("FTFP_BERT", jlcxx::julia_base_type<G4VModularPhysicsList>());
-  t191.template constructor<>(/*finalize=*/true);
+  auto t192 = types.add_type<FTFP_BERT>("FTFP_BERT", jlcxx::julia_base_type<G4VModularPhysicsList>());
+  t192.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4HCtable (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4HCtable.hh:49:7
-  auto t192 = types.add_type<G4HCtable>("G4HCtable");
-  t192.template constructor<>(/*finalize=*/true);
+  auto t193 = types.add_type<G4HCtable>("G4HCtable");
+  t193.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4CutTubs (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4CutTubs.hh:59:7
-  auto t193 = types.add_type<G4CutTubs>("G4CutTubs", jlcxx::julia_base_type<G4CSGSolid>());
+  auto t194 = types.add_type<G4CutTubs>("G4CutTubs", jlcxx::julia_base_type<G4CSGSolid>());
 
   DEBUG_MSG("Adding wrapper for type G4EllipticalTube (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:60:7
-  auto t194 = types.add_type<G4EllipticalTube>("G4EllipticalTube", jlcxx::julia_base_type<G4VSolid>());
+  auto t195 = types.add_type<G4EllipticalTube>("G4EllipticalTube", jlcxx::julia_base_type<G4VSolid>());
 
   DEBUG_MSG("Adding wrapper for type G4EllipticalCone (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:87:7
-  auto t195 = types.add_type<G4EllipticalCone>("G4EllipticalCone", jlcxx::julia_base_type<G4VSolid>());
+  auto t196 = types.add_type<G4EllipticalCone>("G4EllipticalCone", jlcxx::julia_base_type<G4VSolid>());
 
   DEBUG_MSG("Adding wrapper for type G4Paraboloid (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:67:7
-  auto t196 = types.add_type<G4Paraboloid>("G4Paraboloid", jlcxx::julia_base_type<G4VSolid>());
+  auto t197 = types.add_type<G4Paraboloid>("G4Paraboloid", jlcxx::julia_base_type<G4VSolid>());
 
   DEBUG_MSG("Adding wrapper for type G4Tet (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Tet.hh:55:7
-  auto t197 = types.add_type<G4Tet>("G4Tet", jlcxx::julia_base_type<G4VSolid>());
+  auto t198 = types.add_type<G4Tet>("G4Tet", jlcxx::julia_base_type<G4VSolid>());
 
   DEBUG_MSG("Adding wrapper for type G4TwistedBox (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedBox.hh:48:7
-  auto t198 = types.add_type<G4TwistedBox>("G4TwistedBox");
+  auto t199 = types.add_type<G4TwistedBox>("G4TwistedBox");
 
   DEBUG_MSG("Adding wrapper for type G4TwistedTrap (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedTrap.hh:60:7
-  auto t199 = types.add_type<G4TwistedTrap>("G4TwistedTrap");
+  auto t200 = types.add_type<G4TwistedTrap>("G4TwistedTrap");
 
   DEBUG_MSG("Adding wrapper for type G4TwistedTrd (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedTrd.hh:50:7
-  auto t200 = types.add_type<G4TwistedTrd>("G4TwistedTrd");
+  auto t201 = types.add_type<G4TwistedTrd>("G4TwistedTrd");
 
   DEBUG_MSG("Adding wrapper for type G4GenericTrap (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:79:7
-  auto t201 = types.add_type<G4GenericTrap>("G4GenericTrap", jlcxx::julia_base_type<G4VSolid>());
+  auto t202 = types.add_type<G4GenericTrap>("G4GenericTrap", jlcxx::julia_base_type<G4VSolid>());
 
   DEBUG_MSG("Adding wrapper for type G4TwistedTubs (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedTubs.hh:55:7
-  auto t202 = types.add_type<G4TwistedTubs>("G4TwistedTubs", jlcxx::julia_base_type<G4VSolid>());
+  auto t203 = types.add_type<G4TwistedTubs>("G4TwistedTubs", jlcxx::julia_base_type<G4VSolid>());
 
   DEBUG_MSG("Adding wrapper for type CLHEP::HepRep4x4Symmetric (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Vector/RotationInterfaces.h:366:8
-  auto t203 = types.add_type<CLHEP::HepRep4x4Symmetric>("CLHEP!HepRep4x4Symmetric");
-  t203.template constructor<>(/*finalize=*/true);
+  auto t204 = types.add_type<CLHEP::HepRep4x4Symmetric>("CLHEP!HepRep4x4Symmetric");
+  t204.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type CLHEP::HepBoostX (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Vector/BoostX.h:37:7
-  auto t204 = types.add_type<CLHEP::HepBoostX>("CLHEP!HepBoostX");
-  t204.template constructor<>(/*finalize=*/true);
+  auto t205 = types.add_type<CLHEP::HepBoostX>("CLHEP!HepBoostX");
+  t205.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type CLHEP::HepBoostY (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Vector/BoostY.h:37:7
-  auto t205 = types.add_type<CLHEP::HepBoostY>("CLHEP!HepBoostY");
-  t205.template constructor<>(/*finalize=*/true);
+  auto t206 = types.add_type<CLHEP::HepBoostY>("CLHEP!HepBoostY");
+  t206.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type CLHEP::HepBoostZ (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Vector/BoostZ.h:37:7
-  auto t206 = types.add_type<CLHEP::HepBoostZ>("CLHEP!HepBoostZ");
-  t206.template constructor<>(/*finalize=*/true);
+  auto t207 = types.add_type<CLHEP::HepBoostZ>("CLHEP!HepBoostZ");
+  t207.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type CLHEP::HepLorentzRotation::HepLorentzRotation_row (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Vector/LorentzRotation.h:176:9
-  auto t207 = types.add_type<CLHEP::HepLorentzRotation::HepLorentzRotation_row>("CLHEP!HepLorentzRotation!HepLorentzRotation_row");
+  auto t208 = types.add_type<CLHEP::HepLorentzRotation::HepLorentzRotation_row>("CLHEP!HepLorentzRotation!HepLorentzRotation_row");
 
   DEBUG_MSG("Adding wrapper for type G4BooleanSolid (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4BooleanSolid.hh:46:7
-  auto t208 = types.add_type<G4BooleanSolid>("G4BooleanSolid", jlcxx::julia_base_type<G4VSolid>());
+  auto t209 = types.add_type<G4BooleanSolid>("G4BooleanSolid", jlcxx::julia_base_type<G4VSolid>());
 
   DEBUG_MSG("Adding wrapper for type G4UnionSolid (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4UnionSolid.hh:45:7
-  auto t209 = types.add_type<G4UnionSolid>("G4UnionSolid", jlcxx::julia_base_type<G4BooleanSolid>());
+  auto t210 = types.add_type<G4UnionSolid>("G4UnionSolid", jlcxx::julia_base_type<G4BooleanSolid>());
 
   DEBUG_MSG("Adding wrapper for type G4SubtractionSolid (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4SubtractionSolid.hh:46:7
-  auto t210 = types.add_type<G4SubtractionSolid>("G4SubtractionSolid", jlcxx::julia_base_type<G4BooleanSolid>());
+  auto t211 = types.add_type<G4SubtractionSolid>("G4SubtractionSolid", jlcxx::julia_base_type<G4BooleanSolid>());
 
   DEBUG_MSG("Adding wrapper for type G4IntersectionSolid (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4IntersectionSolid.hh:45:7
-  auto t211 = types.add_type<G4IntersectionSolid>("G4IntersectionSolid", jlcxx::julia_base_type<G4BooleanSolid>());
+  auto t212 = types.add_type<G4IntersectionSolid>("G4IntersectionSolid", jlcxx::julia_base_type<G4BooleanSolid>());
 
   DEBUG_MSG("Adding wrapper for type G4UniformMagField (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4UniformMagField.hh:41:7
-  auto t212 = types.add_type<G4UniformMagField>("G4UniformMagField", jlcxx::julia_base_type<G4MagneticField>());
+  auto t213 = types.add_type<G4UniformMagField>("G4UniformMagField", jlcxx::julia_base_type<G4MagneticField>());
 
   DEBUG_MSG("Adding wrapper for type G4Colour (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Colour.hh:82:7
-  auto t213 = types.add_type<G4Colour>("G4Colour");
-  t213.template constructor<>(/*finalize=*/true);
+  auto t214 = types.add_type<G4Colour>("G4Colour");
+  t214.template constructor<>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for type G4VScoringMesh (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VScoringMesh.hh:54:7
@@ -1620,8 +1628,8 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& types){
 
   DEBUG_MSG("Adding wrapper for type G4VScoreWriter (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VScoreWriter.hh:40:7
-  auto t217 = types.add_type<G4VScoreWriter>("G4VScoreWriter");
-  t217.template constructor<>(/*finalize=*/true);
+  auto t218 = types.add_type<G4VScoreWriter>("G4VScoreWriter");
+  t218.template constructor<>(/*finalize=*/true);
 
   /* call functions to add all methods for each wrapped type */
   add_methods_for_G4ParticleDefinition(types, t3);
@@ -1686,68 +1694,69 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& types){
   add_methods_for_G4JLParticleGun(types, t108);
   add_methods_for_G4JLWorkerInitialization(types, t109);
   add_methods_for_G4JLGeneratorAction(types, t110);
-  add_methods_for_G4JLSteppingAction(types, t111);
-  add_methods_for_G4JLTrackingAction(types, t112);
-  add_methods_for_G4JLRunAction(types, t113);
-  add_methods_for_G4Run(types, t114);
-  add_methods_for_G4JLEventAction(types, t115);
-  add_methods_for_G4VCSGfaceted(types, t169);
-  add_methods_for_G4DisplacedSolid(types, t124);
-  add_methods_for_G4Navigator(types, t125);
-  add_methods_for_G4RunManager(types, t130);
-  add_methods_for_G4VUserPhysicsList(types, t133);
-  add_methods_for_G4MTRunManager(types, t136);
-  add_methods_for_G4ScoringManager(types, t137);
-  add_methods_for_G4MTRunManagerKernel(types, t140);
-  add_methods_for_G4UImanager(types, t142);
-  add_methods_for_G4NistManager(types, t147);
-  add_methods_for_G4CSGSolid(types, t149);
-  add_methods_for_G4SteppingVerbose(types, t150);
-  add_methods_for_G4PVPlacement(types, t151);
-  add_methods_for_G4ReplicaData(types, t152);
-  add_methods_for_G4PVReplica(types, t153);
-  add_methods_for_G4TransportationManager(types, t154);
-  add_methods_for_G4Box(types, t156);
-  add_methods_for_G4ExtrudedSolid(types, t157);
-  add_methods_for_G4ExtrudedSolid_ZSection(types, t158);
-  add_methods_for_G4MultiUnion(types, t160);
-  add_methods_for_G4Trd(types, t162);
-  add_methods_for_G4Trap(types, t164);
-  add_methods_for_G4Cons(types, t165);
-  add_methods_for_G4Sphere(types, t166);
-  add_methods_for_G4Orb(types, t167);
-  add_methods_for_G4Ellipsoid(types, t168);
-  add_methods_for_G4Polycone(types, t117);
-  add_methods_for_G4Polyhedra(types, t171);
-  add_methods_for_G4Torus(types, t174);
-  add_methods_for_G4Para(types, t175);
-  add_methods_for_G4Hype(types, t176);
-  add_methods_for_G4Tubs(types, t177);
-  add_methods_for_G4GDMLParser(types, t178);
-  add_methods_for_G4VUPLData(types, t183);
-  add_methods_for_G4UserPhysicsListMessenger(types, t184);
-  add_methods_for_G4VMPLData(types, t186);
-  add_methods_for_G4VModularPhysicsList(types, t187);
-  add_methods_for_QGS_BIC(types, t189);
-  add_methods_for_QBBC(types, t190);
-  add_methods_for_FTFP_BERT(types, t191);
-  add_methods_for_G4CutTubs(types, t193);
-  add_methods_for_G4EllipticalTube(types, t194);
-  add_methods_for_G4EllipticalCone(types, t195);
-  add_methods_for_G4Paraboloid(types, t196);
-  add_methods_for_G4Tet(types, t197);
-  add_methods_for_G4TwistedBox(types, t198);
-  add_methods_for_G4TwistedTrap(types, t199);
-  add_methods_for_G4TwistedTrd(types, t200);
-  add_methods_for_G4GenericTrap(types, t201);
-  add_methods_for_G4TwistedTubs(types, t202);
-  add_methods_for_CLHEP_HepLorentzRotation_HepLorentzRotation_row(types, t207);
-  add_methods_for_G4BooleanSolid(types, t208);
-  add_methods_for_G4UnionSolid(types, t209);
-  add_methods_for_G4SubtractionSolid(types, t210);
-  add_methods_for_G4IntersectionSolid(types, t211);
-  add_methods_for_G4UniformMagField(types, t212);
-  add_methods_for_G4Colour(types, t213);
+  add_methods_for_G4JLMagField(types, t111);
+  add_methods_for_G4JLSteppingAction(types, t112);
+  add_methods_for_G4JLTrackingAction(types, t113);
+  add_methods_for_G4JLRunAction(types, t114);
+  add_methods_for_G4Run(types, t115);
+  add_methods_for_G4JLEventAction(types, t116);
+  add_methods_for_G4VCSGfaceted(types, t172);
+  add_methods_for_G4Polyhedra(types, t120);
+  add_methods_for_G4DisplacedSolid(types, t127);
+  add_methods_for_G4Navigator(types, t128);
+  add_methods_for_G4RunManager(types, t133);
+  add_methods_for_G4VUserPhysicsList(types, t136);
+  add_methods_for_G4MTRunManager(types, t139);
+  add_methods_for_G4ScoringManager(types, t140);
+  add_methods_for_G4MTRunManagerKernel(types, t143);
+  add_methods_for_G4UImanager(types, t145);
+  add_methods_for_G4NistManager(types, t150);
+  add_methods_for_G4CSGSolid(types, t152);
+  add_methods_for_G4SteppingVerbose(types, t153);
+  add_methods_for_G4PVPlacement(types, t154);
+  add_methods_for_G4ReplicaData(types, t155);
+  add_methods_for_G4PVReplica(types, t156);
+  add_methods_for_G4TransportationManager(types, t157);
+  add_methods_for_G4Box(types, t159);
+  add_methods_for_G4ExtrudedSolid(types, t160);
+  add_methods_for_G4ExtrudedSolid_ZSection(types, t161);
+  add_methods_for_G4MultiUnion(types, t163);
+  add_methods_for_G4Trd(types, t165);
+  add_methods_for_G4Trap(types, t167);
+  add_methods_for_G4Cons(types, t168);
+  add_methods_for_G4Sphere(types, t169);
+  add_methods_for_G4Orb(types, t170);
+  add_methods_for_G4Ellipsoid(types, t171);
+  add_methods_for_G4Polycone(types, t118);
+  add_methods_for_G4Torus(types, t175);
+  add_methods_for_G4Para(types, t176);
+  add_methods_for_G4Hype(types, t177);
+  add_methods_for_G4Tubs(types, t178);
+  add_methods_for_G4GDMLParser(types, t179);
+  add_methods_for_G4VUPLData(types, t184);
+  add_methods_for_G4UserPhysicsListMessenger(types, t185);
+  add_methods_for_G4VMPLData(types, t187);
+  add_methods_for_G4VModularPhysicsList(types, t188);
+  add_methods_for_QGS_BIC(types, t190);
+  add_methods_for_QBBC(types, t191);
+  add_methods_for_FTFP_BERT(types, t192);
+  add_methods_for_G4CutTubs(types, t194);
+  add_methods_for_G4EllipticalTube(types, t195);
+  add_methods_for_G4EllipticalCone(types, t196);
+  add_methods_for_G4Paraboloid(types, t197);
+  add_methods_for_G4Tet(types, t198);
+  add_methods_for_G4TwistedBox(types, t199);
+  add_methods_for_G4TwistedTrap(types, t200);
+  add_methods_for_G4TwistedTrd(types, t201);
+  add_methods_for_G4GenericTrap(types, t202);
+  add_methods_for_G4TwistedTubs(types, t203);
+  add_methods_for_CLHEP_HepLorentzRotation_HepLorentzRotation_row(types, t208);
+  add_methods_for_G4BooleanSolid(types, t209);
+  add_methods_for_G4UnionSolid(types, t210);
+  add_methods_for_G4SubtractionSolid(types, t211);
+  add_methods_for_G4IntersectionSolid(types, t212);
+  add_methods_for_G4UniformMagField(types, t213);
+  add_methods_for_G4Colour(types, t214);
 
   /**********************************************************************
    * Wrappers for global functions and variables including
@@ -1909,42 +1918,47 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& types){
 
   DEBUG_MSG("Adding wrapper for G4PolyconeSideRZ & GetPolyCorner(const G4Polycone &, G4int) (" __HERE__ ")");
   // signature to use in the veto list: G4PolyconeSideRZ & GetPolyCorner(const G4Polycone &, G4int)
-  // defined in ./cpp/Geant4Wrap.h:212:19
+  // defined in ./cpp/Geant4Wrap.h:227:19
   types.method("GetPolyCorner", static_cast<G4PolyconeSideRZ & (*)(const G4Polycone &, G4int) >(&GetPolyCorner));
+
+  DEBUG_MSG("Adding wrapper for G4PolyhedraSideRZ & GetPolyCorner(const G4Polyhedra &, G4int) (" __HERE__ ")");
+  // signature to use in the veto list: G4PolyhedraSideRZ & GetPolyCorner(const G4Polyhedra &, G4int)
+  // defined in ./cpp/Geant4Wrap.h:228:20
+  types.method("GetPolyCorner", static_cast<G4PolyhedraSideRZ & (*)(const G4Polyhedra &, G4int) >(&GetPolyCorner));
 
   DEBUG_MSG("Adding wrapper for void SetParticleByName(G4ParticleGun *, const char *) (" __HERE__ ")");
   // signature to use in the veto list: void SetParticleByName(G4ParticleGun *, const char *)
-  // defined in ./cpp/Geant4Wrap.h:214:6
+  // defined in ./cpp/Geant4Wrap.h:230:6
   types.method("SetParticleByName", static_cast<void (*)(G4ParticleGun *, const char *) >(&SetParticleByName));
 
   DEBUG_MSG("Adding wrapper for G4ParticleDefinition * FindParticle(const char *) (" __HERE__ ")");
   // signature to use in the veto list: G4ParticleDefinition * FindParticle(const char *)
-  // defined in ./cpp/Geant4Wrap.h:215:23
+  // defined in ./cpp/Geant4Wrap.h:231:23
   types.method("FindParticle", static_cast<G4ParticleDefinition * (*)(const char *) >(&FindParticle));
 
   DEBUG_MSG("Adding wrapper for G4String make_G4String(const char *) (" __HERE__ ")");
   // signature to use in the veto list: G4String make_G4String(const char *)
-  // defined in ./cpp/Geant4Wrap.h:216:17
+  // defined in ./cpp/Geant4Wrap.h:232:17
   types.method("make_G4String", static_cast<G4String (*)(const char *) >(&make_G4String));
 
   DEBUG_MSG("Adding wrapper for char * G4JL_getenv(const char *) (" __HERE__ ")");
   // signature to use in the veto list: char * G4JL_getenv(const char *)
-  // defined in ./cpp/Geant4Wrap.h:217:7
+  // defined in ./cpp/Geant4Wrap.h:233:7
   types.method("G4JL_getenv", static_cast<char * (*)(const char *) >(&G4JL_getenv));
 
   DEBUG_MSG("Adding wrapper for int G4JL_setenv(const char *, const char *) (" __HERE__ ")");
   // signature to use in the veto list: int G4JL_setenv(const char *, const char *)
-  // defined in ./cpp/Geant4Wrap.h:218:7
+  // defined in ./cpp/Geant4Wrap.h:234:7
   types.method("G4JL_setenv", static_cast<int (*)(const char *, const char *) >(&G4JL_setenv));
 
   DEBUG_MSG("Adding wrapper for void G4JL_init() (" __HERE__ ")");
   // signature to use in the veto list: void G4JL_init()
-  // defined in ./cpp/Geant4Wrap.h:219:7
+  // defined in ./cpp/Geant4Wrap.h:235:7
   types.method("G4JL_init", static_cast<void (*)() >(&G4JL_init));
 
   DEBUG_MSG("Adding wrapper for void G4JL_println(const char *) (" __HERE__ ")");
   // signature to use in the veto list: void G4JL_println(const char *)
-  // defined in ./cpp/Geant4Wrap.h:220:7
+  // defined in ./cpp/Geant4Wrap.h:236:7
   types.method("G4JL_println", static_cast<void (*)(const char *) >(&G4JL_println));
 
   DEBUG_MSG("Adding wrapper for CLHEP::HepBoost CLHEP::inverseOf(const CLHEP::HepBoost &) (" __HERE__ ")");

@@ -24,7 +24,7 @@ void add_methods_for_G4JLExceptionHandler(jlcxx::Module& types, jlcxx::TypeWrapp
 
   DEBUG_MSG("Adding wrapper for G4bool G4JLExceptionHandler::Notify(const char *, const char *, G4ExceptionSeverity, const char *) (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4JLExceptionHandler::Notify(const char *, const char *, G4ExceptionSeverity, const char *)
-  // defined in ./cpp/Geant4Wrap.h:32:10
+  // defined in ./cpp/Geant4Wrap.h:33:10
   t99.method("Notify", static_cast<G4bool (G4JLExceptionHandler::*)(const char *, const char *, G4ExceptionSeverity, const char *) >(&G4JLExceptionHandler::Notify));
 
   /* End of G4JLExceptionHandler class method wrappers

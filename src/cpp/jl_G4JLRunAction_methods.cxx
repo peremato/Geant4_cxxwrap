@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4JLRunAction(jlcxx::Module& types, jlcxx::TypeWrapper<G4JLRunAction>& t113) {
+void add_methods_for_G4JLRunAction(jlcxx::Module& types, jlcxx::TypeWrapper<G4JLRunAction>& t114) {
 
 
   /**********************************************************************/
@@ -24,21 +24,21 @@ void add_methods_for_G4JLRunAction(jlcxx::Module& types, jlcxx::TypeWrapper<G4JL
 
 
   DEBUG_MSG("Adding wrapper for void G4JLRunAction::G4JLRunAction(runaction_f, void *, runaction_f, void *) (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:180:5
-  t113.constructor<runaction_f>(/*finalize=*/false);
-  t113.constructor<runaction_f, void *>(/*finalize=*/false);
-  t113.constructor<runaction_f, void *, runaction_f>(/*finalize=*/false);
-  t113.constructor<runaction_f, void *, runaction_f, void *>(/*finalize=*/false);
+  // defined in ./cpp/Geant4Wrap.h:193:5
+  t114.constructor<runaction_f>(/*finalize=*/false);
+  t114.constructor<runaction_f, void *>(/*finalize=*/false);
+  t114.constructor<runaction_f, void *, runaction_f>(/*finalize=*/false);
+  t114.constructor<runaction_f, void *, runaction_f, void *>(/*finalize=*/false);
 
   DEBUG_MSG("Adding wrapper for void G4JLRunAction::BeginOfRunAction(const G4Run *) (" __HERE__ ")");
   // signature to use in the veto list: void G4JLRunAction::BeginOfRunAction(const G4Run *)
-  // defined in ./cpp/Geant4Wrap.h:184:18
-  t113.method("BeginOfRunAction", static_cast<void (G4JLRunAction::*)(const G4Run *) >(&G4JLRunAction::BeginOfRunAction));
+  // defined in ./cpp/Geant4Wrap.h:197:18
+  t114.method("BeginOfRunAction", static_cast<void (G4JLRunAction::*)(const G4Run *) >(&G4JLRunAction::BeginOfRunAction));
 
   DEBUG_MSG("Adding wrapper for void G4JLRunAction::EndOfRunAction(const G4Run *) (" __HERE__ ")");
   // signature to use in the veto list: void G4JLRunAction::EndOfRunAction(const G4Run *)
-  // defined in ./cpp/Geant4Wrap.h:185:20
-  t113.method("EndOfRunAction", static_cast<void (G4JLRunAction::*)(const G4Run *) >(&G4JLRunAction::EndOfRunAction));
+  // defined in ./cpp/Geant4Wrap.h:198:20
+  t114.method("EndOfRunAction", static_cast<void (G4JLRunAction::*)(const G4Run *) >(&G4JLRunAction::EndOfRunAction));
 
   /* End of G4JLRunAction class method wrappers
    **********************************************************************/
