@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4ExtrudedSolid(jlcxx::Module& types, jlcxx::TypeWrapper<G4ExtrudedSolid>& t160) {
+void add_methods_for_G4ExtrudedSolid(jlcxx::Module& types, jlcxx::TypeWrapper<G4ExtrudedSolid>& t170) {
 
 
   /**********************************************************************/
@@ -25,107 +25,107 @@ void add_methods_for_G4ExtrudedSolid(jlcxx::Module& types, jlcxx::TypeWrapper<G4
 
   DEBUG_MSG("Adding wrapper for void G4ExtrudedSolid::G4ExtrudedSolid(const G4String &, const std::vector<G4TwoVector> &, const std::vector<G4ExtrudedSolid::ZSection> &) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:89:5
-  t160.constructor<const G4String &, const std::vector<G4TwoVector> &, const std::vector<G4ExtrudedSolid::ZSection> &>(/*finalize=*/true);
+  t170.constructor<const G4String &, const std::vector<G4TwoVector> &, const std::vector<G4ExtrudedSolid::ZSection> &>(/*finalize=*/true);
 
 
   DEBUG_MSG("Adding wrapper for void G4ExtrudedSolid::G4ExtrudedSolid(const G4String &, const std::vector<G4TwoVector> &, G4double, const G4TwoVector &, G4double, const G4TwoVector &, G4double) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:94:5
-  t160.constructor<const G4String &, const std::vector<G4TwoVector> &, G4double>(/*finalize=*/true);
-  t160.constructor<const G4String &, const std::vector<G4TwoVector> &, G4double, const G4TwoVector &>(/*finalize=*/true);
-  t160.constructor<const G4String &, const std::vector<G4TwoVector> &, G4double, const G4TwoVector &, G4double>(/*finalize=*/true);
-  t160.constructor<const G4String &, const std::vector<G4TwoVector> &, G4double, const G4TwoVector &, G4double, const G4TwoVector &>(/*finalize=*/true);
-  t160.constructor<const G4String &, const std::vector<G4TwoVector> &, G4double, const G4TwoVector &, G4double, const G4TwoVector &, G4double>(/*finalize=*/true);
+  t170.constructor<const G4String &, const std::vector<G4TwoVector> &, G4double>(/*finalize=*/true);
+  t170.constructor<const G4String &, const std::vector<G4TwoVector> &, G4double, const G4TwoVector &>(/*finalize=*/true);
+  t170.constructor<const G4String &, const std::vector<G4TwoVector> &, G4double, const G4TwoVector &, G4double>(/*finalize=*/true);
+  t170.constructor<const G4String &, const std::vector<G4TwoVector> &, G4double, const G4TwoVector &, G4double, const G4TwoVector &>(/*finalize=*/true);
+  t170.constructor<const G4String &, const std::vector<G4TwoVector> &, G4double, const G4TwoVector &, G4double, const G4TwoVector &, G4double>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for G4int G4ExtrudedSolid::GetNofVertices() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4ExtrudedSolid::GetNofVertices()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:108:24
-  t160.method("GetNofVertices", static_cast<G4int (G4ExtrudedSolid::*)()  const>(&G4ExtrudedSolid::GetNofVertices));
+  t170.method("GetNofVertices", static_cast<G4int (G4ExtrudedSolid::*)()  const>(&G4ExtrudedSolid::GetNofVertices));
 
   DEBUG_MSG("Adding wrapper for G4TwoVector G4ExtrudedSolid::GetVertex(G4int) (" __HERE__ ")");
   // signature to use in the veto list: G4TwoVector G4ExtrudedSolid::GetVertex(G4int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:109:24
-  t160.method("GetVertex", static_cast<G4TwoVector (G4ExtrudedSolid::*)(G4int)  const>(&G4ExtrudedSolid::GetVertex));
+  t170.method("GetVertex", static_cast<G4TwoVector (G4ExtrudedSolid::*)(G4int)  const>(&G4ExtrudedSolid::GetVertex));
 
   DEBUG_MSG("Adding wrapper for std::vector<G4TwoVector> G4ExtrudedSolid::GetPolygon() (" __HERE__ ")");
   // signature to use in the veto list: std::vector<G4TwoVector> G4ExtrudedSolid::GetPolygon()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:110:37
-  t160.method("GetPolygon", static_cast<std::vector<G4TwoVector> (G4ExtrudedSolid::*)()  const>(&G4ExtrudedSolid::GetPolygon));
+  t170.method("GetPolygon", static_cast<std::vector<G4TwoVector> (G4ExtrudedSolid::*)()  const>(&G4ExtrudedSolid::GetPolygon));
 
   DEBUG_MSG("Adding wrapper for G4int G4ExtrudedSolid::GetNofZSections() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4ExtrudedSolid::GetNofZSections()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:112:24
-  t160.method("GetNofZSections", static_cast<G4int (G4ExtrudedSolid::*)()  const>(&G4ExtrudedSolid::GetNofZSections));
+  t170.method("GetNofZSections", static_cast<G4int (G4ExtrudedSolid::*)()  const>(&G4ExtrudedSolid::GetNofZSections));
 
   DEBUG_MSG("Adding wrapper for G4ExtrudedSolid::ZSection G4ExtrudedSolid::GetZSection(G4int) (" __HERE__ ")");
   // signature to use in the veto list: G4ExtrudedSolid::ZSection G4ExtrudedSolid::GetZSection(G4int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:113:24
-  t160.method("GetZSection", static_cast<G4ExtrudedSolid::ZSection (G4ExtrudedSolid::*)(G4int)  const>(&G4ExtrudedSolid::GetZSection));
+  t170.method("GetZSection", static_cast<G4ExtrudedSolid::ZSection (G4ExtrudedSolid::*)(G4int)  const>(&G4ExtrudedSolid::GetZSection));
 
   DEBUG_MSG("Adding wrapper for std::vector<G4ExtrudedSolid::ZSection> G4ExtrudedSolid::GetZSections() (" __HERE__ ")");
   // signature to use in the veto list: std::vector<G4ExtrudedSolid::ZSection> G4ExtrudedSolid::GetZSections()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:114:34
-  t160.method("GetZSections", static_cast<std::vector<G4ExtrudedSolid::ZSection> (G4ExtrudedSolid::*)()  const>(&G4ExtrudedSolid::GetZSections));
+  t170.method("GetZSections", static_cast<std::vector<G4ExtrudedSolid::ZSection> (G4ExtrudedSolid::*)()  const>(&G4ExtrudedSolid::GetZSections));
 
   DEBUG_MSG("Adding wrapper for EInside G4ExtrudedSolid::Inside(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: EInside G4ExtrudedSolid::Inside(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:118:14
-  t160.method("Inside", static_cast<EInside (G4ExtrudedSolid::*)(const G4ThreeVector &)  const>(&G4ExtrudedSolid::Inside));
+  t170.method("Inside", static_cast<EInside (G4ExtrudedSolid::*)(const G4ThreeVector &)  const>(&G4ExtrudedSolid::Inside));
 
   DEBUG_MSG("Adding wrapper for G4ThreeVector G4ExtrudedSolid::SurfaceNormal(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4ThreeVector G4ExtrudedSolid::SurfaceNormal(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:119:19
-  t160.method("SurfaceNormal", static_cast<G4ThreeVector (G4ExtrudedSolid::*)(const G4ThreeVector &)  const>(&G4ExtrudedSolid::SurfaceNormal));
+  t170.method("SurfaceNormal", static_cast<G4ThreeVector (G4ExtrudedSolid::*)(const G4ThreeVector &)  const>(&G4ExtrudedSolid::SurfaceNormal));
 
   DEBUG_MSG("Adding wrapper for G4double G4ExtrudedSolid::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4ExtrudedSolid::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:120:14
-  t160.method("DistanceToIn", static_cast<G4double (G4ExtrudedSolid::*)(const G4ThreeVector &, const G4ThreeVector &)  const>(&G4ExtrudedSolid::DistanceToIn));
+  t170.method("DistanceToIn", static_cast<G4double (G4ExtrudedSolid::*)(const G4ThreeVector &, const G4ThreeVector &)  const>(&G4ExtrudedSolid::DistanceToIn));
 
   DEBUG_MSG("Adding wrapper for G4double G4ExtrudedSolid::DistanceToIn(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4ExtrudedSolid::DistanceToIn(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:121:14
-  t160.method("DistanceToIn", static_cast<G4double (G4ExtrudedSolid::*)(const G4ThreeVector &)  const>(&G4ExtrudedSolid::DistanceToIn));
+  t170.method("DistanceToIn", static_cast<G4double (G4ExtrudedSolid::*)(const G4ThreeVector &)  const>(&G4ExtrudedSolid::DistanceToIn));
 
   DEBUG_MSG("Adding wrapper for G4double G4ExtrudedSolid::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4ExtrudedSolid::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:122:14
-  t160.method("DistanceToOut", static_cast<G4double (G4ExtrudedSolid::*)(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)  const>(&G4ExtrudedSolid::DistanceToOut));
-  t160.method("DistanceToOut", [](G4ExtrudedSolid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a.DistanceToOut(arg0, arg1); });
-  t160.method("DistanceToOut", [](G4ExtrudedSolid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a.DistanceToOut(arg0, arg1, arg2); });
-  t160.method("DistanceToOut", [](G4ExtrudedSolid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a.DistanceToOut(arg0, arg1, arg2, arg3); });
-  t160.method("DistanceToOut", [](G4ExtrudedSolid const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a->DistanceToOut(arg0, arg1); });
-  t160.method("DistanceToOut", [](G4ExtrudedSolid const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a->DistanceToOut(arg0, arg1, arg2); });
-  t160.method("DistanceToOut", [](G4ExtrudedSolid const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a->DistanceToOut(arg0, arg1, arg2, arg3); });
+  t170.method("DistanceToOut", static_cast<G4double (G4ExtrudedSolid::*)(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)  const>(&G4ExtrudedSolid::DistanceToOut));
+  t170.method("DistanceToOut", [](G4ExtrudedSolid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a.DistanceToOut(arg0, arg1); });
+  t170.method("DistanceToOut", [](G4ExtrudedSolid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a.DistanceToOut(arg0, arg1, arg2); });
+  t170.method("DistanceToOut", [](G4ExtrudedSolid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a.DistanceToOut(arg0, arg1, arg2, arg3); });
+  t170.method("DistanceToOut", [](G4ExtrudedSolid const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a->DistanceToOut(arg0, arg1); });
+  t170.method("DistanceToOut", [](G4ExtrudedSolid const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a->DistanceToOut(arg0, arg1, arg2); });
+  t170.method("DistanceToOut", [](G4ExtrudedSolid const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a->DistanceToOut(arg0, arg1, arg2, arg3); });
 
   DEBUG_MSG("Adding wrapper for G4double G4ExtrudedSolid::DistanceToOut(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4ExtrudedSolid::DistanceToOut(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:127:14
-  t160.method("DistanceToOut", static_cast<G4double (G4ExtrudedSolid::*)(const G4ThreeVector &)  const>(&G4ExtrudedSolid::DistanceToOut));
+  t170.method("DistanceToOut", static_cast<G4double (G4ExtrudedSolid::*)(const G4ThreeVector &)  const>(&G4ExtrudedSolid::DistanceToOut));
 
   DEBUG_MSG("Adding wrapper for void G4ExtrudedSolid::BoundingLimits(G4ThreeVector &, G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: void G4ExtrudedSolid::BoundingLimits(G4ThreeVector &, G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:129:10
-  t160.method("BoundingLimits", static_cast<void (G4ExtrudedSolid::*)(G4ThreeVector &, G4ThreeVector &)  const>(&G4ExtrudedSolid::BoundingLimits));
+  t170.method("BoundingLimits", static_cast<void (G4ExtrudedSolid::*)(G4ThreeVector &, G4ThreeVector &)  const>(&G4ExtrudedSolid::BoundingLimits));
 
   DEBUG_MSG("Adding wrapper for G4GeometryType G4ExtrudedSolid::GetEntityType() (" __HERE__ ")");
   // signature to use in the veto list: G4GeometryType G4ExtrudedSolid::GetEntityType()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:134:20
-  t160.method("GetEntityType", static_cast<G4GeometryType (G4ExtrudedSolid::*)()  const>(&G4ExtrudedSolid::GetEntityType));
+  t170.method("GetEntityType", static_cast<G4GeometryType (G4ExtrudedSolid::*)()  const>(&G4ExtrudedSolid::GetEntityType));
 
   DEBUG_MSG("Adding wrapper for G4VSolid * G4ExtrudedSolid::Clone() (" __HERE__ ")");
   // signature to use in the veto list: G4VSolid * G4ExtrudedSolid::Clone()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:135:15
-  t160.method("Clone", static_cast<G4VSolid * (G4ExtrudedSolid::*)()  const>(&G4ExtrudedSolid::Clone));
+  t170.method("Clone", static_cast<G4VSolid * (G4ExtrudedSolid::*)()  const>(&G4ExtrudedSolid::Clone));
 
 
   DEBUG_MSG("Adding wrapper for void G4ExtrudedSolid::G4ExtrudedSolid(const G4ExtrudedSolid &) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:146:5
-  t160.constructor<const G4ExtrudedSolid &>(/*finalize=*/true);
+  t170.constructor<const G4ExtrudedSolid &>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for G4ExtrudedSolid & G4ExtrudedSolid::operator=(const G4ExtrudedSolid &) (" __HERE__ ")");
   // signature to use in the veto list: G4ExtrudedSolid & G4ExtrudedSolid::operator=(const G4ExtrudedSolid &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:147:22
-  t160.method("assign", static_cast<G4ExtrudedSolid & (G4ExtrudedSolid::*)(const G4ExtrudedSolid &) >(&G4ExtrudedSolid::operator=));
+  t170.method("assign", static_cast<G4ExtrudedSolid & (G4ExtrudedSolid::*)(const G4ExtrudedSolid &) >(&G4ExtrudedSolid::operator=));
 
   /* End of G4ExtrudedSolid class method wrappers
    **********************************************************************/

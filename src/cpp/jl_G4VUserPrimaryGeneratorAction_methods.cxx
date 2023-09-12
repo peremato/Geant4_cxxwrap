@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4VUserPrimaryGeneratorAction(jlcxx::Module& types, jlcxx::TypeWrapper<G4VUserPrimaryGeneratorAction>& t90) {
+void add_methods_for_G4VUserPrimaryGeneratorAction(jlcxx::Module& types, jlcxx::TypeWrapper<G4VUserPrimaryGeneratorAction>& t91) {
 
 
   /**********************************************************************/
@@ -25,7 +25,7 @@ void add_methods_for_G4VUserPrimaryGeneratorAction(jlcxx::Module& types, jlcxx::
   DEBUG_MSG("Adding wrapper for void G4VUserPrimaryGeneratorAction::GeneratePrimaries(G4Event *) (" __HERE__ ")");
   // signature to use in the veto list: void G4VUserPrimaryGeneratorAction::GeneratePrimaries(G4Event *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VUserPrimaryGeneratorAction.hh:54:18
-  t90.method("GeneratePrimaries", static_cast<void (G4VUserPrimaryGeneratorAction::*)(G4Event *) >(&G4VUserPrimaryGeneratorAction::GeneratePrimaries));
+  t91.method("GeneratePrimaries", static_cast<void (G4VUserPrimaryGeneratorAction::*)(G4Event *) >(&G4VUserPrimaryGeneratorAction::GeneratePrimaries));
 
   /* End of G4VUserPrimaryGeneratorAction class method wrappers
    **********************************************************************/

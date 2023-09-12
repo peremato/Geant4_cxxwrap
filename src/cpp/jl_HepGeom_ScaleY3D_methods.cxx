@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_HepGeom_ScaleY3D(jlcxx::Module& types, jlcxx::TypeWrapper<HepGeom::ScaleY3D>& t82) {
+void add_methods_for_HepGeom_ScaleY3D(jlcxx::Module& types, jlcxx::TypeWrapper<HepGeom::ScaleY3D>& t83) {
 
 
   /**********************************************************************/
@@ -25,7 +25,7 @@ void add_methods_for_HepGeom_ScaleY3D(jlcxx::Module& types, jlcxx::TypeWrapper<H
 
   DEBUG_MSG("Adding wrapper for void HepGeom::ScaleY3D::ScaleY3D(double) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Geometry/Transform3D.h:786:5
-  t82.constructor<double>(/*finalize=*/true);
+  t83.constructor<double>(/*finalize=*/true);
 
   /* End of HepGeom::ScaleY3D class method wrappers
    **********************************************************************/

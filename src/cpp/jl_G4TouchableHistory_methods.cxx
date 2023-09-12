@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4TouchableHistory(jlcxx::Module& types, jlcxx::TypeWrapper<G4TouchableHistory>& t84) {
+void add_methods_for_G4TouchableHistory(jlcxx::Module& types, jlcxx::TypeWrapper<G4TouchableHistory>& t85) {
 
 
   /**********************************************************************/
@@ -25,66 +25,66 @@ void add_methods_for_G4TouchableHistory(jlcxx::Module& types, jlcxx::TypeWrapper
 
   DEBUG_MSG("Adding wrapper for void G4TouchableHistory::G4TouchableHistory(const G4NavigationHistory &) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TouchableHistory.hh:58:3
-  t84.constructor<const G4NavigationHistory &>(/*finalize=*/true);
+  t85.constructor<const G4NavigationHistory &>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for G4VPhysicalVolume * G4TouchableHistory::GetVolume(G4int) (" __HERE__ ")");
   // signature to use in the veto list: G4VPhysicalVolume * G4TouchableHistory::GetVolume(G4int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TouchableHistory.hh:64:29
-  t84.method("GetVolume", static_cast<G4VPhysicalVolume * (G4TouchableHistory::*)(G4int)  const>(&G4TouchableHistory::GetVolume));
-  t84.method("GetVolume", [](G4TouchableHistory const& a)->G4VPhysicalVolume *{ return a.GetVolume(); });
-  t84.method("GetVolume", [](G4TouchableHistory const* a)->G4VPhysicalVolume *{ return a->GetVolume(); });
+  t85.method("GetVolume", static_cast<G4VPhysicalVolume * (G4TouchableHistory::*)(G4int)  const>(&G4TouchableHistory::GetVolume));
+  t85.method("GetVolume", [](G4TouchableHistory const& a)->G4VPhysicalVolume *{ return a.GetVolume(); });
+  t85.method("GetVolume", [](G4TouchableHistory const* a)->G4VPhysicalVolume *{ return a->GetVolume(); });
 
   DEBUG_MSG("Adding wrapper for G4VSolid * G4TouchableHistory::GetSolid(G4int) (" __HERE__ ")");
   // signature to use in the veto list: G4VSolid * G4TouchableHistory::GetSolid(G4int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TouchableHistory.hh:65:20
-  t84.method("GetSolid", static_cast<G4VSolid * (G4TouchableHistory::*)(G4int)  const>(&G4TouchableHistory::GetSolid));
-  t84.method("GetSolid", [](G4TouchableHistory const& a)->G4VSolid *{ return a.GetSolid(); });
-  t84.method("GetSolid", [](G4TouchableHistory const* a)->G4VSolid *{ return a->GetSolid(); });
+  t85.method("GetSolid", static_cast<G4VSolid * (G4TouchableHistory::*)(G4int)  const>(&G4TouchableHistory::GetSolid));
+  t85.method("GetSolid", [](G4TouchableHistory const& a)->G4VSolid *{ return a.GetSolid(); });
+  t85.method("GetSolid", [](G4TouchableHistory const* a)->G4VSolid *{ return a->GetSolid(); });
 
   DEBUG_MSG("Adding wrapper for const G4ThreeVector & G4TouchableHistory::GetTranslation(G4int) (" __HERE__ ")");
   // signature to use in the veto list: const G4ThreeVector & G4TouchableHistory::GetTranslation(G4int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TouchableHistory.hh:66:24
-  t84.method("GetTranslation", static_cast<const G4ThreeVector & (G4TouchableHistory::*)(G4int)  const>(&G4TouchableHistory::GetTranslation));
-  t84.method("GetTranslation", [](G4TouchableHistory const& a)->const G4ThreeVector &{ return a.GetTranslation(); });
-  t84.method("GetTranslation", [](G4TouchableHistory const* a)->const G4ThreeVector &{ return a->GetTranslation(); });
+  t85.method("GetTranslation", static_cast<const G4ThreeVector & (G4TouchableHistory::*)(G4int)  const>(&G4TouchableHistory::GetTranslation));
+  t85.method("GetTranslation", [](G4TouchableHistory const& a)->const G4ThreeVector &{ return a.GetTranslation(); });
+  t85.method("GetTranslation", [](G4TouchableHistory const* a)->const G4ThreeVector &{ return a->GetTranslation(); });
 
   DEBUG_MSG("Adding wrapper for const G4RotationMatrix * G4TouchableHistory::GetRotation(G4int) (" __HERE__ ")");
   // signature to use in the veto list: const G4RotationMatrix * G4TouchableHistory::GetRotation(G4int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TouchableHistory.hh:67:27
-  t84.method("GetRotation", static_cast<const G4RotationMatrix * (G4TouchableHistory::*)(G4int)  const>(&G4TouchableHistory::GetRotation));
-  t84.method("GetRotation", [](G4TouchableHistory const& a)->const G4RotationMatrix *{ return a.GetRotation(); });
-  t84.method("GetRotation", [](G4TouchableHistory const* a)->const G4RotationMatrix *{ return a->GetRotation(); });
+  t85.method("GetRotation", static_cast<const G4RotationMatrix * (G4TouchableHistory::*)(G4int)  const>(&G4TouchableHistory::GetRotation));
+  t85.method("GetRotation", [](G4TouchableHistory const& a)->const G4RotationMatrix *{ return a.GetRotation(); });
+  t85.method("GetRotation", [](G4TouchableHistory const* a)->const G4RotationMatrix *{ return a->GetRotation(); });
 
   DEBUG_MSG("Adding wrapper for G4int G4TouchableHistory::GetReplicaNumber(G4int) (" __HERE__ ")");
   // signature to use in the veto list: G4int G4TouchableHistory::GetReplicaNumber(G4int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TouchableHistory.hh:69:16
-  t84.method("GetReplicaNumber", static_cast<G4int (G4TouchableHistory::*)(G4int)  const>(&G4TouchableHistory::GetReplicaNumber));
-  t84.method("GetReplicaNumber", [](G4TouchableHistory const& a)->G4int{ return a.GetReplicaNumber(); });
-  t84.method("GetReplicaNumber", [](G4TouchableHistory const* a)->G4int{ return a->GetReplicaNumber(); });
+  t85.method("GetReplicaNumber", static_cast<G4int (G4TouchableHistory::*)(G4int)  const>(&G4TouchableHistory::GetReplicaNumber));
+  t85.method("GetReplicaNumber", [](G4TouchableHistory const& a)->G4int{ return a.GetReplicaNumber(); });
+  t85.method("GetReplicaNumber", [](G4TouchableHistory const* a)->G4int{ return a->GetReplicaNumber(); });
 
   DEBUG_MSG("Adding wrapper for G4int G4TouchableHistory::GetHistoryDepth() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4TouchableHistory::GetHistoryDepth()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TouchableHistory.hh:70:16
-  t84.method("GetHistoryDepth", static_cast<G4int (G4TouchableHistory::*)()  const>(&G4TouchableHistory::GetHistoryDepth));
+  t85.method("GetHistoryDepth", static_cast<G4int (G4TouchableHistory::*)()  const>(&G4TouchableHistory::GetHistoryDepth));
 
   DEBUG_MSG("Adding wrapper for G4int G4TouchableHistory::MoveUpHistory(G4int) (" __HERE__ ")");
   // signature to use in the veto list: G4int G4TouchableHistory::MoveUpHistory(G4int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TouchableHistory.hh:71:9
-  t84.method("MoveUpHistory", static_cast<G4int (G4TouchableHistory::*)(G4int) >(&G4TouchableHistory::MoveUpHistory));
-  t84.method("MoveUpHistory", [](G4TouchableHistory& a)->G4int{ return a.MoveUpHistory(); });
-  t84.method("MoveUpHistory", [](G4TouchableHistory* a)->G4int{ return a->MoveUpHistory(); });
+  t85.method("MoveUpHistory", static_cast<G4int (G4TouchableHistory::*)(G4int) >(&G4TouchableHistory::MoveUpHistory));
+  t85.method("MoveUpHistory", [](G4TouchableHistory& a)->G4int{ return a.MoveUpHistory(); });
+  t85.method("MoveUpHistory", [](G4TouchableHistory* a)->G4int{ return a->MoveUpHistory(); });
 
   DEBUG_MSG("Adding wrapper for void G4TouchableHistory::UpdateYourself(G4VPhysicalVolume *, const G4NavigationHistory *) (" __HERE__ ")");
   // signature to use in the veto list: void G4TouchableHistory::UpdateYourself(G4VPhysicalVolume *, const G4NavigationHistory *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TouchableHistory.hh:74:9
-  t84.method("UpdateYourself", static_cast<void (G4TouchableHistory::*)(G4VPhysicalVolume *, const G4NavigationHistory *) >(&G4TouchableHistory::UpdateYourself));
-  t84.method("UpdateYourself", [](G4TouchableHistory& a, G4VPhysicalVolume * arg0)->void{ a.UpdateYourself(arg0); });
-  t84.method("UpdateYourself", [](G4TouchableHistory* a, G4VPhysicalVolume * arg0)->void{ a->UpdateYourself(arg0); });
+  t85.method("UpdateYourself", static_cast<void (G4TouchableHistory::*)(G4VPhysicalVolume *, const G4NavigationHistory *) >(&G4TouchableHistory::UpdateYourself));
+  t85.method("UpdateYourself", [](G4TouchableHistory& a, G4VPhysicalVolume * arg0)->void{ a.UpdateYourself(arg0); });
+  t85.method("UpdateYourself", [](G4TouchableHistory* a, G4VPhysicalVolume * arg0)->void{ a->UpdateYourself(arg0); });
 
   DEBUG_MSG("Adding wrapper for const G4NavigationHistory * G4TouchableHistory::GetHistory() (" __HERE__ ")");
   // signature to use in the veto list: const G4NavigationHistory * G4TouchableHistory::GetHistory()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TouchableHistory.hh:80:37
-  t84.method("GetHistory", static_cast<const G4NavigationHistory * (G4TouchableHistory::*)()  const>(&G4TouchableHistory::GetHistory));
+  t85.method("GetHistory", static_cast<const G4NavigationHistory * (G4TouchableHistory::*)()  const>(&G4TouchableHistory::GetHistory));
 
   /* End of G4TouchableHistory class method wrappers
    **********************************************************************/

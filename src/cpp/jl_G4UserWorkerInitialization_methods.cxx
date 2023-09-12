@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4UserWorkerInitialization(jlcxx::Module& types, jlcxx::TypeWrapper<G4UserWorkerInitialization>& t98) {
+void add_methods_for_G4UserWorkerInitialization(jlcxx::Module& types, jlcxx::TypeWrapper<G4UserWorkerInitialization>& t99) {
 
 
   /**********************************************************************/
@@ -25,27 +25,27 @@ void add_methods_for_G4UserWorkerInitialization(jlcxx::Module& types, jlcxx::Typ
   DEBUG_MSG("Adding wrapper for void G4UserWorkerInitialization::WorkerInitialize() (" __HERE__ ")");
   // signature to use in the veto list: void G4UserWorkerInitialization::WorkerInitialize()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4UserWorkerInitialization.hh:72:18
-  t98.method("WorkerInitialize", static_cast<void (G4UserWorkerInitialization::*)()  const>(&G4UserWorkerInitialization::WorkerInitialize));
+  t99.method("WorkerInitialize", static_cast<void (G4UserWorkerInitialization::*)()  const>(&G4UserWorkerInitialization::WorkerInitialize));
 
   DEBUG_MSG("Adding wrapper for void G4UserWorkerInitialization::WorkerStart() (" __HERE__ ")");
   // signature to use in the veto list: void G4UserWorkerInitialization::WorkerStart()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4UserWorkerInitialization.hh:76:18
-  t98.method("WorkerStart", static_cast<void (G4UserWorkerInitialization::*)()  const>(&G4UserWorkerInitialization::WorkerStart));
+  t99.method("WorkerStart", static_cast<void (G4UserWorkerInitialization::*)()  const>(&G4UserWorkerInitialization::WorkerStart));
 
   DEBUG_MSG("Adding wrapper for void G4UserWorkerInitialization::WorkerRunStart() (" __HERE__ ")");
   // signature to use in the veto list: void G4UserWorkerInitialization::WorkerRunStart()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4UserWorkerInitialization.hh:82:18
-  t98.method("WorkerRunStart", static_cast<void (G4UserWorkerInitialization::*)()  const>(&G4UserWorkerInitialization::WorkerRunStart));
+  t99.method("WorkerRunStart", static_cast<void (G4UserWorkerInitialization::*)()  const>(&G4UserWorkerInitialization::WorkerRunStart));
 
   DEBUG_MSG("Adding wrapper for void G4UserWorkerInitialization::WorkerRunEnd() (" __HERE__ ")");
   // signature to use in the veto list: void G4UserWorkerInitialization::WorkerRunEnd()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4UserWorkerInitialization.hh:88:18
-  t98.method("WorkerRunEnd", static_cast<void (G4UserWorkerInitialization::*)()  const>(&G4UserWorkerInitialization::WorkerRunEnd));
+  t99.method("WorkerRunEnd", static_cast<void (G4UserWorkerInitialization::*)()  const>(&G4UserWorkerInitialization::WorkerRunEnd));
 
   DEBUG_MSG("Adding wrapper for void G4UserWorkerInitialization::WorkerStop() (" __HERE__ ")");
   // signature to use in the veto list: void G4UserWorkerInitialization::WorkerStop()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4UserWorkerInitialization.hh:92:18
-  t98.method("WorkerStop", static_cast<void (G4UserWorkerInitialization::*)()  const>(&G4UserWorkerInitialization::WorkerStop));
+  t99.method("WorkerStop", static_cast<void (G4UserWorkerInitialization::*)()  const>(&G4UserWorkerInitialization::WorkerStop));
 
   /* End of G4UserWorkerInitialization class method wrappers
    **********************************************************************/

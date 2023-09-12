@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_HepGeom_ReflectY3D(jlcxx::Module& types, jlcxx::TypeWrapper<HepGeom::ReflectY3D>& t79) {
+void add_methods_for_HepGeom_ReflectY3D(jlcxx::Module& types, jlcxx::TypeWrapper<HepGeom::ReflectY3D>& t80) {
 
 
   /**********************************************************************/
@@ -25,7 +25,7 @@ void add_methods_for_HepGeom_ReflectY3D(jlcxx::Module& types, jlcxx::TypeWrapper
 
   DEBUG_MSG("Adding wrapper for void HepGeom::ReflectY3D::ReflectY3D(double) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Geometry/Transform3D.h:681:5
-  t79.constructor<double>(/*finalize=*/true);
+  t80.constructor<double>(/*finalize=*/true);
 
   /* End of HepGeom::ReflectY3D class method wrappers
    **********************************************************************/

@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4Paraboloid(jlcxx::Module& types, jlcxx::TypeWrapper<G4Paraboloid>& t197) {
+void add_methods_for_G4Paraboloid(jlcxx::Module& types, jlcxx::TypeWrapper<G4Paraboloid>& t223) {
 
 
   /**********************************************************************/
@@ -25,128 +25,128 @@ void add_methods_for_G4Paraboloid(jlcxx::Module& types, jlcxx::TypeWrapper<G4Par
 
   DEBUG_MSG("Adding wrapper for void G4Paraboloid::G4Paraboloid(const G4String &, G4double, G4double, G4double) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:71:5
-  t197.constructor<const G4String &, G4double, G4double, G4double>(/*finalize=*/true);
+  t223.constructor<const G4String &, G4double, G4double, G4double>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for G4double G4Paraboloid::GetZHalfLength() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Paraboloid::GetZHalfLength()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:80:21
-  t197.method("GetZHalfLength", static_cast<G4double (G4Paraboloid::*)()  const>(&G4Paraboloid::GetZHalfLength));
+  t223.method("GetZHalfLength", static_cast<G4double (G4Paraboloid::*)()  const>(&G4Paraboloid::GetZHalfLength));
 
   DEBUG_MSG("Adding wrapper for G4double G4Paraboloid::GetRadiusMinusZ() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Paraboloid::GetRadiusMinusZ()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:81:21
-  t197.method("GetRadiusMinusZ", static_cast<G4double (G4Paraboloid::*)()  const>(&G4Paraboloid::GetRadiusMinusZ));
+  t223.method("GetRadiusMinusZ", static_cast<G4double (G4Paraboloid::*)()  const>(&G4Paraboloid::GetRadiusMinusZ));
 
   DEBUG_MSG("Adding wrapper for G4double G4Paraboloid::GetRadiusPlusZ() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Paraboloid::GetRadiusPlusZ()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:82:21
-  t197.method("GetRadiusPlusZ", static_cast<G4double (G4Paraboloid::*)()  const>(&G4Paraboloid::GetRadiusPlusZ));
+  t223.method("GetRadiusPlusZ", static_cast<G4double (G4Paraboloid::*)()  const>(&G4Paraboloid::GetRadiusPlusZ));
 
   DEBUG_MSG("Adding wrapper for G4double G4Paraboloid::GetCubicVolume() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Paraboloid::GetCubicVolume()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:84:21
-  t197.method("GetCubicVolume", static_cast<G4double (G4Paraboloid::*)() >(&G4Paraboloid::GetCubicVolume));
+  t223.method("GetCubicVolume", static_cast<G4double (G4Paraboloid::*)() >(&G4Paraboloid::GetCubicVolume));
 
   DEBUG_MSG("Adding wrapper for G4double G4Paraboloid::GetSurfaceArea() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Paraboloid::GetSurfaceArea()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:85:21
-  t197.method("GetSurfaceArea", static_cast<G4double (G4Paraboloid::*)() >(&G4Paraboloid::GetSurfaceArea));
+  t223.method("GetSurfaceArea", static_cast<G4double (G4Paraboloid::*)() >(&G4Paraboloid::GetSurfaceArea));
 
   DEBUG_MSG("Adding wrapper for G4double G4Paraboloid::CalculateSurfaceArea() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Paraboloid::CalculateSurfaceArea()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:86:21
-  t197.method("CalculateSurfaceArea", static_cast<G4double (G4Paraboloid::*)()  const>(&G4Paraboloid::CalculateSurfaceArea));
+  t223.method("CalculateSurfaceArea", static_cast<G4double (G4Paraboloid::*)()  const>(&G4Paraboloid::CalculateSurfaceArea));
 
   DEBUG_MSG("Adding wrapper for void G4Paraboloid::SetZHalfLength(G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4Paraboloid::SetZHalfLength(G4double)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:90:17
-  t197.method("SetZHalfLength", static_cast<void (G4Paraboloid::*)(G4double) >(&G4Paraboloid::SetZHalfLength));
+  t223.method("SetZHalfLength", static_cast<void (G4Paraboloid::*)(G4double) >(&G4Paraboloid::SetZHalfLength));
 
   DEBUG_MSG("Adding wrapper for void G4Paraboloid::SetRadiusMinusZ(G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4Paraboloid::SetRadiusMinusZ(G4double)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:91:17
-  t197.method("SetRadiusMinusZ", static_cast<void (G4Paraboloid::*)(G4double) >(&G4Paraboloid::SetRadiusMinusZ));
+  t223.method("SetRadiusMinusZ", static_cast<void (G4Paraboloid::*)(G4double) >(&G4Paraboloid::SetRadiusMinusZ));
 
   DEBUG_MSG("Adding wrapper for void G4Paraboloid::SetRadiusPlusZ(G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4Paraboloid::SetRadiusPlusZ(G4double)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:92:17
-  t197.method("SetRadiusPlusZ", static_cast<void (G4Paraboloid::*)(G4double) >(&G4Paraboloid::SetRadiusPlusZ));
+  t223.method("SetRadiusPlusZ", static_cast<void (G4Paraboloid::*)(G4double) >(&G4Paraboloid::SetRadiusPlusZ));
 
   DEBUG_MSG("Adding wrapper for void G4Paraboloid::BoundingLimits(G4ThreeVector &, G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: void G4Paraboloid::BoundingLimits(G4ThreeVector &, G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:96:10
-  t197.method("BoundingLimits", static_cast<void (G4Paraboloid::*)(G4ThreeVector &, G4ThreeVector &)  const>(&G4Paraboloid::BoundingLimits));
+  t223.method("BoundingLimits", static_cast<void (G4Paraboloid::*)(G4ThreeVector &, G4ThreeVector &)  const>(&G4Paraboloid::BoundingLimits));
 
   DEBUG_MSG("Adding wrapper for EInside G4Paraboloid::Inside(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: EInside G4Paraboloid::Inside(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:101:13
-  t197.method("Inside", static_cast<EInside (G4Paraboloid::*)(const G4ThreeVector &)  const>(&G4Paraboloid::Inside));
+  t223.method("Inside", static_cast<EInside (G4Paraboloid::*)(const G4ThreeVector &)  const>(&G4Paraboloid::Inside));
 
   DEBUG_MSG("Adding wrapper for G4ThreeVector G4Paraboloid::SurfaceNormal(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4ThreeVector G4Paraboloid::SurfaceNormal(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:102:19
-  t197.method("SurfaceNormal", static_cast<G4ThreeVector (G4Paraboloid::*)(const G4ThreeVector &)  const>(&G4Paraboloid::SurfaceNormal));
+  t223.method("SurfaceNormal", static_cast<G4ThreeVector (G4Paraboloid::*)(const G4ThreeVector &)  const>(&G4Paraboloid::SurfaceNormal));
 
   DEBUG_MSG("Adding wrapper for G4double G4Paraboloid::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Paraboloid::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:103:14
-  t197.method("DistanceToIn", static_cast<G4double (G4Paraboloid::*)(const G4ThreeVector &, const G4ThreeVector &)  const>(&G4Paraboloid::DistanceToIn));
+  t223.method("DistanceToIn", static_cast<G4double (G4Paraboloid::*)(const G4ThreeVector &, const G4ThreeVector &)  const>(&G4Paraboloid::DistanceToIn));
 
   DEBUG_MSG("Adding wrapper for G4double G4Paraboloid::DistanceToIn(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Paraboloid::DistanceToIn(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:105:14
-  t197.method("DistanceToIn", static_cast<G4double (G4Paraboloid::*)(const G4ThreeVector &)  const>(&G4Paraboloid::DistanceToIn));
+  t223.method("DistanceToIn", static_cast<G4double (G4Paraboloid::*)(const G4ThreeVector &)  const>(&G4Paraboloid::DistanceToIn));
 
   DEBUG_MSG("Adding wrapper for G4double G4Paraboloid::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Paraboloid::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:106:14
-  t197.method("DistanceToOut", static_cast<G4double (G4Paraboloid::*)(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)  const>(&G4Paraboloid::DistanceToOut));
-  t197.method("DistanceToOut", [](G4Paraboloid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a.DistanceToOut(arg0, arg1); });
-  t197.method("DistanceToOut", [](G4Paraboloid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a.DistanceToOut(arg0, arg1, arg2); });
-  t197.method("DistanceToOut", [](G4Paraboloid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a.DistanceToOut(arg0, arg1, arg2, arg3); });
-  t197.method("DistanceToOut", [](G4Paraboloid const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a->DistanceToOut(arg0, arg1); });
-  t197.method("DistanceToOut", [](G4Paraboloid const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a->DistanceToOut(arg0, arg1, arg2); });
-  t197.method("DistanceToOut", [](G4Paraboloid const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a->DistanceToOut(arg0, arg1, arg2, arg3); });
+  t223.method("DistanceToOut", static_cast<G4double (G4Paraboloid::*)(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)  const>(&G4Paraboloid::DistanceToOut));
+  t223.method("DistanceToOut", [](G4Paraboloid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a.DistanceToOut(arg0, arg1); });
+  t223.method("DistanceToOut", [](G4Paraboloid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a.DistanceToOut(arg0, arg1, arg2); });
+  t223.method("DistanceToOut", [](G4Paraboloid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a.DistanceToOut(arg0, arg1, arg2, arg3); });
+  t223.method("DistanceToOut", [](G4Paraboloid const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a->DistanceToOut(arg0, arg1); });
+  t223.method("DistanceToOut", [](G4Paraboloid const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a->DistanceToOut(arg0, arg1, arg2); });
+  t223.method("DistanceToOut", [](G4Paraboloid const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a->DistanceToOut(arg0, arg1, arg2, arg3); });
 
   DEBUG_MSG("Adding wrapper for G4double G4Paraboloid::DistanceToOut(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Paraboloid::DistanceToOut(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:111:14
-  t197.method("DistanceToOut", static_cast<G4double (G4Paraboloid::*)(const G4ThreeVector &)  const>(&G4Paraboloid::DistanceToOut));
+  t223.method("DistanceToOut", static_cast<G4double (G4Paraboloid::*)(const G4ThreeVector &)  const>(&G4Paraboloid::DistanceToOut));
 
   DEBUG_MSG("Adding wrapper for G4GeometryType G4Paraboloid::GetEntityType() (" __HERE__ ")");
   // signature to use in the veto list: G4GeometryType G4Paraboloid::GetEntityType()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:113:20
-  t197.method("GetEntityType", static_cast<G4GeometryType (G4Paraboloid::*)()  const>(&G4Paraboloid::GetEntityType));
+  t223.method("GetEntityType", static_cast<G4GeometryType (G4Paraboloid::*)()  const>(&G4Paraboloid::GetEntityType));
 
   DEBUG_MSG("Adding wrapper for G4VSolid * G4Paraboloid::Clone() (" __HERE__ ")");
   // signature to use in the veto list: G4VSolid * G4Paraboloid::Clone()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:115:15
-  t197.method("Clone", static_cast<G4VSolid * (G4Paraboloid::*)()  const>(&G4Paraboloid::Clone));
+  t223.method("Clone", static_cast<G4VSolid * (G4Paraboloid::*)()  const>(&G4Paraboloid::Clone));
 
   DEBUG_MSG("Adding wrapper for G4ThreeVector G4Paraboloid::GetPointOnSurface() (" __HERE__ ")");
   // signature to use in the veto list: G4ThreeVector G4Paraboloid::GetPointOnSurface()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:119:19
-  t197.method("GetPointOnSurface", static_cast<G4ThreeVector (G4Paraboloid::*)()  const>(&G4Paraboloid::GetPointOnSurface));
+  t223.method("GetPointOnSurface", static_cast<G4ThreeVector (G4Paraboloid::*)()  const>(&G4Paraboloid::GetPointOnSurface));
 
   DEBUG_MSG("Adding wrapper for G4Polyhedron * G4Paraboloid::CreatePolyhedron() (" __HERE__ ")");
   // signature to use in the veto list: G4Polyhedron * G4Paraboloid::CreatePolyhedron()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:124:19
-  t197.method("CreatePolyhedron", static_cast<G4Polyhedron * (G4Paraboloid::*)()  const>(&G4Paraboloid::CreatePolyhedron));
+  t223.method("CreatePolyhedron", static_cast<G4Polyhedron * (G4Paraboloid::*)()  const>(&G4Paraboloid::CreatePolyhedron));
 
   DEBUG_MSG("Adding wrapper for G4Polyhedron * G4Paraboloid::GetPolyhedron() (" __HERE__ ")");
   // signature to use in the veto list: G4Polyhedron * G4Paraboloid::GetPolyhedron()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:125:19
-  t197.method("GetPolyhedron", static_cast<G4Polyhedron * (G4Paraboloid::*)()  const>(&G4Paraboloid::GetPolyhedron));
+  t223.method("GetPolyhedron", static_cast<G4Polyhedron * (G4Paraboloid::*)()  const>(&G4Paraboloid::GetPolyhedron));
 
 
   DEBUG_MSG("Adding wrapper for void G4Paraboloid::G4Paraboloid(const G4Paraboloid &) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:134:5
-  t197.constructor<const G4Paraboloid &>(/*finalize=*/true);
+  t223.constructor<const G4Paraboloid &>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for G4Paraboloid & G4Paraboloid::operator=(const G4Paraboloid &) (" __HERE__ ")");
   // signature to use in the veto list: G4Paraboloid & G4Paraboloid::operator=(const G4Paraboloid &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Paraboloid.hh:135:19
-  t197.method("assign", static_cast<G4Paraboloid & (G4Paraboloid::*)(const G4Paraboloid &) >(&G4Paraboloid::operator=));
+  t223.method("assign", static_cast<G4Paraboloid & (G4Paraboloid::*)(const G4Paraboloid &) >(&G4Paraboloid::operator=));
 
   /* End of G4Paraboloid class method wrappers
    **********************************************************************/

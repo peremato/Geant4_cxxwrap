@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4VUserDetectorConstruction(jlcxx::Module& types, jlcxx::TypeWrapper<G4VUserDetectorConstruction>& t87) {
+void add_methods_for_G4VUserDetectorConstruction(jlcxx::Module& types, jlcxx::TypeWrapper<G4VUserDetectorConstruction>& t88) {
 
 
   /**********************************************************************/
@@ -25,37 +25,37 @@ void add_methods_for_G4VUserDetectorConstruction(jlcxx::Module& types, jlcxx::Ty
   DEBUG_MSG("Adding wrapper for G4VPhysicalVolume * G4VUserDetectorConstruction::Construct() (" __HERE__ ")");
   // signature to use in the veto list: G4VPhysicalVolume * G4VUserDetectorConstruction::Construct()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VUserDetectorConstruction.hh:57:32
-  t87.method("Construct", static_cast<G4VPhysicalVolume * (G4VUserDetectorConstruction::*)() >(&G4VUserDetectorConstruction::Construct));
+  t88.method("Construct", static_cast<G4VPhysicalVolume * (G4VUserDetectorConstruction::*)() >(&G4VUserDetectorConstruction::Construct));
 
   DEBUG_MSG("Adding wrapper for void G4VUserDetectorConstruction::ConstructSDandField() (" __HERE__ ")");
   // signature to use in the veto list: void G4VUserDetectorConstruction::ConstructSDandField()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VUserDetectorConstruction.hh:59:18
-  t87.method("ConstructSDandField", static_cast<void (G4VUserDetectorConstruction::*)() >(&G4VUserDetectorConstruction::ConstructSDandField));
+  t88.method("ConstructSDandField", static_cast<void (G4VUserDetectorConstruction::*)() >(&G4VUserDetectorConstruction::ConstructSDandField));
 
   DEBUG_MSG("Adding wrapper for void G4VUserDetectorConstruction::CloneSD() (" __HERE__ ")");
   // signature to use in the veto list: void G4VUserDetectorConstruction::CloneSD()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VUserDetectorConstruction.hh:63:18
-  t87.method("CloneSD", static_cast<void (G4VUserDetectorConstruction::*)() >(&G4VUserDetectorConstruction::CloneSD));
+  t88.method("CloneSD", static_cast<void (G4VUserDetectorConstruction::*)() >(&G4VUserDetectorConstruction::CloneSD));
 
   DEBUG_MSG("Adding wrapper for void G4VUserDetectorConstruction::CloneF() (" __HERE__ ")");
   // signature to use in the veto list: void G4VUserDetectorConstruction::CloneF()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VUserDetectorConstruction.hh:64:18
-  t87.method("CloneF", static_cast<void (G4VUserDetectorConstruction::*)() >(&G4VUserDetectorConstruction::CloneF));
+  t88.method("CloneF", static_cast<void (G4VUserDetectorConstruction::*)() >(&G4VUserDetectorConstruction::CloneF));
 
   DEBUG_MSG("Adding wrapper for G4int G4VUserDetectorConstruction::ConstructParallelGeometries() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4VUserDetectorConstruction::ConstructParallelGeometries()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VUserDetectorConstruction.hh:68:11
-  t87.method("ConstructParallelGeometries", static_cast<G4int (G4VUserDetectorConstruction::*)() >(&G4VUserDetectorConstruction::ConstructParallelGeometries));
+  t88.method("ConstructParallelGeometries", static_cast<G4int (G4VUserDetectorConstruction::*)() >(&G4VUserDetectorConstruction::ConstructParallelGeometries));
 
   DEBUG_MSG("Adding wrapper for void G4VUserDetectorConstruction::ConstructParallelSD() (" __HERE__ ")");
   // signature to use in the veto list: void G4VUserDetectorConstruction::ConstructParallelSD()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VUserDetectorConstruction.hh:69:10
-  t87.method("ConstructParallelSD", static_cast<void (G4VUserDetectorConstruction::*)() >(&G4VUserDetectorConstruction::ConstructParallelSD));
+  t88.method("ConstructParallelSD", static_cast<void (G4VUserDetectorConstruction::*)() >(&G4VUserDetectorConstruction::ConstructParallelSD));
 
   DEBUG_MSG("Adding wrapper for G4int G4VUserDetectorConstruction::GetNumberOfParallelWorld() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4VUserDetectorConstruction::GetNumberOfParallelWorld()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VUserDetectorConstruction.hh:71:11
-  t87.method("GetNumberOfParallelWorld", static_cast<G4int (G4VUserDetectorConstruction::*)()  const>(&G4VUserDetectorConstruction::GetNumberOfParallelWorld));
+  t88.method("GetNumberOfParallelWorld", static_cast<G4int (G4VUserDetectorConstruction::*)()  const>(&G4VUserDetectorConstruction::GetNumberOfParallelWorld));
 
   /* End of G4VUserDetectorConstruction class method wrappers
    **********************************************************************/

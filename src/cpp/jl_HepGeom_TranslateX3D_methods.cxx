@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_HepGeom_TranslateX3D(jlcxx::Module& types, jlcxx::TypeWrapper<HepGeom::TranslateX3D>& t74) {
+void add_methods_for_HepGeom_TranslateX3D(jlcxx::Module& types, jlcxx::TypeWrapper<HepGeom::TranslateX3D>& t75) {
 
 
   /**********************************************************************/
@@ -25,7 +25,7 @@ void add_methods_for_HepGeom_TranslateX3D(jlcxx::Module& types, jlcxx::TypeWrapp
 
   DEBUG_MSG("Adding wrapper for void HepGeom::TranslateX3D::TranslateX3D(double) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Geometry/Transform3D.h:549:5
-  t74.constructor<double>(/*finalize=*/true);
+  t75.constructor<double>(/*finalize=*/true);
 
   /* End of HepGeom::TranslateX3D class method wrappers
    **********************************************************************/

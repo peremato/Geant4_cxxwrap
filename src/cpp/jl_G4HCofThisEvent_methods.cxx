@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4HCofThisEvent(jlcxx::Module& types, jlcxx::TypeWrapper<G4HCofThisEvent>& t61) {
+void add_methods_for_G4HCofThisEvent(jlcxx::Module& types, jlcxx::TypeWrapper<G4HCofThisEvent>& t62) {
 
 
   /**********************************************************************/
@@ -25,37 +25,37 @@ void add_methods_for_G4HCofThisEvent(jlcxx::Module& types, jlcxx::TypeWrapper<G4
 
   DEBUG_MSG("Adding wrapper for void G4HCofThisEvent::G4HCofThisEvent(G4int) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4HCofThisEvent.hh:52:3
-  t61.constructor<G4int>(/*finalize=*/true);
+  t62.constructor<G4int>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for void G4HCofThisEvent::AddHitsCollection(G4int, G4VHitsCollection *) (" __HERE__ ")");
   // signature to use in the veto list: void G4HCofThisEvent::AddHitsCollection(G4int, G4VHitsCollection *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4HCofThisEvent.hh:57:8
-  t61.method("AddHitsCollection", static_cast<void (G4HCofThisEvent::*)(G4int, G4VHitsCollection *) >(&G4HCofThisEvent::AddHitsCollection));
+  t62.method("AddHitsCollection", static_cast<void (G4HCofThisEvent::*)(G4int, G4VHitsCollection *) >(&G4HCofThisEvent::AddHitsCollection));
 
 
   DEBUG_MSG("Adding wrapper for void G4HCofThisEvent::G4HCofThisEvent(const G4HCofThisEvent &) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4HCofThisEvent.hh:59:3
-  t61.constructor<const G4HCofThisEvent &>(/*finalize=*/true);
+  t62.constructor<const G4HCofThisEvent &>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for G4HCofThisEvent & G4HCofThisEvent::operator=(const G4HCofThisEvent &) (" __HERE__ ")");
   // signature to use in the veto list: G4HCofThisEvent & G4HCofThisEvent::operator=(const G4HCofThisEvent &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4HCofThisEvent.hh:60:20
-  t61.method("assign", static_cast<G4HCofThisEvent & (G4HCofThisEvent::*)(const G4HCofThisEvent &) >(&G4HCofThisEvent::operator=));
+  t62.method("assign", static_cast<G4HCofThisEvent & (G4HCofThisEvent::*)(const G4HCofThisEvent &) >(&G4HCofThisEvent::operator=));
 
   DEBUG_MSG("Adding wrapper for G4VHitsCollection * G4HCofThisEvent::GetHC(G4int) (" __HERE__ ")");
   // signature to use in the veto list: G4VHitsCollection * G4HCofThisEvent::GetHC(G4int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4HCofThisEvent.hh:66:29
-  t61.method("GetHC", static_cast<G4VHitsCollection * (G4HCofThisEvent::*)(G4int) >(&G4HCofThisEvent::GetHC));
+  t62.method("GetHC", static_cast<G4VHitsCollection * (G4HCofThisEvent::*)(G4int) >(&G4HCofThisEvent::GetHC));
 
   DEBUG_MSG("Adding wrapper for G4int G4HCofThisEvent::GetNumberOfCollections() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4HCofThisEvent::GetNumberOfCollections()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4HCofThisEvent.hh:72:16
-  t61.method("GetNumberOfCollections", static_cast<G4int (G4HCofThisEvent::*)() >(&G4HCofThisEvent::GetNumberOfCollections));
+  t62.method("GetNumberOfCollections", static_cast<G4int (G4HCofThisEvent::*)() >(&G4HCofThisEvent::GetNumberOfCollections));
 
   DEBUG_MSG("Adding wrapper for size_t G4HCofThisEvent::GetCapacity() (" __HERE__ ")");
   // signature to use in the veto list: size_t G4HCofThisEvent::GetCapacity()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4HCofThisEvent.hh:85:17
-  t61.method("GetCapacity", static_cast<size_t (G4HCofThisEvent::*)() >(&G4HCofThisEvent::GetCapacity));
+  t62.method("GetCapacity", static_cast<size_t (G4HCofThisEvent::*)() >(&G4HCofThisEvent::GetCapacity));
 
   /* End of G4HCofThisEvent class method wrappers
    **********************************************************************/

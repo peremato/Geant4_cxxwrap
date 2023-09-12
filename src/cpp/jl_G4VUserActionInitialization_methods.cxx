@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4VUserActionInitialization(jlcxx::Module& types, jlcxx::TypeWrapper<G4VUserActionInitialization>& t88) {
+void add_methods_for_G4VUserActionInitialization(jlcxx::Module& types, jlcxx::TypeWrapper<G4VUserActionInitialization>& t89) {
 
 
   /**********************************************************************/
@@ -25,17 +25,17 @@ void add_methods_for_G4VUserActionInitialization(jlcxx::Module& types, jlcxx::Ty
   DEBUG_MSG("Adding wrapper for void G4VUserActionInitialization::Build() (" __HERE__ ")");
   // signature to use in the veto list: void G4VUserActionInitialization::Build()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VUserActionInitialization.hh:65:18
-  t88.method("Build", static_cast<void (G4VUserActionInitialization::*)()  const>(&G4VUserActionInitialization::Build));
+  t89.method("Build", static_cast<void (G4VUserActionInitialization::*)()  const>(&G4VUserActionInitialization::Build));
 
   DEBUG_MSG("Adding wrapper for void G4VUserActionInitialization::BuildForMaster() (" __HERE__ ")");
   // signature to use in the veto list: void G4VUserActionInitialization::BuildForMaster()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VUserActionInitialization.hh:69:18
-  t88.method("BuildForMaster", static_cast<void (G4VUserActionInitialization::*)()  const>(&G4VUserActionInitialization::BuildForMaster));
+  t89.method("BuildForMaster", static_cast<void (G4VUserActionInitialization::*)()  const>(&G4VUserActionInitialization::BuildForMaster));
 
   DEBUG_MSG("Adding wrapper for G4VSteppingVerbose * G4VUserActionInitialization::InitializeSteppingVerbose() (" __HERE__ ")");
   // signature to use in the veto list: G4VSteppingVerbose * G4VUserActionInitialization::InitializeSteppingVerbose()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VUserActionInitialization.hh:76:33
-  t88.method("InitializeSteppingVerbose", static_cast<G4VSteppingVerbose * (G4VUserActionInitialization::*)()  const>(&G4VUserActionInitialization::InitializeSteppingVerbose));
+  t89.method("InitializeSteppingVerbose", static_cast<G4VSteppingVerbose * (G4VUserActionInitialization::*)()  const>(&G4VUserActionInitialization::InitializeSteppingVerbose));
 
   /* End of G4VUserActionInitialization class method wrappers
    **********************************************************************/

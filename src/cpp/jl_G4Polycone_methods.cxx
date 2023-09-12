@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4Polycone(jlcxx::Module& types, jlcxx::TypeWrapper<G4Polycone>& t118) {
+void add_methods_for_G4Polycone(jlcxx::Module& types, jlcxx::TypeWrapper<G4Polycone>& t119) {
 
 
   /**********************************************************************/
@@ -25,137 +25,137 @@ void add_methods_for_G4Polycone(jlcxx::Module& types, jlcxx::TypeWrapper<G4Polyc
 
   DEBUG_MSG("Adding wrapper for void G4Polycone::G4Polycone(const G4String &, G4double, G4double, G4int, const G4double [], const G4double [], const G4double []) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:80:3
-  t118.constructor<const G4String &, G4double, G4double, G4int, const G4double [], const G4double [], const G4double []>(/*finalize=*/true);
+  t119.constructor<const G4String &, G4double, G4double, G4int, const G4double [], const G4double [], const G4double []>(/*finalize=*/true);
 
 
   DEBUG_MSG("Adding wrapper for void G4Polycone::G4Polycone(const G4String &, G4double, G4double, G4int, const G4double [], const G4double []) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:88:3
-  t118.constructor<const G4String &, G4double, G4double, G4int, const G4double [], const G4double []>(/*finalize=*/true);
+  t119.constructor<const G4String &, G4double, G4double, G4int, const G4double [], const G4double []>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for EInside G4Polycone::Inside(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: EInside G4Polycone::Inside(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:99:11
-  t118.method("Inside", static_cast<EInside (G4Polycone::*)(const G4ThreeVector &)  const>(&G4Polycone::Inside));
+  t119.method("Inside", static_cast<EInside (G4Polycone::*)(const G4ThreeVector &)  const>(&G4Polycone::Inside));
 
   DEBUG_MSG("Adding wrapper for G4double G4Polycone::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Polycone::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:100:12
-  t118.method("DistanceToIn", static_cast<G4double (G4Polycone::*)(const G4ThreeVector &, const G4ThreeVector &)  const>(&G4Polycone::DistanceToIn));
+  t119.method("DistanceToIn", static_cast<G4double (G4Polycone::*)(const G4ThreeVector &, const G4ThreeVector &)  const>(&G4Polycone::DistanceToIn));
 
   DEBUG_MSG("Adding wrapper for G4double G4Polycone::DistanceToIn(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Polycone::DistanceToIn(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:101:12
-  t118.method("DistanceToIn", static_cast<G4double (G4Polycone::*)(const G4ThreeVector &)  const>(&G4Polycone::DistanceToIn));
+  t119.method("DistanceToIn", static_cast<G4double (G4Polycone::*)(const G4ThreeVector &)  const>(&G4Polycone::DistanceToIn));
 
   DEBUG_MSG("Adding wrapper for void G4Polycone::BoundingLimits(G4ThreeVector &, G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: void G4Polycone::BoundingLimits(G4ThreeVector &, G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:103:8
-  t118.method("BoundingLimits", static_cast<void (G4Polycone::*)(G4ThreeVector &, G4ThreeVector &)  const>(&G4Polycone::BoundingLimits));
+  t119.method("BoundingLimits", static_cast<void (G4Polycone::*)(G4ThreeVector &, G4ThreeVector &)  const>(&G4Polycone::BoundingLimits));
 
   DEBUG_MSG("Adding wrapper for G4double G4Polycone::GetCubicVolume() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Polycone::GetCubicVolume()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:109:12
-  t118.method("GetCubicVolume", static_cast<G4double (G4Polycone::*)() >(&G4Polycone::GetCubicVolume));
+  t119.method("GetCubicVolume", static_cast<G4double (G4Polycone::*)() >(&G4Polycone::GetCubicVolume));
 
   DEBUG_MSG("Adding wrapper for G4double G4Polycone::GetSurfaceArea() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Polycone::GetSurfaceArea()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:110:12
-  t118.method("GetSurfaceArea", static_cast<G4double (G4Polycone::*)() >(&G4Polycone::GetSurfaceArea));
+  t119.method("GetSurfaceArea", static_cast<G4double (G4Polycone::*)() >(&G4Polycone::GetSurfaceArea));
 
   DEBUG_MSG("Adding wrapper for G4ThreeVector G4Polycone::GetPointOnSurface() (" __HERE__ ")");
   // signature to use in the veto list: G4ThreeVector G4Polycone::GetPointOnSurface()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:112:17
-  t118.method("GetPointOnSurface", static_cast<G4ThreeVector (G4Polycone::*)()  const>(&G4Polycone::GetPointOnSurface));
+  t119.method("GetPointOnSurface", static_cast<G4ThreeVector (G4Polycone::*)()  const>(&G4Polycone::GetPointOnSurface));
 
   DEBUG_MSG("Adding wrapper for void G4Polycone::ComputeDimensions(G4VPVParameterisation *, const G4int, const G4VPhysicalVolume *) (" __HERE__ ")");
   // signature to use in the veto list: void G4Polycone::ComputeDimensions(G4VPVParameterisation *, const G4int, const G4VPhysicalVolume *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:114:8
-  t118.method("ComputeDimensions", static_cast<void (G4Polycone::*)(G4VPVParameterisation *, const G4int, const G4VPhysicalVolume *) >(&G4Polycone::ComputeDimensions));
+  t119.method("ComputeDimensions", static_cast<void (G4Polycone::*)(G4VPVParameterisation *, const G4int, const G4VPhysicalVolume *) >(&G4Polycone::ComputeDimensions));
 
   DEBUG_MSG("Adding wrapper for G4GeometryType G4Polycone::GetEntityType() (" __HERE__ ")");
   // signature to use in the veto list: G4GeometryType G4Polycone::GetEntityType()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:118:18
-  t118.method("GetEntityType", static_cast<G4GeometryType (G4Polycone::*)()  const>(&G4Polycone::GetEntityType));
+  t119.method("GetEntityType", static_cast<G4GeometryType (G4Polycone::*)()  const>(&G4Polycone::GetEntityType));
 
   DEBUG_MSG("Adding wrapper for G4VSolid * G4Polycone::Clone() (" __HERE__ ")");
   // signature to use in the veto list: G4VSolid * G4Polycone::Clone()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:120:13
-  t118.method("Clone", static_cast<G4VSolid * (G4Polycone::*)()  const>(&G4Polycone::Clone));
+  t119.method("Clone", static_cast<G4VSolid * (G4Polycone::*)()  const>(&G4Polycone::Clone));
 
   DEBUG_MSG("Adding wrapper for G4Polyhedron * G4Polycone::CreatePolyhedron() (" __HERE__ ")");
   // signature to use in the veto list: G4Polyhedron * G4Polycone::CreatePolyhedron()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:124:17
-  t118.method("CreatePolyhedron", static_cast<G4Polyhedron * (G4Polycone::*)()  const>(&G4Polycone::CreatePolyhedron));
+  t119.method("CreatePolyhedron", static_cast<G4Polyhedron * (G4Polycone::*)()  const>(&G4Polycone::CreatePolyhedron));
 
   DEBUG_MSG("Adding wrapper for G4bool G4Polycone::Reset() (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4Polycone::Reset()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:126:10
-  t118.method("Reset", static_cast<G4bool (G4Polycone::*)() >(&G4Polycone::Reset));
+  t119.method("Reset", static_cast<G4bool (G4Polycone::*)() >(&G4Polycone::Reset));
 
   DEBUG_MSG("Adding wrapper for G4double G4Polycone::GetStartPhi() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Polycone::GetStartPhi()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:130:19
-  t118.method("GetStartPhi", static_cast<G4double (G4Polycone::*)()  const>(&G4Polycone::GetStartPhi));
+  t119.method("GetStartPhi", static_cast<G4double (G4Polycone::*)()  const>(&G4Polycone::GetStartPhi));
 
   DEBUG_MSG("Adding wrapper for G4double G4Polycone::GetEndPhi() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Polycone::GetEndPhi()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:131:19
-  t118.method("GetEndPhi", static_cast<G4double (G4Polycone::*)()  const>(&G4Polycone::GetEndPhi));
+  t119.method("GetEndPhi", static_cast<G4double (G4Polycone::*)()  const>(&G4Polycone::GetEndPhi));
 
   DEBUG_MSG("Adding wrapper for G4double G4Polycone::GetSinStartPhi() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Polycone::GetSinStartPhi()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:132:19
-  t118.method("GetSinStartPhi", static_cast<G4double (G4Polycone::*)()  const>(&G4Polycone::GetSinStartPhi));
+  t119.method("GetSinStartPhi", static_cast<G4double (G4Polycone::*)()  const>(&G4Polycone::GetSinStartPhi));
 
   DEBUG_MSG("Adding wrapper for G4double G4Polycone::GetCosStartPhi() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Polycone::GetCosStartPhi()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:133:19
-  t118.method("GetCosStartPhi", static_cast<G4double (G4Polycone::*)()  const>(&G4Polycone::GetCosStartPhi));
+  t119.method("GetCosStartPhi", static_cast<G4double (G4Polycone::*)()  const>(&G4Polycone::GetCosStartPhi));
 
   DEBUG_MSG("Adding wrapper for G4double G4Polycone::GetSinEndPhi() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Polycone::GetSinEndPhi()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:134:19
-  t118.method("GetSinEndPhi", static_cast<G4double (G4Polycone::*)()  const>(&G4Polycone::GetSinEndPhi));
+  t119.method("GetSinEndPhi", static_cast<G4double (G4Polycone::*)()  const>(&G4Polycone::GetSinEndPhi));
 
   DEBUG_MSG("Adding wrapper for G4double G4Polycone::GetCosEndPhi() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Polycone::GetCosEndPhi()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:135:19
-  t118.method("GetCosEndPhi", static_cast<G4double (G4Polycone::*)()  const>(&G4Polycone::GetCosEndPhi));
+  t119.method("GetCosEndPhi", static_cast<G4double (G4Polycone::*)()  const>(&G4Polycone::GetCosEndPhi));
 
   DEBUG_MSG("Adding wrapper for G4bool G4Polycone::IsOpen() (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4Polycone::IsOpen()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:136:17
-  t118.method("IsOpen", static_cast<G4bool (G4Polycone::*)()  const>(&G4Polycone::IsOpen));
+  t119.method("IsOpen", static_cast<G4bool (G4Polycone::*)()  const>(&G4Polycone::IsOpen));
 
   DEBUG_MSG("Adding wrapper for G4int G4Polycone::GetNumRZCorner() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4Polycone::GetNumRZCorner()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:137:17
-  t118.method("GetNumRZCorner", static_cast<G4int (G4Polycone::*)()  const>(&G4Polycone::GetNumRZCorner));
+  t119.method("GetNumRZCorner", static_cast<G4int (G4Polycone::*)()  const>(&G4Polycone::GetNumRZCorner));
 
   DEBUG_MSG("Adding wrapper for G4PolyconeSideRZ G4Polycone::GetCorner(G4int) (" __HERE__ ")");
   // signature to use in the veto list: G4PolyconeSideRZ G4Polycone::GetCorner(G4int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:138:27
-  t118.method("GetCorner", static_cast<G4PolyconeSideRZ (G4Polycone::*)(G4int)  const>(&G4Polycone::GetCorner));
+  t119.method("GetCorner", static_cast<G4PolyconeSideRZ (G4Polycone::*)(G4int)  const>(&G4Polycone::GetCorner));
 
   DEBUG_MSG("Adding wrapper for G4PolyconeHistorical * G4Polycone::GetOriginalParameters() (" __HERE__ ")");
   // signature to use in the veto list: G4PolyconeHistorical * G4Polycone::GetOriginalParameters()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:139:32
-  t118.method("GetOriginalParameters", static_cast<G4PolyconeHistorical * (G4Polycone::*)()  const>(&G4Polycone::GetOriginalParameters));
+  t119.method("GetOriginalParameters", static_cast<G4PolyconeHistorical * (G4Polycone::*)()  const>(&G4Polycone::GetOriginalParameters));
 
   DEBUG_MSG("Adding wrapper for void G4Polycone::SetOriginalParameters(G4PolyconeHistorical *) (" __HERE__ ")");
   // signature to use in the veto list: void G4Polycone::SetOriginalParameters(G4PolyconeHistorical *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:140:15
-  t118.method("SetOriginalParameters", static_cast<void (G4Polycone::*)(G4PolyconeHistorical *) >(&G4Polycone::SetOriginalParameters));
+  t119.method("SetOriginalParameters", static_cast<void (G4Polycone::*)(G4PolyconeHistorical *) >(&G4Polycone::SetOriginalParameters));
 
 
   DEBUG_MSG("Adding wrapper for void G4Polycone::G4Polycone(const G4Polycone &) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:149:3
-  t118.constructor<const G4Polycone &>(/*finalize=*/true);
+  t119.constructor<const G4Polycone &>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for G4Polycone & G4Polycone::operator=(const G4Polycone &) (" __HERE__ ")");
   // signature to use in the veto list: G4Polycone & G4Polycone::operator=(const G4Polycone &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polycone.hh:150:15
-  t118.method("assign", static_cast<G4Polycone & (G4Polycone::*)(const G4Polycone &) >(&G4Polycone::operator=));
+  t119.method("assign", static_cast<G4Polycone & (G4Polycone::*)(const G4Polycone &) >(&G4Polycone::operator=));
 
   /* End of G4Polycone class method wrappers
    **********************************************************************/

@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_HepGeom_RotateX3D(jlcxx::Module& types, jlcxx::TypeWrapper<HepGeom::RotateX3D>& t71) {
+void add_methods_for_HepGeom_RotateX3D(jlcxx::Module& types, jlcxx::TypeWrapper<HepGeom::RotateX3D>& t72) {
 
 
   /**********************************************************************/
@@ -25,7 +25,7 @@ void add_methods_for_HepGeom_RotateX3D(jlcxx::Module& types, jlcxx::TypeWrapper<
 
   DEBUG_MSG("Adding wrapper for void HepGeom::RotateX3D::RotateX3D(double) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Geometry/Transform3D.h:433:5
-  t71.constructor<double>(/*finalize=*/true);
+  t72.constructor<double>(/*finalize=*/true);
 
   /* End of HepGeom::RotateX3D class method wrappers
    **********************************************************************/
