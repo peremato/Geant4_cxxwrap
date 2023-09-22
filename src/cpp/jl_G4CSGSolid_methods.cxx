@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4CSGSolid(jlcxx::Module& types, jlcxx::TypeWrapper<G4CSGSolid>& t169) {
+void add_methods_for_G4CSGSolid(jlcxx::Module& types, jlcxx::TypeWrapper<G4CSGSolid>& t171) {
 
 
   /**********************************************************************/
@@ -26,13 +26,13 @@ void add_methods_for_G4CSGSolid(jlcxx::Module& types, jlcxx::TypeWrapper<G4CSGSo
   DEBUG_MSG("Adding wrapper for G4Polyhedron * G4CSGSolid::GetPolyhedron() (" __HERE__ ")");
   // signature to use in the veto list: G4Polyhedron * G4CSGSolid::GetPolyhedron()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4CSGSolid.hh:50:27
-  t169.method("GetPolyhedron", static_cast<G4Polyhedron * (G4CSGSolid::*)()  const>(&G4CSGSolid::GetPolyhedron));
+  t171.method("GetPolyhedron", static_cast<G4Polyhedron * (G4CSGSolid::*)()  const>(&G4CSGSolid::GetPolyhedron));
 
 
   DEBUG_MSG("Adding wrapper for G4CSGSolid & G4CSGSolid::operator=(const G4CSGSolid &) (" __HERE__ ")");
   // signature to use in the veto list: G4CSGSolid & G4CSGSolid::operator=(const G4CSGSolid &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4CSGSolid.hh:60:17
-  t169.method("assign", static_cast<G4CSGSolid & (G4CSGSolid::*)(const G4CSGSolid &) >(&G4CSGSolid::operator=));
+  t171.method("assign", static_cast<G4CSGSolid & (G4CSGSolid::*)(const G4CSGSolid &) >(&G4CSGSolid::operator=));
 
   /* End of G4CSGSolid class method wrappers
    **********************************************************************/

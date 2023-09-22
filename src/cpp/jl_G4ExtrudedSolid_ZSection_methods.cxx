@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4ExtrudedSolid_ZSection(jlcxx::Module& types, jlcxx::TypeWrapper<G4ExtrudedSolid::ZSection>& t178) {
+void add_methods_for_G4ExtrudedSolid_ZSection(jlcxx::Module& types, jlcxx::TypeWrapper<G4ExtrudedSolid::ZSection>& t180) {
 
 
   /**********************************************************************/
@@ -25,58 +25,58 @@ void add_methods_for_G4ExtrudedSolid_ZSection(jlcxx::Module& types, jlcxx::TypeW
 
   DEBUG_MSG("Adding wrapper for void G4ExtrudedSolid::ZSection::ZSection(G4double, const G4TwoVector &, G4double) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:79:7
-  t178.constructor<G4double, const G4TwoVector &, G4double>(/*finalize=*/true);
+  t180.constructor<G4double, const G4TwoVector &, G4double>(/*finalize=*/true);
 
   DEBUG_MSG("Adding fZ methods  to provide read access to the field fZ (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:82:19
   // signature to use in the veto list: G4ExtrudedSolid::ZSection::fZ
-  t178.method("fZ", [](const G4ExtrudedSolid::ZSection& a) -> G4double { return a.fZ; });
-  t178.method("fZ", [](G4ExtrudedSolid::ZSection& a) -> G4double { return a.fZ; });
-  t178.method("fZ", [](const G4ExtrudedSolid::ZSection* a) -> G4double { return a->fZ; });
-  t178.method("fZ", [](G4ExtrudedSolid::ZSection* a) -> G4double { return a->fZ; });
+  t180.method("fZ", [](const G4ExtrudedSolid::ZSection& a) -> G4double { return a.fZ; });
+  t180.method("fZ", [](G4ExtrudedSolid::ZSection& a) -> G4double { return a.fZ; });
+  t180.method("fZ", [](const G4ExtrudedSolid::ZSection* a) -> G4double { return a->fZ; });
+  t180.method("fZ", [](G4ExtrudedSolid::ZSection* a) -> G4double { return a->fZ; });
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:82:19
   // signature to use in the veto list: G4ExtrudedSolid::ZSection::fZ
   // with ! suffix to veto the setter only
 
   DEBUG_MSG("Adding fZ! methods to provide write access to the field fZ (" __HERE__ ")");
-  t178.method("fZ!", [](G4ExtrudedSolid::ZSection& a, G4double val) -> G4double { return a.fZ = val; });
+  t180.method("fZ!", [](G4ExtrudedSolid::ZSection& a, G4double val) -> G4double { return a.fZ = val; });
 
   DEBUG_MSG("Adding fZ! methods to provide write access to the field fZ (" __HERE__ ")");
-  t178.method("fZ!", [](G4ExtrudedSolid::ZSection* a, G4double val) -> G4double { return a->fZ = val; });
+  t180.method("fZ!", [](G4ExtrudedSolid::ZSection* a, G4double val) -> G4double { return a->fZ = val; });
 
   DEBUG_MSG("Adding fOffset methods  to provide read access to the field fOffset (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:83:19
   // signature to use in the veto list: G4ExtrudedSolid::ZSection::fOffset
-  t178.method("fOffset", [](const G4ExtrudedSolid::ZSection& a) -> const G4TwoVector& { return a.fOffset; });
-  t178.method("fOffset", [](G4ExtrudedSolid::ZSection& a) -> G4TwoVector& { return a.fOffset; });
-  t178.method("fOffset", [](const G4ExtrudedSolid::ZSection* a) -> const G4TwoVector& { return a->fOffset; });
-  t178.method("fOffset", [](G4ExtrudedSolid::ZSection* a) -> G4TwoVector& { return a->fOffset; });
+  t180.method("fOffset", [](const G4ExtrudedSolid::ZSection& a) -> const G4TwoVector& { return a.fOffset; });
+  t180.method("fOffset", [](G4ExtrudedSolid::ZSection& a) -> G4TwoVector& { return a.fOffset; });
+  t180.method("fOffset", [](const G4ExtrudedSolid::ZSection* a) -> const G4TwoVector& { return a->fOffset; });
+  t180.method("fOffset", [](G4ExtrudedSolid::ZSection* a) -> G4TwoVector& { return a->fOffset; });
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:83:19
   // signature to use in the veto list: G4ExtrudedSolid::ZSection::fOffset
   // with ! suffix to veto the setter only
 
   DEBUG_MSG("Adding fOffset! methods to provide write access to the field fOffset (" __HERE__ ")");
-  t178.method("fOffset!", [](G4ExtrudedSolid::ZSection& a, const G4TwoVector& val) -> G4TwoVector& { return a.fOffset = val; });
+  t180.method("fOffset!", [](G4ExtrudedSolid::ZSection& a, const G4TwoVector& val) -> G4TwoVector& { return a.fOffset = val; });
 
   DEBUG_MSG("Adding fOffset! methods to provide write access to the field fOffset (" __HERE__ ")");
-  t178.method("fOffset!", [](G4ExtrudedSolid::ZSection* a, const G4TwoVector& val) -> G4TwoVector& { return a->fOffset = val; });
+  t180.method("fOffset!", [](G4ExtrudedSolid::ZSection* a, const G4TwoVector& val) -> G4TwoVector& { return a->fOffset = val; });
 
   DEBUG_MSG("Adding fScale methods  to provide read access to the field fScale (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:84:19
   // signature to use in the veto list: G4ExtrudedSolid::ZSection::fScale
-  t178.method("fScale", [](const G4ExtrudedSolid::ZSection& a) -> G4double { return a.fScale; });
-  t178.method("fScale", [](G4ExtrudedSolid::ZSection& a) -> G4double { return a.fScale; });
-  t178.method("fScale", [](const G4ExtrudedSolid::ZSection* a) -> G4double { return a->fScale; });
-  t178.method("fScale", [](G4ExtrudedSolid::ZSection* a) -> G4double { return a->fScale; });
+  t180.method("fScale", [](const G4ExtrudedSolid::ZSection& a) -> G4double { return a.fScale; });
+  t180.method("fScale", [](G4ExtrudedSolid::ZSection& a) -> G4double { return a.fScale; });
+  t180.method("fScale", [](const G4ExtrudedSolid::ZSection* a) -> G4double { return a->fScale; });
+  t180.method("fScale", [](G4ExtrudedSolid::ZSection* a) -> G4double { return a->fScale; });
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ExtrudedSolid.hh:84:19
   // signature to use in the veto list: G4ExtrudedSolid::ZSection::fScale
   // with ! suffix to veto the setter only
 
   DEBUG_MSG("Adding fScale! methods to provide write access to the field fScale (" __HERE__ ")");
-  t178.method("fScale!", [](G4ExtrudedSolid::ZSection& a, G4double val) -> G4double { return a.fScale = val; });
+  t180.method("fScale!", [](G4ExtrudedSolid::ZSection& a, G4double val) -> G4double { return a.fScale = val; });
 
   DEBUG_MSG("Adding fScale! methods to provide write access to the field fScale (" __HERE__ ")");
-  t178.method("fScale!", [](G4ExtrudedSolid::ZSection* a, G4double val) -> G4double { return a->fScale = val; });
+  t180.method("fScale!", [](G4ExtrudedSolid::ZSection* a, G4double val) -> G4double { return a->fScale = val; });
 
   /* End of G4ExtrudedSolid::ZSection class method wrappers
    **********************************************************************/

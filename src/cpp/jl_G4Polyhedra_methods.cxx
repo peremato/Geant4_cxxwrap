@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4Polyhedra(jlcxx::Module& types, jlcxx::TypeWrapper<G4Polyhedra>& t122) {
+void add_methods_for_G4Polyhedra(jlcxx::Module& types, jlcxx::TypeWrapper<G4Polyhedra>& t124) {
 
 
   /**********************************************************************/
@@ -25,147 +25,147 @@ void add_methods_for_G4Polyhedra(jlcxx::Module& types, jlcxx::TypeWrapper<G4Poly
 
   DEBUG_MSG("Adding wrapper for void G4Polyhedra::G4Polyhedra(const G4String &, G4double, G4double, G4int, G4int, const G4double [], const G4double [], const G4double []) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:78:3
-  t122.constructor<const G4String &, G4double, G4double, G4int, G4int, const G4double [], const G4double [], const G4double []>(/*finalize=*/true);
+  t124.constructor<const G4String &, G4double, G4double, G4int, G4int, const G4double [], const G4double [], const G4double []>(/*finalize=*/true);
 
 
   DEBUG_MSG("Adding wrapper for void G4Polyhedra::G4Polyhedra(const G4String &, G4double, G4double, G4int, G4int, const G4double [], const G4double []) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:87:3
-  t122.constructor<const G4String &, G4double, G4double, G4int, G4int, const G4double [], const G4double []>(/*finalize=*/true);
+  t124.constructor<const G4String &, G4double, G4double, G4int, G4int, const G4double [], const G4double []>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for EInside G4Polyhedra::Inside(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: EInside G4Polyhedra::Inside(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:99:11
-  t122.method("Inside", static_cast<EInside (G4Polyhedra::*)(const G4ThreeVector &)  const>(&G4Polyhedra::Inside));
+  t124.method("Inside", static_cast<EInside (G4Polyhedra::*)(const G4ThreeVector &)  const>(&G4Polyhedra::Inside));
 
   DEBUG_MSG("Adding wrapper for G4double G4Polyhedra::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Polyhedra::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:100:12
-  t122.method("DistanceToIn", static_cast<G4double (G4Polyhedra::*)(const G4ThreeVector &, const G4ThreeVector &)  const>(&G4Polyhedra::DistanceToIn));
+  t124.method("DistanceToIn", static_cast<G4double (G4Polyhedra::*)(const G4ThreeVector &, const G4ThreeVector &)  const>(&G4Polyhedra::DistanceToIn));
 
   DEBUG_MSG("Adding wrapper for G4double G4Polyhedra::DistanceToIn(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Polyhedra::DistanceToIn(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:102:12
-  t122.method("DistanceToIn", static_cast<G4double (G4Polyhedra::*)(const G4ThreeVector &)  const>(&G4Polyhedra::DistanceToIn));
+  t124.method("DistanceToIn", static_cast<G4double (G4Polyhedra::*)(const G4ThreeVector &)  const>(&G4Polyhedra::DistanceToIn));
 
   DEBUG_MSG("Adding wrapper for void G4Polyhedra::BoundingLimits(G4ThreeVector &, G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: void G4Polyhedra::BoundingLimits(G4ThreeVector &, G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:104:8
-  t122.method("BoundingLimits", static_cast<void (G4Polyhedra::*)(G4ThreeVector &, G4ThreeVector &)  const>(&G4Polyhedra::BoundingLimits));
+  t124.method("BoundingLimits", static_cast<void (G4Polyhedra::*)(G4ThreeVector &, G4ThreeVector &)  const>(&G4Polyhedra::BoundingLimits));
 
   DEBUG_MSG("Adding wrapper for void G4Polyhedra::ComputeDimensions(G4VPVParameterisation *, const G4int, const G4VPhysicalVolume *) (" __HERE__ ")");
   // signature to use in the veto list: void G4Polyhedra::ComputeDimensions(G4VPVParameterisation *, const G4int, const G4VPhysicalVolume *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:110:8
-  t122.method("ComputeDimensions", static_cast<void (G4Polyhedra::*)(G4VPVParameterisation *, const G4int, const G4VPhysicalVolume *) >(&G4Polyhedra::ComputeDimensions));
+  t124.method("ComputeDimensions", static_cast<void (G4Polyhedra::*)(G4VPVParameterisation *, const G4int, const G4VPhysicalVolume *) >(&G4Polyhedra::ComputeDimensions));
 
   DEBUG_MSG("Adding wrapper for G4GeometryType G4Polyhedra::GetEntityType() (" __HERE__ ")");
   // signature to use in the veto list: G4GeometryType G4Polyhedra::GetEntityType()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:114:19
-  t122.method("GetEntityType", static_cast<G4GeometryType (G4Polyhedra::*)()  const>(&G4Polyhedra::GetEntityType));
+  t124.method("GetEntityType", static_cast<G4GeometryType (G4Polyhedra::*)()  const>(&G4Polyhedra::GetEntityType));
 
   DEBUG_MSG("Adding wrapper for G4VSolid * G4Polyhedra::Clone() (" __HERE__ ")");
   // signature to use in the veto list: G4VSolid * G4Polyhedra::Clone()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:116:13
-  t122.method("Clone", static_cast<G4VSolid * (G4Polyhedra::*)()  const>(&G4Polyhedra::Clone));
+  t124.method("Clone", static_cast<G4VSolid * (G4Polyhedra::*)()  const>(&G4Polyhedra::Clone));
 
   DEBUG_MSG("Adding wrapper for G4double G4Polyhedra::GetCubicVolume() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Polyhedra::GetCubicVolume()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:118:12
-  t122.method("GetCubicVolume", static_cast<G4double (G4Polyhedra::*)() >(&G4Polyhedra::GetCubicVolume));
+  t124.method("GetCubicVolume", static_cast<G4double (G4Polyhedra::*)() >(&G4Polyhedra::GetCubicVolume));
 
   DEBUG_MSG("Adding wrapper for G4double G4Polyhedra::GetSurfaceArea() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Polyhedra::GetSurfaceArea()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:119:12
-  t122.method("GetSurfaceArea", static_cast<G4double (G4Polyhedra::*)() >(&G4Polyhedra::GetSurfaceArea));
+  t124.method("GetSurfaceArea", static_cast<G4double (G4Polyhedra::*)() >(&G4Polyhedra::GetSurfaceArea));
 
   DEBUG_MSG("Adding wrapper for G4ThreeVector G4Polyhedra::GetPointOnSurface() (" __HERE__ ")");
   // signature to use in the veto list: G4ThreeVector G4Polyhedra::GetPointOnSurface()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:121:17
-  t122.method("GetPointOnSurface", static_cast<G4ThreeVector (G4Polyhedra::*)()  const>(&G4Polyhedra::GetPointOnSurface));
+  t124.method("GetPointOnSurface", static_cast<G4ThreeVector (G4Polyhedra::*)()  const>(&G4Polyhedra::GetPointOnSurface));
 
   DEBUG_MSG("Adding wrapper for G4Polyhedron * G4Polyhedra::CreatePolyhedron() (" __HERE__ ")");
   // signature to use in the veto list: G4Polyhedron * G4Polyhedra::CreatePolyhedron()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:125:17
-  t122.method("CreatePolyhedron", static_cast<G4Polyhedron * (G4Polyhedra::*)()  const>(&G4Polyhedra::CreatePolyhedron));
+  t124.method("CreatePolyhedron", static_cast<G4Polyhedron * (G4Polyhedra::*)()  const>(&G4Polyhedra::CreatePolyhedron));
 
   DEBUG_MSG("Adding wrapper for G4bool G4Polyhedra::Reset() (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4Polyhedra::Reset()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:127:10
-  t122.method("Reset", static_cast<G4bool (G4Polyhedra::*)() >(&G4Polyhedra::Reset));
+  t124.method("Reset", static_cast<G4bool (G4Polyhedra::*)() >(&G4Polyhedra::Reset));
 
   DEBUG_MSG("Adding wrapper for G4int G4Polyhedra::GetNumSide() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4Polyhedra::GetNumSide()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:131:16
-  t122.method("GetNumSide", static_cast<G4int (G4Polyhedra::*)()  const>(&G4Polyhedra::GetNumSide));
+  t124.method("GetNumSide", static_cast<G4int (G4Polyhedra::*)()  const>(&G4Polyhedra::GetNumSide));
 
   DEBUG_MSG("Adding wrapper for G4double G4Polyhedra::GetStartPhi() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Polyhedra::GetStartPhi()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:132:19
-  t122.method("GetStartPhi", static_cast<G4double (G4Polyhedra::*)()  const>(&G4Polyhedra::GetStartPhi));
+  t124.method("GetStartPhi", static_cast<G4double (G4Polyhedra::*)()  const>(&G4Polyhedra::GetStartPhi));
 
   DEBUG_MSG("Adding wrapper for G4double G4Polyhedra::GetEndPhi() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Polyhedra::GetEndPhi()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:133:19
-  t122.method("GetEndPhi", static_cast<G4double (G4Polyhedra::*)()  const>(&G4Polyhedra::GetEndPhi));
+  t124.method("GetEndPhi", static_cast<G4double (G4Polyhedra::*)()  const>(&G4Polyhedra::GetEndPhi));
 
   DEBUG_MSG("Adding wrapper for G4double G4Polyhedra::GetSinStartPhi() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Polyhedra::GetSinStartPhi()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:134:19
-  t122.method("GetSinStartPhi", static_cast<G4double (G4Polyhedra::*)()  const>(&G4Polyhedra::GetSinStartPhi));
+  t124.method("GetSinStartPhi", static_cast<G4double (G4Polyhedra::*)()  const>(&G4Polyhedra::GetSinStartPhi));
 
   DEBUG_MSG("Adding wrapper for G4double G4Polyhedra::GetCosStartPhi() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Polyhedra::GetCosStartPhi()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:135:19
-  t122.method("GetCosStartPhi", static_cast<G4double (G4Polyhedra::*)()  const>(&G4Polyhedra::GetCosStartPhi));
+  t124.method("GetCosStartPhi", static_cast<G4double (G4Polyhedra::*)()  const>(&G4Polyhedra::GetCosStartPhi));
 
   DEBUG_MSG("Adding wrapper for G4double G4Polyhedra::GetSinEndPhi() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Polyhedra::GetSinEndPhi()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:136:19
-  t122.method("GetSinEndPhi", static_cast<G4double (G4Polyhedra::*)()  const>(&G4Polyhedra::GetSinEndPhi));
+  t124.method("GetSinEndPhi", static_cast<G4double (G4Polyhedra::*)()  const>(&G4Polyhedra::GetSinEndPhi));
 
   DEBUG_MSG("Adding wrapper for G4double G4Polyhedra::GetCosEndPhi() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4Polyhedra::GetCosEndPhi()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:137:19
-  t122.method("GetCosEndPhi", static_cast<G4double (G4Polyhedra::*)()  const>(&G4Polyhedra::GetCosEndPhi));
+  t124.method("GetCosEndPhi", static_cast<G4double (G4Polyhedra::*)()  const>(&G4Polyhedra::GetCosEndPhi));
 
   DEBUG_MSG("Adding wrapper for G4bool G4Polyhedra::IsOpen() (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4Polyhedra::IsOpen()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:138:17
-  t122.method("IsOpen", static_cast<G4bool (G4Polyhedra::*)()  const>(&G4Polyhedra::IsOpen));
+  t124.method("IsOpen", static_cast<G4bool (G4Polyhedra::*)()  const>(&G4Polyhedra::IsOpen));
 
   DEBUG_MSG("Adding wrapper for G4bool G4Polyhedra::IsGeneric() (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4Polyhedra::IsGeneric()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:139:17
-  t122.method("IsGeneric", static_cast<G4bool (G4Polyhedra::*)()  const>(&G4Polyhedra::IsGeneric));
+  t124.method("IsGeneric", static_cast<G4bool (G4Polyhedra::*)()  const>(&G4Polyhedra::IsGeneric));
 
   DEBUG_MSG("Adding wrapper for G4int G4Polyhedra::GetNumRZCorner() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4Polyhedra::GetNumRZCorner()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:140:16
-  t122.method("GetNumRZCorner", static_cast<G4int (G4Polyhedra::*)()  const>(&G4Polyhedra::GetNumRZCorner));
+  t124.method("GetNumRZCorner", static_cast<G4int (G4Polyhedra::*)()  const>(&G4Polyhedra::GetNumRZCorner));
 
   DEBUG_MSG("Adding wrapper for G4PolyhedraSideRZ G4Polyhedra::GetCorner(const G4int) (" __HERE__ ")");
   // signature to use in the veto list: G4PolyhedraSideRZ G4Polyhedra::GetCorner(const G4int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:141:28
-  t122.method("GetCorner", static_cast<G4PolyhedraSideRZ (G4Polyhedra::*)(const G4int)  const>(&G4Polyhedra::GetCorner));
+  t124.method("GetCorner", static_cast<G4PolyhedraSideRZ (G4Polyhedra::*)(const G4int)  const>(&G4Polyhedra::GetCorner));
 
   DEBUG_MSG("Adding wrapper for G4PolyhedraHistorical * G4Polyhedra::GetOriginalParameters() (" __HERE__ ")");
   // signature to use in the veto list: G4PolyhedraHistorical * G4Polyhedra::GetOriginalParameters()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:143:33
-  t122.method("GetOriginalParameters", static_cast<G4PolyhedraHistorical * (G4Polyhedra::*)()  const>(&G4Polyhedra::GetOriginalParameters));
+  t124.method("GetOriginalParameters", static_cast<G4PolyhedraHistorical * (G4Polyhedra::*)()  const>(&G4Polyhedra::GetOriginalParameters));
 
   DEBUG_MSG("Adding wrapper for void G4Polyhedra::SetOriginalParameters(G4PolyhedraHistorical *) (" __HERE__ ")");
   // signature to use in the veto list: void G4Polyhedra::SetOriginalParameters(G4PolyhedraHistorical *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:145:15
-  t122.method("SetOriginalParameters", static_cast<void (G4Polyhedra::*)(G4PolyhedraHistorical *) >(&G4Polyhedra::SetOriginalParameters));
+  t124.method("SetOriginalParameters", static_cast<void (G4Polyhedra::*)(G4PolyhedraHistorical *) >(&G4Polyhedra::SetOriginalParameters));
 
 
   DEBUG_MSG("Adding wrapper for void G4Polyhedra::G4Polyhedra(const G4Polyhedra &) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:157:3
-  t122.constructor<const G4Polyhedra &>(/*finalize=*/true);
+  t124.constructor<const G4Polyhedra &>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for G4Polyhedra & G4Polyhedra::operator=(const G4Polyhedra &) (" __HERE__ ")");
   // signature to use in the veto list: G4Polyhedra & G4Polyhedra::operator=(const G4Polyhedra &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Polyhedra.hh:158:16
-  t122.method("assign", static_cast<G4Polyhedra & (G4Polyhedra::*)(const G4Polyhedra &) >(&G4Polyhedra::operator=));
+  t124.method("assign", static_cast<G4Polyhedra & (G4Polyhedra::*)(const G4Polyhedra &) >(&G4Polyhedra::operator=));
 
   /* End of G4Polyhedra class method wrappers
    **********************************************************************/

@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_CLHEP_RandGamma(jlcxx::Module& types, jlcxx::TypeWrapper<CLHEP::RandGamma>& t131) {
+void add_methods_for_CLHEP_RandGamma(jlcxx::Module& types, jlcxx::TypeWrapper<CLHEP::RandGamma>& t133) {
 
 
   /**********************************************************************/
@@ -25,85 +25,85 @@ void add_methods_for_CLHEP_RandGamma(jlcxx::Module& types, jlcxx::TypeWrapper<CL
 
   DEBUG_MSG("Adding wrapper for void CLHEP::RandGamma::RandGamma(CLHEP::HepRandomEngine &, double, double) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandGamma.h:40:10
-  t131.constructor<CLHEP::HepRandomEngine &>(/*finalize=*/true);
-  t131.constructor<CLHEP::HepRandomEngine &, double>(/*finalize=*/true);
-  t131.constructor<CLHEP::HepRandomEngine &, double, double>(/*finalize=*/true);
+  t133.constructor<CLHEP::HepRandomEngine &>(/*finalize=*/true);
+  t133.constructor<CLHEP::HepRandomEngine &, double>(/*finalize=*/true);
+  t133.constructor<CLHEP::HepRandomEngine &, double, double>(/*finalize=*/true);
 
 
   DEBUG_MSG("Adding wrapper for void CLHEP::RandGamma::RandGamma(CLHEP::HepRandomEngine *, double, double) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandGamma.h:42:10
-  t131.constructor<CLHEP::HepRandomEngine *>(/*finalize=*/true);
-  t131.constructor<CLHEP::HepRandomEngine *, double>(/*finalize=*/true);
-  t131.constructor<CLHEP::HepRandomEngine *, double, double>(/*finalize=*/true);
+  t133.constructor<CLHEP::HepRandomEngine *>(/*finalize=*/true);
+  t133.constructor<CLHEP::HepRandomEngine *, double>(/*finalize=*/true);
+  t133.constructor<CLHEP::HepRandomEngine *, double, double>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for double CLHEP::RandGamma::shoot() (" __HERE__ ")");
   // signature to use in the veto list: double CLHEP::RandGamma::shoot()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandGamma.h:58:24
-  t131.method("CLHEP!RandGamma!shoot", static_cast<double (*)() >(&CLHEP::RandGamma::shoot));
+  t133.method("CLHEP!RandGamma!shoot", static_cast<double (*)() >(&CLHEP::RandGamma::shoot));
 
   DEBUG_MSG("Adding wrapper for double CLHEP::RandGamma::shoot(double, double) (" __HERE__ ")");
   // signature to use in the veto list: double CLHEP::RandGamma::shoot(double, double)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandGamma.h:60:17
-  t131.method("CLHEP!RandGamma!shoot", static_cast<double (*)(double, double) >(&CLHEP::RandGamma::shoot));
+  t133.method("CLHEP!RandGamma!shoot", static_cast<double (*)(double, double) >(&CLHEP::RandGamma::shoot));
 
   DEBUG_MSG("Adding wrapper for void CLHEP::RandGamma::shootArray(const int, double *, double, double) (" __HERE__ ")");
   // signature to use in the veto list: void CLHEP::RandGamma::shootArray(const int, double *, double, double)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandGamma.h:62:15
-  t131.method("CLHEP!RandGamma!shootArray", static_cast<void (*)(const int, double *, double, double) >(&CLHEP::RandGamma::shootArray));
-  t131.method("CLHEP!RandGamma!shootArray", [](const int arg0, double * arg1)->void{ CLHEP::RandGamma::shootArray(arg0, arg1); });
-  t131.method("CLHEP!RandGamma!shootArray", [](const int arg0, double * arg1, double arg2)->void{ CLHEP::RandGamma::shootArray(arg0, arg1, arg2); });
+  t133.method("CLHEP!RandGamma!shootArray", static_cast<void (*)(const int, double *, double, double) >(&CLHEP::RandGamma::shootArray));
+  t133.method("CLHEP!RandGamma!shootArray", [](const int arg0, double * arg1)->void{ CLHEP::RandGamma::shootArray(arg0, arg1); });
+  t133.method("CLHEP!RandGamma!shootArray", [](const int arg0, double * arg1, double arg2)->void{ CLHEP::RandGamma::shootArray(arg0, arg1, arg2); });
 
   DEBUG_MSG("Adding wrapper for double CLHEP::RandGamma::shoot(CLHEP::HepRandomEngine *) (" __HERE__ ")");
   // signature to use in the veto list: double CLHEP::RandGamma::shoot(CLHEP::HepRandomEngine *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandGamma.h:68:24
-  t131.method("CLHEP!RandGamma!shoot", static_cast<double (*)(CLHEP::HepRandomEngine *) >(&CLHEP::RandGamma::shoot));
+  t133.method("CLHEP!RandGamma!shoot", static_cast<double (*)(CLHEP::HepRandomEngine *) >(&CLHEP::RandGamma::shoot));
 
   DEBUG_MSG("Adding wrapper for double CLHEP::RandGamma::shoot(CLHEP::HepRandomEngine *, double, double) (" __HERE__ ")");
   // signature to use in the veto list: double CLHEP::RandGamma::shoot(CLHEP::HepRandomEngine *, double, double)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandGamma.h:70:17
-  t131.method("CLHEP!RandGamma!shoot", static_cast<double (*)(CLHEP::HepRandomEngine *, double, double) >(&CLHEP::RandGamma::shoot));
+  t133.method("CLHEP!RandGamma!shoot", static_cast<double (*)(CLHEP::HepRandomEngine *, double, double) >(&CLHEP::RandGamma::shoot));
 
   DEBUG_MSG("Adding wrapper for void CLHEP::RandGamma::shootArray(CLHEP::HepRandomEngine *, const int, double *, double, double) (" __HERE__ ")");
   // signature to use in the veto list: void CLHEP::RandGamma::shootArray(CLHEP::HepRandomEngine *, const int, double *, double, double)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandGamma.h:73:15
-  t131.method("CLHEP!RandGamma!shootArray", static_cast<void (*)(CLHEP::HepRandomEngine *, const int, double *, double, double) >(&CLHEP::RandGamma::shootArray));
-  t131.method("CLHEP!RandGamma!shootArray", [](CLHEP::HepRandomEngine * arg0, const int arg1, double * arg2)->void{ CLHEP::RandGamma::shootArray(arg0, arg1, arg2); });
-  t131.method("CLHEP!RandGamma!shootArray", [](CLHEP::HepRandomEngine * arg0, const int arg1, double * arg2, double arg3)->void{ CLHEP::RandGamma::shootArray(arg0, arg1, arg2, arg3); });
+  t133.method("CLHEP!RandGamma!shootArray", static_cast<void (*)(CLHEP::HepRandomEngine *, const int, double *, double, double) >(&CLHEP::RandGamma::shootArray));
+  t133.method("CLHEP!RandGamma!shootArray", [](CLHEP::HepRandomEngine * arg0, const int arg1, double * arg2)->void{ CLHEP::RandGamma::shootArray(arg0, arg1, arg2); });
+  t133.method("CLHEP!RandGamma!shootArray", [](CLHEP::HepRandomEngine * arg0, const int arg1, double * arg2, double arg3)->void{ CLHEP::RandGamma::shootArray(arg0, arg1, arg2, arg3); });
 
   DEBUG_MSG("Adding wrapper for double CLHEP::RandGamma::fire() (" __HERE__ ")");
   // signature to use in the veto list: double CLHEP::RandGamma::fire()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandGamma.h:80:17
-  t131.method("fire", static_cast<double (CLHEP::RandGamma::*)() >(&CLHEP::RandGamma::fire));
+  t133.method("fire", static_cast<double (CLHEP::RandGamma::*)() >(&CLHEP::RandGamma::fire));
 
   DEBUG_MSG("Adding wrapper for double CLHEP::RandGamma::fire(double, double) (" __HERE__ ")");
   // signature to use in the veto list: double CLHEP::RandGamma::fire(double, double)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandGamma.h:82:10
-  t131.method("fire", static_cast<double (CLHEP::RandGamma::*)(double, double) >(&CLHEP::RandGamma::fire));
+  t133.method("fire", static_cast<double (CLHEP::RandGamma::*)(double, double) >(&CLHEP::RandGamma::fire));
 
   DEBUG_MSG("Adding wrapper for void CLHEP::RandGamma::fireArray(const int, double *) (" __HERE__ ")");
   // signature to use in the veto list: void CLHEP::RandGamma::fireArray(const int, double *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandGamma.h:84:8
-  t131.method("fireArray", static_cast<void (CLHEP::RandGamma::*)(const int, double *) >(&CLHEP::RandGamma::fireArray));
+  t133.method("fireArray", static_cast<void (CLHEP::RandGamma::*)(const int, double *) >(&CLHEP::RandGamma::fireArray));
 
   DEBUG_MSG("Adding wrapper for void CLHEP::RandGamma::fireArray(const int, double *, double, double) (" __HERE__ ")");
   // signature to use in the veto list: void CLHEP::RandGamma::fireArray(const int, double *, double, double)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandGamma.h:85:8
-  t131.method("fireArray", static_cast<void (CLHEP::RandGamma::*)(const int, double *, double, double) >(&CLHEP::RandGamma::fireArray));
+  t133.method("fireArray", static_cast<void (CLHEP::RandGamma::*)(const int, double *, double, double) >(&CLHEP::RandGamma::fireArray));
 
   DEBUG_MSG("Adding wrapper for double CLHEP::RandGamma::operator()() (" __HERE__ ")");
   // signature to use in the veto list: double CLHEP::RandGamma::operator()()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandGamma.h:87:17
-  t131.method("paren", static_cast<double (CLHEP::RandGamma::*)() >(&CLHEP::RandGamma::operator()));
+  t133.method("paren", static_cast<double (CLHEP::RandGamma::*)() >(&CLHEP::RandGamma::operator()));
 
   DEBUG_MSG("Adding wrapper for double CLHEP::RandGamma::operator()(double, double) (" __HERE__ ")");
   // signature to use in the veto list: double CLHEP::RandGamma::operator()(double, double)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandGamma.h:88:17
-  t131.method("paren", static_cast<double (CLHEP::RandGamma::*)(double, double) >(&CLHEP::RandGamma::operator()));
+  t133.method("paren", static_cast<double (CLHEP::RandGamma::*)(double, double) >(&CLHEP::RandGamma::operator()));
 
   DEBUG_MSG("Adding wrapper for CLHEP::HepRandomEngine & CLHEP::RandGamma::engine() (" __HERE__ ")");
   // signature to use in the veto list: CLHEP::HepRandomEngine & CLHEP::RandGamma::engine()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandGamma.h:96:21
-  t131.method("engine", static_cast<CLHEP::HepRandomEngine & (CLHEP::RandGamma::*)() >(&CLHEP::RandGamma::engine));
+  t133.method("engine", static_cast<CLHEP::HepRandomEngine & (CLHEP::RandGamma::*)() >(&CLHEP::RandGamma::engine));
 
   /* End of CLHEP::RandGamma class method wrappers
    **********************************************************************/

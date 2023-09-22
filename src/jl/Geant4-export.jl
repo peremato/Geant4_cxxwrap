@@ -286,6 +286,6 @@ export polishedvm2000glue, project, pseudoRapidity, psi, put, r, rapidity, recti
 export restoreStatus, rho, rndmSaveThisEvent, rndmSaveThisRun, rotate, rotateAxes, rotateUz, rotateX, rotateY, rotateZ, row1, row2
 export row3, row4, rowX, rowY, rowZ, saveStatus, set, setAxis, setCylEta, setCylTheta, setDelta, setEta, setIdentity, setMag
 export setPerp, setPhi, setPsi, setR, setREtaPhi, setRThetaPhi, setRho, setRhoPhiEta, setRhoPhiTheta, setRhoPhiZ, setRows
-export setSeed, setSeeds, setTheta, setX, setY, setZ, shoot, shootArray, showStatus, sub!, theta, thetaX, thetaY, thetaZ
+export setSeed, setSeeds, setTheta, setX, setY, setZ, shoot, shootArray, showStatus, size, sub!, theta, thetaX, thetaY, thetaZ
 export transform, tt, tx, tx!, ty, ty!, typeDoIt, typeGPIL, tz, tz!, unified, unit, vectorMultiplication, x, x_ray, xt, xx, xy
 export xz, y, yt, yx, yy, yz, z, zt, zx, zy, zz

@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4LogicalVolumeStore(jlcxx::Module& types, jlcxx::TypeWrapper<G4LogicalVolumeStore>& t201) {
+void add_methods_for_G4LogicalVolumeStore(jlcxx::Module& types, jlcxx::TypeWrapper<G4LogicalVolumeStore>& t101) {
 
 
   /**********************************************************************/
@@ -25,51 +25,51 @@ void add_methods_for_G4LogicalVolumeStore(jlcxx::Module& types, jlcxx::TypeWrapp
   DEBUG_MSG("Adding wrapper for void G4LogicalVolumeStore::Register(G4LogicalVolume *) (" __HERE__ ")");
   // signature to use in the veto list: void G4LogicalVolumeStore::Register(G4LogicalVolume *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4LogicalVolumeStore.hh:59:17
-  t201.method("G4LogicalVolumeStore!Register", static_cast<void (*)(G4LogicalVolume *) >(&G4LogicalVolumeStore::Register));
+  t101.method("G4LogicalVolumeStore!Register", static_cast<void (*)(G4LogicalVolume *) >(&G4LogicalVolumeStore::Register));
 
   DEBUG_MSG("Adding wrapper for void G4LogicalVolumeStore::DeRegister(G4LogicalVolume *) (" __HERE__ ")");
   // signature to use in the veto list: void G4LogicalVolumeStore::DeRegister(G4LogicalVolume *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4LogicalVolumeStore.hh:61:17
-  t201.method("G4LogicalVolumeStore!DeRegister", static_cast<void (*)(G4LogicalVolume *) >(&G4LogicalVolumeStore::DeRegister));
+  t101.method("G4LogicalVolumeStore!DeRegister", static_cast<void (*)(G4LogicalVolume *) >(&G4LogicalVolumeStore::DeRegister));
 
   DEBUG_MSG("Adding wrapper for G4LogicalVolumeStore * G4LogicalVolumeStore::GetInstance() (" __HERE__ ")");
   // signature to use in the veto list: G4LogicalVolumeStore * G4LogicalVolumeStore::GetInstance()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4LogicalVolumeStore.hh:63:34
-  t201.method("G4LogicalVolumeStore!GetInstance", static_cast<G4LogicalVolumeStore * (*)() >(&G4LogicalVolumeStore::GetInstance));
+  t101.method("G4LogicalVolumeStore!GetInstance", static_cast<G4LogicalVolumeStore * (*)() >(&G4LogicalVolumeStore::GetInstance));
 
   DEBUG_MSG("Adding wrapper for void G4LogicalVolumeStore::SetNotifier(G4VStoreNotifier *) (" __HERE__ ")");
   // signature to use in the veto list: void G4LogicalVolumeStore::SetNotifier(G4VStoreNotifier *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4LogicalVolumeStore.hh:65:17
-  t201.method("G4LogicalVolumeStore!SetNotifier", static_cast<void (*)(G4VStoreNotifier *) >(&G4LogicalVolumeStore::SetNotifier));
+  t101.method("G4LogicalVolumeStore!SetNotifier", static_cast<void (*)(G4VStoreNotifier *) >(&G4LogicalVolumeStore::SetNotifier));
 
   DEBUG_MSG("Adding wrapper for void G4LogicalVolumeStore::Clean() (" __HERE__ ")");
   // signature to use in the veto list: void G4LogicalVolumeStore::Clean()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4LogicalVolumeStore.hh:67:17
-  t201.method("G4LogicalVolumeStore!Clean", static_cast<void (*)() >(&G4LogicalVolumeStore::Clean));
+  t101.method("G4LogicalVolumeStore!Clean", static_cast<void (*)() >(&G4LogicalVolumeStore::Clean));
 
   DEBUG_MSG("Adding wrapper for G4LogicalVolume * G4LogicalVolumeStore::GetVolume(const G4String &, G4bool, G4bool) (" __HERE__ ")");
   // signature to use in the veto list: G4LogicalVolume * G4LogicalVolumeStore::GetVolume(const G4String &, G4bool, G4bool)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4LogicalVolumeStore.hh:70:22
-  t201.method("GetVolume", static_cast<G4LogicalVolume * (G4LogicalVolumeStore::*)(const G4String &, G4bool, G4bool)  const>(&G4LogicalVolumeStore::GetVolume));
-  t201.method("GetVolume", [](G4LogicalVolumeStore const& a, const G4String & arg0)->G4LogicalVolume *{ return a.GetVolume(arg0); });
-  t201.method("GetVolume", [](G4LogicalVolumeStore const& a, const G4String & arg0, G4bool arg1)->G4LogicalVolume *{ return a.GetVolume(arg0, arg1); });
-  t201.method("GetVolume", [](G4LogicalVolumeStore const* a, const G4String & arg0)->G4LogicalVolume *{ return a->GetVolume(arg0); });
-  t201.method("GetVolume", [](G4LogicalVolumeStore const* a, const G4String & arg0, G4bool arg1)->G4LogicalVolume *{ return a->GetVolume(arg0, arg1); });
+  t101.method("GetVolume", static_cast<G4LogicalVolume * (G4LogicalVolumeStore::*)(const G4String &, G4bool, G4bool)  const>(&G4LogicalVolumeStore::GetVolume));
+  t101.method("GetVolume", [](G4LogicalVolumeStore const& a, const G4String & arg0)->G4LogicalVolume *{ return a.GetVolume(arg0); });
+  t101.method("GetVolume", [](G4LogicalVolumeStore const& a, const G4String & arg0, G4bool arg1)->G4LogicalVolume *{ return a.GetVolume(arg0, arg1); });
+  t101.method("GetVolume", [](G4LogicalVolumeStore const* a, const G4String & arg0)->G4LogicalVolume *{ return a->GetVolume(arg0); });
+  t101.method("GetVolume", [](G4LogicalVolumeStore const* a, const G4String & arg0, G4bool arg1)->G4LogicalVolume *{ return a->GetVolume(arg0, arg1); });
 
   DEBUG_MSG("Adding wrapper for G4bool G4LogicalVolumeStore::IsMapValid() (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4LogicalVolumeStore::IsMapValid()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4LogicalVolumeStore.hh:76:19
-  t201.method("IsMapValid", static_cast<G4bool (G4LogicalVolumeStore::*)()  const>(&G4LogicalVolumeStore::IsMapValid));
+  t101.method("IsMapValid", static_cast<G4bool (G4LogicalVolumeStore::*)()  const>(&G4LogicalVolumeStore::IsMapValid));
 
   DEBUG_MSG("Adding wrapper for void G4LogicalVolumeStore::SetMapValid(G4bool) (" __HERE__ ")");
   // signature to use in the veto list: void G4LogicalVolumeStore::SetMapValid(G4bool)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4LogicalVolumeStore.hh:77:17
-  t201.method("SetMapValid", static_cast<void (G4LogicalVolumeStore::*)(G4bool) >(&G4LogicalVolumeStore::SetMapValid));
+  t101.method("SetMapValid", static_cast<void (G4LogicalVolumeStore::*)(G4bool) >(&G4LogicalVolumeStore::SetMapValid));
 
   DEBUG_MSG("Adding wrapper for void G4LogicalVolumeStore::UpdateMap() (" __HERE__ ")");
   // signature to use in the veto list: void G4LogicalVolumeStore::UpdateMap()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4LogicalVolumeStore.hh:82:10
-  t201.method("UpdateMap", static_cast<void (G4LogicalVolumeStore::*)() >(&G4LogicalVolumeStore::UpdateMap));
+  t101.method("UpdateMap", static_cast<void (G4LogicalVolumeStore::*)() >(&G4LogicalVolumeStore::UpdateMap));
 
   /* End of G4LogicalVolumeStore class method wrappers
    **********************************************************************/

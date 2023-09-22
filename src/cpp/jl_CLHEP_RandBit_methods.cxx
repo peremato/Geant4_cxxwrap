@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_CLHEP_RandBit(jlcxx::Module& types, jlcxx::TypeWrapper<CLHEP::RandBit>& t130) {
+void add_methods_for_CLHEP_RandBit(jlcxx::Module& types, jlcxx::TypeWrapper<CLHEP::RandBit>& t132) {
 
 
   /**********************************************************************/
@@ -25,47 +25,47 @@ void add_methods_for_CLHEP_RandBit(jlcxx::Module& types, jlcxx::TypeWrapper<CLHE
 
   DEBUG_MSG("Adding wrapper for void CLHEP::RandBit::RandBit(CLHEP::HepRandomEngine &) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandBit.h:42:10
-  t130.constructor<CLHEP::HepRandomEngine &>(/*finalize=*/true);
+  t132.constructor<CLHEP::HepRandomEngine &>(/*finalize=*/true);
 
 
   DEBUG_MSG("Adding wrapper for void CLHEP::RandBit::RandBit(CLHEP::HepRandomEngine &, double) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandBit.h:43:10
-  t130.constructor<CLHEP::HepRandomEngine &, double>(/*finalize=*/true);
+  t132.constructor<CLHEP::HepRandomEngine &, double>(/*finalize=*/true);
 
 
   DEBUG_MSG("Adding wrapper for void CLHEP::RandBit::RandBit(CLHEP::HepRandomEngine &, double, double) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandBit.h:44:10
-  t130.constructor<CLHEP::HepRandomEngine &, double, double>(/*finalize=*/true);
+  t132.constructor<CLHEP::HepRandomEngine &, double, double>(/*finalize=*/true);
 
 
   DEBUG_MSG("Adding wrapper for void CLHEP::RandBit::RandBit(CLHEP::HepRandomEngine *) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandBit.h:45:10
-  t130.constructor<CLHEP::HepRandomEngine *>(/*finalize=*/true);
+  t132.constructor<CLHEP::HepRandomEngine *>(/*finalize=*/true);
 
 
   DEBUG_MSG("Adding wrapper for void CLHEP::RandBit::RandBit(CLHEP::HepRandomEngine *, double) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandBit.h:46:10
-  t130.constructor<CLHEP::HepRandomEngine *, double>(/*finalize=*/true);
+  t132.constructor<CLHEP::HepRandomEngine *, double>(/*finalize=*/true);
 
 
   DEBUG_MSG("Adding wrapper for void CLHEP::RandBit::RandBit(CLHEP::HepRandomEngine *, double, double) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandBit.h:47:10
-  t130.constructor<CLHEP::HepRandomEngine *, double, double>(/*finalize=*/true);
+  t132.constructor<CLHEP::HepRandomEngine *, double, double>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for int CLHEP::RandBit::shootBit() (" __HERE__ ")");
   // signature to use in the veto list: int CLHEP::RandBit::shootBit()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandBit.h:63:22
-  t130.method("CLHEP!RandBit!shootBit", static_cast<int (*)() >(&CLHEP::RandBit::shootBit));
+  t132.method("CLHEP!RandBit!shootBit", static_cast<int (*)() >(&CLHEP::RandBit::shootBit));
 
   DEBUG_MSG("Adding wrapper for int CLHEP::RandBit::shootBit(CLHEP::HepRandomEngine *) (" __HERE__ ")");
   // signature to use in the veto list: int CLHEP::RandBit::shootBit(CLHEP::HepRandomEngine *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandBit.h:65:22
-  t130.method("CLHEP!RandBit!shootBit", static_cast<int (*)(CLHEP::HepRandomEngine *) >(&CLHEP::RandBit::shootBit));
+  t132.method("CLHEP!RandBit!shootBit", static_cast<int (*)(CLHEP::HepRandomEngine *) >(&CLHEP::RandBit::shootBit));
 
   DEBUG_MSG("Adding wrapper for int CLHEP::RandBit::fireBit() (" __HERE__ ")");
   // signature to use in the veto list: int CLHEP::RandBit::fireBit()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandBit.h:70:14
-  t130.method("fireBit", static_cast<int (CLHEP::RandBit::*)() >(&CLHEP::RandBit::fireBit));
+  t132.method("fireBit", static_cast<int (CLHEP::RandBit::*)() >(&CLHEP::RandBit::fireBit));
 
   /* End of CLHEP::RandBit class method wrappers
    **********************************************************************/
