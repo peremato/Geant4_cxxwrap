@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4JLMagField(jlcxx::Module& types, jlcxx::TypeWrapper<G4JLMagField>& t112) {
+void add_methods_for_G4JLMagField(jlcxx::Module& types, jlcxx::TypeWrapper<G4JLMagField>& t113) {
 
 
   /**********************************************************************/
@@ -25,7 +25,7 @@ void add_methods_for_G4JLMagField(jlcxx::Module& types, jlcxx::TypeWrapper<G4JLM
 
   DEBUG_MSG("Adding wrapper for void G4JLMagField::G4JLMagField(getfield_f, void *) (" __HERE__ ")");
   // defined in ./cpp/Geant4Wrap.h:151:3
-  t112.constructor<getfield_f, void *>(/*finalize=*/true);
+  t113.constructor<getfield_f, void *>(/*finalize=*/true);
 
   /* End of G4JLMagField class method wrappers
    **********************************************************************/

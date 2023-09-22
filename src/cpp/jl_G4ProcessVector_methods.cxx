@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4ProcessVector(jlcxx::Module& types, jlcxx::TypeWrapper<G4ProcessVector>& t140) {
+void add_methods_for_G4ProcessVector(jlcxx::Module& types, jlcxx::TypeWrapper<G4ProcessVector>& t147) {
 
 
   /**********************************************************************/
@@ -25,71 +25,71 @@ void add_methods_for_G4ProcessVector(jlcxx::Module& types, jlcxx::TypeWrapper<G4
 
   DEBUG_MSG("Adding wrapper for void G4ProcessVector::G4ProcessVector(size_t) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ProcessVector.hh:49:14
-  t140.constructor<size_t>(/*finalize=*/true);
+  t147.constructor<size_t>(/*finalize=*/true);
 
 
   DEBUG_MSG("Adding wrapper for void G4ProcessVector::G4ProcessVector(const G4ProcessVector &) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ProcessVector.hh:50:5
-  t140.constructor<const G4ProcessVector &>(/*finalize=*/true);
+  t147.constructor<const G4ProcessVector &>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for G4ProcessVector & G4ProcessVector::operator=(const G4ProcessVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4ProcessVector & G4ProcessVector::operator=(const G4ProcessVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ProcessVector.hh:56:22
-  t140.method("assign", static_cast<G4ProcessVector & (G4ProcessVector::*)(const G4ProcessVector &) >(&G4ProcessVector::operator=));
+  t147.method("assign", static_cast<G4ProcessVector & (G4ProcessVector::*)(const G4ProcessVector &) >(&G4ProcessVector::operator=));
   types.set_override_module(jl_base_module);
 
   DEBUG_MSG("Adding wrapper for G4bool G4ProcessVector::operator==(const G4ProcessVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4ProcessVector::operator==(const G4ProcessVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ProcessVector.hh:59:19
-  t140.method("==", static_cast<G4bool (G4ProcessVector::*)(const G4ProcessVector &)  const>(&G4ProcessVector::operator==));
+  t147.method("==", static_cast<G4bool (G4ProcessVector::*)(const G4ProcessVector &)  const>(&G4ProcessVector::operator==));
 
   types.unset_override_module();
 
   DEBUG_MSG("Adding wrapper for size_t G4ProcessVector::entries() (" __HERE__ ")");
   // signature to use in the veto list: size_t G4ProcessVector::entries()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ProcessVector.hh:62:24
-  t140.method("entries", static_cast<size_t (G4ProcessVector::*)()  const>(&G4ProcessVector::entries));
+  t147.method("entries", static_cast<size_t (G4ProcessVector::*)()  const>(&G4ProcessVector::entries));
 
   DEBUG_MSG("Adding wrapper for size_t G4ProcessVector::index(G4VProcess *) (" __HERE__ ")");
   // signature to use in the veto list: size_t G4ProcessVector::index(G4VProcess *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ProcessVector.hh:67:17
-  t140.method("index", static_cast<size_t (G4ProcessVector::*)(G4VProcess *)  const>(&G4ProcessVector::index));
+  t147.method("index", static_cast<size_t (G4ProcessVector::*)(G4VProcess *)  const>(&G4ProcessVector::index));
 
   DEBUG_MSG("Adding wrapper for G4bool G4ProcessVector::contains(G4VProcess *) (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4ProcessVector::contains(G4VProcess *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ProcessVector.hh:70:12
-  t140.method("contains", static_cast<G4bool (G4ProcessVector::*)(G4VProcess *)  const>(&G4ProcessVector::contains));
+  t147.method("contains", static_cast<G4bool (G4ProcessVector::*)(G4VProcess *)  const>(&G4ProcessVector::contains));
 
   DEBUG_MSG("Adding wrapper for G4bool G4ProcessVector::insert(G4VProcess *) (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4ProcessVector::insert(G4VProcess *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ProcessVector.hh:73:19
-  t140.method("insert", static_cast<G4bool (G4ProcessVector::*)(G4VProcess *) >(&G4ProcessVector::insert));
+  t147.method("insert", static_cast<G4bool (G4ProcessVector::*)(G4VProcess *) >(&G4ProcessVector::insert));
 
   DEBUG_MSG("Adding wrapper for G4bool G4ProcessVector::insertAt(G4int, G4VProcess *) (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4ProcessVector::insertAt(G4int, G4VProcess *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ProcessVector.hh:76:12
-  t140.method("insertAt", static_cast<G4bool (G4ProcessVector::*)(G4int, G4VProcess *) >(&G4ProcessVector::insertAt));
+  t147.method("insertAt", static_cast<G4bool (G4ProcessVector::*)(G4int, G4VProcess *) >(&G4ProcessVector::insertAt));
 
   DEBUG_MSG("Adding wrapper for G4VProcess * G4ProcessVector::removeAt(G4int) (" __HERE__ ")");
   // signature to use in the veto list: G4VProcess * G4ProcessVector::removeAt(G4int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ProcessVector.hh:79:17
-  t140.method("removeAt", static_cast<G4VProcess * (G4ProcessVector::*)(G4int) >(&G4ProcessVector::removeAt));
+  t147.method("removeAt", static_cast<G4VProcess * (G4ProcessVector::*)(G4int) >(&G4ProcessVector::removeAt));
 
   DEBUG_MSG("Adding wrapper for G4VProcess * G4ProcessVector::removeLast() (" __HERE__ ")");
   // signature to use in the veto list: G4VProcess * G4ProcessVector::removeLast()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ProcessVector.hh:82:24
-  t140.method("removeLast", static_cast<G4VProcess * (G4ProcessVector::*)() >(&G4ProcessVector::removeLast));
+  t147.method("removeLast", static_cast<G4VProcess * (G4ProcessVector::*)() >(&G4ProcessVector::removeLast));
 
   DEBUG_MSG("Adding wrapper for void G4ProcessVector::clear() (" __HERE__ ")");
   // signature to use in the veto list: void G4ProcessVector::clear()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ProcessVector.hh:85:17
-  t140.method("clear", static_cast<void (G4ProcessVector::*)() >(&G4ProcessVector::clear));
+  t147.method("clear", static_cast<void (G4ProcessVector::*)() >(&G4ProcessVector::clear));
   types.set_override_module(jl_base_module);
 
 
   DEBUG_MSG("Adding getindex method to wrap G4VProcess *const & G4ProcessVector::operator[](G4int) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ProcessVector.hh:88:31
-  t140.method("getindex",
+  t147.method("getindex",
     [](G4ProcessVector& a, G4int i){
     return a[i];
   });
@@ -99,13 +99,13 @@ void add_methods_for_G4ProcessVector(jlcxx::Module& types, jlcxx::TypeWrapper<G4
   DEBUG_MSG("Adding wrapper for G4VProcess *const & G4ProcessVector::operator()(G4int) (" __HERE__ ")");
   // signature to use in the veto list: G4VProcess *const & G4ProcessVector::operator()(G4int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ProcessVector.hh:89:31
-  t140.method("paren", static_cast<G4VProcess *const & (G4ProcessVector::*)(G4int)  const>(&G4ProcessVector::operator()));
+  t147.method("paren", static_cast<G4VProcess *const & (G4ProcessVector::*)(G4int)  const>(&G4ProcessVector::operator()));
   types.set_override_module(jl_base_module);
 
 
   DEBUG_MSG("Adding setindex! method  to wrap G4VProcess *& G4ProcessVector::operator[](G4int) (" __HERE__ ")");
 // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ProcessVector.hh:92:26
-  t140.method("setindex!",
+  t147.method("setindex!",
     [](G4ProcessVector& a, G4int i, G4VProcess * const & val){
     return a[i] = val;
   });
@@ -115,7 +115,7 @@ void add_methods_for_G4ProcessVector(jlcxx::Module& types, jlcxx::TypeWrapper<G4
   DEBUG_MSG("Adding wrapper for G4VProcess *& G4ProcessVector::operator()(G4int) (" __HERE__ ")");
   // signature to use in the veto list: G4VProcess *& G4ProcessVector::operator()(G4int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4ProcessVector.hh:93:26
-  t140.method("paren", static_cast<G4VProcess *& (G4ProcessVector::*)(G4int) >(&G4ProcessVector::operator()));
+  t147.method("paren", static_cast<G4VProcess *& (G4ProcessVector::*)(G4int) >(&G4ProcessVector::operator()));
 
   /* End of G4ProcessVector class method wrappers
    **********************************************************************/

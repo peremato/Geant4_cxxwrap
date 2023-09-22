@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4VPrimaryGenerator(jlcxx::Module& types, jlcxx::TypeWrapper<G4VPrimaryGenerator>& t95) {
+void add_methods_for_G4VPrimaryGenerator(jlcxx::Module& types, jlcxx::TypeWrapper<G4VPrimaryGenerator>& t96) {
 
 
   /**********************************************************************/
@@ -25,32 +25,32 @@ void add_methods_for_G4VPrimaryGenerator(jlcxx::Module& types, jlcxx::TypeWrappe
   DEBUG_MSG("Adding wrapper for G4bool G4VPrimaryGenerator::CheckVertexInsideWorld(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4VPrimaryGenerator::CheckVertexInsideWorld(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VPrimaryGenerator.hh:52:19
-  t95.method("G4VPrimaryGenerator!CheckVertexInsideWorld", static_cast<G4bool (*)(const G4ThreeVector &) >(&G4VPrimaryGenerator::CheckVertexInsideWorld));
+  t96.method("G4VPrimaryGenerator!CheckVertexInsideWorld", static_cast<G4bool (*)(const G4ThreeVector &) >(&G4VPrimaryGenerator::CheckVertexInsideWorld));
 
   DEBUG_MSG("Adding wrapper for void G4VPrimaryGenerator::GeneratePrimaryVertex(G4Event *) (" __HERE__ ")");
   // signature to use in the veto list: void G4VPrimaryGenerator::GeneratePrimaryVertex(G4Event *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VPrimaryGenerator.hh:56:18
-  t95.method("GeneratePrimaryVertex", static_cast<void (G4VPrimaryGenerator::*)(G4Event *) >(&G4VPrimaryGenerator::GeneratePrimaryVertex));
+  t96.method("GeneratePrimaryVertex", static_cast<void (G4VPrimaryGenerator::*)(G4Event *) >(&G4VPrimaryGenerator::GeneratePrimaryVertex));
 
   DEBUG_MSG("Adding wrapper for G4ThreeVector G4VPrimaryGenerator::GetParticlePosition() (" __HERE__ ")");
   // signature to use in the veto list: G4ThreeVector G4VPrimaryGenerator::GetParticlePosition()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VPrimaryGenerator.hh:60:26
-  t95.method("GetParticlePosition", static_cast<G4ThreeVector (G4VPrimaryGenerator::*)() >(&G4VPrimaryGenerator::GetParticlePosition));
+  t96.method("GetParticlePosition", static_cast<G4ThreeVector (G4VPrimaryGenerator::*)() >(&G4VPrimaryGenerator::GetParticlePosition));
 
   DEBUG_MSG("Adding wrapper for G4double G4VPrimaryGenerator::GetParticleTime() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4VPrimaryGenerator::GetParticleTime()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VPrimaryGenerator.hh:61:21
-  t95.method("GetParticleTime", static_cast<G4double (G4VPrimaryGenerator::*)() >(&G4VPrimaryGenerator::GetParticleTime));
+  t96.method("GetParticleTime", static_cast<G4double (G4VPrimaryGenerator::*)() >(&G4VPrimaryGenerator::GetParticleTime));
 
   DEBUG_MSG("Adding wrapper for void G4VPrimaryGenerator::SetParticlePosition(G4ThreeVector) (" __HERE__ ")");
   // signature to use in the veto list: void G4VPrimaryGenerator::SetParticlePosition(G4ThreeVector)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VPrimaryGenerator.hh:63:17
-  t95.method("SetParticlePosition", static_cast<void (G4VPrimaryGenerator::*)(G4ThreeVector) >(&G4VPrimaryGenerator::SetParticlePosition));
+  t96.method("SetParticlePosition", static_cast<void (G4VPrimaryGenerator::*)(G4ThreeVector) >(&G4VPrimaryGenerator::SetParticlePosition));
 
   DEBUG_MSG("Adding wrapper for void G4VPrimaryGenerator::SetParticleTime(G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4VPrimaryGenerator::SetParticleTime(G4double)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4VPrimaryGenerator.hh:65:17
-  t95.method("SetParticleTime", static_cast<void (G4VPrimaryGenerator::*)(G4double) >(&G4VPrimaryGenerator::SetParticleTime));
+  t96.method("SetParticleTime", static_cast<void (G4VPrimaryGenerator::*)(G4double) >(&G4VPrimaryGenerator::SetParticleTime));
 
   /* End of G4VPrimaryGenerator class method wrappers
    **********************************************************************/

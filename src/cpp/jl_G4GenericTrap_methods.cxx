@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4GenericTrap(jlcxx::Module& types, jlcxx::TypeWrapper<G4GenericTrap>& t228) {
+void add_methods_for_G4GenericTrap(jlcxx::Module& types, jlcxx::TypeWrapper<G4GenericTrap>& t235) {
 
 
   /**********************************************************************/
@@ -25,133 +25,133 @@ void add_methods_for_G4GenericTrap(jlcxx::Module& types, jlcxx::TypeWrapper<G4Ge
 
   DEBUG_MSG("Adding wrapper for void G4GenericTrap::G4GenericTrap(const G4String &, G4double, const std::vector<G4TwoVector> &) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:83:6
-  t228.constructor<const G4String &, G4double, const std::vector<G4TwoVector> &>(/*finalize=*/true);
+  t235.constructor<const G4String &, G4double, const std::vector<G4TwoVector> &>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for G4double G4GenericTrap::GetZHalfLength() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4GenericTrap::GetZHalfLength()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:92:24
-  t228.method("GetZHalfLength", static_cast<G4double (G4GenericTrap::*)()  const>(&G4GenericTrap::GetZHalfLength));
+  t235.method("GetZHalfLength", static_cast<G4double (G4GenericTrap::*)()  const>(&G4GenericTrap::GetZHalfLength));
 
   DEBUG_MSG("Adding wrapper for G4int G4GenericTrap::GetNofVertices() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4GenericTrap::GetNofVertices()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:93:24
-  t228.method("GetNofVertices", static_cast<G4int (G4GenericTrap::*)()  const>(&G4GenericTrap::GetNofVertices));
+  t235.method("GetNofVertices", static_cast<G4int (G4GenericTrap::*)()  const>(&G4GenericTrap::GetNofVertices));
 
   DEBUG_MSG("Adding wrapper for G4TwoVector G4GenericTrap::GetVertex(G4int) (" __HERE__ ")");
   // signature to use in the veto list: G4TwoVector G4GenericTrap::GetVertex(G4int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:94:24
-  t228.method("GetVertex", static_cast<G4TwoVector (G4GenericTrap::*)(G4int)  const>(&G4GenericTrap::GetVertex));
+  t235.method("GetVertex", static_cast<G4TwoVector (G4GenericTrap::*)(G4int)  const>(&G4GenericTrap::GetVertex));
 
   DEBUG_MSG("Adding wrapper for const std::vector<G4TwoVector> & G4GenericTrap::GetVertices() (" __HERE__ ")");
   // signature to use in the veto list: const std::vector<G4TwoVector> & G4GenericTrap::GetVertices()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:95:44
-  t228.method("GetVertices", static_cast<const std::vector<G4TwoVector> & (G4GenericTrap::*)()  const>(&G4GenericTrap::GetVertices));
+  t235.method("GetVertices", static_cast<const std::vector<G4TwoVector> & (G4GenericTrap::*)()  const>(&G4GenericTrap::GetVertices));
 
   DEBUG_MSG("Adding wrapper for G4double G4GenericTrap::GetTwistAngle(G4int) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4GenericTrap::GetTwistAngle(G4int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:96:24
-  t228.method("GetTwistAngle", static_cast<G4double (G4GenericTrap::*)(G4int)  const>(&G4GenericTrap::GetTwistAngle));
+  t235.method("GetTwistAngle", static_cast<G4double (G4GenericTrap::*)(G4int)  const>(&G4GenericTrap::GetTwistAngle));
 
   DEBUG_MSG("Adding wrapper for G4bool G4GenericTrap::IsTwisted() (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4GenericTrap::IsTwisted()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:97:24
-  t228.method("IsTwisted", static_cast<G4bool (G4GenericTrap::*)()  const>(&G4GenericTrap::IsTwisted));
+  t235.method("IsTwisted", static_cast<G4bool (G4GenericTrap::*)()  const>(&G4GenericTrap::IsTwisted));
 
   DEBUG_MSG("Adding wrapper for G4int G4GenericTrap::GetVisSubdivisions() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4GenericTrap::GetVisSubdivisions()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:98:24
-  t228.method("GetVisSubdivisions", static_cast<G4int (G4GenericTrap::*)()  const>(&G4GenericTrap::GetVisSubdivisions));
+  t235.method("GetVisSubdivisions", static_cast<G4int (G4GenericTrap::*)()  const>(&G4GenericTrap::GetVisSubdivisions));
 
   DEBUG_MSG("Adding wrapper for void G4GenericTrap::SetVisSubdivisions(G4int) (" __HERE__ ")");
   // signature to use in the veto list: void G4GenericTrap::SetVisSubdivisions(G4int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:99:24
-  t228.method("SetVisSubdivisions", static_cast<void (G4GenericTrap::*)(G4int) >(&G4GenericTrap::SetVisSubdivisions));
+  t235.method("SetVisSubdivisions", static_cast<void (G4GenericTrap::*)(G4int) >(&G4GenericTrap::SetVisSubdivisions));
 
   DEBUG_MSG("Adding wrapper for EInside G4GenericTrap::Inside(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: EInside G4GenericTrap::Inside(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:103:13
-  t228.method("Inside", static_cast<EInside (G4GenericTrap::*)(const G4ThreeVector &)  const>(&G4GenericTrap::Inside));
+  t235.method("Inside", static_cast<EInside (G4GenericTrap::*)(const G4ThreeVector &)  const>(&G4GenericTrap::Inside));
 
   DEBUG_MSG("Adding wrapper for G4ThreeVector G4GenericTrap::SurfaceNormal(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4ThreeVector G4GenericTrap::SurfaceNormal(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:104:19
-  t228.method("SurfaceNormal", static_cast<G4ThreeVector (G4GenericTrap::*)(const G4ThreeVector &)  const>(&G4GenericTrap::SurfaceNormal));
+  t235.method("SurfaceNormal", static_cast<G4ThreeVector (G4GenericTrap::*)(const G4ThreeVector &)  const>(&G4GenericTrap::SurfaceNormal));
 
   DEBUG_MSG("Adding wrapper for G4double G4GenericTrap::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4GenericTrap::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:105:14
-  t228.method("DistanceToIn", static_cast<G4double (G4GenericTrap::*)(const G4ThreeVector &, const G4ThreeVector &)  const>(&G4GenericTrap::DistanceToIn));
+  t235.method("DistanceToIn", static_cast<G4double (G4GenericTrap::*)(const G4ThreeVector &, const G4ThreeVector &)  const>(&G4GenericTrap::DistanceToIn));
 
   DEBUG_MSG("Adding wrapper for G4double G4GenericTrap::DistanceToIn(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4GenericTrap::DistanceToIn(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:107:14
-  t228.method("DistanceToIn", static_cast<G4double (G4GenericTrap::*)(const G4ThreeVector &)  const>(&G4GenericTrap::DistanceToIn));
+  t235.method("DistanceToIn", static_cast<G4double (G4GenericTrap::*)(const G4ThreeVector &)  const>(&G4GenericTrap::DistanceToIn));
 
   DEBUG_MSG("Adding wrapper for G4double G4GenericTrap::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4GenericTrap::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:108:14
-  t228.method("DistanceToOut", static_cast<G4double (G4GenericTrap::*)(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)  const>(&G4GenericTrap::DistanceToOut));
-  t228.method("DistanceToOut", [](G4GenericTrap const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a.DistanceToOut(arg0, arg1); });
-  t228.method("DistanceToOut", [](G4GenericTrap const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a.DistanceToOut(arg0, arg1, arg2); });
-  t228.method("DistanceToOut", [](G4GenericTrap const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a.DistanceToOut(arg0, arg1, arg2, arg3); });
-  t228.method("DistanceToOut", [](G4GenericTrap const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a->DistanceToOut(arg0, arg1); });
-  t228.method("DistanceToOut", [](G4GenericTrap const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a->DistanceToOut(arg0, arg1, arg2); });
-  t228.method("DistanceToOut", [](G4GenericTrap const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a->DistanceToOut(arg0, arg1, arg2, arg3); });
+  t235.method("DistanceToOut", static_cast<G4double (G4GenericTrap::*)(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)  const>(&G4GenericTrap::DistanceToOut));
+  t235.method("DistanceToOut", [](G4GenericTrap const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a.DistanceToOut(arg0, arg1); });
+  t235.method("DistanceToOut", [](G4GenericTrap const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a.DistanceToOut(arg0, arg1, arg2); });
+  t235.method("DistanceToOut", [](G4GenericTrap const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a.DistanceToOut(arg0, arg1, arg2, arg3); });
+  t235.method("DistanceToOut", [](G4GenericTrap const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a->DistanceToOut(arg0, arg1); });
+  t235.method("DistanceToOut", [](G4GenericTrap const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a->DistanceToOut(arg0, arg1, arg2); });
+  t235.method("DistanceToOut", [](G4GenericTrap const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a->DistanceToOut(arg0, arg1, arg2, arg3); });
 
   DEBUG_MSG("Adding wrapper for G4double G4GenericTrap::DistanceToOut(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4GenericTrap::DistanceToOut(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:113:14
-  t228.method("DistanceToOut", static_cast<G4double (G4GenericTrap::*)(const G4ThreeVector &)  const>(&G4GenericTrap::DistanceToOut));
+  t235.method("DistanceToOut", static_cast<G4double (G4GenericTrap::*)(const G4ThreeVector &)  const>(&G4GenericTrap::DistanceToOut));
 
   DEBUG_MSG("Adding wrapper for void G4GenericTrap::BoundingLimits(G4ThreeVector &, G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: void G4GenericTrap::BoundingLimits(G4ThreeVector &, G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:114:10
-  t228.method("BoundingLimits", static_cast<void (G4GenericTrap::*)(G4ThreeVector &, G4ThreeVector &)  const>(&G4GenericTrap::BoundingLimits));
+  t235.method("BoundingLimits", static_cast<void (G4GenericTrap::*)(G4ThreeVector &, G4ThreeVector &)  const>(&G4GenericTrap::BoundingLimits));
 
   DEBUG_MSG("Adding wrapper for G4GeometryType G4GenericTrap::GetEntityType() (" __HERE__ ")");
   // signature to use in the veto list: G4GeometryType G4GenericTrap::GetEntityType()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:120:20
-  t228.method("GetEntityType", static_cast<G4GeometryType (G4GenericTrap::*)()  const>(&G4GenericTrap::GetEntityType));
+  t235.method("GetEntityType", static_cast<G4GeometryType (G4GenericTrap::*)()  const>(&G4GenericTrap::GetEntityType));
 
   DEBUG_MSG("Adding wrapper for G4VSolid * G4GenericTrap::Clone() (" __HERE__ ")");
   // signature to use in the veto list: G4VSolid * G4GenericTrap::Clone()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:122:15
-  t228.method("Clone", static_cast<G4VSolid * (G4GenericTrap::*)()  const>(&G4GenericTrap::Clone));
+  t235.method("Clone", static_cast<G4VSolid * (G4GenericTrap::*)()  const>(&G4GenericTrap::Clone));
 
   DEBUG_MSG("Adding wrapper for G4ThreeVector G4GenericTrap::GetPointOnSurface() (" __HERE__ ")");
   // signature to use in the veto list: G4ThreeVector G4GenericTrap::GetPointOnSurface()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:126:19
-  t228.method("GetPointOnSurface", static_cast<G4ThreeVector (G4GenericTrap::*)()  const>(&G4GenericTrap::GetPointOnSurface));
+  t235.method("GetPointOnSurface", static_cast<G4ThreeVector (G4GenericTrap::*)()  const>(&G4GenericTrap::GetPointOnSurface));
 
   DEBUG_MSG("Adding wrapper for G4double G4GenericTrap::GetCubicVolume() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4GenericTrap::GetCubicVolume()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:128:14
-  t228.method("GetCubicVolume", static_cast<G4double (G4GenericTrap::*)() >(&G4GenericTrap::GetCubicVolume));
+  t235.method("GetCubicVolume", static_cast<G4double (G4GenericTrap::*)() >(&G4GenericTrap::GetCubicVolume));
 
   DEBUG_MSG("Adding wrapper for G4double G4GenericTrap::GetSurfaceArea() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4GenericTrap::GetSurfaceArea()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:129:14
-  t228.method("GetSurfaceArea", static_cast<G4double (G4GenericTrap::*)() >(&G4GenericTrap::GetSurfaceArea));
+  t235.method("GetSurfaceArea", static_cast<G4double (G4GenericTrap::*)() >(&G4GenericTrap::GetSurfaceArea));
 
   DEBUG_MSG("Adding wrapper for G4Polyhedron * G4GenericTrap::GetPolyhedron() (" __HERE__ ")");
   // signature to use in the veto list: G4Polyhedron * G4GenericTrap::GetPolyhedron()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:133:19
-  t228.method("GetPolyhedron", static_cast<G4Polyhedron * (G4GenericTrap::*)()  const>(&G4GenericTrap::GetPolyhedron));
+  t235.method("GetPolyhedron", static_cast<G4Polyhedron * (G4GenericTrap::*)()  const>(&G4GenericTrap::GetPolyhedron));
 
   DEBUG_MSG("Adding wrapper for G4Polyhedron * G4GenericTrap::CreatePolyhedron() (" __HERE__ ")");
   // signature to use in the veto list: G4Polyhedron * G4GenericTrap::CreatePolyhedron()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:136:19
-  t228.method("CreatePolyhedron", static_cast<G4Polyhedron * (G4GenericTrap::*)()  const>(&G4GenericTrap::CreatePolyhedron));
+  t235.method("CreatePolyhedron", static_cast<G4Polyhedron * (G4GenericTrap::*)()  const>(&G4GenericTrap::CreatePolyhedron));
 
 
   DEBUG_MSG("Adding wrapper for void G4GenericTrap::G4GenericTrap(const G4GenericTrap &) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:145:5
-  t228.constructor<const G4GenericTrap &>(/*finalize=*/true);
+  t235.constructor<const G4GenericTrap &>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for G4GenericTrap & G4GenericTrap::operator=(const G4GenericTrap &) (" __HERE__ ")");
   // signature to use in the veto list: G4GenericTrap & G4GenericTrap::operator=(const G4GenericTrap &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4GenericTrap.hh:146:20
-  t228.method("assign", static_cast<G4GenericTrap & (G4GenericTrap::*)(const G4GenericTrap &) >(&G4GenericTrap::operator=));
+  t235.method("assign", static_cast<G4GenericTrap & (G4GenericTrap::*)(const G4GenericTrap &) >(&G4GenericTrap::operator=));
 
   /* End of G4GenericTrap class method wrappers
    **********************************************************************/

@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_CLHEP_HepRandomEngine(jlcxx::Module& types, jlcxx::TypeWrapper<CLHEP::HepRandomEngine>& t125) {
+void add_methods_for_CLHEP_HepRandomEngine(jlcxx::Module& types, jlcxx::TypeWrapper<CLHEP::HepRandomEngine>& t126) {
 
 
   /**********************************************************************/
@@ -26,83 +26,83 @@ void add_methods_for_CLHEP_HepRandomEngine(jlcxx::Module& types, jlcxx::TypeWrap
   DEBUG_MSG("Adding wrapper for bool CLHEP::HepRandomEngine::operator==(const CLHEP::HepRandomEngine &) (" __HERE__ ")");
   // signature to use in the veto list: bool CLHEP::HepRandomEngine::operator==(const CLHEP::HepRandomEngine &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandomEngine.h:61:15
-  t125.method("==", static_cast<bool (CLHEP::HepRandomEngine::*)(const CLHEP::HepRandomEngine &) >(&CLHEP::HepRandomEngine::operator==));
+  t126.method("==", static_cast<bool (CLHEP::HepRandomEngine::*)(const CLHEP::HepRandomEngine &) >(&CLHEP::HepRandomEngine::operator==));
 
   DEBUG_MSG("Adding wrapper for bool CLHEP::HepRandomEngine::operator!=(const CLHEP::HepRandomEngine &) (" __HERE__ ")");
   // signature to use in the veto list: bool CLHEP::HepRandomEngine::operator!=(const CLHEP::HepRandomEngine &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandomEngine.h:62:15
-  t125.method("!=", static_cast<bool (CLHEP::HepRandomEngine::*)(const CLHEP::HepRandomEngine &) >(&CLHEP::HepRandomEngine::operator!=));
+  t126.method("!=", static_cast<bool (CLHEP::HepRandomEngine::*)(const CLHEP::HepRandomEngine &) >(&CLHEP::HepRandomEngine::operator!=));
 
   types.unset_override_module();
 
   DEBUG_MSG("Adding wrapper for double CLHEP::HepRandomEngine::flat() (" __HERE__ ")");
   // signature to use in the veto list: double CLHEP::HepRandomEngine::flat()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandomEngine.h:65:18
-  t125.method("flat", static_cast<double (CLHEP::HepRandomEngine::*)() >(&CLHEP::HepRandomEngine::flat));
+  t126.method("flat", static_cast<double (CLHEP::HepRandomEngine::*)() >(&CLHEP::HepRandomEngine::flat));
 
   DEBUG_MSG("Adding wrapper for void CLHEP::HepRandomEngine::flatArray(const int, double *) (" __HERE__ ")");
   // signature to use in the veto list: void CLHEP::HepRandomEngine::flatArray(const int, double *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandomEngine.h:69:16
-  t125.method("flatArray", static_cast<void (CLHEP::HepRandomEngine::*)(const int, double *) >(&CLHEP::HepRandomEngine::flatArray));
+  t126.method("flatArray", static_cast<void (CLHEP::HepRandomEngine::*)(const int, double *) >(&CLHEP::HepRandomEngine::flatArray));
 
   DEBUG_MSG("Adding wrapper for void CLHEP::HepRandomEngine::setSeed(long, int) (" __HERE__ ")");
   // signature to use in the veto list: void CLHEP::HepRandomEngine::setSeed(long, int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandomEngine.h:72:16
-  t125.method("setSeed", static_cast<void (CLHEP::HepRandomEngine::*)(long, int) >(&CLHEP::HepRandomEngine::setSeed));
+  t126.method("setSeed", static_cast<void (CLHEP::HepRandomEngine::*)(long, int) >(&CLHEP::HepRandomEngine::setSeed));
 
   DEBUG_MSG("Adding wrapper for void CLHEP::HepRandomEngine::setSeeds(const long *, int) (" __HERE__ ")");
   // signature to use in the veto list: void CLHEP::HepRandomEngine::setSeeds(const long *, int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandomEngine.h:75:16
-  t125.method("setSeeds", static_cast<void (CLHEP::HepRandomEngine::*)(const long *, int) >(&CLHEP::HepRandomEngine::setSeeds));
+  t126.method("setSeeds", static_cast<void (CLHEP::HepRandomEngine::*)(const long *, int) >(&CLHEP::HepRandomEngine::setSeeds));
 
   DEBUG_MSG("Adding wrapper for void CLHEP::HepRandomEngine::saveStatus(const char []) (" __HERE__ ")");
   // signature to use in the veto list: void CLHEP::HepRandomEngine::saveStatus(const char [])
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandomEngine.h:79:16
-  t125.method("saveStatus", static_cast<void (CLHEP::HepRandomEngine::*)(const char [])  const>(&CLHEP::HepRandomEngine::saveStatus));
-  t125.method("saveStatus", [](CLHEP::HepRandomEngine const& a)->void{ a.saveStatus(); });
-  t125.method("saveStatus", [](CLHEP::HepRandomEngine const* a)->void{ a->saveStatus(); });
+  t126.method("saveStatus", static_cast<void (CLHEP::HepRandomEngine::*)(const char [])  const>(&CLHEP::HepRandomEngine::saveStatus));
+  t126.method("saveStatus", [](CLHEP::HepRandomEngine const& a)->void{ a.saveStatus(); });
+  t126.method("saveStatus", [](CLHEP::HepRandomEngine const* a)->void{ a->saveStatus(); });
 
   DEBUG_MSG("Adding wrapper for void CLHEP::HepRandomEngine::restoreStatus(const char []) (" __HERE__ ")");
   // signature to use in the veto list: void CLHEP::HepRandomEngine::restoreStatus(const char [])
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandomEngine.h:83:16
-  t125.method("restoreStatus", static_cast<void (CLHEP::HepRandomEngine::*)(const char []) >(&CLHEP::HepRandomEngine::restoreStatus));
-  t125.method("restoreStatus", [](CLHEP::HepRandomEngine& a)->void{ a.restoreStatus(); });
-  t125.method("restoreStatus", [](CLHEP::HepRandomEngine* a)->void{ a->restoreStatus(); });
+  t126.method("restoreStatus", static_cast<void (CLHEP::HepRandomEngine::*)(const char []) >(&CLHEP::HepRandomEngine::restoreStatus));
+  t126.method("restoreStatus", [](CLHEP::HepRandomEngine& a)->void{ a.restoreStatus(); });
+  t126.method("restoreStatus", [](CLHEP::HepRandomEngine* a)->void{ a->restoreStatus(); });
 
   DEBUG_MSG("Adding wrapper for void CLHEP::HepRandomEngine::showStatus() (" __HERE__ ")");
   // signature to use in the veto list: void CLHEP::HepRandomEngine::showStatus()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandomEngine.h:87:16
-  t125.method("showStatus", static_cast<void (CLHEP::HepRandomEngine::*)()  const>(&CLHEP::HepRandomEngine::showStatus));
+  t126.method("showStatus", static_cast<void (CLHEP::HepRandomEngine::*)()  const>(&CLHEP::HepRandomEngine::showStatus));
 
   DEBUG_MSG("Adding wrapper for CLHEP::HepRandomEngine * CLHEP::HepRandomEngine::newEngine(const std::vector<unsigned long> &) (" __HERE__ ")");
   // signature to use in the veto list: CLHEP::HepRandomEngine * CLHEP::HepRandomEngine::newEngine(const std::vector<unsigned long> &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandomEngine.h:104:27
-  t125.method("CLHEP!HepRandomEngine!newEngine", static_cast<CLHEP::HepRandomEngine * (*)(const std::vector<unsigned long> &) >(&CLHEP::HepRandomEngine::newEngine));
+  t126.method("CLHEP!HepRandomEngine!newEngine", static_cast<CLHEP::HepRandomEngine * (*)(const std::vector<unsigned long> &) >(&CLHEP::HepRandomEngine::newEngine));
 
   DEBUG_MSG("Adding wrapper for std::vector<unsigned long> CLHEP::HepRandomEngine::put() (" __HERE__ ")");
   // signature to use in the veto list: std::vector<unsigned long> CLHEP::HepRandomEngine::put()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandomEngine.h:107:38
-  t125.method("put", static_cast<std::vector<unsigned long> (CLHEP::HepRandomEngine::*)()  const>(&CLHEP::HepRandomEngine::put));
+  t126.method("put", static_cast<std::vector<unsigned long> (CLHEP::HepRandomEngine::*)()  const>(&CLHEP::HepRandomEngine::put));
 
   DEBUG_MSG("Adding wrapper for bool CLHEP::HepRandomEngine::get(const std::vector<unsigned long> &) (" __HERE__ ")");
   // signature to use in the veto list: bool CLHEP::HepRandomEngine::get(const std::vector<unsigned long> &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandomEngine.h:108:16
-  t125.method("get", static_cast<bool (CLHEP::HepRandomEngine::*)(const std::vector<unsigned long> &) >(&CLHEP::HepRandomEngine::get));
+  t126.method("get", static_cast<bool (CLHEP::HepRandomEngine::*)(const std::vector<unsigned long> &) >(&CLHEP::HepRandomEngine::get));
 
   DEBUG_MSG("Adding wrapper for bool CLHEP::HepRandomEngine::getState(const std::vector<unsigned long> &) (" __HERE__ ")");
   // signature to use in the veto list: bool CLHEP::HepRandomEngine::getState(const std::vector<unsigned long> &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandomEngine.h:109:16
-  t125.method("getState", static_cast<bool (CLHEP::HepRandomEngine::*)(const std::vector<unsigned long> &) >(&CLHEP::HepRandomEngine::getState));
+  t126.method("getState", static_cast<bool (CLHEP::HepRandomEngine::*)(const std::vector<unsigned long> &) >(&CLHEP::HepRandomEngine::getState));
 
   DEBUG_MSG("Adding wrapper for long CLHEP::HepRandomEngine::getSeed() (" __HERE__ ")");
   // signature to use in the veto list: long CLHEP::HepRandomEngine::getSeed()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandomEngine.h:112:8
-  t125.method("getSeed", static_cast<long (CLHEP::HepRandomEngine::*)()  const>(&CLHEP::HepRandomEngine::getSeed));
+  t126.method("getSeed", static_cast<long (CLHEP::HepRandomEngine::*)()  const>(&CLHEP::HepRandomEngine::getSeed));
 
   DEBUG_MSG("Adding wrapper for const long * CLHEP::HepRandomEngine::getSeeds() (" __HERE__ ")");
   // signature to use in the veto list: const long * CLHEP::HepRandomEngine::getSeeds()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/CLHEP/Random/RandomEngine.h:115:15
-  t125.method("getSeeds", static_cast<const long * (CLHEP::HepRandomEngine::*)()  const>(&CLHEP::HepRandomEngine::getSeeds));
+  t126.method("getSeeds", static_cast<const long * (CLHEP::HepRandomEngine::*)()  const>(&CLHEP::HepRandomEngine::getSeeds));
 
   /* End of CLHEP::HepRandomEngine class method wrappers
    **********************************************************************/

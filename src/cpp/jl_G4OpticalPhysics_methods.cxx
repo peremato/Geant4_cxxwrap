@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4OpticalPhysics(jlcxx::Module& types, jlcxx::TypeWrapper<G4OpticalPhysics>& t216) {
+void add_methods_for_G4OpticalPhysics(jlcxx::Module& types, jlcxx::TypeWrapper<G4OpticalPhysics>& t223) {
 
 
   /**********************************************************************/
@@ -25,13 +25,13 @@ void add_methods_for_G4OpticalPhysics(jlcxx::Module& types, jlcxx::TypeWrapper<G
 
   DEBUG_MSG("Adding wrapper for void G4OpticalPhysics::G4OpticalPhysics(G4int, const G4String &) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4OpticalPhysics.hh:53:3
-  t216.constructor<G4int>(/*finalize=*/true);
-  t216.constructor<G4int, const G4String &>(/*finalize=*/true);
+  t223.constructor<G4int>(/*finalize=*/true);
+  t223.constructor<G4int, const G4String &>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for void G4OpticalPhysics::PrintStatistics() (" __HERE__ ")");
   // signature to use in the veto list: void G4OpticalPhysics::PrintStatistics()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4OpticalPhysics.hh:55:8
-  t216.method("PrintStatistics", static_cast<void (G4OpticalPhysics::*)()  const>(&G4OpticalPhysics::PrintStatistics));
+  t223.method("PrintStatistics", static_cast<void (G4OpticalPhysics::*)()  const>(&G4OpticalPhysics::PrintStatistics));
 
   /* End of G4OpticalPhysics class method wrappers
    **********************************************************************/

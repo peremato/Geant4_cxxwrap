@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4EllipticalCone(jlcxx::Module& types, jlcxx::TypeWrapper<G4EllipticalCone>& t222) {
+void add_methods_for_G4EllipticalCone(jlcxx::Module& types, jlcxx::TypeWrapper<G4EllipticalCone>& t229) {
 
 
   /**********************************************************************/
@@ -25,133 +25,133 @@ void add_methods_for_G4EllipticalCone(jlcxx::Module& types, jlcxx::TypeWrapper<G
 
   DEBUG_MSG("Adding wrapper for void G4EllipticalCone::G4EllipticalCone(const G4String &, G4double, G4double, G4double, G4double) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:91:5
-  t222.constructor<const G4String &, G4double, G4double, G4double, G4double>(/*finalize=*/true);
+  t229.constructor<const G4String &, G4double, G4double, G4double, G4double>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for G4double G4EllipticalCone::GetSemiAxisMin() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4EllipticalCone::GetSemiAxisMin()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:101:21
-  t222.method("GetSemiAxisMin", static_cast<G4double (G4EllipticalCone::*)()  const>(&G4EllipticalCone::GetSemiAxisMin));
+  t229.method("GetSemiAxisMin", static_cast<G4double (G4EllipticalCone::*)()  const>(&G4EllipticalCone::GetSemiAxisMin));
 
   DEBUG_MSG("Adding wrapper for G4double G4EllipticalCone::GetSemiAxisMax() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4EllipticalCone::GetSemiAxisMax()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:102:21
-  t222.method("GetSemiAxisMax", static_cast<G4double (G4EllipticalCone::*)()  const>(&G4EllipticalCone::GetSemiAxisMax));
+  t229.method("GetSemiAxisMax", static_cast<G4double (G4EllipticalCone::*)()  const>(&G4EllipticalCone::GetSemiAxisMax));
 
   DEBUG_MSG("Adding wrapper for G4double G4EllipticalCone::GetSemiAxisX() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4EllipticalCone::GetSemiAxisX()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:103:21
-  t222.method("GetSemiAxisX", static_cast<G4double (G4EllipticalCone::*)()  const>(&G4EllipticalCone::GetSemiAxisX));
+  t229.method("GetSemiAxisX", static_cast<G4double (G4EllipticalCone::*)()  const>(&G4EllipticalCone::GetSemiAxisX));
 
   DEBUG_MSG("Adding wrapper for G4double G4EllipticalCone::GetSemiAxisY() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4EllipticalCone::GetSemiAxisY()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:104:21
-  t222.method("GetSemiAxisY", static_cast<G4double (G4EllipticalCone::*)()  const>(&G4EllipticalCone::GetSemiAxisY));
+  t229.method("GetSemiAxisY", static_cast<G4double (G4EllipticalCone::*)()  const>(&G4EllipticalCone::GetSemiAxisY));
 
   DEBUG_MSG("Adding wrapper for G4double G4EllipticalCone::GetZMax() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4EllipticalCone::GetZMax()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:105:21
-  t222.method("GetZMax", static_cast<G4double (G4EllipticalCone::*)()  const>(&G4EllipticalCone::GetZMax));
+  t229.method("GetZMax", static_cast<G4double (G4EllipticalCone::*)()  const>(&G4EllipticalCone::GetZMax));
 
   DEBUG_MSG("Adding wrapper for G4double G4EllipticalCone::GetZTopCut() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4EllipticalCone::GetZTopCut()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:106:21
-  t222.method("GetZTopCut", static_cast<G4double (G4EllipticalCone::*)()  const>(&G4EllipticalCone::GetZTopCut));
+  t229.method("GetZTopCut", static_cast<G4double (G4EllipticalCone::*)()  const>(&G4EllipticalCone::GetZTopCut));
 
   DEBUG_MSG("Adding wrapper for void G4EllipticalCone::SetSemiAxis(G4double, G4double, G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4EllipticalCone::SetSemiAxis(G4double, G4double, G4double)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:107:17
-  t222.method("SetSemiAxis", static_cast<void (G4EllipticalCone::*)(G4double, G4double, G4double) >(&G4EllipticalCone::SetSemiAxis));
+  t229.method("SetSemiAxis", static_cast<void (G4EllipticalCone::*)(G4double, G4double, G4double) >(&G4EllipticalCone::SetSemiAxis));
 
   DEBUG_MSG("Adding wrapper for void G4EllipticalCone::SetZCut(G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4EllipticalCone::SetZCut(G4double)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:108:17
-  t222.method("SetZCut", static_cast<void (G4EllipticalCone::*)(G4double) >(&G4EllipticalCone::SetZCut));
+  t229.method("SetZCut", static_cast<void (G4EllipticalCone::*)(G4double) >(&G4EllipticalCone::SetZCut));
 
   DEBUG_MSG("Adding wrapper for G4double G4EllipticalCone::GetCubicVolume() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4EllipticalCone::GetCubicVolume()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:110:14
-  t222.method("GetCubicVolume", static_cast<G4double (G4EllipticalCone::*)() >(&G4EllipticalCone::GetCubicVolume));
+  t229.method("GetCubicVolume", static_cast<G4double (G4EllipticalCone::*)() >(&G4EllipticalCone::GetCubicVolume));
 
   DEBUG_MSG("Adding wrapper for G4double G4EllipticalCone::GetSurfaceArea() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4EllipticalCone::GetSurfaceArea()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:111:14
-  t222.method("GetSurfaceArea", static_cast<G4double (G4EllipticalCone::*)() >(&G4EllipticalCone::GetSurfaceArea));
+  t229.method("GetSurfaceArea", static_cast<G4double (G4EllipticalCone::*)() >(&G4EllipticalCone::GetSurfaceArea));
 
   DEBUG_MSG("Adding wrapper for void G4EllipticalCone::BoundingLimits(G4ThreeVector &, G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: void G4EllipticalCone::BoundingLimits(G4ThreeVector &, G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:115:10
-  t222.method("BoundingLimits", static_cast<void (G4EllipticalCone::*)(G4ThreeVector &, G4ThreeVector &)  const>(&G4EllipticalCone::BoundingLimits));
+  t229.method("BoundingLimits", static_cast<void (G4EllipticalCone::*)(G4ThreeVector &, G4ThreeVector &)  const>(&G4EllipticalCone::BoundingLimits));
 
   DEBUG_MSG("Adding wrapper for EInside G4EllipticalCone::Inside(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: EInside G4EllipticalCone::Inside(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:122:13
-  t222.method("Inside", static_cast<EInside (G4EllipticalCone::*)(const G4ThreeVector &)  const>(&G4EllipticalCone::Inside));
+  t229.method("Inside", static_cast<EInside (G4EllipticalCone::*)(const G4ThreeVector &)  const>(&G4EllipticalCone::Inside));
 
   DEBUG_MSG("Adding wrapper for G4ThreeVector G4EllipticalCone::SurfaceNormal(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4ThreeVector G4EllipticalCone::SurfaceNormal(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:124:19
-  t222.method("SurfaceNormal", static_cast<G4ThreeVector (G4EllipticalCone::*)(const G4ThreeVector &)  const>(&G4EllipticalCone::SurfaceNormal));
+  t229.method("SurfaceNormal", static_cast<G4ThreeVector (G4EllipticalCone::*)(const G4ThreeVector &)  const>(&G4EllipticalCone::SurfaceNormal));
 
   DEBUG_MSG("Adding wrapper for G4double G4EllipticalCone::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4EllipticalCone::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:126:14
-  t222.method("DistanceToIn", static_cast<G4double (G4EllipticalCone::*)(const G4ThreeVector &, const G4ThreeVector &)  const>(&G4EllipticalCone::DistanceToIn));
+  t229.method("DistanceToIn", static_cast<G4double (G4EllipticalCone::*)(const G4ThreeVector &, const G4ThreeVector &)  const>(&G4EllipticalCone::DistanceToIn));
 
   DEBUG_MSG("Adding wrapper for G4double G4EllipticalCone::DistanceToIn(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4EllipticalCone::DistanceToIn(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:129:14
-  t222.method("DistanceToIn", static_cast<G4double (G4EllipticalCone::*)(const G4ThreeVector &)  const>(&G4EllipticalCone::DistanceToIn));
+  t229.method("DistanceToIn", static_cast<G4double (G4EllipticalCone::*)(const G4ThreeVector &)  const>(&G4EllipticalCone::DistanceToIn));
 
   DEBUG_MSG("Adding wrapper for G4double G4EllipticalCone::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4EllipticalCone::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:131:14
-  t222.method("DistanceToOut", static_cast<G4double (G4EllipticalCone::*)(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)  const>(&G4EllipticalCone::DistanceToOut));
-  t222.method("DistanceToOut", [](G4EllipticalCone const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a.DistanceToOut(arg0, arg1); });
-  t222.method("DistanceToOut", [](G4EllipticalCone const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a.DistanceToOut(arg0, arg1, arg2); });
-  t222.method("DistanceToOut", [](G4EllipticalCone const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a.DistanceToOut(arg0, arg1, arg2, arg3); });
-  t222.method("DistanceToOut", [](G4EllipticalCone const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a->DistanceToOut(arg0, arg1); });
-  t222.method("DistanceToOut", [](G4EllipticalCone const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a->DistanceToOut(arg0, arg1, arg2); });
-  t222.method("DistanceToOut", [](G4EllipticalCone const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a->DistanceToOut(arg0, arg1, arg2, arg3); });
+  t229.method("DistanceToOut", static_cast<G4double (G4EllipticalCone::*)(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)  const>(&G4EllipticalCone::DistanceToOut));
+  t229.method("DistanceToOut", [](G4EllipticalCone const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a.DistanceToOut(arg0, arg1); });
+  t229.method("DistanceToOut", [](G4EllipticalCone const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a.DistanceToOut(arg0, arg1, arg2); });
+  t229.method("DistanceToOut", [](G4EllipticalCone const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a.DistanceToOut(arg0, arg1, arg2, arg3); });
+  t229.method("DistanceToOut", [](G4EllipticalCone const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a->DistanceToOut(arg0, arg1); });
+  t229.method("DistanceToOut", [](G4EllipticalCone const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a->DistanceToOut(arg0, arg1, arg2); });
+  t229.method("DistanceToOut", [](G4EllipticalCone const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a->DistanceToOut(arg0, arg1, arg2, arg3); });
 
   DEBUG_MSG("Adding wrapper for G4double G4EllipticalCone::DistanceToOut(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4EllipticalCone::DistanceToOut(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:137:14
-  t222.method("DistanceToOut", static_cast<G4double (G4EllipticalCone::*)(const G4ThreeVector &)  const>(&G4EllipticalCone::DistanceToOut));
+  t229.method("DistanceToOut", static_cast<G4double (G4EllipticalCone::*)(const G4ThreeVector &)  const>(&G4EllipticalCone::DistanceToOut));
 
   DEBUG_MSG("Adding wrapper for G4GeometryType G4EllipticalCone::GetEntityType() (" __HERE__ ")");
   // signature to use in the veto list: G4GeometryType G4EllipticalCone::GetEntityType()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:139:20
-  t222.method("GetEntityType", static_cast<G4GeometryType (G4EllipticalCone::*)()  const>(&G4EllipticalCone::GetEntityType));
+  t229.method("GetEntityType", static_cast<G4GeometryType (G4EllipticalCone::*)()  const>(&G4EllipticalCone::GetEntityType));
 
   DEBUG_MSG("Adding wrapper for G4VSolid * G4EllipticalCone::Clone() (" __HERE__ ")");
   // signature to use in the veto list: G4VSolid * G4EllipticalCone::Clone()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:141:15
-  t222.method("Clone", static_cast<G4VSolid * (G4EllipticalCone::*)()  const>(&G4EllipticalCone::Clone));
+  t229.method("Clone", static_cast<G4VSolid * (G4EllipticalCone::*)()  const>(&G4EllipticalCone::Clone));
 
   DEBUG_MSG("Adding wrapper for G4ThreeVector G4EllipticalCone::GetPointOnSurface() (" __HERE__ ")");
   // signature to use in the veto list: G4ThreeVector G4EllipticalCone::GetPointOnSurface()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:143:19
-  t222.method("GetPointOnSurface", static_cast<G4ThreeVector (G4EllipticalCone::*)()  const>(&G4EllipticalCone::GetPointOnSurface));
+  t229.method("GetPointOnSurface", static_cast<G4ThreeVector (G4EllipticalCone::*)()  const>(&G4EllipticalCone::GetPointOnSurface));
 
   DEBUG_MSG("Adding wrapper for G4Polyhedron * G4EllipticalCone::GetPolyhedron() (" __HERE__ ")");
   // signature to use in the veto list: G4Polyhedron * G4EllipticalCone::GetPolyhedron()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:149:19
-  t222.method("GetPolyhedron", static_cast<G4Polyhedron * (G4EllipticalCone::*)()  const>(&G4EllipticalCone::GetPolyhedron));
+  t229.method("GetPolyhedron", static_cast<G4Polyhedron * (G4EllipticalCone::*)()  const>(&G4EllipticalCone::GetPolyhedron));
 
   DEBUG_MSG("Adding wrapper for G4Polyhedron * G4EllipticalCone::CreatePolyhedron() (" __HERE__ ")");
   // signature to use in the veto list: G4Polyhedron * G4EllipticalCone::CreatePolyhedron()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:152:19
-  t222.method("CreatePolyhedron", static_cast<G4Polyhedron * (G4EllipticalCone::*)()  const>(&G4EllipticalCone::CreatePolyhedron));
+  t229.method("CreatePolyhedron", static_cast<G4Polyhedron * (G4EllipticalCone::*)()  const>(&G4EllipticalCone::CreatePolyhedron));
 
 
   DEBUG_MSG("Adding wrapper for void G4EllipticalCone::G4EllipticalCone(const G4EllipticalCone &) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:161:5
-  t222.constructor<const G4EllipticalCone &>(/*finalize=*/true);
+  t229.constructor<const G4EllipticalCone &>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for G4EllipticalCone & G4EllipticalCone::operator=(const G4EllipticalCone &) (" __HERE__ ")");
   // signature to use in the veto list: G4EllipticalCone & G4EllipticalCone::operator=(const G4EllipticalCone &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalCone.hh:162:23
-  t222.method("assign", static_cast<G4EllipticalCone & (G4EllipticalCone::*)(const G4EllipticalCone &) >(&G4EllipticalCone::operator=));
+  t229.method("assign", static_cast<G4EllipticalCone & (G4EllipticalCone::*)(const G4EllipticalCone &) >(&G4EllipticalCone::operator=));
 
   /* End of G4EllipticalCone class method wrappers
    **********************************************************************/

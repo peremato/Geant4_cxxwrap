@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4BooleanSolid(jlcxx::Module& types, jlcxx::TypeWrapper<G4BooleanSolid>& t235) {
+void add_methods_for_G4BooleanSolid(jlcxx::Module& types, jlcxx::TypeWrapper<G4BooleanSolid>& t242) {
 
 
   /**********************************************************************/
@@ -30,83 +30,83 @@ void add_methods_for_G4BooleanSolid(jlcxx::Module& types, jlcxx::TypeWrapper<G4B
   DEBUG_MSG("Adding wrapper for const G4VSolid * G4BooleanSolid::GetConstituentSolid(G4int) (" __HERE__ ")");
   // signature to use in the veto list: const G4VSolid * G4BooleanSolid::GetConstituentSolid(G4int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4BooleanSolid.hh:67:29
-  t235.method("GetConstituentSolid", static_cast<const G4VSolid * (G4BooleanSolid::*)(G4int)  const>(&G4BooleanSolid::GetConstituentSolid));
+  t242.method("GetConstituentSolid", static_cast<const G4VSolid * (G4BooleanSolid::*)(G4int)  const>(&G4BooleanSolid::GetConstituentSolid));
 
   DEBUG_MSG("Adding wrapper for G4VSolid * G4BooleanSolid::GetConstituentSolid(G4int) (" __HERE__ ")");
   // signature to use in the veto list: G4VSolid * G4BooleanSolid::GetConstituentSolid(G4int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4BooleanSolid.hh:68:29
-  t235.method("GetConstituentSolid", static_cast<G4VSolid * (G4BooleanSolid::*)(G4int) >(&G4BooleanSolid::GetConstituentSolid));
+  t242.method("GetConstituentSolid", static_cast<G4VSolid * (G4BooleanSolid::*)(G4int) >(&G4BooleanSolid::GetConstituentSolid));
 
   DEBUG_MSG("Adding wrapper for G4double G4BooleanSolid::GetCubicVolume() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4BooleanSolid::GetCubicVolume()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4BooleanSolid.hh:73:22
-  t235.method("GetCubicVolume", static_cast<G4double (G4BooleanSolid::*)() >(&G4BooleanSolid::GetCubicVolume));
+  t242.method("GetCubicVolume", static_cast<G4double (G4BooleanSolid::*)() >(&G4BooleanSolid::GetCubicVolume));
 
   DEBUG_MSG("Adding wrapper for G4double G4BooleanSolid::GetSurfaceArea() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4BooleanSolid::GetSurfaceArea()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4BooleanSolid.hh:74:21
-  t235.method("GetSurfaceArea", static_cast<G4double (G4BooleanSolid::*)() >(&G4BooleanSolid::GetSurfaceArea));
+  t242.method("GetSurfaceArea", static_cast<G4double (G4BooleanSolid::*)() >(&G4BooleanSolid::GetSurfaceArea));
 
   DEBUG_MSG("Adding wrapper for G4GeometryType G4BooleanSolid::GetEntityType() (" __HERE__ ")");
   // signature to use in the veto list: G4GeometryType G4BooleanSolid::GetEntityType()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4BooleanSolid.hh:76:29
-  t235.method("GetEntityType", static_cast<G4GeometryType (G4BooleanSolid::*)()  const>(&G4BooleanSolid::GetEntityType));
+  t242.method("GetEntityType", static_cast<G4GeometryType (G4BooleanSolid::*)()  const>(&G4BooleanSolid::GetEntityType));
 
   DEBUG_MSG("Adding wrapper for G4Polyhedron * G4BooleanSolid::GetPolyhedron() (" __HERE__ ")");
   // signature to use in the veto list: G4Polyhedron * G4BooleanSolid::GetPolyhedron()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4BooleanSolid.hh:77:27
-  t235.method("GetPolyhedron", static_cast<G4Polyhedron * (G4BooleanSolid::*)()  const>(&G4BooleanSolid::GetPolyhedron));
+  t242.method("GetPolyhedron", static_cast<G4Polyhedron * (G4BooleanSolid::*)()  const>(&G4BooleanSolid::GetPolyhedron));
 
   DEBUG_MSG("Adding wrapper for G4int G4BooleanSolid::GetCubVolStatistics() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4BooleanSolid::GetCubVolStatistics()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4BooleanSolid.hh:81:18
-  t235.method("GetCubVolStatistics", static_cast<G4int (G4BooleanSolid::*)()  const>(&G4BooleanSolid::GetCubVolStatistics));
+  t242.method("GetCubVolStatistics", static_cast<G4int (G4BooleanSolid::*)()  const>(&G4BooleanSolid::GetCubVolStatistics));
 
   DEBUG_MSG("Adding wrapper for G4double G4BooleanSolid::GetCubVolEpsilon() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4BooleanSolid::GetCubVolEpsilon()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4BooleanSolid.hh:82:21
-  t235.method("GetCubVolEpsilon", static_cast<G4double (G4BooleanSolid::*)()  const>(&G4BooleanSolid::GetCubVolEpsilon));
+  t242.method("GetCubVolEpsilon", static_cast<G4double (G4BooleanSolid::*)()  const>(&G4BooleanSolid::GetCubVolEpsilon));
 
   DEBUG_MSG("Adding wrapper for void G4BooleanSolid::SetCubVolStatistics(G4int) (" __HERE__ ")");
   // signature to use in the veto list: void G4BooleanSolid::SetCubVolStatistics(G4int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4BooleanSolid.hh:83:17
-  t235.method("SetCubVolStatistics", static_cast<void (G4BooleanSolid::*)(G4int) >(&G4BooleanSolid::SetCubVolStatistics));
+  t242.method("SetCubVolStatistics", static_cast<void (G4BooleanSolid::*)(G4int) >(&G4BooleanSolid::SetCubVolStatistics));
 
   DEBUG_MSG("Adding wrapper for void G4BooleanSolid::SetCubVolEpsilon(G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4BooleanSolid::SetCubVolEpsilon(G4double)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4BooleanSolid.hh:84:17
-  t235.method("SetCubVolEpsilon", static_cast<void (G4BooleanSolid::*)(G4double) >(&G4BooleanSolid::SetCubVolEpsilon));
+  t242.method("SetCubVolEpsilon", static_cast<void (G4BooleanSolid::*)(G4double) >(&G4BooleanSolid::SetCubVolEpsilon));
 
   DEBUG_MSG("Adding wrapper for G4int G4BooleanSolid::GetAreaStatistics() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4BooleanSolid::GetAreaStatistics()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4BooleanSolid.hh:86:18
-  t235.method("GetAreaStatistics", static_cast<G4int (G4BooleanSolid::*)()  const>(&G4BooleanSolid::GetAreaStatistics));
+  t242.method("GetAreaStatistics", static_cast<G4int (G4BooleanSolid::*)()  const>(&G4BooleanSolid::GetAreaStatistics));
 
   DEBUG_MSG("Adding wrapper for G4double G4BooleanSolid::GetAreaAccuracy() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4BooleanSolid::GetAreaAccuracy()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4BooleanSolid.hh:87:21
-  t235.method("GetAreaAccuracy", static_cast<G4double (G4BooleanSolid::*)()  const>(&G4BooleanSolid::GetAreaAccuracy));
+  t242.method("GetAreaAccuracy", static_cast<G4double (G4BooleanSolid::*)()  const>(&G4BooleanSolid::GetAreaAccuracy));
 
   DEBUG_MSG("Adding wrapper for void G4BooleanSolid::SetAreaStatistics(G4int) (" __HERE__ ")");
   // signature to use in the veto list: void G4BooleanSolid::SetAreaStatistics(G4int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4BooleanSolid.hh:88:17
-  t235.method("SetAreaStatistics", static_cast<void (G4BooleanSolid::*)(G4int) >(&G4BooleanSolid::SetAreaStatistics));
+  t242.method("SetAreaStatistics", static_cast<void (G4BooleanSolid::*)(G4int) >(&G4BooleanSolid::SetAreaStatistics));
 
   DEBUG_MSG("Adding wrapper for void G4BooleanSolid::SetAreaAccuracy(G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4BooleanSolid::SetAreaAccuracy(G4double)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4BooleanSolid.hh:89:17
-  t235.method("SetAreaAccuracy", static_cast<void (G4BooleanSolid::*)(G4double) >(&G4BooleanSolid::SetAreaAccuracy));
+  t242.method("SetAreaAccuracy", static_cast<void (G4BooleanSolid::*)(G4double) >(&G4BooleanSolid::SetAreaAccuracy));
 
   DEBUG_MSG("Adding wrapper for G4ThreeVector G4BooleanSolid::GetPointOnSurface() (" __HERE__ ")");
   // signature to use in the veto list: G4ThreeVector G4BooleanSolid::GetPointOnSurface()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4BooleanSolid.hh:91:19
-  t235.method("GetPointOnSurface", static_cast<G4ThreeVector (G4BooleanSolid::*)()  const>(&G4BooleanSolid::GetPointOnSurface));
+  t242.method("GetPointOnSurface", static_cast<G4ThreeVector (G4BooleanSolid::*)()  const>(&G4BooleanSolid::GetPointOnSurface));
 
 
   DEBUG_MSG("Adding wrapper for G4BooleanSolid & G4BooleanSolid::operator=(const G4BooleanSolid &) (" __HERE__ ")");
   // signature to use in the veto list: G4BooleanSolid & G4BooleanSolid::operator=(const G4BooleanSolid &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4BooleanSolid.hh:99:21
-  t235.method("assign", static_cast<G4BooleanSolid & (G4BooleanSolid::*)(const G4BooleanSolid &) >(&G4BooleanSolid::operator=));
+  t242.method("assign", static_cast<G4BooleanSolid & (G4BooleanSolid::*)(const G4BooleanSolid &) >(&G4BooleanSolid::operator=));
 
   /* End of G4BooleanSolid class method wrappers
    **********************************************************************/

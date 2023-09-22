@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4MTRunManagerKernel(jlcxx::Module& types, jlcxx::TypeWrapper<G4MTRunManagerKernel>& t154) {
+void add_methods_for_G4MTRunManagerKernel(jlcxx::Module& types, jlcxx::TypeWrapper<G4MTRunManagerKernel>& t161) {
 
 
   /**********************************************************************/
@@ -25,12 +25,12 @@ void add_methods_for_G4MTRunManagerKernel(jlcxx::Module& types, jlcxx::TypeWrapp
   DEBUG_MSG("Adding wrapper for void G4MTRunManagerKernel::SetUpDecayChannels() (" __HERE__ ")");
   // signature to use in the veto list: void G4MTRunManagerKernel::SetUpDecayChannels()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4MTRunManagerKernel.hh:79:10
-  t154.method("SetUpDecayChannels", static_cast<void (G4MTRunManagerKernel::*)() >(&G4MTRunManagerKernel::SetUpDecayChannels));
+  t161.method("SetUpDecayChannels", static_cast<void (G4MTRunManagerKernel::*)() >(&G4MTRunManagerKernel::SetUpDecayChannels));
 
   DEBUG_MSG("Adding wrapper for void G4MTRunManagerKernel::BroadcastAbortRun(G4bool) (" __HERE__ ")");
   // signature to use in the veto list: void G4MTRunManagerKernel::BroadcastAbortRun(G4bool)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4MTRunManagerKernel.hh:84:10
-  t154.method("BroadcastAbortRun", static_cast<void (G4MTRunManagerKernel::*)(G4bool) >(&G4MTRunManagerKernel::BroadcastAbortRun));
+  t161.method("BroadcastAbortRun", static_cast<void (G4MTRunManagerKernel::*)(G4bool) >(&G4MTRunManagerKernel::BroadcastAbortRun));
 
   /* End of G4MTRunManagerKernel class method wrappers
    **********************************************************************/
