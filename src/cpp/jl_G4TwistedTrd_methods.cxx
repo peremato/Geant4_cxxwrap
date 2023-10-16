@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4TwistedTrd(jlcxx::Module& types, jlcxx::TypeWrapper<G4TwistedTrd>& t234) {
+void add_methods_for_G4TwistedTrd(jlcxx::Module& types, jlcxx::TypeWrapper<G4TwistedTrd>& t241) {
 
 
   /**********************************************************************/
@@ -25,67 +25,67 @@ void add_methods_for_G4TwistedTrd(jlcxx::Module& types, jlcxx::TypeWrapper<G4Twi
 
   DEBUG_MSG("Adding wrapper for void G4TwistedTrd::G4TwistedTrd(const G4String &, G4double, G4double, G4double, G4double, G4double, G4double) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedTrd.hh:54:5
-  t234.constructor<const G4String &, G4double, G4double, G4double, G4double, G4double, G4double>(/*finalize=*/true);
+  t241.constructor<const G4String &, G4double, G4double, G4double, G4double, G4double, G4double>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for G4double G4TwistedTrd::GetX1HalfLength() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4TwistedTrd::GetX1HalfLength()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedTrd.hh:66:21
-  t234.method("GetX1HalfLength", static_cast<G4double (G4TwistedTrd::*)()  const>(&G4TwistedTrd::GetX1HalfLength));
+  t241.method("GetX1HalfLength", static_cast<G4double (G4TwistedTrd::*)()  const>(&G4TwistedTrd::GetX1HalfLength));
 
   DEBUG_MSG("Adding wrapper for G4double G4TwistedTrd::GetX2HalfLength() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4TwistedTrd::GetX2HalfLength()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedTrd.hh:67:21
-  t234.method("GetX2HalfLength", static_cast<G4double (G4TwistedTrd::*)()  const>(&G4TwistedTrd::GetX2HalfLength));
+  t241.method("GetX2HalfLength", static_cast<G4double (G4TwistedTrd::*)()  const>(&G4TwistedTrd::GetX2HalfLength));
 
   DEBUG_MSG("Adding wrapper for G4double G4TwistedTrd::GetY1HalfLength() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4TwistedTrd::GetY1HalfLength()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedTrd.hh:68:21
-  t234.method("GetY1HalfLength", static_cast<G4double (G4TwistedTrd::*)()  const>(&G4TwistedTrd::GetY1HalfLength));
+  t241.method("GetY1HalfLength", static_cast<G4double (G4TwistedTrd::*)()  const>(&G4TwistedTrd::GetY1HalfLength));
 
   DEBUG_MSG("Adding wrapper for G4double G4TwistedTrd::GetY2HalfLength() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4TwistedTrd::GetY2HalfLength()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedTrd.hh:69:21
-  t234.method("GetY2HalfLength", static_cast<G4double (G4TwistedTrd::*)()  const>(&G4TwistedTrd::GetY2HalfLength));
+  t241.method("GetY2HalfLength", static_cast<G4double (G4TwistedTrd::*)()  const>(&G4TwistedTrd::GetY2HalfLength));
 
   DEBUG_MSG("Adding wrapper for G4double G4TwistedTrd::GetZHalfLength() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4TwistedTrd::GetZHalfLength()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedTrd.hh:70:21
-  t234.method("GetZHalfLength", static_cast<G4double (G4TwistedTrd::*)()  const>(&G4TwistedTrd::GetZHalfLength));
+  t241.method("GetZHalfLength", static_cast<G4double (G4TwistedTrd::*)()  const>(&G4TwistedTrd::GetZHalfLength));
 
   DEBUG_MSG("Adding wrapper for G4double G4TwistedTrd::GetPhiTwist() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4TwistedTrd::GetPhiTwist()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedTrd.hh:71:21
-  t234.method("GetPhiTwist", static_cast<G4double (G4TwistedTrd::*)()  const>(&G4TwistedTrd::GetPhiTwist));
+  t241.method("GetPhiTwist", static_cast<G4double (G4TwistedTrd::*)()  const>(&G4TwistedTrd::GetPhiTwist));
 
   DEBUG_MSG("Adding wrapper for G4GeometryType G4TwistedTrd::GetEntityType() (" __HERE__ ")");
   // signature to use in the veto list: G4GeometryType G4TwistedTrd::GetEntityType()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedTrd.hh:73:20
-  t234.method("GetEntityType", static_cast<G4GeometryType (G4TwistedTrd::*)()  const>(&G4TwistedTrd::GetEntityType));
+  t241.method("GetEntityType", static_cast<G4GeometryType (G4TwistedTrd::*)()  const>(&G4TwistedTrd::GetEntityType));
 
   DEBUG_MSG("Adding wrapper for G4double G4TwistedTrd::GetCubicVolume() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4TwistedTrd::GetCubicVolume()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedTrd.hh:75:14
-  t234.method("GetCubicVolume", static_cast<G4double (G4TwistedTrd::*)() >(&G4TwistedTrd::GetCubicVolume));
+  t241.method("GetCubicVolume", static_cast<G4double (G4TwistedTrd::*)() >(&G4TwistedTrd::GetCubicVolume));
 
   DEBUG_MSG("Adding wrapper for G4double G4TwistedTrd::GetSurfaceArea() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4TwistedTrd::GetSurfaceArea()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedTrd.hh:76:14
-  t234.method("GetSurfaceArea", static_cast<G4double (G4TwistedTrd::*)() >(&G4TwistedTrd::GetSurfaceArea));
+  t241.method("GetSurfaceArea", static_cast<G4double (G4TwistedTrd::*)() >(&G4TwistedTrd::GetSurfaceArea));
 
   DEBUG_MSG("Adding wrapper for G4VSolid * G4TwistedTrd::Clone() (" __HERE__ ")");
   // signature to use in the veto list: G4VSolid * G4TwistedTrd::Clone()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedTrd.hh:78:15
-  t234.method("Clone", static_cast<G4VSolid * (G4TwistedTrd::*)()  const>(&G4TwistedTrd::Clone));
+  t241.method("Clone", static_cast<G4VSolid * (G4TwistedTrd::*)()  const>(&G4TwistedTrd::Clone));
 
 
   DEBUG_MSG("Adding wrapper for void G4TwistedTrd::G4TwistedTrd(const G4TwistedTrd &) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedTrd.hh:89:5
-  t234.constructor<const G4TwistedTrd &>(/*finalize=*/true);
+  t241.constructor<const G4TwistedTrd &>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for G4TwistedTrd & G4TwistedTrd::operator=(const G4TwistedTrd &) (" __HERE__ ")");
   // signature to use in the veto list: G4TwistedTrd & G4TwistedTrd::operator=(const G4TwistedTrd &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedTrd.hh:90:19
-  t234.method("assign", static_cast<G4TwistedTrd & (G4TwistedTrd::*)(const G4TwistedTrd &) >(&G4TwistedTrd::operator=));
+  t241.method("assign", static_cast<G4TwistedTrd & (G4TwistedTrd::*)(const G4TwistedTrd &) >(&G4TwistedTrd::operator=));
 
   /* End of G4TwistedTrd class method wrappers
    **********************************************************************/

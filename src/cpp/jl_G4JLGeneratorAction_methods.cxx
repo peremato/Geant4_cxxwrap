@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4JLGeneratorAction(jlcxx::Module& types, jlcxx::TypeWrapper<G4JLGeneratorAction>& t114) {
+void add_methods_for_G4JLGeneratorAction(jlcxx::Module& types, jlcxx::TypeWrapper<G4JLGeneratorAction>& t116) {
 
 
   /**********************************************************************/
@@ -24,13 +24,13 @@ void add_methods_for_G4JLGeneratorAction(jlcxx::Module& types, jlcxx::TypeWrappe
 
 
   DEBUG_MSG("Adding wrapper for void G4JLGeneratorAction::G4JLGeneratorAction(generate_f, void *) (" __HERE__ ")");
-  // defined in ./cpp/Geant4Wrap.h:140:3
-  t114.constructor<generate_f, void *>(/*finalize=*/false);
+  // defined in ./cpp/Geant4Wrap.h:141:3
+  t116.constructor<generate_f, void *>(/*finalize=*/false);
 
   DEBUG_MSG("Adding wrapper for void G4JLGeneratorAction::GeneratePrimaries(G4Event *) (" __HERE__ ")");
   // signature to use in the veto list: void G4JLGeneratorAction::GeneratePrimaries(G4Event *)
-  // defined in ./cpp/Geant4Wrap.h:142:8
-  t114.method("GeneratePrimaries", static_cast<void (G4JLGeneratorAction::*)(G4Event *) >(&G4JLGeneratorAction::GeneratePrimaries));
+  // defined in ./cpp/Geant4Wrap.h:143:8
+  t116.method("GeneratePrimaries", static_cast<void (G4JLGeneratorAction::*)(G4Event *) >(&G4JLGeneratorAction::GeneratePrimaries));
 
   /* End of G4JLGeneratorAction class method wrappers
    **********************************************************************/

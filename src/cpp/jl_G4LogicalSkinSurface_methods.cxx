@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4LogicalSkinSurface(jlcxx::Module& types, jlcxx::TypeWrapper<G4LogicalSkinSurface>& t212) {
+void add_methods_for_G4LogicalSkinSurface(jlcxx::Module& types, jlcxx::TypeWrapper<G4LogicalSkinSurface>& t219) {
 
 
   /**********************************************************************/
@@ -25,50 +25,50 @@ void add_methods_for_G4LogicalSkinSurface(jlcxx::Module& types, jlcxx::TypeWrapp
 
   DEBUG_MSG("Adding wrapper for void G4LogicalSkinSurface::G4LogicalSkinSurface(const G4String &, G4LogicalVolume *, G4SurfaceProperty *) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4LogicalSkinSurface.hh:52:5
-  t212.constructor<const G4String &, G4LogicalVolume *, G4SurfaceProperty *>(/*finalize=*/false);
+  t219.constructor<const G4String &, G4LogicalVolume *, G4SurfaceProperty *>(/*finalize=*/false);
   types.set_override_module(jl_base_module);
 
   DEBUG_MSG("Adding wrapper for G4bool G4LogicalSkinSurface::operator==(const G4LogicalSkinSurface &) (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4LogicalSkinSurface::operator==(const G4LogicalSkinSurface &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4LogicalSkinSurface.hh:62:12
-  t212.method("==", static_cast<G4bool (G4LogicalSkinSurface::*)(const G4LogicalSkinSurface &)  const>(&G4LogicalSkinSurface::operator==));
+  t219.method("==", static_cast<G4bool (G4LogicalSkinSurface::*)(const G4LogicalSkinSurface &)  const>(&G4LogicalSkinSurface::operator==));
 
   DEBUG_MSG("Adding wrapper for G4bool G4LogicalSkinSurface::operator!=(const G4LogicalSkinSurface &) (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4LogicalSkinSurface::operator!=(const G4LogicalSkinSurface &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4LogicalSkinSurface.hh:63:12
-  t212.method("!=", static_cast<G4bool (G4LogicalSkinSurface::*)(const G4LogicalSkinSurface &)  const>(&G4LogicalSkinSurface::operator!=));
+  t219.method("!=", static_cast<G4bool (G4LogicalSkinSurface::*)(const G4LogicalSkinSurface &)  const>(&G4LogicalSkinSurface::operator!=));
 
   types.unset_override_module();
 
   DEBUG_MSG("Adding wrapper for G4LogicalSkinSurface * G4LogicalSkinSurface::GetSurface(const G4LogicalVolume *) (" __HERE__ ")");
   // signature to use in the veto list: G4LogicalSkinSurface * G4LogicalSkinSurface::GetSurface(const G4LogicalVolume *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4LogicalSkinSurface.hh:66:34
-  t212.method("G4LogicalSkinSurface!GetSurface", static_cast<G4LogicalSkinSurface * (*)(const G4LogicalVolume *) >(&G4LogicalSkinSurface::GetSurface));
+  t219.method("G4LogicalSkinSurface!GetSurface", static_cast<G4LogicalSkinSurface * (*)(const G4LogicalVolume *) >(&G4LogicalSkinSurface::GetSurface));
 
   DEBUG_MSG("Adding wrapper for const G4LogicalVolume * G4LogicalSkinSurface::GetLogicalVolume() (" __HERE__ ")");
   // signature to use in the veto list: const G4LogicalVolume * G4LogicalSkinSurface::GetLogicalVolume()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4LogicalSkinSurface.hh:67:35
-  t212.method("GetLogicalVolume", static_cast<const G4LogicalVolume * (G4LogicalSkinSurface::*)()  const>(&G4LogicalSkinSurface::GetLogicalVolume));
+  t219.method("GetLogicalVolume", static_cast<const G4LogicalVolume * (G4LogicalSkinSurface::*)()  const>(&G4LogicalSkinSurface::GetLogicalVolume));
 
   DEBUG_MSG("Adding wrapper for void G4LogicalSkinSurface::SetLogicalVolume(G4LogicalVolume *) (" __HERE__ ")");
   // signature to use in the veto list: void G4LogicalSkinSurface::SetLogicalVolume(G4LogicalVolume *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4LogicalSkinSurface.hh:68:18
-  t212.method("SetLogicalVolume", static_cast<void (G4LogicalSkinSurface::*)(G4LogicalVolume *) >(&G4LogicalSkinSurface::SetLogicalVolume));
+  t219.method("SetLogicalVolume", static_cast<void (G4LogicalSkinSurface::*)(G4LogicalVolume *) >(&G4LogicalSkinSurface::SetLogicalVolume));
 
   DEBUG_MSG("Adding wrapper for void G4LogicalSkinSurface::CleanSurfaceTable() (" __HERE__ ")");
   // signature to use in the veto list: void G4LogicalSkinSurface::CleanSurfaceTable()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4LogicalSkinSurface.hh:71:17
-  t212.method("G4LogicalSkinSurface!CleanSurfaceTable", static_cast<void (*)() >(&G4LogicalSkinSurface::CleanSurfaceTable));
+  t219.method("G4LogicalSkinSurface!CleanSurfaceTable", static_cast<void (*)() >(&G4LogicalSkinSurface::CleanSurfaceTable));
 
   DEBUG_MSG("Adding wrapper for size_t G4LogicalSkinSurface::GetNumberOfSkinSurfaces() (" __HERE__ ")");
   // signature to use in the veto list: size_t G4LogicalSkinSurface::GetNumberOfSkinSurfaces()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4LogicalSkinSurface.hh:73:24
-  t212.method("G4LogicalSkinSurface!GetNumberOfSkinSurfaces", static_cast<size_t (*)() >(&G4LogicalSkinSurface::GetNumberOfSkinSurfaces));
+  t219.method("G4LogicalSkinSurface!GetNumberOfSkinSurfaces", static_cast<size_t (*)() >(&G4LogicalSkinSurface::GetNumberOfSkinSurfaces));
 
   DEBUG_MSG("Adding wrapper for void G4LogicalSkinSurface::DumpInfo() (" __HERE__ ")");
   // signature to use in the veto list: void G4LogicalSkinSurface::DumpInfo()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4LogicalSkinSurface.hh:74:17
-  t212.method("G4LogicalSkinSurface!DumpInfo", static_cast<void (*)() >(&G4LogicalSkinSurface::DumpInfo));
+  t219.method("G4LogicalSkinSurface!DumpInfo", static_cast<void (*)() >(&G4LogicalSkinSurface::DumpInfo));
 
   /* End of G4LogicalSkinSurface class method wrappers
    **********************************************************************/

@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4Event(jlcxx::Module& types, jlcxx::TypeWrapper<G4Event>& t93) {
+void add_methods_for_G4Event(jlcxx::Module& types, jlcxx::TypeWrapper<G4Event>& t94) {
 
 
   /**********************************************************************/
@@ -25,154 +25,154 @@ void add_methods_for_G4Event(jlcxx::Module& types, jlcxx::TypeWrapper<G4Event>& 
 
   DEBUG_MSG("Adding wrapper for void G4Event::G4Event(G4int) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:61:14
-  t93.constructor<G4int>(/*finalize=*/true);
+  t94.constructor<G4int>(/*finalize=*/true);
   types.set_override_module(jl_base_module);
 
   DEBUG_MSG("Adding wrapper for G4bool G4Event::operator==(const G4Event &) (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4Event::operator==(const G4Event &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:70:12
-  t93.method("==", static_cast<G4bool (G4Event::*)(const G4Event &)  const>(&G4Event::operator==));
+  t94.method("==", static_cast<G4bool (G4Event::*)(const G4Event &)  const>(&G4Event::operator==));
 
   DEBUG_MSG("Adding wrapper for G4bool G4Event::operator!=(const G4Event &) (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4Event::operator!=(const G4Event &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:71:12
-  t93.method("!=", static_cast<G4bool (G4Event::*)(const G4Event &)  const>(&G4Event::operator!=));
+  t94.method("!=", static_cast<G4bool (G4Event::*)(const G4Event &)  const>(&G4Event::operator!=));
 
   types.unset_override_module();
 
   DEBUG_MSG("Adding wrapper for void G4Event::Print() (" __HERE__ ")");
   // signature to use in the veto list: void G4Event::Print()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:73:10
-  t93.method("Print", static_cast<void (G4Event::*)()  const>(&G4Event::Print));
+  t94.method("Print", static_cast<void (G4Event::*)()  const>(&G4Event::Print));
 
   DEBUG_MSG("Adding wrapper for void G4Event::Draw() (" __HERE__ ")");
   // signature to use in the veto list: void G4Event::Draw()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:75:10
-  t93.method("Draw", static_cast<void (G4Event::*)()  const>(&G4Event::Draw));
+  t94.method("Draw", static_cast<void (G4Event::*)()  const>(&G4Event::Draw));
 
   DEBUG_MSG("Adding wrapper for void G4Event::SetEventID(G4int) (" __HERE__ ")");
   // signature to use in the veto list: void G4Event::SetEventID(G4int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:80:17
-  t93.method("SetEventID", static_cast<void (G4Event::*)(G4int) >(&G4Event::SetEventID));
+  t94.method("SetEventID", static_cast<void (G4Event::*)(G4int) >(&G4Event::SetEventID));
 
   DEBUG_MSG("Adding wrapper for void G4Event::SetHCofThisEvent(G4HCofThisEvent *) (" __HERE__ ")");
   // signature to use in the veto list: void G4Event::SetHCofThisEvent(G4HCofThisEvent *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:82:17
-  t93.method("SetHCofThisEvent", static_cast<void (G4Event::*)(G4HCofThisEvent *) >(&G4Event::SetHCofThisEvent));
+  t94.method("SetHCofThisEvent", static_cast<void (G4Event::*)(G4HCofThisEvent *) >(&G4Event::SetHCofThisEvent));
 
   DEBUG_MSG("Adding wrapper for void G4Event::SetDCofThisEvent(G4DCofThisEvent *) (" __HERE__ ")");
   // signature to use in the veto list: void G4Event::SetDCofThisEvent(G4DCofThisEvent *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:84:17
-  t93.method("SetDCofThisEvent", static_cast<void (G4Event::*)(G4DCofThisEvent *) >(&G4Event::SetDCofThisEvent));
+  t94.method("SetDCofThisEvent", static_cast<void (G4Event::*)(G4DCofThisEvent *) >(&G4Event::SetDCofThisEvent));
 
   DEBUG_MSG("Adding wrapper for void G4Event::SetTrajectoryContainer(G4TrajectoryContainer *) (" __HERE__ ")");
   // signature to use in the veto list: void G4Event::SetTrajectoryContainer(G4TrajectoryContainer *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:86:17
-  t93.method("SetTrajectoryContainer", static_cast<void (G4Event::*)(G4TrajectoryContainer *) >(&G4Event::SetTrajectoryContainer));
+  t94.method("SetTrajectoryContainer", static_cast<void (G4Event::*)(G4TrajectoryContainer *) >(&G4Event::SetTrajectoryContainer));
 
   DEBUG_MSG("Adding wrapper for void G4Event::SetEventAborted() (" __HERE__ ")");
   // signature to use in the veto list: void G4Event::SetEventAborted()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:88:17
-  t93.method("SetEventAborted", static_cast<void (G4Event::*)() >(&G4Event::SetEventAborted));
+  t94.method("SetEventAborted", static_cast<void (G4Event::*)() >(&G4Event::SetEventAborted));
 
   DEBUG_MSG("Adding wrapper for void G4Event::SetRandomNumberStatus(G4String &) (" __HERE__ ")");
   // signature to use in the veto list: void G4Event::SetRandomNumberStatus(G4String &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:90:17
-  t93.method("SetRandomNumberStatus", static_cast<void (G4Event::*)(G4String &) >(&G4Event::SetRandomNumberStatus));
+  t94.method("SetRandomNumberStatus", static_cast<void (G4Event::*)(G4String &) >(&G4Event::SetRandomNumberStatus));
 
   DEBUG_MSG("Adding wrapper for void G4Event::SetRandomNumberStatusForProcessing(G4String &) (" __HERE__ ")");
   // signature to use in the veto list: void G4Event::SetRandomNumberStatusForProcessing(G4String &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:95:17
-  t93.method("SetRandomNumberStatusForProcessing", static_cast<void (G4Event::*)(G4String &) >(&G4Event::SetRandomNumberStatusForProcessing));
+  t94.method("SetRandomNumberStatusForProcessing", static_cast<void (G4Event::*)(G4String &) >(&G4Event::SetRandomNumberStatusForProcessing));
 
   DEBUG_MSG("Adding wrapper for void G4Event::KeepTheEvent(G4bool) (" __HERE__ ")");
   // signature to use in the veto list: void G4Event::KeepTheEvent(G4bool)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:100:17
-  t93.method("KeepTheEvent", static_cast<void (G4Event::*)(G4bool) >(&G4Event::KeepTheEvent));
-  t93.method("KeepTheEvent", [](G4Event& a)->void{ a.KeepTheEvent(); });
-  t93.method("KeepTheEvent", [](G4Event* a)->void{ a->KeepTheEvent(); });
+  t94.method("KeepTheEvent", static_cast<void (G4Event::*)(G4bool) >(&G4Event::KeepTheEvent));
+  t94.method("KeepTheEvent", [](G4Event& a)->void{ a.KeepTheEvent(); });
+  t94.method("KeepTheEvent", [](G4Event* a)->void{ a->KeepTheEvent(); });
 
   DEBUG_MSG("Adding wrapper for G4bool G4Event::ToBeKept() (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4Event::ToBeKept()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:102:19
-  t93.method("ToBeKept", static_cast<G4bool (G4Event::*)()  const>(&G4Event::ToBeKept));
+  t94.method("ToBeKept", static_cast<G4bool (G4Event::*)()  const>(&G4Event::ToBeKept));
 
   DEBUG_MSG("Adding wrapper for void G4Event::KeepForPostProcessing() (" __HERE__ ")");
   // signature to use in the veto list: void G4Event::KeepForPostProcessing()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:104:17
-  t93.method("KeepForPostProcessing", static_cast<void (G4Event::*)()  const>(&G4Event::KeepForPostProcessing));
+  t94.method("KeepForPostProcessing", static_cast<void (G4Event::*)()  const>(&G4Event::KeepForPostProcessing));
 
   DEBUG_MSG("Adding wrapper for void G4Event::PostProcessingFinished() (" __HERE__ ")");
   // signature to use in the veto list: void G4Event::PostProcessingFinished()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:106:17
-  t93.method("PostProcessingFinished", static_cast<void (G4Event::*)()  const>(&G4Event::PostProcessingFinished));
+  t94.method("PostProcessingFinished", static_cast<void (G4Event::*)()  const>(&G4Event::PostProcessingFinished));
 
   DEBUG_MSG("Adding wrapper for G4int G4Event::GetNumberOfGrips() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4Event::GetNumberOfGrips()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:115:18
-  t93.method("GetNumberOfGrips", static_cast<G4int (G4Event::*)()  const>(&G4Event::GetNumberOfGrips));
+  t94.method("GetNumberOfGrips", static_cast<G4int (G4Event::*)()  const>(&G4Event::GetNumberOfGrips));
 
   DEBUG_MSG("Adding wrapper for G4int G4Event::GetEventID() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4Event::GetEventID()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:118:18
-  t93.method("GetEventID", static_cast<G4int (G4Event::*)()  const>(&G4Event::GetEventID));
+  t94.method("GetEventID", static_cast<G4int (G4Event::*)()  const>(&G4Event::GetEventID));
 
   DEBUG_MSG("Adding wrapper for void G4Event::AddPrimaryVertex(G4PrimaryVertex *) (" __HERE__ ")");
   // signature to use in the veto list: void G4Event::AddPrimaryVertex(G4PrimaryVertex *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:121:17
-  t93.method("AddPrimaryVertex", static_cast<void (G4Event::*)(G4PrimaryVertex *) >(&G4Event::AddPrimaryVertex));
+  t94.method("AddPrimaryVertex", static_cast<void (G4Event::*)(G4PrimaryVertex *) >(&G4Event::AddPrimaryVertex));
 
   DEBUG_MSG("Adding wrapper for G4int G4Event::GetNumberOfPrimaryVertex() (" __HERE__ ")");
   // signature to use in the veto list: G4int G4Event::GetNumberOfPrimaryVertex()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:133:18
-  t93.method("GetNumberOfPrimaryVertex", static_cast<G4int (G4Event::*)()  const>(&G4Event::GetNumberOfPrimaryVertex));
+  t94.method("GetNumberOfPrimaryVertex", static_cast<G4int (G4Event::*)()  const>(&G4Event::GetNumberOfPrimaryVertex));
 
   DEBUG_MSG("Adding wrapper for G4PrimaryVertex * G4Event::GetPrimaryVertex(G4int) (" __HERE__ ")");
   // signature to use in the veto list: G4PrimaryVertex * G4Event::GetPrimaryVertex(G4int)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:137:31
-  t93.method("GetPrimaryVertex", static_cast<G4PrimaryVertex * (G4Event::*)(G4int)  const>(&G4Event::GetPrimaryVertex));
-  t93.method("GetPrimaryVertex", [](G4Event const& a)->G4PrimaryVertex *{ return a.GetPrimaryVertex(); });
-  t93.method("GetPrimaryVertex", [](G4Event const* a)->G4PrimaryVertex *{ return a->GetPrimaryVertex(); });
+  t94.method("GetPrimaryVertex", static_cast<G4PrimaryVertex * (G4Event::*)(G4int)  const>(&G4Event::GetPrimaryVertex));
+  t94.method("GetPrimaryVertex", [](G4Event const& a)->G4PrimaryVertex *{ return a.GetPrimaryVertex(); });
+  t94.method("GetPrimaryVertex", [](G4Event const* a)->G4PrimaryVertex *{ return a->GetPrimaryVertex(); });
 
   DEBUG_MSG("Adding wrapper for G4HCofThisEvent * G4Event::GetHCofThisEvent() (" __HERE__ ")");
   // signature to use in the veto list: G4HCofThisEvent * G4Event::GetHCofThisEvent()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:156:29
-  t93.method("GetHCofThisEvent", static_cast<G4HCofThisEvent * (G4Event::*)()  const>(&G4Event::GetHCofThisEvent));
+  t94.method("GetHCofThisEvent", static_cast<G4HCofThisEvent * (G4Event::*)()  const>(&G4Event::GetHCofThisEvent));
 
   DEBUG_MSG("Adding wrapper for G4DCofThisEvent * G4Event::GetDCofThisEvent() (" __HERE__ ")");
   // signature to use in the veto list: G4DCofThisEvent * G4Event::GetDCofThisEvent()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:158:29
-  t93.method("GetDCofThisEvent", static_cast<G4DCofThisEvent * (G4Event::*)()  const>(&G4Event::GetDCofThisEvent));
+  t94.method("GetDCofThisEvent", static_cast<G4DCofThisEvent * (G4Event::*)()  const>(&G4Event::GetDCofThisEvent));
 
   DEBUG_MSG("Adding wrapper for G4TrajectoryContainer * G4Event::GetTrajectoryContainer() (" __HERE__ ")");
   // signature to use in the veto list: G4TrajectoryContainer * G4Event::GetTrajectoryContainer()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:160:35
-  t93.method("GetTrajectoryContainer", static_cast<G4TrajectoryContainer * (G4Event::*)()  const>(&G4Event::GetTrajectoryContainer));
+  t94.method("GetTrajectoryContainer", static_cast<G4TrajectoryContainer * (G4Event::*)()  const>(&G4Event::GetTrajectoryContainer));
 
   DEBUG_MSG("Adding wrapper for G4bool G4Event::IsAborted() (" __HERE__ ")");
   // signature to use in the veto list: G4bool G4Event::IsAborted()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:167:19
-  t93.method("IsAborted", static_cast<G4bool (G4Event::*)()  const>(&G4Event::IsAborted));
+  t94.method("IsAborted", static_cast<G4bool (G4Event::*)()  const>(&G4Event::IsAborted));
 
   DEBUG_MSG("Adding wrapper for void G4Event::SetUserInformation(G4VUserEventInformation *) (" __HERE__ ")");
   // signature to use in the veto list: void G4Event::SetUserInformation(G4VUserEventInformation *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:171:17
-  t93.method("SetUserInformation", static_cast<void (G4Event::*)(G4VUserEventInformation *) >(&G4Event::SetUserInformation));
+  t94.method("SetUserInformation", static_cast<void (G4Event::*)(G4VUserEventInformation *) >(&G4Event::SetUserInformation));
 
   DEBUG_MSG("Adding wrapper for G4VUserEventInformation * G4Event::GetUserInformation() (" __HERE__ ")");
   // signature to use in the veto list: G4VUserEventInformation * G4Event::GetUserInformation()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:173:37
-  t93.method("GetUserInformation", static_cast<G4VUserEventInformation * (G4Event::*)()  const>(&G4Event::GetUserInformation));
+  t94.method("GetUserInformation", static_cast<G4VUserEventInformation * (G4Event::*)()  const>(&G4Event::GetUserInformation));
 
   DEBUG_MSG("Adding wrapper for const G4String & G4Event::GetRandomNumberStatus() (" __HERE__ ")");
   // signature to use in the veto list: const G4String & G4Event::GetRandomNumberStatus()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:177:28
-  t93.method("GetRandomNumberStatus", static_cast<const G4String & (G4Event::*)()  const>(&G4Event::GetRandomNumberStatus));
+  t94.method("GetRandomNumberStatus", static_cast<const G4String & (G4Event::*)()  const>(&G4Event::GetRandomNumberStatus));
 
   DEBUG_MSG("Adding wrapper for const G4String & G4Event::GetRandomNumberStatusForProcessing() (" __HERE__ ")");
   // signature to use in the veto list: const G4String & G4Event::GetRandomNumberStatusForProcessing()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4Event.hh:185:28
-  t93.method("GetRandomNumberStatusForProcessing", static_cast<const G4String & (G4Event::*)()  const>(&G4Event::GetRandomNumberStatusForProcessing));
+  t94.method("GetRandomNumberStatusForProcessing", static_cast<const G4String & (G4Event::*)()  const>(&G4Event::GetRandomNumberStatusForProcessing));
 
   /* End of G4Event class method wrappers
    **********************************************************************/

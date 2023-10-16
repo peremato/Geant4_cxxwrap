@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4EllipticalTube(jlcxx::Module& types, jlcxx::TypeWrapper<G4EllipticalTube>& t228) {
+void add_methods_for_G4EllipticalTube(jlcxx::Module& types, jlcxx::TypeWrapper<G4EllipticalTube>& t235) {
 
 
   /**********************************************************************/
@@ -25,123 +25,123 @@ void add_methods_for_G4EllipticalTube(jlcxx::Module& types, jlcxx::TypeWrapper<G
 
   DEBUG_MSG("Adding wrapper for void G4EllipticalTube::G4EllipticalTube(const G4String &, G4double, G4double, G4double) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:64:5
-  t228.constructor<const G4String &, G4double, G4double, G4double>(/*finalize=*/true);
+  t235.constructor<const G4String &, G4double, G4double, G4double>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for void G4EllipticalTube::BoundingLimits(G4ThreeVector &, G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: void G4EllipticalTube::BoundingLimits(G4ThreeVector &, G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:73:10
-  t228.method("BoundingLimits", static_cast<void (G4EllipticalTube::*)(G4ThreeVector &, G4ThreeVector &)  const>(&G4EllipticalTube::BoundingLimits));
+  t235.method("BoundingLimits", static_cast<void (G4EllipticalTube::*)(G4ThreeVector &, G4ThreeVector &)  const>(&G4EllipticalTube::BoundingLimits));
 
   DEBUG_MSG("Adding wrapper for EInside G4EllipticalTube::Inside(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: EInside G4EllipticalTube::Inside(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:80:13
-  t228.method("Inside", static_cast<EInside (G4EllipticalTube::*)(const G4ThreeVector &)  const>(&G4EllipticalTube::Inside));
+  t235.method("Inside", static_cast<EInside (G4EllipticalTube::*)(const G4ThreeVector &)  const>(&G4EllipticalTube::Inside));
 
   DEBUG_MSG("Adding wrapper for G4ThreeVector G4EllipticalTube::SurfaceNormal(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4ThreeVector G4EllipticalTube::SurfaceNormal(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:82:19
-  t228.method("SurfaceNormal", static_cast<G4ThreeVector (G4EllipticalTube::*)(const G4ThreeVector &)  const>(&G4EllipticalTube::SurfaceNormal));
+  t235.method("SurfaceNormal", static_cast<G4ThreeVector (G4EllipticalTube::*)(const G4ThreeVector &)  const>(&G4EllipticalTube::SurfaceNormal));
 
   DEBUG_MSG("Adding wrapper for G4double G4EllipticalTube::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4EllipticalTube::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:84:14
-  t228.method("DistanceToIn", static_cast<G4double (G4EllipticalTube::*)(const G4ThreeVector &, const G4ThreeVector &)  const>(&G4EllipticalTube::DistanceToIn));
+  t235.method("DistanceToIn", static_cast<G4double (G4EllipticalTube::*)(const G4ThreeVector &, const G4ThreeVector &)  const>(&G4EllipticalTube::DistanceToIn));
 
   DEBUG_MSG("Adding wrapper for G4double G4EllipticalTube::DistanceToIn(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4EllipticalTube::DistanceToIn(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:87:14
-  t228.method("DistanceToIn", static_cast<G4double (G4EllipticalTube::*)(const G4ThreeVector &)  const>(&G4EllipticalTube::DistanceToIn));
+  t235.method("DistanceToIn", static_cast<G4double (G4EllipticalTube::*)(const G4ThreeVector &)  const>(&G4EllipticalTube::DistanceToIn));
 
   DEBUG_MSG("Adding wrapper for G4double G4EllipticalTube::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4EllipticalTube::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:89:14
-  t228.method("DistanceToOut", static_cast<G4double (G4EllipticalTube::*)(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)  const>(&G4EllipticalTube::DistanceToOut));
-  t228.method("DistanceToOut", [](G4EllipticalTube const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a.DistanceToOut(arg0, arg1); });
-  t228.method("DistanceToOut", [](G4EllipticalTube const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a.DistanceToOut(arg0, arg1, arg2); });
-  t228.method("DistanceToOut", [](G4EllipticalTube const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a.DistanceToOut(arg0, arg1, arg2, arg3); });
-  t228.method("DistanceToOut", [](G4EllipticalTube const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a->DistanceToOut(arg0, arg1); });
-  t228.method("DistanceToOut", [](G4EllipticalTube const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a->DistanceToOut(arg0, arg1, arg2); });
-  t228.method("DistanceToOut", [](G4EllipticalTube const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a->DistanceToOut(arg0, arg1, arg2, arg3); });
+  t235.method("DistanceToOut", static_cast<G4double (G4EllipticalTube::*)(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)  const>(&G4EllipticalTube::DistanceToOut));
+  t235.method("DistanceToOut", [](G4EllipticalTube const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a.DistanceToOut(arg0, arg1); });
+  t235.method("DistanceToOut", [](G4EllipticalTube const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a.DistanceToOut(arg0, arg1, arg2); });
+  t235.method("DistanceToOut", [](G4EllipticalTube const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a.DistanceToOut(arg0, arg1, arg2, arg3); });
+  t235.method("DistanceToOut", [](G4EllipticalTube const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double{ return a->DistanceToOut(arg0, arg1); });
+  t235.method("DistanceToOut", [](G4EllipticalTube const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double{ return a->DistanceToOut(arg0, arg1, arg2); });
+  t235.method("DistanceToOut", [](G4EllipticalTube const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double{ return a->DistanceToOut(arg0, arg1, arg2, arg3); });
 
   DEBUG_MSG("Adding wrapper for G4double G4EllipticalTube::DistanceToOut(const G4ThreeVector &) (" __HERE__ ")");
   // signature to use in the veto list: G4double G4EllipticalTube::DistanceToOut(const G4ThreeVector &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:95:14
-  t228.method("DistanceToOut", static_cast<G4double (G4EllipticalTube::*)(const G4ThreeVector &)  const>(&G4EllipticalTube::DistanceToOut));
+  t235.method("DistanceToOut", static_cast<G4double (G4EllipticalTube::*)(const G4ThreeVector &)  const>(&G4EllipticalTube::DistanceToOut));
 
   DEBUG_MSG("Adding wrapper for G4GeometryType G4EllipticalTube::GetEntityType() (" __HERE__ ")");
   // signature to use in the veto list: G4GeometryType G4EllipticalTube::GetEntityType()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:97:20
-  t228.method("GetEntityType", static_cast<G4GeometryType (G4EllipticalTube::*)()  const>(&G4EllipticalTube::GetEntityType));
+  t235.method("GetEntityType", static_cast<G4GeometryType (G4EllipticalTube::*)()  const>(&G4EllipticalTube::GetEntityType));
 
   DEBUG_MSG("Adding wrapper for G4VSolid * G4EllipticalTube::Clone() (" __HERE__ ")");
   // signature to use in the veto list: G4VSolid * G4EllipticalTube::Clone()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:99:15
-  t228.method("Clone", static_cast<G4VSolid * (G4EllipticalTube::*)()  const>(&G4EllipticalTube::Clone));
+  t235.method("Clone", static_cast<G4VSolid * (G4EllipticalTube::*)()  const>(&G4EllipticalTube::Clone));
 
   DEBUG_MSG("Adding wrapper for G4double G4EllipticalTube::GetCubicVolume() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4EllipticalTube::GetCubicVolume()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:103:14
-  t228.method("GetCubicVolume", static_cast<G4double (G4EllipticalTube::*)() >(&G4EllipticalTube::GetCubicVolume));
+  t235.method("GetCubicVolume", static_cast<G4double (G4EllipticalTube::*)() >(&G4EllipticalTube::GetCubicVolume));
 
   DEBUG_MSG("Adding wrapper for G4double G4EllipticalTube::GetSurfaceArea() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4EllipticalTube::GetSurfaceArea()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:104:14
-  t228.method("GetSurfaceArea", static_cast<G4double (G4EllipticalTube::*)() >(&G4EllipticalTube::GetSurfaceArea));
+  t235.method("GetSurfaceArea", static_cast<G4double (G4EllipticalTube::*)() >(&G4EllipticalTube::GetSurfaceArea));
 
   DEBUG_MSG("Adding wrapper for G4ThreeVector G4EllipticalTube::GetPointOnSurface() (" __HERE__ ")");
   // signature to use in the veto list: G4ThreeVector G4EllipticalTube::GetPointOnSurface()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:106:19
-  t228.method("GetPointOnSurface", static_cast<G4ThreeVector (G4EllipticalTube::*)()  const>(&G4EllipticalTube::GetPointOnSurface));
+  t235.method("GetPointOnSurface", static_cast<G4ThreeVector (G4EllipticalTube::*)()  const>(&G4EllipticalTube::GetPointOnSurface));
 
   DEBUG_MSG("Adding wrapper for G4Polyhedron * G4EllipticalTube::CreatePolyhedron() (" __HERE__ ")");
   // signature to use in the veto list: G4Polyhedron * G4EllipticalTube::CreatePolyhedron()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:110:19
-  t228.method("CreatePolyhedron", static_cast<G4Polyhedron * (G4EllipticalTube::*)()  const>(&G4EllipticalTube::CreatePolyhedron));
+  t235.method("CreatePolyhedron", static_cast<G4Polyhedron * (G4EllipticalTube::*)()  const>(&G4EllipticalTube::CreatePolyhedron));
 
   DEBUG_MSG("Adding wrapper for G4Polyhedron * G4EllipticalTube::GetPolyhedron() (" __HERE__ ")");
   // signature to use in the veto list: G4Polyhedron * G4EllipticalTube::GetPolyhedron()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:111:19
-  t228.method("GetPolyhedron", static_cast<G4Polyhedron * (G4EllipticalTube::*)()  const>(&G4EllipticalTube::GetPolyhedron));
+  t235.method("GetPolyhedron", static_cast<G4Polyhedron * (G4EllipticalTube::*)()  const>(&G4EllipticalTube::GetPolyhedron));
 
   DEBUG_MSG("Adding wrapper for G4double G4EllipticalTube::GetDx() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4EllipticalTube::GetDx()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:117:21
-  t228.method("GetDx", static_cast<G4double (G4EllipticalTube::*)()  const>(&G4EllipticalTube::GetDx));
+  t235.method("GetDx", static_cast<G4double (G4EllipticalTube::*)()  const>(&G4EllipticalTube::GetDx));
 
   DEBUG_MSG("Adding wrapper for G4double G4EllipticalTube::GetDy() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4EllipticalTube::GetDy()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:118:21
-  t228.method("GetDy", static_cast<G4double (G4EllipticalTube::*)()  const>(&G4EllipticalTube::GetDy));
+  t235.method("GetDy", static_cast<G4double (G4EllipticalTube::*)()  const>(&G4EllipticalTube::GetDy));
 
   DEBUG_MSG("Adding wrapper for G4double G4EllipticalTube::GetDz() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4EllipticalTube::GetDz()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:119:21
-  t228.method("GetDz", static_cast<G4double (G4EllipticalTube::*)()  const>(&G4EllipticalTube::GetDz));
+  t235.method("GetDz", static_cast<G4double (G4EllipticalTube::*)()  const>(&G4EllipticalTube::GetDz));
 
   DEBUG_MSG("Adding wrapper for void G4EllipticalTube::SetDx(G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4EllipticalTube::SetDx(G4double)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:121:17
-  t228.method("SetDx", static_cast<void (G4EllipticalTube::*)(G4double) >(&G4EllipticalTube::SetDx));
+  t235.method("SetDx", static_cast<void (G4EllipticalTube::*)(G4double) >(&G4EllipticalTube::SetDx));
 
   DEBUG_MSG("Adding wrapper for void G4EllipticalTube::SetDy(G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4EllipticalTube::SetDy(G4double)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:122:17
-  t228.method("SetDy", static_cast<void (G4EllipticalTube::*)(G4double) >(&G4EllipticalTube::SetDy));
+  t235.method("SetDy", static_cast<void (G4EllipticalTube::*)(G4double) >(&G4EllipticalTube::SetDy));
 
   DEBUG_MSG("Adding wrapper for void G4EllipticalTube::SetDz(G4double) (" __HERE__ ")");
   // signature to use in the veto list: void G4EllipticalTube::SetDz(G4double)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:123:17
-  t228.method("SetDz", static_cast<void (G4EllipticalTube::*)(G4double) >(&G4EllipticalTube::SetDz));
+  t235.method("SetDz", static_cast<void (G4EllipticalTube::*)(G4double) >(&G4EllipticalTube::SetDz));
 
 
   DEBUG_MSG("Adding wrapper for void G4EllipticalTube::G4EllipticalTube(const G4EllipticalTube &) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:132:5
-  t228.constructor<const G4EllipticalTube &>(/*finalize=*/true);
+  t235.constructor<const G4EllipticalTube &>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for G4EllipticalTube & G4EllipticalTube::operator=(const G4EllipticalTube &) (" __HERE__ ")");
   // signature to use in the veto list: G4EllipticalTube & G4EllipticalTube::operator=(const G4EllipticalTube &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4EllipticalTube.hh:133:23
-  t228.method("assign", static_cast<G4EllipticalTube & (G4EllipticalTube::*)(const G4EllipticalTube &) >(&G4EllipticalTube::operator=));
+  t235.method("assign", static_cast<G4EllipticalTube & (G4EllipticalTube::*)(const G4EllipticalTube &) >(&G4EllipticalTube::operator=));
 
   /* End of G4EllipticalTube class method wrappers
    **********************************************************************/

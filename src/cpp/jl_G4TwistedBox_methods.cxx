@@ -15,7 +15,7 @@
 #define __HERE__  __FILE__ ":" QUOTE2(__LINE__)
 #define QUOTE(arg) #arg
 #define QUOTE2(arg) QUOTE(arg)
-void add_methods_for_G4TwistedBox(jlcxx::Module& types, jlcxx::TypeWrapper<G4TwistedBox>& t232) {
+void add_methods_for_G4TwistedBox(jlcxx::Module& types, jlcxx::TypeWrapper<G4TwistedBox>& t239) {
 
 
   /**********************************************************************/
@@ -25,57 +25,57 @@ void add_methods_for_G4TwistedBox(jlcxx::Module& types, jlcxx::TypeWrapper<G4Twi
 
   DEBUG_MSG("Adding wrapper for void G4TwistedBox::G4TwistedBox(const G4String &, G4double, G4double, G4double, G4double) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedBox.hh:52:5
-  t232.constructor<const G4String &, G4double, G4double, G4double, G4double>(/*finalize=*/true);
+  t239.constructor<const G4String &, G4double, G4double, G4double, G4double>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for G4double G4TwistedBox::GetXHalfLength() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4TwistedBox::GetXHalfLength()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedBox.hh:62:21
-  t232.method("GetXHalfLength", static_cast<G4double (G4TwistedBox::*)()  const>(&G4TwistedBox::GetXHalfLength));
+  t239.method("GetXHalfLength", static_cast<G4double (G4TwistedBox::*)()  const>(&G4TwistedBox::GetXHalfLength));
 
   DEBUG_MSG("Adding wrapper for G4double G4TwistedBox::GetYHalfLength() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4TwistedBox::GetYHalfLength()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedBox.hh:63:21
-  t232.method("GetYHalfLength", static_cast<G4double (G4TwistedBox::*)()  const>(&G4TwistedBox::GetYHalfLength));
+  t239.method("GetYHalfLength", static_cast<G4double (G4TwistedBox::*)()  const>(&G4TwistedBox::GetYHalfLength));
 
   DEBUG_MSG("Adding wrapper for G4double G4TwistedBox::GetZHalfLength() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4TwistedBox::GetZHalfLength()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedBox.hh:64:21
-  t232.method("GetZHalfLength", static_cast<G4double (G4TwistedBox::*)()  const>(&G4TwistedBox::GetZHalfLength));
+  t239.method("GetZHalfLength", static_cast<G4double (G4TwistedBox::*)()  const>(&G4TwistedBox::GetZHalfLength));
 
   DEBUG_MSG("Adding wrapper for G4double G4TwistedBox::GetPhiTwist() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4TwistedBox::GetPhiTwist()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedBox.hh:65:21
-  t232.method("GetPhiTwist", static_cast<G4double (G4TwistedBox::*)()  const>(&G4TwistedBox::GetPhiTwist));
+  t239.method("GetPhiTwist", static_cast<G4double (G4TwistedBox::*)()  const>(&G4TwistedBox::GetPhiTwist));
 
   DEBUG_MSG("Adding wrapper for G4GeometryType G4TwistedBox::GetEntityType() (" __HERE__ ")");
   // signature to use in the veto list: G4GeometryType G4TwistedBox::GetEntityType()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedBox.hh:67:20
-  t232.method("GetEntityType", static_cast<G4GeometryType (G4TwistedBox::*)()  const>(&G4TwistedBox::GetEntityType));
+  t239.method("GetEntityType", static_cast<G4GeometryType (G4TwistedBox::*)()  const>(&G4TwistedBox::GetEntityType));
 
   DEBUG_MSG("Adding wrapper for G4double G4TwistedBox::GetCubicVolume() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4TwistedBox::GetCubicVolume()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedBox.hh:69:14
-  t232.method("GetCubicVolume", static_cast<G4double (G4TwistedBox::*)() >(&G4TwistedBox::GetCubicVolume));
+  t239.method("GetCubicVolume", static_cast<G4double (G4TwistedBox::*)() >(&G4TwistedBox::GetCubicVolume));
 
   DEBUG_MSG("Adding wrapper for G4double G4TwistedBox::GetSurfaceArea() (" __HERE__ ")");
   // signature to use in the veto list: G4double G4TwistedBox::GetSurfaceArea()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedBox.hh:70:14
-  t232.method("GetSurfaceArea", static_cast<G4double (G4TwistedBox::*)() >(&G4TwistedBox::GetSurfaceArea));
+  t239.method("GetSurfaceArea", static_cast<G4double (G4TwistedBox::*)() >(&G4TwistedBox::GetSurfaceArea));
 
   DEBUG_MSG("Adding wrapper for G4VSolid * G4TwistedBox::Clone() (" __HERE__ ")");
   // signature to use in the veto list: G4VSolid * G4TwistedBox::Clone()
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedBox.hh:72:15
-  t232.method("Clone", static_cast<G4VSolid * (G4TwistedBox::*)()  const>(&G4TwistedBox::Clone));
+  t239.method("Clone", static_cast<G4VSolid * (G4TwistedBox::*)()  const>(&G4TwistedBox::Clone));
 
 
   DEBUG_MSG("Adding wrapper for void G4TwistedBox::G4TwistedBox(const G4TwistedBox &) (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedBox.hh:83:5
-  t232.constructor<const G4TwistedBox &>(/*finalize=*/true);
+  t239.constructor<const G4TwistedBox &>(/*finalize=*/true);
 
   DEBUG_MSG("Adding wrapper for G4TwistedBox & G4TwistedBox::operator=(const G4TwistedBox &) (" __HERE__ ")");
   // signature to use in the veto list: G4TwistedBox & G4TwistedBox::operator=(const G4TwistedBox &)
   // defined in /Users/mato/.julia/artifacts/9d4b417a98ec8f720b8871baefe87108f864656f/include/Geant4/G4TwistedBox.hh:84:19
-  t232.method("assign", static_cast<G4TwistedBox & (G4TwistedBox::*)(const G4TwistedBox &) >(&G4TwistedBox::operator=));
+  t239.method("assign", static_cast<G4TwistedBox & (G4TwistedBox::*)(const G4TwistedBox &) >(&G4TwistedBox::operator=));
 
   /* End of G4TwistedBox class method wrappers
    **********************************************************************/
