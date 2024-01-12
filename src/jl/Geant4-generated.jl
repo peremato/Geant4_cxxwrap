@@ -5,7 +5,7 @@ import Base.getindex
 import Base.setindex!
 
 using CxxWrap
-@wrapmodule("jlGeant4")
+@wrapmodule(()->"libjlGeant4")
 
 function __init__()
     @initcxx
