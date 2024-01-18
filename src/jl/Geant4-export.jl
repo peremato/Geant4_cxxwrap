@@ -300,7 +300,7 @@ export fMaterial, fMaterial!, fNotDefined, fOffset, fOffset!, fOptical, fParalle
 export fPhotolepton_hadron, fPostStepDoItProc, fPostponeToNextEvent, fScale, fScale!, fSensitiveDetector, fSensitiveDetector!, fSolid
 export fSolid!, fStopAndKill, fStopButAlive, fSuspend, fSuspendAndWait, fTransportation, fUCN, fUndefined, fUserDefined
 export fUserDefinedLimit, fWorldBoundary, fZ, fZ!, fcopyNo, fcopyNo!, fdiv!, fire, fireArray, fireBit, fireInt, firsov, flat, flatArray
-export frot, frot!, gamma, get, getAngleAxis, getAxis, getDecomposition, getDelta, getDirection, getEta
+export frot, frot!, gamma, getAngleAxis, getAxis, getDecomposition, getDelta, getDirection, getEta
 export getMasterRandomEngine, getPhi, getPsi, getR, getRho, getRotation, getSeed, getSeeds, getState, getTheta, getTranslation, getX, getY
 export getZ, glisur, ground, groundair, groundbackpainted, groundfrontpainted, groundlumirrorair, groundlumirrorglue
 export groundteflonair, groundtioair, groundtyvekair, groundvm2000air, groundvm2000glue, howNear, howOrthogonal, howParallel, idxAll
