@@ -97,11 +97,6 @@ struct JlCLHEP_HepRandomEngine: public Wrapper {
     // defined in /Users/mato/.julia/artifacts/4afb5743b029965f72ec5a970d92d5344ce830d2/include/Geant4/CLHEP/Random/RandomEngine.h:107:38
     t.method("put", static_cast<std::vector<unsigned long> (CLHEP::HepRandomEngine::*)()  const>(&CLHEP::HepRandomEngine::put));
 
-    DEBUG_MSG("Adding wrapper for bool CLHEP::HepRandomEngine::get(const std::vector<unsigned long> &) (" __HERE__ ")");
-    // signature to use in the veto list: bool CLHEP::HepRandomEngine::get(const std::vector<unsigned long> &)
-    // defined in /Users/mato/.julia/artifacts/4afb5743b029965f72ec5a970d92d5344ce830d2/include/Geant4/CLHEP/Random/RandomEngine.h:108:16
-    t.method("get", static_cast<bool (CLHEP::HepRandomEngine::*)(const std::vector<unsigned long> &) >(&CLHEP::HepRandomEngine::get));
-
     DEBUG_MSG("Adding wrapper for bool CLHEP::HepRandomEngine::getState(const std::vector<unsigned long> &) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::HepRandomEngine::getState(const std::vector<unsigned long> &)
     // defined in /Users/mato/.julia/artifacts/4afb5743b029965f72ec5a970d92d5344ce830d2/include/Geant4/CLHEP/Random/RandomEngine.h:109:16

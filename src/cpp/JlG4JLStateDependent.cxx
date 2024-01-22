@@ -30,7 +30,7 @@ struct JlG4JLStateDependent: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4JLStateDependent::G4JLStateDependent(notify_f, void *) (" __HERE__ ")");
     // defined in ./cpp/Geant4Wrap.h:230:5
-    t.constructor<notify_f, void *>(/*finalize=*/true);
+    t.constructor<notify_f, void *>(/*finalize=*/false);
 
     DEBUG_MSG("Adding wrapper for G4bool G4JLStateDependent::Notify(G4ApplicationState) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4JLStateDependent::Notify(G4ApplicationState)
