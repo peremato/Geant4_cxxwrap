@@ -18,7 +18,7 @@ struct JlG4JLWorkerInitialization: public Wrapper {
 
   JlG4JLWorkerInitialization(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4JLWorkerInitialization (" __HERE__ ")");
-    // defined in ./cpp/Geant4Wrap.h:127:7
+    // defined in ./cpp/Geant4Wrap.h:128:7
     jlcxx::TypeWrapper<G4JLWorkerInitialization>  t = jlModule.add_type<G4JLWorkerInitialization>("G4JLWorkerInitialization",
       jlcxx::julia_base_type<G4UserWorkerInitialization>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4JLWorkerInitialization>>(new jlcxx::TypeWrapper<G4JLWorkerInitialization>(jlModule, t));
@@ -30,27 +30,27 @@ struct JlG4JLWorkerInitialization: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4JLWorkerInitialization::WorkerInitialize() (" __HERE__ ")");
     // signature to use in the veto list: void G4JLWorkerInitialization::WorkerInitialize()
-    // defined in ./cpp/Geant4Wrap.h:131:18
+    // defined in ./cpp/Geant4Wrap.h:132:18
     t.method("WorkerInitialize", static_cast<void (G4JLWorkerInitialization::*)()  const>(&G4JLWorkerInitialization::WorkerInitialize));
 
     DEBUG_MSG("Adding wrapper for void G4JLWorkerInitialization::WorkerStart() (" __HERE__ ")");
     // signature to use in the veto list: void G4JLWorkerInitialization::WorkerStart()
-    // defined in ./cpp/Geant4Wrap.h:132:18
+    // defined in ./cpp/Geant4Wrap.h:133:18
     t.method("WorkerStart", static_cast<void (G4JLWorkerInitialization::*)()  const>(&G4JLWorkerInitialization::WorkerStart));
 
     DEBUG_MSG("Adding wrapper for void G4JLWorkerInitialization::WorkerRunStart() (" __HERE__ ")");
     // signature to use in the veto list: void G4JLWorkerInitialization::WorkerRunStart()
-    // defined in ./cpp/Geant4Wrap.h:133:18
+    // defined in ./cpp/Geant4Wrap.h:134:18
     t.method("WorkerRunStart", static_cast<void (G4JLWorkerInitialization::*)()  const>(&G4JLWorkerInitialization::WorkerRunStart));
 
     DEBUG_MSG("Adding wrapper for void G4JLWorkerInitialization::WorkerRunEnd() (" __HERE__ ")");
     // signature to use in the veto list: void G4JLWorkerInitialization::WorkerRunEnd()
-    // defined in ./cpp/Geant4Wrap.h:134:18
+    // defined in ./cpp/Geant4Wrap.h:135:18
     t.method("WorkerRunEnd", static_cast<void (G4JLWorkerInitialization::*)()  const>(&G4JLWorkerInitialization::WorkerRunEnd));
 
     DEBUG_MSG("Adding wrapper for void G4JLWorkerInitialization::WorkerStop() (" __HERE__ ")");
     // signature to use in the veto list: void G4JLWorkerInitialization::WorkerStop()
-    // defined in ./cpp/Geant4Wrap.h:135:18
+    // defined in ./cpp/Geant4Wrap.h:136:18
     t.method("WorkerStop", static_cast<void (G4JLWorkerInitialization::*)()  const>(&G4JLWorkerInitialization::WorkerStop));
   }
 

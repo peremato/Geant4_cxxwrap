@@ -18,7 +18,7 @@ struct JlG4JLExceptionHandler: public Wrapper {
 
   JlG4JLExceptionHandler(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4JLExceptionHandler (" __HERE__ ")");
-    // defined in ./cpp/Geant4Wrap.h:32:7
+    // defined in ./cpp/Geant4Wrap.h:33:7
     jlcxx::TypeWrapper<G4JLExceptionHandler>  t = jlModule.add_type<G4JLExceptionHandler>("G4JLExceptionHandler",
       jlcxx::julia_base_type<G4VExceptionHandler>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4JLExceptionHandler>>(new jlcxx::TypeWrapper<G4JLExceptionHandler>(jlModule, t));
@@ -30,7 +30,7 @@ struct JlG4JLExceptionHandler: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4bool G4JLExceptionHandler::Notify(const char *, const char *, G4ExceptionSeverity, const char *) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4JLExceptionHandler::Notify(const char *, const char *, G4ExceptionSeverity, const char *)
-    // defined in ./cpp/Geant4Wrap.h:36:10
+    // defined in ./cpp/Geant4Wrap.h:37:10
     t.method("Notify", static_cast<G4bool (G4JLExceptionHandler::*)(const char *, const char *, G4ExceptionSeverity, const char *) >(&G4JLExceptionHandler::Notify));
   }
 

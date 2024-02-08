@@ -18,7 +18,7 @@ struct JlG4JLDetectorConstruction: public Wrapper {
 
   JlG4JLDetectorConstruction(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4JLDetectorConstruction (" __HERE__ ")");
-    // defined in ./cpp/Geant4Wrap.h:71:7
+    // defined in ./cpp/Geant4Wrap.h:72:7
     jlcxx::TypeWrapper<G4JLDetectorConstruction>  t = jlModule.add_type<G4JLDetectorConstruction>("G4JLDetectorConstruction",
       jlcxx::julia_base_type<G4VUserDetectorConstruction>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4JLDetectorConstruction>>(new jlcxx::TypeWrapper<G4JLDetectorConstruction>(jlModule, t));
@@ -29,24 +29,24 @@ struct JlG4JLDetectorConstruction: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4JLDetectorConstruction::G4JLDetectorConstruction(construct_f, void *, sdandf_f, void *) (" __HERE__ ")");
-    // defined in ./cpp/Geant4Wrap.h:73:5
+    // defined in ./cpp/Geant4Wrap.h:74:5
     t.constructor<construct_f, void *>(/*finalize=*/false);
     t.constructor<construct_f, void *, sdandf_f>(/*finalize=*/false);
     t.constructor<construct_f, void *, sdandf_f, void *>(/*finalize=*/false);
 
     DEBUG_MSG("Adding wrapper for G4VPhysicalVolume * G4JLDetectorConstruction::Construct() (" __HERE__ ")");
     // signature to use in the veto list: G4VPhysicalVolume * G4JLDetectorConstruction::Construct()
-    // defined in ./cpp/Geant4Wrap.h:77:32
+    // defined in ./cpp/Geant4Wrap.h:78:32
     t.method("Construct", static_cast<G4VPhysicalVolume * (G4JLDetectorConstruction::*)() >(&G4JLDetectorConstruction::Construct));
 
     DEBUG_MSG("Adding wrapper for void G4JLDetectorConstruction::ConstructSDandField() (" __HERE__ ")");
     // signature to use in the veto list: void G4JLDetectorConstruction::ConstructSDandField()
-    // defined in ./cpp/Geant4Wrap.h:78:18
+    // defined in ./cpp/Geant4Wrap.h:79:18
     t.method("ConstructSDandField", static_cast<void (G4JLDetectorConstruction::*)() >(&G4JLDetectorConstruction::ConstructSDandField));
 
     DEBUG_MSG("Adding wrapper for void G4JLDetectorConstruction::SetSensitiveDetector(const G4String &, G4JLSensDet *, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4JLDetectorConstruction::SetSensitiveDetector(const G4String &, G4JLSensDet *, G4bool)
-    // defined in ./cpp/Geant4Wrap.h:79:10
+    // defined in ./cpp/Geant4Wrap.h:80:10
     t.method("SetSensitiveDetector", static_cast<void (G4JLDetectorConstruction::*)(const G4String &, G4JLSensDet *, G4bool) >(&G4JLDetectorConstruction::SetSensitiveDetector));
     t.method("SetSensitiveDetector", [](G4JLDetectorConstruction& a, const G4String & arg0, G4JLSensDet * arg1)->void { a.SetSensitiveDetector(arg0, arg1); });
     t.method("SetSensitiveDetector", [](G4JLDetectorConstruction* a, const G4String & arg0, G4JLSensDet * arg1)->void { a->SetSensitiveDetector(arg0, arg1); });

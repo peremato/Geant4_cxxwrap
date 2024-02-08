@@ -18,7 +18,7 @@ struct JlG4JLGeneratorAction: public Wrapper {
 
   JlG4JLGeneratorAction(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4JLGeneratorAction (" __HERE__ ")");
-    // defined in ./cpp/Geant4Wrap.h:140:7
+    // defined in ./cpp/Geant4Wrap.h:141:7
     jlcxx::TypeWrapper<G4JLGeneratorAction>  t = jlModule.add_type<G4JLGeneratorAction>("G4JLGeneratorAction",
       jlcxx::julia_base_type<G4VUserPrimaryGeneratorAction>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4JLGeneratorAction>>(new jlcxx::TypeWrapper<G4JLGeneratorAction>(jlModule, t));
@@ -29,12 +29,12 @@ struct JlG4JLGeneratorAction: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4JLGeneratorAction::G4JLGeneratorAction(generate_f, void *) (" __HERE__ ")");
-    // defined in ./cpp/Geant4Wrap.h:142:3
+    // defined in ./cpp/Geant4Wrap.h:143:3
     t.constructor<generate_f, void *>(/*finalize=*/false);
 
     DEBUG_MSG("Adding wrapper for void G4JLGeneratorAction::GeneratePrimaries(G4Event *) (" __HERE__ ")");
     // signature to use in the veto list: void G4JLGeneratorAction::GeneratePrimaries(G4Event *)
-    // defined in ./cpp/Geant4Wrap.h:144:8
+    // defined in ./cpp/Geant4Wrap.h:145:8
     t.method("GeneratePrimaries", static_cast<void (G4JLGeneratorAction::*)(G4Event *) >(&G4JLGeneratorAction::GeneratePrimaries));
   }
 

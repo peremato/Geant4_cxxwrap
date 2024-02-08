@@ -27,10 +27,10 @@ struct JlG4ParticleTableIterator: public Wrapper {
     // defined in /Users/mato/.julia/artifacts/4afb5743b029965f72ec5a970d92d5344ce830d2/include/Geant4/G4ParticleTableIterator.hh:39:7
     jlcxx::TypeWrapper<jlcxx::Parametric<jlcxx::TypeVar<1>, jlcxx::TypeVar<2>>>  t =  jlModule.add_type<jlcxx::Parametric<jlcxx::TypeVar<1>, jlcxx::TypeVar<2>>>("G4ParticleTableIterator");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<jlcxx::Parametric<jlcxx::TypeVar<1>, jlcxx::TypeVar<2>>>>(new jlcxx::TypeWrapper<jlcxx::Parametric<jlcxx::TypeVar<1>, jlcxx::TypeVar<2>>>(jlModule, t));
-    auto t226_decl_methods = [this]<typename K, typename V> (jlcxx::TypeWrapper<G4ParticleTableIterator<K, V>> wrapped){
+    auto t228_decl_methods = [this]<typename K, typename V> (jlcxx::TypeWrapper<G4ParticleTableIterator<K, V>> wrapped){
       auto module_ = this->module_;
     };
-    t.apply<G4ParticleTableIterator<G4String, G4ParticleDefinition *>>(t226_decl_methods);
+    t.apply<G4ParticleTableIterator<G4String, G4ParticleDefinition *>>(t228_decl_methods);
   }
 
   void add_methods() const{

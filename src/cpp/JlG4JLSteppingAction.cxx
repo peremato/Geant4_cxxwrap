@@ -18,7 +18,7 @@ struct JlG4JLSteppingAction: public Wrapper {
 
   JlG4JLSteppingAction(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4JLSteppingAction (" __HERE__ ")");
-    // defined in ./cpp/Geant4Wrap.h:164:7
+    // defined in ./cpp/Geant4Wrap.h:165:7
     jlcxx::TypeWrapper<G4JLSteppingAction>  t = jlModule.add_type<G4JLSteppingAction>("G4JLSteppingAction",
       jlcxx::julia_base_type<G4UserSteppingAction>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4JLSteppingAction>>(new jlcxx::TypeWrapper<G4JLSteppingAction>(jlModule, t));
@@ -29,12 +29,12 @@ struct JlG4JLSteppingAction: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4JLSteppingAction::G4JLSteppingAction(stepaction_f, void *) (" __HERE__ ")");
-    // defined in ./cpp/Geant4Wrap.h:166:3
+    // defined in ./cpp/Geant4Wrap.h:167:3
     t.constructor<stepaction_f, void *>(/*finalize=*/true);
 
     DEBUG_MSG("Adding wrapper for void G4JLSteppingAction::UserSteppingAction(const G4Step *) (" __HERE__ ")");
     // signature to use in the veto list: void G4JLSteppingAction::UserSteppingAction(const G4Step *)
-    // defined in ./cpp/Geant4Wrap.h:168:16
+    // defined in ./cpp/Geant4Wrap.h:169:16
     t.method("UserSteppingAction", static_cast<void (G4JLSteppingAction::*)(const G4Step *) >(&G4JLSteppingAction::UserSteppingAction));
   }
 

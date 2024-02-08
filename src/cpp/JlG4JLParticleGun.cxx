@@ -18,7 +18,7 @@ struct JlG4JLParticleGun: public Wrapper {
 
   JlG4JLParticleGun(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4JLParticleGun (" __HERE__ ")");
-    // defined in ./cpp/Geant4Wrap.h:116:7
+    // defined in ./cpp/Geant4Wrap.h:117:7
     jlcxx::TypeWrapper<G4JLParticleGun>  t = jlModule.add_type<G4JLParticleGun>("G4JLParticleGun",
       jlcxx::julia_base_type<G4VUserPrimaryGeneratorAction>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4JLParticleGun>>(new jlcxx::TypeWrapper<G4JLParticleGun>(jlModule, t));
@@ -30,12 +30,12 @@ struct JlG4JLParticleGun: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4ParticleGun * G4JLParticleGun::GetGun() (" __HERE__ ")");
     // signature to use in the veto list: G4ParticleGun * G4JLParticleGun::GetGun()
-    // defined in ./cpp/Geant4Wrap.h:120:18
+    // defined in ./cpp/Geant4Wrap.h:121:18
     t.method("GetGun", static_cast<G4ParticleGun * (G4JLParticleGun::*)()  const>(&G4JLParticleGun::GetGun));
 
     DEBUG_MSG("Adding wrapper for void G4JLParticleGun::GeneratePrimaries(G4Event *) (" __HERE__ ")");
     // signature to use in the veto list: void G4JLParticleGun::GeneratePrimaries(G4Event *)
-    // defined in ./cpp/Geant4Wrap.h:121:8
+    // defined in ./cpp/Geant4Wrap.h:122:8
     t.method("GeneratePrimaries", static_cast<void (G4JLParticleGun::*)(G4Event *) >(&G4JLParticleGun::GeneratePrimaries));
   }
 

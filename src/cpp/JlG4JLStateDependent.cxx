@@ -18,7 +18,7 @@ struct JlG4JLStateDependent: public Wrapper {
 
   JlG4JLStateDependent(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4JLStateDependent (" __HERE__ ")");
-    // defined in ./cpp/Geant4Wrap.h:228:7
+    // defined in ./cpp/Geant4Wrap.h:260:7
     jlcxx::TypeWrapper<G4JLStateDependent>  t = jlModule.add_type<G4JLStateDependent>("G4JLStateDependent",
       jlcxx::julia_base_type<G4VStateDependent>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4JLStateDependent>>(new jlcxx::TypeWrapper<G4JLStateDependent>(jlModule, t));
@@ -29,12 +29,12 @@ struct JlG4JLStateDependent: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4JLStateDependent::G4JLStateDependent(notify_f, void *) (" __HERE__ ")");
-    // defined in ./cpp/Geant4Wrap.h:230:5
+    // defined in ./cpp/Geant4Wrap.h:262:5
     t.constructor<notify_f, void *>(/*finalize=*/false);
 
     DEBUG_MSG("Adding wrapper for G4bool G4JLStateDependent::Notify(G4ApplicationState) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4JLStateDependent::Notify(G4ApplicationState)
-    // defined in ./cpp/Geant4Wrap.h:231:12
+    // defined in ./cpp/Geant4Wrap.h:263:12
     t.method("Notify", static_cast<G4bool (G4JLStateDependent::*)(G4ApplicationState) >(&G4JLStateDependent::Notify));
   }
 

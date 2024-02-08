@@ -18,7 +18,7 @@ struct JlG4JLMagField: public Wrapper {
 
   JlG4JLMagField(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4JLMagField (" __HERE__ ")");
-    // defined in ./cpp/Geant4Wrap.h:152:7
+    // defined in ./cpp/Geant4Wrap.h:153:7
     jlcxx::TypeWrapper<G4JLMagField>  t = jlModule.add_type<G4JLMagField>("G4JLMagField",
       jlcxx::julia_base_type<G4MagneticField>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4JLMagField>>(new jlcxx::TypeWrapper<G4JLMagField>(jlModule, t));
@@ -29,7 +29,7 @@ struct JlG4JLMagField: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4JLMagField::G4JLMagField(getfield_f, void *) (" __HERE__ ")");
-    // defined in ./cpp/Geant4Wrap.h:154:3
+    // defined in ./cpp/Geant4Wrap.h:155:3
     t.constructor<getfield_f, void *>(/*finalize=*/true);
   }
 

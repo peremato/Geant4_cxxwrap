@@ -18,7 +18,7 @@ struct JlG4JLEventAction: public Wrapper {
 
   JlG4JLEventAction(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4JLEventAction (" __HERE__ ")");
-    // defined in ./cpp/Geant4Wrap.h:211:7
+    // defined in ./cpp/Geant4Wrap.h:212:7
     jlcxx::TypeWrapper<G4JLEventAction>  t = jlModule.add_type<G4JLEventAction>("G4JLEventAction",
       jlcxx::julia_base_type<G4UserEventAction>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4JLEventAction>>(new jlcxx::TypeWrapper<G4JLEventAction>(jlModule, t));
@@ -30,7 +30,7 @@ struct JlG4JLEventAction: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4JLEventAction::G4JLEventAction(eventaction_f, void *, eventaction_f, void *) (" __HERE__ ")");
-    // defined in ./cpp/Geant4Wrap.h:213:5
+    // defined in ./cpp/Geant4Wrap.h:214:5
     t.constructor<eventaction_f>(/*finalize=*/true);
     t.constructor<eventaction_f, void *>(/*finalize=*/true);
     t.constructor<eventaction_f, void *, eventaction_f>(/*finalize=*/true);
@@ -38,12 +38,12 @@ struct JlG4JLEventAction: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4JLEventAction::BeginOfEventAction(const G4Event *) (" __HERE__ ")");
     // signature to use in the veto list: void G4JLEventAction::BeginOfEventAction(const G4Event *)
-    // defined in ./cpp/Geant4Wrap.h:217:18
+    // defined in ./cpp/Geant4Wrap.h:218:18
     t.method("BeginOfEventAction", static_cast<void (G4JLEventAction::*)(const G4Event *) >(&G4JLEventAction::BeginOfEventAction));
 
     DEBUG_MSG("Adding wrapper for void G4JLEventAction::EndOfEventAction(const G4Event *) (" __HERE__ ")");
     // signature to use in the veto list: void G4JLEventAction::EndOfEventAction(const G4Event *)
-    // defined in ./cpp/Geant4Wrap.h:218:20
+    // defined in ./cpp/Geant4Wrap.h:219:20
     t.method("EndOfEventAction", static_cast<void (G4JLEventAction::*)(const G4Event *) >(&G4JLEventAction::EndOfEventAction));
   }
 

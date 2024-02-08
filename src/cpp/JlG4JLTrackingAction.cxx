@@ -18,7 +18,7 @@ struct JlG4JLTrackingAction: public Wrapper {
 
   JlG4JLTrackingAction(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4JLTrackingAction (" __HERE__ ")");
-    // defined in ./cpp/Geant4Wrap.h:176:7
+    // defined in ./cpp/Geant4Wrap.h:177:7
     jlcxx::TypeWrapper<G4JLTrackingAction>  t = jlModule.add_type<G4JLTrackingAction>("G4JLTrackingAction",
       jlcxx::julia_base_type<G4UserTrackingAction>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4JLTrackingAction>>(new jlcxx::TypeWrapper<G4JLTrackingAction>(jlModule, t));
@@ -30,7 +30,7 @@ struct JlG4JLTrackingAction: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4JLTrackingAction::G4JLTrackingAction(trackaction_f, void *, trackaction_f, void *) (" __HERE__ ")");
-    // defined in ./cpp/Geant4Wrap.h:178:5
+    // defined in ./cpp/Geant4Wrap.h:179:5
     t.constructor<trackaction_f>(/*finalize=*/true);
     t.constructor<trackaction_f, void *>(/*finalize=*/true);
     t.constructor<trackaction_f, void *, trackaction_f>(/*finalize=*/true);
@@ -38,12 +38,12 @@ struct JlG4JLTrackingAction: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4JLTrackingAction::PreUserTrackingAction(const G4Track *) (" __HERE__ ")");
     // signature to use in the veto list: void G4JLTrackingAction::PreUserTrackingAction(const G4Track *)
-    // defined in ./cpp/Geant4Wrap.h:182:10
+    // defined in ./cpp/Geant4Wrap.h:183:10
     t.method("PreUserTrackingAction", static_cast<void (G4JLTrackingAction::*)(const G4Track *) >(&G4JLTrackingAction::PreUserTrackingAction));
 
     DEBUG_MSG("Adding wrapper for void G4JLTrackingAction::PostUserTrackingAction(const G4Track *) (" __HERE__ ")");
     // signature to use in the veto list: void G4JLTrackingAction::PostUserTrackingAction(const G4Track *)
-    // defined in ./cpp/Geant4Wrap.h:183:10
+    // defined in ./cpp/Geant4Wrap.h:184:10
     t.method("PostUserTrackingAction", static_cast<void (G4JLTrackingAction::*)(const G4Track *) >(&G4JLTrackingAction::PostUserTrackingAction));
   }
 

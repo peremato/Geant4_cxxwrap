@@ -117,6 +117,7 @@ class JlG4JLTrackingAction;
 class JlG4JLRunAction;
 class JlG4Run;
 class JlG4JLEventAction;
+class JlG4JLStackingAction;
 class JlG4JLStateDependent;
 class JlG4PolyconeSideRZ;
 class JlG4VCSGfaceted;
@@ -215,6 +216,9 @@ class JlQBBC;
 class JlFTFP_BERT;
 class JlG4EmStandardPhysics_option4;
 class JlG4OpticalPhysics;
+class JlG4DecayPhysics;
+class JlG4EmStandardPhysics;
+class JlG4RadioactiveDecayPhysics;
 class JlG4OpBoundaryProcess;
 class JlG4HCtable;
 class JlG4CutTubs;
@@ -354,6 +358,7 @@ std::shared_ptr<Wrapper> newJlG4JLTrackingAction(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4JLRunAction(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4Run(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4JLEventAction(jlcxx::Module&);
+std::shared_ptr<Wrapper> newJlG4JLStackingAction(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4JLStateDependent(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4PolyconeSideRZ(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4VCSGfaceted(jlcxx::Module&);
@@ -452,6 +457,9 @@ std::shared_ptr<Wrapper> newJlQBBC(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlFTFP_BERT(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4EmStandardPhysics_option4(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4OpticalPhysics(jlcxx::Module&);
+std::shared_ptr<Wrapper> newJlG4DecayPhysics(jlcxx::Module&);
+std::shared_ptr<Wrapper> newJlG4EmStandardPhysics(jlcxx::Module&);
+std::shared_ptr<Wrapper> newJlG4RadioactiveDecayPhysics(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4OpBoundaryProcess(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4HCtable(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4CutTubs(jlcxx::Module&);
@@ -594,6 +602,7 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
     std::shared_ptr<Wrapper>(newJlG4JLRunAction(jlModule)),
     std::shared_ptr<Wrapper>(newJlG4Run(jlModule)),
     std::shared_ptr<Wrapper>(newJlG4JLEventAction(jlModule)),
+    std::shared_ptr<Wrapper>(newJlG4JLStackingAction(jlModule)),
     std::shared_ptr<Wrapper>(newJlG4JLStateDependent(jlModule)),
     std::shared_ptr<Wrapper>(newJlG4PolyconeSideRZ(jlModule)),
     std::shared_ptr<Wrapper>(newJlG4VCSGfaceted(jlModule)),
@@ -692,6 +701,9 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
     std::shared_ptr<Wrapper>(newJlFTFP_BERT(jlModule)),
     std::shared_ptr<Wrapper>(newJlG4EmStandardPhysics_option4(jlModule)),
     std::shared_ptr<Wrapper>(newJlG4OpticalPhysics(jlModule)),
+    std::shared_ptr<Wrapper>(newJlG4DecayPhysics(jlModule)),
+    std::shared_ptr<Wrapper>(newJlG4EmStandardPhysics(jlModule)),
+    std::shared_ptr<Wrapper>(newJlG4RadioactiveDecayPhysics(jlModule)),
     std::shared_ptr<Wrapper>(newJlG4OpBoundaryProcess(jlModule)),
     std::shared_ptr<Wrapper>(newJlG4HCtable(jlModule)),
     std::shared_ptr<Wrapper>(newJlG4CutTubs(jlModule)),
@@ -814,6 +826,39 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
   jlModule.set_const("EventMustBeAborted", EventMustBeAborted);
   jlModule.set_const("JustWarning", JustWarning);
   jlModule.set_const("IgnoreTheIssue", IgnoreTheIssue);
+
+  DEBUG_MSG("Adding wrapper for enum G4ClassificationOfNewTrack (" __HERE__ ")");
+  // defined in /Users/mato/.julia/artifacts/4afb5743b029965f72ec5a970d92d5344ce830d2/include/Geant4/G4ClassificationOfNewTrack.hh:41:6
+  jlModule.add_bits<G4ClassificationOfNewTrack>("G4ClassificationOfNewTrack", jlcxx::julia_type("CppEnum"));
+  jlModule.set_const("fUrgent", fUrgent);
+  jlModule.set_const("fWaiting", fWaiting);
+  jlModule.set_const("fPostpone", fPostpone);
+  jlModule.set_const("fKill", fKill);
+  jlModule.set_const("fWaiting_1", fWaiting_1);
+  jlModule.set_const("fWaiting_2", fWaiting_2);
+  jlModule.set_const("fWaiting_3", fWaiting_3);
+  jlModule.set_const("fWaiting_4", fWaiting_4);
+  jlModule.set_const("fWaiting_5", fWaiting_5);
+  jlModule.set_const("fWaiting_6", fWaiting_6);
+  jlModule.set_const("fWaiting_7", fWaiting_7);
+  jlModule.set_const("fWaiting_8", fWaiting_8);
+  jlModule.set_const("fWaiting_9", fWaiting_9);
+  jlModule.set_const("fWaiting_10", fWaiting_10);
+  jlModule.set_const("fSubEvent_1", fSubEvent_1);
+  jlModule.set_const("fSubEvent_2", fSubEvent_2);
+  jlModule.set_const("fSubEvent_3", fSubEvent_3);
+  jlModule.set_const("fSubEvent_4", fSubEvent_4);
+  jlModule.set_const("fSubEvent_5", fSubEvent_5);
+  jlModule.set_const("fSubEvent_6", fSubEvent_6);
+  jlModule.set_const("fSubEvent_7", fSubEvent_7);
+  jlModule.set_const("fSubEvent_8", fSubEvent_8);
+  jlModule.set_const("fSubEvent_9", fSubEvent_9);
+  jlModule.set_const("fSubEvent_A", fSubEvent_A);
+  jlModule.set_const("fSubEvent_B", fSubEvent_B);
+  jlModule.set_const("fSubEvent_C", fSubEvent_C);
+  jlModule.set_const("fSubEvent_D", fSubEvent_D);
+  jlModule.set_const("fSubEvent_E", fSubEvent_E);
+  jlModule.set_const("fSubEvent_F", fSubEvent_F);
 
   DEBUG_MSG("Adding wrapper for enum EInside (" __HERE__ ")");
   // defined in /Users/mato/.julia/artifacts/4afb5743b029965f72ec5a970d92d5344ce830d2/include/Geant4/geomdefs.hh:66:6
