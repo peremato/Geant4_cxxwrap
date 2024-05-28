@@ -24,7 +24,7 @@ struct Jlstd_pair: public Wrapper {
 
   Jlstd_pair(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type std::pair (" __HERE__ ")");
-    // defined in /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/pair.h:63:29
+    // defined in /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/pair.h:81:29
     jlcxx::TypeWrapper<jlcxx::Parametric<jlcxx::TypeVar<1>, jlcxx::TypeVar<2>>>  t =  jlModule.add_type<jlcxx::Parametric<jlcxx::TypeVar<1>, jlcxx::TypeVar<2>>>("std!pair");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<jlcxx::Parametric<jlcxx::TypeVar<1>, jlcxx::TypeVar<2>>>>(new jlcxx::TypeWrapper<jlcxx::Parametric<jlcxx::TypeVar<1>, jlcxx::TypeVar<2>>>(jlModule, t));
     auto t129_decl_methods = [this]<typename _T1, typename _T2> (jlcxx::TypeWrapper<std::pair<_T1, _T2>> wrapped){

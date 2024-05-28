@@ -88,13 +88,13 @@ export G4SPSAngDistribution, G4SPSEneDistribution, G4SPSPosDistribution, G4SPSRa
 export G4ScoringManager, G4ScoringManager!GetReplicaLevel, G4ScoringManager!GetScoringManager, G4ScoringManager!GetScoringManagerIfExist
 export G4ScoringManager!SetReplicaLevel, G4SingleParticleSource, G4SmartVoxelHeader, G4Sphere, G4StackManager, G4State, G4StateManager
 export G4StateManager!GetStateManager, G4StateManager!SetVerboseLevel, G4State_Abort, G4State_EventProc, G4State_GeomClosed, G4State_Idle
-export G4State_Init, G4State_PreInit, G4State_Quit, G4Step, G4StepPoint, G4StepStatus, G4SteppingControl, G4SteppingManager
-export G4SteppingVerbose, G4SteppingVerbose!BestUnitPrecision, G4SteppingVerbose!UseBestUnit, G4String, G4SubEvent, G4SubtractionSolid
-export G4SurfaceProperty, G4SurfaceType, G4Tet, G4Threading!G4GetNumberOfCores, G4Threading!G4GetThreadId, G4Threading!G4SetThreadId
-export G4Threading!GENERICTHREAD_ID, G4Threading!GetNumberOfRunningWorkerThreads, G4Threading!IsMasterThread, G4Threading!IsMultithreadedApplication
-export G4Threading!IsWorkerThread, G4Threading!MASTER_ID, G4Threading!SEQUENTIAL_ID, G4Threading!SetMultithreadedApplication
-export G4Threading!WORKER_ID, G4Threading!WorkerThreadJoinsPool, G4Threading!WorkerThreadLeavesPool, G4Torus, G4TouchableHistory, G4Track
-export G4TrackStatus, G4TrackingManager, G4TrajectoryContainer, G4TransportationManager
+export G4State_Init, G4State_PreInit, G4State_Quit, G4Step, G4StepLimiterPhysics, G4StepPoint, G4StepStatus, G4SteppingControl
+export G4SteppingManager, G4SteppingVerbose, G4SteppingVerbose!BestUnitPrecision, G4SteppingVerbose!UseBestUnit, G4String, G4SubEvent
+export G4SubtractionSolid, G4SurfaceProperty, G4SurfaceType, G4Tet, G4Threading!G4GetNumberOfCores, G4Threading!G4GetThreadId
+export G4Threading!G4SetThreadId, G4Threading!GENERICTHREAD_ID, G4Threading!GetNumberOfRunningWorkerThreads, G4Threading!IsMasterThread
+export G4Threading!IsMultithreadedApplication, G4Threading!IsWorkerThread, G4Threading!MASTER_ID, G4Threading!SEQUENTIAL_ID
+export G4Threading!SetMultithreadedApplication, G4Threading!WORKER_ID, G4Threading!WorkerThreadJoinsPool, G4Threading!WorkerThreadLeavesPool, G4Torus
+export G4TouchableHistory, G4Track, G4TrackStatus, G4TrackingManager, G4TrajectoryContainer, G4TransportationManager
 export G4TransportationManager!GetFirstTrackingNavigator, G4TransportationManager!GetInstanceIfExist, G4TransportationManager!GetTransportationManager
 export G4TransportationManager!SetFirstTrackingNavigator, G4TransportationManager!kMassNavigatorId, G4Trap, G4Trd, G4Tubs, G4TwistedBox, G4TwistedTrap, G4TwistedTrd
 export G4TwistedTubs, G4UIcommand, G4UImanager, G4UImanager!DoublePrecisionStr, G4UImanager!GetMasterUIpointer
@@ -112,7 +112,7 @@ export G4VisAttributes!fVeryLongTime, G4VisAttributes!solid, G4VisAttributes!unb
 export GenerateEvent, GenerateOne, GeneratePrimaries, GeneratePrimaryVertex, GeometryDirectlyUpdated, GeometryHasBeenModified, GetA
 export GetA27, GetAbsorptionVerboseLevel, GetAlongStepIndex, GetAlongStepProcessVector, GetAlpha, GetAlpha1, GetAlpha2
 export GetAngDist, GetAngularDistributionValue, GetAngularDistributionValueLUT, GetAntiPDGEncoding, GetAntiQuarkContent
-export GetApplyCuts, GetApplyCutsFlag, GetArbEmax, GetArbEmin, GetArbEneWeight, GetArbEnergyHisto, GetAreaAccuracy
+export GetApplyCuts, GetApplyCutsFlag, GetApplyToAll, GetArbEmax, GetArbEmin, GetArbEneWeight, GetArbEnergyHisto, GetAreaAccuracy
 export GetAreaStatistics, GetAtRestIndex, GetAtRestProcessVector, GetAtomicMass, GetAtomicMassAmu, GetAtomicNumDensityVector
 export GetAtomicNumber, GetAtomicShell, GetAtomsVector, GetAuxList, GetAuxiliaryPoints, GetAzimuthalAnglePhi, GetBaryonNumber
 export GetBaseMaterial, GetBeta, GetBiasRndm, GetBiasWeight, GetBlue, GetBoundaryInvokeSD, GetBoundaryVerboseLevel, GetCapacity
@@ -234,10 +234,10 @@ export ResetPhysicsTableRetrieved, ResetPostStepPoint, ResetPreStepPoint, ResetS
 export RestoreRandomNumberStatus, RestoreRndmEachEvent, RetrievePhysicsTable, RoughESRGrease_LUT, RoughESR_LUT, RoughTeflon_LUT, Rough_LUT
 export RunInitialization, RunMustBeAborted, RunTermination, SameMaterial, Set4Momentum, SetAbsorptionVerboseLevel
 export SetAccuraciesWithDeltaOneStep, SetAccurateSafety, SetAddPointerToName, SetAlias, SetAllParameters, SetAlpha, SetAngDistType
-export SetAntiPDGEncoding, SetApplyCuts, SetApplyCutsFlag, SetAreaAccuracy, SetAreaStatistics, SetAttValues, SetBeamSigmaInAngR
-export SetBeamSigmaInAngX, SetBeamSigmaInAngY, SetBeamSigmaInE, SetBeamSigmaInR, SetBeamSigmaInX, SetBeamSigmaInY, SetBelowThresholdFlag
-export SetBiasAlpha, SetBiasRndm, SetBiasWeight, SetBlue, SetBoundaryInvokeSD, SetBoundaryVerboseLevel, SetBoundingLimits
-export SetCentreCoords, SetCerenkovMaxBetaChange, SetCerenkovMaxPhotonsPerStep, SetCerenkovStackPhotons
+export SetAntiPDGEncoding, SetApplyCuts, SetApplyCutsFlag, SetApplyToAll, SetAreaAccuracy, SetAreaStatistics, SetAttValues
+export SetBeamSigmaInAngR, SetBeamSigmaInAngX, SetBeamSigmaInAngY, SetBeamSigmaInE, SetBeamSigmaInR, SetBeamSigmaInX, SetBeamSigmaInY
+export SetBelowThresholdFlag, SetBiasAlpha, SetBiasRndm, SetBiasWeight, SetBlue, SetBoundaryInvokeSD, SetBoundaryVerboseLevel
+export SetBoundingLimits, SetCentreCoords, SetCerenkovMaxBetaChange, SetCerenkovMaxPhotonsPerStep, SetCerenkovStackPhotons
 export SetCerenkovTrackSecondariesFirst, SetCerenkovVerboseLevel, SetCerrFileName, SetCharge, SetChemicalFormula, SetColor, SetColour, SetControlFlag
 export SetCopyNo, SetCoutFileName, SetCreatorModelID, SetCreatorProcess, SetCubVolEpsilon, SetCubVolStatistics, SetCurrentMesh
 export SetCurrentSourceIntensity, SetCurrentSourceto, SetCutValue, SetCuts, SetCutsForRegion, SetCutsWithDefault, SetDCofThisEvent, SetDaughter

@@ -62,6 +62,7 @@
 #include "G4OpBoundaryProcess.hh"
 #include "G4ProcessManager.hh"
 #include "G4ProcessVector.hh"
+#include "G4StepLimiterPhysics.hh"
 #include "G4UserSteppingAction.hh"
 #include "G4Step.hh"
 #include "G4StepPoint.hh"

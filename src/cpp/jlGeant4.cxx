@@ -220,6 +220,7 @@ class JlG4DecayPhysics;
 class JlG4EmStandardPhysics;
 class JlG4RadioactiveDecayPhysics;
 class JlG4OpBoundaryProcess;
+class JlG4StepLimiterPhysics;
 class JlG4HCtable;
 class JlG4CutTubs;
 class JlG4EllipticalTube;
@@ -461,6 +462,7 @@ std::shared_ptr<Wrapper> newJlG4DecayPhysics(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4EmStandardPhysics(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4RadioactiveDecayPhysics(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4OpBoundaryProcess(jlcxx::Module&);
+std::shared_ptr<Wrapper> newJlG4StepLimiterPhysics(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4HCtable(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4CutTubs(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4EllipticalTube(jlcxx::Module&);
@@ -705,6 +707,7 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
     std::shared_ptr<Wrapper>(newJlG4EmStandardPhysics(jlModule)),
     std::shared_ptr<Wrapper>(newJlG4RadioactiveDecayPhysics(jlModule)),
     std::shared_ptr<Wrapper>(newJlG4OpBoundaryProcess(jlModule)),
+    std::shared_ptr<Wrapper>(newJlG4StepLimiterPhysics(jlModule)),
     std::shared_ptr<Wrapper>(newJlG4HCtable(jlModule)),
     std::shared_ptr<Wrapper>(newJlG4CutTubs(jlModule)),
     std::shared_ptr<Wrapper>(newJlG4EllipticalTube(jlModule)),
