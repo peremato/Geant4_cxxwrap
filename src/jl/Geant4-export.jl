@@ -9,40 +9,41 @@ export AlongStepGPIL, AlongStepGetPhysicalInteractionLength, AnalyzeEvent, Appen
 export ApplyEnergyWeight, ApplyPointTransform, ArbEnergyHisto, ArbEnergyHistoFile, ArbInterpolate, AssignFieldManager, AtRestDoIt
 export AtRestDoItInvoked, AtRestGPIL, AtRestGetFastSimulationManagerTrigger, AtRestGetPhysicalInteractionLength, AvoidHitInvocation
 export BackLevel, BackScattering, BeamOn, BeginOfEventAction, BeginOfRunAction, BoundingLimits, BroadcastAbortRun, Build
-export BuildForMaster, BuildMaterialWithNewDensity, BuildPhysicsTable, BuildWorkerPhysicsTable, CLHEP!Hep2Vector, CLHEP!Hep3Vector
-export CLHEP!Hep3Vector!NUM_COORDINATES, CLHEP!Hep3Vector!SIZE, CLHEP!Hep3Vector!ToleranceTicks, CLHEP!Hep3Vector!X, CLHEP!Hep3Vector!Y
-export CLHEP!Hep3Vector!Z, CLHEP!Hep3Vector!getTolerance, CLHEP!Hep3Vector!setTolerance, CLHEP!HepAxisAngle, CLHEP!HepBoost
-export CLHEP!HepBoost!getTolerance, CLHEP!HepBoost!setTolerance, CLHEP!HepBoostX, CLHEP!HepBoostY, CLHEP!HepBoostZ, CLHEP!HepEulerAngles
-export CLHEP!HepEulerAngles!getTolerance, CLHEP!HepEulerAngles!setTolerance, CLHEP!HepLorentzRotation, CLHEP!HepLorentzRotation!HepLorentzRotation_row
-export CLHEP!HepLorentzRotation!IDENTITY, CLHEP!HepLorentzRotation!getTolerance, CLHEP!HepLorentzRotation!setTolerance, CLHEP!HepLorentzVector
-export CLHEP!HepRandom, CLHEP!HepRandom!createInstance, CLHEP!HepRandom!distributionName, CLHEP!HepRandom!getTheEngine
-export CLHEP!HepRandom!getTheGenerator, CLHEP!HepRandom!getTheSeed, CLHEP!HepRandom!getTheSeeds, CLHEP!HepRandom!getTheTableSeeds
-export CLHEP!HepRandom!restoreEngineStatus, CLHEP!HepRandom!saveEngineStatus, CLHEP!HepRandom!setTheEngine, CLHEP!HepRandom!setTheSeed
-export CLHEP!HepRandom!setTheSeeds, CLHEP!HepRandom!showEngineStatus, CLHEP!HepRandomEngine, CLHEP!HepRandomEngine!beginTag
-export CLHEP!HepRandomEngine!newEngine, CLHEP!HepRep3x3, CLHEP!HepRep4x4, CLHEP!HepRep4x4Symmetric, CLHEP!HepRotation
-export CLHEP!HepRotation!HepRotation_row, CLHEP!HepRotation!IDENTITY, CLHEP!HepRotation!getTolerance, CLHEP!HepRotation!setTolerance, CLHEP!HepRotationX
-export CLHEP!HepRotationY, CLHEP!HepRotationZ, CLHEP!HepXHat, CLHEP!HepYHat, CLHEP!HepZHat, CLHEP!RandBit, CLHEP!RandBit!distributionName
-export CLHEP!RandBit!shootBit, CLHEP!RandExponential, CLHEP!RandExponential!distributionName, CLHEP!RandExponential!shoot
-export CLHEP!RandExponential!shootArray, CLHEP!RandFlat, CLHEP!RandFlat!distributionName, CLHEP!RandFlat!restoreEngineStatus
-export CLHEP!RandFlat!saveEngineStatus, CLHEP!RandFlat!shoot, CLHEP!RandFlat!shootArray, CLHEP!RandFlat!shootBit, CLHEP!RandFlat!shootInt
-export CLHEP!RandGamma, CLHEP!RandGamma!distributionName, CLHEP!RandGamma!shoot, CLHEP!RandGamma!shootArray, CLHEP!RandGaussQ
-export CLHEP!RandGaussQ!distributionName, CLHEP!RandGaussQ!shoot, CLHEP!RandGaussQ!shootArray, CLHEP!RandGeneral, CLHEP!RandGeneral!distributionName
-export CLHEP!RandPoissonQ, CLHEP!RandPoissonQ!MAXIMUM_POISSON_DEVIATE, CLHEP!RandPoissonQ!distributionName, CLHEP!RandPoissonQ!shoot
-export CLHEP!RandPoissonQ!shootArray, CLHEP!RandPoissonQ!tableBoundary, CLHEP!inverseOf, CLHEP!rotationOf, CLHEP!rotationXOf, CLHEP!rotationYOf
-export CLHEP!rotationZOf, Calculate, CalculateAnomaly, CalculateSurfaceArea, CalculateVelocity, CalculateVelocityForOpticalPhoton
-export CandidateForSelection, ChangeDaughtersType, ChangeDetectorField, CharacteriseDaughters, CheckDegeneracy, CheckMode, CheckNextStep
-export CheckOverlaps, CheckParticleList, ClassifyNewTrack, CleanTransformations, Clear, ClearAll, ClearDaughters, ClearFirstStepFlag
-export ClearLastStepFlag, ClearNext, ClearParallelWorlds, Clone, CloneF, CloneSD, CloseCurrentMesh
-export CoatedDielectricFrustratedTransmission, CoatedDielectricReflection, CoatedDielectricRefraction, ComputeDensityEffectOnFly, ComputeDimensions
-export ComputeSafety, ComputeStep, Conditionally, ConfigureForTrack, ConfigureProfilers, ConfineSourceToVolume
-export ConfirmBeamOnCondition, ConstPropertyExists, Construct, ConstructNewGasMaterial, ConstructNewIdealGasMaterial, ConstructNewMaterial
-export ConstructParallelGeometries, ConstructParallelSD, ConstructParticle, ConstructProcess, ConstructSDandField, ConstructScoringWorlds
-export CopyPostToPreStepPoint, CopyTrackInfo, CreateAttValues, CreateChordFinder, CreateHTML, CreatePolyhedron, CreateTouchableHistory
-export CreateTouchableHistoryHandle, CutOffHasBeenModified, DAVIS, DPSLAlongStep, DPSLPostStep, DPSLStarted, DPSLUserLimit, DeActivateNavigator
-export DeRegisterNavigator, Debug, DeduceDaughtersType, DeduceVolumeType, DefineAngRefAxes, DefineWorldVolume, DeleteSecondaryVector
-export DeleteaSource, DeregisterDependent, Detection, Detector_LUT, Dichroic, DisableCheckParticleList, DistanceToIn
-export DistanceToInNoVoxels, DistanceToOut, DistanceToOutNoVoxels, DistanceToOutVoxels, DoEventLoop, DoesFieldChangeEnergy, DoesFieldExist
-export Draw, DrawAll, DrawMesh, DrawTrajectory, Dump, DumpAllQuantitiesToFile, DumpCutValuesTable
+export BuildForMaster, BuildMaterialWithNewDensity, BuildPhysicsTable, BuildWorkerPhysicsTable, CLHEP!Hep2Vector
+export CLHEP!Hep2Vector!NUM_COORDINATES, CLHEP!Hep2Vector!SIZE, CLHEP!Hep2Vector!X, CLHEP!Hep2Vector!Y, CLHEP!Hep2Vector!ZMpvToleranceTicks
+export CLHEP!Hep2Vector!getTolerance, CLHEP!Hep2Vector!setTolerance, CLHEP!Hep3Vector, CLHEP!Hep3Vector!NUM_COORDINATES, CLHEP!Hep3Vector!SIZE
+export CLHEP!Hep3Vector!ToleranceTicks, CLHEP!Hep3Vector!X, CLHEP!Hep3Vector!Y, CLHEP!Hep3Vector!Z, CLHEP!Hep3Vector!getTolerance
+export CLHEP!Hep3Vector!setTolerance, CLHEP!HepAxisAngle, CLHEP!HepBoost, CLHEP!HepBoost!getTolerance, CLHEP!HepBoost!setTolerance, CLHEP!HepBoostX
+export CLHEP!HepBoostY, CLHEP!HepBoostZ, CLHEP!HepEulerAngles, CLHEP!HepEulerAngles!getTolerance, CLHEP!HepEulerAngles!setTolerance
+export CLHEP!HepLorentzRotation, CLHEP!HepLorentzRotation!HepLorentzRotation_row, CLHEP!HepLorentzRotation!IDENTITY
+export CLHEP!HepLorentzRotation!getTolerance, CLHEP!HepLorentzRotation!setTolerance, CLHEP!HepLorentzVector, CLHEP!HepRandom, CLHEP!HepRandom!createInstance
+export CLHEP!HepRandom!distributionName, CLHEP!HepRandom!getTheEngine, CLHEP!HepRandom!getTheGenerator, CLHEP!HepRandom!getTheSeed
+export CLHEP!HepRandom!getTheSeeds, CLHEP!HepRandom!getTheTableSeeds, CLHEP!HepRandom!restoreEngineStatus, CLHEP!HepRandom!saveEngineStatus
+export CLHEP!HepRandom!setTheEngine, CLHEP!HepRandom!setTheSeed, CLHEP!HepRandom!setTheSeeds, CLHEP!HepRandom!showEngineStatus
+export CLHEP!HepRandomEngine, CLHEP!HepRandomEngine!beginTag, CLHEP!HepRandomEngine!newEngine, CLHEP!HepRep3x3, CLHEP!HepRep4x4
+export CLHEP!HepRep4x4Symmetric, CLHEP!HepRotation, CLHEP!HepRotation!HepRotation_row, CLHEP!HepRotation!IDENTITY
+export CLHEP!HepRotation!getTolerance, CLHEP!HepRotation!setTolerance, CLHEP!HepRotationX, CLHEP!HepRotationY, CLHEP!HepRotationZ, CLHEP!HepXHat
+export CLHEP!HepYHat, CLHEP!HepZHat, CLHEP!RandBit, CLHEP!RandBit!distributionName, CLHEP!RandBit!shootBit, CLHEP!RandExponential
+export CLHEP!RandExponential!distributionName, CLHEP!RandExponential!shoot, CLHEP!RandExponential!shootArray, CLHEP!RandFlat, CLHEP!RandFlat!distributionName
+export CLHEP!RandFlat!restoreEngineStatus, CLHEP!RandFlat!saveEngineStatus, CLHEP!RandFlat!shoot, CLHEP!RandFlat!shootArray, CLHEP!RandFlat!shootBit
+export CLHEP!RandFlat!shootInt, CLHEP!RandGamma, CLHEP!RandGamma!distributionName, CLHEP!RandGamma!shoot, CLHEP!RandGamma!shootArray
+export CLHEP!RandGaussQ, CLHEP!RandGaussQ!distributionName, CLHEP!RandGaussQ!shoot, CLHEP!RandGaussQ!shootArray, CLHEP!RandGeneral
+export CLHEP!RandGeneral!distributionName, CLHEP!RandPoissonQ, CLHEP!RandPoissonQ!MAXIMUM_POISSON_DEVIATE, CLHEP!RandPoissonQ!distributionName
+export CLHEP!RandPoissonQ!shoot, CLHEP!RandPoissonQ!shootArray, CLHEP!RandPoissonQ!tableBoundary, CLHEP!X_HAT2, CLHEP!Y_HAT2, CLHEP!inverseOf
+export CLHEP!rotationOf, CLHEP!rotationXOf, CLHEP!rotationYOf, CLHEP!rotationZOf, Calculate, CalculateAnomaly, CalculateSurfaceArea
+export CalculateVelocity, CalculateVelocityForOpticalPhoton, CandidateForSelection, ChangeDaughtersType, ChangeDetectorField
+export CharacteriseDaughters, CheckDegeneracy, CheckMode, CheckNextStep, CheckOverlaps, CheckParticleList, ClassifyNewTrack
+export CleanTransformations, Clear, ClearAll, ClearDaughters, ClearFirstStepFlag, ClearLastStepFlag, ClearNext, ClearParallelWorlds, Clone
+export CloneF, CloneSD, CloseCurrentMesh, CoatedDielectricFrustratedTransmission, CoatedDielectricReflection
+export CoatedDielectricRefraction, ComputeDensityEffectOnFly, ComputeDimensions, ComputeSafety, ComputeStep, Conditionally, ConfigureForTrack
+export ConfigureProfilers, ConfineSourceToVolume, ConfirmBeamOnCondition, ConstPropertyExists, Construct, ConstructNewGasMaterial
+export ConstructNewIdealGasMaterial, ConstructNewMaterial, ConstructParallelGeometries, ConstructParallelSD, ConstructParticle, ConstructProcess
+export ConstructSDandField, ConstructScoringWorlds, CopyPostToPreStepPoint, CopyTrackInfo, CreateAttValues, CreateChordFinder, CreateHTML
+export CreatePolyhedron, CreateTouchableHistory, CreateTouchableHistoryHandle, CutOffHasBeenModified, DAVIS, DPSLAlongStep, DPSLPostStep
+export DPSLStarted, DPSLUserLimit, DeActivateNavigator, DeRegisterNavigator, Debug, DeduceDaughtersType, DeduceVolumeType
+export DefineAngRefAxes, DefineWorldVolume, DeleteSecondaryVector, DeleteaSource, DeregisterDependent, Detection, Detector_LUT, Dichroic
+export DisableCheckParticleList, DistanceToIn, DistanceToInNoVoxels, DistanceToOut, DistanceToOutNoVoxels, DistanceToOutVoxels, DoEventLoop
+export DoesFieldChangeEnergy, DoesFieldExist, Draw, DrawAll, DrawMesh, DrawTrajectory, Dump, DumpAllQuantitiesToFile, DumpCutValuesTable
 export DumpCutValuesTableIfRequested, DumpInfo, DumpList, DumpQuantityToFile, DumpRegion, DumpTable, EAxis, EInside, EVolume, EnableBestSafety
 export EndOfEvent, EndOfEventAction, EndOfRunAction, EndTracking, EnteredDaughterVolume, EpnEnergyHisto, EstimateCubicVolume
 export EstimateSurfaceArea, EtchedAirReflection, EtchedLumirrorAirReflection, EtchedLumirrorGlueReflection, EtchedTeflonAirReflection
@@ -290,12 +291,12 @@ export ToBeKept, TotalInternalReflection, TotalVolumeEntities, TrackingStarted, 
 export TrapSidePlane, Undefined, UpdateMap, UpdateMaterial, UpdateTrack, UpdateYourself, UseCoupledTransportation, UseGivenVelocity
 export UseSubEventParallelism, UserDefAngPhi, UserDefAngTheta, UserEnergyHisto, UserSteppingAction, VerboseParticleChange, VerboseTrack
 export VolumeType, Voxelize, WorkerInitialize, WorkerRunEnd, WorkerRunStart, WorkerStart, WorkerStop, Write, a, a!, add!, angle
-export assign, axis, axisAngle, azimAngle, b, b!, beta, boost, boostVector, boostX, boostY, boostZ, c, c!, clear
-export clearAndDestroy, coLinearRapidity, coated, col1, col2, col3, col4, colX, colY, colZ, compare, contains, cos2Theta, cosTheta
-export cross, d, d!, decompose, delta, deltaPhi, deltaR, dichroic, dielectric_LUT, dielectric_LUTDAVIS, dielectric_dichroic
-export dielectric_dielectric, dielectric_metal, diff2, direction, distance2, dot, dx, dy, dz, engine, entries, eta, etchedair
-export etchedlumirrorair, etchedlumirrorglue, etchedteflonair, etchedtioair, etchedtyvekair, etchedvm2000air, etchedvm2000glue
-export eulerAngles, fAlive, fAlongStepDoItProc, fAtRestDoItProc, fCutsCouple, fCutsCouple!, fDecay, fElectromagnetic
+export assign, auxList, auxList!, axis, axisAngle, azimAngle, b, b!, beta, boost, boostVector, boostX, boostY, boostZ, c, c!
+export clear, clearAndDestroy, coLinearRapidity, coated, col1, col2, col3, col4, colX, colY, colZ, compare, contains
+export cos2Theta, cosTheta, cross, d, d!, decompose, delta, deltaPhi, deltaR, dichroic, dielectric_LUT, dielectric_LUTDAVIS
+export dielectric_dichroic, dielectric_dielectric, dielectric_metal, diff2, direction, distance2, dot, dx, dy, dz, engine, entries, eta
+export etchedair, etchedlumirrorair, etchedlumirrorglue, etchedteflonair, etchedtioair, etchedtyvekair, etchedvm2000air
+export etchedvm2000glue, eulerAngles, fAlive, fAlongStepDoItProc, fAtRestDoItProc, fCutsCouple, fCutsCouple!, fDecay, fElectromagnetic
 export fExclusivelyForcedProc, fFieldManager, fFieldManager!, fGeneral, fGeomBoundary, fHadronic, fKill, fKillTrackAndSecondaries, fMass
 export fMass!, fMaterial, fMaterial!, fNotDefined, fOffset, fOffset!, fOptical, fParallel, fParameterisation, fPhonon
 export fPhotolepton_hadron, fPostStepDoItProc, fPostpone, fPostponeToNextEvent, fScale, fScale!, fSensitiveDetector, fSensitiveDetector!
@@ -304,11 +305,11 @@ export fSubEvent_6, fSubEvent_7, fSubEvent_8, fSubEvent_9, fSubEvent_A, fSubEven
 export fSubEvent_F, fSuspend, fSuspendAndWait, fTransportation, fUCN, fUndefined, fUrgent, fUserDefined, fUserDefinedLimit
 export fWaiting, fWaiting_1, fWaiting_10, fWaiting_2, fWaiting_3, fWaiting_4, fWaiting_5, fWaiting_6, fWaiting_7, fWaiting_8
 export fWaiting_9, fWorldBoundary, fZ, fZ!, fcopyNo, fcopyNo!, fdiv!, fire, fireArray, fireBit, fireInt, firsov, flat, flatArray
-export frot, frot!, gamma, getAngleAxis, getAxis, getDecomposition, getDelta, getDirection, getEta, getMasterRandomEngine
-export getPhi, getPsi, getR, getRho, getRotation, getSeed, getSeeds, getState, getTheta, getTranslation, getX, getY, getZ
-export glisur, ground, groundair, groundbackpainted, groundfrontpainted, groundlumirrorair, groundlumirrorglue
-export groundteflonair, groundtioair, groundtyvekair, groundvm2000air, groundvm2000glue, howNear, howOrthogonal, howParallel, idxAll
-export idxAlongStep, idxAtRest, idxPostStep, index, initialize, insert, insertAt, inverse, invert, isActive
+export frot, frot!, gamma, gc_safe_enter, gc_safe_leave, getAngleAxis, getAxis, getDecomposition, getDelta, getDirection
+export getEta, getMasterRandomEngine, getPhi, getPsi, getR, getRho, getRotation, getSeed, getSeeds, getState, getTheta
+export getTranslation, getX, getY, getZ, glisur, ground, groundair, groundbackpainted, groundfrontpainted, groundlumirrorair
+export groundlumirrorglue, groundteflonair, groundtioair, groundtyvekair, groundvm2000air, groundvm2000glue, howNear, howOrthogonal
+export howParallel, idxAll, idxAlongStep, idxAtRest, idxPostStep, index, initialize, insert, insertAt, inverse, invert, isActive
 export isAlongStepDoItIsEnabled, isAtRestDoItIsEnabled, isIdentity, isNear, isOrthogonal, isParallel, isPostStepDoItIsEnabled, kAbsorption
 export kBoundary, kCerenkov, kExternal, kInside, kMieHG, kNoProcess, kNormal, kOutside, kParameterised, kPhi, kRadial3D
 export kRayleigh, kReplica, kRho, kScintillation, kStateGas, kStateLiquid, kStateSolid, kStateUndefined, kSurface, kUndefined
@@ -319,7 +320,7 @@ export polishedteflonair, polishedtioair, polishedtyvekair, polishedvm2000air, p
 export push_back, put, r, rapidity, rectify, removeAt, removeLast, rep3x3, rep4x4, rep4x4Symmetric, restoreStatus, rho
 export rndmSaveThisEvent, rndmSaveThisRun, rotate, rotateAxes, rotateUz, rotateX, rotateY, rotateZ, row1, row2, row3, row4, rowX, rowY
 export rowZ, saveStatus, set, setAxis, setCylEta, setCylTheta, setDelta, setEta, setIdentity, setMag, setPerp, setPhi
-export setPsi, setR, setREtaPhi, setRThetaPhi, setRho, setRhoPhiEta, setRhoPhiTheta, setRhoPhiZ, setRows, setSeed, setSeeds
-export setTheta, setX, setY, setZ, shoot, shootArray, showStatus, size, std!pair, sub!, theta, thetaX, thetaY, thetaZ, transform
-export tt, tx, tx!, ty, ty!, typeDoIt, typeGPIL, tz, tz!, unified, unit, vectorMultiplication, x, x_ray, xt, xx, xy, xz, y
-export yt, yx, yy, yz, z, zt, zx, zy, zz
+export setPolar, setPsi, setR, setREtaPhi, setRThetaPhi, setRho, setRhoPhiEta, setRhoPhiTheta, setRhoPhiZ, setRows, setSeed
+export setSeeds, setTheta, setX, setY, setZ, shoot, shootArray, showStatus, size, std!pair, sub!, theta, thetaX, thetaY, thetaZ
+export transform, tt, tx, tx!, ty, ty!, type, type!, typeDoIt, typeGPIL, tz, tz!, unified, unit, unit!, value, value!
+export vectorMultiplication, x, x_ray, xt, xx, xy, xz, y, yt, yx, yy, yz, z, zt, zx, zy, zz
