@@ -27,6 +27,9 @@ struct JlG4BooleanSolid: public Wrapper {
   void add_methods() const{
     auto& t = *type_;
 
+
+
+
     DEBUG_MSG("Adding wrapper for const G4VSolid * G4BooleanSolid::GetConstituentSolid(G4int) (" __HERE__ ")");
     // signature to use in the veto list: const G4VSolid * G4BooleanSolid::GetConstituentSolid(G4int)
     // defined in /Users/mato/.julia/artifacts/04a1f392c53fa9913a6e32dc79e45dcf6f1dd250/include/Geant4/G4BooleanSolid.hh:70:21
@@ -101,6 +104,7 @@ struct JlG4BooleanSolid: public Wrapper {
     // signature to use in the veto list: G4ThreeVector G4BooleanSolid::GetPointOnSurface()
     // defined in /Users/mato/.julia/artifacts/04a1f392c53fa9913a6e32dc79e45dcf6f1dd250/include/Geant4/G4BooleanSolid.hh:94:19
     t.method("GetPointOnSurface", static_cast<G4ThreeVector (G4BooleanSolid::*)()  const>(&G4BooleanSolid::GetPointOnSurface));
+
 
     DEBUG_MSG("Adding wrapper for G4BooleanSolid & G4BooleanSolid::operator=(const G4BooleanSolid &) (" __HERE__ ")");
     // signature to use in the veto list: G4BooleanSolid & G4BooleanSolid::operator=(const G4BooleanSolid &)
