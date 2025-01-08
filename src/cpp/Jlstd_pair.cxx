@@ -27,10 +27,10 @@ struct Jlstd_pair: public Wrapper {
     // defined in /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/pair.h:81:29
     jlcxx::TypeWrapper<jlcxx::Parametric<jlcxx::TypeVar<1>, jlcxx::TypeVar<2>>>  t =  jlModule.add_type<jlcxx::Parametric<jlcxx::TypeVar<1>, jlcxx::TypeVar<2>>>("std!pair");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<jlcxx::Parametric<jlcxx::TypeVar<1>, jlcxx::TypeVar<2>>>>(new jlcxx::TypeWrapper<jlcxx::Parametric<jlcxx::TypeVar<1>, jlcxx::TypeVar<2>>>(jlModule, t));
-    auto t131_decl_methods = [this]<typename _T1, typename _T2> (jlcxx::TypeWrapper<std::pair<_T1, _T2>> wrapped){
+    auto t132_decl_methods = [this]<typename _T1, typename _T2> (jlcxx::TypeWrapper<std::pair<_T1, _T2>> wrapped){
       auto module_ = this->module_;
     };
-    t.apply<std::pair<double, bool>>(t131_decl_methods);
+    t.apply<std::pair<double, bool>>(t132_decl_methods);
   }
 
   void add_methods() const{

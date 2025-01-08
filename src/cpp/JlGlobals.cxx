@@ -198,63 +198,68 @@ struct JlGlobal: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4PolyconeSideRZ & GetPolyCorner(const G4Polycone &, G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4PolyconeSideRZ & GetPolyCorner(const G4Polycone &, G4int)
-    // defined in ./cpp/Geant4Wrap.h:283:19
+    // defined in ./cpp/Geant4Wrap.h:284:19
     t.method("GetPolyCorner", static_cast<G4PolyconeSideRZ & (*)(const G4Polycone &, G4int) >(&GetPolyCorner));
+
+    DEBUG_MSG("Adding wrapper for G4PolyconeSideRZ & GetPolyCorner(const G4GenericPolycone &, G4int) (" __HERE__ ")");
+    // signature to use in the veto list: G4PolyconeSideRZ & GetPolyCorner(const G4GenericPolycone &, G4int)
+    // defined in ./cpp/Geant4Wrap.h:285:19
+    t.method("GetPolyCorner", static_cast<G4PolyconeSideRZ & (*)(const G4GenericPolycone &, G4int) >(&GetPolyCorner));
 
     DEBUG_MSG("Adding wrapper for G4PolyhedraSideRZ & GetPolyCorner(const G4Polyhedra &, G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4PolyhedraSideRZ & GetPolyCorner(const G4Polyhedra &, G4int)
-    // defined in ./cpp/Geant4Wrap.h:284:20
+    // defined in ./cpp/Geant4Wrap.h:286:20
     t.method("GetPolyCorner", static_cast<G4PolyhedraSideRZ & (*)(const G4Polyhedra &, G4int) >(&GetPolyCorner));
 
     DEBUG_MSG("Adding wrapper for void SetParticleByName(G4ParticleGun *, const char *) (" __HERE__ ")");
     // signature to use in the veto list: void SetParticleByName(G4ParticleGun *, const char *)
-    // defined in ./cpp/Geant4Wrap.h:286:6
+    // defined in ./cpp/Geant4Wrap.h:288:6
     t.method("SetParticleByName", static_cast<void (*)(G4ParticleGun *, const char *) >(&SetParticleByName));
 
     DEBUG_MSG("Adding wrapper for G4ParticleDefinition * FindParticle(const char *) (" __HERE__ ")");
     // signature to use in the veto list: G4ParticleDefinition * FindParticle(const char *)
-    // defined in ./cpp/Geant4Wrap.h:287:23
+    // defined in ./cpp/Geant4Wrap.h:289:23
     t.method("FindParticle", static_cast<G4ParticleDefinition * (*)(const char *) >(&FindParticle));
 
     DEBUG_MSG("Adding wrapper for G4ParticleDefinition * GetIon(G4int, G4int, G4double, G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4ParticleDefinition * GetIon(G4int, G4int, G4double, G4int)
-    // defined in ./cpp/Geant4Wrap.h:288:23
+    // defined in ./cpp/Geant4Wrap.h:290:23
     t.method("GetIon", static_cast<G4ParticleDefinition * (*)(G4int, G4int, G4double, G4int) >(&GetIon));
     t.method("GetIon", [](G4int arg0, G4int arg1, G4double arg2)->G4ParticleDefinition * { return GetIon(arg0, arg1, arg2); });
 
     DEBUG_MSG("Adding wrapper for G4String make_G4String(const char *) (" __HERE__ ")");
     // signature to use in the veto list: G4String make_G4String(const char *)
-    // defined in ./cpp/Geant4Wrap.h:289:17
+    // defined in ./cpp/Geant4Wrap.h:291:17
     t.method("make_G4String", static_cast<G4String (*)(const char *) >(&make_G4String));
 
     DEBUG_MSG("Adding wrapper for char * G4JL_getenv(const char *) (" __HERE__ ")");
     // signature to use in the veto list: char * G4JL_getenv(const char *)
-    // defined in ./cpp/Geant4Wrap.h:290:7
+    // defined in ./cpp/Geant4Wrap.h:292:7
     t.method("G4JL_getenv", static_cast<char * (*)(const char *) >(&G4JL_getenv));
 
     DEBUG_MSG("Adding wrapper for int G4JL_setenv(const char *, const char *) (" __HERE__ ")");
     // signature to use in the veto list: int G4JL_setenv(const char *, const char *)
-    // defined in ./cpp/Geant4Wrap.h:291:7
+    // defined in ./cpp/Geant4Wrap.h:293:7
     t.method("G4JL_setenv", static_cast<int (*)(const char *, const char *) >(&G4JL_setenv));
 
     DEBUG_MSG("Adding wrapper for void G4JL_init() (" __HERE__ ")");
     // signature to use in the veto list: void G4JL_init()
-    // defined in ./cpp/Geant4Wrap.h:292:7
+    // defined in ./cpp/Geant4Wrap.h:294:7
     t.method("G4JL_init", static_cast<void (*)() >(&G4JL_init));
 
     DEBUG_MSG("Adding wrapper for void G4JL_println(const char *) (" __HERE__ ")");
     // signature to use in the veto list: void G4JL_println(const char *)
-    // defined in ./cpp/Geant4Wrap.h:293:7
+    // defined in ./cpp/Geant4Wrap.h:295:7
     t.method("G4JL_println", static_cast<void (*)(const char *) >(&G4JL_println));
 
     DEBUG_MSG("Adding wrapper for void gc_safe_enter() (" __HERE__ ")");
     // signature to use in the veto list: void gc_safe_enter()
-    // defined in ./cpp/Geant4Wrap.h:296:13
+    // defined in ./cpp/Geant4Wrap.h:298:13
     t.method("gc_safe_enter", static_cast<void (*)() >(&gc_safe_enter));
 
     DEBUG_MSG("Adding wrapper for void gc_safe_leave() (" __HERE__ ")");
     // signature to use in the veto list: void gc_safe_leave()
-    // defined in ./cpp/Geant4Wrap.h:304:13
+    // defined in ./cpp/Geant4Wrap.h:306:13
     t.method("gc_safe_leave", static_cast<void (*)() >(&gc_safe_leave));
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepBoost CLHEP::inverseOf(const CLHEP::HepBoost &) (" __HERE__ ")");

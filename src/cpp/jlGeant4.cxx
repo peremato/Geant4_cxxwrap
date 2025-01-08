@@ -126,6 +126,7 @@ class JlG4JLStateDependent;
 class JlG4PolyconeSideRZ;
 class JlG4VCSGfaceted;
 class JlG4Polycone;
+class JlG4GenericPolycone;
 class JlG4PolyhedraSideRZ;
 class JlG4Polyhedra;
 class Jlstd_pair;
@@ -217,6 +218,7 @@ class JlG4VModularPhysicsList;
 class JlQGS_BIC;
 class JlQBBC;
 class JlFTFP_BERT;
+class JlLBE;
 class JlG4EmStandardPhysics_option4;
 class JlG4OpticalPhysics;
 class JlG4DecayPhysics;
@@ -368,6 +370,7 @@ std::shared_ptr<Wrapper> newJlG4JLStateDependent(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4PolyconeSideRZ(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4VCSGfaceted(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4Polycone(jlcxx::Module&);
+std::shared_ptr<Wrapper> newJlG4GenericPolycone(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4PolyhedraSideRZ(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4Polyhedra(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlstd_pair(jlcxx::Module&);
@@ -459,6 +462,7 @@ std::shared_ptr<Wrapper> newJlG4VModularPhysicsList(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlQGS_BIC(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlQBBC(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlFTFP_BERT(jlcxx::Module&);
+std::shared_ptr<Wrapper> newJlLBE(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4EmStandardPhysics_option4(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4OpticalPhysics(jlcxx::Module&);
 std::shared_ptr<Wrapper> newJlG4DecayPhysics(jlcxx::Module&);
@@ -645,6 +649,7 @@ throw_if_version_incompatibility();
     std::shared_ptr<Wrapper>(newJlG4PolyconeSideRZ(jlModule)),
     std::shared_ptr<Wrapper>(newJlG4VCSGfaceted(jlModule)),
     std::shared_ptr<Wrapper>(newJlG4Polycone(jlModule)),
+    std::shared_ptr<Wrapper>(newJlG4GenericPolycone(jlModule)),
     std::shared_ptr<Wrapper>(newJlG4PolyhedraSideRZ(jlModule)),
     std::shared_ptr<Wrapper>(newJlG4Polyhedra(jlModule)),
     std::shared_ptr<Wrapper>(newJlstd_pair(jlModule)),
@@ -736,6 +741,7 @@ throw_if_version_incompatibility();
     std::shared_ptr<Wrapper>(newJlQGS_BIC(jlModule)),
     std::shared_ptr<Wrapper>(newJlQBBC(jlModule)),
     std::shared_ptr<Wrapper>(newJlFTFP_BERT(jlModule)),
+    std::shared_ptr<Wrapper>(newJlLBE(jlModule)),
     std::shared_ptr<Wrapper>(newJlG4EmStandardPhysics_option4(jlModule)),
     std::shared_ptr<Wrapper>(newJlG4OpticalPhysics(jlModule)),
     std::shared_ptr<Wrapper>(newJlG4DecayPhysics(jlModule)),
