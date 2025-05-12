@@ -5,7 +5,8 @@ import Base.getindex
 import Base.setindex!
 
 using CxxWrap
-@wrapmodule(()->"libjlGeant4")
+import Libdl
+@wrapmodule(()->"$(@__DIR__)/../deps/libjlGeant4." * Libdl.dlext)
 
 function __init__()
     @initcxx
