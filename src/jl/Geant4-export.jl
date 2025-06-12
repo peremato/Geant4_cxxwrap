@@ -55,26 +55,27 @@ export FresnelRefraction, G4AffineTransform, G4ApplicationState, G4AttValue, G4B
 export G4BooleanSolid!SetExternalBooleanProcessor, G4Box, G4CSGSolid, G4ClassificationOfNewTrack, G4Colour, G4Colour!AddToMap, G4Colour!Black, G4Colour!Blue
 export G4Colour!Brown, G4Colour!Cyan, G4Colour!GetColor, G4Colour!GetColour, G4Colour!Gray, G4Colour!Green, G4Colour!Grey
 export G4Colour!InitialiseColourMap, G4Colour!Magenta, G4Colour!Red, G4Colour!White, G4Colour!Yellow, G4Cons, G4CutTubs, G4DCofThisEvent
-export G4DecayPhysics, G4DisplacedSolid, G4DynamicParticle, G4Element, G4Element!GetElement, G4Element!GetElementTable, G4Ellipsoid
-export G4EllipticalCone, G4EllipticalTube, G4EmStandardPhysics, G4EmStandardPhysics_option4, G4Event, G4EventManager
-export G4EventManager!GetEventManager, G4ExceptionSeverity, G4ExtrudedSolid, G4ExtrudedSolid!ZSection, G4FastSimulationManager, G4Field
-export G4FieldManager, G4FieldManager!GetGlobalFieldManager, G4FieldManager!GetMaxAcceptedEpsilon
+export G4DecayPhysics, G4DisplacedSolid, G4DynamicParticle, G4Element, G4Element!GetElement, G4Element!GetElementTable
+export G4Element!GetNumberOfElements, G4Ellipsoid, G4EllipticalCone, G4EllipticalTube, G4EmStandardPhysics, G4EmStandardPhysics_option4, G4Event
+export G4EventManager, G4EventManager!GetEventManager, G4ExceptionSeverity, G4ExtrudedSolid, G4ExtrudedSolid!ZSection
+export G4FastSimulationManager, G4Field, G4FieldManager, G4FieldManager!GetGlobalFieldManager, G4FieldManager!GetMaxAcceptedEpsilon
 export G4FieldManager!SetGlobalFieldManager, G4FieldManager!SetMaxAcceptedEpsilon, G4ForceCondition, G4GDMLAuxStructType, G4GDMLMatrix, G4GDMLParser
 export G4GDMLReadStructure, G4GDMLWriteStructure, G4GPILSelection, G4GeneralParticleSource, G4GenericPolycone, G4GenericTrap
 export G4HCofThisEvent, G4HCtable, G4Hype, G4ICRU90StoppingData, G4IntersectionSolid, G4IonisParamElm, G4IonisParamMat, G4Isotope
-export G4Isotope!GetIsotope, G4Isotope!GetIsotopeTable, G4JLActionInitialization, G4JLDetectorConstruction, G4JLEventAction
-export G4JLExceptionHandler, G4JLGeneratorAction, G4JLMagField, G4JLParticleGun, G4JLRunAction, G4JLSensDet, G4JLStackingAction
-export G4JLStateDependent, G4JLSteppingAction, G4JLTrackingAction, G4JLWorkerInitialization, G4JL_getenv, G4JL_init, G4JL_println
-export G4JL_setenv, G4LVData, G4LogicalBorderSurface, G4LogicalBorderSurface!CleanSurfaceTable, G4LogicalBorderSurface!DumpInfo
-export G4LogicalBorderSurface!GetSurface, G4LogicalSkinSurface, G4LogicalSkinSurface!CleanSurfaceTable, G4LogicalSkinSurface!DumpInfo
-export G4LogicalSkinSurface!GetSurface, G4LogicalVolume, G4LogicalVolume!Clean, G4LogicalVolume!GetSolid, G4LogicalVolume!SetSolid
-export G4LogicalVolumeStore, G4LogicalVolumeStore!Clean, G4LogicalVolumeStore!DeRegister, G4LogicalVolumeStore!GetInstance
-export G4LogicalVolumeStore!Register, G4LogicalVolumeStore!SetNotifier, G4MTRunManager, G4MTRunManager!GetMTMasterRunManagerKernel
-export G4MTRunManager!GetMasterRunManager, G4MTRunManager!GetMasterRunManagerKernel, G4MTRunManager!GetMasterScoringManager
-export G4MTRunManager!SeedOncePerCommunication, G4MTRunManager!SetSeedOncePerCommunication, G4MTRunManager!WorkerActionRequest
-export G4MTRunManager!WorkerActionRequest!ENDWORKER, G4MTRunManager!WorkerActionRequest!NEXTITERATION, G4MTRunManager!WorkerActionRequest!PROCESSUI
-export G4MTRunManager!WorkerActionRequest!UNDEFINED, G4MTRunManager!addWorld, G4MTRunManagerKernel, G4MagneticField, G4Material, G4Material!GetMaterial
-export G4Material!GetMaterialTable, G4MaterialCutsCouple, G4MaterialPropertiesTable, G4MultiUnion, G4NavigationHistory, G4Navigator, G4NistManager
+export G4Isotope!GetIsotope, G4Isotope!GetIsotopeTable, G4Isotope!GetNumberOfIsotopes, G4JLActionInitialization, G4JLDetectorConstruction
+export G4JLEventAction, G4JLExceptionHandler, G4JLGeneratorAction, G4JLMagField, G4JLParticleGun, G4JLRunAction, G4JLSensDet
+export G4JLStackingAction, G4JLStateDependent, G4JLSteppingAction, G4JLTrackingAction, G4JLWorkerInitialization, G4JL_getenv, G4JL_init
+export G4JL_println, G4JL_setenv, G4LVData, G4LogicalBorderSurface, G4LogicalBorderSurface!CleanSurfaceTable
+export G4LogicalBorderSurface!DumpInfo, G4LogicalBorderSurface!GetNumberOfBorderSurfaces, G4LogicalBorderSurface!GetSurface, G4LogicalSkinSurface
+export G4LogicalSkinSurface!CleanSurfaceTable, G4LogicalSkinSurface!DumpInfo, G4LogicalSkinSurface!GetNumberOfSkinSurfaces, G4LogicalSkinSurface!GetSurface
+export G4LogicalVolume, G4LogicalVolume!Clean, G4LogicalVolume!GetSolid, G4LogicalVolume!SetSolid, G4LogicalVolumeStore
+export G4LogicalVolumeStore!Clean, G4LogicalVolumeStore!DeRegister, G4LogicalVolumeStore!GetInstance, G4LogicalVolumeStore!Register
+export G4LogicalVolumeStore!SetNotifier, G4MTRunManager, G4MTRunManager!GetMTMasterRunManagerKernel, G4MTRunManager!GetMasterRunManager
+export G4MTRunManager!GetMasterRunManagerKernel, G4MTRunManager!GetMasterScoringManager, G4MTRunManager!SeedOncePerCommunication
+export G4MTRunManager!SetSeedOncePerCommunication, G4MTRunManager!WorkerActionRequest, G4MTRunManager!WorkerActionRequest!ENDWORKER
+export G4MTRunManager!WorkerActionRequest!NEXTITERATION, G4MTRunManager!WorkerActionRequest!PROCESSUI, G4MTRunManager!WorkerActionRequest!UNDEFINED
+export G4MTRunManager!addWorld, G4MTRunManagerKernel, G4MagneticField, G4Material, G4Material!GetMaterial, G4Material!GetMaterialTable
+export G4Material!GetNumberOfMaterials, G4MaterialCutsCouple, G4MaterialPropertiesTable, G4MultiUnion, G4NavigationHistory, G4Navigator, G4NistManager
 export G4NistManager!Instance, G4OpBoundaryProcess, G4OpBoundaryProcessStatus, G4OpticalParameters, G4OpticalParameters!Instance
 export G4OpticalPhysics, G4OpticalProcessIndex, G4OpticalSurface, G4OpticalSurfaceFinish, G4OpticalSurfaceModel, G4Orb, G4PDefManager
 export G4PVData, G4PVPlacement, G4PVReplica, G4Para, G4Paraboloid, G4ParticleDefinition, G4ParticleDefinition!Clean
@@ -116,44 +117,46 @@ export GetAngDist, GetAngularDistributionValue, GetAngularDistributionValueLUT, 
 export GetApplyCuts, GetApplyCutsFlag, GetApplyToAll, GetArbEmax, GetArbEmin, GetArbEneWeight, GetArbEnergyHisto, GetAreaAccuracy
 export GetAreaStatistics, GetAtRestIndex, GetAtRestProcessVector, GetAtomicMass, GetAtomicMassAmu, GetAtomicNumDensityVector
 export GetAtomicNumber, GetAtomicShell, GetAtomsVector, GetAuxList, GetAuxiliaryPoints, GetAzimuthalAnglePhi, GetBaryonNumber
-export GetBaseMaterial, GetBeta, GetBiasRndm, GetBiasWeight, GetBlue, GetBoundaryInvokeSD, GetBoundaryVerboseLevel, GetCentreCoords
-export GetCerenkovMaxBetaChange, GetCerenkovMaxPhotonsPerStep, GetCerenkovStackPhotons, GetCerenkovTrackSecondariesFirst
-export GetCerenkovVerboseLevel, GetCharge, GetChemicalFormula, GetCollectionName, GetColor, GetColour, GetCommandStack, GetConfineVolume
-export GetConfined, GetConstCurrentEvent, GetConstProperties, GetConstProperty, GetConstPropertyIndex, GetConstant
+export GetBaseMaterial, GetBeta, GetBiasRndm, GetBiasWeight, GetBlue, GetBoundaryInvokeSD, GetBoundaryVerboseLevel, GetCapacity
+export GetCentreCoords, GetCerenkovMaxBetaChange, GetCerenkovMaxPhotonsPerStep, GetCerenkovStackPhotons
+export GetCerenkovTrackSecondariesFirst, GetCerenkovVerboseLevel, GetCharge, GetChemicalFormula, GetCollectionName, GetColor, GetColour, GetCommandStack
+export GetConfineVolume, GetConfined, GetConstCurrentEvent, GetConstProperties, GetConstProperty, GetConstPropertyIndex, GetConstant
 export GetConstantFieldValue, GetConstituentMovedSolid, GetConstituentSolid, GetControlFlag, GetCopyNo, GetCopyNumber, GetCorner
 export GetCosEndPhi, GetCosEndTheta, GetCosStartPhi, GetCosStartTheta, GetCreatorModelID, GetCreatorModelIndex, GetCreatorModelName
 export GetCreatorProcess, GetCubVolEpsilon, GetCubVolStatistics, GetCubicVolume, GetCurrentDoubleValue, GetCurrentEvent
 export GetCurrentIntValue, GetCurrentInteractionLength, GetCurrentLocalCoordinate, GetCurrentMesh, GetCurrentRun, GetCurrentSource
 export GetCurrentSourceIndex, GetCurrentSourceIntensity, GetCurrentState, GetCurrentStepNumber, GetCurrentStringValue, GetCurrentValues
 export GetCutValue, GetDCofThisEvent, GetDPhi, GetDaughter, GetDefaultCutValue, GetDefinition, GetDeltaEnergy, GetDeltaIntersection
-export GetDeltaMomentum, GetDeltaOneStep, GetDeltaPhiAngle, GetDeltaPosition, GetDeltaThetaAngle, GetDeltaTime, GetDensity
+export GetDeltaMomentum, GetDeltaOneStep, GetDeltaPhiAngle, GetDeltaPosition, GetDeltaThetaAngle, GetDeltaTime, GetDensity, GetDepth
 export GetDetectorField, GetDichroicVector, GetDirectTransform, GetDirection, GetDisplacedSolidPtr, GetDistType, GetDx, GetDy
 export GetDynamicParticle, GetDz, GetElectronDensity, GetElement, GetElementVector, GetEmax, GetEmin, GetEndInnerRadius, GetEndOuterRadius
 export GetEndPhi, GetEndTime, GetEndZ, GetEneDist, GetEnergyDisType, GetEntityType, GetEnvelope, GetEventID, GetEventModulo
 export GetEventVector, GetEventVectorSize, GetExceptionHandler, GetExternalNavigation, GetEzero, GetFactor, GetFastSimulationManager
-export GetFastSimulationModel, GetFastSimulationModelList, GetFieldManager, GetFilter, GetFinish, GetFlagRandomNumberStatusToG4Event
-export GetForcedDrawingStyle, GetForcedLineSegmentsPerCircle, GetForcedNumberOfCloudPoints, GetFractionVector, GetFrameRotation
-export GetFrameTranslation, GetFreeElectronDensity, GetFullPathName, GetG4code, GetGamma, GetGeometryToBeOptimized, GetGlobalExitNormal
-export GetGlobalTime, GetGlobalToLocalTransform, GetGreen, GetGun, GetHC, GetHCofThisEvent, GetHCtable, GetHalfX, GetHalfY, GetHalfZ
-export GetHighNorm, GetHistory, GetHistoryDepth, GetICRU90StoppingData, GetInitialMomentum, GetInmax, GetInnerRadius
-export GetInnerRadiusMinusZ, GetInnerRadiusPlusZ, GetInnerStereo, GetInstanceID, GetIntType, GetIon, GetIonLifeTime, GetIonisation
-export GetIsotope, GetIsotopeAbundance, GetIsotopeMass, GetIsotopeVector, GetKappa, GetKineticEnergy, GetLOGAMU, GetLOGZ
-export GetLUTbins, GetLastReturnCode, GetLastStepEndPoint, GetLeptonNumber, GetLineStyle, GetLineWidth, GetLocalExitNormal
-export GetLocalExitNormalAndCheck, GetLocalTime, GetLocalToGlobalTransform, GetLogicalVolume, GetLogicalVolumeAtVertex, GetLowNorm
-export GetMacroSearchPath, GetMagneticMoment, GetMass, GetMassOfMolecule, GetMasterFieldManager, GetMasterProcess, GetMasterProcessManager
-export GetMasterSensitiveDetector, GetMasterSolid, GetMaterial, GetMaterialConstPropertyNames, GetMaterialCutsCouple, GetMaterialPropertiesTable
-export GetMaterialPropertyNames, GetMatrix, GetMaxAllowedStep, GetMaxExportLevel, GetMaxHistSize, GetMaxPhi, GetMaxTheta, GetMaximumEpsilonStep
-export GetMeanFreePath, GetMeanIonisationEnergy, GetMesh, GetMessage, GetMieVerboseLevel, GetMinPhi, GetMinTheta, GetMinimumEpsilonStep
-export GetModel, GetMomentum, GetMomentumDirection, GetMonoEnergy, GetMotherEvent, GetMotherLogical
-export GetMotherToDaughterTransform, GetMultiplicity, GetN, GetName, GetNaturalAbundanceFlag, GetNavigator, GetNavigatorForTracking
-export GetNbOfAtomicShells, GetNbOfShellElectrons, GetNext, GetNextMaterial, GetNextMaterialCutsCouple, GetNextTouchable
-export GetNextTouchableHandle, GetNextVolume, GetNistElementNames, GetNistFirstIsotopeN, GetNistMaterialNames, GetNofVertices, GetNofZSections
-export GetNominalDensity, GetNonConstCurrentRun, GetNonConstUserActionInitialization, GetNonIonizingEnergyDeposit
-export GetNonconstCurrentEvent, GetNuclearInterLength, GetNumOfConstituents, GetNumRZCorner, GetNumSide, GetNumberActiveThreads
-export GetNumberOfAntiLambdasInAntiHypernucleus, GetNumberOfCollections, GetNumberOfCompletedSubEvent, GetNumberOfEvent, GetNumberOfEventToBeProcessed
-export GetNumberOfEventsToBeProcessed, GetNumberOfGrips, GetNumberOfHistory, GetNumberOfInteractionLengthLeft, GetNumberOfKeptEvents
-export GetNumberOfLambdasInHypernucleus, GetNumberOfNistIsotopes, GetNumberOfParallelWorld, GetNumberOfParticle, GetNumberOfParticles
-export GetNumberOfPrimaryVertex, GetNumberOfRemainingSubEvents, GetNumberOfSelectEvents, GetNumberOfSolids, GetNumberOfThreads
+export GetFastSimulationModel, GetFastSimulationModelList, GetFieldManager, GetFieldValue, GetFilter, GetFinish
+export GetFlagRandomNumberStatusToG4Event, GetForcedDrawingStyle, GetForcedLineSegmentsPerCircle, GetForcedNumberOfCloudPoints, GetFractionVector
+export GetFrameRotation, GetFrameTranslation, GetFreeElectronDensity, GetFullPathName, GetG4code, GetGamma, GetGeometryToBeOptimized
+export GetGlobalExitNormal, GetGlobalTime, GetGlobalToLocalTransform, GetGreen, GetGun, GetHC, GetHCofThisEvent, GetHCtable, GetHalfX
+export GetHalfY, GetHalfZ, GetHighNorm, GetHistory, GetHistoryDepth, GetICRU90StoppingData, GetIndex, GetInitialMomentum
+export GetInmax, GetInnerRadius, GetInnerRadiusMinusZ, GetInnerRadiusPlusZ, GetInnerStereo, GetInstanceID, GetIntType, GetIon
+export GetIonLifeTime, GetIonisation, GetIsotope, GetIsotopeAbundance, GetIsotopeMass, GetIsotopeVector, GetKappa, GetKineticEnergy
+export GetLOGAMU, GetLOGZ, GetLUTbins, GetLastReturnCode, GetLastStepEndPoint, GetLeptonNumber, GetLineStyle, GetLineWidth
+export GetLocalExitNormal, GetLocalExitNormalAndCheck, GetLocalTime, GetLocalToGlobalTransform, GetLogicalVolume, GetLogicalVolumeAtVertex
+export GetLowNorm, GetMacroSearchPath, GetMagneticMoment, GetMass, GetMassOfMolecule, GetMasterFieldManager, GetMasterProcess
+export GetMasterProcessManager, GetMasterSensitiveDetector, GetMasterSolid, GetMaterial, GetMaterialConstPropertyNames, GetMaterialCutsCouple
+export GetMaterialPropertiesTable, GetMaterialPropertyNames, GetMatrix, GetMaxAllowedStep, GetMaxDepth, GetMaxExportLevel, GetMaxHistSize
+export GetMaxNTrack, GetMaxPhi, GetMaxTheta, GetMaximumEpsilonStep, GetMeanFreePath, GetMeanIonisationEnergy, GetMesh, GetMessage
+export GetMieVerboseLevel, GetMinPhi, GetMinTheta, GetMinimumEpsilonStep, GetModel, GetMomentum, GetMomentumDirection, GetMonoEnergy
+export GetMotherEvent, GetMotherLogical, GetMotherToDaughterTransform, GetMultiplicity, GetN, GetName, GetNaturalAbundanceFlag
+export GetNavigator, GetNavigatorForTracking, GetNbOfAtomicShells, GetNbOfShellElectrons, GetNext, GetNextMaterial
+export GetNextMaterialCutsCouple, GetNextTouchable, GetNextTouchableHandle, GetNextVolume, GetNistElementNames, GetNistFirstIsotopeN
+export GetNistMaterialNames, GetNoActiveNavigators, GetNoDaughters, GetNoWorlds, GetNofVertices, GetNofZSections, GetNominalDensity
+export GetNonConstCurrentRun, GetNonConstUserActionInitialization, GetNonIonizingEnergyDeposit, GetNonconstCurrentEvent
+export GetNuclearInterLength, GetNumOfConstituents, GetNumRZCorner, GetNumSide, GetNumberActiveThreads
+export GetNumberOfAntiLambdasInAntiHypernucleus, GetNumberOfCollections, GetNumberOfCompletedSubEvent, GetNumberOfElements, GetNumberOfEvent
+export GetNumberOfEventToBeProcessed, GetNumberOfEventsToBeProcessed, GetNumberOfGrips, GetNumberOfHistory, GetNumberOfInteractionLengthLeft
+export GetNumberOfIsotopes, GetNumberOfKeptEvents, GetNumberOfLambdasInHypernucleus, GetNumberOfMaterials, GetNumberOfMesh
+export GetNumberOfNistIsotopes, GetNumberOfParallelWorld, GetNumberOfParticle, GetNumberOfParticles, GetNumberOfPrimaryVertex
+export GetNumberOfRemainingSubEvents, GetNumberOfSecondariesInCurrentStep, GetNumberOfSelectEvents, GetNumberOfSolids, GetNumberOfThreads
 export GetNumberofSource, GetObjectRotation, GetObjectRotationValue, GetObjectTranslation, GetOriginTouchable, GetOriginTouchableHandle
 export GetOriginalParameters, GetOuterRadius, GetOuterRadiusMinusZ, GetOuterRadiusPlusZ, GetOuterStereo, GetPDGCharge, GetPDGEncoding
 export GetPDGIsospin, GetPDGIsospin3, GetPDGLifeTime, GetPDGMagneticMoment, GetPDGMass, GetPDGSpin, GetPDGStable, GetPDGWidth
@@ -298,7 +301,7 @@ export WorkerRunStart, WorkerStart, WorkerStop, Write, a, a!, add!, angle, assig
 export b!, beta, boost, boostVector, boostX, boostY, boostZ, c, c!, clear, clearAndDestroy, coLinearRapidity, coated, col1
 export col2, col3, col4, colX, colY, colZ, compare, contains, cos2Theta, cosTheta, cross, d, d!, decompose, delta, deltaPhi
 export deltaR, dichroic, dielectric_LUT, dielectric_LUTDAVIS, dielectric_dichroic, dielectric_dielectric, dielectric_metal
-export diff2, direction, distance2, dot, dx, dy, dz, engine, eta, etchedair, etchedlumirrorair, etchedlumirrorglue
+export diff2, direction, distance2, dot, dx, dy, dz, engine, entries, eta, etchedair, etchedlumirrorair, etchedlumirrorglue
 export etchedteflonair, etchedtioair, etchedtyvekair, etchedvm2000air, etchedvm2000glue, eulerAngles, fAlive, fAlongStepDoItProc
 export fAtRestDoItProc, fCutsCouple, fCutsCouple!, fDecay, fElectromagnetic, fExclusivelyForcedProc, fFieldManager, fFieldManager!
 export fGeneral, fGeomBoundary, fHadronic, fKill, fKillTrackAndSecondaries, fMass, fMass!, fMaterial, fMaterial!, fNotDefined
@@ -313,7 +316,7 @@ export gc_safe_leave, getAngleAxis, getAxis, getDecomposition, getDelta, getDire
 export getR, getRho, getRotation, getSeed, getSeeds, getState, getTheta, getTranslation, getX, getY, getZ, glisur, ground
 export groundair, groundbackpainted, groundfrontpainted, groundlumirrorair, groundlumirrorglue, groundteflonair, groundtioair
 export groundtyvekair, groundvm2000air, groundvm2000glue, howNear, howOrthogonal, howParallel, idxAll, idxAlongStep, idxAtRest
-export idxPostStep, initialize, insert, insertAt, inverse, invert, isActive, isAlongStepDoItIsEnabled, isAtRestDoItIsEnabled
+export idxPostStep, index, initialize, insert, insertAt, inverse, invert, isActive, isAlongStepDoItIsEnabled, isAtRestDoItIsEnabled
 export isIdentity, isNear, isOrthogonal, isParallel, isPostStepDoItIsEnabled, kAbsorption, kBoundary, kCerenkov, kExternal
 export kInside, kMieHG, kNoProcess, kNormal, kOutside, kParameterised, kPhi, kRadial3D, kRayleigh, kReplica, kRho
 export kScintillation, kStateGas, kStateLiquid, kStateSolid, kStateUndefined, kSurface, kUndefined, kWLS, kWLS2, kXAxis, kYAxis
