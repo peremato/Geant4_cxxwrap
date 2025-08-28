@@ -18,7 +18,7 @@ struct JlG4SteppingVerbose: public Wrapper {
 
   JlG4SteppingVerbose(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4SteppingVerbose (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SteppingVerbose.hh:42:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SteppingVerbose.hh:42:7
     jlcxx::TypeWrapper<G4SteppingVerbose>  t = jlModule.add_type<G4SteppingVerbose>("G4SteppingVerbose",
       jlcxx::julia_base_type<G4VSteppingVerbose>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4SteppingVerbose>>(new jlcxx::TypeWrapper<G4SteppingVerbose>(jlModule, t));
@@ -30,109 +30,109 @@ struct JlG4SteppingVerbose: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4VSteppingVerbose * G4SteppingVerbose::Clone() (" __HERE__ ")");
     // signature to use in the veto list: G4VSteppingVerbose * G4SteppingVerbose::Clone()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SteppingVerbose.hh:50:23
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SteppingVerbose.hh:50:23
     t.method("Clone", [](G4SteppingVerbose& a)->G4VSteppingVerbose * { return a.Clone(); }, jlcxx::arg("this"));
     t.method("Clone", [](G4SteppingVerbose* a)->G4VSteppingVerbose * { return a->Clone(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4SteppingVerbose::NewStep() (" __HERE__ ")");
     // signature to use in the veto list: void G4SteppingVerbose::NewStep()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SteppingVerbose.hh:54:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SteppingVerbose.hh:54:8
     t.method("NewStep", [](G4SteppingVerbose& a)->void { a.NewStep(); }, jlcxx::arg("this"));
     t.method("NewStep", [](G4SteppingVerbose* a)->void { a->NewStep(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4SteppingVerbose::AtRestDoItInvoked() (" __HERE__ ")");
     // signature to use in the veto list: void G4SteppingVerbose::AtRestDoItInvoked()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SteppingVerbose.hh:55:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SteppingVerbose.hh:55:8
     t.method("AtRestDoItInvoked", [](G4SteppingVerbose& a)->void { a.AtRestDoItInvoked(); }, jlcxx::arg("this"));
     t.method("AtRestDoItInvoked", [](G4SteppingVerbose* a)->void { a->AtRestDoItInvoked(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4SteppingVerbose::AlongStepDoItAllDone() (" __HERE__ ")");
     // signature to use in the veto list: void G4SteppingVerbose::AlongStepDoItAllDone()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SteppingVerbose.hh:56:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SteppingVerbose.hh:56:8
     t.method("AlongStepDoItAllDone", [](G4SteppingVerbose& a)->void { a.AlongStepDoItAllDone(); }, jlcxx::arg("this"));
     t.method("AlongStepDoItAllDone", [](G4SteppingVerbose* a)->void { a->AlongStepDoItAllDone(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4SteppingVerbose::PostStepDoItAllDone() (" __HERE__ ")");
     // signature to use in the veto list: void G4SteppingVerbose::PostStepDoItAllDone()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SteppingVerbose.hh:57:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SteppingVerbose.hh:57:8
     t.method("PostStepDoItAllDone", [](G4SteppingVerbose& a)->void { a.PostStepDoItAllDone(); }, jlcxx::arg("this"));
     t.method("PostStepDoItAllDone", [](G4SteppingVerbose* a)->void { a->PostStepDoItAllDone(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4SteppingVerbose::AlongStepDoItOneByOne() (" __HERE__ ")");
     // signature to use in the veto list: void G4SteppingVerbose::AlongStepDoItOneByOne()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SteppingVerbose.hh:58:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SteppingVerbose.hh:58:8
     t.method("AlongStepDoItOneByOne", [](G4SteppingVerbose& a)->void { a.AlongStepDoItOneByOne(); }, jlcxx::arg("this"));
     t.method("AlongStepDoItOneByOne", [](G4SteppingVerbose* a)->void { a->AlongStepDoItOneByOne(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4SteppingVerbose::PostStepDoItOneByOne() (" __HERE__ ")");
     // signature to use in the veto list: void G4SteppingVerbose::PostStepDoItOneByOne()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SteppingVerbose.hh:59:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SteppingVerbose.hh:59:8
     t.method("PostStepDoItOneByOne", [](G4SteppingVerbose& a)->void { a.PostStepDoItOneByOne(); }, jlcxx::arg("this"));
     t.method("PostStepDoItOneByOne", [](G4SteppingVerbose* a)->void { a->PostStepDoItOneByOne(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4SteppingVerbose::StepInfo() (" __HERE__ ")");
     // signature to use in the veto list: void G4SteppingVerbose::StepInfo()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SteppingVerbose.hh:60:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SteppingVerbose.hh:60:8
     t.method("StepInfo", [](G4SteppingVerbose& a)->void { a.StepInfo(); }, jlcxx::arg("this"));
     t.method("StepInfo", [](G4SteppingVerbose* a)->void { a->StepInfo(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4SteppingVerbose::TrackingStarted() (" __HERE__ ")");
     // signature to use in the veto list: void G4SteppingVerbose::TrackingStarted()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SteppingVerbose.hh:61:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SteppingVerbose.hh:61:8
     t.method("TrackingStarted", [](G4SteppingVerbose& a)->void { a.TrackingStarted(); }, jlcxx::arg("this"));
     t.method("TrackingStarted", [](G4SteppingVerbose* a)->void { a->TrackingStarted(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4SteppingVerbose::DPSLStarted() (" __HERE__ ")");
     // signature to use in the veto list: void G4SteppingVerbose::DPSLStarted()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SteppingVerbose.hh:62:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SteppingVerbose.hh:62:8
     t.method("DPSLStarted", [](G4SteppingVerbose& a)->void { a.DPSLStarted(); }, jlcxx::arg("this"));
     t.method("DPSLStarted", [](G4SteppingVerbose* a)->void { a->DPSLStarted(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4SteppingVerbose::DPSLUserLimit() (" __HERE__ ")");
     // signature to use in the veto list: void G4SteppingVerbose::DPSLUserLimit()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SteppingVerbose.hh:63:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SteppingVerbose.hh:63:8
     t.method("DPSLUserLimit", [](G4SteppingVerbose& a)->void { a.DPSLUserLimit(); }, jlcxx::arg("this"));
     t.method("DPSLUserLimit", [](G4SteppingVerbose* a)->void { a->DPSLUserLimit(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4SteppingVerbose::DPSLPostStep() (" __HERE__ ")");
     // signature to use in the veto list: void G4SteppingVerbose::DPSLPostStep()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SteppingVerbose.hh:64:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SteppingVerbose.hh:64:8
     t.method("DPSLPostStep", [](G4SteppingVerbose& a)->void { a.DPSLPostStep(); }, jlcxx::arg("this"));
     t.method("DPSLPostStep", [](G4SteppingVerbose* a)->void { a->DPSLPostStep(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4SteppingVerbose::DPSLAlongStep() (" __HERE__ ")");
     // signature to use in the veto list: void G4SteppingVerbose::DPSLAlongStep()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SteppingVerbose.hh:65:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SteppingVerbose.hh:65:8
     t.method("DPSLAlongStep", [](G4SteppingVerbose& a)->void { a.DPSLAlongStep(); }, jlcxx::arg("this"));
     t.method("DPSLAlongStep", [](G4SteppingVerbose* a)->void { a->DPSLAlongStep(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4SteppingVerbose::VerboseTrack() (" __HERE__ ")");
     // signature to use in the veto list: void G4SteppingVerbose::VerboseTrack()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SteppingVerbose.hh:66:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SteppingVerbose.hh:66:8
     t.method("VerboseTrack", [](G4SteppingVerbose& a)->void { a.VerboseTrack(); }, jlcxx::arg("this"));
     t.method("VerboseTrack", [](G4SteppingVerbose* a)->void { a->VerboseTrack(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4SteppingVerbose::VerboseParticleChange() (" __HERE__ ")");
     // signature to use in the veto list: void G4SteppingVerbose::VerboseParticleChange()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SteppingVerbose.hh:67:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SteppingVerbose.hh:67:8
     t.method("VerboseParticleChange", [](G4SteppingVerbose& a)->void { a.VerboseParticleChange(); }, jlcxx::arg("this"));
     t.method("VerboseParticleChange", [](G4SteppingVerbose* a)->void { a->VerboseParticleChange(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4SteppingVerbose::ShowStep() (" __HERE__ ")");
     // signature to use in the veto list: void G4SteppingVerbose::ShowStep()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SteppingVerbose.hh:68:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SteppingVerbose.hh:68:16
     t.method("ShowStep", [](G4SteppingVerbose const& a)->void { a.ShowStep(); }, jlcxx::arg("this"));
     t.method("ShowStep", [](G4SteppingVerbose const* a)->void { a->ShowStep(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4SteppingVerbose::UseBestUnit(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4SteppingVerbose::UseBestUnit(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SteppingVerbose.hh:71:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SteppingVerbose.hh:71:15
     module_.method("G4SteppingVerbose!UseBestUnit", []()->void { G4SteppingVerbose::UseBestUnit(); }, jlcxx::arg("prec"));
     module_.method("G4SteppingVerbose!UseBestUnit", [](G4int arg0)->void { G4SteppingVerbose::UseBestUnit(arg0); }, jlcxx::arg("prec"));
 
     DEBUG_MSG("Adding wrapper for G4int G4SteppingVerbose::BestUnitPrecision() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4SteppingVerbose::BestUnitPrecision()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SteppingVerbose.hh:72:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SteppingVerbose.hh:72:16
     module_.method("G4SteppingVerbose!BestUnitPrecision", []()->G4int { return G4SteppingVerbose::BestUnitPrecision(); });
   }
 

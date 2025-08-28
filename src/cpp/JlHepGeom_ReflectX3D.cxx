@@ -18,7 +18,7 @@ struct JlHepGeom_ReflectX3D: public Wrapper {
 
   JlHepGeom_ReflectX3D(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type HepGeom::ReflectX3D (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:656:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:656:9
     jlcxx::TypeWrapper<HepGeom::ReflectX3D>  t = jlModule.add_type<HepGeom::ReflectX3D>("HepGeom!ReflectX3D",
       jlcxx::julia_base_type<HepGeom::Reflect3D>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<HepGeom::ReflectX3D>>(new jlcxx::TypeWrapper<HepGeom::ReflectX3D>(jlModule, t));
@@ -30,7 +30,7 @@ struct JlHepGeom_ReflectX3D: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void HepGeom::ReflectX3D::ReflectX3D(double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:660:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:660:5
     t.constructor<double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("x")    );
   }
 

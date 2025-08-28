@@ -17,7 +17,7 @@ struct JlG4GDMLParser: public Wrapper {
 
   JlG4GDMLParser(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4GDMLParser (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:57:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:57:7
     jlcxx::TypeWrapper<G4GDMLParser>  t = jlModule.add_type<G4GDMLParser>("G4GDMLParser");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4GDMLParser>>(new jlcxx::TypeWrapper<G4GDMLParser>(jlModule, t));
   }
@@ -28,17 +28,17 @@ struct JlG4GDMLParser: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4GDMLParser::G4GDMLParser(G4GDMLReadStructure *) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:62:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:62:5
     t.constructor<G4GDMLReadStructure *>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("arg0")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4GDMLParser::G4GDMLParser(G4GDMLReadStructure *, G4GDMLWriteStructure *) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:63:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:63:5
     t.constructor<G4GDMLReadStructure *, G4GDMLWriteStructure *>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1")    );
 
     DEBUG_MSG("Adding wrapper for void G4GDMLParser::Read(const G4String &, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4GDMLParser::Read(const G4String &, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:68:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:68:17
     t.method("Read", [](G4GDMLParser& a, const G4String & arg0)->void { a.Read(arg0); }, jlcxx::arg("this"), jlcxx::arg("filename"));
     t.method("Read", [](G4GDMLParser& a, const G4String & arg0, G4bool arg1)->void { a.Read(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("filename"), jlcxx::arg("Validate"));
     t.method("Read", [](G4GDMLParser* a, const G4String & arg0)->void { a->Read(arg0); }, jlcxx::arg("this"), jlcxx::arg("filename"));
@@ -46,7 +46,7 @@ struct JlG4GDMLParser: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4GDMLParser::ReadModule(const G4String &, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4GDMLParser::ReadModule(const G4String &, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:74:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:74:17
     t.method("ReadModule", [](G4GDMLParser& a, const G4String & arg0)->void { a.ReadModule(arg0); }, jlcxx::arg("this"), jlcxx::arg("filename"));
     t.method("ReadModule", [](G4GDMLParser& a, const G4String & arg0, G4bool arg1)->void { a.ReadModule(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("filename"), jlcxx::arg("Validate"));
     t.method("ReadModule", [](G4GDMLParser* a, const G4String & arg0)->void { a->ReadModule(arg0); }, jlcxx::arg("this"), jlcxx::arg("filename"));
@@ -54,7 +54,7 @@ struct JlG4GDMLParser: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4GDMLParser::Write(const G4String &, const G4VPhysicalVolume *, G4bool, const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4GDMLParser::Write(const G4String &, const G4VPhysicalVolume *, G4bool, const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:80:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:80:17
     t.method("Write", [](G4GDMLParser& a, const G4String & arg0)->void { a.Write(arg0); }, jlcxx::arg("this"), jlcxx::arg("filename"));
     t.method("Write", [](G4GDMLParser& a, const G4String & arg0, const G4VPhysicalVolume * arg1)->void { a.Write(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("filename"), jlcxx::arg("pvol"));
     t.method("Write", [](G4GDMLParser& a, const G4String & arg0, const G4VPhysicalVolume * arg1, G4bool arg2)->void { a.Write(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("filename"), jlcxx::arg("pvol"), jlcxx::arg("storeReferences"));
@@ -66,7 +66,7 @@ struct JlG4GDMLParser: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4GDMLParser::Write(const G4String &, const G4LogicalVolume *, G4bool, const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4GDMLParser::Write(const G4String &, const G4LogicalVolume *, G4bool, const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:91:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:91:17
     t.method("Write", [](G4GDMLParser& a, const G4String & arg0, const G4LogicalVolume * arg1)->void { a.Write(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("filename"), jlcxx::arg("lvol"));
     t.method("Write", [](G4GDMLParser& a, const G4String & arg0, const G4LogicalVolume * arg1, G4bool arg2)->void { a.Write(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("filename"), jlcxx::arg("lvol"), jlcxx::arg("storeReferences"));
     t.method("Write", [](G4GDMLParser& a, const G4String & arg0, const G4LogicalVolume * arg1, G4bool arg2, const G4String & arg3)->void { a.Write(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("filename"), jlcxx::arg("lvol"), jlcxx::arg("storeReferences"), jlcxx::arg("SchemaLocation"));
@@ -76,73 +76,73 @@ struct JlG4GDMLParser: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4LogicalVolume * G4GDMLParser::ParseST(const G4String &, G4Material *, G4Material *) (" __HERE__ ")");
     // signature to use in the veto list: G4LogicalVolume * G4GDMLParser::ParseST(const G4String &, G4Material *, G4Material *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:102:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:102:29
     t.method("ParseST", [](G4GDMLParser& a, const G4String & arg0, G4Material * arg1, G4Material * arg2)->G4LogicalVolume * { return a.ParseST(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("medium"), jlcxx::arg("solid"));
     t.method("ParseST", [](G4GDMLParser* a, const G4String & arg0, G4Material * arg1, G4Material * arg2)->G4LogicalVolume * { return a->ParseST(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("medium"), jlcxx::arg("solid"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4GDMLParser::IsValid(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4GDMLParser::IsValid(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:112:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:112:19
     t.method("IsValid", [](G4GDMLParser const& a, const G4String & arg0)->G4bool { return a.IsValid(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
     t.method("IsValid", [](G4GDMLParser const* a, const G4String & arg0)->G4bool { return a->IsValid(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
 
     DEBUG_MSG("Adding wrapper for G4double G4GDMLParser::GetConstant(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4GDMLParser::GetConstant(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:113:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:113:21
     t.method("GetConstant", [](G4GDMLParser const& a, const G4String & arg0)->G4double { return a.GetConstant(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
     t.method("GetConstant", [](G4GDMLParser const* a, const G4String & arg0)->G4double { return a->GetConstant(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
 
     DEBUG_MSG("Adding wrapper for G4double G4GDMLParser::GetVariable(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4GDMLParser::GetVariable(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:114:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:114:21
     t.method("GetVariable", [](G4GDMLParser const& a, const G4String & arg0)->G4double { return a.GetVariable(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
     t.method("GetVariable", [](G4GDMLParser const* a, const G4String & arg0)->G4double { return a->GetVariable(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
 
     DEBUG_MSG("Adding wrapper for G4double G4GDMLParser::GetQuantity(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4GDMLParser::GetQuantity(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:115:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:115:21
     t.method("GetQuantity", [](G4GDMLParser const& a, const G4String & arg0)->G4double { return a.GetQuantity(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
     t.method("GetQuantity", [](G4GDMLParser const* a, const G4String & arg0)->G4double { return a->GetQuantity(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4GDMLParser::GetPosition(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4GDMLParser::GetPosition(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:116:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:116:26
     t.method("GetPosition", [](G4GDMLParser const& a, const G4String & arg0)->G4ThreeVector { return a.GetPosition(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
     t.method("GetPosition", [](G4GDMLParser const* a, const G4String & arg0)->G4ThreeVector { return a->GetPosition(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4GDMLParser::GetRotation(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4GDMLParser::GetRotation(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:117:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:117:26
     t.method("GetRotation", [](G4GDMLParser const& a, const G4String & arg0)->G4ThreeVector { return a.GetRotation(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
     t.method("GetRotation", [](G4GDMLParser const* a, const G4String & arg0)->G4ThreeVector { return a->GetRotation(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4GDMLParser::GetScale(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4GDMLParser::GetScale(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:118:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:118:26
     t.method("GetScale", [](G4GDMLParser const& a, const G4String & arg0)->G4ThreeVector { return a.GetScale(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
     t.method("GetScale", [](G4GDMLParser const* a, const G4String & arg0)->G4ThreeVector { return a->GetScale(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
 
     DEBUG_MSG("Adding wrapper for G4GDMLMatrix G4GDMLParser::GetMatrix(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4GDMLMatrix G4GDMLParser::GetMatrix(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:119:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:119:25
     t.method("GetMatrix", [](G4GDMLParser const& a, const G4String & arg0)->G4GDMLMatrix { return a.GetMatrix(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
     t.method("GetMatrix", [](G4GDMLParser const* a, const G4String & arg0)->G4GDMLMatrix { return a->GetMatrix(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
 
     DEBUG_MSG("Adding wrapper for G4LogicalVolume * G4GDMLParser::GetVolume(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4LogicalVolume * G4GDMLParser::GetVolume(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:120:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:120:29
     t.method("GetVolume", [](G4GDMLParser const& a, const G4String & arg0)->G4LogicalVolume * { return a.GetVolume(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
     t.method("GetVolume", [](G4GDMLParser const* a, const G4String & arg0)->G4LogicalVolume * { return a->GetVolume(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
 
     DEBUG_MSG("Adding wrapper for G4VPhysicalVolume * G4GDMLParser::GetPhysVolume(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4VPhysicalVolume * G4GDMLParser::GetPhysVolume(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:121:31
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:121:31
     t.method("GetPhysVolume", [](G4GDMLParser const& a, const G4String & arg0)->G4VPhysicalVolume * { return a.GetPhysVolume(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
     t.method("GetPhysVolume", [](G4GDMLParser const* a, const G4String & arg0)->G4VPhysicalVolume * { return a->GetPhysVolume(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
 
     DEBUG_MSG("Adding wrapper for G4VPhysicalVolume * G4GDMLParser::GetWorldVolume(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4VPhysicalVolume * G4GDMLParser::GetWorldVolume(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:123:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:123:12
     t.method("GetWorldVolume", [](G4GDMLParser const& a)->G4VPhysicalVolume * { return a.GetWorldVolume(); }, jlcxx::arg("this"));
     t.method("GetWorldVolume", [](G4GDMLParser const& a, const G4String & arg0)->G4VPhysicalVolume * { return a.GetWorldVolume(arg0); }, jlcxx::arg("this"), jlcxx::arg("setupName"));
     t.method("GetWorldVolume", [](G4GDMLParser const* a)->G4VPhysicalVolume * { return a->GetWorldVolume(); }, jlcxx::arg("this"));
@@ -150,115 +150,115 @@ struct JlG4GDMLParser: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4GDMLAuxListType G4GDMLParser::GetVolumeAuxiliaryInformation(G4LogicalVolume *) (" __HERE__ ")");
     // signature to use in the veto list: G4GDMLAuxListType G4GDMLParser::GetVolumeAuxiliaryInformation(G4LogicalVolume *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:125:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:125:12
     t.method("GetVolumeAuxiliaryInformation", [](G4GDMLParser const& a, G4LogicalVolume * arg0)->G4GDMLAuxListType { return a.GetVolumeAuxiliaryInformation(arg0); }, jlcxx::arg("this"), jlcxx::arg("lvol"));
     t.method("GetVolumeAuxiliaryInformation", [](G4GDMLParser const* a, G4LogicalVolume * arg0)->G4GDMLAuxListType { return a->GetVolumeAuxiliaryInformation(arg0); }, jlcxx::arg("this"), jlcxx::arg("lvol"));
 
     DEBUG_MSG("Adding wrapper for const G4GDMLAuxListType * G4GDMLParser::GetAuxList() (" __HERE__ ")");
     // signature to use in the veto list: const G4GDMLAuxListType * G4GDMLParser::GetAuxList()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:127:37
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:127:37
     t.method("GetAuxList", [](G4GDMLParser const& a)->const G4GDMLAuxListType * { return a.GetAuxList(); }, jlcxx::arg("this"));
     t.method("GetAuxList", [](G4GDMLParser const* a)->const G4GDMLAuxListType * { return a->GetAuxList(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4GDMLParser::AddAuxiliary(G4GDMLAuxStructType) (" __HERE__ ")");
     // signature to use in the veto list: void G4GDMLParser::AddAuxiliary(G4GDMLAuxStructType)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:128:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:128:17
     t.method("AddAuxiliary", [](G4GDMLParser& a, G4GDMLAuxStructType arg0)->void { a.AddAuxiliary(arg0); }, jlcxx::arg("this"), jlcxx::arg("myaux"));
     t.method("AddAuxiliary", [](G4GDMLParser* a, G4GDMLAuxStructType arg0)->void { a->AddAuxiliary(arg0); }, jlcxx::arg("this"), jlcxx::arg("myaux"));
 
     DEBUG_MSG("Adding wrapper for void G4GDMLParser::StripNamePointers() (" __HERE__ ")");
     // signature to use in the veto list: void G4GDMLParser::StripNamePointers()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:129:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:129:17
     t.method("StripNamePointers", [](G4GDMLParser const& a)->void { a.StripNamePointers(); }, jlcxx::arg("this"));
     t.method("StripNamePointers", [](G4GDMLParser const* a)->void { a->StripNamePointers(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4GDMLParser::SetStripFlag(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4GDMLParser::SetStripFlag(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:130:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:130:17
     t.method("SetStripFlag", [](G4GDMLParser& a, G4bool arg0)->void { a.SetStripFlag(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetStripFlag", [](G4GDMLParser* a, G4bool arg0)->void { a->SetStripFlag(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4GDMLParser::SetOverlapCheck(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4GDMLParser::SetOverlapCheck(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:131:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:131:17
     t.method("SetOverlapCheck", [](G4GDMLParser& a, G4bool arg0)->void { a.SetOverlapCheck(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetOverlapCheck", [](G4GDMLParser* a, G4bool arg0)->void { a->SetOverlapCheck(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4GDMLParser::SetRegionExport(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4GDMLParser::SetRegionExport(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:132:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:132:17
     t.method("SetRegionExport", [](G4GDMLParser& a, G4bool arg0)->void { a.SetRegionExport(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetRegionExport", [](G4GDMLParser* a, G4bool arg0)->void { a->SetRegionExport(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4GDMLParser::SetEnergyCutsExport(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4GDMLParser::SetEnergyCutsExport(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:133:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:133:17
     t.method("SetEnergyCutsExport", [](G4GDMLParser& a, G4bool arg0)->void { a.SetEnergyCutsExport(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetEnergyCutsExport", [](G4GDMLParser* a, G4bool arg0)->void { a->SetEnergyCutsExport(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4GDMLParser::SetSDExport(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4GDMLParser::SetSDExport(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:134:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:134:17
     t.method("SetSDExport", [](G4GDMLParser& a, G4bool arg0)->void { a.SetSDExport(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetSDExport", [](G4GDMLParser* a, G4bool arg0)->void { a->SetSDExport(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4GDMLParser::SetReverseSearch(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4GDMLParser::SetReverseSearch(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:135:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:135:17
     t.method("SetReverseSearch", [](G4GDMLParser& a, G4bool arg0)->void { a.SetReverseSearch(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetReverseSearch", [](G4GDMLParser* a, G4bool arg0)->void { a->SetReverseSearch(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4GDMLParser::SetImportSchema(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4GDMLParser::SetImportSchema(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:136:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:136:17
     t.method("SetImportSchema", [](G4GDMLParser& a, const G4String & arg0)->void { a.SetImportSchema(arg0); }, jlcxx::arg("this"), jlcxx::arg("path_and_filename"));
     t.method("SetImportSchema", [](G4GDMLParser* a, const G4String & arg0)->void { a->SetImportSchema(arg0); }, jlcxx::arg("this"), jlcxx::arg("path_and_filename"));
 
     DEBUG_MSG("Adding wrapper for G4int G4GDMLParser::GetMaxExportLevel() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4GDMLParser::GetMaxExportLevel()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:138:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:138:18
     t.method("GetMaxExportLevel", [](G4GDMLParser const& a)->G4int { return a.GetMaxExportLevel(); }, jlcxx::arg("this"));
     t.method("GetMaxExportLevel", [](G4GDMLParser const* a)->G4int { return a->GetMaxExportLevel(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4GDMLParser::SetMaxExportLevel(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4GDMLParser::SetMaxExportLevel(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:139:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:139:17
     t.method("SetMaxExportLevel", [](G4GDMLParser& a, G4int arg0)->void { a.SetMaxExportLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetMaxExportLevel", [](G4GDMLParser* a, G4int arg0)->void { a->SetMaxExportLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4GDMLParser::Clear() (" __HERE__ ")");
     // signature to use in the veto list: void G4GDMLParser::Clear()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:141:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:141:17
     t.method("Clear", [](G4GDMLParser& a)->void { a.Clear(); }, jlcxx::arg("this"));
     t.method("Clear", [](G4GDMLParser* a)->void { a->Clear(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4GDMLParser::AddModule(const G4VPhysicalVolume *const) (" __HERE__ ")");
     // signature to use in the veto list: void G4GDMLParser::AddModule(const G4VPhysicalVolume *const)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:145:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:145:17
     t.method("AddModule", [](G4GDMLParser& a, const G4VPhysicalVolume *const arg0)->void { a.AddModule(arg0); }, jlcxx::arg("this"), jlcxx::arg("physvol"));
     t.method("AddModule", [](G4GDMLParser* a, const G4VPhysicalVolume *const arg0)->void { a->AddModule(arg0); }, jlcxx::arg("this"), jlcxx::arg("physvol"));
 
     DEBUG_MSG("Adding wrapper for void G4GDMLParser::AddModule(const G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4GDMLParser::AddModule(const G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:146:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:146:17
     t.method("AddModule", [](G4GDMLParser& a, const G4int arg0)->void { a.AddModule(arg0); }, jlcxx::arg("this"), jlcxx::arg("depth"));
     t.method("AddModule", [](G4GDMLParser* a, const G4int arg0)->void { a->AddModule(arg0); }, jlcxx::arg("this"), jlcxx::arg("depth"));
 
     DEBUG_MSG("Adding wrapper for void G4GDMLParser::SetAddPointerToName(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4GDMLParser::SetAddPointerToName(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:147:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:147:17
     t.method("SetAddPointerToName", [](G4GDMLParser& a, G4bool arg0)->void { a.SetAddPointerToName(arg0); }, jlcxx::arg("this"), jlcxx::arg("set"));
     t.method("SetAddPointerToName", [](G4GDMLParser* a, G4bool arg0)->void { a->SetAddPointerToName(arg0); }, jlcxx::arg("this"), jlcxx::arg("set"));
 
     DEBUG_MSG("Adding wrapper for void G4GDMLParser::AddVolumeAuxiliary(G4GDMLAuxStructType, const G4LogicalVolume *const) (" __HERE__ ")");
     // signature to use in the veto list: void G4GDMLParser::AddVolumeAuxiliary(G4GDMLAuxStructType, const G4LogicalVolume *const)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:148:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:148:17
     t.method("AddVolumeAuxiliary", [](G4GDMLParser& a, G4GDMLAuxStructType arg0, const G4LogicalVolume *const arg1)->void { a.AddVolumeAuxiliary(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("myaux"), jlcxx::arg("lvol"));
     t.method("AddVolumeAuxiliary", [](G4GDMLParser* a, G4GDMLAuxStructType arg0, const G4LogicalVolume *const arg1)->void { a->AddVolumeAuxiliary(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("myaux"), jlcxx::arg("lvol"));
 
     DEBUG_MSG("Adding wrapper for void G4GDMLParser::SetOutputFileOverwrite(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4GDMLParser::SetOutputFileOverwrite(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLParser.hh:150:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLParser.hh:150:17
     t.method("SetOutputFileOverwrite", [](G4GDMLParser& a, G4bool arg0)->void { a.SetOutputFileOverwrite(arg0); }, jlcxx::arg("this"), jlcxx::arg("flag"));
     t.method("SetOutputFileOverwrite", [](G4GDMLParser* a, G4bool arg0)->void { a->SetOutputFileOverwrite(arg0); }, jlcxx::arg("this"), jlcxx::arg("flag"));
   }

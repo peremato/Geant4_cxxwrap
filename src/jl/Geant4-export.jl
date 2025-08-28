@@ -297,37 +297,36 @@ export ThisWorkerWaitForNextAction, ToBeKept, TotalInternalReflection, TotalVolu
 export TransformPoint, Transmission, TrapSidePlane, Undefined, UpdateMap, UpdateMaterial, UpdateScoringForSubEvent, UpdateTrack
 export UpdateYourself, UseCoupledTransportation, UseGivenVelocity, UseSubEventParallelism, UserDefAngPhi, UserDefAngTheta
 export UserEnergyHisto, UserSteppingAction, VerboseParticleChange, VerboseTrack, VolumeType, Voxelize, WorkerInitialize, WorkerRunEnd
-export WorkerRunStart, WorkerStart, WorkerStop, Write, a, a!, add!, angle, assign, auxList, auxList!, axis, axisAngle, azimAngle, b
-export b!, beta, boost, boostVector, boostX, boostY, boostZ, c, c!, clear, clearAndDestroy, coLinearRapidity, coated, col1
-export col2, col3, col4, colX, colY, colZ, compare, contains, cos2Theta, cosTheta, cross, d, d!, decompose, delta, deltaPhi
-export deltaR, dichroic, dielectric_LUT, dielectric_LUTDAVIS, dielectric_dichroic, dielectric_dielectric, dielectric_metal
-export diff2, direction, distance2, dot, dx, dy, dz, engine, entries, eta, etchedair, etchedlumirrorair, etchedlumirrorglue
-export etchedteflonair, etchedtioair, etchedtyvekair, etchedvm2000air, etchedvm2000glue, eulerAngles, fAlive, fAlongStepDoItProc
-export fAtRestDoItProc, fCutsCouple, fCutsCouple!, fDecay, fElectromagnetic, fExclusivelyForcedProc, fFieldManager, fFieldManager!
-export fGeneral, fGeomBoundary, fHadronic, fKill, fKillTrackAndSecondaries, fMass, fMass!, fMaterial, fMaterial!, fNotDefined
-export fOffset, fOffset!, fOptical, fParallel, fParameterisation, fPhonon, fPhotolepton_hadron, fPostStepDoItProc, fPostpone
-export fPostponeToNextEvent, fScale, fScale!, fSensitiveDetector, fSensitiveDetector!, fSolid, fSolid!, fStopAndKill, fStopButAlive
-export fSubEvent_0, fSubEvent_1, fSubEvent_2, fSubEvent_3, fSubEvent_4, fSubEvent_5, fSubEvent_6, fSubEvent_7, fSubEvent_8
-export fSubEvent_9, fSubEvent_A, fSubEvent_B, fSubEvent_C, fSubEvent_D, fSubEvent_E, fSubEvent_F, fSuspend, fSuspendAndWait
-export fTransportation, fUCN, fUndefined, fUrgent, fUserDefined, fUserDefinedLimit, fWaiting, fWaiting_1, fWaiting_10, fWaiting_2
-export fWaiting_3, fWaiting_4, fWaiting_5, fWaiting_6, fWaiting_7, fWaiting_8, fWaiting_9, fWorldBoundary, fZ, fZ!, fcopyNo
-export fcopyNo!, fdiv!, fire, fireArray, fireBit, fireInt, firsov, flat, flatArray, frot, frot!, gamma, gc_safe_enter
-export gc_safe_leave, getAngleAxis, getAxis, getDecomposition, getDelta, getDirection, getEta, getMasterRandomEngine, getPhi, getPsi
-export getR, getRho, getRotation, getSeed, getSeeds, getState, getTheta, getTranslation, getX, getY, getZ, glisur, ground
-export groundair, groundbackpainted, groundfrontpainted, groundlumirrorair, groundlumirrorglue, groundteflonair, groundtioair
-export groundtyvekair, groundvm2000air, groundvm2000glue, howNear, howOrthogonal, howParallel, idxAll, idxAlongStep, idxAtRest
-export idxPostStep, index, initialize, insert, insertAt, inverse, invert, isActive, isAlongStepDoItIsEnabled, isAtRestDoItIsEnabled
-export isIdentity, isNear, isOrthogonal, isParallel, isPostStepDoItIsEnabled, kAbsorption, kBoundary, kCerenkov, kExternal
-export kInside, kMieHG, kNoProcess, kNormal, kOutside, kParameterised, kPhi, kRadial3D, kRayleigh, kReplica, kRho
-export kScintillation, kStateGas, kStateLiquid, kStateSolid, kStateUndefined, kSurface, kUndefined, kWLS, kWLS2, kXAxis, kYAxis
-export kZAxis, mag, mag2, make_G4String, matrixMultiplication, mult!, name, norm2, ordDefault, ordInActive, ordLast
-export orthogonal, paren, perp, perp2, perpPart, phi, phiX, phiY, phiZ, physicsVector, physicsVector!, polarAngle, polished
-export polishedair, polishedbackpainted, polishedfrontpainted, polishedlumirrorair, polishedlumirrorglue, polishedteflonair
-export polishedtioair, polishedtyvekair, polishedvm2000air, polishedvm2000glue, project, pseudoRapidity, psi, push_back, put, r
-export rapidity, rectify, removeAt, removeLast, rep3x3, rep4x4, rep4x4Symmetric, restoreStatus, rho, rndmSaveThisEvent
-export rndmSaveThisRun, rotate, rotateAxes, rotateUz, rotateX, rotateY, rotateZ, row1, row2, row3, row4, rowX, rowY, rowZ, saveStatus
-export set, setAxis, setCylEta, setCylTheta, setDelta, setEta, setIdentity, setMag, setPerp, setPhi, setPolar, setPsi, setR
-export setREtaPhi, setRThetaPhi, setRho, setRhoPhiEta, setRhoPhiTheta, setRhoPhiZ, setRows, setSeed, setSeeds, setTheta, setX
-export setY, setZ, shoot, shootArray, showStatus, size, std!pair, sub!, theta, thetaX, thetaY, thetaZ, transform, tt, tx
-export tx!, ty, ty!, type, type!, typeDoIt, typeGPIL, tz, tz!, unified, unit, unit!, value, value!, vectorMultiplication, x
-export x_ray, xt, xx, xy, xz, y, yt, yx, yy, yz, z, zt, zx, zy, zz
+export WorkerRunStart, WorkerStart, WorkerStop, Write, a, a!, add!, assign, auxList, auxList!, axis, axisAngle, azimAngle, b, b!, beta
+export boost, boostVector, boostX, boostY, boostZ, c, c!, clear, clearAndDestroy, coLinearRapidity, coated, col1, col2, col3
+export col4, colX, colY, colZ, compare, cos2Theta, cosTheta, cross, d, d!, delta, deltaPhi, deltaR, dichroic, dielectric_LUT
+export dielectric_LUTDAVIS, dielectric_dichroic, dielectric_dielectric, dielectric_metal, diff2, direction, distance2, dot, dx, dy, dz
+export engine, entries, eta, etchedair, etchedlumirrorair, etchedlumirrorglue, etchedteflonair, etchedtioair, etchedtyvekair
+export etchedvm2000air, etchedvm2000glue, eulerAngles, fAlive, fAlongStepDoItProc, fAtRestDoItProc, fCutsCouple, fCutsCouple!, fDecay
+export fElectromagnetic, fExclusivelyForcedProc, fFieldManager, fFieldManager!, fGeneral, fGeomBoundary, fHadronic, fKill
+export fKillTrackAndSecondaries, fMass, fMass!, fMaterial, fMaterial!, fNotDefined, fOffset, fOffset!, fOptical, fParallel, fParameterisation
+export fPhonon, fPhotolepton_hadron, fPostStepDoItProc, fPostpone, fPostponeToNextEvent, fScale, fScale!, fSensitiveDetector
+export fSensitiveDetector!, fSolid, fSolid!, fStopAndKill, fStopButAlive, fSubEvent_0, fSubEvent_1, fSubEvent_2, fSubEvent_3, fSubEvent_4
+export fSubEvent_5, fSubEvent_6, fSubEvent_7, fSubEvent_8, fSubEvent_9, fSubEvent_A, fSubEvent_B, fSubEvent_C, fSubEvent_D
+export fSubEvent_E, fSubEvent_F, fSuspend, fSuspendAndWait, fTransportation, fUCN, fUndefined, fUrgent, fUserDefined
+export fUserDefinedLimit, fWaiting, fWaiting_1, fWaiting_10, fWaiting_2, fWaiting_3, fWaiting_4, fWaiting_5, fWaiting_6, fWaiting_7
+export fWaiting_8, fWaiting_9, fWorldBoundary, fZ, fZ!, fcopyNo, fcopyNo!, fdiv!, fire, fireArray, fireBit, fireInt, firsov, flat
+export flatArray, frot, frot!, gamma, gc_safe_enter, gc_safe_leave, getAngleAxis, getAxis, getDecomposition, getDelta
+export getDirection, getEta, getMasterRandomEngine, getPhi, getPsi, getR, getRho, getRotation, getSeed, getSeeds, getState, getTheta
+export getTranslation, getX, getY, getZ, glisur, ground, groundair, groundbackpainted, groundfrontpainted, groundlumirrorair
+export groundlumirrorglue, groundteflonair, groundtioair, groundtyvekair, groundvm2000air, groundvm2000glue, howNear, howOrthogonal
+export howParallel, idxAll, idxAlongStep, idxAtRest, idxPostStep, index, initialize, insert, insertAt, inverse, invert, isActive
+export isAlongStepDoItIsEnabled, isAtRestDoItIsEnabled, isIdentity, isNear, isOrthogonal, isParallel, isPostStepDoItIsEnabled, kAbsorption
+export kBoundary, kCerenkov, kExternal, kInside, kMieHG, kNoProcess, kNormal, kOutside, kParameterised, kPhi, kRadial3D
+export kRayleigh, kReplica, kRho, kScintillation, kStateGas, kStateLiquid, kStateSolid, kStateUndefined, kSurface, kUndefined
+export kWLS, kWLS2, kXAxis, kYAxis, kZAxis, mag, mag2, make_G4String, matrixMultiplication, mult!, name, norm2, ordDefault
+export ordInActive, ordLast, orthogonal, paren, perp, perp2, perpPart, phi, phiX, phiY, phiZ, physicsVector, physicsVector!
+export polarAngle, polished, polishedair, polishedbackpainted, polishedfrontpainted, polishedlumirrorair, polishedlumirrorglue
+export polishedteflonair, polishedtioair, polishedtyvekair, polishedvm2000air, polishedvm2000glue, project, pseudoRapidity, psi
+export push_back, put, r, rapidity, rectify, removeAt, removeLast, rep3x3, rep4x4, rep4x4Symmetric, restoreStatus, rho
+export rndmSaveThisEvent, rndmSaveThisRun, rotate, rotateAxes, rotateUz, rotateX, rotateY, rotateZ, row1, row2, row3, row4, rowX, rowY
+export rowZ, saveStatus, set, setAxis, setCylEta, setCylTheta, setDelta, setEta, setIdentity, setMag, setPerp, setPhi
+export setPolar, setPsi, setR, setREtaPhi, setRThetaPhi, setRho, setRhoPhiEta, setRhoPhiTheta, setRhoPhiZ, setRows, setSeed
+export setSeeds, setTheta, setX, setY, setZ, shoot, shootArray, showStatus, std!pair, sub!, theta, thetaX, thetaY, thetaZ
+export transform, tt, tx, tx!, ty, ty!, type, type!, typeDoIt, typeGPIL, tz, tz!, unified, unit, unit!, value, value!
+export vectorMultiplication, x, x_ray, xt, xx, xy, xz, y, yt, yx, yy, yz, z, zt, zx, zy, zz

@@ -18,7 +18,7 @@ struct JlHepGeom_Reflect3D: public Wrapper {
 
   JlHepGeom_Reflect3D(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type HepGeom::Reflect3D (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:618:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:618:9
     jlcxx::TypeWrapper<HepGeom::Reflect3D>  t = jlModule.add_type<HepGeom::Reflect3D>("HepGeom!Reflect3D",
       jlcxx::julia_base_type<HepGeom::Transform3D>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<HepGeom::Reflect3D>>(new jlcxx::TypeWrapper<HepGeom::Reflect3D>(jlModule, t));
@@ -30,12 +30,12 @@ struct JlHepGeom_Reflect3D: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void HepGeom::Reflect3D::Reflect3D(double, double, double, double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:634:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:634:5
     t.constructor<double, double, double, double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("a"), jlcxx::arg("b"), jlcxx::arg("c"), jlcxx::arg("d")    );
 
 
     DEBUG_MSG("Adding wrapper for void HepGeom::Reflect3D::Reflect3D(const HepGeom::Normal3D<double> &, const HepGeom::Point3D<double> &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:638:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:638:12
     t.constructor<const HepGeom::Normal3D<double> &, const HepGeom::Point3D<double> &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("normal"), jlcxx::arg("point")    );
   }
 

@@ -17,7 +17,7 @@ struct JlG4UserStackingAction: public Wrapper {
 
   JlG4UserStackingAction(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4UserStackingAction (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserStackingAction.hh:44:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserStackingAction.hh:44:7
     jlcxx::TypeWrapper<G4UserStackingAction>  t = jlModule.add_type<G4UserStackingAction>("G4UserStackingAction");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4UserStackingAction>>(new jlcxx::TypeWrapper<G4UserStackingAction>(jlModule, t));
   }

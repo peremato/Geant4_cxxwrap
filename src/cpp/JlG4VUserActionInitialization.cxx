@@ -17,7 +17,7 @@ struct JlG4VUserActionInitialization: public Wrapper {
 
   JlG4VUserActionInitialization(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4VUserActionInitialization (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserActionInitialization.hh:58:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserActionInitialization.hh:58:7
     jlcxx::TypeWrapper<G4VUserActionInitialization>  t = jlModule.add_type<G4VUserActionInitialization>("G4VUserActionInitialization");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4VUserActionInitialization>>(new jlcxx::TypeWrapper<G4VUserActionInitialization>(jlModule, t));
   }
@@ -27,19 +27,19 @@ struct JlG4VUserActionInitialization: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4VUserActionInitialization::Build() (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserActionInitialization::Build()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserActionInitialization.hh:66:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserActionInitialization.hh:66:18
     t.method("Build", [](G4VUserActionInitialization const& a)->void { a.Build(); }, jlcxx::arg("this"));
     t.method("Build", [](G4VUserActionInitialization const* a)->void { a->Build(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserActionInitialization::BuildForMaster() (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserActionInitialization::BuildForMaster()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserActionInitialization.hh:73:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserActionInitialization.hh:73:18
     t.method("BuildForMaster", [](G4VUserActionInitialization const& a)->void { a.BuildForMaster(); }, jlcxx::arg("this"));
     t.method("BuildForMaster", [](G4VUserActionInitialization const* a)->void { a->BuildForMaster(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4VSteppingVerbose * G4VUserActionInitialization::InitializeSteppingVerbose() (" __HERE__ ")");
     // signature to use in the veto list: G4VSteppingVerbose * G4VUserActionInitialization::InitializeSteppingVerbose()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserActionInitialization.hh:81:33
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserActionInitialization.hh:81:33
     t.method("InitializeSteppingVerbose", [](G4VUserActionInitialization const& a)->G4VSteppingVerbose * { return a.InitializeSteppingVerbose(); }, jlcxx::arg("this"));
     t.method("InitializeSteppingVerbose", [](G4VUserActionInitialization const* a)->G4VSteppingVerbose * { return a->InitializeSteppingVerbose(); }, jlcxx::arg("this"));
   }

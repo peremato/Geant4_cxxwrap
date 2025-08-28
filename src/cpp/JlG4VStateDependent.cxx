@@ -17,7 +17,7 @@ struct JlG4VStateDependent: public Wrapper {
 
   JlG4VStateDependent(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4VStateDependent (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VStateDependent.hh:46:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VStateDependent.hh:46:7
     jlcxx::TypeWrapper<G4VStateDependent>  t = jlModule.add_type<G4VStateDependent>("G4VStateDependent");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4VStateDependent>>(new jlcxx::TypeWrapper<G4VStateDependent>(jlModule, t));
   }
@@ -29,13 +29,13 @@ struct JlG4VStateDependent: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4bool G4VStateDependent::operator==(const G4VStateDependent &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VStateDependent::operator==(const G4VStateDependent &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VStateDependent.hh:51:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VStateDependent.hh:51:10
     t.method("==", [](G4VStateDependent const& a, const G4VStateDependent & arg0)->G4bool { return a.operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
     t.method("==", [](G4VStateDependent const* a, const G4VStateDependent & arg0)->G4bool { return a->operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4VStateDependent::operator!=(const G4VStateDependent &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VStateDependent::operator!=(const G4VStateDependent &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VStateDependent.hh:52:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VStateDependent.hh:52:10
     t.method("!=", [](G4VStateDependent const& a, const G4VStateDependent & arg0)->G4bool { return a.operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
     t.method("!=", [](G4VStateDependent const* a, const G4VStateDependent & arg0)->G4bool { return a->operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
 
@@ -43,19 +43,19 @@ struct JlG4VStateDependent: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4bool G4VStateDependent::Notify(G4ApplicationState) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VStateDependent::Notify(G4ApplicationState)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VStateDependent.hh:54:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VStateDependent.hh:54:18
     t.method("Notify", [](G4VStateDependent& a, G4ApplicationState arg0)->G4bool { return a.Notify(arg0); }, jlcxx::arg("this"), jlcxx::arg("requestedState"));
     t.method("Notify", [](G4VStateDependent* a, G4ApplicationState arg0)->G4bool { return a->Notify(arg0); }, jlcxx::arg("this"), jlcxx::arg("requestedState"));
 
     DEBUG_MSG("Adding wrapper for void G4VStateDependent::NotifyDeletion(const G4Event *) (" __HERE__ ")");
     // signature to use in the veto list: void G4VStateDependent::NotifyDeletion(const G4Event *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VStateDependent.hh:61:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VStateDependent.hh:61:16
     t.method("NotifyDeletion", [](G4VStateDependent& a, const G4Event * arg0)->void { a.NotifyDeletion(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("NotifyDeletion", [](G4VStateDependent* a, const G4Event * arg0)->void { a->NotifyDeletion(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4VStateDependent::NotifyDeletion(const G4Run *) (" __HERE__ ")");
     // signature to use in the veto list: void G4VStateDependent::NotifyDeletion(const G4Run *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VStateDependent.hh:62:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VStateDependent.hh:62:16
     t.method("NotifyDeletion", [](G4VStateDependent& a, const G4Run * arg0)->void { a.NotifyDeletion(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("NotifyDeletion", [](G4VStateDependent* a, const G4Run * arg0)->void { a->NotifyDeletion(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
   }

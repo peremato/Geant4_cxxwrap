@@ -17,7 +17,7 @@ struct JlCLHEP_HepBoost: public Wrapper {
 
   JlCLHEP_HepBoost(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type CLHEP::HepBoost (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:38:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:38:7
     jlcxx::TypeWrapper<CLHEP::HepBoost>  t = jlModule.add_type<CLHEP::HepBoost>("CLHEP!HepBoost");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<CLHEP::HepBoost>>(new jlcxx::TypeWrapper<CLHEP::HepBoost>(jlModule, t));
   }
@@ -28,344 +28,344 @@ struct JlCLHEP_HepBoost: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void CLHEP::HepBoost::HepBoost(const CLHEP::HepBoost &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:47:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:47:10
     t.constructor<const CLHEP::HepBoost &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("m")    );
 
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepBoost & CLHEP::HepBoost::operator=(const CLHEP::HepBoost &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepBoost & CLHEP::HepBoost::operator=(const CLHEP::HepBoost &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:51:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:51:21
     t.method("assign", [](CLHEP::HepBoost& a, const CLHEP::HepBoost & arg0)->CLHEP::HepBoost & { return a.operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("m"));
     t.method("assign", [](CLHEP::HepBoost* a, const CLHEP::HepBoost & arg0)->CLHEP::HepBoost & { return a->operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("m"));
 
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepBoost & CLHEP::HepBoost::set(double, double, double) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepBoost & CLHEP::HepBoost::set(double, double, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:55:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:55:21
     t.method("set", [](CLHEP::HepBoost& a, double arg0, double arg1, double arg2)->CLHEP::HepBoost & { return a.set(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("betaX"), jlcxx::arg("betaY"), jlcxx::arg("betaZ"));
     t.method("set", [](CLHEP::HepBoost* a, double arg0, double arg1, double arg2)->CLHEP::HepBoost & { return a->set(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("betaX"), jlcxx::arg("betaY"), jlcxx::arg("betaZ"));
 
 
     DEBUG_MSG("Adding wrapper for void CLHEP::HepBoost::HepBoost(double, double, double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:56:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:56:10
     t.constructor<double, double, double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("betaX"), jlcxx::arg("betaY"), jlcxx::arg("betaZ")    );
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepBoost & CLHEP::HepBoost::set(const CLHEP::HepRep4x4Symmetric &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepBoost & CLHEP::HepBoost::set(const CLHEP::HepRep4x4Symmetric &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:59:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:59:21
     t.method("set", [](CLHEP::HepBoost& a, const CLHEP::HepRep4x4Symmetric & arg0)->CLHEP::HepBoost & { return a.set(arg0); }, jlcxx::arg("this"), jlcxx::arg("m"));
     t.method("set", [](CLHEP::HepBoost* a, const CLHEP::HepRep4x4Symmetric & arg0)->CLHEP::HepBoost & { return a->set(arg0); }, jlcxx::arg("this"), jlcxx::arg("m"));
 
 
     DEBUG_MSG("Adding wrapper for void CLHEP::HepBoost::HepBoost(const CLHEP::HepRep4x4Symmetric &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:60:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:60:10
     t.constructor<const CLHEP::HepRep4x4Symmetric &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("m")    );
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepBoost & CLHEP::HepBoost::set(CLHEP::Hep3Vector, double) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepBoost & CLHEP::HepBoost::set(CLHEP::Hep3Vector, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:63:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:63:21
     t.method("set", [](CLHEP::HepBoost& a, CLHEP::Hep3Vector arg0, double arg1)->CLHEP::HepBoost & { return a.set(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("direction"), jlcxx::arg("beta"));
     t.method("set", [](CLHEP::HepBoost* a, CLHEP::Hep3Vector arg0, double arg1)->CLHEP::HepBoost & { return a->set(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("direction"), jlcxx::arg("beta"));
 
 
     DEBUG_MSG("Adding wrapper for void CLHEP::HepBoost::HepBoost(CLHEP::Hep3Vector, double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:64:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:64:10
     t.constructor<CLHEP::Hep3Vector, double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("direction"), jlcxx::arg("beta")    );
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepBoost & CLHEP::HepBoost::set(const CLHEP::Hep3Vector &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepBoost & CLHEP::HepBoost::set(const CLHEP::Hep3Vector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:67:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:67:21
     t.method("set", [](CLHEP::HepBoost& a, const CLHEP::Hep3Vector & arg0)->CLHEP::HepBoost & { return a.set(arg0); }, jlcxx::arg("this"), jlcxx::arg("boost"));
     t.method("set", [](CLHEP::HepBoost* a, const CLHEP::Hep3Vector & arg0)->CLHEP::HepBoost & { return a->set(arg0); }, jlcxx::arg("this"), jlcxx::arg("boost"));
 
 
     DEBUG_MSG("Adding wrapper for void CLHEP::HepBoost::HepBoost(const CLHEP::Hep3Vector &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:68:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:68:10
     t.constructor<const CLHEP::Hep3Vector &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("boost")    );
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepBoost & CLHEP::HepBoost::set(const CLHEP::HepBoostX &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepBoost & CLHEP::HepBoost::set(const CLHEP::HepBoostX &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:71:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:71:21
     t.method("set", [](CLHEP::HepBoost& a, const CLHEP::HepBoostX & arg0)->CLHEP::HepBoost & { return a.set(arg0); }, jlcxx::arg("this"), jlcxx::arg("boost"));
     t.method("set", [](CLHEP::HepBoost* a, const CLHEP::HepBoostX & arg0)->CLHEP::HepBoost & { return a->set(arg0); }, jlcxx::arg("this"), jlcxx::arg("boost"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepBoost & CLHEP::HepBoost::set(const CLHEP::HepBoostY &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepBoost & CLHEP::HepBoost::set(const CLHEP::HepBoostY &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:72:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:72:21
     t.method("set", [](CLHEP::HepBoost& a, const CLHEP::HepBoostY & arg0)->CLHEP::HepBoost & { return a.set(arg0); }, jlcxx::arg("this"), jlcxx::arg("boost"));
     t.method("set", [](CLHEP::HepBoost* a, const CLHEP::HepBoostY & arg0)->CLHEP::HepBoost & { return a->set(arg0); }, jlcxx::arg("this"), jlcxx::arg("boost"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepBoost & CLHEP::HepBoost::set(const CLHEP::HepBoostZ &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepBoost & CLHEP::HepBoost::set(const CLHEP::HepBoostZ &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:73:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:73:21
     t.method("set", [](CLHEP::HepBoost& a, const CLHEP::HepBoostZ & arg0)->CLHEP::HepBoost & { return a.set(arg0); }, jlcxx::arg("this"), jlcxx::arg("boost"));
     t.method("set", [](CLHEP::HepBoost* a, const CLHEP::HepBoostZ & arg0)->CLHEP::HepBoost & { return a->set(arg0); }, jlcxx::arg("this"), jlcxx::arg("boost"));
 
 
     DEBUG_MSG("Adding wrapper for void CLHEP::HepBoost::HepBoost(const CLHEP::HepBoostX &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:74:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:74:10
     t.constructor<const CLHEP::HepBoostX &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("boost")    );
 
 
     DEBUG_MSG("Adding wrapper for void CLHEP::HepBoost::HepBoost(const CLHEP::HepBoostY &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:75:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:75:10
     t.constructor<const CLHEP::HepBoostY &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("boost")    );
 
 
     DEBUG_MSG("Adding wrapper for void CLHEP::HepBoost::HepBoost(const CLHEP::HepBoostZ &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:76:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:76:10
     t.constructor<const CLHEP::HepBoostZ &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("boost")    );
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::beta() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::beta()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:80:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:80:18
     t.method("beta", [](CLHEP::HepBoost const& a)->double { return a.beta(); }, jlcxx::arg("this"));
     t.method("beta", [](CLHEP::HepBoost const* a)->double { return a->beta(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::gamma() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::gamma()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:81:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:81:18
     t.method("gamma", [](CLHEP::HepBoost const& a)->double { return a.gamma(); }, jlcxx::arg("this"));
     t.method("gamma", [](CLHEP::HepBoost const* a)->double { return a->gamma(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::Hep3Vector CLHEP::HepBoost::boostVector() (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::Hep3Vector CLHEP::HepBoost::boostVector()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:82:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:82:21
     t.method("boostVector", [](CLHEP::HepBoost const& a)->CLHEP::Hep3Vector { return a.boostVector(); }, jlcxx::arg("this"));
     t.method("boostVector", [](CLHEP::HepBoost const* a)->CLHEP::Hep3Vector { return a->boostVector(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::Hep3Vector CLHEP::HepBoost::getDirection() (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::Hep3Vector CLHEP::HepBoost::getDirection()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:83:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:83:21
     t.method("getDirection", [](CLHEP::HepBoost const& a)->CLHEP::Hep3Vector { return a.getDirection(); }, jlcxx::arg("this"));
     t.method("getDirection", [](CLHEP::HepBoost const* a)->CLHEP::Hep3Vector { return a->getDirection(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::Hep3Vector CLHEP::HepBoost::direction() (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::Hep3Vector CLHEP::HepBoost::direction()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:84:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:84:21
     t.method("direction", [](CLHEP::HepBoost const& a)->CLHEP::Hep3Vector { return a.direction(); }, jlcxx::arg("this"));
     t.method("direction", [](CLHEP::HepBoost const* a)->CLHEP::Hep3Vector { return a->direction(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::xx() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::xx()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:86:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:86:17
     t.method("xx", [](CLHEP::HepBoost const& a)->double { return a.xx(); }, jlcxx::arg("this"));
     t.method("xx", [](CLHEP::HepBoost const* a)->double { return a->xx(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::xy() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::xy()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:87:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:87:17
     t.method("xy", [](CLHEP::HepBoost const& a)->double { return a.xy(); }, jlcxx::arg("this"));
     t.method("xy", [](CLHEP::HepBoost const* a)->double { return a->xy(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::xz() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::xz()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:88:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:88:17
     t.method("xz", [](CLHEP::HepBoost const& a)->double { return a.xz(); }, jlcxx::arg("this"));
     t.method("xz", [](CLHEP::HepBoost const* a)->double { return a->xz(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::xt() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::xt()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:89:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:89:17
     t.method("xt", [](CLHEP::HepBoost const& a)->double { return a.xt(); }, jlcxx::arg("this"));
     t.method("xt", [](CLHEP::HepBoost const* a)->double { return a->xt(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::yx() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::yx()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:90:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:90:17
     t.method("yx", [](CLHEP::HepBoost const& a)->double { return a.yx(); }, jlcxx::arg("this"));
     t.method("yx", [](CLHEP::HepBoost const* a)->double { return a->yx(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::yy() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::yy()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:91:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:91:17
     t.method("yy", [](CLHEP::HepBoost const& a)->double { return a.yy(); }, jlcxx::arg("this"));
     t.method("yy", [](CLHEP::HepBoost const* a)->double { return a->yy(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::yz() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::yz()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:92:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:92:17
     t.method("yz", [](CLHEP::HepBoost const& a)->double { return a.yz(); }, jlcxx::arg("this"));
     t.method("yz", [](CLHEP::HepBoost const* a)->double { return a->yz(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::yt() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::yt()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:93:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:93:17
     t.method("yt", [](CLHEP::HepBoost const& a)->double { return a.yt(); }, jlcxx::arg("this"));
     t.method("yt", [](CLHEP::HepBoost const* a)->double { return a->yt(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::zx() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::zx()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:94:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:94:17
     t.method("zx", [](CLHEP::HepBoost const& a)->double { return a.zx(); }, jlcxx::arg("this"));
     t.method("zx", [](CLHEP::HepBoost const* a)->double { return a->zx(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::zy() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::zy()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:95:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:95:17
     t.method("zy", [](CLHEP::HepBoost const& a)->double { return a.zy(); }, jlcxx::arg("this"));
     t.method("zy", [](CLHEP::HepBoost const* a)->double { return a->zy(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::zz() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::zz()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:96:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:96:17
     t.method("zz", [](CLHEP::HepBoost const& a)->double { return a.zz(); }, jlcxx::arg("this"));
     t.method("zz", [](CLHEP::HepBoost const* a)->double { return a->zz(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::zt() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::zt()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:97:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:97:17
     t.method("zt", [](CLHEP::HepBoost const& a)->double { return a.zt(); }, jlcxx::arg("this"));
     t.method("zt", [](CLHEP::HepBoost const* a)->double { return a->zt(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::tx() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::tx()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:98:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:98:17
     t.method("tx", [](CLHEP::HepBoost const& a)->double { return a.tx(); }, jlcxx::arg("this"));
     t.method("tx", [](CLHEP::HepBoost const* a)->double { return a->tx(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::ty() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::ty()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:99:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:99:17
     t.method("ty", [](CLHEP::HepBoost const& a)->double { return a.ty(); }, jlcxx::arg("this"));
     t.method("ty", [](CLHEP::HepBoost const* a)->double { return a->ty(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::tz() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::tz()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:100:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:100:17
     t.method("tz", [](CLHEP::HepBoost const& a)->double { return a.tz(); }, jlcxx::arg("this"));
     t.method("tz", [](CLHEP::HepBoost const* a)->double { return a->tz(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::tt() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::tt()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:101:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:101:17
     t.method("tt", [](CLHEP::HepBoost const& a)->double { return a.tt(); }, jlcxx::arg("this"));
     t.method("tt", [](CLHEP::HepBoost const* a)->double { return a->tt(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepLorentzVector CLHEP::HepBoost::col1() (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepLorentzVector CLHEP::HepBoost::col1()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:104:27
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:104:27
     t.method("col1", [](CLHEP::HepBoost const& a)->CLHEP::HepLorentzVector { return a.col1(); }, jlcxx::arg("this"));
     t.method("col1", [](CLHEP::HepBoost const* a)->CLHEP::HepLorentzVector { return a->col1(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepLorentzVector CLHEP::HepBoost::col2() (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepLorentzVector CLHEP::HepBoost::col2()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:105:27
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:105:27
     t.method("col2", [](CLHEP::HepBoost const& a)->CLHEP::HepLorentzVector { return a.col2(); }, jlcxx::arg("this"));
     t.method("col2", [](CLHEP::HepBoost const* a)->CLHEP::HepLorentzVector { return a->col2(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepLorentzVector CLHEP::HepBoost::col3() (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepLorentzVector CLHEP::HepBoost::col3()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:106:27
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:106:27
     t.method("col3", [](CLHEP::HepBoost const& a)->CLHEP::HepLorentzVector { return a.col3(); }, jlcxx::arg("this"));
     t.method("col3", [](CLHEP::HepBoost const* a)->CLHEP::HepLorentzVector { return a->col3(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepLorentzVector CLHEP::HepBoost::col4() (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepLorentzVector CLHEP::HepBoost::col4()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:107:27
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:107:27
     t.method("col4", [](CLHEP::HepBoost const& a)->CLHEP::HepLorentzVector { return a.col4(); }, jlcxx::arg("this"));
     t.method("col4", [](CLHEP::HepBoost const* a)->CLHEP::HepLorentzVector { return a->col4(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepLorentzVector CLHEP::HepBoost::row1() (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepLorentzVector CLHEP::HepBoost::row1()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:110:27
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:110:27
     t.method("row1", [](CLHEP::HepBoost const& a)->CLHEP::HepLorentzVector { return a.row1(); }, jlcxx::arg("this"));
     t.method("row1", [](CLHEP::HepBoost const* a)->CLHEP::HepLorentzVector { return a->row1(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepLorentzVector CLHEP::HepBoost::row2() (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepLorentzVector CLHEP::HepBoost::row2()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:111:27
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:111:27
     t.method("row2", [](CLHEP::HepBoost const& a)->CLHEP::HepLorentzVector { return a.row2(); }, jlcxx::arg("this"));
     t.method("row2", [](CLHEP::HepBoost const* a)->CLHEP::HepLorentzVector { return a->row2(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepLorentzVector CLHEP::HepBoost::row3() (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepLorentzVector CLHEP::HepBoost::row3()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:112:27
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:112:27
     t.method("row3", [](CLHEP::HepBoost const& a)->CLHEP::HepLorentzVector { return a.row3(); }, jlcxx::arg("this"));
     t.method("row3", [](CLHEP::HepBoost const* a)->CLHEP::HepLorentzVector { return a->row3(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepLorentzVector CLHEP::HepBoost::row4() (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepLorentzVector CLHEP::HepBoost::row4()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:113:27
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:113:27
     t.method("row4", [](CLHEP::HepBoost const& a)->CLHEP::HepLorentzVector { return a.row4(); }, jlcxx::arg("this"));
     t.method("row4", [](CLHEP::HepBoost const* a)->CLHEP::HepLorentzVector { return a->row4(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepRep4x4 CLHEP::HepBoost::rep4x4() (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepRep4x4 CLHEP::HepBoost::rep4x4()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:116:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:116:20
     t.method("rep4x4", [](CLHEP::HepBoost const& a)->CLHEP::HepRep4x4 { return a.rep4x4(); }, jlcxx::arg("this"));
     t.method("rep4x4", [](CLHEP::HepBoost const* a)->CLHEP::HepRep4x4 { return a->rep4x4(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepRep4x4Symmetric CLHEP::HepBoost::rep4x4Symmetric() (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepRep4x4Symmetric CLHEP::HepBoost::rep4x4Symmetric()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:119:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:119:29
     t.method("rep4x4Symmetric", [](CLHEP::HepBoost const& a)->CLHEP::HepRep4x4Symmetric { return a.rep4x4Symmetric(); }, jlcxx::arg("this"));
     t.method("rep4x4Symmetric", [](CLHEP::HepBoost const* a)->CLHEP::HepRep4x4Symmetric { return a->rep4x4Symmetric(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void CLHEP::HepBoost::decompose(CLHEP::HepRotation &, CLHEP::HepBoost &) (" __HERE__ ")");
     // signature to use in the veto list: void CLHEP::HepBoost::decompose(CLHEP::HepRotation &, CLHEP::HepBoost &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:124:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:124:8
     t.method("decompose", [](CLHEP::HepBoost const& a, CLHEP::HepRotation & arg0, CLHEP::HepBoost & arg1)->void { a.decompose(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("rotation"), jlcxx::arg("boost"));
     t.method("decompose", [](CLHEP::HepBoost const* a, CLHEP::HepRotation & arg0, CLHEP::HepBoost & arg1)->void { a->decompose(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("rotation"), jlcxx::arg("boost"));
 
     DEBUG_MSG("Adding wrapper for void CLHEP::HepBoost::decompose(CLHEP::HepAxisAngle &, CLHEP::Hep3Vector &) (" __HERE__ ")");
     // signature to use in the veto list: void CLHEP::HepBoost::decompose(CLHEP::HepAxisAngle &, CLHEP::Hep3Vector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:125:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:125:8
     t.method("decompose", [](CLHEP::HepBoost const& a, CLHEP::HepAxisAngle & arg0, CLHEP::Hep3Vector & arg1)->void { a.decompose(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("rotation"), jlcxx::arg("boost"));
     t.method("decompose", [](CLHEP::HepBoost const* a, CLHEP::HepAxisAngle & arg0, CLHEP::Hep3Vector & arg1)->void { a->decompose(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("rotation"), jlcxx::arg("boost"));
 
     DEBUG_MSG("Adding wrapper for void CLHEP::HepBoost::decompose(CLHEP::HepBoost &, CLHEP::HepRotation &) (" __HERE__ ")");
     // signature to use in the veto list: void CLHEP::HepBoost::decompose(CLHEP::HepBoost &, CLHEP::HepRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:128:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:128:8
     t.method("decompose", [](CLHEP::HepBoost const& a, CLHEP::HepBoost & arg0, CLHEP::HepRotation & arg1)->void { a.decompose(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("boost"), jlcxx::arg("rotation"));
     t.method("decompose", [](CLHEP::HepBoost const* a, CLHEP::HepBoost & arg0, CLHEP::HepRotation & arg1)->void { a->decompose(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("boost"), jlcxx::arg("rotation"));
 
     DEBUG_MSG("Adding wrapper for void CLHEP::HepBoost::decompose(CLHEP::Hep3Vector &, CLHEP::HepAxisAngle &) (" __HERE__ ")");
     // signature to use in the veto list: void CLHEP::HepBoost::decompose(CLHEP::Hep3Vector &, CLHEP::HepAxisAngle &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:129:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:129:8
     t.method("decompose", [](CLHEP::HepBoost const& a, CLHEP::Hep3Vector & arg0, CLHEP::HepAxisAngle & arg1)->void { a.decompose(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("boost"), jlcxx::arg("rotation"));
     t.method("decompose", [](CLHEP::HepBoost const* a, CLHEP::Hep3Vector & arg0, CLHEP::HepAxisAngle & arg1)->void { a->decompose(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("boost"), jlcxx::arg("rotation"));
 
     DEBUG_MSG("Adding wrapper for int CLHEP::HepBoost::compare(const CLHEP::HepBoost &) (" __HERE__ ")");
     // signature to use in the veto list: int CLHEP::HepBoost::compare(const CLHEP::HepBoost &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:134:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:134:14
     t.method("compare", [](CLHEP::HepBoost const& a, const CLHEP::HepBoost & arg0)->int { return a.compare(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
     t.method("compare", [](CLHEP::HepBoost const* a, const CLHEP::HepBoost & arg0)->int { return a->compare(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
     module_.set_override_module(jl_base_module);
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::HepBoost::operator==(const CLHEP::HepBoost &) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::HepBoost::operator==(const CLHEP::HepBoost &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:138:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:138:15
     t.method("==", [](CLHEP::HepBoost const& a, const CLHEP::HepBoost & arg0)->bool { return a.operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
     t.method("==", [](CLHEP::HepBoost const* a, const CLHEP::HepBoost & arg0)->bool { return a->operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::HepBoost::operator!=(const CLHEP::HepBoost &) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::HepBoost::operator!=(const CLHEP::HepBoost &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:139:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:139:15
     t.method("!=", [](CLHEP::HepBoost const& a, const CLHEP::HepBoost & arg0)->bool { return a.operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
     t.method("!=", [](CLHEP::HepBoost const* a, const CLHEP::HepBoost & arg0)->bool { return a->operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::HepBoost::operator<=(const CLHEP::HepBoost &) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::HepBoost::operator<=(const CLHEP::HepBoost &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:140:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:140:15
     t.method("<=", [](CLHEP::HepBoost const& a, const CLHEP::HepBoost & arg0)->bool { return a.operator<=(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
     t.method("<=", [](CLHEP::HepBoost const* a, const CLHEP::HepBoost & arg0)->bool { return a->operator<=(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::HepBoost::operator>=(const CLHEP::HepBoost &) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::HepBoost::operator>=(const CLHEP::HepBoost &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:141:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:141:15
     t.method(">=", [](CLHEP::HepBoost const& a, const CLHEP::HepBoost & arg0)->bool { return a.operator>=(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
     t.method(">=", [](CLHEP::HepBoost const* a, const CLHEP::HepBoost & arg0)->bool { return a->operator>=(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::HepBoost::operator<(const CLHEP::HepBoost &) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::HepBoost::operator<(const CLHEP::HepBoost &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:142:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:142:15
     t.method("<", [](CLHEP::HepBoost const& a, const CLHEP::HepBoost & arg0)->bool { return a.operator<(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
     t.method("<", [](CLHEP::HepBoost const* a, const CLHEP::HepBoost & arg0)->bool { return a->operator<(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::HepBoost::operator>(const CLHEP::HepBoost &) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::HepBoost::operator>(const CLHEP::HepBoost &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:143:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:143:15
     t.method(">", [](CLHEP::HepBoost const& a, const CLHEP::HepBoost & arg0)->bool { return a.operator>(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
     t.method(">", [](CLHEP::HepBoost const* a, const CLHEP::HepBoost & arg0)->bool { return a->operator>(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
 
@@ -373,55 +373,55 @@ struct JlCLHEP_HepBoost: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::HepBoost::isIdentity() (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::HepBoost::isIdentity()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:146:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:146:15
     t.method("isIdentity", [](CLHEP::HepBoost const& a)->bool { return a.isIdentity(); }, jlcxx::arg("this"));
     t.method("isIdentity", [](CLHEP::HepBoost const* a)->bool { return a->isIdentity(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::distance2(const CLHEP::HepBoost &) (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::distance2(const CLHEP::HepBoost &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:149:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:149:18
     t.method("distance2", [](CLHEP::HepBoost const& a, const CLHEP::HepBoost & arg0)->double { return a.distance2(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
     t.method("distance2", [](CLHEP::HepBoost const* a, const CLHEP::HepBoost & arg0)->double { return a->distance2(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::distance2(const CLHEP::HepBoostX &) (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::distance2(const CLHEP::HepBoostX &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:150:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:150:18
     t.method("distance2", [](CLHEP::HepBoost const& a, const CLHEP::HepBoostX & arg0)->double { return a.distance2(arg0); }, jlcxx::arg("this"), jlcxx::arg("bx"));
     t.method("distance2", [](CLHEP::HepBoost const* a, const CLHEP::HepBoostX & arg0)->double { return a->distance2(arg0); }, jlcxx::arg("this"), jlcxx::arg("bx"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::distance2(const CLHEP::HepBoostY &) (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::distance2(const CLHEP::HepBoostY &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:151:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:151:18
     t.method("distance2", [](CLHEP::HepBoost const& a, const CLHEP::HepBoostY & arg0)->double { return a.distance2(arg0); }, jlcxx::arg("this"), jlcxx::arg("by"));
     t.method("distance2", [](CLHEP::HepBoost const* a, const CLHEP::HepBoostY & arg0)->double { return a->distance2(arg0); }, jlcxx::arg("this"), jlcxx::arg("by"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::distance2(const CLHEP::HepBoostZ &) (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::distance2(const CLHEP::HepBoostZ &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:152:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:152:18
     t.method("distance2", [](CLHEP::HepBoost const& a, const CLHEP::HepBoostZ & arg0)->double { return a.distance2(arg0); }, jlcxx::arg("this"), jlcxx::arg("bz"));
     t.method("distance2", [](CLHEP::HepBoost const* a, const CLHEP::HepBoostZ & arg0)->double { return a->distance2(arg0); }, jlcxx::arg("this"), jlcxx::arg("bz"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::distance2(const CLHEP::HepRotation &) (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::distance2(const CLHEP::HepRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:155:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:155:10
     t.method("distance2", [](CLHEP::HepBoost const& a, const CLHEP::HepRotation & arg0)->double { return a.distance2(arg0); }, jlcxx::arg("this"), jlcxx::arg("r"));
     t.method("distance2", [](CLHEP::HepBoost const* a, const CLHEP::HepRotation & arg0)->double { return a->distance2(arg0); }, jlcxx::arg("this"), jlcxx::arg("r"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::distance2(const CLHEP::HepLorentzRotation &) (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::distance2(const CLHEP::HepLorentzRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:156:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:156:10
     t.method("distance2", [](CLHEP::HepBoost const& a, const CLHEP::HepLorentzRotation & arg0)->double { return a.distance2(arg0); }, jlcxx::arg("this"), jlcxx::arg("lt"));
     t.method("distance2", [](CLHEP::HepBoost const* a, const CLHEP::HepLorentzRotation & arg0)->double { return a->distance2(arg0); }, jlcxx::arg("this"), jlcxx::arg("lt"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::howNear(const CLHEP::HepBoost &) (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::howNear(const CLHEP::HepBoost &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:159:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:159:17
     t.method("howNear", [](CLHEP::HepBoost const& a, const CLHEP::HepBoost & arg0)->double { return a.howNear(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
     t.method("howNear", [](CLHEP::HepBoost const* a, const CLHEP::HepBoost & arg0)->double { return a->howNear(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::HepBoost::isNear(const CLHEP::HepBoost &, double) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::HepBoost::isNear(const CLHEP::HepBoost &, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:160:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:160:15
     t.method("isNear", [](CLHEP::HepBoost const& a, const CLHEP::HepBoost & arg0)->bool { return a.isNear(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
     t.method("isNear", [](CLHEP::HepBoost const& a, const CLHEP::HepBoost & arg0, double arg1)->bool { return a.isNear(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("b"), jlcxx::arg("epsilon"));
     t.method("isNear", [](CLHEP::HepBoost const* a, const CLHEP::HepBoost & arg0)->bool { return a->isNear(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
@@ -429,19 +429,19 @@ struct JlCLHEP_HepBoost: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::howNear(const CLHEP::HepRotation &) (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::howNear(const CLHEP::HepRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:163:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:163:10
     t.method("howNear", [](CLHEP::HepBoost const& a, const CLHEP::HepRotation & arg0)->double { return a.howNear(arg0); }, jlcxx::arg("this"), jlcxx::arg("r"));
     t.method("howNear", [](CLHEP::HepBoost const* a, const CLHEP::HepRotation & arg0)->double { return a->howNear(arg0); }, jlcxx::arg("this"), jlcxx::arg("r"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::howNear(const CLHEP::HepLorentzRotation &) (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::howNear(const CLHEP::HepLorentzRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:164:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:164:10
     t.method("howNear", [](CLHEP::HepBoost const& a, const CLHEP::HepLorentzRotation & arg0)->double { return a.howNear(arg0); }, jlcxx::arg("this"), jlcxx::arg("lt"));
     t.method("howNear", [](CLHEP::HepBoost const* a, const CLHEP::HepLorentzRotation & arg0)->double { return a->howNear(arg0); }, jlcxx::arg("this"), jlcxx::arg("lt"));
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::HepBoost::isNear(const CLHEP::HepRotation &, double) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::HepBoost::isNear(const CLHEP::HepRotation &, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:166:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:166:8
     t.method("isNear", [](CLHEP::HepBoost const& a, const CLHEP::HepRotation & arg0)->bool { return a.isNear(arg0); }, jlcxx::arg("this"), jlcxx::arg("r"));
     t.method("isNear", [](CLHEP::HepBoost const& a, const CLHEP::HepRotation & arg0, double arg1)->bool { return a.isNear(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("r"), jlcxx::arg("epsilon"));
     t.method("isNear", [](CLHEP::HepBoost const* a, const CLHEP::HepRotation & arg0)->bool { return a->isNear(arg0); }, jlcxx::arg("this"), jlcxx::arg("r"));
@@ -449,7 +449,7 @@ struct JlCLHEP_HepBoost: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::HepBoost::isNear(const CLHEP::HepLorentzRotation &, double) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::HepBoost::isNear(const CLHEP::HepLorentzRotation &, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:168:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:168:8
     t.method("isNear", [](CLHEP::HepBoost const& a, const CLHEP::HepLorentzRotation & arg0)->bool { return a.isNear(arg0); }, jlcxx::arg("this"), jlcxx::arg("lt"));
     t.method("isNear", [](CLHEP::HepBoost const& a, const CLHEP::HepLorentzRotation & arg0, double arg1)->bool { return a.isNear(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("lt"), jlcxx::arg("epsilon"));
     t.method("isNear", [](CLHEP::HepBoost const* a, const CLHEP::HepLorentzRotation & arg0)->bool { return a->isNear(arg0); }, jlcxx::arg("this"), jlcxx::arg("lt"));
@@ -457,44 +457,44 @@ struct JlCLHEP_HepBoost: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::norm2() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::norm2()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:173:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:173:10
     t.method("norm2", [](CLHEP::HepBoost const& a)->double { return a.norm2(); }, jlcxx::arg("this"));
     t.method("norm2", [](CLHEP::HepBoost const* a)->double { return a->norm2(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void CLHEP::HepBoost::rectify() (" __HERE__ ")");
     // signature to use in the veto list: void CLHEP::HepBoost::rectify()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:176:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:176:8
     t.method("rectify", [](CLHEP::HepBoost& a)->void { a.rectify(); }, jlcxx::arg("this"));
     t.method("rectify", [](CLHEP::HepBoost* a)->void { a->rectify(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepLorentzVector CLHEP::HepBoost::operator()(const CLHEP::HepLorentzVector &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepLorentzVector CLHEP::HepBoost::operator()(const CLHEP::HepLorentzVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:181:27
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:181:27
     t.method("paren", [](CLHEP::HepBoost const& a, const CLHEP::HepLorentzVector & arg0)->CLHEP::HepLorentzVector { return a.operator()(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("paren", [](CLHEP::HepBoost const* a, const CLHEP::HepLorentzVector & arg0)->CLHEP::HepLorentzVector { return a->operator()(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     module_.set_override_module(jl_base_module);
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepLorentzVector CLHEP::HepBoost::operator*(const CLHEP::HepLorentzVector &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepLorentzVector CLHEP::HepBoost::operator*(const CLHEP::HepLorentzVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:184:27
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:184:27
     t.method("*", [](CLHEP::HepBoost const& a, const CLHEP::HepLorentzVector & arg0)->CLHEP::HepLorentzVector { return a.operator*(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("*", [](CLHEP::HepBoost const* a, const CLHEP::HepLorentzVector & arg0)->CLHEP::HepLorentzVector { return a->operator*(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepLorentzRotation CLHEP::HepBoost::operator*(const CLHEP::HepBoost &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepLorentzRotation CLHEP::HepBoost::operator*(const CLHEP::HepBoost &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:189:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:189:22
     t.method("*", [](CLHEP::HepBoost const& a, const CLHEP::HepBoost & arg0)->CLHEP::HepLorentzRotation { return a.operator*(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
     t.method("*", [](CLHEP::HepBoost const* a, const CLHEP::HepBoost & arg0)->CLHEP::HepLorentzRotation { return a->operator*(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepLorentzRotation CLHEP::HepBoost::operator*(const CLHEP::HepRotation &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepLorentzRotation CLHEP::HepBoost::operator*(const CLHEP::HepRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:190:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:190:22
     t.method("*", [](CLHEP::HepBoost const& a, const CLHEP::HepRotation & arg0)->CLHEP::HepLorentzRotation { return a.operator*(arg0); }, jlcxx::arg("this"), jlcxx::arg("r"));
     t.method("*", [](CLHEP::HepBoost const* a, const CLHEP::HepRotation & arg0)->CLHEP::HepLorentzRotation { return a->operator*(arg0); }, jlcxx::arg("this"), jlcxx::arg("r"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepLorentzRotation CLHEP::HepBoost::operator*(const CLHEP::HepLorentzRotation &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepLorentzRotation CLHEP::HepBoost::operator*(const CLHEP::HepLorentzRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:191:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:191:22
     t.method("*", [](CLHEP::HepBoost const& a, const CLHEP::HepLorentzRotation & arg0)->CLHEP::HepLorentzRotation { return a.operator*(arg0); }, jlcxx::arg("this"), jlcxx::arg("lt"));
     t.method("*", [](CLHEP::HepBoost const* a, const CLHEP::HepLorentzRotation & arg0)->CLHEP::HepLorentzRotation { return a->operator*(arg0); }, jlcxx::arg("this"), jlcxx::arg("lt"));
 
@@ -502,24 +502,24 @@ struct JlCLHEP_HepBoost: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepBoost CLHEP::HepBoost::inverse() (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepBoost CLHEP::HepBoost::inverse()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:195:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:195:19
     t.method("inverse", [](CLHEP::HepBoost const& a)->CLHEP::HepBoost { return a.inverse(); }, jlcxx::arg("this"));
     t.method("inverse", [](CLHEP::HepBoost const* a)->CLHEP::HepBoost { return a->inverse(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepBoost & CLHEP::HepBoost::invert() (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepBoost & CLHEP::HepBoost::invert()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:201:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:201:21
     t.method("invert", [](CLHEP::HepBoost& a)->CLHEP::HepBoost & { return a.invert(); }, jlcxx::arg("this"));
     t.method("invert", [](CLHEP::HepBoost* a)->CLHEP::HepBoost & { return a->invert(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::getTolerance() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::getTolerance()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:211:24
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:211:24
     module_.method("CLHEP!HepBoost!getTolerance", []()->double { return CLHEP::HepBoost::getTolerance(); });
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepBoost::setTolerance(double) (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepBoost::setTolerance(double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:212:24
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:212:24
     module_.method("CLHEP!HepBoost!setTolerance", [](double arg0)->double { return CLHEP::HepBoost::setTolerance(arg0); }, jlcxx::arg("tol"));
   }
 

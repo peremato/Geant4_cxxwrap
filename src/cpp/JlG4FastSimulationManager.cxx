@@ -17,7 +17,7 @@ struct JlG4FastSimulationManager: public Wrapper {
 
   JlG4FastSimulationManager(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4FastSimulationManager (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FastSimulationManager.hh:73:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FastSimulationManager.hh:73:7
     jlcxx::TypeWrapper<G4FastSimulationManager>  t = jlModule.add_type<G4FastSimulationManager>("G4FastSimulationManager");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4FastSimulationManager>>(new jlcxx::TypeWrapper<G4FastSimulationManager>(jlModule, t));
   }
@@ -27,85 +27,85 @@ struct JlG4FastSimulationManager: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4FastSimulationManager::G4FastSimulationManager(G4Envelope *, G4bool) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FastSimulationManager.hh:86:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FastSimulationManager.hh:86:5
     t.constructor<G4Envelope *>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("anEnvelope")    );
     t.constructor<G4Envelope *, G4bool>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("anEnvelope"), jlcxx::arg("IsUnique")    );
 
     DEBUG_MSG("Adding wrapper for void G4FastSimulationManager::AddFastSimulationModel(G4VFastSimulationModel *) (" __HERE__ ")");
     // signature to use in the veto list: void G4FastSimulationManager::AddFastSimulationModel(G4VFastSimulationModel *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FastSimulationManager.hh:104:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FastSimulationManager.hh:104:10
     t.method("AddFastSimulationModel", [](G4FastSimulationManager& a, G4VFastSimulationModel * arg0)->void { a.AddFastSimulationModel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("AddFastSimulationModel", [](G4FastSimulationManager* a, G4VFastSimulationModel * arg0)->void { a->AddFastSimulationModel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4FastSimulationManager::RemoveFastSimulationModel(G4VFastSimulationModel *) (" __HERE__ ")");
     // signature to use in the veto list: void G4FastSimulationManager::RemoveFastSimulationModel(G4VFastSimulationModel *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FastSimulationManager.hh:107:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FastSimulationManager.hh:107:10
     t.method("RemoveFastSimulationModel", [](G4FastSimulationManager& a, G4VFastSimulationModel * arg0)->void { a.RemoveFastSimulationModel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("RemoveFastSimulationModel", [](G4FastSimulationManager* a, G4VFastSimulationModel * arg0)->void { a->RemoveFastSimulationModel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4FastSimulationManager::ActivateFastSimulationModel(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4FastSimulationManager::ActivateFastSimulationModel(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FastSimulationManager.hh:110:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FastSimulationManager.hh:110:12
     t.method("ActivateFastSimulationModel", [](G4FastSimulationManager& a, const G4String & arg0)->G4bool { return a.ActivateFastSimulationModel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("ActivateFastSimulationModel", [](G4FastSimulationManager* a, const G4String & arg0)->G4bool { return a->ActivateFastSimulationModel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4FastSimulationManager::InActivateFastSimulationModel(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4FastSimulationManager::InActivateFastSimulationModel(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FastSimulationManager.hh:113:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FastSimulationManager.hh:113:12
     t.method("InActivateFastSimulationModel", [](G4FastSimulationManager& a, const G4String & arg0)->G4bool { return a.InActivateFastSimulationModel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("InActivateFastSimulationModel", [](G4FastSimulationManager* a, const G4String & arg0)->G4bool { return a->InActivateFastSimulationModel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4FastSimulationManager::ListTitle() (" __HERE__ ")");
     // signature to use in the veto list: void G4FastSimulationManager::ListTitle()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FastSimulationManager.hh:116:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FastSimulationManager.hh:116:10
     t.method("ListTitle", [](G4FastSimulationManager const& a)->void { a.ListTitle(); }, jlcxx::arg("this"));
     t.method("ListTitle", [](G4FastSimulationManager const* a)->void { a->ListTitle(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4FastSimulationManager::ListModels() (" __HERE__ ")");
     // signature to use in the veto list: void G4FastSimulationManager::ListModels()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FastSimulationManager.hh:117:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FastSimulationManager.hh:117:10
     t.method("ListModels", [](G4FastSimulationManager const& a)->void { a.ListModels(); }, jlcxx::arg("this"));
     t.method("ListModels", [](G4FastSimulationManager const* a)->void { a->ListModels(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4FastSimulationManager::ListModels(const G4ParticleDefinition *) (" __HERE__ ")");
     // signature to use in the veto list: void G4FastSimulationManager::ListModels(const G4ParticleDefinition *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FastSimulationManager.hh:118:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FastSimulationManager.hh:118:10
     t.method("ListModels", [](G4FastSimulationManager const& a, const G4ParticleDefinition * arg0)->void { a.ListModels(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("ListModels", [](G4FastSimulationManager const* a, const G4ParticleDefinition * arg0)->void { a->ListModels(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4FastSimulationManager::ListModels(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4FastSimulationManager::ListModels(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FastSimulationManager.hh:119:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FastSimulationManager.hh:119:10
     t.method("ListModels", [](G4FastSimulationManager const& a, const G4String & arg0)->void { a.ListModels(arg0); }, jlcxx::arg("this"), jlcxx::arg("aName"));
     t.method("ListModels", [](G4FastSimulationManager const* a, const G4String & arg0)->void { a->ListModels(arg0); }, jlcxx::arg("this"), jlcxx::arg("aName"));
 
     DEBUG_MSG("Adding wrapper for const G4Envelope * G4FastSimulationManager::GetEnvelope() (" __HERE__ ")");
     // signature to use in the veto list: const G4Envelope * G4FastSimulationManager::GetEnvelope()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FastSimulationManager.hh:120:23
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FastSimulationManager.hh:120:23
     t.method("GetEnvelope", [](G4FastSimulationManager const& a)->const G4Envelope * { return a.GetEnvelope(); }, jlcxx::arg("this"));
     t.method("GetEnvelope", [](G4FastSimulationManager const* a)->const G4Envelope * { return a->GetEnvelope(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4VFastSimulationModel * G4FastSimulationManager::GetFastSimulationModel(const G4String &, const G4VFastSimulationModel *, G4bool &) (" __HERE__ ")");
     // signature to use in the veto list: G4VFastSimulationModel * G4FastSimulationManager::GetFastSimulationModel(const G4String &, const G4VFastSimulationModel *, G4bool &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FastSimulationManager.hh:122:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FastSimulationManager.hh:122:29
     t.method("GetFastSimulationModel", [](G4FastSimulationManager const& a, const G4String & arg0, const G4VFastSimulationModel * arg1, G4bool & arg2)->G4VFastSimulationModel * { return a.GetFastSimulationModel(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("modelName"), jlcxx::arg("previousFound"), jlcxx::arg("foundPrevious"));
     t.method("GetFastSimulationModel", [](G4FastSimulationManager const* a, const G4String & arg0, const G4VFastSimulationModel * arg1, G4bool & arg2)->G4VFastSimulationModel * { return a->GetFastSimulationModel(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("modelName"), jlcxx::arg("previousFound"), jlcxx::arg("foundPrevious"));
 
     DEBUG_MSG("Adding wrapper for const std::vector<G4VFastSimulationModel *> & G4FastSimulationManager::GetFastSimulationModelList() (" __HERE__ ")");
     // signature to use in the veto list: const std::vector<G4VFastSimulationModel *> & G4FastSimulationManager::GetFastSimulationModelList()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FastSimulationManager.hh:126:49
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FastSimulationManager.hh:126:49
     t.method("GetFastSimulationModelList", [](G4FastSimulationManager const& a)->const std::vector<G4VFastSimulationModel *> & { return a.GetFastSimulationModelList(); }, jlcxx::arg("this"));
     t.method("GetFastSimulationModelList", [](G4FastSimulationManager const* a)->const std::vector<G4VFastSimulationModel *> & { return a->GetFastSimulationModelList(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4FastSimulationManager::FlushModels() (" __HERE__ ")");
     // signature to use in the veto list: void G4FastSimulationManager::FlushModels()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FastSimulationManager.hh:131:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FastSimulationManager.hh:131:10
     t.method("FlushModels", [](G4FastSimulationManager& a)->void { a.FlushModels(); }, jlcxx::arg("this"));
     t.method("FlushModels", [](G4FastSimulationManager* a)->void { a->FlushModels(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4FastSimulationManager::PostStepGetFastSimulationManagerTrigger(const G4Track &, const G4Navigator *) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4FastSimulationManager::PostStepGetFastSimulationManagerTrigger(const G4Track &, const G4Navigator *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FastSimulationManager.hh:138:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FastSimulationManager.hh:138:12
     t.method("PostStepGetFastSimulationManagerTrigger", [](G4FastSimulationManager& a, const G4Track & arg0)->G4bool { return a.PostStepGetFastSimulationManagerTrigger(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("PostStepGetFastSimulationManagerTrigger", [](G4FastSimulationManager& a, const G4Track & arg0, const G4Navigator * arg1)->G4bool { return a.PostStepGetFastSimulationManagerTrigger(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("a"));
     t.method("PostStepGetFastSimulationManagerTrigger", [](G4FastSimulationManager* a, const G4Track & arg0)->G4bool { return a->PostStepGetFastSimulationManagerTrigger(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
@@ -113,13 +113,13 @@ struct JlG4FastSimulationManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4VParticleChange * G4FastSimulationManager::InvokePostStepDoIt() (" __HERE__ ")");
     // signature to use in the veto list: G4VParticleChange * G4FastSimulationManager::InvokePostStepDoIt()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FastSimulationManager.hh:140:24
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FastSimulationManager.hh:140:24
     t.method("InvokePostStepDoIt", [](G4FastSimulationManager& a)->G4VParticleChange * { return a.InvokePostStepDoIt(); }, jlcxx::arg("this"));
     t.method("InvokePostStepDoIt", [](G4FastSimulationManager* a)->G4VParticleChange * { return a->InvokePostStepDoIt(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4FastSimulationManager::AtRestGetFastSimulationManagerTrigger(const G4Track &, const G4Navigator *) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4FastSimulationManager::AtRestGetFastSimulationManagerTrigger(const G4Track &, const G4Navigator *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FastSimulationManager.hh:143:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FastSimulationManager.hh:143:12
     t.method("AtRestGetFastSimulationManagerTrigger", [](G4FastSimulationManager& a, const G4Track & arg0)->G4bool { return a.AtRestGetFastSimulationManagerTrigger(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("AtRestGetFastSimulationManagerTrigger", [](G4FastSimulationManager& a, const G4Track & arg0, const G4Navigator * arg1)->G4bool { return a.AtRestGetFastSimulationManagerTrigger(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("a"));
     t.method("AtRestGetFastSimulationManagerTrigger", [](G4FastSimulationManager* a, const G4Track & arg0)->G4bool { return a->AtRestGetFastSimulationManagerTrigger(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
@@ -127,14 +127,14 @@ struct JlG4FastSimulationManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4VParticleChange * G4FastSimulationManager::InvokeAtRestDoIt() (" __HERE__ ")");
     // signature to use in the veto list: G4VParticleChange * G4FastSimulationManager::InvokeAtRestDoIt()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FastSimulationManager.hh:144:24
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FastSimulationManager.hh:144:24
     t.method("InvokeAtRestDoIt", [](G4FastSimulationManager& a)->G4VParticleChange * { return a.InvokeAtRestDoIt(); }, jlcxx::arg("this"));
     t.method("InvokeAtRestDoIt", [](G4FastSimulationManager* a)->G4VParticleChange * { return a->InvokeAtRestDoIt(); }, jlcxx::arg("this"));
     module_.set_override_module(jl_base_module);
 
     DEBUG_MSG("Adding wrapper for G4bool G4FastSimulationManager::operator==(const G4FastSimulationManager &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4FastSimulationManager::operator==(const G4FastSimulationManager &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FastSimulationManager.hh:147:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FastSimulationManager.hh:147:12
     t.method("==", [](G4FastSimulationManager const& a, const G4FastSimulationManager & arg0)->G4bool { return a.operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("==", [](G4FastSimulationManager const* a, const G4FastSimulationManager & arg0)->G4bool { return a->operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 

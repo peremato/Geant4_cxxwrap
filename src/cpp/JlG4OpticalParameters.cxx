@@ -17,7 +17,7 @@ struct JlG4OpticalParameters: public Wrapper {
 
   JlG4OpticalParameters(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4OpticalParameters (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:104:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:104:7
     jlcxx::TypeWrapper<G4OpticalParameters>  t = jlModule.add_type<G4OpticalParameters>("G4OpticalParameters");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4OpticalParameters>>(new jlcxx::TypeWrapper<G4OpticalParameters>(jlModule, t));
   }
@@ -27,282 +27,282 @@ struct JlG4OpticalParameters: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4OpticalParameters * G4OpticalParameters::Instance() (" __HERE__ ")");
     // signature to use in the veto list: G4OpticalParameters * G4OpticalParameters::Instance()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:107:31
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:107:31
     module_.method("G4OpticalParameters!Instance", []()->G4OpticalParameters * { return G4OpticalParameters::Instance(); });
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::SetDefaults() (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::SetDefaults()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:111:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:111:8
     t.method("SetDefaults", [](G4OpticalParameters& a)->void { a.SetDefaults(); }, jlcxx::arg("this"));
     t.method("SetDefaults", [](G4OpticalParameters* a)->void { a->SetDefaults(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::Dump() (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::Dump()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:115:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:115:8
     t.method("Dump", [](G4OpticalParameters const& a)->void { a.Dump(); }, jlcxx::arg("this"));
     t.method("Dump", [](G4OpticalParameters const* a)->void { a->Dump(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::SetVerboseLevel(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::SetVerboseLevel(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:118:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:118:9
     t.method("SetVerboseLevel", [](G4OpticalParameters& a, G4int arg0)->void { a.SetVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetVerboseLevel", [](G4OpticalParameters* a, G4int arg0)->void { a->SetVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4int G4OpticalParameters::GetVerboseLevel() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4OpticalParameters::GetVerboseLevel()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:119:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:119:9
     t.method("GetVerboseLevel", [](G4OpticalParameters const& a)->G4int { return a.GetVerboseLevel(); }, jlcxx::arg("this"));
     t.method("GetVerboseLevel", [](G4OpticalParameters const* a)->G4int { return a->GetVerboseLevel(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::SetProcessActivation(const G4String &, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::SetProcessActivation(const G4String &, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:121:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:121:10
     t.method("SetProcessActivation", [](G4OpticalParameters& a, const G4String & arg0, G4bool arg1)->void { a.SetProcessActivation(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"));
     t.method("SetProcessActivation", [](G4OpticalParameters* a, const G4String & arg0, G4bool arg1)->void { a->SetProcessActivation(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4OpticalParameters::GetProcessActivation(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4OpticalParameters::GetProcessActivation(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:122:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:122:10
     t.method("GetProcessActivation", [](G4OpticalParameters const& a, const G4String & arg0)->G4bool { return a.GetProcessActivation(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("GetProcessActivation", [](G4OpticalParameters const* a, const G4String & arg0)->G4bool { return a->GetProcessActivation(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::SetCerenkovMaxPhotonsPerStep(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::SetCerenkovMaxPhotonsPerStep(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:125:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:125:9
     t.method("SetCerenkovMaxPhotonsPerStep", [](G4OpticalParameters& a, G4int arg0)->void { a.SetCerenkovMaxPhotonsPerStep(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetCerenkovMaxPhotonsPerStep", [](G4OpticalParameters* a, G4int arg0)->void { a->SetCerenkovMaxPhotonsPerStep(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4int G4OpticalParameters::GetCerenkovMaxPhotonsPerStep() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4OpticalParameters::GetCerenkovMaxPhotonsPerStep()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:126:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:126:9
     t.method("GetCerenkovMaxPhotonsPerStep", [](G4OpticalParameters const& a)->G4int { return a.GetCerenkovMaxPhotonsPerStep(); }, jlcxx::arg("this"));
     t.method("GetCerenkovMaxPhotonsPerStep", [](G4OpticalParameters const* a)->G4int { return a->GetCerenkovMaxPhotonsPerStep(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::SetCerenkovVerboseLevel(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::SetCerenkovVerboseLevel(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:127:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:127:9
     t.method("SetCerenkovVerboseLevel", [](G4OpticalParameters& a, G4int arg0)->void { a.SetCerenkovVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetCerenkovVerboseLevel", [](G4OpticalParameters* a, G4int arg0)->void { a->SetCerenkovVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4int G4OpticalParameters::GetCerenkovVerboseLevel() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4OpticalParameters::GetCerenkovVerboseLevel()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:128:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:128:9
     t.method("GetCerenkovVerboseLevel", [](G4OpticalParameters const& a)->G4int { return a.GetCerenkovVerboseLevel(); }, jlcxx::arg("this"));
     t.method("GetCerenkovVerboseLevel", [](G4OpticalParameters const* a)->G4int { return a->GetCerenkovVerboseLevel(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::SetCerenkovMaxBetaChange(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::SetCerenkovMaxBetaChange(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:129:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:129:12
     t.method("SetCerenkovMaxBetaChange", [](G4OpticalParameters& a, G4double arg0)->void { a.SetCerenkovMaxBetaChange(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetCerenkovMaxBetaChange", [](G4OpticalParameters* a, G4double arg0)->void { a->SetCerenkovMaxBetaChange(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4double G4OpticalParameters::GetCerenkovMaxBetaChange() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4OpticalParameters::GetCerenkovMaxBetaChange()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:130:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:130:12
     t.method("GetCerenkovMaxBetaChange", [](G4OpticalParameters const& a)->G4double { return a.GetCerenkovMaxBetaChange(); }, jlcxx::arg("this"));
     t.method("GetCerenkovMaxBetaChange", [](G4OpticalParameters const* a)->G4double { return a->GetCerenkovMaxBetaChange(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::SetCerenkovTrackSecondariesFirst(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::SetCerenkovTrackSecondariesFirst(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:131:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:131:10
     t.method("SetCerenkovTrackSecondariesFirst", [](G4OpticalParameters& a, G4bool arg0)->void { a.SetCerenkovTrackSecondariesFirst(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetCerenkovTrackSecondariesFirst", [](G4OpticalParameters* a, G4bool arg0)->void { a->SetCerenkovTrackSecondariesFirst(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4OpticalParameters::GetCerenkovTrackSecondariesFirst() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4OpticalParameters::GetCerenkovTrackSecondariesFirst()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:132:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:132:10
     t.method("GetCerenkovTrackSecondariesFirst", [](G4OpticalParameters const& a)->G4bool { return a.GetCerenkovTrackSecondariesFirst(); }, jlcxx::arg("this"));
     t.method("GetCerenkovTrackSecondariesFirst", [](G4OpticalParameters const* a)->G4bool { return a->GetCerenkovTrackSecondariesFirst(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::SetCerenkovStackPhotons(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::SetCerenkovStackPhotons(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:133:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:133:10
     t.method("SetCerenkovStackPhotons", [](G4OpticalParameters& a, G4bool arg0)->void { a.SetCerenkovStackPhotons(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetCerenkovStackPhotons", [](G4OpticalParameters* a, G4bool arg0)->void { a->SetCerenkovStackPhotons(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4OpticalParameters::GetCerenkovStackPhotons() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4OpticalParameters::GetCerenkovStackPhotons()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:134:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:134:10
     t.method("GetCerenkovStackPhotons", [](G4OpticalParameters const& a)->G4bool { return a.GetCerenkovStackPhotons(); }, jlcxx::arg("this"));
     t.method("GetCerenkovStackPhotons", [](G4OpticalParameters const* a)->G4bool { return a->GetCerenkovStackPhotons(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::SetScintByParticleType(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::SetScintByParticleType(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:137:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:137:10
     t.method("SetScintByParticleType", [](G4OpticalParameters& a, G4bool arg0)->void { a.SetScintByParticleType(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetScintByParticleType", [](G4OpticalParameters* a, G4bool arg0)->void { a->SetScintByParticleType(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4OpticalParameters::GetScintByParticleType() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4OpticalParameters::GetScintByParticleType()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:138:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:138:10
     t.method("GetScintByParticleType", [](G4OpticalParameters const& a)->G4bool { return a.GetScintByParticleType(); }, jlcxx::arg("this"));
     t.method("GetScintByParticleType", [](G4OpticalParameters const* a)->G4bool { return a->GetScintByParticleType(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::SetScintTrackInfo(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::SetScintTrackInfo(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:139:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:139:10
     t.method("SetScintTrackInfo", [](G4OpticalParameters& a, G4bool arg0)->void { a.SetScintTrackInfo(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetScintTrackInfo", [](G4OpticalParameters* a, G4bool arg0)->void { a->SetScintTrackInfo(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4OpticalParameters::GetScintTrackInfo() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4OpticalParameters::GetScintTrackInfo()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:140:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:140:10
     t.method("GetScintTrackInfo", [](G4OpticalParameters const& a)->G4bool { return a.GetScintTrackInfo(); }, jlcxx::arg("this"));
     t.method("GetScintTrackInfo", [](G4OpticalParameters const* a)->G4bool { return a->GetScintTrackInfo(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::SetScintTrackSecondariesFirst(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::SetScintTrackSecondariesFirst(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:141:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:141:10
     t.method("SetScintTrackSecondariesFirst", [](G4OpticalParameters& a, G4bool arg0)->void { a.SetScintTrackSecondariesFirst(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetScintTrackSecondariesFirst", [](G4OpticalParameters* a, G4bool arg0)->void { a->SetScintTrackSecondariesFirst(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4OpticalParameters::GetScintTrackSecondariesFirst() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4OpticalParameters::GetScintTrackSecondariesFirst()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:142:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:142:10
     t.method("GetScintTrackSecondariesFirst", [](G4OpticalParameters const& a)->G4bool { return a.GetScintTrackSecondariesFirst(); }, jlcxx::arg("this"));
     t.method("GetScintTrackSecondariesFirst", [](G4OpticalParameters const* a)->G4bool { return a->GetScintTrackSecondariesFirst(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::SetScintFiniteRiseTime(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::SetScintFiniteRiseTime(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:143:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:143:10
     t.method("SetScintFiniteRiseTime", [](G4OpticalParameters& a, G4bool arg0)->void { a.SetScintFiniteRiseTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetScintFiniteRiseTime", [](G4OpticalParameters* a, G4bool arg0)->void { a->SetScintFiniteRiseTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4OpticalParameters::GetScintFiniteRiseTime() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4OpticalParameters::GetScintFiniteRiseTime()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:144:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:144:10
     t.method("GetScintFiniteRiseTime", [](G4OpticalParameters const& a)->G4bool { return a.GetScintFiniteRiseTime(); }, jlcxx::arg("this"));
     t.method("GetScintFiniteRiseTime", [](G4OpticalParameters const* a)->G4bool { return a->GetScintFiniteRiseTime(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::SetScintStackPhotons(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::SetScintStackPhotons(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:145:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:145:10
     t.method("SetScintStackPhotons", [](G4OpticalParameters& a, G4bool arg0)->void { a.SetScintStackPhotons(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetScintStackPhotons", [](G4OpticalParameters* a, G4bool arg0)->void { a->SetScintStackPhotons(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4OpticalParameters::GetScintStackPhotons() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4OpticalParameters::GetScintStackPhotons()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:146:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:146:10
     t.method("GetScintStackPhotons", [](G4OpticalParameters const& a)->G4bool { return a.GetScintStackPhotons(); }, jlcxx::arg("this"));
     t.method("GetScintStackPhotons", [](G4OpticalParameters const* a)->G4bool { return a->GetScintStackPhotons(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::SetScintVerboseLevel(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::SetScintVerboseLevel(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:147:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:147:10
     t.method("SetScintVerboseLevel", [](G4OpticalParameters& a, G4int arg0)->void { a.SetScintVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetScintVerboseLevel", [](G4OpticalParameters* a, G4int arg0)->void { a->SetScintVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4int G4OpticalParameters::GetScintVerboseLevel() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4OpticalParameters::GetScintVerboseLevel()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:148:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:148:10
     t.method("GetScintVerboseLevel", [](G4OpticalParameters const& a)->G4int { return a.GetScintVerboseLevel(); }, jlcxx::arg("this"));
     t.method("GetScintVerboseLevel", [](G4OpticalParameters const* a)->G4int { return a->GetScintVerboseLevel(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::SetWLSTimeProfile(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::SetWLSTimeProfile(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:151:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:151:12
     t.method("SetWLSTimeProfile", [](G4OpticalParameters& a, const G4String & arg0)->void { a.SetWLSTimeProfile(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetWLSTimeProfile", [](G4OpticalParameters* a, const G4String & arg0)->void { a->SetWLSTimeProfile(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4String G4OpticalParameters::GetWLSTimeProfile() (" __HERE__ ")");
     // signature to use in the veto list: G4String G4OpticalParameters::GetWLSTimeProfile()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:152:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:152:12
     t.method("GetWLSTimeProfile", [](G4OpticalParameters const& a)->G4String { return a.GetWLSTimeProfile(); }, jlcxx::arg("this"));
     t.method("GetWLSTimeProfile", [](G4OpticalParameters const* a)->G4String { return a->GetWLSTimeProfile(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::SetWLSVerboseLevel(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::SetWLSVerboseLevel(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:153:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:153:9
     t.method("SetWLSVerboseLevel", [](G4OpticalParameters& a, G4int arg0)->void { a.SetWLSVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetWLSVerboseLevel", [](G4OpticalParameters* a, G4int arg0)->void { a->SetWLSVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4int G4OpticalParameters::GetWLSVerboseLevel() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4OpticalParameters::GetWLSVerboseLevel()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:154:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:154:9
     t.method("GetWLSVerboseLevel", [](G4OpticalParameters const& a)->G4int { return a.GetWLSVerboseLevel(); }, jlcxx::arg("this"));
     t.method("GetWLSVerboseLevel", [](G4OpticalParameters const* a)->G4int { return a->GetWLSVerboseLevel(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::SetWLS2TimeProfile(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::SetWLS2TimeProfile(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:157:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:157:12
     t.method("SetWLS2TimeProfile", [](G4OpticalParameters& a, const G4String & arg0)->void { a.SetWLS2TimeProfile(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetWLS2TimeProfile", [](G4OpticalParameters* a, const G4String & arg0)->void { a->SetWLS2TimeProfile(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4String G4OpticalParameters::GetWLS2TimeProfile() (" __HERE__ ")");
     // signature to use in the veto list: G4String G4OpticalParameters::GetWLS2TimeProfile()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:158:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:158:12
     t.method("GetWLS2TimeProfile", [](G4OpticalParameters const& a)->G4String { return a.GetWLS2TimeProfile(); }, jlcxx::arg("this"));
     t.method("GetWLS2TimeProfile", [](G4OpticalParameters const* a)->G4String { return a->GetWLS2TimeProfile(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::SetWLS2VerboseLevel(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::SetWLS2VerboseLevel(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:159:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:159:9
     t.method("SetWLS2VerboseLevel", [](G4OpticalParameters& a, G4int arg0)->void { a.SetWLS2VerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetWLS2VerboseLevel", [](G4OpticalParameters* a, G4int arg0)->void { a->SetWLS2VerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4int G4OpticalParameters::GetWLS2VerboseLevel() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4OpticalParameters::GetWLS2VerboseLevel()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:160:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:160:9
     t.method("GetWLS2VerboseLevel", [](G4OpticalParameters const& a)->G4int { return a.GetWLS2VerboseLevel(); }, jlcxx::arg("this"));
     t.method("GetWLS2VerboseLevel", [](G4OpticalParameters const* a)->G4int { return a->GetWLS2VerboseLevel(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::SetBoundaryVerboseLevel(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::SetBoundaryVerboseLevel(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:163:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:163:9
     t.method("SetBoundaryVerboseLevel", [](G4OpticalParameters& a, G4int arg0)->void { a.SetBoundaryVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetBoundaryVerboseLevel", [](G4OpticalParameters* a, G4int arg0)->void { a->SetBoundaryVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4int G4OpticalParameters::GetBoundaryVerboseLevel() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4OpticalParameters::GetBoundaryVerboseLevel()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:164:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:164:9
     t.method("GetBoundaryVerboseLevel", [](G4OpticalParameters const& a)->G4int { return a.GetBoundaryVerboseLevel(); }, jlcxx::arg("this"));
     t.method("GetBoundaryVerboseLevel", [](G4OpticalParameters const* a)->G4int { return a->GetBoundaryVerboseLevel(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::SetBoundaryInvokeSD(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::SetBoundaryInvokeSD(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:165:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:165:10
     t.method("SetBoundaryInvokeSD", [](G4OpticalParameters& a, G4bool arg0)->void { a.SetBoundaryInvokeSD(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetBoundaryInvokeSD", [](G4OpticalParameters* a, G4bool arg0)->void { a->SetBoundaryInvokeSD(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4OpticalParameters::GetBoundaryInvokeSD() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4OpticalParameters::GetBoundaryInvokeSD()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:166:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:166:10
     t.method("GetBoundaryInvokeSD", [](G4OpticalParameters const& a)->G4bool { return a.GetBoundaryInvokeSD(); }, jlcxx::arg("this"));
     t.method("GetBoundaryInvokeSD", [](G4OpticalParameters const* a)->G4bool { return a->GetBoundaryInvokeSD(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::SetAbsorptionVerboseLevel(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::SetAbsorptionVerboseLevel(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:169:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:169:9
     t.method("SetAbsorptionVerboseLevel", [](G4OpticalParameters& a, G4int arg0)->void { a.SetAbsorptionVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetAbsorptionVerboseLevel", [](G4OpticalParameters* a, G4int arg0)->void { a->SetAbsorptionVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4int G4OpticalParameters::GetAbsorptionVerboseLevel() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4OpticalParameters::GetAbsorptionVerboseLevel()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:170:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:170:9
     t.method("GetAbsorptionVerboseLevel", [](G4OpticalParameters const& a)->G4int { return a.GetAbsorptionVerboseLevel(); }, jlcxx::arg("this"));
     t.method("GetAbsorptionVerboseLevel", [](G4OpticalParameters const* a)->G4int { return a->GetAbsorptionVerboseLevel(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::SetRayleighVerboseLevel(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::SetRayleighVerboseLevel(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:173:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:173:9
     t.method("SetRayleighVerboseLevel", [](G4OpticalParameters& a, G4int arg0)->void { a.SetRayleighVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetRayleighVerboseLevel", [](G4OpticalParameters* a, G4int arg0)->void { a->SetRayleighVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4int G4OpticalParameters::GetRayleighVerboseLevel() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4OpticalParameters::GetRayleighVerboseLevel()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:174:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:174:9
     t.method("GetRayleighVerboseLevel", [](G4OpticalParameters const& a)->G4int { return a.GetRayleighVerboseLevel(); }, jlcxx::arg("this"));
     t.method("GetRayleighVerboseLevel", [](G4OpticalParameters const* a)->G4int { return a->GetRayleighVerboseLevel(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalParameters::SetMieVerboseLevel(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalParameters::SetMieVerboseLevel(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:177:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:177:9
     t.method("SetMieVerboseLevel", [](G4OpticalParameters& a, G4int arg0)->void { a.SetMieVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetMieVerboseLevel", [](G4OpticalParameters* a, G4int arg0)->void { a->SetMieVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4int G4OpticalParameters::GetMieVerboseLevel() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4OpticalParameters::GetMieVerboseLevel()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:178:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:178:9
     t.method("GetMieVerboseLevel", [](G4OpticalParameters const& a)->G4int { return a.GetMieVerboseLevel(); }, jlcxx::arg("this"));
     t.method("GetMieVerboseLevel", [](G4OpticalParameters const* a)->G4int { return a->GetMieVerboseLevel(); }, jlcxx::arg("this"));
   }

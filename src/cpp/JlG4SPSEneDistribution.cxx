@@ -17,7 +17,7 @@ struct JlG4SPSEneDistribution: public Wrapper {
 
   JlG4SPSEneDistribution(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4SPSEneDistribution (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:70:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:70:7
     jlcxx::TypeWrapper<G4SPSEneDistribution>  t = jlModule.add_type<G4SPSEneDistribution>("G4SPSEneDistribution");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4SPSEneDistribution>>(new jlcxx::TypeWrapper<G4SPSEneDistribution>(jlModule, t));
   }
@@ -28,259 +28,259 @@ struct JlG4SPSEneDistribution: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4SPSEneDistribution::SetEnergyDisType(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSEneDistribution::SetEnergyDisType(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:79:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:79:10
     t.method("SetEnergyDisType", [](G4SPSEneDistribution& a, const G4String & arg0)->void { a.SetEnergyDisType(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetEnergyDisType", [](G4SPSEneDistribution* a, const G4String & arg0)->void { a->SetEnergyDisType(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for const G4String & G4SPSEneDistribution::GetEnergyDisType() (" __HERE__ ")");
     // signature to use in the veto list: const G4String & G4SPSEneDistribution::GetEnergyDisType()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:87:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:87:21
     t.method("GetEnergyDisType", [](G4SPSEneDistribution& a)->const G4String & { return a.GetEnergyDisType(); }, jlcxx::arg("this"));
     t.method("GetEnergyDisType", [](G4SPSEneDistribution* a)->const G4String & { return a->GetEnergyDisType(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSEneDistribution::SetEmin(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSEneDistribution::SetEmin(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:89:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:89:10
     t.method("SetEmin", [](G4SPSEneDistribution& a, G4double arg0)->void { a.SetEmin(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetEmin", [](G4SPSEneDistribution* a, G4double arg0)->void { a->SetEmin(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSEneDistribution::GetEmin() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSEneDistribution::GetEmin()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:92:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:92:14
     t.method("GetEmin", [](G4SPSEneDistribution const& a)->G4double { return a.GetEmin(); }, jlcxx::arg("this"));
     t.method("GetEmin", [](G4SPSEneDistribution const* a)->G4double { return a->GetEmin(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSEneDistribution::GetArbEmin() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSEneDistribution::GetArbEmin()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:93:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:93:14
     t.method("GetArbEmin", [](G4SPSEneDistribution& a)->G4double { return a.GetArbEmin(); }, jlcxx::arg("this"));
     t.method("GetArbEmin", [](G4SPSEneDistribution* a)->G4double { return a->GetArbEmin(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSEneDistribution::SetEmax(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSEneDistribution::SetEmax(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:95:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:95:10
     t.method("SetEmax", [](G4SPSEneDistribution& a, G4double arg0)->void { a.SetEmax(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetEmax", [](G4SPSEneDistribution* a, G4double arg0)->void { a->SetEmax(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSEneDistribution::GetEmax() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSEneDistribution::GetEmax()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:98:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:98:14
     t.method("GetEmax", [](G4SPSEneDistribution const& a)->G4double { return a.GetEmax(); }, jlcxx::arg("this"));
     t.method("GetEmax", [](G4SPSEneDistribution const* a)->G4double { return a->GetEmax(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSEneDistribution::GetArbEmax() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSEneDistribution::GetArbEmax()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:99:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:99:14
     t.method("GetArbEmax", [](G4SPSEneDistribution& a)->G4double { return a.GetArbEmax(); }, jlcxx::arg("this"));
     t.method("GetArbEmax", [](G4SPSEneDistribution* a)->G4double { return a->GetArbEmax(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSEneDistribution::SetMonoEnergy(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSEneDistribution::SetMonoEnergy(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:101:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:101:10
     t.method("SetMonoEnergy", [](G4SPSEneDistribution& a, G4double arg0)->void { a.SetMonoEnergy(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetMonoEnergy", [](G4SPSEneDistribution* a, G4double arg0)->void { a->SetMonoEnergy(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSEneDistribution::SetAlpha(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSEneDistribution::SetAlpha(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:104:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:104:10
     t.method("SetAlpha", [](G4SPSEneDistribution& a, G4double arg0)->void { a.SetAlpha(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetAlpha", [](G4SPSEneDistribution* a, G4double arg0)->void { a->SetAlpha(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSEneDistribution::SetBiasAlpha(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSEneDistribution::SetBiasAlpha(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:107:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:107:10
     t.method("SetBiasAlpha", [](G4SPSEneDistribution& a, G4double arg0)->void { a.SetBiasAlpha(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetBiasAlpha", [](G4SPSEneDistribution* a, G4double arg0)->void { a->SetBiasAlpha(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSEneDistribution::SetTemp(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSEneDistribution::SetTemp(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:109:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:109:10
     t.method("SetTemp", [](G4SPSEneDistribution& a, G4double arg0)->void { a.SetTemp(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetTemp", [](G4SPSEneDistribution* a, G4double arg0)->void { a->SetTemp(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSEneDistribution::SetBeamSigmaInE(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSEneDistribution::SetBeamSigmaInE(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:112:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:112:10
     t.method("SetBeamSigmaInE", [](G4SPSEneDistribution& a, G4double arg0)->void { a.SetBeamSigmaInE(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetBeamSigmaInE", [](G4SPSEneDistribution* a, G4double arg0)->void { a->SetBeamSigmaInE(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSEneDistribution::SetEzero(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSEneDistribution::SetEzero(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:114:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:114:10
     t.method("SetEzero", [](G4SPSEneDistribution& a, G4double arg0)->void { a.SetEzero(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetEzero", [](G4SPSEneDistribution* a, G4double arg0)->void { a->SetEzero(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSEneDistribution::SetGradient(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSEneDistribution::SetGradient(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:117:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:117:10
     t.method("SetGradient", [](G4SPSEneDistribution& a, G4double arg0)->void { a.SetGradient(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetGradient", [](G4SPSEneDistribution* a, G4double arg0)->void { a->SetGradient(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSEneDistribution::SetInterCept(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSEneDistribution::SetInterCept(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:120:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:120:10
     t.method("SetInterCept", [](G4SPSEneDistribution& a, G4double arg0)->void { a.SetInterCept(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetInterCept", [](G4SPSEneDistribution* a, G4double arg0)->void { a->SetInterCept(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSEneDistribution::UserEnergyHisto(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSEneDistribution::UserEnergyHisto(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:123:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:123:10
     t.method("UserEnergyHisto", [](G4SPSEneDistribution& a, const G4ThreeVector & arg0)->void { a.UserEnergyHisto(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("UserEnergyHisto", [](G4SPSEneDistribution* a, const G4ThreeVector & arg0)->void { a->UserEnergyHisto(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSEneDistribution::ArbEnergyHisto(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSEneDistribution::ArbEnergyHisto(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:126:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:126:10
     t.method("ArbEnergyHisto", [](G4SPSEneDistribution& a, const G4ThreeVector & arg0)->void { a.ArbEnergyHisto(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("ArbEnergyHisto", [](G4SPSEneDistribution* a, const G4ThreeVector & arg0)->void { a->ArbEnergyHisto(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSEneDistribution::ArbEnergyHistoFile(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSEneDistribution::ArbEnergyHistoFile(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:130:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:130:10
     t.method("ArbEnergyHistoFile", [](G4SPSEneDistribution& a, const G4String & arg0)->void { a.ArbEnergyHistoFile(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("ArbEnergyHistoFile", [](G4SPSEneDistribution* a, const G4String & arg0)->void { a->ArbEnergyHistoFile(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSEneDistribution::EpnEnergyHisto(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSEneDistribution::EpnEnergyHisto(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:132:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:132:10
     t.method("EpnEnergyHisto", [](G4SPSEneDistribution& a, const G4ThreeVector & arg0)->void { a.EpnEnergyHisto(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("EpnEnergyHisto", [](G4SPSEneDistribution* a, const G4ThreeVector & arg0)->void { a->EpnEnergyHisto(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSEneDistribution::InputEnergySpectra(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSEneDistribution::InputEnergySpectra(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:135:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:135:10
     t.method("InputEnergySpectra", [](G4SPSEneDistribution& a, G4bool arg0)->void { a.InputEnergySpectra(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("InputEnergySpectra", [](G4SPSEneDistribution* a, G4bool arg0)->void { a->InputEnergySpectra(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSEneDistribution::InputDifferentialSpectra(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSEneDistribution::InputDifferentialSpectra(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:140:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:140:10
     t.method("InputDifferentialSpectra", [](G4SPSEneDistribution& a, G4bool arg0)->void { a.InputDifferentialSpectra(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("InputDifferentialSpectra", [](G4SPSEneDistribution* a, G4bool arg0)->void { a->InputDifferentialSpectra(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSEneDistribution::ArbInterpolate(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSEneDistribution::ArbInterpolate(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:144:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:144:10
     t.method("ArbInterpolate", [](G4SPSEneDistribution& a, const G4String & arg0)->void { a.ArbInterpolate(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("ArbInterpolate", [](G4SPSEneDistribution* a, const G4String & arg0)->void { a->ArbInterpolate(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for const G4String & G4SPSEneDistribution::GetIntType() (" __HERE__ ")");
     // signature to use in the veto list: const G4String & G4SPSEneDistribution::GetIntType()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:148:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:148:21
     t.method("GetIntType", [](G4SPSEneDistribution& a)->const G4String & { return a.GetIntType(); }, jlcxx::arg("this"));
     t.method("GetIntType", [](G4SPSEneDistribution* a)->const G4String & { return a->GetIntType(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSEneDistribution::Calculate() (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSEneDistribution::Calculate()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:150:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:150:10
     t.method("Calculate", [](G4SPSEneDistribution& a)->void { a.Calculate(); }, jlcxx::arg("this"));
     t.method("Calculate", [](G4SPSEneDistribution* a)->void { a->Calculate(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSEneDistribution::SetBiasRndm(G4SPSRandomGenerator *) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSEneDistribution::SetBiasRndm(G4SPSRandomGenerator *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:154:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:154:10
     t.method("SetBiasRndm", [](G4SPSEneDistribution& a, G4SPSRandomGenerator * arg0)->void { a.SetBiasRndm(arg0); }, jlcxx::arg("this"), jlcxx::arg("a"));
     t.method("SetBiasRndm", [](G4SPSEneDistribution* a, G4SPSRandomGenerator * arg0)->void { a->SetBiasRndm(arg0); }, jlcxx::arg("this"), jlcxx::arg("a"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSEneDistribution::ReSetHist(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSEneDistribution::ReSetHist(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:157:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:157:10
     t.method("ReSetHist", [](G4SPSEneDistribution& a, const G4String & arg0)->void { a.ReSetHist(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("ReSetHist", [](G4SPSEneDistribution* a, const G4String & arg0)->void { a->ReSetHist(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSEneDistribution::SetVerbosity(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSEneDistribution::SetVerbosity(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:160:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:160:10
     t.method("SetVerbosity", [](G4SPSEneDistribution& a, G4int arg0)->void { a.SetVerbosity(arg0); }, jlcxx::arg("this"), jlcxx::arg("a"));
     t.method("SetVerbosity", [](G4SPSEneDistribution* a, G4int arg0)->void { a->SetVerbosity(arg0); }, jlcxx::arg("this"), jlcxx::arg("a"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSEneDistribution::GetWeight() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSEneDistribution::GetWeight()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:163:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:163:14
     t.method("GetWeight", [](G4SPSEneDistribution const& a)->G4double { return a.GetWeight(); }, jlcxx::arg("this"));
     t.method("GetWeight", [](G4SPSEneDistribution const* a)->G4double { return a->GetWeight(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSEneDistribution::GetMonoEnergy() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSEneDistribution::GetMonoEnergy()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:165:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:165:14
     t.method("GetMonoEnergy", [](G4SPSEneDistribution& a)->G4double { return a.GetMonoEnergy(); }, jlcxx::arg("this"));
     t.method("GetMonoEnergy", [](G4SPSEneDistribution* a)->G4double { return a->GetMonoEnergy(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSEneDistribution::GetSE() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSEneDistribution::GetSE()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:168:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:168:14
     t.method("GetSE", [](G4SPSEneDistribution& a)->G4double { return a.GetSE(); }, jlcxx::arg("this"));
     t.method("GetSE", [](G4SPSEneDistribution* a)->G4double { return a->GetSE(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSEneDistribution::Getalpha() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSEneDistribution::Getalpha()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:171:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:171:14
     t.method("Getalpha", [](G4SPSEneDistribution const& a)->G4double { return a.Getalpha(); }, jlcxx::arg("this"));
     t.method("Getalpha", [](G4SPSEneDistribution const* a)->G4double { return a->Getalpha(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSEneDistribution::GetEzero() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSEneDistribution::GetEzero()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:174:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:174:14
     t.method("GetEzero", [](G4SPSEneDistribution const& a)->G4double { return a.GetEzero(); }, jlcxx::arg("this"));
     t.method("GetEzero", [](G4SPSEneDistribution const* a)->G4double { return a->GetEzero(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSEneDistribution::GetTemp() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSEneDistribution::GetTemp()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:177:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:177:14
     t.method("GetTemp", [](G4SPSEneDistribution& a)->G4double { return a.GetTemp(); }, jlcxx::arg("this"));
     t.method("GetTemp", [](G4SPSEneDistribution* a)->G4double { return a->GetTemp(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSEneDistribution::Getgrad() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSEneDistribution::Getgrad()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:180:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:180:14
     t.method("Getgrad", [](G4SPSEneDistribution const& a)->G4double { return a.Getgrad(); }, jlcxx::arg("this"));
     t.method("Getgrad", [](G4SPSEneDistribution const* a)->G4double { return a->Getgrad(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSEneDistribution::Getcept() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSEneDistribution::Getcept()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:183:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:183:14
     t.method("Getcept", [](G4SPSEneDistribution const& a)->G4double { return a.Getcept(); }, jlcxx::arg("this"));
     t.method("Getcept", [](G4SPSEneDistribution const* a)->G4double { return a->Getcept(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4PhysicsFreeVector G4SPSEneDistribution::GetUserDefinedEnergyHisto() (" __HERE__ ")");
     // signature to use in the veto list: G4PhysicsFreeVector G4SPSEneDistribution::GetUserDefinedEnergyHisto()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:185:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:185:25
     t.method("GetUserDefinedEnergyHisto", [](G4SPSEneDistribution& a)->G4PhysicsFreeVector { return a.GetUserDefinedEnergyHisto(); }, jlcxx::arg("this"));
     t.method("GetUserDefinedEnergyHisto", [](G4SPSEneDistribution* a)->G4PhysicsFreeVector { return a->GetUserDefinedEnergyHisto(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4PhysicsFreeVector G4SPSEneDistribution::GetArbEnergyHisto() (" __HERE__ ")");
     // signature to use in the veto list: G4PhysicsFreeVector G4SPSEneDistribution::GetArbEnergyHisto()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:187:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:187:25
     t.method("GetArbEnergyHisto", [](G4SPSEneDistribution& a)->G4PhysicsFreeVector { return a.GetArbEnergyHisto(); }, jlcxx::arg("this"));
     t.method("GetArbEnergyHisto", [](G4SPSEneDistribution* a)->G4PhysicsFreeVector { return a->GetArbEnergyHisto(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSEneDistribution::GenerateOne(G4ParticleDefinition *) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSEneDistribution::GenerateOne(G4ParticleDefinition *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:189:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:189:14
     t.method("GenerateOne", [](G4SPSEneDistribution& a, G4ParticleDefinition * arg0)->G4double { return a.GenerateOne(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("GenerateOne", [](G4SPSEneDistribution* a, G4ParticleDefinition * arg0)->G4double { return a->GenerateOne(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSEneDistribution::GetProbability(G4double) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSEneDistribution::GetProbability(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:192:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:192:14
     t.method("GetProbability", [](G4SPSEneDistribution& a, G4double arg0)->G4double { return a.GetProbability(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("GetProbability", [](G4SPSEneDistribution* a, G4double arg0)->G4double { return a->GetProbability(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSEneDistribution::GetArbEneWeight(G4double) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSEneDistribution::GetArbEneWeight(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:194:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:194:14
     t.method("GetArbEneWeight", [](G4SPSEneDistribution& a, G4double arg0)->G4double { return a.GetArbEneWeight(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("GetArbEneWeight", [](G4SPSEneDistribution* a, G4double arg0)->G4double { return a->GetArbEneWeight(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSEneDistribution::ApplyEnergyWeight(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSEneDistribution::ApplyEnergyWeight(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:196:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:196:17
     t.method("ApplyEnergyWeight", [](G4SPSEneDistribution& a, G4bool arg0)->void { a.ApplyEnergyWeight(arg0); }, jlcxx::arg("this"), jlcxx::arg("val"));
     t.method("ApplyEnergyWeight", [](G4SPSEneDistribution* a, G4bool arg0)->void { a->ApplyEnergyWeight(arg0); }, jlcxx::arg("this"), jlcxx::arg("val"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4SPSEneDistribution::IfApplyEnergyWeight() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4SPSEneDistribution::IfApplyEnergyWeight()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSEneDistribution.hh:197:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSEneDistribution.hh:197:19
     t.method("IfApplyEnergyWeight", [](G4SPSEneDistribution const& a)->G4bool { return a.IfApplyEnergyWeight(); }, jlcxx::arg("this"));
     t.method("IfApplyEnergyWeight", [](G4SPSEneDistribution const* a)->G4bool { return a->IfApplyEnergyWeight(); }, jlcxx::arg("this"));
   }

@@ -17,7 +17,7 @@ struct JlG4PVData: public Wrapper {
 
   JlG4PVData(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4PVData (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:55:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:55:7
     jlcxx::TypeWrapper<G4PVData>  t = jlModule.add_type<G4PVData>("G4PVData");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4PVData>>(new jlcxx::TypeWrapper<G4PVData>(jlModule, t));
   }
@@ -28,18 +28,18 @@ struct JlG4PVData: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4PVData::initialize() (" __HERE__ ")");
     // signature to use in the veto list: void G4PVData::initialize()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:65:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:65:10
     t.method("initialize", [](G4PVData& a)->void { a.initialize(); }, jlcxx::arg("this"));
     t.method("initialize", [](G4PVData* a)->void { a->initialize(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding frot methods  to provide read access to the field frot (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:71:23
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:71:23
     // signature to use in the veto list: G4PVData::frot
     t.method("frot", [](const G4PVData& a) -> G4RotationMatrix * { return a.frot; }, jlcxx::arg("this"));
     t.method("frot", [](G4PVData& a) -> G4RotationMatrix * { return a.frot; }, jlcxx::arg("this"));
     t.method("frot", [](const G4PVData* a) -> G4RotationMatrix * { return a->frot; }, jlcxx::arg("this"));
     t.method("frot", [](G4PVData* a) -> G4RotationMatrix * { return a->frot; }, jlcxx::arg("this"));
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:71:23
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:71:23
     // signature to use in the veto list: G4PVData::frot
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding frot! methods to provide write access to the field frot (" __HERE__ ")");
@@ -49,13 +49,13 @@ struct JlG4PVData: public Wrapper {
     t.method("frot!", [](G4PVData* a, G4RotationMatrix * val) -> G4RotationMatrix * { return a->frot = val; }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding tx methods  to provide read access to the field tx (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:72:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:72:14
     // signature to use in the veto list: G4PVData::tx
     t.method("tx", [](const G4PVData& a) -> G4double { return a.tx; }, jlcxx::arg("this"));
     t.method("tx", [](G4PVData& a) -> G4double { return a.tx; }, jlcxx::arg("this"));
     t.method("tx", [](const G4PVData* a) -> G4double { return a->tx; }, jlcxx::arg("this"));
     t.method("tx", [](G4PVData* a) -> G4double { return a->tx; }, jlcxx::arg("this"));
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:72:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:72:14
     // signature to use in the veto list: G4PVData::tx
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding tx! methods to provide write access to the field tx (" __HERE__ ")");
@@ -65,13 +65,13 @@ struct JlG4PVData: public Wrapper {
     t.method("tx!", [](G4PVData* a, G4double val) -> G4double { return a->tx = val; }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding ty methods  to provide read access to the field ty (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:72:23
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:72:23
     // signature to use in the veto list: G4PVData::ty
     t.method("ty", [](const G4PVData& a) -> G4double { return a.ty; }, jlcxx::arg("this"));
     t.method("ty", [](G4PVData& a) -> G4double { return a.ty; }, jlcxx::arg("this"));
     t.method("ty", [](const G4PVData* a) -> G4double { return a->ty; }, jlcxx::arg("this"));
     t.method("ty", [](G4PVData* a) -> G4double { return a->ty; }, jlcxx::arg("this"));
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:72:23
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:72:23
     // signature to use in the veto list: G4PVData::ty
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding ty! methods to provide write access to the field ty (" __HERE__ ")");
@@ -81,13 +81,13 @@ struct JlG4PVData: public Wrapper {
     t.method("ty!", [](G4PVData* a, G4double val) -> G4double { return a->ty = val; }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding tz methods  to provide read access to the field tz (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:72:32
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:72:32
     // signature to use in the veto list: G4PVData::tz
     t.method("tz", [](const G4PVData& a) -> G4double { return a.tz; }, jlcxx::arg("this"));
     t.method("tz", [](G4PVData& a) -> G4double { return a.tz; }, jlcxx::arg("this"));
     t.method("tz", [](const G4PVData* a) -> G4double { return a->tz; }, jlcxx::arg("this"));
     t.method("tz", [](G4PVData* a) -> G4double { return a->tz; }, jlcxx::arg("this"));
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:72:32
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:72:32
     // signature to use in the veto list: G4PVData::tz
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding tz! methods to provide write access to the field tz (" __HERE__ ")");

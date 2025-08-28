@@ -18,7 +18,7 @@ struct JlG4MultiUnion: public Wrapper {
 
   JlG4MultiUnion(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4MultiUnion (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:53:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:53:7
     jlcxx::TypeWrapper<G4MultiUnion>  t = jlModule.add_type<G4MultiUnion>("G4MultiUnion",
       jlcxx::julia_base_type<G4VSolid>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4MultiUnion>>(new jlcxx::TypeWrapper<G4MultiUnion>(jlModule, t));
@@ -30,83 +30,83 @@ struct JlG4MultiUnion: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4MultiUnion::G4MultiUnion(const G4String &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:60:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:60:5
     t.constructor<const G4String &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("name")    );
 
     DEBUG_MSG("Adding wrapper for void G4MultiUnion::AddNode(G4VSolid &, const G4Transform3D &) (" __HERE__ ")");
     // signature to use in the veto list: void G4MultiUnion::AddNode(G4VSolid &, const G4Transform3D &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:64:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:64:10
     t.method("AddNode", [](G4MultiUnion& a, G4VSolid & arg0, const G4Transform3D & arg1)->void { a.AddNode(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("solid"), jlcxx::arg("trans"));
     t.method("AddNode", [](G4MultiUnion* a, G4VSolid & arg0, const G4Transform3D & arg1)->void { a->AddNode(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("solid"), jlcxx::arg("trans"));
 
     DEBUG_MSG("Adding wrapper for void G4MultiUnion::AddNode(G4VSolid *, const G4Transform3D &) (" __HERE__ ")");
     // signature to use in the veto list: void G4MultiUnion::AddNode(G4VSolid *, const G4Transform3D &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:65:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:65:10
     t.method("AddNode", [](G4MultiUnion& a, G4VSolid * arg0, const G4Transform3D & arg1)->void { a.AddNode(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("solid"), jlcxx::arg("trans"));
     t.method("AddNode", [](G4MultiUnion* a, G4VSolid * arg0, const G4Transform3D & arg1)->void { a->AddNode(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("solid"), jlcxx::arg("trans"));
 
 
     DEBUG_MSG("Adding wrapper for void G4MultiUnion::G4MultiUnion(const G4MultiUnion &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:67:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:67:5
     t.constructor<const G4MultiUnion &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("rhs")    );
 
     DEBUG_MSG("Adding wrapper for G4MultiUnion & G4MultiUnion::operator=(const G4MultiUnion &) (" __HERE__ ")");
     // signature to use in the veto list: G4MultiUnion & G4MultiUnion::operator=(const G4MultiUnion &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:68:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:68:19
     t.method("assign", [](G4MultiUnion& a, const G4MultiUnion & arg0)->G4MultiUnion & { return a.operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("rhs"));
     t.method("assign", [](G4MultiUnion* a, const G4MultiUnion & arg0)->G4MultiUnion & { return a->operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("rhs"));
 
     DEBUG_MSG("Adding wrapper for const G4Transform3D & G4MultiUnion::GetTransformation(G4int) (" __HERE__ ")");
     // signature to use in the veto list: const G4Transform3D & G4MultiUnion::GetTransformation(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:71:33
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:71:33
     t.method("GetTransformation", [](G4MultiUnion const& a, G4int arg0)->const G4Transform3D & { return a.GetTransformation(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
     t.method("GetTransformation", [](G4MultiUnion const* a, G4int arg0)->const G4Transform3D & { return a->GetTransformation(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
 
     DEBUG_MSG("Adding wrapper for G4VSolid * G4MultiUnion::GetSolid(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4VSolid * G4MultiUnion::GetSolid(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:72:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:72:22
     t.method("GetSolid", [](G4MultiUnion const& a, G4int arg0)->G4VSolid * { return a.GetSolid(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
     t.method("GetSolid", [](G4MultiUnion const* a, G4int arg0)->G4VSolid * { return a->GetSolid(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
 
     DEBUG_MSG("Adding wrapper for G4int G4MultiUnion::GetNumberOfSolids() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4MultiUnion::GetNumberOfSolids()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:73:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:73:18
     t.method("GetNumberOfSolids", [](G4MultiUnion const& a)->G4int { return a.GetNumberOfSolids(); }, jlcxx::arg("this"));
     t.method("GetNumberOfSolids", [](G4MultiUnion const* a)->G4int { return a->GetNumberOfSolids(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for EInside G4MultiUnion::Inside(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: EInside G4MultiUnion::Inside(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:76:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:76:13
     t.method("Inside", [](G4MultiUnion const& a, const G4ThreeVector & arg0)->EInside { return a.Inside(arg0); }, jlcxx::arg("this"), jlcxx::arg("aPoint"));
     t.method("Inside", [](G4MultiUnion const* a, const G4ThreeVector & arg0)->EInside { return a->Inside(arg0); }, jlcxx::arg("this"), jlcxx::arg("aPoint"));
 
     DEBUG_MSG("Adding wrapper for G4double G4MultiUnion::DistanceToIn(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4MultiUnion::DistanceToIn(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:81:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:81:14
     t.method("DistanceToIn", [](G4MultiUnion const& a, const G4ThreeVector & arg0)->G4double { return a.DistanceToIn(arg0); }, jlcxx::arg("this"), jlcxx::arg("aPoint"));
     t.method("DistanceToIn", [](G4MultiUnion const* a, const G4ThreeVector & arg0)->G4double { return a->DistanceToIn(arg0); }, jlcxx::arg("this"), jlcxx::arg("aPoint"));
 
     DEBUG_MSG("Adding wrapper for G4double G4MultiUnion::DistanceToOut(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4MultiUnion::DistanceToOut(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:82:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:82:14
     t.method("DistanceToOut", [](G4MultiUnion const& a, const G4ThreeVector & arg0)->G4double { return a.DistanceToOut(arg0); }, jlcxx::arg("this"), jlcxx::arg("aPoint"));
     t.method("DistanceToOut", [](G4MultiUnion const* a, const G4ThreeVector & arg0)->G4double { return a->DistanceToOut(arg0); }, jlcxx::arg("this"), jlcxx::arg("aPoint"));
 
     DEBUG_MSG("Adding wrapper for void G4MultiUnion::SetAccurateSafety(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4MultiUnion::SetAccurateSafety(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:83:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:83:17
     t.method("SetAccurateSafety", [](G4MultiUnion& a, G4bool arg0)->void { a.SetAccurateSafety(arg0); }, jlcxx::arg("this"), jlcxx::arg("flag"));
     t.method("SetAccurateSafety", [](G4MultiUnion* a, G4bool arg0)->void { a->SetAccurateSafety(arg0); }, jlcxx::arg("this"), jlcxx::arg("flag"));
 
     DEBUG_MSG("Adding wrapper for G4double G4MultiUnion::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4MultiUnion::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:86:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:86:14
     t.method("DistanceToIn", [](G4MultiUnion const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double { return a.DistanceToIn(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aPoint"), jlcxx::arg("aDirection"));
     t.method("DistanceToIn", [](G4MultiUnion const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double { return a->DistanceToIn(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aPoint"), jlcxx::arg("aDirection"));
 
     DEBUG_MSG("Adding wrapper for G4double G4MultiUnion::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4MultiUnion::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:88:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:88:14
     t.method("DistanceToOut", [](G4MultiUnion const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double { return a.DistanceToOut(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aPoint"), jlcxx::arg("aDirection"));
     t.method("DistanceToOut", [](G4MultiUnion const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double { return a.DistanceToOut(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("aPoint"), jlcxx::arg("aDirection"), jlcxx::arg("calcNorm"));
     t.method("DistanceToOut", [](G4MultiUnion const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double { return a.DistanceToOut(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("aPoint"), jlcxx::arg("aDirection"), jlcxx::arg("calcNorm"), jlcxx::arg("validNorm"));
@@ -118,109 +118,109 @@ struct JlG4MultiUnion: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4double G4MultiUnion::DistanceToInNoVoxels(const G4ThreeVector &, const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4MultiUnion::DistanceToInNoVoxels(const G4ThreeVector &, const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:94:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:94:14
     t.method("DistanceToInNoVoxels", [](G4MultiUnion const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double { return a.DistanceToInNoVoxels(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aPoint"), jlcxx::arg("aDirection"));
     t.method("DistanceToInNoVoxels", [](G4MultiUnion const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double { return a->DistanceToInNoVoxels(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aPoint"), jlcxx::arg("aDirection"));
 
     DEBUG_MSG("Adding wrapper for G4double G4MultiUnion::DistanceToOutVoxels(const G4ThreeVector &, const G4ThreeVector &, G4ThreeVector *) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4MultiUnion::DistanceToOutVoxels(const G4ThreeVector &, const G4ThreeVector &, G4ThreeVector *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:96:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:96:14
     t.method("DistanceToOutVoxels", [](G4MultiUnion const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, G4ThreeVector * arg2)->G4double { return a.DistanceToOutVoxels(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("aPoint"), jlcxx::arg("aDirection"), jlcxx::arg("aNormalVector"));
     t.method("DistanceToOutVoxels", [](G4MultiUnion const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, G4ThreeVector * arg2)->G4double { return a->DistanceToOutVoxels(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("aPoint"), jlcxx::arg("aDirection"), jlcxx::arg("aNormalVector"));
 
     DEBUG_MSG("Adding wrapper for G4double G4MultiUnion::DistanceToOutNoVoxels(const G4ThreeVector &, const G4ThreeVector &, G4ThreeVector *) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4MultiUnion::DistanceToOutNoVoxels(const G4ThreeVector &, const G4ThreeVector &, G4ThreeVector *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:104:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:104:14
     t.method("DistanceToOutNoVoxels", [](G4MultiUnion const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, G4ThreeVector * arg2)->G4double { return a.DistanceToOutNoVoxels(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("aPoint"), jlcxx::arg("aDirection"), jlcxx::arg("aNormalVector"));
     t.method("DistanceToOutNoVoxels", [](G4MultiUnion const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, G4ThreeVector * arg2)->G4double { return a->DistanceToOutNoVoxels(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("aPoint"), jlcxx::arg("aDirection"), jlcxx::arg("aNormalVector"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4MultiUnion::SurfaceNormal(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4MultiUnion::SurfaceNormal(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:108:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:108:19
     t.method("SurfaceNormal", [](G4MultiUnion const& a, const G4ThreeVector & arg0)->G4ThreeVector { return a.SurfaceNormal(arg0); }, jlcxx::arg("this"), jlcxx::arg("aPoint"));
     t.method("SurfaceNormal", [](G4MultiUnion const* a, const G4ThreeVector & arg0)->G4ThreeVector { return a->SurfaceNormal(arg0); }, jlcxx::arg("this"), jlcxx::arg("aPoint"));
 
     DEBUG_MSG("Adding wrapper for void G4MultiUnion::Extent(EAxis, G4double &, G4double &) (" __HERE__ ")");
     // signature to use in the veto list: void G4MultiUnion::Extent(EAxis, G4double &, G4double &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:110:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:110:10
     t.method("Extent", [](G4MultiUnion const& a, EAxis arg0, G4double & arg1, G4double & arg2)->void { a.Extent(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("aAxis"), jlcxx::arg("aMin"), jlcxx::arg("aMax"));
     t.method("Extent", [](G4MultiUnion const* a, EAxis arg0, G4double & arg1, G4double & arg2)->void { a->Extent(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("aAxis"), jlcxx::arg("aMin"), jlcxx::arg("aMax"));
 
     DEBUG_MSG("Adding wrapper for void G4MultiUnion::BoundingLimits(G4ThreeVector &, G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4MultiUnion::BoundingLimits(G4ThreeVector &, G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:111:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:111:10
     t.method("BoundingLimits", [](G4MultiUnion const& a, G4ThreeVector & arg0, G4ThreeVector & arg1)->void { a.BoundingLimits(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aMin"), jlcxx::arg("aMax"));
     t.method("BoundingLimits", [](G4MultiUnion const* a, G4ThreeVector & arg0, G4ThreeVector & arg1)->void { a->BoundingLimits(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aMin"), jlcxx::arg("aMax"));
 
     DEBUG_MSG("Adding wrapper for G4double G4MultiUnion::GetCubicVolume() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4MultiUnion::GetCubicVolume()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:116:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:116:14
     t.method("GetCubicVolume", [](G4MultiUnion& a)->G4double { return a.GetCubicVolume(); }, jlcxx::arg("this"));
     t.method("GetCubicVolume", [](G4MultiUnion* a)->G4double { return a->GetCubicVolume(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4MultiUnion::GetSurfaceArea() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4MultiUnion::GetSurfaceArea()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:117:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:117:14
     t.method("GetSurfaceArea", [](G4MultiUnion& a)->G4double { return a.GetSurfaceArea(); }, jlcxx::arg("this"));
     t.method("GetSurfaceArea", [](G4MultiUnion* a)->G4double { return a->GetSurfaceArea(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4MultiUnion::GetNumOfConstituents() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4MultiUnion::GetNumOfConstituents()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:119:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:119:11
     t.method("GetNumOfConstituents", [](G4MultiUnion const& a)->G4int { return a.GetNumOfConstituents(); }, jlcxx::arg("this"));
     t.method("GetNumOfConstituents", [](G4MultiUnion const* a)->G4int { return a->GetNumOfConstituents(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4MultiUnion::IsFaceted() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4MultiUnion::IsFaceted()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:120:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:120:12
     t.method("IsFaceted", [](G4MultiUnion const& a)->G4bool { return a.IsFaceted(); }, jlcxx::arg("this"));
     t.method("IsFaceted", [](G4MultiUnion const* a)->G4bool { return a->IsFaceted(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4VSolid * G4MultiUnion::Clone() (" __HERE__ ")");
     // signature to use in the veto list: G4VSolid * G4MultiUnion::Clone()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:122:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:122:15
     t.method("Clone", [](G4MultiUnion const& a)->G4VSolid * { return a.Clone(); }, jlcxx::arg("this"));
     t.method("Clone", [](G4MultiUnion const* a)->G4VSolid * { return a->Clone(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4GeometryType G4MultiUnion::GetEntityType() (" __HERE__ ")");
     // signature to use in the veto list: G4GeometryType G4MultiUnion::GetEntityType()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:124:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:124:20
     t.method("GetEntityType", [](G4MultiUnion const& a)->G4GeometryType { return a.GetEntityType(); }, jlcxx::arg("this"));
     t.method("GetEntityType", [](G4MultiUnion const* a)->G4GeometryType { return a->GetEntityType(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4MultiUnion::Voxelize() (" __HERE__ ")");
     // signature to use in the veto list: void G4MultiUnion::Voxelize()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:126:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:126:10
     t.method("Voxelize", [](G4MultiUnion& a)->void { a.Voxelize(); }, jlcxx::arg("this"));
     t.method("Voxelize", [](G4MultiUnion* a)->void { a->Voxelize(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for EInside G4MultiUnion::InsideNoVoxels(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: EInside G4MultiUnion::InsideNoVoxels(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:130:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:130:13
     t.method("InsideNoVoxels", [](G4MultiUnion const& a, const G4ThreeVector & arg0)->EInside { return a.InsideNoVoxels(arg0); }, jlcxx::arg("this"), jlcxx::arg("aPoint"));
     t.method("InsideNoVoxels", [](G4MultiUnion const* a, const G4ThreeVector & arg0)->EInside { return a->InsideNoVoxels(arg0); }, jlcxx::arg("this"), jlcxx::arg("aPoint"));
 
     DEBUG_MSG("Adding wrapper for G4Voxelizer & G4MultiUnion::GetVoxels() (" __HERE__ ")");
     // signature to use in the veto list: G4Voxelizer & G4MultiUnion::GetVoxels()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:131:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:131:25
     t.method("GetVoxels", [](G4MultiUnion const& a)->G4Voxelizer & { return a.GetVoxels(); }, jlcxx::arg("this"));
     t.method("GetVoxels", [](G4MultiUnion const* a)->G4Voxelizer & { return a->GetVoxels(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4MultiUnion::GetPointOnSurface() (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4MultiUnion::GetPointOnSurface()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:135:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:135:19
     t.method("GetPointOnSurface", [](G4MultiUnion const& a)->G4ThreeVector { return a.GetPointOnSurface(); }, jlcxx::arg("this"));
     t.method("GetPointOnSurface", [](G4MultiUnion const* a)->G4ThreeVector { return a->GetPointOnSurface(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4Polyhedron * G4MultiUnion::CreatePolyhedron() (" __HERE__ ")");
     // signature to use in the veto list: G4Polyhedron * G4MultiUnion::CreatePolyhedron()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:138:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:138:19
     t.method("CreatePolyhedron", [](G4MultiUnion const& a)->G4Polyhedron * { return a.CreatePolyhedron(); }, jlcxx::arg("this"));
     t.method("CreatePolyhedron", [](G4MultiUnion const* a)->G4Polyhedron * { return a->CreatePolyhedron(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4Polyhedron * G4MultiUnion::GetPolyhedron() (" __HERE__ ")");
     // signature to use in the veto list: G4Polyhedron * G4MultiUnion::GetPolyhedron()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MultiUnion.hh:139:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MultiUnion.hh:139:19
     t.method("GetPolyhedron", [](G4MultiUnion const& a)->G4Polyhedron * { return a.GetPolyhedron(); }, jlcxx::arg("this"));
     t.method("GetPolyhedron", [](G4MultiUnion const* a)->G4Polyhedron * { return a->GetPolyhedron(); }, jlcxx::arg("this"));
   }

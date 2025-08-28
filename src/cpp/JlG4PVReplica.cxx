@@ -18,7 +18,7 @@ struct JlG4PVReplica: public Wrapper {
 
   JlG4PVReplica(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4PVReplica (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PVReplica.hh:89:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PVReplica.hh:89:7
     jlcxx::TypeWrapper<G4PVReplica>  t = jlModule.add_type<G4PVReplica>("G4PVReplica",
       jlcxx::julia_base_type<G4VPhysicalVolume>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4PVReplica>>(new jlcxx::TypeWrapper<G4PVReplica>(jlModule, t));
@@ -29,103 +29,103 @@ struct JlG4PVReplica: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4PVReplica::G4PVReplica(const G4String &, G4LogicalVolume *, G4LogicalVolume *, const EAxis, const G4int, const G4double, const G4double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PVReplica.hh:93:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PVReplica.hh:93:5
     t.constructor<const G4String &, G4LogicalVolume *, G4LogicalVolume *, const EAxis, const G4int, const G4double>(/*finalize=*/jlcxx::finalize_policy::no, jlcxx::arg("this"), jlcxx::arg("pName"), jlcxx::arg("pLogical"), jlcxx::arg("pMother"), jlcxx::arg("pAxis"), jlcxx::arg("nReplicas"), jlcxx::arg("width")    );
     t.constructor<const G4String &, G4LogicalVolume *, G4LogicalVolume *, const EAxis, const G4int, const G4double, const G4double>(/*finalize=*/jlcxx::finalize_policy::no, jlcxx::arg("this"), jlcxx::arg("pName"), jlcxx::arg("pLogical"), jlcxx::arg("pMother"), jlcxx::arg("pAxis"), jlcxx::arg("nReplicas"), jlcxx::arg("width"), jlcxx::arg("offset")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4PVReplica::G4PVReplica(const G4String &, G4LogicalVolume *, G4VPhysicalVolume *, const EAxis, const G4int, const G4double, const G4double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PVReplica.hh:101:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PVReplica.hh:101:5
     t.constructor<const G4String &, G4LogicalVolume *, G4VPhysicalVolume *, const EAxis, const G4int, const G4double>(/*finalize=*/jlcxx::finalize_policy::no, jlcxx::arg("this"), jlcxx::arg("pName"), jlcxx::arg("pLogical"), jlcxx::arg("pMother"), jlcxx::arg("pAxis"), jlcxx::arg("nReplicas"), jlcxx::arg("width")    );
     t.constructor<const G4String &, G4LogicalVolume *, G4VPhysicalVolume *, const EAxis, const G4int, const G4double, const G4double>(/*finalize=*/jlcxx::finalize_policy::no, jlcxx::arg("this"), jlcxx::arg("pName"), jlcxx::arg("pLogical"), jlcxx::arg("pMother"), jlcxx::arg("pAxis"), jlcxx::arg("nReplicas"), jlcxx::arg("width"), jlcxx::arg("offset")    );
 
     DEBUG_MSG("Adding wrapper for EVolume G4PVReplica::VolumeType() (" __HERE__ ")");
     // signature to use in the veto list: EVolume G4PVReplica::VolumeType()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PVReplica.hh:120:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PVReplica.hh:120:13
     t.method("VolumeType", [](G4PVReplica const& a)->EVolume { return a.VolumeType(); }, jlcxx::arg("this"));
     t.method("VolumeType", [](G4PVReplica const* a)->EVolume { return a->VolumeType(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4PVReplica::IsMany() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4PVReplica::IsMany()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PVReplica.hh:122:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PVReplica.hh:122:12
     t.method("IsMany", [](G4PVReplica const& a)->G4bool { return a.IsMany(); }, jlcxx::arg("this"));
     t.method("IsMany", [](G4PVReplica const* a)->G4bool { return a->IsMany(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4PVReplica::IsReplicated() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4PVReplica::IsReplicated()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PVReplica.hh:123:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PVReplica.hh:123:12
     t.method("IsReplicated", [](G4PVReplica const& a)->G4bool { return a.IsReplicated(); }, jlcxx::arg("this"));
     t.method("IsReplicated", [](G4PVReplica const* a)->G4bool { return a->IsReplicated(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4PVReplica::GetCopyNo() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4PVReplica::GetCopyNo()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PVReplica.hh:125:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PVReplica.hh:125:11
     t.method("GetCopyNo", [](G4PVReplica const& a)->G4int { return a.GetCopyNo(); }, jlcxx::arg("this"));
     t.method("GetCopyNo", [](G4PVReplica const* a)->G4int { return a->GetCopyNo(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4PVReplica::SetCopyNo(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4PVReplica::SetCopyNo(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PVReplica.hh:126:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PVReplica.hh:126:11
     t.method("SetCopyNo", [](G4PVReplica& a, G4int arg0)->void { a.SetCopyNo(arg0); }, jlcxx::arg("this"), jlcxx::arg("CopyNo"));
     t.method("SetCopyNo", [](G4PVReplica* a, G4int arg0)->void { a->SetCopyNo(arg0); }, jlcxx::arg("this"), jlcxx::arg("CopyNo"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4PVReplica::IsParameterised() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4PVReplica::IsParameterised()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PVReplica.hh:127:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PVReplica.hh:127:12
     t.method("IsParameterised", [](G4PVReplica const& a)->G4bool { return a.IsParameterised(); }, jlcxx::arg("this"));
     t.method("IsParameterised", [](G4PVReplica const* a)->G4bool { return a->IsParameterised(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4VPVParameterisation * G4PVReplica::GetParameterisation() (" __HERE__ ")");
     // signature to use in the veto list: G4VPVParameterisation * G4PVReplica::GetParameterisation()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PVReplica.hh:128:28
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PVReplica.hh:128:28
     t.method("GetParameterisation", [](G4PVReplica const& a)->G4VPVParameterisation * { return a.GetParameterisation(); }, jlcxx::arg("this"));
     t.method("GetParameterisation", [](G4PVReplica const* a)->G4VPVParameterisation * { return a->GetParameterisation(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4PVReplica::GetMultiplicity() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4PVReplica::GetMultiplicity()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PVReplica.hh:129:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PVReplica.hh:129:11
     t.method("GetMultiplicity", [](G4PVReplica const& a)->G4int { return a.GetMultiplicity(); }, jlcxx::arg("this"));
     t.method("GetMultiplicity", [](G4PVReplica const* a)->G4int { return a->GetMultiplicity(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4PVReplica::GetReplicationData(EAxis &, G4int &, G4double &, G4double &, G4bool &) (" __HERE__ ")");
     // signature to use in the veto list: void G4PVReplica::GetReplicationData(EAxis &, G4int &, G4double &, G4double &, G4bool &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PVReplica.hh:130:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PVReplica.hh:130:10
     t.method("GetReplicationData", [](G4PVReplica const& a, EAxis & arg0, G4int & arg1, G4double & arg2, G4double & arg3, G4bool & arg4)->void { a.GetReplicationData(arg0, arg1, arg2, arg3, arg4); }, jlcxx::arg("this"), jlcxx::arg("axis"), jlcxx::arg("nReplicas"), jlcxx::arg("width"), jlcxx::arg("offset"), jlcxx::arg("consuming"));
     t.method("GetReplicationData", [](G4PVReplica const* a, EAxis & arg0, G4int & arg1, G4double & arg2, G4double & arg3, G4bool & arg4)->void { a->GetReplicationData(arg0, arg1, arg2, arg3, arg4); }, jlcxx::arg("this"), jlcxx::arg("axis"), jlcxx::arg("nReplicas"), jlcxx::arg("width"), jlcxx::arg("offset"), jlcxx::arg("consuming"));
 
     DEBUG_MSG("Adding wrapper for void G4PVReplica::SetRegularStructureId(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4PVReplica::SetRegularStructureId(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PVReplica.hh:136:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PVReplica.hh:136:18
     t.method("SetRegularStructureId", [](G4PVReplica& a, G4int arg0)->void { a.SetRegularStructureId(arg0); }, jlcxx::arg("this"), jlcxx::arg("code"));
     t.method("SetRegularStructureId", [](G4PVReplica* a, G4int arg0)->void { a->SetRegularStructureId(arg0); }, jlcxx::arg("this"), jlcxx::arg("code"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4PVReplica::IsRegularStructure() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4PVReplica::IsRegularStructure()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PVReplica.hh:142:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PVReplica.hh:142:12
     t.method("IsRegularStructure", [](G4PVReplica const& a)->G4bool { return a.IsRegularStructure(); }, jlcxx::arg("this"));
     t.method("IsRegularStructure", [](G4PVReplica const* a)->G4bool { return a->IsRegularStructure(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4PVReplica::GetRegularStructureId() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4PVReplica::GetRegularStructureId()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PVReplica.hh:143:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PVReplica.hh:143:11
     t.method("GetRegularStructureId", [](G4PVReplica const& a)->G4int { return a.GetRegularStructureId(); }, jlcxx::arg("this"));
     t.method("GetRegularStructureId", [](G4PVReplica const* a)->G4int { return a->GetRegularStructureId(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4PVReplica::GetInstanceID() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4PVReplica::GetInstanceID()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PVReplica.hh:148:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PVReplica.hh:148:18
     t.method("GetInstanceID", [](G4PVReplica const& a)->G4int { return a.GetInstanceID(); }, jlcxx::arg("this"));
     t.method("GetInstanceID", [](G4PVReplica const* a)->G4int { return a->GetInstanceID(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4PVReplica::InitialiseWorker(G4PVReplica *) (" __HERE__ ")");
     // signature to use in the veto list: void G4PVReplica::InitialiseWorker(G4PVReplica *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PVReplica.hh:154:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PVReplica.hh:154:10
     t.method("InitialiseWorker", [](G4PVReplica& a, G4PVReplica * arg0)->void { a.InitialiseWorker(arg0); }, jlcxx::arg("this"), jlcxx::arg("pMasterObject"));
     t.method("InitialiseWorker", [](G4PVReplica* a, G4PVReplica * arg0)->void { a->InitialiseWorker(arg0); }, jlcxx::arg("this"), jlcxx::arg("pMasterObject"));
 
     DEBUG_MSG("Adding wrapper for void G4PVReplica::TerminateWorker(G4PVReplica *) (" __HERE__ ")");
     // signature to use in the veto list: void G4PVReplica::TerminateWorker(G4PVReplica *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PVReplica.hh:158:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PVReplica.hh:158:10
     t.method("TerminateWorker", [](G4PVReplica& a, G4PVReplica * arg0)->void { a.TerminateWorker(arg0); }, jlcxx::arg("this"), jlcxx::arg("pMasterObject"));
     t.method("TerminateWorker", [](G4PVReplica* a, G4PVReplica * arg0)->void { a->TerminateWorker(arg0); }, jlcxx::arg("this"), jlcxx::arg("pMasterObject"));
   }

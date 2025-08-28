@@ -17,7 +17,7 @@ struct JlG4SPSRandomGenerator: public Wrapper {
 
   JlG4SPSRandomGenerator(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4SPSRandomGenerator (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSRandomGenerator.hh:60:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSRandomGenerator.hh:60:7
     jlcxx::TypeWrapper<G4SPSRandomGenerator>  t = jlModule.add_type<G4SPSRandomGenerator>("G4SPSRandomGenerator");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4SPSRandomGenerator>>(new jlcxx::TypeWrapper<G4SPSRandomGenerator>(jlModule, t));
   }

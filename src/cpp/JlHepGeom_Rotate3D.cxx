@@ -18,7 +18,7 @@ struct JlHepGeom_Rotate3D: public Wrapper {
 
   JlHepGeom_Rotate3D(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type HepGeom::Rotate3D (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:370:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:370:9
     jlcxx::TypeWrapper<HepGeom::Rotate3D>  t = jlModule.add_type<HepGeom::Rotate3D>("HepGeom!Rotate3D",
       jlcxx::julia_base_type<HepGeom::Transform3D>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<HepGeom::Rotate3D>>(new jlcxx::TypeWrapper<HepGeom::Rotate3D>(jlModule, t));
@@ -30,22 +30,22 @@ struct JlHepGeom_Rotate3D: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void HepGeom::Rotate3D::Rotate3D(const CLHEP::HepRotation &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:378:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:378:12
     t.constructor<const CLHEP::HepRotation &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("mt")    );
 
 
     DEBUG_MSG("Adding wrapper for void HepGeom::Rotate3D::Rotate3D(double, const HepGeom::Point3D<double> &, const HepGeom::Point3D<double> &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:386:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:386:5
     t.constructor<double, const HepGeom::Point3D<double> &, const HepGeom::Point3D<double> &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("a"), jlcxx::arg("p1"), jlcxx::arg("p2")    );
 
 
     DEBUG_MSG("Adding wrapper for void HepGeom::Rotate3D::Rotate3D(double, const HepGeom::Vector3D<double> &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:395:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:395:12
     t.constructor<double, const HepGeom::Vector3D<double> &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("a"), jlcxx::arg("v")    );
 
 
     DEBUG_MSG("Adding wrapper for void HepGeom::Rotate3D::Rotate3D(const HepGeom::Point3D<double> &, const HepGeom::Point3D<double> &, const HepGeom::Point3D<double> &, const HepGeom::Point3D<double> &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:405:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:405:12
     t.constructor<const HepGeom::Point3D<double> &, const HepGeom::Point3D<double> &, const HepGeom::Point3D<double> &, const HepGeom::Point3D<double> &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("fr1"), jlcxx::arg("fr2"), jlcxx::arg("to1"), jlcxx::arg("to2")    );
   }
 

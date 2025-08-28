@@ -17,7 +17,7 @@ struct JlCLHEP_HepRep4x4: public Wrapper {
 
   JlCLHEP_HepRep4x4(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type CLHEP::HepRep4x4 (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/RotationInterfaces.h:332:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/RotationInterfaces.h:332:8
     jlcxx::TypeWrapper<CLHEP::HepRep4x4>  t = jlModule.add_type<CLHEP::HepRep4x4>("CLHEP!HepRep4x4");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<CLHEP::HepRep4x4>>(new jlcxx::TypeWrapper<CLHEP::HepRep4x4>(jlModule, t));
   }

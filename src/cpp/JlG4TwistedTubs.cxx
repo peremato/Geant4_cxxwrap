@@ -18,7 +18,7 @@ struct JlG4TwistedTubs: public Wrapper {
 
   JlG4TwistedTubs(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4TwistedTubs (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:55:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:55:7
     jlcxx::TypeWrapper<G4TwistedTubs>  t = jlModule.add_type<G4TwistedTubs>("G4TwistedTubs",
       jlcxx::julia_base_type<G4VSolid>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4TwistedTubs>>(new jlcxx::TypeWrapper<G4TwistedTubs>(jlModule, t));
@@ -29,51 +29,51 @@ struct JlG4TwistedTubs: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4TwistedTubs::G4TwistedTubs(const G4String &, G4double, G4double, G4double, G4double, G4double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:59:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:59:5
     t.constructor<const G4String &, G4double, G4double, G4double, G4double, G4double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("pname"), jlcxx::arg("twistedangle"), jlcxx::arg("endinnerrad"), jlcxx::arg("endouterrad"), jlcxx::arg("halfzlen"), jlcxx::arg("dphi")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4TwistedTubs::G4TwistedTubs(const G4String &, G4double, G4double, G4double, G4double, G4int, G4double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:66:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:66:5
     t.constructor<const G4String &, G4double, G4double, G4double, G4double, G4int, G4double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("pname"), jlcxx::arg("twistedangle"), jlcxx::arg("endinnerrad"), jlcxx::arg("endouterrad"), jlcxx::arg("halfzlen"), jlcxx::arg("nseg"), jlcxx::arg("totphi")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4TwistedTubs::G4TwistedTubs(const G4String &, G4double, G4double, G4double, G4double, G4double, G4double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:74:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:74:5
     t.constructor<const G4String &, G4double, G4double, G4double, G4double, G4double, G4double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("pname"), jlcxx::arg("twistedangle"), jlcxx::arg("innerrad"), jlcxx::arg("outerrad"), jlcxx::arg("negativeEndz"), jlcxx::arg("positiveEndz"), jlcxx::arg("dphi")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4TwistedTubs::G4TwistedTubs(const G4String &, G4double, G4double, G4double, G4double, G4double, G4int, G4double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:82:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:82:5
     t.constructor<const G4String &, G4double, G4double, G4double, G4double, G4double, G4int, G4double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("pname"), jlcxx::arg("twistedangle"), jlcxx::arg("innerrad"), jlcxx::arg("outerrad"), jlcxx::arg("negativeEndz"), jlcxx::arg("positiveEndz"), jlcxx::arg("nseg"), jlcxx::arg("totphi")    );
 
     DEBUG_MSG("Adding wrapper for void G4TwistedTubs::ComputeDimensions(G4VPVParameterisation *, const G4int, const G4VPhysicalVolume *) (" __HERE__ ")");
     // signature to use in the veto list: void G4TwistedTubs::ComputeDimensions(G4VPVParameterisation *, const G4int, const G4VPhysicalVolume *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:93:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:93:10
     t.method("ComputeDimensions", [](G4TwistedTubs& a, G4VPVParameterisation * arg0, const G4int arg1, const G4VPhysicalVolume * arg2)->void { a.ComputeDimensions(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"), jlcxx::arg("arg2"));
     t.method("ComputeDimensions", [](G4TwistedTubs* a, G4VPVParameterisation * arg0, const G4int arg1, const G4VPhysicalVolume * arg2)->void { a->ComputeDimensions(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"), jlcxx::arg("arg2"));
 
     DEBUG_MSG("Adding wrapper for void G4TwistedTubs::BoundingLimits(G4ThreeVector &, G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4TwistedTubs::BoundingLimits(G4ThreeVector &, G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:97:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:97:10
     t.method("BoundingLimits", [](G4TwistedTubs const& a, G4ThreeVector & arg0, G4ThreeVector & arg1)->void { a.BoundingLimits(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("pMin"), jlcxx::arg("pMax"));
     t.method("BoundingLimits", [](G4TwistedTubs const* a, G4ThreeVector & arg0, G4ThreeVector & arg1)->void { a->BoundingLimits(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("pMin"), jlcxx::arg("pMax"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:105:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:105:14
     t.method("DistanceToIn", [](G4TwistedTubs const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double { return a.DistanceToIn(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"));
     t.method("DistanceToIn", [](G4TwistedTubs const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double { return a->DistanceToIn(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::DistanceToIn(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::DistanceToIn(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:108:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:108:14
     t.method("DistanceToIn", [](G4TwistedTubs const& a, const G4ThreeVector & arg0)->G4double { return a.DistanceToIn(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("DistanceToIn", [](G4TwistedTubs const* a, const G4ThreeVector & arg0)->G4double { return a->DistanceToIn(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:110:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:110:14
     t.method("DistanceToOut", [](G4TwistedTubs const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double { return a.DistanceToOut(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"));
     t.method("DistanceToOut", [](G4TwistedTubs const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double { return a.DistanceToOut(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"), jlcxx::arg("calcnorm"));
     t.method("DistanceToOut", [](G4TwistedTubs const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double { return a.DistanceToOut(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"), jlcxx::arg("calcnorm"), jlcxx::arg("validnorm"));
@@ -85,180 +85,180 @@ struct JlG4TwistedTubs: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::DistanceToOut(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::DistanceToOut(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:116:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:116:14
     t.method("DistanceToOut", [](G4TwistedTubs const& a, const G4ThreeVector & arg0)->G4double { return a.DistanceToOut(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("DistanceToOut", [](G4TwistedTubs const* a, const G4ThreeVector & arg0)->G4double { return a->DistanceToOut(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for EInside G4TwistedTubs::Inside(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: EInside G4TwistedTubs::Inside(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:118:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:118:13
     t.method("Inside", [](G4TwistedTubs const& a, const G4ThreeVector & arg0)->EInside { return a.Inside(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("Inside", [](G4TwistedTubs const* a, const G4ThreeVector & arg0)->EInside { return a->Inside(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4TwistedTubs::SurfaceNormal(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4TwistedTubs::SurfaceNormal(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:120:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:120:19
     t.method("SurfaceNormal", [](G4TwistedTubs const& a, const G4ThreeVector & arg0)->G4ThreeVector { return a.SurfaceNormal(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("SurfaceNormal", [](G4TwistedTubs const* a, const G4ThreeVector & arg0)->G4ThreeVector { return a->SurfaceNormal(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for G4Polyhedron * G4TwistedTubs::CreatePolyhedron() (" __HERE__ ")");
     // signature to use in the veto list: G4Polyhedron * G4TwistedTubs::CreatePolyhedron()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:123:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:123:19
     t.method("CreatePolyhedron", [](G4TwistedTubs const& a)->G4Polyhedron * { return a.CreatePolyhedron(); }, jlcxx::arg("this"));
     t.method("CreatePolyhedron", [](G4TwistedTubs const* a)->G4Polyhedron * { return a->CreatePolyhedron(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4Polyhedron * G4TwistedTubs::GetPolyhedron() (" __HERE__ ")");
     // signature to use in the veto list: G4Polyhedron * G4TwistedTubs::GetPolyhedron()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:124:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:124:19
     t.method("GetPolyhedron", [](G4TwistedTubs const& a)->G4Polyhedron * { return a.GetPolyhedron(); }, jlcxx::arg("this"));
     t.method("GetPolyhedron", [](G4TwistedTubs const* a)->G4Polyhedron * { return a->GetPolyhedron(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::GetDPhi() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::GetDPhi()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:130:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:130:21
     t.method("GetDPhi", [](G4TwistedTubs const& a)->G4double { return a.GetDPhi(); }, jlcxx::arg("this"));
     t.method("GetDPhi", [](G4TwistedTubs const* a)->G4double { return a->GetDPhi(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::GetPhiTwist() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::GetPhiTwist()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:131:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:131:21
     t.method("GetPhiTwist", [](G4TwistedTubs const& a)->G4double { return a.GetPhiTwist(); }, jlcxx::arg("this"));
     t.method("GetPhiTwist", [](G4TwistedTubs const* a)->G4double { return a->GetPhiTwist(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::GetInnerRadius() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::GetInnerRadius()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:132:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:132:21
     t.method("GetInnerRadius", [](G4TwistedTubs const& a)->G4double { return a.GetInnerRadius(); }, jlcxx::arg("this"));
     t.method("GetInnerRadius", [](G4TwistedTubs const* a)->G4double { return a->GetInnerRadius(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::GetOuterRadius() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::GetOuterRadius()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:133:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:133:21
     t.method("GetOuterRadius", [](G4TwistedTubs const& a)->G4double { return a.GetOuterRadius(); }, jlcxx::arg("this"));
     t.method("GetOuterRadius", [](G4TwistedTubs const* a)->G4double { return a->GetOuterRadius(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::GetInnerStereo() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::GetInnerStereo()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:134:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:134:21
     t.method("GetInnerStereo", [](G4TwistedTubs const& a)->G4double { return a.GetInnerStereo(); }, jlcxx::arg("this"));
     t.method("GetInnerStereo", [](G4TwistedTubs const* a)->G4double { return a->GetInnerStereo(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::GetOuterStereo() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::GetOuterStereo()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:135:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:135:21
     t.method("GetOuterStereo", [](G4TwistedTubs const& a)->G4double { return a.GetOuterStereo(); }, jlcxx::arg("this"));
     t.method("GetOuterStereo", [](G4TwistedTubs const* a)->G4double { return a->GetOuterStereo(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::GetZHalfLength() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::GetZHalfLength()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:136:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:136:21
     t.method("GetZHalfLength", [](G4TwistedTubs const& a)->G4double { return a.GetZHalfLength(); }, jlcxx::arg("this"));
     t.method("GetZHalfLength", [](G4TwistedTubs const* a)->G4double { return a->GetZHalfLength(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::GetKappa() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::GetKappa()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:137:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:137:21
     t.method("GetKappa", [](G4TwistedTubs const& a)->G4double { return a.GetKappa(); }, jlcxx::arg("this"));
     t.method("GetKappa", [](G4TwistedTubs const* a)->G4double { return a->GetKappa(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::GetTanInnerStereo() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::GetTanInnerStereo()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:139:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:139:21
     t.method("GetTanInnerStereo", [](G4TwistedTubs const& a)->G4double { return a.GetTanInnerStereo(); }, jlcxx::arg("this"));
     t.method("GetTanInnerStereo", [](G4TwistedTubs const* a)->G4double { return a->GetTanInnerStereo(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::GetTanInnerStereo2() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::GetTanInnerStereo2()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:140:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:140:21
     t.method("GetTanInnerStereo2", [](G4TwistedTubs const& a)->G4double { return a.GetTanInnerStereo2(); }, jlcxx::arg("this"));
     t.method("GetTanInnerStereo2", [](G4TwistedTubs const* a)->G4double { return a->GetTanInnerStereo2(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::GetTanOuterStereo() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::GetTanOuterStereo()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:141:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:141:21
     t.method("GetTanOuterStereo", [](G4TwistedTubs const& a)->G4double { return a.GetTanOuterStereo(); }, jlcxx::arg("this"));
     t.method("GetTanOuterStereo", [](G4TwistedTubs const* a)->G4double { return a->GetTanOuterStereo(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::GetTanOuterStereo2() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::GetTanOuterStereo2()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:142:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:142:21
     t.method("GetTanOuterStereo2", [](G4TwistedTubs const& a)->G4double { return a.GetTanOuterStereo2(); }, jlcxx::arg("this"));
     t.method("GetTanOuterStereo2", [](G4TwistedTubs const* a)->G4double { return a->GetTanOuterStereo2(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::GetEndZ(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::GetEndZ(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:144:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:144:21
     t.method("GetEndZ", [](G4TwistedTubs const& a, G4int arg0)->G4double { return a.GetEndZ(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
     t.method("GetEndZ", [](G4TwistedTubs const* a, G4int arg0)->G4double { return a->GetEndZ(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::GetEndPhi(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::GetEndPhi(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:145:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:145:21
     t.method("GetEndPhi", [](G4TwistedTubs const& a, G4int arg0)->G4double { return a.GetEndPhi(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
     t.method("GetEndPhi", [](G4TwistedTubs const* a, G4int arg0)->G4double { return a->GetEndPhi(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::GetEndInnerRadius(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::GetEndInnerRadius(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:146:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:146:21
     t.method("GetEndInnerRadius", [](G4TwistedTubs const& a, G4int arg0)->G4double { return a.GetEndInnerRadius(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
     t.method("GetEndInnerRadius", [](G4TwistedTubs const* a, G4int arg0)->G4double { return a->GetEndInnerRadius(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::GetEndOuterRadius(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::GetEndOuterRadius(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:148:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:148:21
     t.method("GetEndOuterRadius", [](G4TwistedTubs const& a, G4int arg0)->G4double { return a.GetEndOuterRadius(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
     t.method("GetEndOuterRadius", [](G4TwistedTubs const* a, G4int arg0)->G4double { return a->GetEndOuterRadius(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::GetEndInnerRadius() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::GetEndInnerRadius()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:150:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:150:21
     t.method("GetEndInnerRadius", [](G4TwistedTubs const& a)->G4double { return a.GetEndInnerRadius(); }, jlcxx::arg("this"));
     t.method("GetEndInnerRadius", [](G4TwistedTubs const* a)->G4double { return a->GetEndInnerRadius(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::GetEndOuterRadius() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::GetEndOuterRadius()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:153:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:153:21
     t.method("GetEndOuterRadius", [](G4TwistedTubs const& a)->G4double { return a.GetEndOuterRadius(); }, jlcxx::arg("this"));
     t.method("GetEndOuterRadius", [](G4TwistedTubs const* a)->G4double { return a->GetEndOuterRadius(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4GeometryType G4TwistedTubs::GetEntityType() (" __HERE__ ")");
     // signature to use in the veto list: G4GeometryType G4TwistedTubs::GetEntityType()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:158:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:158:21
     t.method("GetEntityType", [](G4TwistedTubs const& a)->G4GeometryType { return a.GetEntityType(); }, jlcxx::arg("this"));
     t.method("GetEntityType", [](G4TwistedTubs const* a)->G4GeometryType { return a->GetEntityType(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4VSolid * G4TwistedTubs::Clone() (" __HERE__ ")");
     // signature to use in the veto list: G4VSolid * G4TwistedTubs::Clone()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:159:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:159:15
     t.method("Clone", [](G4TwistedTubs const& a)->G4VSolid * { return a.Clone(); }, jlcxx::arg("this"));
     t.method("Clone", [](G4TwistedTubs const* a)->G4VSolid * { return a->Clone(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::GetCubicVolume() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::GetCubicVolume()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:161:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:161:14
     t.method("GetCubicVolume", [](G4TwistedTubs& a)->G4double { return a.GetCubicVolume(); }, jlcxx::arg("this"));
     t.method("GetCubicVolume", [](G4TwistedTubs* a)->G4double { return a->GetCubicVolume(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTubs::GetSurfaceArea() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTubs::GetSurfaceArea()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:164:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:164:14
     t.method("GetSurfaceArea", [](G4TwistedTubs& a)->G4double { return a.GetSurfaceArea(); }, jlcxx::arg("this"));
     t.method("GetSurfaceArea", [](G4TwistedTubs* a)->G4double { return a->GetSurfaceArea(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4TwistedTubs::GetPointOnSurface() (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4TwistedTubs::GetPointOnSurface()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:168:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:168:19
     t.method("GetPointOnSurface", [](G4TwistedTubs const& a)->G4ThreeVector { return a.GetPointOnSurface(); }, jlcxx::arg("this"));
     t.method("GetPointOnSurface", [](G4TwistedTubs const* a)->G4ThreeVector { return a->GetPointOnSurface(); }, jlcxx::arg("this"));
 
 
     DEBUG_MSG("Adding wrapper for void G4TwistedTubs::G4TwistedTubs(const G4TwistedTubs &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:175:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:175:5
     t.constructor<const G4TwistedTubs &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("rhs")    );
 
     DEBUG_MSG("Adding wrapper for G4TwistedTubs & G4TwistedTubs::operator=(const G4TwistedTubs &) (" __HERE__ ")");
     // signature to use in the veto list: G4TwistedTubs & G4TwistedTubs::operator=(const G4TwistedTubs &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTubs.hh:176:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTubs.hh:176:20
     t.method("assign", [](G4TwistedTubs& a, const G4TwistedTubs & arg0)->G4TwistedTubs & { return a.operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("rhs"));
     t.method("assign", [](G4TwistedTubs* a, const G4TwistedTubs & arg0)->G4TwistedTubs & { return a->operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("rhs"));
   }

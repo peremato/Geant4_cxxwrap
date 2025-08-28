@@ -17,7 +17,7 @@ struct JlTrapSidePlane: public Wrapper {
 
   JlTrapSidePlane(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type TrapSidePlane (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Trap.hh:90:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Trap.hh:90:8
     jlcxx::TypeWrapper<TrapSidePlane>  t = jlModule.add_type<TrapSidePlane>("TrapSidePlane");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<TrapSidePlane>>(new jlcxx::TypeWrapper<TrapSidePlane>(jlModule, t));
   }
@@ -27,13 +27,13 @@ struct JlTrapSidePlane: public Wrapper {
     t.template constructor<>(/*finalize=*/jlcxx::finalize_policy::yes    );
 
     DEBUG_MSG("Adding a methods  to provide read access to the field a (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Trap.hh:92:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Trap.hh:92:14
     // signature to use in the veto list: TrapSidePlane::a
     t.method("a", [](const TrapSidePlane& a) -> G4double { return a.a; }, jlcxx::arg("this"));
     t.method("a", [](TrapSidePlane& a) -> G4double { return a.a; }, jlcxx::arg("this"));
     t.method("a", [](const TrapSidePlane* a) -> G4double { return a->a; }, jlcxx::arg("this"));
     t.method("a", [](TrapSidePlane* a) -> G4double { return a->a; }, jlcxx::arg("this"));
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Trap.hh:92:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Trap.hh:92:14
     // signature to use in the veto list: TrapSidePlane::a
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding a! methods to provide write access to the field a (" __HERE__ ")");
@@ -43,13 +43,13 @@ struct JlTrapSidePlane: public Wrapper {
     t.method("a!", [](TrapSidePlane* a, G4double val) -> G4double { return a->a = val; }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding b methods  to provide read access to the field b (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Trap.hh:92:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Trap.hh:92:16
     // signature to use in the veto list: TrapSidePlane::b
     t.method("b", [](const TrapSidePlane& a) -> G4double { return a.b; }, jlcxx::arg("this"));
     t.method("b", [](TrapSidePlane& a) -> G4double { return a.b; }, jlcxx::arg("this"));
     t.method("b", [](const TrapSidePlane* a) -> G4double { return a->b; }, jlcxx::arg("this"));
     t.method("b", [](TrapSidePlane* a) -> G4double { return a->b; }, jlcxx::arg("this"));
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Trap.hh:92:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Trap.hh:92:16
     // signature to use in the veto list: TrapSidePlane::b
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding b! methods to provide write access to the field b (" __HERE__ ")");
@@ -59,13 +59,13 @@ struct JlTrapSidePlane: public Wrapper {
     t.method("b!", [](TrapSidePlane* a, G4double val) -> G4double { return a->b = val; }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding c methods  to provide read access to the field c (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Trap.hh:92:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Trap.hh:92:18
     // signature to use in the veto list: TrapSidePlane::c
     t.method("c", [](const TrapSidePlane& a) -> G4double { return a.c; }, jlcxx::arg("this"));
     t.method("c", [](TrapSidePlane& a) -> G4double { return a.c; }, jlcxx::arg("this"));
     t.method("c", [](const TrapSidePlane* a) -> G4double { return a->c; }, jlcxx::arg("this"));
     t.method("c", [](TrapSidePlane* a) -> G4double { return a->c; }, jlcxx::arg("this"));
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Trap.hh:92:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Trap.hh:92:18
     // signature to use in the veto list: TrapSidePlane::c
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding c! methods to provide write access to the field c (" __HERE__ ")");
@@ -75,13 +75,13 @@ struct JlTrapSidePlane: public Wrapper {
     t.method("c!", [](TrapSidePlane* a, G4double val) -> G4double { return a->c = val; }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding d methods  to provide read access to the field d (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Trap.hh:92:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Trap.hh:92:20
     // signature to use in the veto list: TrapSidePlane::d
     t.method("d", [](const TrapSidePlane& a) -> G4double { return a.d; }, jlcxx::arg("this"));
     t.method("d", [](TrapSidePlane& a) -> G4double { return a.d; }, jlcxx::arg("this"));
     t.method("d", [](const TrapSidePlane* a) -> G4double { return a->d; }, jlcxx::arg("this"));
     t.method("d", [](TrapSidePlane* a) -> G4double { return a->d; }, jlcxx::arg("this"));
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Trap.hh:92:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Trap.hh:92:20
     // signature to use in the veto list: TrapSidePlane::d
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding d! methods to provide write access to the field d (" __HERE__ ")");

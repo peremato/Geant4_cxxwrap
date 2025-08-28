@@ -18,7 +18,7 @@ struct JlG4MTRunManagerKernel: public Wrapper {
 
   JlG4MTRunManagerKernel(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4MTRunManagerKernel (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MTRunManagerKernel.hh:66:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MTRunManagerKernel.hh:66:7
     jlcxx::TypeWrapper<G4MTRunManagerKernel>  t = jlModule.add_type<G4MTRunManagerKernel>("G4MTRunManagerKernel",
       jlcxx::julia_base_type<G4RunManagerKernel>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4MTRunManagerKernel>>(new jlcxx::TypeWrapper<G4MTRunManagerKernel>(jlModule, t));
@@ -30,13 +30,13 @@ struct JlG4MTRunManagerKernel: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4MTRunManagerKernel::SetUpDecayChannels() (" __HERE__ ")");
     // signature to use in the veto list: void G4MTRunManagerKernel::SetUpDecayChannels()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MTRunManagerKernel.hh:81:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MTRunManagerKernel.hh:81:10
     t.method("SetUpDecayChannels", [](G4MTRunManagerKernel& a)->void { a.SetUpDecayChannels(); }, jlcxx::arg("this"));
     t.method("SetUpDecayChannels", [](G4MTRunManagerKernel* a)->void { a->SetUpDecayChannels(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4MTRunManagerKernel::BroadcastAbortRun(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4MTRunManagerKernel::BroadcastAbortRun(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MTRunManagerKernel.hh:84:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MTRunManagerKernel.hh:84:10
     t.method("BroadcastAbortRun", [](G4MTRunManagerKernel& a, G4bool arg0)->void { a.BroadcastAbortRun(arg0); }, jlcxx::arg("this"), jlcxx::arg("softAbort"));
     t.method("BroadcastAbortRun", [](G4MTRunManagerKernel* a, G4bool arg0)->void { a->BroadcastAbortRun(arg0); }, jlcxx::arg("this"), jlcxx::arg("softAbort"));
   }

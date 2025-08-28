@@ -18,7 +18,7 @@ struct JlG4CSGSolid: public Wrapper {
 
   JlG4CSGSolid(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4CSGSolid (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4CSGSolid.hh:41:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4CSGSolid.hh:41:7
     jlcxx::TypeWrapper<G4CSGSolid>  t = jlModule.add_type<G4CSGSolid>("G4CSGSolid",
       jlcxx::julia_base_type<G4VSolid>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4CSGSolid>>(new jlcxx::TypeWrapper<G4CSGSolid>(jlModule, t));
@@ -30,14 +30,14 @@ struct JlG4CSGSolid: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4Polyhedron * G4CSGSolid::GetPolyhedron() (" __HERE__ ")");
     // signature to use in the veto list: G4Polyhedron * G4CSGSolid::GetPolyhedron()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4CSGSolid.hh:50:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4CSGSolid.hh:50:19
     t.method("GetPolyhedron", [](G4CSGSolid const& a)->G4Polyhedron * { return a.GetPolyhedron(); }, jlcxx::arg("this"));
     t.method("GetPolyhedron", [](G4CSGSolid const* a)->G4Polyhedron * { return a->GetPolyhedron(); }, jlcxx::arg("this"));
 
 
     DEBUG_MSG("Adding wrapper for G4CSGSolid & G4CSGSolid::operator=(const G4CSGSolid &) (" __HERE__ ")");
     // signature to use in the veto list: G4CSGSolid & G4CSGSolid::operator=(const G4CSGSolid &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4CSGSolid.hh:58:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4CSGSolid.hh:58:17
     t.method("assign", [](G4CSGSolid& a, const G4CSGSolid & arg0)->G4CSGSolid & { return a.operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("rhs"));
     t.method("assign", [](G4CSGSolid* a, const G4CSGSolid & arg0)->G4CSGSolid & { return a->operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("rhs"));
   }

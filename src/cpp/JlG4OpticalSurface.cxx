@@ -18,7 +18,7 @@ struct JlG4OpticalSurface: public Wrapper {
 
   JlG4OpticalSurface(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4OpticalSurface (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:119:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:119:7
     jlcxx::TypeWrapper<G4OpticalSurface>  t = jlModule.add_type<G4OpticalSurface>("G4OpticalSurface",
       jlcxx::julia_base_type<G4SurfaceProperty>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4OpticalSurface>>(new jlcxx::TypeWrapper<G4OpticalSurface>(jlModule, t));
@@ -29,7 +29,7 @@ struct JlG4OpticalSurface: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4OpticalSurface::G4OpticalSurface(const G4String &, G4OpticalSurfaceModel, G4OpticalSurfaceFinish, G4SurfaceType, G4double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:123:3
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:123:3
     t.constructor<const G4String &>(/*finalize=*/jlcxx::finalize_policy::no, jlcxx::arg("this"), jlcxx::arg("name")    );
     t.constructor<const G4String &, G4OpticalSurfaceModel>(/*finalize=*/jlcxx::finalize_policy::no, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("model")    );
     t.constructor<const G4String &, G4OpticalSurfaceModel, G4OpticalSurfaceFinish>(/*finalize=*/jlcxx::finalize_policy::no, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("model"), jlcxx::arg("finish")    );
@@ -38,25 +38,25 @@ struct JlG4OpticalSurface: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4OpticalSurface::G4OpticalSurface(const G4OpticalSurface &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:129:3
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:129:3
     t.constructor<const G4OpticalSurface &>(/*finalize=*/jlcxx::finalize_policy::no, jlcxx::arg("this"), jlcxx::arg("right")    );
 
     DEBUG_MSG("Adding wrapper for G4OpticalSurface & G4OpticalSurface::operator=(const G4OpticalSurface &) (" __HERE__ ")");
     // signature to use in the veto list: G4OpticalSurface & G4OpticalSurface::operator=(const G4OpticalSurface &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:130:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:130:21
     t.method("assign", [](G4OpticalSurface& a, const G4OpticalSurface & arg0)->G4OpticalSurface & { return a.operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
     t.method("assign", [](G4OpticalSurface* a, const G4OpticalSurface & arg0)->G4OpticalSurface & { return a->operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
     module_.set_override_module(jl_base_module);
 
     DEBUG_MSG("Adding wrapper for G4bool G4OpticalSurface::operator==(const G4OpticalSurface &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4OpticalSurface::operator==(const G4OpticalSurface &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:132:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:132:10
     t.method("==", [](G4OpticalSurface const& a, const G4OpticalSurface & arg0)->G4bool { return a.operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
     t.method("==", [](G4OpticalSurface const* a, const G4OpticalSurface & arg0)->G4bool { return a->operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4OpticalSurface::operator!=(const G4OpticalSurface &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4OpticalSurface::operator!=(const G4OpticalSurface &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:133:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:133:10
     t.method("!=", [](G4OpticalSurface const& a, const G4OpticalSurface & arg0)->G4bool { return a.operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
     t.method("!=", [](G4OpticalSurface const* a, const G4OpticalSurface & arg0)->G4bool { return a->operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
 
@@ -64,157 +64,157 @@ struct JlG4OpticalSurface: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4OpticalSurface::SetType(const G4SurfaceType &) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalSurface::SetType(const G4SurfaceType &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:135:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:135:8
     t.method("SetType", [](G4OpticalSurface& a, const G4SurfaceType & arg0)->void { a.SetType(arg0); }, jlcxx::arg("this"), jlcxx::arg("type"));
     t.method("SetType", [](G4OpticalSurface* a, const G4SurfaceType & arg0)->void { a->SetType(arg0); }, jlcxx::arg("this"), jlcxx::arg("type"));
 
     DEBUG_MSG("Adding wrapper for G4OpticalSurfaceFinish G4OpticalSurface::GetFinish() (" __HERE__ ")");
     // signature to use in the veto list: G4OpticalSurfaceFinish G4OpticalSurface::GetFinish()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:138:33
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:138:33
     t.method("GetFinish", [](G4OpticalSurface const& a)->G4OpticalSurfaceFinish { return a.GetFinish(); }, jlcxx::arg("this"));
     t.method("GetFinish", [](G4OpticalSurface const* a)->G4OpticalSurfaceFinish { return a->GetFinish(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalSurface::SetFinish(const G4OpticalSurfaceFinish) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalSurface::SetFinish(const G4OpticalSurfaceFinish)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:141:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:141:8
     t.method("SetFinish", [](G4OpticalSurface& a, const G4OpticalSurfaceFinish arg0)->void { a.SetFinish(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetFinish", [](G4OpticalSurface* a, const G4OpticalSurfaceFinish arg0)->void { a->SetFinish(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4OpticalSurfaceModel G4OpticalSurface::GetModel() (" __HERE__ ")");
     // signature to use in the veto list: G4OpticalSurfaceModel G4OpticalSurface::GetModel()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:144:32
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:144:32
     t.method("GetModel", [](G4OpticalSurface const& a)->G4OpticalSurfaceModel { return a.GetModel(); }, jlcxx::arg("this"));
     t.method("GetModel", [](G4OpticalSurface const* a)->G4OpticalSurfaceModel { return a->GetModel(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalSurface::SetModel(const G4OpticalSurfaceModel) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalSurface::SetModel(const G4OpticalSurfaceModel)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:147:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:147:15
     t.method("SetModel", [](G4OpticalSurface& a, const G4OpticalSurfaceModel arg0)->void { a.SetModel(arg0); }, jlcxx::arg("this"), jlcxx::arg("model"));
     t.method("SetModel", [](G4OpticalSurface* a, const G4OpticalSurfaceModel arg0)->void { a->SetModel(arg0); }, jlcxx::arg("this"), jlcxx::arg("model"));
 
     DEBUG_MSG("Adding wrapper for G4double G4OpticalSurface::GetSigmaAlpha() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4OpticalSurface::GetSigmaAlpha()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:150:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:150:19
     t.method("GetSigmaAlpha", [](G4OpticalSurface const& a)->G4double { return a.GetSigmaAlpha(); }, jlcxx::arg("this"));
     t.method("GetSigmaAlpha", [](G4OpticalSurface const* a)->G4double { return a->GetSigmaAlpha(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalSurface::SetSigmaAlpha(const G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalSurface::SetSigmaAlpha(const G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:153:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:153:15
     t.method("SetSigmaAlpha", [](G4OpticalSurface& a, const G4double arg0)->void { a.SetSigmaAlpha(arg0); }, jlcxx::arg("this"), jlcxx::arg("s_a"));
     t.method("SetSigmaAlpha", [](G4OpticalSurface* a, const G4double arg0)->void { a->SetSigmaAlpha(arg0); }, jlcxx::arg("this"), jlcxx::arg("s_a"));
 
     DEBUG_MSG("Adding wrapper for G4double G4OpticalSurface::GetPolish() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4OpticalSurface::GetPolish()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:156:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:156:12
     t.method("GetPolish", [](G4OpticalSurface const& a)->G4double { return a.GetPolish(); }, jlcxx::arg("this"));
     t.method("GetPolish", [](G4OpticalSurface const* a)->G4double { return a->GetPolish(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalSurface::SetPolish(const G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalSurface::SetPolish(const G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:159:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:159:15
     t.method("SetPolish", [](G4OpticalSurface& a, const G4double arg0)->void { a.SetPolish(arg0); }, jlcxx::arg("this"), jlcxx::arg("plsh"));
     t.method("SetPolish", [](G4OpticalSurface* a, const G4double arg0)->void { a->SetPolish(arg0); }, jlcxx::arg("this"), jlcxx::arg("plsh"));
 
     DEBUG_MSG("Adding wrapper for G4MaterialPropertiesTable * G4OpticalSurface::GetMaterialPropertiesTable() (" __HERE__ ")");
     // signature to use in the veto list: G4MaterialPropertiesTable * G4OpticalSurface::GetMaterialPropertiesTable()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:163:37
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:163:37
     t.method("GetMaterialPropertiesTable", [](G4OpticalSurface const& a)->G4MaterialPropertiesTable * { return a.GetMaterialPropertiesTable(); }, jlcxx::arg("this"));
     t.method("GetMaterialPropertiesTable", [](G4OpticalSurface const* a)->G4MaterialPropertiesTable * { return a->GetMaterialPropertiesTable(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalSurface::SetMaterialPropertiesTable(G4MaterialPropertiesTable *) (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalSurface::SetMaterialPropertiesTable(G4MaterialPropertiesTable *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:169:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:169:15
     t.method("SetMaterialPropertiesTable", [](G4OpticalSurface& a, G4MaterialPropertiesTable * arg0)->void { a.SetMaterialPropertiesTable(arg0); }, jlcxx::arg("this"), jlcxx::arg("anMPT"));
     t.method("SetMaterialPropertiesTable", [](G4OpticalSurface* a, G4MaterialPropertiesTable * arg0)->void { a->SetMaterialPropertiesTable(arg0); }, jlcxx::arg("this"), jlcxx::arg("anMPT"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalSurface::DumpInfo() (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalSurface::DumpInfo()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:175:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:175:8
     t.method("DumpInfo", [](G4OpticalSurface const& a)->void { a.DumpInfo(); }, jlcxx::arg("this"));
     t.method("DumpInfo", [](G4OpticalSurface const* a)->void { a->DumpInfo(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalSurface::ReadDataFile() (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalSurface::ReadDataFile()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:178:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:178:8
     t.method("ReadDataFile", [](G4OpticalSurface& a)->void { a.ReadDataFile(); }, jlcxx::arg("this"));
     t.method("ReadDataFile", [](G4OpticalSurface* a)->void { a->ReadDataFile(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalSurface::ReadLUTFile() (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalSurface::ReadLUTFile()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:184:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:184:8
     t.method("ReadLUTFile", [](G4OpticalSurface& a)->void { a.ReadLUTFile(); }, jlcxx::arg("this"));
     t.method("ReadLUTFile", [](G4OpticalSurface* a)->void { a->ReadLUTFile(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4OpticalSurface::GetAngularDistributionValue(G4int, G4int, G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4OpticalSurface::GetAngularDistributionValue(G4int, G4int, G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:187:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:187:19
     t.method("GetAngularDistributionValue", [](G4OpticalSurface& a, G4int arg0, G4int arg1, G4int arg2)->G4double { return a.GetAngularDistributionValue(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"), jlcxx::arg("arg2"));
     t.method("GetAngularDistributionValue", [](G4OpticalSurface* a, G4int arg0, G4int arg1, G4int arg2)->G4double { return a->GetAngularDistributionValue(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"), jlcxx::arg("arg2"));
 
     DEBUG_MSG("Adding wrapper for G4double G4OpticalSurface::GetAngularDistributionValueLUT(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4OpticalSurface::GetAngularDistributionValueLUT(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:190:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:190:19
     t.method("GetAngularDistributionValueLUT", [](G4OpticalSurface& a, G4int arg0)->G4double { return a.GetAngularDistributionValueLUT(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("GetAngularDistributionValueLUT", [](G4OpticalSurface* a, G4int arg0)->G4double { return a->GetAngularDistributionValueLUT(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalSurface::ReadLUTDAVISFile() (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalSurface::ReadLUTDAVISFile()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:193:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:193:8
     t.method("ReadLUTDAVISFile", [](G4OpticalSurface& a)->void { a.ReadLUTDAVISFile(); }, jlcxx::arg("this"));
     t.method("ReadLUTDAVISFile", [](G4OpticalSurface* a)->void { a->ReadLUTDAVISFile(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalSurface::ReadReflectivityLUTFile() (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalSurface::ReadReflectivityLUTFile()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:196:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:196:8
     t.method("ReadReflectivityLUTFile", [](G4OpticalSurface& a)->void { a.ReadReflectivityLUTFile(); }, jlcxx::arg("this"));
     t.method("ReadReflectivityLUTFile", [](G4OpticalSurface* a)->void { a->ReadReflectivityLUTFile(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4OpticalSurface::GetReflectivityLUTValue(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4OpticalSurface::GetReflectivityLUTValue(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:199:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:199:19
     t.method("GetReflectivityLUTValue", [](G4OpticalSurface& a, G4int arg0)->G4double { return a.GetReflectivityLUTValue(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("GetReflectivityLUTValue", [](G4OpticalSurface* a, G4int arg0)->G4double { return a->GetReflectivityLUTValue(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4int G4OpticalSurface::GetInmax() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4OpticalSurface::GetInmax()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:202:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:202:9
     t.method("GetInmax", [](G4OpticalSurface const& a)->G4int { return a.GetInmax(); }, jlcxx::arg("this"));
     t.method("GetInmax", [](G4OpticalSurface const* a)->G4int { return a->GetInmax(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4OpticalSurface::GetLUTbins() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4OpticalSurface::GetLUTbins()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:205:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:205:9
     t.method("GetLUTbins", [](G4OpticalSurface const& a)->G4int { return a.GetLUTbins(); }, jlcxx::arg("this"));
     t.method("GetLUTbins", [](G4OpticalSurface const* a)->G4int { return a->GetLUTbins(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4OpticalSurface::GetRefMax() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4OpticalSurface::GetRefMax()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:208:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:208:9
     t.method("GetRefMax", [](G4OpticalSurface const& a)->G4int { return a.GetRefMax(); }, jlcxx::arg("this"));
     t.method("GetRefMax", [](G4OpticalSurface const* a)->G4int { return a->GetRefMax(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4OpticalSurface::GetThetaIndexMax() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4OpticalSurface::GetThetaIndexMax()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:210:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:210:9
     t.method("GetThetaIndexMax", [](G4OpticalSurface const& a)->G4int { return a.GetThetaIndexMax(); }, jlcxx::arg("this"));
     t.method("GetThetaIndexMax", [](G4OpticalSurface const* a)->G4int { return a->GetThetaIndexMax(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4OpticalSurface::GetPhiIndexMax() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4OpticalSurface::GetPhiIndexMax()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:211:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:211:9
     t.method("GetPhiIndexMax", [](G4OpticalSurface const& a)->G4int { return a.GetPhiIndexMax(); }, jlcxx::arg("this"));
     t.method("GetPhiIndexMax", [](G4OpticalSurface const* a)->G4int { return a->GetPhiIndexMax(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4OpticalSurface::ReadDichroicFile() (" __HERE__ ")");
     // signature to use in the veto list: void G4OpticalSurface::ReadDichroicFile()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:214:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:214:8
     t.method("ReadDichroicFile", [](G4OpticalSurface& a)->void { a.ReadDichroicFile(); }, jlcxx::arg("this"));
     t.method("ReadDichroicFile", [](G4OpticalSurface* a)->void { a->ReadDichroicFile(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4Physics2DVector * G4OpticalSurface::GetDichroicVector() (" __HERE__ ")");
     // signature to use in the veto list: G4Physics2DVector * G4OpticalSurface::GetDichroicVector()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:216:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:216:29
     t.method("GetDichroicVector", [](G4OpticalSurface& a)->G4Physics2DVector * { return a.GetDichroicVector(); }, jlcxx::arg("this"));
     t.method("GetDichroicVector", [](G4OpticalSurface* a)->G4Physics2DVector * { return a->GetDichroicVector(); }, jlcxx::arg("this"));
   }

@@ -18,7 +18,7 @@ struct JlG4EmStandardPhysics_option4: public Wrapper {
 
   JlG4EmStandardPhysics_option4(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4EmStandardPhysics_option4 (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4EmStandardPhysics_option4.hh:52:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4EmStandardPhysics_option4.hh:52:7
     jlcxx::TypeWrapper<G4EmStandardPhysics_option4>  t = jlModule.add_type<G4EmStandardPhysics_option4>("G4EmStandardPhysics_option4",
       jlcxx::julia_base_type<G4VPhysicsConstructor>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4EmStandardPhysics_option4>>(new jlcxx::TypeWrapper<G4EmStandardPhysics_option4>(jlModule, t));
@@ -30,19 +30,19 @@ struct JlG4EmStandardPhysics_option4: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4EmStandardPhysics_option4::G4EmStandardPhysics_option4(G4int, const G4String &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4EmStandardPhysics_option4.hh:56:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4EmStandardPhysics_option4.hh:56:12
     t.constructor<G4int>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("ver")    );
     t.constructor<G4int, const G4String &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("ver"), jlcxx::arg("name")    );
 
     DEBUG_MSG("Adding wrapper for void G4EmStandardPhysics_option4::ConstructParticle() (" __HERE__ ")");
     // signature to use in the veto list: void G4EmStandardPhysics_option4::ConstructParticle()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4EmStandardPhysics_option4.hh:60:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4EmStandardPhysics_option4.hh:60:8
     t.method("ConstructParticle", [](G4EmStandardPhysics_option4& a)->void { a.ConstructParticle(); }, jlcxx::arg("this"));
     t.method("ConstructParticle", [](G4EmStandardPhysics_option4* a)->void { a->ConstructParticle(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4EmStandardPhysics_option4::ConstructProcess() (" __HERE__ ")");
     // signature to use in the veto list: void G4EmStandardPhysics_option4::ConstructProcess()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4EmStandardPhysics_option4.hh:61:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4EmStandardPhysics_option4.hh:61:8
     t.method("ConstructProcess", [](G4EmStandardPhysics_option4& a)->void { a.ConstructProcess(); }, jlcxx::arg("this"));
     t.method("ConstructProcess", [](G4EmStandardPhysics_option4* a)->void { a->ConstructProcess(); }, jlcxx::arg("this"));
   }

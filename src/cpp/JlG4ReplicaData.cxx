@@ -17,7 +17,7 @@ struct JlG4ReplicaData: public Wrapper {
 
   JlG4ReplicaData(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4ReplicaData (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PVReplica.hh:72:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PVReplica.hh:72:7
     jlcxx::TypeWrapper<G4ReplicaData>  t = jlModule.add_type<G4ReplicaData>("G4ReplicaData");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4ReplicaData>>(new jlcxx::TypeWrapper<G4ReplicaData>(jlModule, t));
   }
@@ -28,18 +28,18 @@ struct JlG4ReplicaData: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4ReplicaData::initialize() (" __HERE__ ")");
     // signature to use in the veto list: void G4ReplicaData::initialize()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PVReplica.hh:81:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PVReplica.hh:81:8
     t.method("initialize", [](G4ReplicaData& a)->void { a.initialize(); }, jlcxx::arg("this"));
     t.method("initialize", [](G4ReplicaData* a)->void { a->initialize(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding fcopyNo methods  to provide read access to the field fcopyNo (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PVReplica.hh:83:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PVReplica.hh:83:9
     // signature to use in the veto list: G4ReplicaData::fcopyNo
     t.method("fcopyNo", [](const G4ReplicaData& a) -> G4int { return a.fcopyNo; }, jlcxx::arg("this"));
     t.method("fcopyNo", [](G4ReplicaData& a) -> G4int { return a.fcopyNo; }, jlcxx::arg("this"));
     t.method("fcopyNo", [](const G4ReplicaData* a) -> G4int { return a->fcopyNo; }, jlcxx::arg("this"));
     t.method("fcopyNo", [](G4ReplicaData* a) -> G4int { return a->fcopyNo; }, jlcxx::arg("this"));
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PVReplica.hh:83:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PVReplica.hh:83:9
     // signature to use in the veto list: G4ReplicaData::fcopyNo
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding fcopyNo! methods to provide write access to the field fcopyNo (" __HERE__ ")");

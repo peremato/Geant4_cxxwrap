@@ -18,7 +18,7 @@ struct JlG4Ellipsoid: public Wrapper {
 
   JlG4Ellipsoid(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4Ellipsoid (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:63:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:63:7
     jlcxx::TypeWrapper<G4Ellipsoid>  t = jlModule.add_type<G4Ellipsoid>("G4Ellipsoid",
       jlcxx::julia_base_type<G4VSolid>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4Ellipsoid>>(new jlcxx::TypeWrapper<G4Ellipsoid>(jlModule, t));
@@ -29,98 +29,98 @@ struct JlG4Ellipsoid: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4Ellipsoid::G4Ellipsoid(const G4String &, G4double, G4double, G4double, G4double, G4double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:67:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:67:5
     t.constructor<const G4String &, G4double, G4double, G4double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("xSemiAxis"), jlcxx::arg("ySemiAxis"), jlcxx::arg("zSemiAxis")    );
     t.constructor<const G4String &, G4double, G4double, G4double, G4double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("xSemiAxis"), jlcxx::arg("ySemiAxis"), jlcxx::arg("zSemiAxis"), jlcxx::arg("zBottomCut")    );
     t.constructor<const G4String &, G4double, G4double, G4double, G4double, G4double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("xSemiAxis"), jlcxx::arg("ySemiAxis"), jlcxx::arg("zSemiAxis"), jlcxx::arg("zBottomCut"), jlcxx::arg("zTopCut")    );
 
     DEBUG_MSG("Adding wrapper for G4double G4Ellipsoid::GetDx() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Ellipsoid::GetDx()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:77:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:77:21
     t.method("GetDx", [](G4Ellipsoid const& a)->G4double { return a.GetDx(); }, jlcxx::arg("this"));
     t.method("GetDx", [](G4Ellipsoid const* a)->G4double { return a->GetDx(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Ellipsoid::GetDy() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Ellipsoid::GetDy()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:78:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:78:21
     t.method("GetDy", [](G4Ellipsoid const& a)->G4double { return a.GetDy(); }, jlcxx::arg("this"));
     t.method("GetDy", [](G4Ellipsoid const* a)->G4double { return a->GetDy(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Ellipsoid::GetDz() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Ellipsoid::GetDz()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:79:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:79:21
     t.method("GetDz", [](G4Ellipsoid const& a)->G4double { return a.GetDz(); }, jlcxx::arg("this"));
     t.method("GetDz", [](G4Ellipsoid const* a)->G4double { return a->GetDz(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Ellipsoid::GetSemiAxisMax(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Ellipsoid::GetSemiAxisMax(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:80:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:80:21
     t.method("GetSemiAxisMax", [](G4Ellipsoid const& a, G4int arg0)->G4double { return a.GetSemiAxisMax(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
     t.method("GetSemiAxisMax", [](G4Ellipsoid const* a, G4int arg0)->G4double { return a->GetSemiAxisMax(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Ellipsoid::GetZBottomCut() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Ellipsoid::GetZBottomCut()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:81:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:81:21
     t.method("GetZBottomCut", [](G4Ellipsoid const& a)->G4double { return a.GetZBottomCut(); }, jlcxx::arg("this"));
     t.method("GetZBottomCut", [](G4Ellipsoid const* a)->G4double { return a->GetZBottomCut(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Ellipsoid::GetZTopCut() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Ellipsoid::GetZTopCut()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:82:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:82:21
     t.method("GetZTopCut", [](G4Ellipsoid const& a)->G4double { return a.GetZTopCut(); }, jlcxx::arg("this"));
     t.method("GetZTopCut", [](G4Ellipsoid const* a)->G4double { return a->GetZTopCut(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4Ellipsoid::SetSemiAxis(G4double, G4double, G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4Ellipsoid::SetSemiAxis(G4double, G4double, G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:85:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:85:17
     t.method("SetSemiAxis", [](G4Ellipsoid& a, G4double arg0, G4double arg1, G4double arg2)->void { a.SetSemiAxis(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("x"), jlcxx::arg("y"), jlcxx::arg("z"));
     t.method("SetSemiAxis", [](G4Ellipsoid* a, G4double arg0, G4double arg1, G4double arg2)->void { a->SetSemiAxis(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("x"), jlcxx::arg("y"), jlcxx::arg("z"));
 
     DEBUG_MSG("Adding wrapper for void G4Ellipsoid::SetZCuts(G4double, G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4Ellipsoid::SetZCuts(G4double, G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:86:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:86:17
     t.method("SetZCuts", [](G4Ellipsoid& a, G4double arg0, G4double arg1)->void { a.SetZCuts(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("newzBottomCut"), jlcxx::arg("newzTopCut"));
     t.method("SetZCuts", [](G4Ellipsoid* a, G4double arg0, G4double arg1)->void { a->SetZCuts(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("newzBottomCut"), jlcxx::arg("newzTopCut"));
 
     DEBUG_MSG("Adding wrapper for void G4Ellipsoid::ComputeDimensions(G4VPVParameterisation *, const G4int, const G4VPhysicalVolume *) (" __HERE__ ")");
     // signature to use in the veto list: void G4Ellipsoid::ComputeDimensions(G4VPVParameterisation *, const G4int, const G4VPhysicalVolume *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:89:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:89:10
     t.method("ComputeDimensions", [](G4Ellipsoid& a, G4VPVParameterisation * arg0, const G4int arg1, const G4VPhysicalVolume * arg2)->void { a.ComputeDimensions(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("n"), jlcxx::arg("pRep"));
     t.method("ComputeDimensions", [](G4Ellipsoid* a, G4VPVParameterisation * arg0, const G4int arg1, const G4VPhysicalVolume * arg2)->void { a->ComputeDimensions(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("n"), jlcxx::arg("pRep"));
 
     DEBUG_MSG("Adding wrapper for void G4Ellipsoid::BoundingLimits(G4ThreeVector &, G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4Ellipsoid::BoundingLimits(G4ThreeVector &, G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:93:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:93:10
     t.method("BoundingLimits", [](G4Ellipsoid const& a, G4ThreeVector & arg0, G4ThreeVector & arg1)->void { a.BoundingLimits(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("pMin"), jlcxx::arg("pMax"));
     t.method("BoundingLimits", [](G4Ellipsoid const* a, G4ThreeVector & arg0, G4ThreeVector & arg1)->void { a->BoundingLimits(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("pMin"), jlcxx::arg("pMax"));
 
     DEBUG_MSG("Adding wrapper for EInside G4Ellipsoid::Inside(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: EInside G4Ellipsoid::Inside(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:99:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:99:13
     t.method("Inside", [](G4Ellipsoid const& a, const G4ThreeVector & arg0)->EInside { return a.Inside(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("Inside", [](G4Ellipsoid const* a, const G4ThreeVector & arg0)->EInside { return a->Inside(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4Ellipsoid::SurfaceNormal(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4Ellipsoid::SurfaceNormal(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:100:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:100:19
     t.method("SurfaceNormal", [](G4Ellipsoid const& a, const G4ThreeVector & arg0)->G4ThreeVector { return a.SurfaceNormal(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("SurfaceNormal", [](G4Ellipsoid const* a, const G4ThreeVector & arg0)->G4ThreeVector { return a->SurfaceNormal(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Ellipsoid::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Ellipsoid::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:101:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:101:14
     t.method("DistanceToIn", [](G4Ellipsoid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double { return a.DistanceToIn(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"));
     t.method("DistanceToIn", [](G4Ellipsoid const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double { return a->DistanceToIn(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Ellipsoid::DistanceToIn(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Ellipsoid::DistanceToIn(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:103:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:103:14
     t.method("DistanceToIn", [](G4Ellipsoid const& a, const G4ThreeVector & arg0)->G4double { return a.DistanceToIn(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("DistanceToIn", [](G4Ellipsoid const* a, const G4ThreeVector & arg0)->G4double { return a->DistanceToIn(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Ellipsoid::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Ellipsoid::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:104:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:104:14
     t.method("DistanceToOut", [](G4Ellipsoid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double { return a.DistanceToOut(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"));
     t.method("DistanceToOut", [](G4Ellipsoid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double { return a.DistanceToOut(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"), jlcxx::arg("calcNorm"));
     t.method("DistanceToOut", [](G4Ellipsoid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double { return a.DistanceToOut(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"), jlcxx::arg("calcNorm"), jlcxx::arg("validNorm"));
@@ -132,60 +132,60 @@ struct JlG4Ellipsoid: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4double G4Ellipsoid::DistanceToOut(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Ellipsoid::DistanceToOut(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:109:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:109:14
     t.method("DistanceToOut", [](G4Ellipsoid const& a, const G4ThreeVector & arg0)->G4double { return a.DistanceToOut(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("DistanceToOut", [](G4Ellipsoid const* a, const G4ThreeVector & arg0)->G4double { return a->DistanceToOut(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for G4GeometryType G4Ellipsoid::GetEntityType() (" __HERE__ ")");
     // signature to use in the veto list: G4GeometryType G4Ellipsoid::GetEntityType()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:111:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:111:20
     t.method("GetEntityType", [](G4Ellipsoid const& a)->G4GeometryType { return a.GetEntityType(); }, jlcxx::arg("this"));
     t.method("GetEntityType", [](G4Ellipsoid const* a)->G4GeometryType { return a->GetEntityType(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4VSolid * G4Ellipsoid::Clone() (" __HERE__ ")");
     // signature to use in the veto list: G4VSolid * G4Ellipsoid::Clone()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:113:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:113:15
     t.method("Clone", [](G4Ellipsoid const& a)->G4VSolid * { return a.Clone(); }, jlcxx::arg("this"));
     t.method("Clone", [](G4Ellipsoid const* a)->G4VSolid * { return a->Clone(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Ellipsoid::GetCubicVolume() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Ellipsoid::GetCubicVolume()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:117:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:117:14
     t.method("GetCubicVolume", [](G4Ellipsoid& a)->G4double { return a.GetCubicVolume(); }, jlcxx::arg("this"));
     t.method("GetCubicVolume", [](G4Ellipsoid* a)->G4double { return a->GetCubicVolume(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Ellipsoid::GetSurfaceArea() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Ellipsoid::GetSurfaceArea()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:118:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:118:14
     t.method("GetSurfaceArea", [](G4Ellipsoid& a)->G4double { return a.GetSurfaceArea(); }, jlcxx::arg("this"));
     t.method("GetSurfaceArea", [](G4Ellipsoid* a)->G4double { return a->GetSurfaceArea(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4Ellipsoid::GetPointOnSurface() (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4Ellipsoid::GetPointOnSurface()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:120:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:120:19
     t.method("GetPointOnSurface", [](G4Ellipsoid const& a)->G4ThreeVector { return a.GetPointOnSurface(); }, jlcxx::arg("this"));
     t.method("GetPointOnSurface", [](G4Ellipsoid const* a)->G4ThreeVector { return a->GetPointOnSurface(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4Polyhedron * G4Ellipsoid::CreatePolyhedron() (" __HERE__ ")");
     // signature to use in the veto list: G4Polyhedron * G4Ellipsoid::CreatePolyhedron()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:125:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:125:19
     t.method("CreatePolyhedron", [](G4Ellipsoid const& a)->G4Polyhedron * { return a.CreatePolyhedron(); }, jlcxx::arg("this"));
     t.method("CreatePolyhedron", [](G4Ellipsoid const* a)->G4Polyhedron * { return a->CreatePolyhedron(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4Polyhedron * G4Ellipsoid::GetPolyhedron() (" __HERE__ ")");
     // signature to use in the veto list: G4Polyhedron * G4Ellipsoid::GetPolyhedron()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:126:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:126:19
     t.method("GetPolyhedron", [](G4Ellipsoid const& a)->G4Polyhedron * { return a.GetPolyhedron(); }, jlcxx::arg("this"));
     t.method("GetPolyhedron", [](G4Ellipsoid const* a)->G4Polyhedron * { return a->GetPolyhedron(); }, jlcxx::arg("this"));
 
 
     DEBUG_MSG("Adding wrapper for void G4Ellipsoid::G4Ellipsoid(const G4Ellipsoid &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:134:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:134:5
     t.constructor<const G4Ellipsoid &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("rhs")    );
 
     DEBUG_MSG("Adding wrapper for G4Ellipsoid & G4Ellipsoid::operator=(const G4Ellipsoid &) (" __HERE__ ")");
     // signature to use in the veto list: G4Ellipsoid & G4Ellipsoid::operator=(const G4Ellipsoid &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Ellipsoid.hh:137:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Ellipsoid.hh:137:18
     t.method("assign", [](G4Ellipsoid& a, const G4Ellipsoid & arg0)->G4Ellipsoid & { return a.operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("rhs"));
     t.method("assign", [](G4Ellipsoid* a, const G4Ellipsoid & arg0)->G4Ellipsoid & { return a->operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("rhs"));
   }

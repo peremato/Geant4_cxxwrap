@@ -17,7 +17,7 @@ struct JlG4StepPoint: public Wrapper {
 
   JlG4StepPoint(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4StepPoint (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:55:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:55:7
     jlcxx::TypeWrapper<G4StepPoint>  t = jlModule.add_type<G4StepPoint>("G4StepPoint");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4StepPoint>>(new jlcxx::TypeWrapper<G4StepPoint>(jlModule, t));
   }
@@ -28,318 +28,318 @@ struct JlG4StepPoint: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::G4StepPoint(const G4StepPoint &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:63:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:63:5
     t.constructor<const G4StepPoint &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("arg0")    );
 
     DEBUG_MSG("Adding wrapper for G4StepPoint & G4StepPoint::operator=(const G4StepPoint &) (" __HERE__ ")");
     // signature to use in the veto list: G4StepPoint & G4StepPoint::operator=(const G4StepPoint &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:64:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:64:18
     t.method("assign", [](G4StepPoint& a, const G4StepPoint & arg0)->G4StepPoint & { return a.operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("assign", [](G4StepPoint* a, const G4StepPoint & arg0)->G4StepPoint & { return a->operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for const G4ThreeVector & G4StepPoint::GetPosition() (" __HERE__ ")");
     // signature to use in the veto list: const G4ThreeVector & G4StepPoint::GetPosition()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:67:33
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:67:33
     t.method("GetPosition", [](G4StepPoint const& a)->const G4ThreeVector & { return a.GetPosition(); }, jlcxx::arg("this"));
     t.method("GetPosition", [](G4StepPoint const* a)->const G4ThreeVector & { return a->GetPosition(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::SetPosition(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::SetPosition(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:68:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:68:17
     t.method("SetPosition", [](G4StepPoint& a, const G4ThreeVector & arg0)->void { a.SetPosition(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
     t.method("SetPosition", [](G4StepPoint* a, const G4ThreeVector & arg0)->void { a->SetPosition(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::AddPosition(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::AddPosition(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:69:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:69:17
     t.method("AddPosition", [](G4StepPoint& a, const G4ThreeVector & arg0)->void { a.AddPosition(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
     t.method("AddPosition", [](G4StepPoint* a, const G4ThreeVector & arg0)->void { a->AddPosition(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
 
     DEBUG_MSG("Adding wrapper for G4double G4StepPoint::GetLocalTime() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4StepPoint::GetLocalTime()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:72:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:72:21
     t.method("GetLocalTime", [](G4StepPoint const& a)->G4double { return a.GetLocalTime(); }, jlcxx::arg("this"));
     t.method("GetLocalTime", [](G4StepPoint const* a)->G4double { return a->GetLocalTime(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::SetLocalTime(const G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::SetLocalTime(const G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:73:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:73:17
     t.method("SetLocalTime", [](G4StepPoint& a, const G4double arg0)->void { a.SetLocalTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
     t.method("SetLocalTime", [](G4StepPoint* a, const G4double arg0)->void { a->SetLocalTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::AddLocalTime(const G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::AddLocalTime(const G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:74:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:74:17
     t.method("AddLocalTime", [](G4StepPoint& a, const G4double arg0)->void { a.AddLocalTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
     t.method("AddLocalTime", [](G4StepPoint* a, const G4double arg0)->void { a->AddLocalTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
 
     DEBUG_MSG("Adding wrapper for G4double G4StepPoint::GetGlobalTime() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4StepPoint::GetGlobalTime()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:77:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:77:21
     t.method("GetGlobalTime", [](G4StepPoint const& a)->G4double { return a.GetGlobalTime(); }, jlcxx::arg("this"));
     t.method("GetGlobalTime", [](G4StepPoint const* a)->G4double { return a->GetGlobalTime(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::SetGlobalTime(const G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::SetGlobalTime(const G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:78:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:78:17
     t.method("SetGlobalTime", [](G4StepPoint& a, const G4double arg0)->void { a.SetGlobalTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
     t.method("SetGlobalTime", [](G4StepPoint* a, const G4double arg0)->void { a->SetGlobalTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::AddGlobalTime(const G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::AddGlobalTime(const G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:79:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:79:17
     t.method("AddGlobalTime", [](G4StepPoint& a, const G4double arg0)->void { a.AddGlobalTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
     t.method("AddGlobalTime", [](G4StepPoint* a, const G4double arg0)->void { a->AddGlobalTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
 
     DEBUG_MSG("Adding wrapper for G4double G4StepPoint::GetProperTime() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4StepPoint::GetProperTime()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:82:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:82:21
     t.method("GetProperTime", [](G4StepPoint const& a)->G4double { return a.GetProperTime(); }, jlcxx::arg("this"));
     t.method("GetProperTime", [](G4StepPoint const* a)->G4double { return a->GetProperTime(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::SetProperTime(const G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::SetProperTime(const G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:83:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:83:17
     t.method("SetProperTime", [](G4StepPoint& a, const G4double arg0)->void { a.SetProperTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
     t.method("SetProperTime", [](G4StepPoint* a, const G4double arg0)->void { a->SetProperTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::AddProperTime(const G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::AddProperTime(const G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:84:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:84:17
     t.method("AddProperTime", [](G4StepPoint& a, const G4double arg0)->void { a.AddProperTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
     t.method("AddProperTime", [](G4StepPoint* a, const G4double arg0)->void { a->AddProperTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
 
     DEBUG_MSG("Adding wrapper for const G4ThreeVector & G4StepPoint::GetMomentumDirection() (" __HERE__ ")");
     // signature to use in the veto list: const G4ThreeVector & G4StepPoint::GetMomentumDirection()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:87:33
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:87:33
     t.method("GetMomentumDirection", [](G4StepPoint const& a)->const G4ThreeVector & { return a.GetMomentumDirection(); }, jlcxx::arg("this"));
     t.method("GetMomentumDirection", [](G4StepPoint const* a)->const G4ThreeVector & { return a->GetMomentumDirection(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::SetMomentumDirection(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::SetMomentumDirection(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:88:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:88:17
     t.method("SetMomentumDirection", [](G4StepPoint& a, const G4ThreeVector & arg0)->void { a.SetMomentumDirection(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
     t.method("SetMomentumDirection", [](G4StepPoint* a, const G4ThreeVector & arg0)->void { a->SetMomentumDirection(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::AddMomentumDirection(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::AddMomentumDirection(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:89:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:89:17
     t.method("AddMomentumDirection", [](G4StepPoint& a, const G4ThreeVector & arg0)->void { a.AddMomentumDirection(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
     t.method("AddMomentumDirection", [](G4StepPoint* a, const G4ThreeVector & arg0)->void { a->AddMomentumDirection(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4StepPoint::GetMomentum() (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4StepPoint::GetMomentum()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:92:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:92:26
     t.method("GetMomentum", [](G4StepPoint const& a)->G4ThreeVector { return a.GetMomentum(); }, jlcxx::arg("this"));
     t.method("GetMomentum", [](G4StepPoint const* a)->G4ThreeVector { return a->GetMomentum(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4StepPoint::GetTotalEnergy() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4StepPoint::GetTotalEnergy()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:95:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:95:21
     t.method("GetTotalEnergy", [](G4StepPoint const& a)->G4double { return a.GetTotalEnergy(); }, jlcxx::arg("this"));
     t.method("GetTotalEnergy", [](G4StepPoint const* a)->G4double { return a->GetTotalEnergy(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4StepPoint::GetKineticEnergy() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4StepPoint::GetKineticEnergy()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:98:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:98:21
     t.method("GetKineticEnergy", [](G4StepPoint const& a)->G4double { return a.GetKineticEnergy(); }, jlcxx::arg("this"));
     t.method("GetKineticEnergy", [](G4StepPoint const* a)->G4double { return a->GetKineticEnergy(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::SetKineticEnergy(const G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::SetKineticEnergy(const G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:99:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:99:17
     t.method("SetKineticEnergy", [](G4StepPoint& a, const G4double arg0)->void { a.SetKineticEnergy(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
     t.method("SetKineticEnergy", [](G4StepPoint* a, const G4double arg0)->void { a->SetKineticEnergy(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::AddKineticEnergy(const G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::AddKineticEnergy(const G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:100:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:100:17
     t.method("AddKineticEnergy", [](G4StepPoint& a, const G4double arg0)->void { a.AddKineticEnergy(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
     t.method("AddKineticEnergy", [](G4StepPoint* a, const G4double arg0)->void { a->AddKineticEnergy(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
 
     DEBUG_MSG("Adding wrapper for G4double G4StepPoint::GetVelocity() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4StepPoint::GetVelocity()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:103:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:103:21
     t.method("GetVelocity", [](G4StepPoint const& a)->G4double { return a.GetVelocity(); }, jlcxx::arg("this"));
     t.method("GetVelocity", [](G4StepPoint const* a)->G4double { return a->GetVelocity(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::SetVelocity(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::SetVelocity(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:104:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:104:17
     t.method("SetVelocity", [](G4StepPoint& a, G4double arg0)->void { a.SetVelocity(arg0); }, jlcxx::arg("this"), jlcxx::arg("v"));
     t.method("SetVelocity", [](G4StepPoint* a, G4double arg0)->void { a->SetVelocity(arg0); }, jlcxx::arg("this"), jlcxx::arg("v"));
 
     DEBUG_MSG("Adding wrapper for G4double G4StepPoint::GetBeta() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4StepPoint::GetBeta()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:107:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:107:21
     t.method("GetBeta", [](G4StepPoint const& a)->G4double { return a.GetBeta(); }, jlcxx::arg("this"));
     t.method("GetBeta", [](G4StepPoint const* a)->G4double { return a->GetBeta(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4StepPoint::GetGamma() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4StepPoint::GetGamma()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:110:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:110:21
     t.method("GetGamma", [](G4StepPoint const& a)->G4double { return a.GetGamma(); }, jlcxx::arg("this"));
     t.method("GetGamma", [](G4StepPoint const* a)->G4double { return a->GetGamma(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4VPhysicalVolume * G4StepPoint::GetPhysicalVolume() (" __HERE__ ")");
     // signature to use in the veto list: G4VPhysicalVolume * G4StepPoint::GetPhysicalVolume()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:113:31
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:113:31
     t.method("GetPhysicalVolume", [](G4StepPoint const& a)->G4VPhysicalVolume * { return a.GetPhysicalVolume(); }, jlcxx::arg("this"));
     t.method("GetPhysicalVolume", [](G4StepPoint const* a)->G4VPhysicalVolume * { return a->GetPhysicalVolume(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4VTouchable * G4StepPoint::GetTouchable() (" __HERE__ ")");
     // signature to use in the veto list: const G4VTouchable * G4StepPoint::GetTouchable()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:115:32
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:115:32
     t.method("GetTouchable", [](G4StepPoint const& a)->const G4VTouchable * { return a.GetTouchable(); }, jlcxx::arg("this"));
     t.method("GetTouchable", [](G4StepPoint const* a)->const G4VTouchable * { return a->GetTouchable(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4TouchableHandle & G4StepPoint::GetTouchableHandle() (" __HERE__ ")");
     // signature to use in the veto list: const G4TouchableHandle & G4StepPoint::GetTouchableHandle()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:116:37
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:116:37
     t.method("GetTouchableHandle", [](G4StepPoint const& a)->const G4TouchableHandle & { return a.GetTouchableHandle(); }, jlcxx::arg("this"));
     t.method("GetTouchableHandle", [](G4StepPoint const* a)->const G4TouchableHandle & { return a->GetTouchableHandle(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::SetTouchableHandle(const G4TouchableHandle &) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::SetTouchableHandle(const G4TouchableHandle &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:117:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:117:17
     t.method("SetTouchableHandle", [](G4StepPoint& a, const G4TouchableHandle & arg0)->void { a.SetTouchableHandle(arg0); }, jlcxx::arg("this"), jlcxx::arg("apValue"));
     t.method("SetTouchableHandle", [](G4StepPoint* a, const G4TouchableHandle & arg0)->void { a->SetTouchableHandle(arg0); }, jlcxx::arg("this"), jlcxx::arg("apValue"));
 
     DEBUG_MSG("Adding wrapper for G4Material * G4StepPoint::GetMaterial() (" __HERE__ ")");
     // signature to use in the veto list: G4Material * G4StepPoint::GetMaterial()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:119:24
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:119:24
     t.method("GetMaterial", [](G4StepPoint const& a)->G4Material * { return a.GetMaterial(); }, jlcxx::arg("this"));
     t.method("GetMaterial", [](G4StepPoint const* a)->G4Material * { return a->GetMaterial(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::SetMaterial(G4Material *) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::SetMaterial(G4Material *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:120:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:120:17
     t.method("SetMaterial", [](G4StepPoint& a, G4Material * arg0)->void { a.SetMaterial(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetMaterial", [](G4StepPoint* a, G4Material * arg0)->void { a->SetMaterial(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for const G4MaterialCutsCouple * G4StepPoint::GetMaterialCutsCouple() (" __HERE__ ")");
     // signature to use in the veto list: const G4MaterialCutsCouple * G4StepPoint::GetMaterialCutsCouple()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:122:40
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:122:40
     t.method("GetMaterialCutsCouple", [](G4StepPoint const& a)->const G4MaterialCutsCouple * { return a.GetMaterialCutsCouple(); }, jlcxx::arg("this"));
     t.method("GetMaterialCutsCouple", [](G4StepPoint const* a)->const G4MaterialCutsCouple * { return a->GetMaterialCutsCouple(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::SetMaterialCutsCouple(const G4MaterialCutsCouple *) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::SetMaterialCutsCouple(const G4MaterialCutsCouple *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:123:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:123:17
     t.method("SetMaterialCutsCouple", [](G4StepPoint& a, const G4MaterialCutsCouple * arg0)->void { a.SetMaterialCutsCouple(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetMaterialCutsCouple", [](G4StepPoint* a, const G4MaterialCutsCouple * arg0)->void { a->SetMaterialCutsCouple(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4VSensitiveDetector * G4StepPoint::GetSensitiveDetector() (" __HERE__ ")");
     // signature to use in the veto list: G4VSensitiveDetector * G4StepPoint::GetSensitiveDetector()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:125:34
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:125:34
     t.method("GetSensitiveDetector", [](G4StepPoint const& a)->G4VSensitiveDetector * { return a.GetSensitiveDetector(); }, jlcxx::arg("this"));
     t.method("GetSensitiveDetector", [](G4StepPoint const* a)->G4VSensitiveDetector * { return a->GetSensitiveDetector(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::SetSensitiveDetector(G4VSensitiveDetector *) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::SetSensitiveDetector(G4VSensitiveDetector *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:126:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:126:17
     t.method("SetSensitiveDetector", [](G4StepPoint& a, G4VSensitiveDetector * arg0)->void { a.SetSensitiveDetector(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetSensitiveDetector", [](G4StepPoint* a, G4VSensitiveDetector * arg0)->void { a->SetSensitiveDetector(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4double G4StepPoint::GetSafety() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4StepPoint::GetSafety()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:128:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:128:21
     t.method("GetSafety", [](G4StepPoint const& a)->G4double { return a.GetSafety(); }, jlcxx::arg("this"));
     t.method("GetSafety", [](G4StepPoint const* a)->G4double { return a->GetSafety(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::SetSafety(const G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::SetSafety(const G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:129:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:129:17
     t.method("SetSafety", [](G4StepPoint& a, const G4double arg0)->void { a.SetSafety(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
     t.method("SetSafety", [](G4StepPoint* a, const G4double arg0)->void { a->SetSafety(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
 
     DEBUG_MSG("Adding wrapper for const G4ThreeVector & G4StepPoint::GetPolarization() (" __HERE__ ")");
     // signature to use in the veto list: const G4ThreeVector & G4StepPoint::GetPolarization()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:131:33
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:131:33
     t.method("GetPolarization", [](G4StepPoint const& a)->const G4ThreeVector & { return a.GetPolarization(); }, jlcxx::arg("this"));
     t.method("GetPolarization", [](G4StepPoint const* a)->const G4ThreeVector & { return a->GetPolarization(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::SetPolarization(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::SetPolarization(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:132:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:132:17
     t.method("SetPolarization", [](G4StepPoint& a, const G4ThreeVector & arg0)->void { a.SetPolarization(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
     t.method("SetPolarization", [](G4StepPoint* a, const G4ThreeVector & arg0)->void { a->SetPolarization(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::AddPolarization(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::AddPolarization(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:133:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:133:17
     t.method("AddPolarization", [](G4StepPoint& a, const G4ThreeVector & arg0)->void { a.AddPolarization(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
     t.method("AddPolarization", [](G4StepPoint* a, const G4ThreeVector & arg0)->void { a->AddPolarization(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
 
     DEBUG_MSG("Adding wrapper for G4StepStatus G4StepPoint::GetStepStatus() (" __HERE__ ")");
     // signature to use in the veto list: G4StepStatus G4StepPoint::GetStepStatus()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:135:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:135:25
     t.method("GetStepStatus", [](G4StepPoint const& a)->G4StepStatus { return a.GetStepStatus(); }, jlcxx::arg("this"));
     t.method("GetStepStatus", [](G4StepPoint const* a)->G4StepStatus { return a->GetStepStatus(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::SetStepStatus(const G4StepStatus) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::SetStepStatus(const G4StepStatus)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:136:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:136:17
     t.method("SetStepStatus", [](G4StepPoint& a, const G4StepStatus arg0)->void { a.SetStepStatus(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
     t.method("SetStepStatus", [](G4StepPoint* a, const G4StepStatus arg0)->void { a->SetStepStatus(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
 
     DEBUG_MSG("Adding wrapper for const G4VProcess * G4StepPoint::GetProcessDefinedStep() (" __HERE__ ")");
     // signature to use in the veto list: const G4VProcess * G4StepPoint::GetProcessDefinedStep()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:138:30
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:138:30
     t.method("GetProcessDefinedStep", [](G4StepPoint const& a)->const G4VProcess * { return a.GetProcessDefinedStep(); }, jlcxx::arg("this"));
     t.method("GetProcessDefinedStep", [](G4StepPoint const* a)->const G4VProcess * { return a->GetProcessDefinedStep(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::SetProcessDefinedStep(const G4VProcess *) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::SetProcessDefinedStep(const G4VProcess *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:141:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:141:17
     t.method("SetProcessDefinedStep", [](G4StepPoint& a, const G4VProcess * arg0)->void { a.SetProcessDefinedStep(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
     t.method("SetProcessDefinedStep", [](G4StepPoint* a, const G4VProcess * arg0)->void { a->SetProcessDefinedStep(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
 
     DEBUG_MSG("Adding wrapper for G4double G4StepPoint::GetMass() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4StepPoint::GetMass()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:143:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:143:21
     t.method("GetMass", [](G4StepPoint const& a)->G4double { return a.GetMass(); }, jlcxx::arg("this"));
     t.method("GetMass", [](G4StepPoint const* a)->G4double { return a->GetMass(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::SetMass(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::SetMass(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:144:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:144:17
     t.method("SetMass", [](G4StepPoint& a, G4double arg0)->void { a.SetMass(arg0); }, jlcxx::arg("this"), jlcxx::arg("value"));
     t.method("SetMass", [](G4StepPoint* a, G4double arg0)->void { a->SetMass(arg0); }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding wrapper for G4double G4StepPoint::GetCharge() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4StepPoint::GetCharge()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:146:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:146:21
     t.method("GetCharge", [](G4StepPoint const& a)->G4double { return a.GetCharge(); }, jlcxx::arg("this"));
     t.method("GetCharge", [](G4StepPoint const* a)->G4double { return a->GetCharge(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::SetCharge(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::SetCharge(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:147:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:147:17
     t.method("SetCharge", [](G4StepPoint& a, G4double arg0)->void { a.SetCharge(arg0); }, jlcxx::arg("this"), jlcxx::arg("value"));
     t.method("SetCharge", [](G4StepPoint* a, G4double arg0)->void { a->SetCharge(arg0); }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding wrapper for G4double G4StepPoint::GetMagneticMoment() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4StepPoint::GetMagneticMoment()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:149:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:149:21
     t.method("GetMagneticMoment", [](G4StepPoint const& a)->G4double { return a.GetMagneticMoment(); }, jlcxx::arg("this"));
     t.method("GetMagneticMoment", [](G4StepPoint const* a)->G4double { return a->GetMagneticMoment(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::SetMagneticMoment(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::SetMagneticMoment(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:150:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:150:17
     t.method("SetMagneticMoment", [](G4StepPoint& a, G4double arg0)->void { a.SetMagneticMoment(arg0); }, jlcxx::arg("this"), jlcxx::arg("value"));
     t.method("SetMagneticMoment", [](G4StepPoint* a, G4double arg0)->void { a->SetMagneticMoment(arg0); }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding wrapper for void G4StepPoint::SetWeight(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepPoint::SetWeight(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:152:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:152:17
     t.method("SetWeight", [](G4StepPoint& a, G4double arg0)->void { a.SetWeight(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
     t.method("SetWeight", [](G4StepPoint* a, G4double arg0)->void { a->SetWeight(arg0); }, jlcxx::arg("this"), jlcxx::arg("aValue"));
 
     DEBUG_MSG("Adding wrapper for G4double G4StepPoint::GetWeight() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4StepPoint::GetWeight()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepPoint.hh:153:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepPoint.hh:153:21
     t.method("GetWeight", [](G4StepPoint const& a)->G4double { return a.GetWeight(); }, jlcxx::arg("this"));
     t.method("GetWeight", [](G4StepPoint const* a)->G4double { return a->GetWeight(); }, jlcxx::arg("this"));
   }

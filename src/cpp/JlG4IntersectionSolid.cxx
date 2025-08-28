@@ -18,7 +18,7 @@ struct JlG4IntersectionSolid: public Wrapper {
 
   JlG4IntersectionSolid(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4IntersectionSolid (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4IntersectionSolid.hh:45:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4IntersectionSolid.hh:45:7
     jlcxx::TypeWrapper<G4IntersectionSolid>  t = jlModule.add_type<G4IntersectionSolid>("G4IntersectionSolid",
       jlcxx::julia_base_type<G4BooleanSolid>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4IntersectionSolid>>(new jlcxx::TypeWrapper<G4IntersectionSolid>(jlModule, t));
@@ -29,75 +29,75 @@ struct JlG4IntersectionSolid: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4IntersectionSolid::G4IntersectionSolid(const G4String &, G4VSolid *, G4VSolid *) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4IntersectionSolid.hh:49:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4IntersectionSolid.hh:49:5
     t.constructor<const G4String &, G4VSolid *, G4VSolid *>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("pName"), jlcxx::arg("pSolidA"), jlcxx::arg("pSolidB")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4IntersectionSolid::G4IntersectionSolid(const G4String &, G4VSolid *, G4VSolid *, G4RotationMatrix *, const G4ThreeVector &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4IntersectionSolid.hh:53:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4IntersectionSolid.hh:53:5
     t.constructor<const G4String &, G4VSolid *, G4VSolid *, G4RotationMatrix *, const G4ThreeVector &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("pName"), jlcxx::arg("pSolidA"), jlcxx::arg("pSolidB"), jlcxx::arg("rotMatrix"), jlcxx::arg("transVector")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4IntersectionSolid::G4IntersectionSolid(const G4String &, G4VSolid *, G4VSolid *, const G4Transform3D &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4IntersectionSolid.hh:59:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4IntersectionSolid.hh:59:5
     t.constructor<const G4String &, G4VSolid *, G4VSolid *, const G4Transform3D &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("pName"), jlcxx::arg("pSolidA"), jlcxx::arg("pSolidB"), jlcxx::arg("transform")    );
 
     DEBUG_MSG("Adding wrapper for G4GeometryType G4IntersectionSolid::GetEntityType() (" __HERE__ ")");
     // signature to use in the veto list: G4GeometryType G4IntersectionSolid::GetEntityType()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4IntersectionSolid.hh:66:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4IntersectionSolid.hh:66:21
     t.method("GetEntityType", [](G4IntersectionSolid const& a)->G4GeometryType { return a.GetEntityType(); }, jlcxx::arg("this"));
     t.method("GetEntityType", [](G4IntersectionSolid const* a)->G4GeometryType { return a->GetEntityType(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4VSolid * G4IntersectionSolid::Clone() (" __HERE__ ")");
     // signature to use in the veto list: G4VSolid * G4IntersectionSolid::Clone()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4IntersectionSolid.hh:68:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4IntersectionSolid.hh:68:15
     t.method("Clone", [](G4IntersectionSolid const& a)->G4VSolid * { return a.Clone(); }, jlcxx::arg("this"));
     t.method("Clone", [](G4IntersectionSolid const* a)->G4VSolid * { return a->Clone(); }, jlcxx::arg("this"));
 
 
     DEBUG_MSG("Adding wrapper for void G4IntersectionSolid::G4IntersectionSolid(const G4IntersectionSolid &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4IntersectionSolid.hh:75:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4IntersectionSolid.hh:75:5
     t.constructor<const G4IntersectionSolid &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("rhs")    );
 
     DEBUG_MSG("Adding wrapper for G4IntersectionSolid & G4IntersectionSolid::operator=(const G4IntersectionSolid &) (" __HERE__ ")");
     // signature to use in the veto list: G4IntersectionSolid & G4IntersectionSolid::operator=(const G4IntersectionSolid &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4IntersectionSolid.hh:76:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4IntersectionSolid.hh:76:26
     t.method("assign", [](G4IntersectionSolid& a, const G4IntersectionSolid & arg0)->G4IntersectionSolid & { return a.operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("rhs"));
     t.method("assign", [](G4IntersectionSolid* a, const G4IntersectionSolid & arg0)->G4IntersectionSolid & { return a->operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("rhs"));
 
     DEBUG_MSG("Adding wrapper for void G4IntersectionSolid::BoundingLimits(G4ThreeVector &, G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4IntersectionSolid::BoundingLimits(G4ThreeVector &, G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4IntersectionSolid.hh:79:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4IntersectionSolid.hh:79:10
     t.method("BoundingLimits", [](G4IntersectionSolid const& a, G4ThreeVector & arg0, G4ThreeVector & arg1)->void { a.BoundingLimits(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("pMin"), jlcxx::arg("pMax"));
     t.method("BoundingLimits", [](G4IntersectionSolid const* a, G4ThreeVector & arg0, G4ThreeVector & arg1)->void { a->BoundingLimits(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("pMin"), jlcxx::arg("pMax"));
 
     DEBUG_MSG("Adding wrapper for EInside G4IntersectionSolid::Inside(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: EInside G4IntersectionSolid::Inside(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4IntersectionSolid.hh:86:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4IntersectionSolid.hh:86:13
     t.method("Inside", [](G4IntersectionSolid const& a, const G4ThreeVector & arg0)->EInside { return a.Inside(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("Inside", [](G4IntersectionSolid const* a, const G4ThreeVector & arg0)->EInside { return a->Inside(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4IntersectionSolid::SurfaceNormal(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4IntersectionSolid::SurfaceNormal(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4IntersectionSolid.hh:88:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4IntersectionSolid.hh:88:19
     t.method("SurfaceNormal", [](G4IntersectionSolid const& a, const G4ThreeVector & arg0)->G4ThreeVector { return a.SurfaceNormal(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("SurfaceNormal", [](G4IntersectionSolid const* a, const G4ThreeVector & arg0)->G4ThreeVector { return a->SurfaceNormal(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for G4double G4IntersectionSolid::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4IntersectionSolid::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4IntersectionSolid.hh:90:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4IntersectionSolid.hh:90:14
     t.method("DistanceToIn", [](G4IntersectionSolid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double { return a.DistanceToIn(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"));
     t.method("DistanceToIn", [](G4IntersectionSolid const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double { return a->DistanceToIn(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"));
 
     DEBUG_MSG("Adding wrapper for G4double G4IntersectionSolid::DistanceToIn(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4IntersectionSolid::DistanceToIn(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4IntersectionSolid.hh:93:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4IntersectionSolid.hh:93:14
     t.method("DistanceToIn", [](G4IntersectionSolid const& a, const G4ThreeVector & arg0)->G4double { return a.DistanceToIn(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("DistanceToIn", [](G4IntersectionSolid const* a, const G4ThreeVector & arg0)->G4double { return a->DistanceToIn(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for G4double G4IntersectionSolid::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4IntersectionSolid::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4IntersectionSolid.hh:95:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4IntersectionSolid.hh:95:14
     t.method("DistanceToOut", [](G4IntersectionSolid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double { return a.DistanceToOut(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"));
     t.method("DistanceToOut", [](G4IntersectionSolid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double { return a.DistanceToOut(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"), jlcxx::arg("calcNorm"));
     t.method("DistanceToOut", [](G4IntersectionSolid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double { return a.DistanceToOut(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"), jlcxx::arg("calcNorm"), jlcxx::arg("validNorm"));
@@ -109,19 +109,19 @@ struct JlG4IntersectionSolid: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4double G4IntersectionSolid::DistanceToOut(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4IntersectionSolid::DistanceToOut(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4IntersectionSolid.hh:101:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4IntersectionSolid.hh:101:14
     t.method("DistanceToOut", [](G4IntersectionSolid const& a, const G4ThreeVector & arg0)->G4double { return a.DistanceToOut(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("DistanceToOut", [](G4IntersectionSolid const* a, const G4ThreeVector & arg0)->G4double { return a->DistanceToOut(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for void G4IntersectionSolid::ComputeDimensions(G4VPVParameterisation *, const G4int, const G4VPhysicalVolume *) (" __HERE__ ")");
     // signature to use in the veto list: void G4IntersectionSolid::ComputeDimensions(G4VPVParameterisation *, const G4int, const G4VPhysicalVolume *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4IntersectionSolid.hh:104:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4IntersectionSolid.hh:104:10
     t.method("ComputeDimensions", [](G4IntersectionSolid& a, G4VPVParameterisation * arg0, const G4int arg1, const G4VPhysicalVolume * arg2)->void { a.ComputeDimensions(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("n"), jlcxx::arg("pRep"));
     t.method("ComputeDimensions", [](G4IntersectionSolid* a, G4VPVParameterisation * arg0, const G4int arg1, const G4VPhysicalVolume * arg2)->void { a->ComputeDimensions(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("n"), jlcxx::arg("pRep"));
 
     DEBUG_MSG("Adding wrapper for G4Polyhedron * G4IntersectionSolid::CreatePolyhedron() (" __HERE__ ")");
     // signature to use in the veto list: G4Polyhedron * G4IntersectionSolid::CreatePolyhedron()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4IntersectionSolid.hh:109:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4IntersectionSolid.hh:109:19
     t.method("CreatePolyhedron", [](G4IntersectionSolid const& a)->G4Polyhedron * { return a.CreatePolyhedron(); }, jlcxx::arg("this"));
     t.method("CreatePolyhedron", [](G4IntersectionSolid const* a)->G4Polyhedron * { return a->CreatePolyhedron(); }, jlcxx::arg("this"));
   }

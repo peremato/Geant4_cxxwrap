@@ -17,7 +17,7 @@ struct JlG4VPrimaryGenerator: public Wrapper {
 
   JlG4VPrimaryGenerator(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4VPrimaryGenerator (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPrimaryGenerator.hh:44:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPrimaryGenerator.hh:44:7
     jlcxx::TypeWrapper<G4VPrimaryGenerator>  t = jlModule.add_type<G4VPrimaryGenerator>("G4VPrimaryGenerator");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4VPrimaryGenerator>>(new jlcxx::TypeWrapper<G4VPrimaryGenerator>(jlModule, t));
   }
@@ -27,42 +27,42 @@ struct JlG4VPrimaryGenerator: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4bool G4VPrimaryGenerator::CheckVertexInsideWorld(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VPrimaryGenerator::CheckVertexInsideWorld(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPrimaryGenerator.hh:52:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPrimaryGenerator.hh:52:19
     module_.method("G4VPrimaryGenerator!CheckVertexInsideWorld", [](const G4ThreeVector & arg0)->G4bool { return G4VPrimaryGenerator::CheckVertexInsideWorld(arg0); }, jlcxx::arg("pos"));
 
     DEBUG_MSG("Adding wrapper for void G4VPrimaryGenerator::GeneratePrimaryVertex(G4Event *) (" __HERE__ ")");
     // signature to use in the veto list: void G4VPrimaryGenerator::GeneratePrimaryVertex(G4Event *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPrimaryGenerator.hh:56:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPrimaryGenerator.hh:56:18
     t.method("GeneratePrimaryVertex", [](G4VPrimaryGenerator& a, G4Event * arg0)->void { a.GeneratePrimaryVertex(arg0); }, jlcxx::arg("this"), jlcxx::arg("evt"));
     t.method("GeneratePrimaryVertex", [](G4VPrimaryGenerator* a, G4Event * arg0)->void { a->GeneratePrimaryVertex(arg0); }, jlcxx::arg("this"), jlcxx::arg("evt"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4VPrimaryGenerator::GetParticlePosition() (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4VPrimaryGenerator::GetParticlePosition()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPrimaryGenerator.hh:60:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPrimaryGenerator.hh:60:26
     t.method("GetParticlePosition", [](G4VPrimaryGenerator& a)->G4ThreeVector { return a.GetParticlePosition(); }, jlcxx::arg("this"));
     t.method("GetParticlePosition", [](G4VPrimaryGenerator* a)->G4ThreeVector { return a->GetParticlePosition(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4VPrimaryGenerator::GetParticleTime() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4VPrimaryGenerator::GetParticleTime()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPrimaryGenerator.hh:61:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPrimaryGenerator.hh:61:21
     t.method("GetParticleTime", [](G4VPrimaryGenerator& a)->G4double { return a.GetParticleTime(); }, jlcxx::arg("this"));
     t.method("GetParticleTime", [](G4VPrimaryGenerator* a)->G4double { return a->GetParticleTime(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VPrimaryGenerator::SetParticlePosition(G4ThreeVector) (" __HERE__ ")");
     // signature to use in the veto list: void G4VPrimaryGenerator::SetParticlePosition(G4ThreeVector)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPrimaryGenerator.hh:63:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPrimaryGenerator.hh:63:10
     t.method("SetParticlePosition", [](G4VPrimaryGenerator& a, G4ThreeVector arg0)->void { a.SetParticlePosition(arg0); }, jlcxx::arg("this"), jlcxx::arg("aPosition"));
     t.method("SetParticlePosition", [](G4VPrimaryGenerator* a, G4ThreeVector arg0)->void { a->SetParticlePosition(arg0); }, jlcxx::arg("this"), jlcxx::arg("aPosition"));
 
     DEBUG_MSG("Adding wrapper for void G4VPrimaryGenerator::SetParticleTime(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4VPrimaryGenerator::SetParticleTime(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPrimaryGenerator.hh:70:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPrimaryGenerator.hh:70:17
     t.method("SetParticleTime", [](G4VPrimaryGenerator& a, G4double arg0)->void { a.SetParticleTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("aTime"));
     t.method("SetParticleTime", [](G4VPrimaryGenerator* a, G4double arg0)->void { a->SetParticleTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("aTime"));
 
     DEBUG_MSG("Adding wrapper for void G4VPrimaryGenerator::CheckInside(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4VPrimaryGenerator::CheckInside(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPrimaryGenerator.hh:73:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPrimaryGenerator.hh:73:17
     t.method("CheckInside", [](G4VPrimaryGenerator& a)->void { a.CheckInside(); }, jlcxx::arg("this"), jlcxx::arg("val"));
     t.method("CheckInside", [](G4VPrimaryGenerator& a, G4bool arg0)->void { a.CheckInside(arg0); }, jlcxx::arg("this"), jlcxx::arg("val"));
     t.method("CheckInside", [](G4VPrimaryGenerator* a)->void { a->CheckInside(); }, jlcxx::arg("this"), jlcxx::arg("val"));
@@ -70,7 +70,7 @@ struct JlG4VPrimaryGenerator: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4bool G4VPrimaryGenerator::IfCheckInside() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VPrimaryGenerator::IfCheckInside()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPrimaryGenerator.hh:75:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPrimaryGenerator.hh:75:19
     t.method("IfCheckInside", [](G4VPrimaryGenerator& a)->G4bool { return a.IfCheckInside(); }, jlcxx::arg("this"));
     t.method("IfCheckInside", [](G4VPrimaryGenerator* a)->G4bool { return a->IfCheckInside(); }, jlcxx::arg("this"));
   }

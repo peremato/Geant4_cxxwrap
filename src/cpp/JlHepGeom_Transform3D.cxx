@@ -17,7 +17,7 @@ struct JlHepGeom_Transform3D: public Wrapper {
 
   JlHepGeom_Transform3D(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type HepGeom::Transform3D (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:170:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:170:9
     jlcxx::TypeWrapper<HepGeom::Transform3D>  t = jlModule.add_type<HepGeom::Transform3D>("HepGeom!Transform3D");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<HepGeom::Transform3D>>(new jlcxx::TypeWrapper<HepGeom::Transform3D>(jlModule, t));
   }
@@ -28,23 +28,23 @@ struct JlHepGeom_Transform3D: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void HepGeom::Transform3D::Transform3D(const CLHEP::HepRotation &, const CLHEP::Hep3Vector &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:217:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:217:12
     t.constructor<const CLHEP::HepRotation &, const CLHEP::Hep3Vector &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("mt"), jlcxx::arg("v")    );
 
 
     DEBUG_MSG("Adding wrapper for void HepGeom::Transform3D::Transform3D(const HepGeom::Point3D<double> &, const HepGeom::Point3D<double> &, const HepGeom::Point3D<double> &, const HepGeom::Point3D<double> &, const HepGeom::Point3D<double> &, const HepGeom::Point3D<double> &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:221:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:221:5
     t.constructor<const HepGeom::Point3D<double> &, const HepGeom::Point3D<double> &, const HepGeom::Point3D<double> &, const HepGeom::Point3D<double> &, const HepGeom::Point3D<double> &, const HepGeom::Point3D<double> &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("fr0"), jlcxx::arg("fr1"), jlcxx::arg("fr2"), jlcxx::arg("to0"), jlcxx::arg("to1"), jlcxx::arg("to2")    );
 
 
     DEBUG_MSG("Adding wrapper for void HepGeom::Transform3D::Transform3D(const HepGeom::Transform3D &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:230:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:230:5
     t.constructor<const HepGeom::Transform3D &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("mt")    );
 
 
     DEBUG_MSG("Adding wrapper for HepGeom::Transform3D & HepGeom::Transform3D::operator=(const HepGeom::Transform3D &) (" __HERE__ ")");
     // signature to use in the veto list: HepGeom::Transform3D & HepGeom::Transform3D::operator=(const HepGeom::Transform3D &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:242:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:242:19
     t.method("assign", [](HepGeom::Transform3D& a, const HepGeom::Transform3D & arg0)->HepGeom::Transform3D & { return a.operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("mt"));
     t.method("assign", [](HepGeom::Transform3D* a, const HepGeom::Transform3D & arg0)->HepGeom::Transform3D & { return a->operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("mt"));
 
@@ -52,7 +52,7 @@ struct JlHepGeom_Transform3D: public Wrapper {
 
 
     DEBUG_MSG("Adding getindex method to wrap const HepGeom::Transform3D::Transform3D_row HepGeom::Transform3D::operator[](int) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:250:34
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:250:34
     t.method("getindex",
       [](HepGeom::Transform3D& a, int i){
       return a[i];
@@ -62,98 +62,98 @@ struct JlHepGeom_Transform3D: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for double HepGeom::Transform3D::operator()(int, int) (" __HERE__ ")");
     // signature to use in the veto list: double HepGeom::Transform3D::operator()(int, int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:253:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:253:12
     t.method("paren", [](HepGeom::Transform3D const& a, int arg0, int arg1)->double { return a.operator()(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"));
     t.method("paren", [](HepGeom::Transform3D const* a, int arg0, int arg1)->double { return a->operator()(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"));
 
     DEBUG_MSG("Adding wrapper for double HepGeom::Transform3D::xx() (" __HERE__ ")");
     // signature to use in the veto list: double HepGeom::Transform3D::xx()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:257:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:257:12
     t.method("xx", [](HepGeom::Transform3D const& a)->double { return a.xx(); }, jlcxx::arg("this"));
     t.method("xx", [](HepGeom::Transform3D const* a)->double { return a->xx(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double HepGeom::Transform3D::xy() (" __HERE__ ")");
     // signature to use in the veto list: double HepGeom::Transform3D::xy()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:260:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:260:12
     t.method("xy", [](HepGeom::Transform3D const& a)->double { return a.xy(); }, jlcxx::arg("this"));
     t.method("xy", [](HepGeom::Transform3D const* a)->double { return a->xy(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double HepGeom::Transform3D::xz() (" __HERE__ ")");
     // signature to use in the veto list: double HepGeom::Transform3D::xz()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:263:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:263:12
     t.method("xz", [](HepGeom::Transform3D const& a)->double { return a.xz(); }, jlcxx::arg("this"));
     t.method("xz", [](HepGeom::Transform3D const* a)->double { return a->xz(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double HepGeom::Transform3D::yx() (" __HERE__ ")");
     // signature to use in the veto list: double HepGeom::Transform3D::yx()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:266:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:266:12
     t.method("yx", [](HepGeom::Transform3D const& a)->double { return a.yx(); }, jlcxx::arg("this"));
     t.method("yx", [](HepGeom::Transform3D const* a)->double { return a->yx(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double HepGeom::Transform3D::yy() (" __HERE__ ")");
     // signature to use in the veto list: double HepGeom::Transform3D::yy()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:269:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:269:12
     t.method("yy", [](HepGeom::Transform3D const& a)->double { return a.yy(); }, jlcxx::arg("this"));
     t.method("yy", [](HepGeom::Transform3D const* a)->double { return a->yy(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double HepGeom::Transform3D::yz() (" __HERE__ ")");
     // signature to use in the veto list: double HepGeom::Transform3D::yz()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:272:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:272:12
     t.method("yz", [](HepGeom::Transform3D const& a)->double { return a.yz(); }, jlcxx::arg("this"));
     t.method("yz", [](HepGeom::Transform3D const* a)->double { return a->yz(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double HepGeom::Transform3D::zx() (" __HERE__ ")");
     // signature to use in the veto list: double HepGeom::Transform3D::zx()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:275:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:275:12
     t.method("zx", [](HepGeom::Transform3D const& a)->double { return a.zx(); }, jlcxx::arg("this"));
     t.method("zx", [](HepGeom::Transform3D const* a)->double { return a->zx(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double HepGeom::Transform3D::zy() (" __HERE__ ")");
     // signature to use in the veto list: double HepGeom::Transform3D::zy()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:278:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:278:12
     t.method("zy", [](HepGeom::Transform3D const& a)->double { return a.zy(); }, jlcxx::arg("this"));
     t.method("zy", [](HepGeom::Transform3D const* a)->double { return a->zy(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double HepGeom::Transform3D::zz() (" __HERE__ ")");
     // signature to use in the veto list: double HepGeom::Transform3D::zz()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:281:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:281:12
     t.method("zz", [](HepGeom::Transform3D const& a)->double { return a.zz(); }, jlcxx::arg("this"));
     t.method("zz", [](HepGeom::Transform3D const* a)->double { return a->zz(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double HepGeom::Transform3D::dx() (" __HERE__ ")");
     // signature to use in the veto list: double HepGeom::Transform3D::dx()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:284:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:284:12
     t.method("dx", [](HepGeom::Transform3D const& a)->double { return a.dx(); }, jlcxx::arg("this"));
     t.method("dx", [](HepGeom::Transform3D const* a)->double { return a->dx(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double HepGeom::Transform3D::dy() (" __HERE__ ")");
     // signature to use in the veto list: double HepGeom::Transform3D::dy()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:287:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:287:12
     t.method("dy", [](HepGeom::Transform3D const& a)->double { return a.dy(); }, jlcxx::arg("this"));
     t.method("dy", [](HepGeom::Transform3D const* a)->double { return a->dy(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double HepGeom::Transform3D::dz() (" __HERE__ ")");
     // signature to use in the veto list: double HepGeom::Transform3D::dz()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:290:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:290:12
     t.method("dz", [](HepGeom::Transform3D const& a)->double { return a.dz(); }, jlcxx::arg("this"));
     t.method("dz", [](HepGeom::Transform3D const* a)->double { return a->dz(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void HepGeom::Transform3D::setIdentity() (" __HERE__ ")");
     // signature to use in the veto list: void HepGeom::Transform3D::setIdentity()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:294:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:294:10
     t.method("setIdentity", [](HepGeom::Transform3D& a)->void { a.setIdentity(); }, jlcxx::arg("this"));
     t.method("setIdentity", [](HepGeom::Transform3D* a)->void { a->setIdentity(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for HepGeom::Transform3D HepGeom::Transform3D::inverse() (" __HERE__ ")");
     // signature to use in the veto list: HepGeom::Transform3D HepGeom::Transform3D::inverse()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:300:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:300:17
     t.method("inverse", [](HepGeom::Transform3D const& a)->HepGeom::Transform3D { return a.inverse(); }, jlcxx::arg("this"));
     t.method("inverse", [](HepGeom::Transform3D const* a)->HepGeom::Transform3D { return a->inverse(); }, jlcxx::arg("this"));
     module_.set_override_module(jl_base_module);
 
     DEBUG_MSG("Adding wrapper for HepGeom::Transform3D HepGeom::Transform3D::operator*(const HepGeom::Transform3D &) (" __HERE__ ")");
     // signature to use in the veto list: HepGeom::Transform3D HepGeom::Transform3D::operator*(const HepGeom::Transform3D &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:304:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:304:17
     t.method("*", [](HepGeom::Transform3D const& a, const HepGeom::Transform3D & arg0)->HepGeom::Transform3D { return a.operator*(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
     t.method("*", [](HepGeom::Transform3D const* a, const HepGeom::Transform3D & arg0)->HepGeom::Transform3D { return a->operator*(arg0); }, jlcxx::arg("this"), jlcxx::arg("b"));
 
@@ -161,13 +161,13 @@ struct JlHepGeom_Transform3D: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void HepGeom::Transform3D::getDecomposition(HepGeom::Scale3D &, HepGeom::Rotate3D &, HepGeom::Translate3D &) (" __HERE__ ")");
     // signature to use in the veto list: void HepGeom::Transform3D::getDecomposition(HepGeom::Scale3D &, HepGeom::Rotate3D &, HepGeom::Translate3D &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:321:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:321:10
     t.method("getDecomposition", [](HepGeom::Transform3D const& a, HepGeom::Scale3D & arg0, HepGeom::Rotate3D & arg1, HepGeom::Translate3D & arg2)->void { a.getDecomposition(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("scale"), jlcxx::arg("rotation"), jlcxx::arg("translation"));
     t.method("getDecomposition", [](HepGeom::Transform3D const* a, HepGeom::Scale3D & arg0, HepGeom::Rotate3D & arg1, HepGeom::Translate3D & arg2)->void { a->getDecomposition(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("scale"), jlcxx::arg("rotation"), jlcxx::arg("translation"));
 
     DEBUG_MSG("Adding wrapper for bool HepGeom::Transform3D::isNear(const HepGeom::Transform3D &, double) (" __HERE__ ")");
     // signature to use in the veto list: bool HepGeom::Transform3D::isNear(const HepGeom::Transform3D &, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:329:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:329:10
     t.method("isNear", [](HepGeom::Transform3D const& a, const HepGeom::Transform3D & arg0)->bool { return a.isNear(arg0); }, jlcxx::arg("this"), jlcxx::arg("t"));
     t.method("isNear", [](HepGeom::Transform3D const& a, const HepGeom::Transform3D & arg0, double arg1)->bool { return a.isNear(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("t"), jlcxx::arg("tolerance"));
     t.method("isNear", [](HepGeom::Transform3D const* a, const HepGeom::Transform3D & arg0)->bool { return a->isNear(arg0); }, jlcxx::arg("this"), jlcxx::arg("t"));
@@ -175,26 +175,26 @@ struct JlHepGeom_Transform3D: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepRotation HepGeom::Transform3D::getRotation() (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepRotation HepGeom::Transform3D::getRotation()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:335:31
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:335:31
     t.method("getRotation", [](HepGeom::Transform3D const& a)->CLHEP::HepRotation { return a.getRotation(); }, jlcxx::arg("this"));
     t.method("getRotation", [](HepGeom::Transform3D const* a)->CLHEP::HepRotation { return a->getRotation(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::Hep3Vector HepGeom::Transform3D::getTranslation() (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::Hep3Vector HepGeom::Transform3D::getTranslation()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:341:30
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:341:30
     t.method("getTranslation", [](HepGeom::Transform3D const& a)->CLHEP::Hep3Vector { return a.getTranslation(); }, jlcxx::arg("this"));
     t.method("getTranslation", [](HepGeom::Transform3D const* a)->CLHEP::Hep3Vector { return a->getTranslation(); }, jlcxx::arg("this"));
     module_.set_override_module(jl_base_module);
 
     DEBUG_MSG("Adding wrapper for bool HepGeom::Transform3D::operator==(const HepGeom::Transform3D &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepGeom::Transform3D::operator==(const HepGeom::Transform3D &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:345:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:345:10
     t.method("==", [](HepGeom::Transform3D const& a, const HepGeom::Transform3D & arg0)->bool { return a.operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("transform"));
     t.method("==", [](HepGeom::Transform3D const* a, const HepGeom::Transform3D & arg0)->bool { return a->operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("transform"));
 
     DEBUG_MSG("Adding wrapper for bool HepGeom::Transform3D::operator!=(const HepGeom::Transform3D &) (" __HERE__ ")");
     // signature to use in the veto list: bool HepGeom::Transform3D::operator!=(const HepGeom::Transform3D &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:349:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:349:10
     t.method("!=", [](HepGeom::Transform3D const& a, const HepGeom::Transform3D & arg0)->bool { return a.operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("transform"));
     t.method("!=", [](HepGeom::Transform3D const* a, const HepGeom::Transform3D & arg0)->bool { return a->operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("transform"));
 

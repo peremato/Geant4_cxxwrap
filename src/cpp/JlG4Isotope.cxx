@@ -17,9 +17,8 @@ struct JlG4Isotope: public Wrapper {
 
   JlG4Isotope(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4Isotope (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Isotope.hh:61:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Isotope.hh:61:7
     jlcxx::TypeWrapper<G4Isotope>  t = jlModule.add_type<G4Isotope>("G4Isotope");
-    jlcxx::stl::apply_stl<G4Isotope*>(jlModule);
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4Isotope>>(new jlcxx::TypeWrapper<G4Isotope>(jlModule, t));
   }
 
@@ -28,73 +27,73 @@ struct JlG4Isotope: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4Isotope::G4Isotope(const G4String &, G4int, G4int, G4double, G4int) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Isotope.hh:65:3
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Isotope.hh:65:3
     t.constructor<const G4String &, G4int, G4int>(/*finalize=*/jlcxx::finalize_policy::no, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("z"), jlcxx::arg("n")    );
     t.constructor<const G4String &, G4int, G4int, G4double>(/*finalize=*/jlcxx::finalize_policy::no, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("z"), jlcxx::arg("n"), jlcxx::arg("a")    );
     t.constructor<const G4String &, G4int, G4int, G4double, G4int>(/*finalize=*/jlcxx::finalize_policy::no, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("z"), jlcxx::arg("n"), jlcxx::arg("a"), jlcxx::arg("mlevel")    );
 
     DEBUG_MSG("Adding wrapper for const G4String & G4Isotope::GetName() (" __HERE__ ")");
     // signature to use in the veto list: const G4String & G4Isotope::GetName()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Isotope.hh:77:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Isotope.hh:77:19
     t.method("GetName", [](G4Isotope const& a)->const G4String & { return a.GetName(); }, jlcxx::arg("this"));
     t.method("GetName", [](G4Isotope const* a)->const G4String & { return a->GetName(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4Isotope::GetZ() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4Isotope::GetZ()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Isotope.hh:80:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Isotope.hh:80:9
     t.method("GetZ", [](G4Isotope const& a)->G4int { return a.GetZ(); }, jlcxx::arg("this"));
     t.method("GetZ", [](G4Isotope const* a)->G4int { return a->GetZ(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4Isotope::GetN() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4Isotope::GetN()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Isotope.hh:83:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Isotope.hh:83:9
     t.method("GetN", [](G4Isotope const& a)->G4int { return a.GetN(); }, jlcxx::arg("this"));
     t.method("GetN", [](G4Isotope const* a)->G4int { return a->GetN(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Isotope::GetA() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Isotope::GetA()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Isotope.hh:86:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Isotope.hh:86:12
     t.method("GetA", [](G4Isotope const& a)->G4double { return a.GetA(); }, jlcxx::arg("this"));
     t.method("GetA", [](G4Isotope const* a)->G4double { return a->GetA(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4Isotope::Getm() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4Isotope::Getm()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Isotope.hh:89:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Isotope.hh:89:9
     t.method("Getm", [](G4Isotope const& a)->G4int { return a.Getm(); }, jlcxx::arg("this"));
     t.method("Getm", [](G4Isotope const* a)->G4int { return a->Getm(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4Isotope * G4Isotope::GetIsotope(const G4String &, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: G4Isotope * G4Isotope::GetIsotope(const G4String &, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Isotope.hh:91:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Isotope.hh:91:21
     module_.method("G4Isotope!GetIsotope", [](const G4String & arg0)->G4Isotope * { return G4Isotope::GetIsotope(arg0); }, jlcxx::arg("name"));
     module_.method("G4Isotope!GetIsotope", [](const G4String & arg0, G4bool arg1)->G4Isotope * { return G4Isotope::GetIsotope(arg0, arg1); }, jlcxx::arg("name"), jlcxx::arg("warning"));
 
     DEBUG_MSG("Adding wrapper for const G4IsotopeTable * G4Isotope::GetIsotopeTable() (" __HERE__ ")");
     // signature to use in the veto list: const G4IsotopeTable * G4Isotope::GetIsotopeTable()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Isotope.hh:93:32
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Isotope.hh:93:32
     module_.method("G4Isotope!GetIsotopeTable", []()->const G4IsotopeTable * { return G4Isotope::GetIsotopeTable(); });
 
-    DEBUG_MSG("Adding wrapper for size_t G4Isotope::GetNumberOfIsotopes() (" __HERE__ ")");
-    // signature to use in the veto list: size_t G4Isotope::GetNumberOfIsotopes()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Isotope.hh:95:22
-    module_.method("G4Isotope!GetNumberOfIsotopes", []()->size_t { return G4Isotope::GetNumberOfIsotopes(); });
+    DEBUG_MSG("Adding wrapper for std::size_t G4Isotope::GetNumberOfIsotopes() (" __HERE__ ")");
+    // signature to use in the veto list: std::size_t G4Isotope::GetNumberOfIsotopes()
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Isotope.hh:95:22
+    module_.method("G4Isotope!GetNumberOfIsotopes", []()->std::size_t { return G4Isotope::GetNumberOfIsotopes(); });
 
-    DEBUG_MSG("Adding wrapper for size_t G4Isotope::GetIndex() (" __HERE__ ")");
-    // signature to use in the veto list: size_t G4Isotope::GetIndex()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Isotope.hh:97:15
-    t.method("GetIndex", [](G4Isotope const& a)->size_t { return a.GetIndex(); }, jlcxx::arg("this"));
-    t.method("GetIndex", [](G4Isotope const* a)->size_t { return a->GetIndex(); }, jlcxx::arg("this"));
+    DEBUG_MSG("Adding wrapper for std::size_t G4Isotope::GetIndex() (" __HERE__ ")");
+    // signature to use in the veto list: std::size_t G4Isotope::GetIndex()
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Isotope.hh:97:15
+    t.method("GetIndex", [](G4Isotope const& a)->std::size_t { return a.GetIndex(); }, jlcxx::arg("this"));
+    t.method("GetIndex", [](G4Isotope const* a)->std::size_t { return a->GetIndex(); }, jlcxx::arg("this"));
     module_.set_override_module(jl_base_module);
 
     DEBUG_MSG("Adding wrapper for G4bool G4Isotope::operator==(const G4Isotope &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4Isotope::operator==(const G4Isotope &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Isotope.hh:105:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Isotope.hh:105:10
     t.method("==", [](G4Isotope const& a, const G4Isotope & arg0)->G4bool { return a.operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("==", [](G4Isotope const* a, const G4Isotope & arg0)->G4bool { return a->operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4Isotope::operator!=(const G4Isotope &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4Isotope::operator!=(const G4Isotope &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Isotope.hh:106:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Isotope.hh:106:10
     t.method("!=", [](G4Isotope const& a, const G4Isotope & arg0)->G4bool { return a.operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("!=", [](G4Isotope const* a, const G4Isotope & arg0)->G4bool { return a->operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
@@ -102,7 +101,7 @@ struct JlG4Isotope: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4Isotope::SetName(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4Isotope::SetName(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Isotope.hh:108:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Isotope.hh:108:8
     t.method("SetName", [](G4Isotope& a, const G4String & arg0)->void { a.SetName(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
     t.method("SetName", [](G4Isotope* a, const G4String & arg0)->void { a->SetName(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
   }

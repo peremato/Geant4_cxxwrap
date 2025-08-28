@@ -17,7 +17,7 @@ struct JlG4AffineTransform: public Wrapper {
 
   JlG4AffineTransform(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4AffineTransform (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:69:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:69:7
     jlcxx::TypeWrapper<G4AffineTransform>  t = jlModule.add_type<G4AffineTransform>("G4AffineTransform");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4AffineTransform>>(new jlcxx::TypeWrapper<G4AffineTransform>(jlModule, t));
   }
@@ -28,33 +28,33 @@ struct JlG4AffineTransform: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4AffineTransform::G4AffineTransform(const G4ThreeVector &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:77:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:77:12
     t.constructor<const G4ThreeVector &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("tlate")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4AffineTransform::G4AffineTransform(const G4RotationMatrix &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:80:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:80:12
     t.constructor<const G4RotationMatrix &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("rot")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4AffineTransform::G4AffineTransform(const G4RotationMatrix &, const G4ThreeVector &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:83:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:83:12
     t.constructor<const G4RotationMatrix &, const G4ThreeVector &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("rot"), jlcxx::arg("tlate")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4AffineTransform::G4AffineTransform(const G4RotationMatrix *, const G4ThreeVector &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:87:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:87:12
     t.constructor<const G4RotationMatrix *, const G4ThreeVector &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("rot"), jlcxx::arg("tlate")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4AffineTransform::G4AffineTransform(const G4AffineTransform &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:91:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:91:12
     t.constructor<const G4AffineTransform &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("rhs")    );
 
 
     DEBUG_MSG("Adding wrapper for G4AffineTransform & G4AffineTransform::operator=(const G4AffineTransform &) (" __HERE__ ")");
     // signature to use in the veto list: G4AffineTransform & G4AffineTransform::operator=(const G4AffineTransform &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:95:31
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:95:31
     t.method("assign", [](G4AffineTransform& a, const G4AffineTransform & arg0)->G4AffineTransform & { return a.operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("rhs"));
     t.method("assign", [](G4AffineTransform* a, const G4AffineTransform & arg0)->G4AffineTransform & { return a->operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("rhs"));
 
@@ -62,7 +62,7 @@ struct JlG4AffineTransform: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4AffineTransform G4AffineTransform::operator*(const G4AffineTransform &) (" __HERE__ ")");
     // signature to use in the veto list: G4AffineTransform G4AffineTransform::operator*(const G4AffineTransform &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:102:30
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:102:30
     t.method("*", [](G4AffineTransform const& a, const G4AffineTransform & arg0)->G4AffineTransform { return a.operator*(arg0); }, jlcxx::arg("this"), jlcxx::arg("tf"));
     t.method("*", [](G4AffineTransform const* a, const G4AffineTransform & arg0)->G4AffineTransform { return a->operator*(arg0); }, jlcxx::arg("this"), jlcxx::arg("tf"));
 
@@ -70,98 +70,98 @@ struct JlG4AffineTransform: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4AffineTransform & G4AffineTransform::operator*=(const G4AffineTransform &) (" __HERE__ ")");
     // signature to use in the veto list: G4AffineTransform & G4AffineTransform::operator*=(const G4AffineTransform &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:107:31
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:107:31
     t.method("mult!", [](G4AffineTransform& a, const G4AffineTransform & arg0)->G4AffineTransform & { return a.operator*=(arg0); }, jlcxx::arg("this"), jlcxx::arg("tf"));
     t.method("mult!", [](G4AffineTransform* a, const G4AffineTransform & arg0)->G4AffineTransform & { return a->operator*=(arg0); }, jlcxx::arg("this"), jlcxx::arg("tf"));
 
     DEBUG_MSG("Adding wrapper for G4AffineTransform & G4AffineTransform::Product(const G4AffineTransform &, const G4AffineTransform &) (" __HERE__ ")");
     // signature to use in the veto list: G4AffineTransform & G4AffineTransform::Product(const G4AffineTransform &, const G4AffineTransform &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:111:31
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:111:31
     t.method("Product", [](G4AffineTransform& a, const G4AffineTransform & arg0, const G4AffineTransform & arg1)->G4AffineTransform & { return a.Product(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("tf1"), jlcxx::arg("tf2"));
     t.method("Product", [](G4AffineTransform* a, const G4AffineTransform & arg0, const G4AffineTransform & arg1)->G4AffineTransform & { return a->Product(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("tf1"), jlcxx::arg("tf2"));
 
     DEBUG_MSG("Adding wrapper for G4AffineTransform & G4AffineTransform::InverseProduct(const G4AffineTransform &, const G4AffineTransform &) (" __HERE__ ")");
     // signature to use in the veto list: G4AffineTransform & G4AffineTransform::InverseProduct(const G4AffineTransform &, const G4AffineTransform &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:118:31
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:118:31
     t.method("InverseProduct", [](G4AffineTransform& a, const G4AffineTransform & arg0, const G4AffineTransform & arg1)->G4AffineTransform & { return a.InverseProduct(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("tf1"), jlcxx::arg("tf2"));
     t.method("InverseProduct", [](G4AffineTransform* a, const G4AffineTransform & arg0, const G4AffineTransform & arg1)->G4AffineTransform & { return a->InverseProduct(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("tf1"), jlcxx::arg("tf2"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4AffineTransform::TransformPoint(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4AffineTransform::TransformPoint(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:122:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:122:26
     t.method("TransformPoint", [](G4AffineTransform const& a, const G4ThreeVector & arg0)->G4ThreeVector { return a.TransformPoint(arg0); }, jlcxx::arg("this"), jlcxx::arg("vec"));
     t.method("TransformPoint", [](G4AffineTransform const* a, const G4ThreeVector & arg0)->G4ThreeVector { return a->TransformPoint(arg0); }, jlcxx::arg("this"), jlcxx::arg("vec"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4AffineTransform::InverseTransformPoint(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4AffineTransform::InverseTransformPoint(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:125:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:125:26
     t.method("InverseTransformPoint", [](G4AffineTransform const& a, const G4ThreeVector & arg0)->G4ThreeVector { return a.InverseTransformPoint(arg0); }, jlcxx::arg("this"), jlcxx::arg("vec"));
     t.method("InverseTransformPoint", [](G4AffineTransform const* a, const G4ThreeVector & arg0)->G4ThreeVector { return a->InverseTransformPoint(arg0); }, jlcxx::arg("this"), jlcxx::arg("vec"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4AffineTransform::TransformAxis(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4AffineTransform::TransformAxis(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:128:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:128:26
     t.method("TransformAxis", [](G4AffineTransform const& a, const G4ThreeVector & arg0)->G4ThreeVector { return a.TransformAxis(arg0); }, jlcxx::arg("this"), jlcxx::arg("axis"));
     t.method("TransformAxis", [](G4AffineTransform const* a, const G4ThreeVector & arg0)->G4ThreeVector { return a->TransformAxis(arg0); }, jlcxx::arg("this"), jlcxx::arg("axis"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4AffineTransform::InverseTransformAxis(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4AffineTransform::InverseTransformAxis(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:131:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:131:26
     t.method("InverseTransformAxis", [](G4AffineTransform const& a, const G4ThreeVector & arg0)->G4ThreeVector { return a.InverseTransformAxis(arg0); }, jlcxx::arg("this"), jlcxx::arg("axis"));
     t.method("InverseTransformAxis", [](G4AffineTransform const* a, const G4ThreeVector & arg0)->G4ThreeVector { return a->InverseTransformAxis(arg0); }, jlcxx::arg("this"), jlcxx::arg("axis"));
 
     DEBUG_MSG("Adding wrapper for void G4AffineTransform::ApplyPointTransform(G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4AffineTransform::ApplyPointTransform(G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:134:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:134:17
     t.method("ApplyPointTransform", [](G4AffineTransform const& a, G4ThreeVector & arg0)->void { a.ApplyPointTransform(arg0); }, jlcxx::arg("this"), jlcxx::arg("vec"));
     t.method("ApplyPointTransform", [](G4AffineTransform const* a, G4ThreeVector & arg0)->void { a->ApplyPointTransform(arg0); }, jlcxx::arg("this"), jlcxx::arg("vec"));
 
     DEBUG_MSG("Adding wrapper for void G4AffineTransform::ApplyAxisTransform(G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4AffineTransform::ApplyAxisTransform(G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:137:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:137:17
     t.method("ApplyAxisTransform", [](G4AffineTransform const& a, G4ThreeVector & arg0)->void { a.ApplyAxisTransform(arg0); }, jlcxx::arg("this"), jlcxx::arg("axis"));
     t.method("ApplyAxisTransform", [](G4AffineTransform const* a, G4ThreeVector & arg0)->void { a->ApplyAxisTransform(arg0); }, jlcxx::arg("this"), jlcxx::arg("axis"));
 
     DEBUG_MSG("Adding wrapper for G4AffineTransform G4AffineTransform::Inverse() (" __HERE__ ")");
     // signature to use in the veto list: G4AffineTransform G4AffineTransform::Inverse()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:140:30
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:140:30
     t.method("Inverse", [](G4AffineTransform const& a)->G4AffineTransform { return a.Inverse(); }, jlcxx::arg("this"));
     t.method("Inverse", [](G4AffineTransform const* a)->G4AffineTransform { return a->Inverse(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4AffineTransform & G4AffineTransform::Invert() (" __HERE__ ")");
     // signature to use in the veto list: G4AffineTransform & G4AffineTransform::Invert()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:143:31
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:143:31
     t.method("Invert", [](G4AffineTransform& a)->G4AffineTransform & { return a.Invert(); }, jlcxx::arg("this"));
     t.method("Invert", [](G4AffineTransform* a)->G4AffineTransform & { return a->Invert(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4AffineTransform & G4AffineTransform::operator+=(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4AffineTransform & G4AffineTransform::operator+=(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:146:31
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:146:31
     t.method("add!", [](G4AffineTransform& a, const G4ThreeVector & arg0)->G4AffineTransform & { return a.operator+=(arg0); }, jlcxx::arg("this"), jlcxx::arg("tlate"));
     t.method("add!", [](G4AffineTransform* a, const G4ThreeVector & arg0)->G4AffineTransform & { return a->operator+=(arg0); }, jlcxx::arg("this"), jlcxx::arg("tlate"));
 
     DEBUG_MSG("Adding wrapper for G4AffineTransform & G4AffineTransform::operator-=(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4AffineTransform & G4AffineTransform::operator-=(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:147:31
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:147:31
     t.method("sub!", [](G4AffineTransform& a, const G4ThreeVector & arg0)->G4AffineTransform & { return a.operator-=(arg0); }, jlcxx::arg("this"), jlcxx::arg("tlate"));
     t.method("sub!", [](G4AffineTransform* a, const G4ThreeVector & arg0)->G4AffineTransform & { return a->operator-=(arg0); }, jlcxx::arg("this"), jlcxx::arg("tlate"));
     module_.set_override_module(jl_base_module);
 
     DEBUG_MSG("Adding wrapper for G4bool G4AffineTransform::operator==(const G4AffineTransform &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4AffineTransform::operator==(const G4AffineTransform &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:151:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:151:19
     t.method("==", [](G4AffineTransform const& a, const G4AffineTransform & arg0)->G4bool { return a.operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("tf"));
     t.method("==", [](G4AffineTransform const* a, const G4AffineTransform & arg0)->G4bool { return a->operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("tf"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4AffineTransform::operator!=(const G4AffineTransform &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4AffineTransform::operator!=(const G4AffineTransform &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:152:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:152:19
     t.method("!=", [](G4AffineTransform const& a, const G4AffineTransform & arg0)->G4bool { return a.operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("tf"));
     t.method("!=", [](G4AffineTransform const* a, const G4AffineTransform & arg0)->G4bool { return a->operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("tf"));
 
 
     DEBUG_MSG("Adding getindex method to wrap G4double G4AffineTransform::operator[](const G4int) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:154:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:154:21
     t.method("getindex",
       [](G4AffineTransform& a, const G4int i){
       return a[i];
@@ -171,49 +171,49 @@ struct JlG4AffineTransform: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4bool G4AffineTransform::IsRotated() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4AffineTransform::IsRotated()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:156:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:156:19
     t.method("IsRotated", [](G4AffineTransform const& a)->G4bool { return a.IsRotated(); }, jlcxx::arg("this"));
     t.method("IsRotated", [](G4AffineTransform const* a)->G4bool { return a->IsRotated(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4AffineTransform::IsTranslated() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4AffineTransform::IsTranslated()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:159:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:159:19
     t.method("IsTranslated", [](G4AffineTransform const& a)->G4bool { return a.IsTranslated(); }, jlcxx::arg("this"));
     t.method("IsTranslated", [](G4AffineTransform const* a)->G4bool { return a->IsTranslated(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4RotationMatrix G4AffineTransform::NetRotation() (" __HERE__ ")");
     // signature to use in the veto list: G4RotationMatrix G4AffineTransform::NetRotation()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:162:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:162:29
     t.method("NetRotation", [](G4AffineTransform const& a)->G4RotationMatrix { return a.NetRotation(); }, jlcxx::arg("this"));
     t.method("NetRotation", [](G4AffineTransform const* a)->G4RotationMatrix { return a->NetRotation(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4RotationMatrix G4AffineTransform::InverseNetRotation() (" __HERE__ ")");
     // signature to use in the veto list: G4RotationMatrix G4AffineTransform::InverseNetRotation()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:164:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:164:29
     t.method("InverseNetRotation", [](G4AffineTransform const& a)->G4RotationMatrix { return a.InverseNetRotation(); }, jlcxx::arg("this"));
     t.method("InverseNetRotation", [](G4AffineTransform const* a)->G4RotationMatrix { return a->InverseNetRotation(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4AffineTransform::NetTranslation() (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4AffineTransform::NetTranslation()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:166:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:166:26
     t.method("NetTranslation", [](G4AffineTransform const& a)->G4ThreeVector { return a.NetTranslation(); }, jlcxx::arg("this"));
     t.method("NetTranslation", [](G4AffineTransform const* a)->G4ThreeVector { return a->NetTranslation(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4AffineTransform::InverseNetTranslation() (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4AffineTransform::InverseNetTranslation()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:168:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:168:26
     t.method("InverseNetTranslation", [](G4AffineTransform const& a)->G4ThreeVector { return a.InverseNetTranslation(); }, jlcxx::arg("this"));
     t.method("InverseNetTranslation", [](G4AffineTransform const* a)->G4ThreeVector { return a->InverseNetTranslation(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4AffineTransform::SetNetRotation(const G4RotationMatrix &) (" __HERE__ ")");
     // signature to use in the veto list: void G4AffineTransform::SetNetRotation(const G4RotationMatrix &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:170:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:170:17
     t.method("SetNetRotation", [](G4AffineTransform& a, const G4RotationMatrix & arg0)->void { a.SetNetRotation(arg0); }, jlcxx::arg("this"), jlcxx::arg("rot"));
     t.method("SetNetRotation", [](G4AffineTransform* a, const G4RotationMatrix & arg0)->void { a->SetNetRotation(arg0); }, jlcxx::arg("this"), jlcxx::arg("rot"));
 
     DEBUG_MSG("Adding wrapper for void G4AffineTransform::SetNetTranslation(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4AffineTransform::SetNetTranslation(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AffineTransform.hh:172:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AffineTransform.hh:172:17
     t.method("SetNetTranslation", [](G4AffineTransform& a, const G4ThreeVector & arg0)->void { a.SetNetTranslation(arg0); }, jlcxx::arg("this"), jlcxx::arg("tlate"));
     t.method("SetNetTranslation", [](G4AffineTransform* a, const G4ThreeVector & arg0)->void { a->SetNetTranslation(arg0); }, jlcxx::arg("this"), jlcxx::arg("tlate"));
   }

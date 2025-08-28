@@ -17,7 +17,7 @@ struct JlG4SPSAngDistribution: public Wrapper {
 
   JlG4SPSAngDistribution(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4SPSAngDistribution (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:66:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:66:7
     jlcxx::TypeWrapper<G4SPSAngDistribution>  t = jlModule.add_type<G4SPSAngDistribution>("G4SPSAngDistribution");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4SPSAngDistribution>>(new jlcxx::TypeWrapper<G4SPSAngDistribution>(jlModule, t));
   }
@@ -28,157 +28,157 @@ struct JlG4SPSAngDistribution: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4SPSAngDistribution::SetAngDistType(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSAngDistribution::SetAngDistType(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:78:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:78:10
     t.method("SetAngDistType", [](G4SPSAngDistribution& a, const G4String & arg0)->void { a.SetAngDistType(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetAngDistType", [](G4SPSAngDistribution* a, const G4String & arg0)->void { a->SetAngDistType(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSAngDistribution::DefineAngRefAxes(const G4String &, const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSAngDistribution::DefineAngRefAxes(const G4String &, const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:83:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:83:10
     t.method("DefineAngRefAxes", [](G4SPSAngDistribution& a, const G4String & arg0, const G4ThreeVector & arg1)->void { a.DefineAngRefAxes(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"));
     t.method("DefineAngRefAxes", [](G4SPSAngDistribution* a, const G4String & arg0, const G4ThreeVector & arg1)->void { a->DefineAngRefAxes(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSAngDistribution::SetMinTheta(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSAngDistribution::SetMinTheta(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:88:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:88:10
     t.method("SetMinTheta", [](G4SPSAngDistribution& a, G4double arg0)->void { a.SetMinTheta(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetMinTheta", [](G4SPSAngDistribution* a, G4double arg0)->void { a->SetMinTheta(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSAngDistribution::SetMinPhi(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSAngDistribution::SetMinPhi(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:91:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:91:10
     t.method("SetMinPhi", [](G4SPSAngDistribution& a, G4double arg0)->void { a.SetMinPhi(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetMinPhi", [](G4SPSAngDistribution* a, G4double arg0)->void { a->SetMinPhi(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSAngDistribution::SetMaxTheta(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSAngDistribution::SetMaxTheta(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:94:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:94:10
     t.method("SetMaxTheta", [](G4SPSAngDistribution& a, G4double arg0)->void { a.SetMaxTheta(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetMaxTheta", [](G4SPSAngDistribution* a, G4double arg0)->void { a->SetMaxTheta(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSAngDistribution::SetMaxPhi(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSAngDistribution::SetMaxPhi(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:97:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:97:10
     t.method("SetMaxPhi", [](G4SPSAngDistribution& a, G4double arg0)->void { a.SetMaxPhi(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetMaxPhi", [](G4SPSAngDistribution* a, G4double arg0)->void { a->SetMaxPhi(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSAngDistribution::SetBeamSigmaInAngR(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSAngDistribution::SetBeamSigmaInAngR(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:100:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:100:10
     t.method("SetBeamSigmaInAngR", [](G4SPSAngDistribution& a, G4double arg0)->void { a.SetBeamSigmaInAngR(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetBeamSigmaInAngR", [](G4SPSAngDistribution* a, G4double arg0)->void { a->SetBeamSigmaInAngR(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSAngDistribution::SetBeamSigmaInAngX(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSAngDistribution::SetBeamSigmaInAngX(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:103:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:103:10
     t.method("SetBeamSigmaInAngX", [](G4SPSAngDistribution& a, G4double arg0)->void { a.SetBeamSigmaInAngX(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetBeamSigmaInAngX", [](G4SPSAngDistribution* a, G4double arg0)->void { a->SetBeamSigmaInAngX(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSAngDistribution::SetBeamSigmaInAngY(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSAngDistribution::SetBeamSigmaInAngY(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:106:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:106:10
     t.method("SetBeamSigmaInAngY", [](G4SPSAngDistribution& a, G4double arg0)->void { a.SetBeamSigmaInAngY(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetBeamSigmaInAngY", [](G4SPSAngDistribution* a, G4double arg0)->void { a->SetBeamSigmaInAngY(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSAngDistribution::UserDefAngTheta(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSAngDistribution::UserDefAngTheta(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:109:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:109:10
     t.method("UserDefAngTheta", [](G4SPSAngDistribution& a, const G4ThreeVector & arg0)->void { a.UserDefAngTheta(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("UserDefAngTheta", [](G4SPSAngDistribution* a, const G4ThreeVector & arg0)->void { a->UserDefAngTheta(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSAngDistribution::UserDefAngPhi(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSAngDistribution::UserDefAngPhi(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:112:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:112:10
     t.method("UserDefAngPhi", [](G4SPSAngDistribution& a, const G4ThreeVector & arg0)->void { a.UserDefAngPhi(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("UserDefAngPhi", [](G4SPSAngDistribution* a, const G4ThreeVector & arg0)->void { a->UserDefAngPhi(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSAngDistribution::SetFocusPoint(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSAngDistribution::SetFocusPoint(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:115:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:115:10
     t.method("SetFocusPoint", [](G4SPSAngDistribution& a, const G4ThreeVector & arg0)->void { a.SetFocusPoint(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetFocusPoint", [](G4SPSAngDistribution* a, const G4ThreeVector & arg0)->void { a->SetFocusPoint(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSAngDistribution::SetParticleMomentumDirection(const G4ParticleMomentum &) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSAngDistribution::SetParticleMomentumDirection(const G4ParticleMomentum &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:116:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:116:10
     t.method("SetParticleMomentumDirection", [](G4SPSAngDistribution& a, const G4ParticleMomentum & arg0)->void { a.SetParticleMomentumDirection(arg0); }, jlcxx::arg("this"), jlcxx::arg("aMomDirection"));
     t.method("SetParticleMomentumDirection", [](G4SPSAngDistribution* a, const G4ParticleMomentum & arg0)->void { a->SetParticleMomentumDirection(arg0); }, jlcxx::arg("this"), jlcxx::arg("aMomDirection"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSAngDistribution::SetUseUserAngAxis(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSAngDistribution::SetUseUserAngAxis(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:117:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:117:10
     t.method("SetUseUserAngAxis", [](G4SPSAngDistribution& a, G4bool arg0)->void { a.SetUseUserAngAxis(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetUseUserAngAxis", [](G4SPSAngDistribution* a, G4bool arg0)->void { a->SetUseUserAngAxis(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSAngDistribution::SetUserWRTSurface(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSAngDistribution::SetUserWRTSurface(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:118:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:118:10
     t.method("SetUserWRTSurface", [](G4SPSAngDistribution& a, G4bool arg0)->void { a.SetUserWRTSurface(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetUserWRTSurface", [](G4SPSAngDistribution* a, G4bool arg0)->void { a->SetUserWRTSurface(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSAngDistribution::SetPosDistribution(G4SPSPosDistribution *) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSAngDistribution::SetPosDistribution(G4SPSPosDistribution *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:122:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:122:10
     t.method("SetPosDistribution", [](G4SPSAngDistribution& a, G4SPSPosDistribution * arg0)->void { a.SetPosDistribution(arg0); }, jlcxx::arg("this"), jlcxx::arg("a"));
     t.method("SetPosDistribution", [](G4SPSAngDistribution* a, G4SPSPosDistribution * arg0)->void { a->SetPosDistribution(arg0); }, jlcxx::arg("this"), jlcxx::arg("a"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSAngDistribution::SetBiasRndm(G4SPSRandomGenerator *) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSAngDistribution::SetBiasRndm(G4SPSRandomGenerator *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:126:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:126:10
     t.method("SetBiasRndm", [](G4SPSAngDistribution& a, G4SPSRandomGenerator * arg0)->void { a.SetBiasRndm(arg0); }, jlcxx::arg("this"), jlcxx::arg("a"));
     t.method("SetBiasRndm", [](G4SPSAngDistribution* a, G4SPSRandomGenerator * arg0)->void { a->SetBiasRndm(arg0); }, jlcxx::arg("this"), jlcxx::arg("a"));
 
     DEBUG_MSG("Adding wrapper for G4ParticleMomentum G4SPSAngDistribution::GenerateOne() (" __HERE__ ")");
     // signature to use in the veto list: G4ParticleMomentum G4SPSAngDistribution::GenerateOne()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:129:24
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:129:24
     t.method("GenerateOne", [](G4SPSAngDistribution& a)->G4ParticleMomentum { return a.GenerateOne(); }, jlcxx::arg("this"));
     t.method("GenerateOne", [](G4SPSAngDistribution* a)->G4ParticleMomentum { return a->GenerateOne(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSAngDistribution::ReSetHist(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSAngDistribution::ReSetHist(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:132:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:132:10
     t.method("ReSetHist", [](G4SPSAngDistribution& a, const G4String & arg0)->void { a.ReSetHist(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("ReSetHist", [](G4SPSAngDistribution* a, const G4String & arg0)->void { a->ReSetHist(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSAngDistribution::SetVerbosity(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSAngDistribution::SetVerbosity(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:135:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:135:10
     t.method("SetVerbosity", [](G4SPSAngDistribution& a, G4int arg0)->void { a.SetVerbosity(arg0); }, jlcxx::arg("this"), jlcxx::arg("a"));
     t.method("SetVerbosity", [](G4SPSAngDistribution* a, G4int arg0)->void { a->SetVerbosity(arg0); }, jlcxx::arg("this"), jlcxx::arg("a"));
 
     DEBUG_MSG("Adding wrapper for G4String G4SPSAngDistribution::GetDistType() (" __HERE__ ")");
     // signature to use in the veto list: G4String G4SPSAngDistribution::GetDistType()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:140:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:140:14
     t.method("GetDistType", [](G4SPSAngDistribution& a)->G4String { return a.GetDistType(); }, jlcxx::arg("this"));
     t.method("GetDistType", [](G4SPSAngDistribution* a)->G4String { return a->GetDistType(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSAngDistribution::GetMinTheta() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSAngDistribution::GetMinTheta()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:141:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:141:14
     t.method("GetMinTheta", [](G4SPSAngDistribution& a)->G4double { return a.GetMinTheta(); }, jlcxx::arg("this"));
     t.method("GetMinTheta", [](G4SPSAngDistribution* a)->G4double { return a->GetMinTheta(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSAngDistribution::GetMaxTheta() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSAngDistribution::GetMaxTheta()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:142:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:142:14
     t.method("GetMaxTheta", [](G4SPSAngDistribution& a)->G4double { return a.GetMaxTheta(); }, jlcxx::arg("this"));
     t.method("GetMaxTheta", [](G4SPSAngDistribution* a)->G4double { return a->GetMaxTheta(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSAngDistribution::GetMinPhi() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSAngDistribution::GetMinPhi()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:143:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:143:14
     t.method("GetMinPhi", [](G4SPSAngDistribution& a)->G4double { return a.GetMinPhi(); }, jlcxx::arg("this"));
     t.method("GetMinPhi", [](G4SPSAngDistribution* a)->G4double { return a->GetMinPhi(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSAngDistribution::GetMaxPhi() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSAngDistribution::GetMaxPhi()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:144:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:144:14
     t.method("GetMaxPhi", [](G4SPSAngDistribution& a)->G4double { return a.GetMaxPhi(); }, jlcxx::arg("this"));
     t.method("GetMaxPhi", [](G4SPSAngDistribution* a)->G4double { return a->GetMaxPhi(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4SPSAngDistribution::GetDirection() (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4SPSAngDistribution::GetDirection()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSAngDistribution.hh:145:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSAngDistribution.hh:145:19
     t.method("GetDirection", [](G4SPSAngDistribution& a)->G4ThreeVector { return a.GetDirection(); }, jlcxx::arg("this"));
     t.method("GetDirection", [](G4SPSAngDistribution* a)->G4ThreeVector { return a->GetDirection(); }, jlcxx::arg("this"));
   }

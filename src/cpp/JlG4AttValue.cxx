@@ -17,9 +17,8 @@ struct JlG4AttValue: public Wrapper {
 
   JlG4AttValue(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4AttValue (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4AttValue.hh:52:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4AttValue.hh:52:9
     jlcxx::TypeWrapper<G4AttValue>  t = jlModule.add_type<G4AttValue>("G4AttValue");
-    jlcxx::stl::apply_stl<G4AttValue>(jlModule);
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4AttValue>>(new jlcxx::TypeWrapper<G4AttValue>(jlModule, t));
   }
 

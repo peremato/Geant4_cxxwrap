@@ -17,7 +17,7 @@ struct JlG4PDefManager: public Wrapper {
 
   JlG4PDefManager(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4PDefManager (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PDefManager.hh:82:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PDefManager.hh:82:7
     jlcxx::TypeWrapper<G4PDefManager>  t = jlModule.add_type<G4PDefManager>("G4PDefManager");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4PDefManager>>(new jlcxx::TypeWrapper<G4PDefManager>(jlModule, t));
   }

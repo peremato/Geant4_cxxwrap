@@ -17,7 +17,7 @@ struct JlCLHEP_HepBoostX: public Wrapper {
 
   JlCLHEP_HepBoostX(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type CLHEP::HepBoostX (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/BoostX.h:37:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/BoostX.h:37:7
     jlcxx::TypeWrapper<CLHEP::HepBoostX>  t = jlModule.add_type<CLHEP::HepBoostX>("CLHEP!HepBoostX");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<CLHEP::HepBoostX>>(new jlcxx::TypeWrapper<CLHEP::HepBoostX>(jlModule, t));
   }

@@ -17,7 +17,7 @@ struct JlG4VisAttributes: public Wrapper {
 
   JlG4VisAttributes(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4VisAttributes (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:69:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:69:7
     jlcxx::TypeWrapper<G4VisAttributes>  t = jlModule.add_type<G4VisAttributes>("G4VisAttributes");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4VisAttributes>>(new jlcxx::TypeWrapper<G4VisAttributes>(jlModule, t));
   }
@@ -28,45 +28,45 @@ struct JlG4VisAttributes: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4VisAttributes::G4VisAttributes(G4bool) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:79:3
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:79:3
     t.constructor<G4bool>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("visibility")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4VisAttributes::G4VisAttributes(const G4Colour &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:80:3
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:80:3
     t.constructor<const G4Colour &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("colour")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4VisAttributes::G4VisAttributes(G4bool, const G4Colour &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:81:3
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:81:3
     t.constructor<G4bool, const G4Colour &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("visibility"), jlcxx::arg("colour")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4VisAttributes::G4VisAttributes(const G4VisAttributes &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:82:3
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:82:3
     t.constructor<const G4VisAttributes &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("arg0")    );
 
     DEBUG_MSG("Adding wrapper for G4VisAttributes & G4VisAttributes::operator=(const G4VisAttributes &) (" __HERE__ ")");
     // signature to use in the veto list: G4VisAttributes & G4VisAttributes::operator=(const G4VisAttributes &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:84:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:84:20
     t.method("assign", [](G4VisAttributes& a, const G4VisAttributes & arg0)->G4VisAttributes & { return a.operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("assign", [](G4VisAttributes* a, const G4VisAttributes & arg0)->G4VisAttributes & { return a->operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for const G4VisAttributes & G4VisAttributes::GetInvisible() (" __HERE__ ")");
     // signature to use in the veto list: const G4VisAttributes & G4VisAttributes::GetInvisible()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:86:33
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:86:33
     module_.method("G4VisAttributes!GetInvisible", []()->const G4VisAttributes & { return G4VisAttributes::GetInvisible(); });
     module_.set_override_module(jl_base_module);
 
     DEBUG_MSG("Adding wrapper for G4bool G4VisAttributes::operator!=(const G4VisAttributes &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VisAttributes::operator!=(const G4VisAttributes &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:88:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:88:10
     t.method("!=", [](G4VisAttributes const& a, const G4VisAttributes & arg0)->G4bool { return a.operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("a"));
     t.method("!=", [](G4VisAttributes const* a, const G4VisAttributes & arg0)->G4bool { return a->operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("a"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4VisAttributes::operator==(const G4VisAttributes &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VisAttributes::operator==(const G4VisAttributes &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:89:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:89:10
     t.method("==", [](G4VisAttributes const& a, const G4VisAttributes & arg0)->G4bool { return a.operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("a"));
     t.method("==", [](G4VisAttributes const* a, const G4VisAttributes & arg0)->G4bool { return a->operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("a"));
 
@@ -74,7 +74,7 @@ struct JlG4VisAttributes: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4VisAttributes::SetVisibility(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4VisAttributes::SetVisibility(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:91:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:91:8
     t.method("SetVisibility", [](G4VisAttributes& a)->void { a.SetVisibility(); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetVisibility", [](G4VisAttributes& a, G4bool arg0)->void { a.SetVisibility(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetVisibility", [](G4VisAttributes* a)->void { a->SetVisibility(); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
@@ -82,7 +82,7 @@ struct JlG4VisAttributes: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4VisAttributes::SetDaughtersInvisible(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4VisAttributes::SetDaughtersInvisible(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:92:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:92:8
     t.method("SetDaughtersInvisible", [](G4VisAttributes& a)->void { a.SetDaughtersInvisible(); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetDaughtersInvisible", [](G4VisAttributes& a, G4bool arg0)->void { a.SetDaughtersInvisible(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetDaughtersInvisible", [](G4VisAttributes* a)->void { a->SetDaughtersInvisible(); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
@@ -90,19 +90,19 @@ struct JlG4VisAttributes: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4VisAttributes::SetColour(const G4Colour &) (" __HERE__ ")");
     // signature to use in the veto list: void G4VisAttributes::SetColour(const G4Colour &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:93:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:93:8
     t.method("SetColour", [](G4VisAttributes& a, const G4Colour & arg0)->void { a.SetColour(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetColour", [](G4VisAttributes* a, const G4Colour & arg0)->void { a->SetColour(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4VisAttributes::SetColor(const G4Color &) (" __HERE__ ")");
     // signature to use in the veto list: void G4VisAttributes::SetColor(const G4Color &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:94:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:94:8
     t.method("SetColor", [](G4VisAttributes& a, const G4Color & arg0)->void { a.SetColor(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetColor", [](G4VisAttributes* a, const G4Color & arg0)->void { a->SetColor(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4VisAttributes::SetColour(G4double, G4double, G4double, G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4VisAttributes::SetColour(G4double, G4double, G4double, G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:95:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:95:8
     t.method("SetColour", [](G4VisAttributes& a, G4double arg0, G4double arg1, G4double arg2)->void { a.SetColour(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("red"), jlcxx::arg("green"), jlcxx::arg("blue"));
     t.method("SetColour", [](G4VisAttributes& a, G4double arg0, G4double arg1, G4double arg2, G4double arg3)->void { a.SetColour(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("red"), jlcxx::arg("green"), jlcxx::arg("blue"), jlcxx::arg("alpha"));
     t.method("SetColour", [](G4VisAttributes* a, G4double arg0, G4double arg1, G4double arg2)->void { a->SetColour(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("red"), jlcxx::arg("green"), jlcxx::arg("blue"));
@@ -110,7 +110,7 @@ struct JlG4VisAttributes: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4VisAttributes::SetColor(G4double, G4double, G4double, G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4VisAttributes::SetColor(G4double, G4double, G4double, G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:97:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:97:8
     t.method("SetColor", [](G4VisAttributes& a, G4double arg0, G4double arg1, G4double arg2)->void { a.SetColor(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("red"), jlcxx::arg("green"), jlcxx::arg("blue"));
     t.method("SetColor", [](G4VisAttributes& a, G4double arg0, G4double arg1, G4double arg2, G4double arg3)->void { a.SetColor(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("red"), jlcxx::arg("green"), jlcxx::arg("blue"), jlcxx::arg("alpha"));
     t.method("SetColor", [](G4VisAttributes* a, G4double arg0, G4double arg1, G4double arg2)->void { a->SetColor(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("red"), jlcxx::arg("green"), jlcxx::arg("blue"));
@@ -118,19 +118,19 @@ struct JlG4VisAttributes: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4VisAttributes::SetLineStyle(G4VisAttributes::LineStyle) (" __HERE__ ")");
     // signature to use in the veto list: void G4VisAttributes::SetLineStyle(G4VisAttributes::LineStyle)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:99:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:99:8
     t.method("SetLineStyle", [](G4VisAttributes& a, G4VisAttributes::LineStyle arg0)->void { a.SetLineStyle(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetLineStyle", [](G4VisAttributes* a, G4VisAttributes::LineStyle arg0)->void { a->SetLineStyle(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4VisAttributes::SetLineWidth(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4VisAttributes::SetLineWidth(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:100:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:100:8
     t.method("SetLineWidth", [](G4VisAttributes& a, G4double arg0)->void { a.SetLineWidth(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetLineWidth", [](G4VisAttributes* a, G4double arg0)->void { a->SetLineWidth(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4VisAttributes::SetForceWireframe(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4VisAttributes::SetForceWireframe(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:101:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:101:8
     t.method("SetForceWireframe", [](G4VisAttributes& a)->void { a.SetForceWireframe(); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetForceWireframe", [](G4VisAttributes& a, G4bool arg0)->void { a.SetForceWireframe(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetForceWireframe", [](G4VisAttributes* a)->void { a->SetForceWireframe(); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
@@ -138,7 +138,7 @@ struct JlG4VisAttributes: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4VisAttributes::SetForceSolid(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4VisAttributes::SetForceSolid(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:102:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:102:8
     t.method("SetForceSolid", [](G4VisAttributes& a)->void { a.SetForceSolid(); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetForceSolid", [](G4VisAttributes& a, G4bool arg0)->void { a.SetForceSolid(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetForceSolid", [](G4VisAttributes* a)->void { a->SetForceSolid(); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
@@ -146,7 +146,7 @@ struct JlG4VisAttributes: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4VisAttributes::SetForceCloud(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4VisAttributes::SetForceCloud(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:103:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:103:8
     t.method("SetForceCloud", [](G4VisAttributes& a)->void { a.SetForceCloud(); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetForceCloud", [](G4VisAttributes& a, G4bool arg0)->void { a.SetForceCloud(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetForceCloud", [](G4VisAttributes* a)->void { a->SetForceCloud(); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
@@ -154,13 +154,13 @@ struct JlG4VisAttributes: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4VisAttributes::SetForceNumberOfCloudPoints(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4VisAttributes::SetForceNumberOfCloudPoints(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:104:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:104:8
     t.method("SetForceNumberOfCloudPoints", [](G4VisAttributes& a, G4int arg0)->void { a.SetForceNumberOfCloudPoints(arg0); }, jlcxx::arg("this"), jlcxx::arg("nPoints"));
     t.method("SetForceNumberOfCloudPoints", [](G4VisAttributes* a, G4int arg0)->void { a->SetForceNumberOfCloudPoints(arg0); }, jlcxx::arg("this"), jlcxx::arg("nPoints"));
 
     DEBUG_MSG("Adding wrapper for void G4VisAttributes::SetForceAuxEdgeVisible(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4VisAttributes::SetForceAuxEdgeVisible(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:106:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:106:8
     t.method("SetForceAuxEdgeVisible", [](G4VisAttributes& a)->void { a.SetForceAuxEdgeVisible(); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetForceAuxEdgeVisible", [](G4VisAttributes& a, G4bool arg0)->void { a.SetForceAuxEdgeVisible(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetForceAuxEdgeVisible", [](G4VisAttributes* a)->void { a->SetForceAuxEdgeVisible(); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
@@ -168,126 +168,126 @@ struct JlG4VisAttributes: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4VisAttributes::SetForceLineSegmentsPerCircle(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4VisAttributes::SetForceLineSegmentsPerCircle(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:107:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:107:8
     t.method("SetForceLineSegmentsPerCircle", [](G4VisAttributes& a, G4int arg0)->void { a.SetForceLineSegmentsPerCircle(arg0); }, jlcxx::arg("this"), jlcxx::arg("nSegments"));
     t.method("SetForceLineSegmentsPerCircle", [](G4VisAttributes* a, G4int arg0)->void { a->SetForceLineSegmentsPerCircle(arg0); }, jlcxx::arg("this"), jlcxx::arg("nSegments"));
 
     DEBUG_MSG("Adding wrapper for void G4VisAttributes::SetStartTime(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4VisAttributes::SetStartTime(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:112:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:112:8
     t.method("SetStartTime", [](G4VisAttributes& a, G4double arg0)->void { a.SetStartTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetStartTime", [](G4VisAttributes* a, G4double arg0)->void { a->SetStartTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4VisAttributes::SetEndTime(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4VisAttributes::SetEndTime(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:113:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:113:8
     t.method("SetEndTime", [](G4VisAttributes& a, G4double arg0)->void { a.SetEndTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetEndTime", [](G4VisAttributes* a, G4double arg0)->void { a->SetEndTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4VisAttributes::SetAttValues(const std::vector<G4AttValue> *) (" __HERE__ ")");
     // signature to use in the veto list: void G4VisAttributes::SetAttValues(const std::vector<G4AttValue> *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:114:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:114:8
     t.method("SetAttValues", [](G4VisAttributes& a, const std::vector<G4AttValue> * arg0)->void { a.SetAttValues(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetAttValues", [](G4VisAttributes* a, const std::vector<G4AttValue> * arg0)->void { a->SetAttValues(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4VisAttributes::IsVisible() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VisAttributes::IsVisible()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:117:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:117:19
     t.method("IsVisible", [](G4VisAttributes const& a)->G4bool { return a.IsVisible(); }, jlcxx::arg("this"));
     t.method("IsVisible", [](G4VisAttributes const* a)->G4bool { return a->IsVisible(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4VisAttributes::IsDaughtersInvisible() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VisAttributes::IsDaughtersInvisible()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:118:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:118:19
     t.method("IsDaughtersInvisible", [](G4VisAttributes const& a)->G4bool { return a.IsDaughtersInvisible(); }, jlcxx::arg("this"));
     t.method("IsDaughtersInvisible", [](G4VisAttributes const* a)->G4bool { return a->IsDaughtersInvisible(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4Colour & G4VisAttributes::GetColour() (" __HERE__ ")");
     // signature to use in the veto list: const G4Colour & G4VisAttributes::GetColour()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:119:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:119:19
     t.method("GetColour", [](G4VisAttributes const& a)->const G4Colour & { return a.GetColour(); }, jlcxx::arg("this"));
     t.method("GetColour", [](G4VisAttributes const* a)->const G4Colour & { return a->GetColour(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4Color & G4VisAttributes::GetColor() (" __HERE__ ")");
     // signature to use in the veto list: const G4Color & G4VisAttributes::GetColor()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:120:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:120:19
     t.method("GetColor", [](G4VisAttributes const& a)->const G4Color & { return a.GetColor(); }, jlcxx::arg("this"));
     t.method("GetColor", [](G4VisAttributes const* a)->const G4Color & { return a->GetColor(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4VisAttributes::LineStyle G4VisAttributes::GetLineStyle() (" __HERE__ ")");
     // signature to use in the veto list: G4VisAttributes::LineStyle G4VisAttributes::GetLineStyle()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:121:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:121:19
     t.method("GetLineStyle", [](G4VisAttributes const& a)->G4VisAttributes::LineStyle { return a.GetLineStyle(); }, jlcxx::arg("this"));
     t.method("GetLineStyle", [](G4VisAttributes const* a)->G4VisAttributes::LineStyle { return a->GetLineStyle(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4VisAttributes::GetLineWidth() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4VisAttributes::GetLineWidth()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:122:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:122:19
     t.method("GetLineWidth", [](G4VisAttributes const& a)->G4double { return a.GetLineWidth(); }, jlcxx::arg("this"));
     t.method("GetLineWidth", [](G4VisAttributes const* a)->G4double { return a->GetLineWidth(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4VisAttributes::IsForceDrawingStyle() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VisAttributes::IsForceDrawingStyle()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:123:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:123:19
     t.method("IsForceDrawingStyle", [](G4VisAttributes const& a)->G4bool { return a.IsForceDrawingStyle(); }, jlcxx::arg("this"));
     t.method("IsForceDrawingStyle", [](G4VisAttributes const* a)->G4bool { return a->IsForceDrawingStyle(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4VisAttributes::ForcedDrawingStyle G4VisAttributes::GetForcedDrawingStyle() (" __HERE__ ")");
     // signature to use in the veto list: G4VisAttributes::ForcedDrawingStyle G4VisAttributes::GetForcedDrawingStyle()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:124:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:124:22
     t.method("GetForcedDrawingStyle", [](G4VisAttributes const& a)->G4VisAttributes::ForcedDrawingStyle { return a.GetForcedDrawingStyle(); }, jlcxx::arg("this"));
     t.method("GetForcedDrawingStyle", [](G4VisAttributes const* a)->G4VisAttributes::ForcedDrawingStyle { return a->GetForcedDrawingStyle(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4VisAttributes::GetForcedNumberOfCloudPoints() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4VisAttributes::GetForcedNumberOfCloudPoints()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:125:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:125:19
     t.method("GetForcedNumberOfCloudPoints", [](G4VisAttributes const& a)->G4int { return a.GetForcedNumberOfCloudPoints(); }, jlcxx::arg("this"));
     t.method("GetForcedNumberOfCloudPoints", [](G4VisAttributes const* a)->G4int { return a->GetForcedNumberOfCloudPoints(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4VisAttributes::IsForceAuxEdgeVisible() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VisAttributes::IsForceAuxEdgeVisible()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:126:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:126:19
     t.method("IsForceAuxEdgeVisible", [](G4VisAttributes const& a)->G4bool { return a.IsForceAuxEdgeVisible(); }, jlcxx::arg("this"));
     t.method("IsForceAuxEdgeVisible", [](G4VisAttributes const* a)->G4bool { return a->IsForceAuxEdgeVisible(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4VisAttributes::IsForcedAuxEdgeVisible() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VisAttributes::IsForcedAuxEdgeVisible()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:127:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:127:19
     t.method("IsForcedAuxEdgeVisible", [](G4VisAttributes const& a)->G4bool { return a.IsForcedAuxEdgeVisible(); }, jlcxx::arg("this"));
     t.method("IsForcedAuxEdgeVisible", [](G4VisAttributes const* a)->G4bool { return a->IsForcedAuxEdgeVisible(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4VisAttributes::IsForceLineSegmentsPerCircle() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VisAttributes::IsForceLineSegmentsPerCircle()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:128:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:128:19
     t.method("IsForceLineSegmentsPerCircle", [](G4VisAttributes const& a)->G4bool { return a.IsForceLineSegmentsPerCircle(); }, jlcxx::arg("this"));
     t.method("IsForceLineSegmentsPerCircle", [](G4VisAttributes const* a)->G4bool { return a->IsForceLineSegmentsPerCircle(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4VisAttributes::GetForcedLineSegmentsPerCircle() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4VisAttributes::GetForcedLineSegmentsPerCircle()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:129:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:129:19
     t.method("GetForcedLineSegmentsPerCircle", [](G4VisAttributes const& a)->G4int { return a.GetForcedLineSegmentsPerCircle(); }, jlcxx::arg("this"));
     t.method("GetForcedLineSegmentsPerCircle", [](G4VisAttributes const* a)->G4int { return a->GetForcedLineSegmentsPerCircle(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4VisAttributes::GetStartTime() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4VisAttributes::GetStartTime()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:130:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:130:19
     t.method("GetStartTime", [](G4VisAttributes const& a)->G4double { return a.GetStartTime(); }, jlcxx::arg("this"));
     t.method("GetStartTime", [](G4VisAttributes const* a)->G4double { return a->GetStartTime(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4VisAttributes::GetEndTime() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4VisAttributes::GetEndTime()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:131:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:131:19
     t.method("GetEndTime", [](G4VisAttributes const& a)->G4double { return a.GetEndTime(); }, jlcxx::arg("this"));
     t.method("GetEndTime", [](G4VisAttributes const* a)->G4double { return a->GetEndTime(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4VisAttributes::GetMinLineSegmentsPerCircle() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4VisAttributes::GetMinLineSegmentsPerCircle()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:132:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:132:19
     module_.method("G4VisAttributes!GetMinLineSegmentsPerCircle", []()->G4int { return G4VisAttributes::GetMinLineSegmentsPerCircle(); });
 
     DEBUG_MSG("Adding wrapper for const std::vector<G4AttValue> * G4VisAttributes::CreateAttValues() (" __HERE__ ")");
     // signature to use in the veto list: const std::vector<G4AttValue> * G4VisAttributes::CreateAttValues()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:134:34
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:134:34
     t.method("CreateAttValues", [](G4VisAttributes const& a)->const std::vector<G4AttValue> * { return a.CreateAttValues(); }, jlcxx::arg("this"));
     t.method("CreateAttValues", [](G4VisAttributes const* a)->const std::vector<G4AttValue> * { return a->CreateAttValues(); }, jlcxx::arg("this"));
   }

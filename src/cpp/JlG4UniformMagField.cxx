@@ -18,7 +18,7 @@ struct JlG4UniformMagField: public Wrapper {
 
   JlG4UniformMagField(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4UniformMagField (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UniformMagField.hh:41:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UniformMagField.hh:41:7
     jlcxx::TypeWrapper<G4UniformMagField>  t = jlModule.add_type<G4UniformMagField>("G4UniformMagField",
       jlcxx::julia_base_type<G4MagneticField>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4UniformMagField>>(new jlcxx::TypeWrapper<G4UniformMagField>(jlModule, t));
@@ -29,46 +29,46 @@ struct JlG4UniformMagField: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4UniformMagField::G4UniformMagField(const G4ThreeVector &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UniformMagField.hh:45:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UniformMagField.hh:45:5
     t.constructor<const G4ThreeVector &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("FieldVector")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4UniformMagField::G4UniformMagField(G4double, G4double, G4double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UniformMagField.hh:48:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UniformMagField.hh:48:5
     t.constructor<G4double, G4double, G4double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("vField"), jlcxx::arg("vTheta"), jlcxx::arg("vPhi")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4UniformMagField::G4UniformMagField(const G4UniformMagField &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UniformMagField.hh:54:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UniformMagField.hh:54:5
     t.constructor<const G4UniformMagField &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("p")    );
 
     DEBUG_MSG("Adding wrapper for G4UniformMagField & G4UniformMagField::operator=(const G4UniformMagField &) (" __HERE__ ")");
     // signature to use in the veto list: G4UniformMagField & G4UniformMagField::operator=(const G4UniformMagField &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UniformMagField.hh:55:24
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UniformMagField.hh:55:24
     t.method("assign", [](G4UniformMagField& a, const G4UniformMagField & arg0)->G4UniformMagField & { return a.operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("assign", [](G4UniformMagField* a, const G4UniformMagField & arg0)->G4UniformMagField & { return a->operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for void G4UniformMagField::GetFieldValue(const G4double[4], G4double *) (" __HERE__ ")");
     // signature to use in the veto list: void G4UniformMagField::GetFieldValue(const G4double[4], G4double *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UniformMagField.hh:58:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UniformMagField.hh:58:10
     t.method("GetFieldValue", [](G4UniformMagField const& a, const G4double arg0[4], G4double * arg1)->void { a.GetFieldValue(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("yTrack"), jlcxx::arg("MagField"));
     t.method("GetFieldValue", [](G4UniformMagField const* a, const G4double arg0[4], G4double * arg1)->void { a->GetFieldValue(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("yTrack"), jlcxx::arg("MagField"));
 
     DEBUG_MSG("Adding wrapper for void G4UniformMagField::SetFieldValue(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4UniformMagField::SetFieldValue(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UniformMagField.hh:61:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UniformMagField.hh:61:10
     t.method("SetFieldValue", [](G4UniformMagField& a, const G4ThreeVector & arg0)->void { a.SetFieldValue(arg0); }, jlcxx::arg("this"), jlcxx::arg("newFieldValue"));
     t.method("SetFieldValue", [](G4UniformMagField* a, const G4ThreeVector & arg0)->void { a->SetFieldValue(arg0); }, jlcxx::arg("this"), jlcxx::arg("newFieldValue"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4UniformMagField::GetConstantFieldValue() (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4UniformMagField::GetConstantFieldValue()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UniformMagField.hh:63:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UniformMagField.hh:63:19
     t.method("GetConstantFieldValue", [](G4UniformMagField const& a)->G4ThreeVector { return a.GetConstantFieldValue(); }, jlcxx::arg("this"));
     t.method("GetConstantFieldValue", [](G4UniformMagField const* a)->G4ThreeVector { return a->GetConstantFieldValue(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4Field * G4UniformMagField::Clone() (" __HERE__ ")");
     // signature to use in the veto list: G4Field * G4UniformMagField::Clone()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UniformMagField.hh:66:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UniformMagField.hh:66:14
     t.method("Clone", [](G4UniformMagField const& a)->G4Field * { return a.Clone(); }, jlcxx::arg("this"));
     t.method("Clone", [](G4UniformMagField const* a)->G4Field * { return a->Clone(); }, jlcxx::arg("this"));
   }

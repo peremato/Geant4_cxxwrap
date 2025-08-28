@@ -17,7 +17,7 @@ struct JlG4ProcessManager: public Wrapper {
 
   JlG4ProcessManager(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4ProcessManager (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:94:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:94:7
     jlcxx::TypeWrapper<G4ProcessManager>  t = jlModule.add_type<G4ProcessManager>("G4ProcessManager");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4ProcessManager>>(new jlcxx::TypeWrapper<G4ProcessManager>(jlModule, t));
   }
@@ -27,24 +27,24 @@ struct JlG4ProcessManager: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4ProcessManager::G4ProcessManager(const G4ParticleDefinition *) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:100:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:100:5
     t.constructor<const G4ParticleDefinition *>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("aParticleType")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4ProcessManager::G4ProcessManager(G4ProcessManager &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:103:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:103:5
     t.constructor<G4ProcessManager &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("right")    );
     module_.set_override_module(jl_base_module);
 
     DEBUG_MSG("Adding wrapper for G4bool G4ProcessManager::operator==(const G4ProcessManager &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4ProcessManager::operator==(const G4ProcessManager &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:113:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:113:12
     t.method("==", [](G4ProcessManager const& a, const G4ProcessManager & arg0)->G4bool { return a.operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
     t.method("==", [](G4ProcessManager const* a, const G4ProcessManager & arg0)->G4bool { return a->operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4ProcessManager::operator!=(const G4ProcessManager &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4ProcessManager::operator!=(const G4ProcessManager &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:114:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:114:12
     t.method("!=", [](G4ProcessManager const& a, const G4ProcessManager & arg0)->G4bool { return a.operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
     t.method("!=", [](G4ProcessManager const* a, const G4ProcessManager & arg0)->G4bool { return a->operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
 
@@ -52,25 +52,25 @@ struct JlG4ProcessManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4ProcessVector * G4ProcessManager::GetProcessList() (" __HERE__ ")");
     // signature to use in the veto list: G4ProcessVector * G4ProcessManager::GetProcessList()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:116:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:116:29
     t.method("GetProcessList", [](G4ProcessManager const& a)->G4ProcessVector * { return a.GetProcessList(); }, jlcxx::arg("this"));
     t.method("GetProcessList", [](G4ProcessManager const* a)->G4ProcessVector * { return a->GetProcessList(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4ProcessManager::GetProcessListLength() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4ProcessManager::GetProcessListLength()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:119:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:119:18
     t.method("GetProcessListLength", [](G4ProcessManager const& a)->G4int { return a.GetProcessListLength(); }, jlcxx::arg("this"));
     t.method("GetProcessListLength", [](G4ProcessManager const* a)->G4int { return a->GetProcessListLength(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4ProcessManager::GetProcessIndex(G4VProcess *) (" __HERE__ ")");
     // signature to use in the veto list: G4int G4ProcessManager::GetProcessIndex(G4VProcess *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:122:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:122:18
     t.method("GetProcessIndex", [](G4ProcessManager const& a, G4VProcess * arg0)->G4int { return a.GetProcessIndex(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("GetProcessIndex", [](G4ProcessManager const* a, G4VProcess * arg0)->G4int { return a->GetProcessIndex(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4ProcessVector * G4ProcessManager::GetProcessVector(G4ProcessVectorDoItIndex, G4ProcessVectorTypeIndex) (" __HERE__ ")");
     // signature to use in the veto list: G4ProcessVector * G4ProcessManager::GetProcessVector(G4ProcessVectorDoItIndex, G4ProcessVectorTypeIndex)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:125:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:125:29
     t.method("GetProcessVector", [](G4ProcessManager const& a, G4ProcessVectorDoItIndex arg0)->G4ProcessVector * { return a.GetProcessVector(arg0); }, jlcxx::arg("this"), jlcxx::arg("idx"));
     t.method("GetProcessVector", [](G4ProcessManager const& a, G4ProcessVectorDoItIndex arg0, G4ProcessVectorTypeIndex arg1)->G4ProcessVector * { return a.GetProcessVector(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("idx"), jlcxx::arg("typ"));
     t.method("GetProcessVector", [](G4ProcessManager const* a, G4ProcessVectorDoItIndex arg0)->G4ProcessVector * { return a->GetProcessVector(arg0); }, jlcxx::arg("this"), jlcxx::arg("idx"));
@@ -78,7 +78,7 @@ struct JlG4ProcessManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4ProcessVector * G4ProcessManager::GetAtRestProcessVector(G4ProcessVectorTypeIndex) (" __HERE__ ")");
     // signature to use in the veto list: G4ProcessVector * G4ProcessManager::GetAtRestProcessVector(G4ProcessVectorTypeIndex)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:131:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:131:29
     t.method("GetAtRestProcessVector", [](G4ProcessManager const& a)->G4ProcessVector * { return a.GetAtRestProcessVector(); }, jlcxx::arg("this"));
     t.method("GetAtRestProcessVector", [](G4ProcessManager const& a, G4ProcessVectorTypeIndex arg0)->G4ProcessVector * { return a.GetAtRestProcessVector(arg0); }, jlcxx::arg("this"), jlcxx::arg("typ"));
     t.method("GetAtRestProcessVector", [](G4ProcessManager const* a)->G4ProcessVector * { return a->GetAtRestProcessVector(); }, jlcxx::arg("this"));
@@ -86,7 +86,7 @@ struct JlG4ProcessManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4ProcessVector * G4ProcessManager::GetAlongStepProcessVector(G4ProcessVectorTypeIndex) (" __HERE__ ")");
     // signature to use in the veto list: G4ProcessVector * G4ProcessManager::GetAlongStepProcessVector(G4ProcessVectorTypeIndex)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:138:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:138:29
     t.method("GetAlongStepProcessVector", [](G4ProcessManager const& a)->G4ProcessVector * { return a.GetAlongStepProcessVector(); }, jlcxx::arg("this"));
     t.method("GetAlongStepProcessVector", [](G4ProcessManager const& a, G4ProcessVectorTypeIndex arg0)->G4ProcessVector * { return a.GetAlongStepProcessVector(arg0); }, jlcxx::arg("this"), jlcxx::arg("typ"));
     t.method("GetAlongStepProcessVector", [](G4ProcessManager const* a)->G4ProcessVector * { return a->GetAlongStepProcessVector(); }, jlcxx::arg("this"));
@@ -94,7 +94,7 @@ struct JlG4ProcessManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4ProcessVector * G4ProcessManager::GetPostStepProcessVector(G4ProcessVectorTypeIndex) (" __HERE__ ")");
     // signature to use in the veto list: G4ProcessVector * G4ProcessManager::GetPostStepProcessVector(G4ProcessVectorTypeIndex)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:145:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:145:29
     t.method("GetPostStepProcessVector", [](G4ProcessManager const& a)->G4ProcessVector * { return a.GetPostStepProcessVector(); }, jlcxx::arg("this"));
     t.method("GetPostStepProcessVector", [](G4ProcessManager const& a, G4ProcessVectorTypeIndex arg0)->G4ProcessVector * { return a.GetPostStepProcessVector(arg0); }, jlcxx::arg("this"), jlcxx::arg("typ"));
     t.method("GetPostStepProcessVector", [](G4ProcessManager const* a)->G4ProcessVector * { return a->GetPostStepProcessVector(); }, jlcxx::arg("this"));
@@ -102,7 +102,7 @@ struct JlG4ProcessManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4int G4ProcessManager::GetProcessVectorIndex(G4VProcess *, G4ProcessVectorDoItIndex, G4ProcessVectorTypeIndex) (" __HERE__ ")");
     // signature to use in the veto list: G4int G4ProcessManager::GetProcessVectorIndex(G4VProcess *, G4ProcessVectorDoItIndex, G4ProcessVectorTypeIndex)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:152:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:152:11
     t.method("GetProcessVectorIndex", [](G4ProcessManager const& a, G4VProcess * arg0, G4ProcessVectorDoItIndex arg1)->G4int { return a.GetProcessVectorIndex(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("idx"));
     t.method("GetProcessVectorIndex", [](G4ProcessManager const& a, G4VProcess * arg0, G4ProcessVectorDoItIndex arg1, G4ProcessVectorTypeIndex arg2)->G4int { return a.GetProcessVectorIndex(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("idx"), jlcxx::arg("typ"));
     t.method("GetProcessVectorIndex", [](G4ProcessManager const* a, G4VProcess * arg0, G4ProcessVectorDoItIndex arg1)->G4int { return a->GetProcessVectorIndex(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("idx"));
@@ -110,7 +110,7 @@ struct JlG4ProcessManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4int G4ProcessManager::GetAtRestIndex(G4VProcess *, G4ProcessVectorTypeIndex) (" __HERE__ ")");
     // signature to use in the veto list: G4int G4ProcessManager::GetAtRestIndex(G4VProcess *, G4ProcessVectorTypeIndex)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:157:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:157:18
     t.method("GetAtRestIndex", [](G4ProcessManager const& a, G4VProcess * arg0)->G4int { return a.GetAtRestIndex(arg0); }, jlcxx::arg("this"), jlcxx::arg("aProcess"));
     t.method("GetAtRestIndex", [](G4ProcessManager const& a, G4VProcess * arg0, G4ProcessVectorTypeIndex arg1)->G4int { return a.GetAtRestIndex(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("typ"));
     t.method("GetAtRestIndex", [](G4ProcessManager const* a, G4VProcess * arg0)->G4int { return a->GetAtRestIndex(arg0); }, jlcxx::arg("this"), jlcxx::arg("aProcess"));
@@ -118,7 +118,7 @@ struct JlG4ProcessManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4int G4ProcessManager::GetAlongStepIndex(G4VProcess *, G4ProcessVectorTypeIndex) (" __HERE__ ")");
     // signature to use in the veto list: G4int G4ProcessManager::GetAlongStepIndex(G4VProcess *, G4ProcessVectorTypeIndex)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:161:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:161:18
     t.method("GetAlongStepIndex", [](G4ProcessManager const& a, G4VProcess * arg0)->G4int { return a.GetAlongStepIndex(arg0); }, jlcxx::arg("this"), jlcxx::arg("aProcess"));
     t.method("GetAlongStepIndex", [](G4ProcessManager const& a, G4VProcess * arg0, G4ProcessVectorTypeIndex arg1)->G4int { return a.GetAlongStepIndex(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("typ"));
     t.method("GetAlongStepIndex", [](G4ProcessManager const* a, G4VProcess * arg0)->G4int { return a->GetAlongStepIndex(arg0); }, jlcxx::arg("this"), jlcxx::arg("aProcess"));
@@ -126,7 +126,7 @@ struct JlG4ProcessManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4int G4ProcessManager::GetPostStepIndex(G4VProcess *, G4ProcessVectorTypeIndex) (" __HERE__ ")");
     // signature to use in the veto list: G4int G4ProcessManager::GetPostStepIndex(G4VProcess *, G4ProcessVectorTypeIndex)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:165:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:165:18
     t.method("GetPostStepIndex", [](G4ProcessManager const& a, G4VProcess * arg0)->G4int { return a.GetPostStepIndex(arg0); }, jlcxx::arg("this"), jlcxx::arg("aProcess"));
     t.method("GetPostStepIndex", [](G4ProcessManager const& a, G4VProcess * arg0, G4ProcessVectorTypeIndex arg1)->G4int { return a.GetPostStepIndex(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("typ"));
     t.method("GetPostStepIndex", [](G4ProcessManager const* a, G4VProcess * arg0)->G4int { return a->GetPostStepIndex(arg0); }, jlcxx::arg("this"), jlcxx::arg("aProcess"));
@@ -134,7 +134,7 @@ struct JlG4ProcessManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4int G4ProcessManager::AddProcess(G4VProcess *, G4int, G4int, G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4int G4ProcessManager::AddProcess(G4VProcess *, G4int, G4int, G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:171:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:171:11
     t.method("AddProcess", [](G4ProcessManager& a, G4VProcess * arg0)->G4int { return a.AddProcess(arg0); }, jlcxx::arg("this"), jlcxx::arg("aProcess"));
     t.method("AddProcess", [](G4ProcessManager& a, G4VProcess * arg0, G4int arg1)->G4int { return a.AddProcess(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("ordAtRestDoIt"));
     t.method("AddProcess", [](G4ProcessManager& a, G4VProcess * arg0, G4int arg1, G4int arg2)->G4int { return a.AddProcess(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("ordAtRestDoIt"), jlcxx::arg("ordAlongSteptDoIt"));
@@ -146,7 +146,7 @@ struct JlG4ProcessManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4int G4ProcessManager::AddRestProcess(G4VProcess *, G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4int G4ProcessManager::AddRestProcess(G4VProcess *, G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:196:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:196:18
     t.method("AddRestProcess", [](G4ProcessManager& a, G4VProcess * arg0)->G4int { return a.AddRestProcess(arg0); }, jlcxx::arg("this"), jlcxx::arg("aProcess"));
     t.method("AddRestProcess", [](G4ProcessManager& a, G4VProcess * arg0, G4int arg1)->G4int { return a.AddRestProcess(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("ord"));
     t.method("AddRestProcess", [](G4ProcessManager* a, G4VProcess * arg0)->G4int { return a->AddRestProcess(arg0); }, jlcxx::arg("this"), jlcxx::arg("aProcess"));
@@ -154,7 +154,7 @@ struct JlG4ProcessManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4int G4ProcessManager::AddDiscreteProcess(G4VProcess *, G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4int G4ProcessManager::AddDiscreteProcess(G4VProcess *, G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:197:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:197:18
     t.method("AddDiscreteProcess", [](G4ProcessManager& a, G4VProcess * arg0)->G4int { return a.AddDiscreteProcess(arg0); }, jlcxx::arg("this"), jlcxx::arg("aProcess"));
     t.method("AddDiscreteProcess", [](G4ProcessManager& a, G4VProcess * arg0, G4int arg1)->G4int { return a.AddDiscreteProcess(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("ord"));
     t.method("AddDiscreteProcess", [](G4ProcessManager* a, G4VProcess * arg0)->G4int { return a->AddDiscreteProcess(arg0); }, jlcxx::arg("this"), jlcxx::arg("aProcess"));
@@ -162,7 +162,7 @@ struct JlG4ProcessManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4int G4ProcessManager::AddContinuousProcess(G4VProcess *, G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4int G4ProcessManager::AddContinuousProcess(G4VProcess *, G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:198:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:198:18
     t.method("AddContinuousProcess", [](G4ProcessManager& a, G4VProcess * arg0)->G4int { return a.AddContinuousProcess(arg0); }, jlcxx::arg("this"), jlcxx::arg("aProcess"));
     t.method("AddContinuousProcess", [](G4ProcessManager& a, G4VProcess * arg0, G4int arg1)->G4int { return a.AddContinuousProcess(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("ord"));
     t.method("AddContinuousProcess", [](G4ProcessManager* a, G4VProcess * arg0)->G4int { return a->AddContinuousProcess(arg0); }, jlcxx::arg("this"), jlcxx::arg("aProcess"));
@@ -170,13 +170,13 @@ struct JlG4ProcessManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4int G4ProcessManager::GetProcessOrdering(G4VProcess *, G4ProcessVectorDoItIndex) (" __HERE__ ")");
     // signature to use in the veto list: G4int G4ProcessManager::GetProcessOrdering(G4VProcess *, G4ProcessVectorDoItIndex)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:205:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:205:11
     t.method("GetProcessOrdering", [](G4ProcessManager& a, G4VProcess * arg0, G4ProcessVectorDoItIndex arg1)->G4int { return a.GetProcessOrdering(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("idDoIt"));
     t.method("GetProcessOrdering", [](G4ProcessManager* a, G4VProcess * arg0, G4ProcessVectorDoItIndex arg1)->G4int { return a->GetProcessOrdering(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("idDoIt"));
 
     DEBUG_MSG("Adding wrapper for void G4ProcessManager::SetProcessOrdering(G4VProcess *, G4ProcessVectorDoItIndex, G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4ProcessManager::SetProcessOrdering(G4VProcess *, G4ProcessVectorDoItIndex, G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:210:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:210:10
     t.method("SetProcessOrdering", [](G4ProcessManager& a, G4VProcess * arg0, G4ProcessVectorDoItIndex arg1)->void { a.SetProcessOrdering(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("idDoIt"));
     t.method("SetProcessOrdering", [](G4ProcessManager& a, G4VProcess * arg0, G4ProcessVectorDoItIndex arg1, G4int arg2)->void { a.SetProcessOrdering(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("idDoIt"), jlcxx::arg("ordDoIt"));
     t.method("SetProcessOrdering", [](G4ProcessManager* a, G4VProcess * arg0, G4ProcessVectorDoItIndex arg1)->void { a->SetProcessOrdering(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("idDoIt"));
@@ -184,79 +184,79 @@ struct JlG4ProcessManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4ProcessManager::SetProcessOrderingToFirst(G4VProcess *, G4ProcessVectorDoItIndex) (" __HERE__ ")");
     // signature to use in the veto list: void G4ProcessManager::SetProcessOrderingToFirst(G4VProcess *, G4ProcessVectorDoItIndex)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:222:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:222:10
     t.method("SetProcessOrderingToFirst", [](G4ProcessManager& a, G4VProcess * arg0, G4ProcessVectorDoItIndex arg1)->void { a.SetProcessOrderingToFirst(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("idDoIt"));
     t.method("SetProcessOrderingToFirst", [](G4ProcessManager* a, G4VProcess * arg0, G4ProcessVectorDoItIndex arg1)->void { a->SetProcessOrderingToFirst(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("idDoIt"));
 
     DEBUG_MSG("Adding wrapper for void G4ProcessManager::SetProcessOrderingToSecond(G4VProcess *, G4ProcessVectorDoItIndex) (" __HERE__ ")");
     // signature to use in the veto list: void G4ProcessManager::SetProcessOrderingToSecond(G4VProcess *, G4ProcessVectorDoItIndex)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:231:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:231:10
     t.method("SetProcessOrderingToSecond", [](G4ProcessManager& a, G4VProcess * arg0, G4ProcessVectorDoItIndex arg1)->void { a.SetProcessOrderingToSecond(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("idDoIt"));
     t.method("SetProcessOrderingToSecond", [](G4ProcessManager* a, G4VProcess * arg0, G4ProcessVectorDoItIndex arg1)->void { a->SetProcessOrderingToSecond(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("idDoIt"));
 
     DEBUG_MSG("Adding wrapper for void G4ProcessManager::SetProcessOrderingToLast(G4VProcess *, G4ProcessVectorDoItIndex) (" __HERE__ ")");
     // signature to use in the veto list: void G4ProcessManager::SetProcessOrderingToLast(G4VProcess *, G4ProcessVectorDoItIndex)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:241:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:241:10
     t.method("SetProcessOrderingToLast", [](G4ProcessManager& a, G4VProcess * arg0, G4ProcessVectorDoItIndex arg1)->void { a.SetProcessOrderingToLast(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("idDoIt"));
     t.method("SetProcessOrderingToLast", [](G4ProcessManager* a, G4VProcess * arg0, G4ProcessVectorDoItIndex arg1)->void { a->SetProcessOrderingToLast(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("idDoIt"));
 
     DEBUG_MSG("Adding wrapper for G4VProcess * G4ProcessManager::RemoveProcess(G4VProcess *) (" __HERE__ ")");
     // signature to use in the veto list: G4VProcess * G4ProcessManager::RemoveProcess(G4VProcess *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:252:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:252:17
     t.method("RemoveProcess", [](G4ProcessManager& a, G4VProcess * arg0)->G4VProcess * { return a.RemoveProcess(arg0); }, jlcxx::arg("this"), jlcxx::arg("aProcess"));
     t.method("RemoveProcess", [](G4ProcessManager* a, G4VProcess * arg0)->G4VProcess * { return a->RemoveProcess(arg0); }, jlcxx::arg("this"), jlcxx::arg("aProcess"));
 
     DEBUG_MSG("Adding wrapper for G4VProcess * G4ProcessManager::RemoveProcess(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4VProcess * G4ProcessManager::RemoveProcess(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:253:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:253:17
     t.method("RemoveProcess", [](G4ProcessManager& a, G4int arg0)->G4VProcess * { return a.RemoveProcess(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
     t.method("RemoveProcess", [](G4ProcessManager* a, G4int arg0)->G4VProcess * { return a->RemoveProcess(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
 
     DEBUG_MSG("Adding wrapper for G4VProcess * G4ProcessManager::SetProcessActivation(G4VProcess *, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: G4VProcess * G4ProcessManager::SetProcessActivation(G4VProcess *, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:258:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:258:17
     t.method("SetProcessActivation", [](G4ProcessManager& a, G4VProcess * arg0, G4bool arg1)->G4VProcess * { return a.SetProcessActivation(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("fActive"));
     t.method("SetProcessActivation", [](G4ProcessManager* a, G4VProcess * arg0, G4bool arg1)->G4VProcess * { return a->SetProcessActivation(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aProcess"), jlcxx::arg("fActive"));
 
     DEBUG_MSG("Adding wrapper for G4VProcess * G4ProcessManager::SetProcessActivation(G4int, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: G4VProcess * G4ProcessManager::SetProcessActivation(G4int, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:259:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:259:17
     t.method("SetProcessActivation", [](G4ProcessManager& a, G4int arg0, G4bool arg1)->G4VProcess * { return a.SetProcessActivation(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("index"), jlcxx::arg("fActive"));
     t.method("SetProcessActivation", [](G4ProcessManager* a, G4int arg0, G4bool arg1)->G4VProcess * { return a->SetProcessActivation(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("index"), jlcxx::arg("fActive"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4ProcessManager::GetProcessActivation(G4VProcess *) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4ProcessManager::GetProcessActivation(G4VProcess *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:264:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:264:12
     t.method("GetProcessActivation", [](G4ProcessManager const& a, G4VProcess * arg0)->G4bool { return a.GetProcessActivation(arg0); }, jlcxx::arg("this"), jlcxx::arg("aProcess"));
     t.method("GetProcessActivation", [](G4ProcessManager const* a, G4VProcess * arg0)->G4bool { return a->GetProcessActivation(arg0); }, jlcxx::arg("this"), jlcxx::arg("aProcess"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4ProcessManager::GetProcessActivation(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4ProcessManager::GetProcessActivation(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:265:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:265:12
     t.method("GetProcessActivation", [](G4ProcessManager const& a, G4int arg0)->G4bool { return a.GetProcessActivation(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
     t.method("GetProcessActivation", [](G4ProcessManager const* a, G4int arg0)->G4bool { return a->GetProcessActivation(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
 
     DEBUG_MSG("Adding wrapper for G4ParticleDefinition * G4ProcessManager::GetParticleType() (" __HERE__ ")");
     // signature to use in the veto list: G4ParticleDefinition * G4ProcessManager::GetParticleType()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:268:34
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:268:34
     t.method("GetParticleType", [](G4ProcessManager const& a)->G4ParticleDefinition * { return a.GetParticleType(); }, jlcxx::arg("this"));
     t.method("GetParticleType", [](G4ProcessManager const* a)->G4ParticleDefinition * { return a->GetParticleType(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4ProcessManager::SetParticleType(const G4ParticleDefinition *) (" __HERE__ ")");
     // signature to use in the veto list: void G4ProcessManager::SetParticleType(const G4ParticleDefinition *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:270:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:270:17
     t.method("SetParticleType", [](G4ProcessManager& a, const G4ParticleDefinition * arg0)->void { a.SetParticleType(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetParticleType", [](G4ProcessManager* a, const G4ParticleDefinition * arg0)->void { a->SetParticleType(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4VProcess * G4ProcessManager::GetProcess(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4VProcess * G4ProcessManager::GetProcess(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:273:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:273:17
     t.method("GetProcess", [](G4ProcessManager const& a, const G4String & arg0)->G4VProcess * { return a.GetProcess(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("GetProcess", [](G4ProcessManager const* a, const G4String & arg0)->G4VProcess * { return a->GetProcess(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4ProcessManager::StartTracking(G4Track *) (" __HERE__ ")");
     // signature to use in the veto list: void G4ProcessManager::StartTracking(G4Track *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:276:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:276:10
     t.method("StartTracking", [](G4ProcessManager& a)->void { a.StartTracking(); }, jlcxx::arg("this"), jlcxx::arg("aTrack"));
     t.method("StartTracking", [](G4ProcessManager& a, G4Track * arg0)->void { a.StartTracking(arg0); }, jlcxx::arg("this"), jlcxx::arg("aTrack"));
     t.method("StartTracking", [](G4ProcessManager* a)->void { a->StartTracking(); }, jlcxx::arg("this"), jlcxx::arg("aTrack"));
@@ -264,25 +264,25 @@ struct JlG4ProcessManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4ProcessManager::EndTracking() (" __HERE__ ")");
     // signature to use in the veto list: void G4ProcessManager::EndTracking()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:277:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:277:10
     t.method("EndTracking", [](G4ProcessManager& a)->void { a.EndTracking(); }, jlcxx::arg("this"));
     t.method("EndTracking", [](G4ProcessManager* a)->void { a->EndTracking(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4ProcessManager::DumpInfo() (" __HERE__ ")");
     // signature to use in the veto list: void G4ProcessManager::DumpInfo()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:282:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:282:10
     t.method("DumpInfo", [](G4ProcessManager& a)->void { a.DumpInfo(); }, jlcxx::arg("this"));
     t.method("DumpInfo", [](G4ProcessManager* a)->void { a->DumpInfo(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4ProcessManager::SetVerboseLevel(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4ProcessManager::SetVerboseLevel(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:284:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:284:17
     t.method("SetVerboseLevel", [](G4ProcessManager& a, G4int arg0)->void { a.SetVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("value"));
     t.method("SetVerboseLevel", [](G4ProcessManager* a, G4int arg0)->void { a->SetVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding wrapper for G4int G4ProcessManager::GetVerboseLevel() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4ProcessManager::GetVerboseLevel()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:285:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:285:18
     t.method("GetVerboseLevel", [](G4ProcessManager const& a)->G4int { return a.GetVerboseLevel(); }, jlcxx::arg("this"));
     t.method("GetVerboseLevel", [](G4ProcessManager const* a)->G4int { return a->GetVerboseLevel(); }, jlcxx::arg("this"));
   }

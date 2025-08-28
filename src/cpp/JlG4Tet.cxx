@@ -18,7 +18,7 @@ struct JlG4Tet: public Wrapper {
 
   JlG4Tet(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4Tet (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:55:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:55:7
     jlcxx::TypeWrapper<G4Tet>  t = jlModule.add_type<G4Tet>("G4Tet",
       jlcxx::julia_base_type<G4VSolid>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4Tet>>(new jlcxx::TypeWrapper<G4Tet>(jlModule, t));
@@ -29,13 +29,13 @@ struct JlG4Tet: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4Tet::G4Tet(const G4String &, const G4ThreeVector &, const G4ThreeVector &, const G4ThreeVector &, const G4ThreeVector &, G4bool *) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:59:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:59:5
     t.constructor<const G4String &, const G4ThreeVector &, const G4ThreeVector &, const G4ThreeVector &, const G4ThreeVector &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("pName"), jlcxx::arg("anchor"), jlcxx::arg("p1"), jlcxx::arg("p2"), jlcxx::arg("p3")    );
     t.constructor<const G4String &, const G4ThreeVector &, const G4ThreeVector &, const G4ThreeVector &, const G4ThreeVector &, G4bool *>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("pName"), jlcxx::arg("anchor"), jlcxx::arg("p1"), jlcxx::arg("p2"), jlcxx::arg("p3"), jlcxx::arg("degeneracyFlag")    );
 
     DEBUG_MSG("Adding wrapper for void G4Tet::SetVertices(const G4ThreeVector &, const G4ThreeVector &, const G4ThreeVector &, const G4ThreeVector &, G4bool *) (" __HERE__ ")");
     // signature to use in the veto list: void G4Tet::SetVertices(const G4ThreeVector &, const G4ThreeVector &, const G4ThreeVector &, const G4ThreeVector &, G4bool *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:68:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:68:10
     t.method("SetVertices", [](G4Tet& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4ThreeVector & arg2, const G4ThreeVector & arg3)->void { a.SetVertices(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("anchor"), jlcxx::arg("p1"), jlcxx::arg("p2"), jlcxx::arg("p3"));
     t.method("SetVertices", [](G4Tet& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4ThreeVector & arg2, const G4ThreeVector & arg3, G4bool * arg4)->void { a.SetVertices(arg0, arg1, arg2, arg3, arg4); }, jlcxx::arg("this"), jlcxx::arg("anchor"), jlcxx::arg("p1"), jlcxx::arg("p2"), jlcxx::arg("p3"), jlcxx::arg("degeneracyFlag"));
     t.method("SetVertices", [](G4Tet* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4ThreeVector & arg2, const G4ThreeVector & arg3)->void { a->SetVertices(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("anchor"), jlcxx::arg("p1"), jlcxx::arg("p2"), jlcxx::arg("p3"));
@@ -43,73 +43,73 @@ struct JlG4Tet: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4Tet::GetVertices(G4ThreeVector &, G4ThreeVector &, G4ThreeVector &, G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4Tet::GetVertices(G4ThreeVector &, G4ThreeVector &, G4ThreeVector &, G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:75:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:75:10
     t.method("GetVertices", [](G4Tet const& a, G4ThreeVector & arg0, G4ThreeVector & arg1, G4ThreeVector & arg2, G4ThreeVector & arg3)->void { a.GetVertices(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("anchor"), jlcxx::arg("p1"), jlcxx::arg("p2"), jlcxx::arg("p3"));
     t.method("GetVertices", [](G4Tet const* a, G4ThreeVector & arg0, G4ThreeVector & arg1, G4ThreeVector & arg2, G4ThreeVector & arg3)->void { a->GetVertices(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("anchor"), jlcxx::arg("p1"), jlcxx::arg("p2"), jlcxx::arg("p3"));
 
     DEBUG_MSG("Adding wrapper for std::vector<G4ThreeVector> G4Tet::GetVertices() (" __HERE__ ")");
     // signature to use in the veto list: std::vector<G4ThreeVector> G4Tet::GetVertices()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:79:32
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:79:32
     t.method("GetVertices", [](G4Tet const& a)->std::vector<G4ThreeVector> { return a.GetVertices(); }, jlcxx::arg("this"));
     t.method("GetVertices", [](G4Tet const* a)->std::vector<G4ThreeVector> { return a->GetVertices(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4Tet::PrintWarnings(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4Tet::PrintWarnings(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:82:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:82:17
     t.method("PrintWarnings", [](G4Tet& a, G4bool arg0)->void { a.PrintWarnings(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("PrintWarnings", [](G4Tet* a, G4bool arg0)->void { a->PrintWarnings(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4Tet::CheckDegeneracy(const G4ThreeVector &, const G4ThreeVector &, const G4ThreeVector &, const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4Tet::CheckDegeneracy(const G4ThreeVector &, const G4ThreeVector &, const G4ThreeVector &, const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:85:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:85:12
     t.method("CheckDegeneracy", [](G4Tet const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4ThreeVector & arg2, const G4ThreeVector & arg3)->G4bool { return a.CheckDegeneracy(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("p0"), jlcxx::arg("p1"), jlcxx::arg("p2"), jlcxx::arg("p3"));
     t.method("CheckDegeneracy", [](G4Tet const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4ThreeVector & arg2, const G4ThreeVector & arg3)->G4bool { return a->CheckDegeneracy(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("p0"), jlcxx::arg("p1"), jlcxx::arg("p2"), jlcxx::arg("p3"));
 
     DEBUG_MSG("Adding wrapper for void G4Tet::ComputeDimensions(G4VPVParameterisation *, const G4int, const G4VPhysicalVolume *) (" __HERE__ ")");
     // signature to use in the veto list: void G4Tet::ComputeDimensions(G4VPVParameterisation *, const G4int, const G4VPhysicalVolume *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:91:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:91:10
     t.method("ComputeDimensions", [](G4Tet& a, G4VPVParameterisation * arg0, const G4int arg1, const G4VPhysicalVolume * arg2)->void { a.ComputeDimensions(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("n"), jlcxx::arg("pRep"));
     t.method("ComputeDimensions", [](G4Tet* a, G4VPVParameterisation * arg0, const G4int arg1, const G4VPhysicalVolume * arg2)->void { a->ComputeDimensions(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("n"), jlcxx::arg("pRep"));
 
     DEBUG_MSG("Adding wrapper for void G4Tet::SetBoundingLimits(const G4ThreeVector &, const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4Tet::SetBoundingLimits(const G4ThreeVector &, const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:95:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:95:10
     t.method("SetBoundingLimits", [](G4Tet& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->void { a.SetBoundingLimits(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("pMin"), jlcxx::arg("pMax"));
     t.method("SetBoundingLimits", [](G4Tet* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->void { a->SetBoundingLimits(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("pMin"), jlcxx::arg("pMax"));
 
     DEBUG_MSG("Adding wrapper for void G4Tet::BoundingLimits(G4ThreeVector &, G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4Tet::BoundingLimits(G4ThreeVector &, G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:96:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:96:10
     t.method("BoundingLimits", [](G4Tet const& a, G4ThreeVector & arg0, G4ThreeVector & arg1)->void { a.BoundingLimits(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("pMin"), jlcxx::arg("pMax"));
     t.method("BoundingLimits", [](G4Tet const* a, G4ThreeVector & arg0, G4ThreeVector & arg1)->void { a->BoundingLimits(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("pMin"), jlcxx::arg("pMax"));
 
     DEBUG_MSG("Adding wrapper for EInside G4Tet::Inside(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: EInside G4Tet::Inside(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:102:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:102:13
     t.method("Inside", [](G4Tet const& a, const G4ThreeVector & arg0)->EInside { return a.Inside(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("Inside", [](G4Tet const* a, const G4ThreeVector & arg0)->EInside { return a->Inside(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4Tet::SurfaceNormal(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4Tet::SurfaceNormal(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:103:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:103:19
     t.method("SurfaceNormal", [](G4Tet const& a, const G4ThreeVector & arg0)->G4ThreeVector { return a.SurfaceNormal(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("SurfaceNormal", [](G4Tet const* a, const G4ThreeVector & arg0)->G4ThreeVector { return a->SurfaceNormal(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Tet::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Tet::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:104:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:104:14
     t.method("DistanceToIn", [](G4Tet const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double { return a.DistanceToIn(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"));
     t.method("DistanceToIn", [](G4Tet const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double { return a->DistanceToIn(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Tet::DistanceToIn(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Tet::DistanceToIn(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:106:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:106:14
     t.method("DistanceToIn", [](G4Tet const& a, const G4ThreeVector & arg0)->G4double { return a.DistanceToIn(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("DistanceToIn", [](G4Tet const* a, const G4ThreeVector & arg0)->G4double { return a->DistanceToIn(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Tet::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Tet::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:107:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:107:14
     t.method("DistanceToOut", [](G4Tet const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double { return a.DistanceToOut(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"));
     t.method("DistanceToOut", [](G4Tet const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double { return a.DistanceToOut(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"), jlcxx::arg("calcNorm"));
     t.method("DistanceToOut", [](G4Tet const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double { return a.DistanceToOut(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"), jlcxx::arg("calcNorm"), jlcxx::arg("validNorm"));
@@ -121,66 +121,66 @@ struct JlG4Tet: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4double G4Tet::DistanceToOut(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Tet::DistanceToOut(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:112:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:112:14
     t.method("DistanceToOut", [](G4Tet const& a, const G4ThreeVector & arg0)->G4double { return a.DistanceToOut(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("DistanceToOut", [](G4Tet const* a, const G4ThreeVector & arg0)->G4double { return a->DistanceToOut(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for G4GeometryType G4Tet::GetEntityType() (" __HERE__ ")");
     // signature to use in the veto list: G4GeometryType G4Tet::GetEntityType()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:114:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:114:20
     t.method("GetEntityType", [](G4Tet const& a)->G4GeometryType { return a.GetEntityType(); }, jlcxx::arg("this"));
     t.method("GetEntityType", [](G4Tet const* a)->G4GeometryType { return a->GetEntityType(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4Tet::IsFaceted() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4Tet::IsFaceted()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:116:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:116:12
     t.method("IsFaceted", [](G4Tet const& a)->G4bool { return a.IsFaceted(); }, jlcxx::arg("this"));
     t.method("IsFaceted", [](G4Tet const* a)->G4bool { return a->IsFaceted(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4VSolid * G4Tet::Clone() (" __HERE__ ")");
     // signature to use in the veto list: G4VSolid * G4Tet::Clone()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:118:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:118:15
     t.method("Clone", [](G4Tet const& a)->G4VSolid * { return a.Clone(); }, jlcxx::arg("this"));
     t.method("Clone", [](G4Tet const* a)->G4VSolid * { return a->Clone(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Tet::GetCubicVolume() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Tet::GetCubicVolume()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:122:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:122:14
     t.method("GetCubicVolume", [](G4Tet& a)->G4double { return a.GetCubicVolume(); }, jlcxx::arg("this"));
     t.method("GetCubicVolume", [](G4Tet* a)->G4double { return a->GetCubicVolume(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Tet::GetSurfaceArea() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Tet::GetSurfaceArea()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:123:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:123:14
     t.method("GetSurfaceArea", [](G4Tet& a)->G4double { return a.GetSurfaceArea(); }, jlcxx::arg("this"));
     t.method("GetSurfaceArea", [](G4Tet* a)->G4double { return a->GetSurfaceArea(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4Tet::GetPointOnSurface() (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4Tet::GetPointOnSurface()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:125:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:125:19
     t.method("GetPointOnSurface", [](G4Tet const& a)->G4ThreeVector { return a.GetPointOnSurface(); }, jlcxx::arg("this"));
     t.method("GetPointOnSurface", [](G4Tet const* a)->G4ThreeVector { return a->GetPointOnSurface(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4Polyhedron * G4Tet::CreatePolyhedron() (" __HERE__ ")");
     // signature to use in the veto list: G4Polyhedron * G4Tet::CreatePolyhedron()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:130:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:130:19
     t.method("CreatePolyhedron", [](G4Tet const& a)->G4Polyhedron * { return a.CreatePolyhedron(); }, jlcxx::arg("this"));
     t.method("CreatePolyhedron", [](G4Tet const* a)->G4Polyhedron * { return a->CreatePolyhedron(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4Polyhedron * G4Tet::GetPolyhedron() (" __HERE__ ")");
     // signature to use in the veto list: G4Polyhedron * G4Tet::GetPolyhedron()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:131:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:131:19
     t.method("GetPolyhedron", [](G4Tet const& a)->G4Polyhedron * { return a.GetPolyhedron(); }, jlcxx::arg("this"));
     t.method("GetPolyhedron", [](G4Tet const* a)->G4Polyhedron * { return a->GetPolyhedron(); }, jlcxx::arg("this"));
 
 
     DEBUG_MSG("Adding wrapper for void G4Tet::G4Tet(const G4Tet &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:139:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:139:5
     t.constructor<const G4Tet &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("rhs")    );
 
     DEBUG_MSG("Adding wrapper for G4Tet & G4Tet::operator=(const G4Tet &) (" __HERE__ ")");
     // signature to use in the veto list: G4Tet & G4Tet::operator=(const G4Tet &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Tet.hh:142:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Tet.hh:142:12
     t.method("assign", [](G4Tet& a, const G4Tet & arg0)->G4Tet & { return a.operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("rhs"));
     t.method("assign", [](G4Tet* a, const G4Tet & arg0)->G4Tet & { return a->operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("rhs"));
   }

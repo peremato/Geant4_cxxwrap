@@ -17,7 +17,7 @@ struct JlG4FieldManager: public Wrapper {
 
   JlG4FieldManager(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4FieldManager (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:84:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:84:7
     jlcxx::TypeWrapper<G4FieldManager>  t = jlModule.add_type<G4FieldManager>("G4FieldManager");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4FieldManager>>(new jlcxx::TypeWrapper<G4FieldManager>(jlModule, t));
   }
@@ -28,12 +28,12 @@ struct JlG4FieldManager: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4FieldManager::G4FieldManager(G4MagneticField *) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:92:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:92:5
     t.constructor<G4MagneticField *>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("detectorMagneticField")    );
 
     DEBUG_MSG("Adding wrapper for G4bool G4FieldManager::SetDetectorField(G4Field *, G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4FieldManager::SetDetectorField(G4Field *, G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:101:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:101:12
     t.method("SetDetectorField", [](G4FieldManager& a, G4Field * arg0)->G4bool { return a.SetDetectorField(arg0); }, jlcxx::arg("this"), jlcxx::arg("detectorField"));
     t.method("SetDetectorField", [](G4FieldManager& a, G4Field * arg0, G4int arg1)->G4bool { return a.SetDetectorField(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("detectorField"), jlcxx::arg("failMode"));
     t.method("SetDetectorField", [](G4FieldManager* a, G4Field * arg0)->G4bool { return a->SetDetectorField(arg0); }, jlcxx::arg("this"), jlcxx::arg("detectorField"));
@@ -41,130 +41,130 @@ struct JlG4FieldManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4FieldManager::ProposeDetectorField(G4Field *) (" __HERE__ ")");
     // signature to use in the veto list: void G4FieldManager::ProposeDetectorField(G4Field *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:111:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:111:17
     t.method("ProposeDetectorField", [](G4FieldManager& a, G4Field * arg0)->void { a.ProposeDetectorField(arg0); }, jlcxx::arg("this"), jlcxx::arg("detectorField"));
     t.method("ProposeDetectorField", [](G4FieldManager* a, G4Field * arg0)->void { a->ProposeDetectorField(arg0); }, jlcxx::arg("this"), jlcxx::arg("detectorField"));
 
     DEBUG_MSG("Adding wrapper for void G4FieldManager::ChangeDetectorField(G4Field *) (" __HERE__ ")");
     // signature to use in the veto list: void G4FieldManager::ChangeDetectorField(G4Field *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:119:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:119:18
     t.method("ChangeDetectorField", [](G4FieldManager& a, G4Field * arg0)->void { a.ChangeDetectorField(arg0); }, jlcxx::arg("this"), jlcxx::arg("detectorField"));
     t.method("ChangeDetectorField", [](G4FieldManager* a, G4Field * arg0)->void { a->ChangeDetectorField(arg0); }, jlcxx::arg("this"), jlcxx::arg("detectorField"));
 
     DEBUG_MSG("Adding wrapper for const G4Field * G4FieldManager::GetDetectorField() (" __HERE__ ")");
     // signature to use in the veto list: const G4Field * G4FieldManager::GetDetectorField()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:124:28
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:124:28
     t.method("GetDetectorField", [](G4FieldManager const& a)->const G4Field * { return a.GetDetectorField(); }, jlcxx::arg("this"));
     t.method("GetDetectorField", [](G4FieldManager const* a)->const G4Field * { return a->GetDetectorField(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4FieldManager::DoesFieldExist() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4FieldManager::DoesFieldExist()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:125:28
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:125:28
     t.method("DoesFieldExist", [](G4FieldManager const& a)->G4bool { return a.DoesFieldExist(); }, jlcxx::arg("this"));
     t.method("DoesFieldExist", [](G4FieldManager const* a)->G4bool { return a->DoesFieldExist(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4FieldManager::CreateChordFinder(G4MagneticField *) (" __HERE__ ")");
     // signature to use in the veto list: void G4FieldManager::CreateChordFinder(G4MagneticField *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:128:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:128:10
     t.method("CreateChordFinder", [](G4FieldManager& a, G4MagneticField * arg0)->void { a.CreateChordFinder(arg0); }, jlcxx::arg("this"), jlcxx::arg("detectorMagField"));
     t.method("CreateChordFinder", [](G4FieldManager* a, G4MagneticField * arg0)->void { a->CreateChordFinder(arg0); }, jlcxx::arg("this"), jlcxx::arg("detectorMagField"));
 
     DEBUG_MSG("Adding wrapper for void G4FieldManager::ConfigureForTrack(const G4Track *) (" __HERE__ ")");
     // signature to use in the veto list: void G4FieldManager::ConfigureForTrack(const G4Track *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:134:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:134:20
     t.method("ConfigureForTrack", [](G4FieldManager& a, const G4Track * arg0)->void { a.ConfigureForTrack(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("ConfigureForTrack", [](G4FieldManager* a, const G4Track * arg0)->void { a->ConfigureForTrack(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4FieldManager::SetGlobalFieldManager(G4FieldManager *) (" __HERE__ ")");
     // signature to use in the veto list: void G4FieldManager::SetGlobalFieldManager(G4FieldManager *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:141:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:141:17
     module_.method("G4FieldManager!SetGlobalFieldManager", [](G4FieldManager * arg0)->void { G4FieldManager::SetGlobalFieldManager(arg0); }, jlcxx::arg("fieldManager"));
 
     DEBUG_MSG("Adding wrapper for G4FieldManager * G4FieldManager::GetGlobalFieldManager() (" __HERE__ ")");
     // signature to use in the veto list: G4FieldManager * G4FieldManager::GetGlobalFieldManager()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:142:28
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:142:28
     module_.method("G4FieldManager!GetGlobalFieldManager", []()->G4FieldManager * { return G4FieldManager::GetGlobalFieldManager(); });
 
     DEBUG_MSG("Adding wrapper for G4double G4FieldManager::GetDeltaIntersection() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4FieldManager::GetDeltaIntersection()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:146:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:146:21
     t.method("GetDeltaIntersection", [](G4FieldManager const& a)->G4double { return a.GetDeltaIntersection(); }, jlcxx::arg("this"));
     t.method("GetDeltaIntersection", [](G4FieldManager const* a)->G4double { return a->GetDeltaIntersection(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4FieldManager::GetDeltaOneStep() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4FieldManager::GetDeltaOneStep()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:149:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:149:21
     t.method("GetDeltaOneStep", [](G4FieldManager const& a)->G4double { return a.GetDeltaOneStep(); }, jlcxx::arg("this"));
     t.method("GetDeltaOneStep", [](G4FieldManager const* a)->G4double { return a->GetDeltaOneStep(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4FieldManager::SetAccuraciesWithDeltaOneStep(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4FieldManager::SetAccuraciesWithDeltaOneStep(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:152:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:152:17
     t.method("SetAccuraciesWithDeltaOneStep", [](G4FieldManager& a, G4double arg0)->void { a.SetAccuraciesWithDeltaOneStep(arg0); }, jlcxx::arg("this"), jlcxx::arg("valDeltaOneStep"));
     t.method("SetAccuraciesWithDeltaOneStep", [](G4FieldManager* a, G4double arg0)->void { a->SetAccuraciesWithDeltaOneStep(arg0); }, jlcxx::arg("this"), jlcxx::arg("valDeltaOneStep"));
 
     DEBUG_MSG("Adding wrapper for void G4FieldManager::SetDeltaOneStep(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4FieldManager::SetDeltaOneStep(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:156:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:156:21
     t.method("SetDeltaOneStep", [](G4FieldManager& a, G4double arg0)->void { a.SetDeltaOneStep(arg0); }, jlcxx::arg("this"), jlcxx::arg("valueD1step"));
     t.method("SetDeltaOneStep", [](G4FieldManager* a, G4double arg0)->void { a->SetDeltaOneStep(arg0); }, jlcxx::arg("this"), jlcxx::arg("valueD1step"));
 
     DEBUG_MSG("Adding wrapper for void G4FieldManager::SetDeltaIntersection(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4FieldManager::SetDeltaIntersection(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:158:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:158:21
     t.method("SetDeltaIntersection", [](G4FieldManager& a, G4double arg0)->void { a.SetDeltaIntersection(arg0); }, jlcxx::arg("this"), jlcxx::arg("valueDintersection"));
     t.method("SetDeltaIntersection", [](G4FieldManager* a, G4double arg0)->void { a->SetDeltaIntersection(arg0); }, jlcxx::arg("this"), jlcxx::arg("valueDintersection"));
 
     DEBUG_MSG("Adding wrapper for G4double G4FieldManager::GetMinimumEpsilonStep() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4FieldManager::GetMinimumEpsilonStep()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:161:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:161:22
     t.method("GetMinimumEpsilonStep", [](G4FieldManager const& a)->G4double { return a.GetMinimumEpsilonStep(); }, jlcxx::arg("this"));
     t.method("GetMinimumEpsilonStep", [](G4FieldManager const* a)->G4double { return a->GetMinimumEpsilonStep(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4FieldManager::SetMinimumEpsilonStep(G4double) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4FieldManager::SetMinimumEpsilonStep(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:162:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:162:22
     t.method("SetMinimumEpsilonStep", [](G4FieldManager& a, G4double arg0)->G4bool { return a.SetMinimumEpsilonStep(arg0); }, jlcxx::arg("this"), jlcxx::arg("newEpsMin"));
     t.method("SetMinimumEpsilonStep", [](G4FieldManager* a, G4double arg0)->G4bool { return a->SetMinimumEpsilonStep(arg0); }, jlcxx::arg("this"), jlcxx::arg("newEpsMin"));
 
     DEBUG_MSG("Adding wrapper for G4double G4FieldManager::GetMaximumEpsilonStep() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4FieldManager::GetMaximumEpsilonStep()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:165:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:165:22
     t.method("GetMaximumEpsilonStep", [](G4FieldManager const& a)->G4double { return a.GetMaximumEpsilonStep(); }, jlcxx::arg("this"));
     t.method("GetMaximumEpsilonStep", [](G4FieldManager const* a)->G4double { return a->GetMaximumEpsilonStep(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4FieldManager::SetMaximumEpsilonStep(G4double) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4FieldManager::SetMaximumEpsilonStep(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:166:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:166:22
     t.method("SetMaximumEpsilonStep", [](G4FieldManager& a, G4double arg0)->G4bool { return a.SetMaximumEpsilonStep(arg0); }, jlcxx::arg("this"), jlcxx::arg("newEpsMax"));
     t.method("SetMaximumEpsilonStep", [](G4FieldManager* a, G4double arg0)->G4bool { return a->SetMaximumEpsilonStep(arg0); }, jlcxx::arg("this"), jlcxx::arg("newEpsMax"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4FieldManager::DoesFieldChangeEnergy() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4FieldManager::DoesFieldChangeEnergy()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:169:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:169:21
     t.method("DoesFieldChangeEnergy", [](G4FieldManager const& a)->G4bool { return a.DoesFieldChangeEnergy(); }, jlcxx::arg("this"));
     t.method("DoesFieldChangeEnergy", [](G4FieldManager const* a)->G4bool { return a->DoesFieldChangeEnergy(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4FieldManager::SetFieldChangesEnergy(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4FieldManager::SetFieldChangesEnergy(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:170:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:170:21
     t.method("SetFieldChangesEnergy", [](G4FieldManager& a, G4bool arg0)->void { a.SetFieldChangesEnergy(arg0); }, jlcxx::arg("this"), jlcxx::arg("value"));
     t.method("SetFieldChangesEnergy", [](G4FieldManager* a, G4bool arg0)->void { a->SetFieldChangesEnergy(arg0); }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding wrapper for G4FieldManager * G4FieldManager::Clone() (" __HERE__ ")");
     // signature to use in the veto list: G4FieldManager * G4FieldManager::Clone()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:174:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:174:29
     t.method("Clone", [](G4FieldManager const& a)->G4FieldManager * { return a.Clone(); }, jlcxx::arg("this"));
     t.method("Clone", [](G4FieldManager const* a)->G4FieldManager * { return a->Clone(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4FieldManager::GetMaxAcceptedEpsilon() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4FieldManager::GetMaxAcceptedEpsilon()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:178:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:178:21
     module_.method("G4FieldManager!GetMaxAcceptedEpsilon", []()->G4double { return G4FieldManager::GetMaxAcceptedEpsilon(); });
 
     DEBUG_MSG("Adding wrapper for G4bool G4FieldManager::SetMaxAcceptedEpsilon(G4double, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4FieldManager::SetMaxAcceptedEpsilon(G4double, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4FieldManager.hh:179:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4FieldManager.hh:179:21
     module_.method("G4FieldManager!SetMaxAcceptedEpsilon", [](G4double arg0)->G4bool { return G4FieldManager::SetMaxAcceptedEpsilon(arg0); }, jlcxx::arg("maxEps"));
     module_.method("G4FieldManager!SetMaxAcceptedEpsilon", [](G4double arg0, G4bool arg1)->G4bool { return G4FieldManager::SetMaxAcceptedEpsilon(arg0, arg1); }, jlcxx::arg("maxEps"), jlcxx::arg("softFail"));
   }

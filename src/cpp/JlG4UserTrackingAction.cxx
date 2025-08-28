@@ -17,7 +17,7 @@ struct JlG4UserTrackingAction: public Wrapper {
 
   JlG4UserTrackingAction(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4UserTrackingAction (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserTrackingAction.hh:44:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserTrackingAction.hh:44:7
     jlcxx::TypeWrapper<G4UserTrackingAction>  t = jlModule.add_type<G4UserTrackingAction>("G4UserTrackingAction");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4UserTrackingAction>>(new jlcxx::TypeWrapper<G4UserTrackingAction>(jlModule, t));
   }

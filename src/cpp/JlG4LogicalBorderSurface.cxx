@@ -17,7 +17,7 @@ struct JlG4LogicalBorderSurface: public Wrapper {
 
   JlG4LogicalBorderSurface(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4LogicalBorderSurface (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalBorderSurface.hh:50:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalBorderSurface.hh:50:7
     jlcxx::TypeWrapper<G4LogicalBorderSurface>  t = jlModule.add_type<G4LogicalBorderSurface>("G4LogicalBorderSurface");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4LogicalBorderSurface>>(new jlcxx::TypeWrapper<G4LogicalBorderSurface>(jlModule, t));
   }
@@ -27,19 +27,19 @@ struct JlG4LogicalBorderSurface: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4LogicalBorderSurface::G4LogicalBorderSurface(const G4String &, G4VPhysicalVolume *, G4VPhysicalVolume *, G4SurfaceProperty *) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalBorderSurface.hh:54:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalBorderSurface.hh:54:5
     t.constructor<const G4String &, G4VPhysicalVolume *, G4VPhysicalVolume *, G4SurfaceProperty *>(/*finalize=*/jlcxx::finalize_policy::no, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("vol1"), jlcxx::arg("vol2"), jlcxx::arg("surfaceProperty")    );
     module_.set_override_module(jl_base_module);
 
     DEBUG_MSG("Adding wrapper for G4bool G4LogicalBorderSurface::operator==(const G4LogicalBorderSurface &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4LogicalBorderSurface::operator==(const G4LogicalBorderSurface &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalBorderSurface.hh:65:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalBorderSurface.hh:65:12
     t.method("==", [](G4LogicalBorderSurface const& a, const G4LogicalBorderSurface & arg0)->G4bool { return a.operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
     t.method("==", [](G4LogicalBorderSurface const* a, const G4LogicalBorderSurface & arg0)->G4bool { return a->operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4LogicalBorderSurface::operator!=(const G4LogicalBorderSurface &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4LogicalBorderSurface::operator!=(const G4LogicalBorderSurface &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalBorderSurface.hh:66:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalBorderSurface.hh:66:12
     t.method("!=", [](G4LogicalBorderSurface const& a, const G4LogicalBorderSurface & arg0)->G4bool { return a.operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
     t.method("!=", [](G4LogicalBorderSurface const* a, const G4LogicalBorderSurface & arg0)->G4bool { return a->operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
 
@@ -47,58 +47,58 @@ struct JlG4LogicalBorderSurface: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4LogicalBorderSurface * G4LogicalBorderSurface::GetSurface(const G4VPhysicalVolume *, const G4VPhysicalVolume *) (" __HERE__ ")");
     // signature to use in the veto list: G4LogicalBorderSurface * G4LogicalBorderSurface::GetSurface(const G4VPhysicalVolume *, const G4VPhysicalVolume *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalBorderSurface.hh:69:36
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalBorderSurface.hh:69:36
     module_.method("G4LogicalBorderSurface!GetSurface", [](const G4VPhysicalVolume * arg0, const G4VPhysicalVolume * arg1)->G4LogicalBorderSurface * { return G4LogicalBorderSurface::GetSurface(arg0, arg1); }, jlcxx::arg("vol1"), jlcxx::arg("vol2"));
 
     DEBUG_MSG("Adding wrapper for void G4LogicalBorderSurface::SetPhysicalVolumes(G4VPhysicalVolume *, G4VPhysicalVolume *) (" __HERE__ ")");
     // signature to use in the veto list: void G4LogicalBorderSurface::SetPhysicalVolumes(G4VPhysicalVolume *, G4VPhysicalVolume *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalBorderSurface.hh:71:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalBorderSurface.hh:71:17
     t.method("SetPhysicalVolumes", [](G4LogicalBorderSurface& a, G4VPhysicalVolume * arg0, G4VPhysicalVolume * arg1)->void { a.SetPhysicalVolumes(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("vol1"), jlcxx::arg("vol2"));
     t.method("SetPhysicalVolumes", [](G4LogicalBorderSurface* a, G4VPhysicalVolume * arg0, G4VPhysicalVolume * arg1)->void { a->SetPhysicalVolumes(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("vol1"), jlcxx::arg("vol2"));
 
     DEBUG_MSG("Adding wrapper for const G4VPhysicalVolume * G4LogicalBorderSurface::GetVolume1() (" __HERE__ ")");
     // signature to use in the veto list: const G4VPhysicalVolume * G4LogicalBorderSurface::GetVolume1()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalBorderSurface.hh:73:37
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalBorderSurface.hh:73:37
     t.method("GetVolume1", [](G4LogicalBorderSurface const& a)->const G4VPhysicalVolume * { return a.GetVolume1(); }, jlcxx::arg("this"));
     t.method("GetVolume1", [](G4LogicalBorderSurface const* a)->const G4VPhysicalVolume * { return a->GetVolume1(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4VPhysicalVolume * G4LogicalBorderSurface::GetVolume2() (" __HERE__ ")");
     // signature to use in the veto list: const G4VPhysicalVolume * G4LogicalBorderSurface::GetVolume2()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalBorderSurface.hh:74:37
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalBorderSurface.hh:74:37
     t.method("GetVolume2", [](G4LogicalBorderSurface const& a)->const G4VPhysicalVolume * { return a.GetVolume2(); }, jlcxx::arg("this"));
     t.method("GetVolume2", [](G4LogicalBorderSurface const* a)->const G4VPhysicalVolume * { return a->GetVolume2(); }, jlcxx::arg("this"));
 
-    DEBUG_MSG("Adding wrapper for size_t G4LogicalBorderSurface::GetIndex() (" __HERE__ ")");
-    // signature to use in the veto list: size_t G4LogicalBorderSurface::GetIndex()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalBorderSurface.hh:75:24
-    t.method("GetIndex", [](G4LogicalBorderSurface const& a)->size_t { return a.GetIndex(); }, jlcxx::arg("this"));
-    t.method("GetIndex", [](G4LogicalBorderSurface const* a)->size_t { return a->GetIndex(); }, jlcxx::arg("this"));
+    DEBUG_MSG("Adding wrapper for std::size_t G4LogicalBorderSurface::GetIndex() (" __HERE__ ")");
+    // signature to use in the veto list: std::size_t G4LogicalBorderSurface::GetIndex()
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalBorderSurface.hh:75:24
+    t.method("GetIndex", [](G4LogicalBorderSurface const& a)->std::size_t { return a.GetIndex(); }, jlcxx::arg("this"));
+    t.method("GetIndex", [](G4LogicalBorderSurface const* a)->std::size_t { return a->GetIndex(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4LogicalBorderSurface::SetVolume1(G4VPhysicalVolume *) (" __HERE__ ")");
     // signature to use in the veto list: void G4LogicalBorderSurface::SetVolume1(G4VPhysicalVolume *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalBorderSurface.hh:78:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalBorderSurface.hh:78:17
     t.method("SetVolume1", [](G4LogicalBorderSurface& a, G4VPhysicalVolume * arg0)->void { a.SetVolume1(arg0); }, jlcxx::arg("this"), jlcxx::arg("vol1"));
     t.method("SetVolume1", [](G4LogicalBorderSurface* a, G4VPhysicalVolume * arg0)->void { a->SetVolume1(arg0); }, jlcxx::arg("this"), jlcxx::arg("vol1"));
 
     DEBUG_MSG("Adding wrapper for void G4LogicalBorderSurface::SetVolume2(G4VPhysicalVolume *) (" __HERE__ ")");
     // signature to use in the veto list: void G4LogicalBorderSurface::SetVolume2(G4VPhysicalVolume *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalBorderSurface.hh:79:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalBorderSurface.hh:79:17
     t.method("SetVolume2", [](G4LogicalBorderSurface& a, G4VPhysicalVolume * arg0)->void { a.SetVolume2(arg0); }, jlcxx::arg("this"), jlcxx::arg("vol2"));
     t.method("SetVolume2", [](G4LogicalBorderSurface* a, G4VPhysicalVolume * arg0)->void { a->SetVolume2(arg0); }, jlcxx::arg("this"), jlcxx::arg("vol2"));
 
     DEBUG_MSG("Adding wrapper for void G4LogicalBorderSurface::CleanSurfaceTable() (" __HERE__ ")");
     // signature to use in the veto list: void G4LogicalBorderSurface::CleanSurfaceTable()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalBorderSurface.hh:82:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalBorderSurface.hh:82:17
     module_.method("G4LogicalBorderSurface!CleanSurfaceTable", []()->void { G4LogicalBorderSurface::CleanSurfaceTable(); });
 
-    DEBUG_MSG("Adding wrapper for size_t G4LogicalBorderSurface::GetNumberOfBorderSurfaces() (" __HERE__ ")");
-    // signature to use in the veto list: size_t G4LogicalBorderSurface::GetNumberOfBorderSurfaces()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalBorderSurface.hh:84:24
-    module_.method("G4LogicalBorderSurface!GetNumberOfBorderSurfaces", []()->size_t { return G4LogicalBorderSurface::GetNumberOfBorderSurfaces(); });
+    DEBUG_MSG("Adding wrapper for std::size_t G4LogicalBorderSurface::GetNumberOfBorderSurfaces() (" __HERE__ ")");
+    // signature to use in the veto list: std::size_t G4LogicalBorderSurface::GetNumberOfBorderSurfaces()
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalBorderSurface.hh:84:24
+    module_.method("G4LogicalBorderSurface!GetNumberOfBorderSurfaces", []()->std::size_t { return G4LogicalBorderSurface::GetNumberOfBorderSurfaces(); });
 
     DEBUG_MSG("Adding wrapper for void G4LogicalBorderSurface::DumpInfo() (" __HERE__ ")");
     // signature to use in the veto list: void G4LogicalBorderSurface::DumpInfo()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalBorderSurface.hh:85:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalBorderSurface.hh:85:17
     module_.method("G4LogicalBorderSurface!DumpInfo", []()->void { G4LogicalBorderSurface::DumpInfo(); });
   }
 

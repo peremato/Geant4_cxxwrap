@@ -17,7 +17,7 @@ struct JlG4LogicalSkinSurface: public Wrapper {
 
   JlG4LogicalSkinSurface(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4LogicalSkinSurface (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalSkinSurface.hh:48:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalSkinSurface.hh:48:7
     jlcxx::TypeWrapper<G4LogicalSkinSurface>  t = jlModule.add_type<G4LogicalSkinSurface>("G4LogicalSkinSurface");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4LogicalSkinSurface>>(new jlcxx::TypeWrapper<G4LogicalSkinSurface>(jlModule, t));
   }
@@ -27,19 +27,19 @@ struct JlG4LogicalSkinSurface: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4LogicalSkinSurface::G4LogicalSkinSurface(const G4String &, G4LogicalVolume *, G4SurfaceProperty *) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalSkinSurface.hh:52:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalSkinSurface.hh:52:5
     t.constructor<const G4String &, G4LogicalVolume *, G4SurfaceProperty *>(/*finalize=*/jlcxx::finalize_policy::no, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("vol"), jlcxx::arg("surfaceProperty")    );
     module_.set_override_module(jl_base_module);
 
     DEBUG_MSG("Adding wrapper for G4bool G4LogicalSkinSurface::operator==(const G4LogicalSkinSurface &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4LogicalSkinSurface::operator==(const G4LogicalSkinSurface &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalSkinSurface.hh:62:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalSkinSurface.hh:62:12
     t.method("==", [](G4LogicalSkinSurface const& a, const G4LogicalSkinSurface & arg0)->G4bool { return a.operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
     t.method("==", [](G4LogicalSkinSurface const* a, const G4LogicalSkinSurface & arg0)->G4bool { return a->operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4LogicalSkinSurface::operator!=(const G4LogicalSkinSurface &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4LogicalSkinSurface::operator!=(const G4LogicalSkinSurface &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalSkinSurface.hh:63:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalSkinSurface.hh:63:12
     t.method("!=", [](G4LogicalSkinSurface const& a, const G4LogicalSkinSurface & arg0)->G4bool { return a.operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
     t.method("!=", [](G4LogicalSkinSurface const* a, const G4LogicalSkinSurface & arg0)->G4bool { return a->operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
 
@@ -47,34 +47,34 @@ struct JlG4LogicalSkinSurface: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4LogicalSkinSurface * G4LogicalSkinSurface::GetSurface(const G4LogicalVolume *) (" __HERE__ ")");
     // signature to use in the veto list: G4LogicalSkinSurface * G4LogicalSkinSurface::GetSurface(const G4LogicalVolume *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalSkinSurface.hh:66:34
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalSkinSurface.hh:66:34
     module_.method("G4LogicalSkinSurface!GetSurface", [](const G4LogicalVolume * arg0)->G4LogicalSkinSurface * { return G4LogicalSkinSurface::GetSurface(arg0); }, jlcxx::arg("vol"));
 
     DEBUG_MSG("Adding wrapper for const G4LogicalVolume * G4LogicalSkinSurface::GetLogicalVolume() (" __HERE__ ")");
     // signature to use in the veto list: const G4LogicalVolume * G4LogicalSkinSurface::GetLogicalVolume()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalSkinSurface.hh:67:35
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalSkinSurface.hh:67:35
     t.method("GetLogicalVolume", [](G4LogicalSkinSurface const& a)->const G4LogicalVolume * { return a.GetLogicalVolume(); }, jlcxx::arg("this"));
     t.method("GetLogicalVolume", [](G4LogicalSkinSurface const* a)->const G4LogicalVolume * { return a->GetLogicalVolume(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4LogicalSkinSurface::SetLogicalVolume(G4LogicalVolume *) (" __HERE__ ")");
     // signature to use in the veto list: void G4LogicalSkinSurface::SetLogicalVolume(G4LogicalVolume *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalSkinSurface.hh:68:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalSkinSurface.hh:68:18
     t.method("SetLogicalVolume", [](G4LogicalSkinSurface& a, G4LogicalVolume * arg0)->void { a.SetLogicalVolume(arg0); }, jlcxx::arg("this"), jlcxx::arg("vol"));
     t.method("SetLogicalVolume", [](G4LogicalSkinSurface* a, G4LogicalVolume * arg0)->void { a->SetLogicalVolume(arg0); }, jlcxx::arg("this"), jlcxx::arg("vol"));
 
     DEBUG_MSG("Adding wrapper for void G4LogicalSkinSurface::CleanSurfaceTable() (" __HERE__ ")");
     // signature to use in the veto list: void G4LogicalSkinSurface::CleanSurfaceTable()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalSkinSurface.hh:71:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalSkinSurface.hh:71:17
     module_.method("G4LogicalSkinSurface!CleanSurfaceTable", []()->void { G4LogicalSkinSurface::CleanSurfaceTable(); });
 
-    DEBUG_MSG("Adding wrapper for size_t G4LogicalSkinSurface::GetNumberOfSkinSurfaces() (" __HERE__ ")");
-    // signature to use in the veto list: size_t G4LogicalSkinSurface::GetNumberOfSkinSurfaces()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalSkinSurface.hh:73:24
-    module_.method("G4LogicalSkinSurface!GetNumberOfSkinSurfaces", []()->size_t { return G4LogicalSkinSurface::GetNumberOfSkinSurfaces(); });
+    DEBUG_MSG("Adding wrapper for std::size_t G4LogicalSkinSurface::GetNumberOfSkinSurfaces() (" __HERE__ ")");
+    // signature to use in the veto list: std::size_t G4LogicalSkinSurface::GetNumberOfSkinSurfaces()
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalSkinSurface.hh:73:24
+    module_.method("G4LogicalSkinSurface!GetNumberOfSkinSurfaces", []()->std::size_t { return G4LogicalSkinSurface::GetNumberOfSkinSurfaces(); });
 
     DEBUG_MSG("Adding wrapper for void G4LogicalSkinSurface::DumpInfo() (" __HERE__ ")");
     // signature to use in the veto list: void G4LogicalSkinSurface::DumpInfo()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalSkinSurface.hh:74:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalSkinSurface.hh:74:17
     module_.method("G4LogicalSkinSurface!DumpInfo", []()->void { G4LogicalSkinSurface::DumpInfo(); });
   }
 

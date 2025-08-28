@@ -18,7 +18,7 @@ struct JlHepGeom_TranslateY3D: public Wrapper {
 
   JlHepGeom_TranslateY3D(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type HepGeom::TranslateY3D (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:566:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:566:9
     jlcxx::TypeWrapper<HepGeom::TranslateY3D>  t = jlModule.add_type<HepGeom::TranslateY3D>("HepGeom!TranslateY3D",
       jlcxx::julia_base_type<HepGeom::Translate3D>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<HepGeom::TranslateY3D>>(new jlcxx::TypeWrapper<HepGeom::TranslateY3D>(jlModule, t));
@@ -30,7 +30,7 @@ struct JlHepGeom_TranslateY3D: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void HepGeom::TranslateY3D::TranslateY3D(double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:574:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:574:5
     t.constructor<double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("y")    );
   }
 

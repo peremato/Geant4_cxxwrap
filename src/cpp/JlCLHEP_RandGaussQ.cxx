@@ -17,7 +17,7 @@ struct JlCLHEP_RandGaussQ: public Wrapper {
 
   JlCLHEP_RandGaussQ(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type CLHEP::RandGaussQ (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandGaussQ.h:30:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandGaussQ.h:30:7
     jlcxx::TypeWrapper<CLHEP::RandGaussQ>  t = jlModule.add_type<CLHEP::RandGaussQ>("CLHEP!RandGaussQ");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<CLHEP::RandGaussQ>>(new jlcxx::TypeWrapper<CLHEP::RandGaussQ>(jlModule, t));
   }
@@ -27,103 +27,103 @@ struct JlCLHEP_RandGaussQ: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void CLHEP::RandGaussQ::RandGaussQ(CLHEP::HepRandomEngine &, double, double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandGaussQ.h:34:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandGaussQ.h:34:10
     t.constructor<CLHEP::HepRandomEngine &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("anEngine")    );
     t.constructor<CLHEP::HepRandomEngine &, double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("anEngine"), jlcxx::arg("mean")    );
     t.constructor<CLHEP::HepRandomEngine &, double, double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("anEngine"), jlcxx::arg("mean"), jlcxx::arg("stdDev")    );
 
 
     DEBUG_MSG("Adding wrapper for void CLHEP::RandGaussQ::RandGaussQ(CLHEP::HepRandomEngine *, double, double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandGaussQ.h:36:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandGaussQ.h:36:10
     t.constructor<CLHEP::HepRandomEngine *>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("anEngine")    );
     t.constructor<CLHEP::HepRandomEngine *, double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("anEngine"), jlcxx::arg("mean")    );
     t.constructor<CLHEP::HepRandomEngine *, double, double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("anEngine"), jlcxx::arg("mean"), jlcxx::arg("stdDev")    );
 
     DEBUG_MSG("Adding wrapper for double CLHEP::RandGaussQ::shoot() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::RandGaussQ::shoot()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandGaussQ.h:59:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandGaussQ.h:59:25
     module_.method("CLHEP!RandGaussQ!shoot", []()->double { return CLHEP::RandGaussQ::shoot(); });
 
     DEBUG_MSG("Adding wrapper for double CLHEP::RandGaussQ::shoot(double, double) (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::RandGaussQ::shoot(double, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandGaussQ.h:61:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandGaussQ.h:61:25
     module_.method("CLHEP!RandGaussQ!shoot", [](double arg0, double arg1)->double { return CLHEP::RandGaussQ::shoot(arg0, arg1); }, jlcxx::arg("mean"), jlcxx::arg("stdDev"));
 
     DEBUG_MSG("Adding wrapper for void CLHEP::RandGaussQ::shootArray(const int, double *, double, double) (" __HERE__ ")");
     // signature to use in the veto list: void CLHEP::RandGaussQ::shootArray(const int, double *, double, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandGaussQ.h:63:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandGaussQ.h:63:16
     module_.method("CLHEP!RandGaussQ!shootArray", [](const int arg0, double * arg1)->void { CLHEP::RandGaussQ::shootArray(arg0, arg1); }, jlcxx::arg("size"), jlcxx::arg("vect"));
     module_.method("CLHEP!RandGaussQ!shootArray", [](const int arg0, double * arg1, double arg2)->void { CLHEP::RandGaussQ::shootArray(arg0, arg1, arg2); }, jlcxx::arg("size"), jlcxx::arg("vect"), jlcxx::arg("mean"));
     module_.method("CLHEP!RandGaussQ!shootArray", [](const int arg0, double * arg1, double arg2, double arg3)->void { CLHEP::RandGaussQ::shootArray(arg0, arg1, arg2, arg3); }, jlcxx::arg("size"), jlcxx::arg("vect"), jlcxx::arg("mean"), jlcxx::arg("stdDev"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::RandGaussQ::shoot(CLHEP::HepRandomEngine *) (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::RandGaussQ::shoot(CLHEP::HepRandomEngine *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandGaussQ.h:69:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandGaussQ.h:69:25
     module_.method("CLHEP!RandGaussQ!shoot", [](CLHEP::HepRandomEngine * arg0)->double { return CLHEP::RandGaussQ::shoot(arg0); }, jlcxx::arg("anotherEngine"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::RandGaussQ::shoot(CLHEP::HepRandomEngine *, double, double) (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::RandGaussQ::shoot(CLHEP::HepRandomEngine *, double, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandGaussQ.h:71:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandGaussQ.h:71:25
     module_.method("CLHEP!RandGaussQ!shoot", [](CLHEP::HepRandomEngine * arg0, double arg1, double arg2)->double { return CLHEP::RandGaussQ::shoot(arg0, arg1, arg2); }, jlcxx::arg("anotherEngine"), jlcxx::arg("mean"), jlcxx::arg("stdDev"));
 
     DEBUG_MSG("Adding wrapper for void CLHEP::RandGaussQ::shootArray(CLHEP::HepRandomEngine *, const int, double *, double, double) (" __HERE__ ")");
     // signature to use in the veto list: void CLHEP::RandGaussQ::shootArray(CLHEP::HepRandomEngine *, const int, double *, double, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandGaussQ.h:75:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandGaussQ.h:75:16
     module_.method("CLHEP!RandGaussQ!shootArray", [](CLHEP::HepRandomEngine * arg0, const int arg1, double * arg2)->void { CLHEP::RandGaussQ::shootArray(arg0, arg1, arg2); }, jlcxx::arg("anotherEngine"), jlcxx::arg("size"), jlcxx::arg("vect"));
     module_.method("CLHEP!RandGaussQ!shootArray", [](CLHEP::HepRandomEngine * arg0, const int arg1, double * arg2, double arg3)->void { CLHEP::RandGaussQ::shootArray(arg0, arg1, arg2, arg3); }, jlcxx::arg("anotherEngine"), jlcxx::arg("size"), jlcxx::arg("vect"), jlcxx::arg("mean"));
     module_.method("CLHEP!RandGaussQ!shootArray", [](CLHEP::HepRandomEngine * arg0, const int arg1, double * arg2, double arg3, double arg4)->void { CLHEP::RandGaussQ::shootArray(arg0, arg1, arg2, arg3, arg4); }, jlcxx::arg("anotherEngine"), jlcxx::arg("size"), jlcxx::arg("vect"), jlcxx::arg("mean"), jlcxx::arg("stdDev"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::RandGaussQ::fire() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::RandGaussQ::fire()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandGaussQ.h:83:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandGaussQ.h:83:17
     t.method("fire", [](CLHEP::RandGaussQ& a)->double { return a.fire(); }, jlcxx::arg("this"));
     t.method("fire", [](CLHEP::RandGaussQ* a)->double { return a->fire(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::RandGaussQ::fire(double, double) (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::RandGaussQ::fire(double, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandGaussQ.h:85:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandGaussQ.h:85:17
     t.method("fire", [](CLHEP::RandGaussQ& a, double arg0, double arg1)->double { return a.fire(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("mean"), jlcxx::arg("stdDev"));
     t.method("fire", [](CLHEP::RandGaussQ* a, double arg0, double arg1)->double { return a->fire(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("mean"), jlcxx::arg("stdDev"));
 
     DEBUG_MSG("Adding wrapper for void CLHEP::RandGaussQ::fireArray(const int, double *) (" __HERE__ ")");
     // signature to use in the veto list: void CLHEP::RandGaussQ::fireArray(const int, double *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandGaussQ.h:87:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandGaussQ.h:87:8
     t.method("fireArray", [](CLHEP::RandGaussQ& a, const int arg0, double * arg1)->void { a.fireArray(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("size"), jlcxx::arg("vect"));
     t.method("fireArray", [](CLHEP::RandGaussQ* a, const int arg0, double * arg1)->void { a->fireArray(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("size"), jlcxx::arg("vect"));
 
     DEBUG_MSG("Adding wrapper for void CLHEP::RandGaussQ::fireArray(const int, double *, double, double) (" __HERE__ ")");
     // signature to use in the veto list: void CLHEP::RandGaussQ::fireArray(const int, double *, double, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandGaussQ.h:88:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandGaussQ.h:88:8
     t.method("fireArray", [](CLHEP::RandGaussQ& a, const int arg0, double * arg1, double arg2, double arg3)->void { a.fireArray(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("size"), jlcxx::arg("vect"), jlcxx::arg("mean"), jlcxx::arg("stdDev"));
     t.method("fireArray", [](CLHEP::RandGaussQ* a, const int arg0, double * arg1, double arg2, double arg3)->void { a->fireArray(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("size"), jlcxx::arg("vect"), jlcxx::arg("mean"), jlcxx::arg("stdDev"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::RandGaussQ::operator()() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::RandGaussQ::operator()()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandGaussQ.h:91:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandGaussQ.h:91:18
     t.method("paren", [](CLHEP::RandGaussQ& a)->double { return a.operator()(); }, jlcxx::arg("this"));
     t.method("paren", [](CLHEP::RandGaussQ* a)->double { return a->operator()(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::RandGaussQ::operator()(double, double) (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::RandGaussQ::operator()(double, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandGaussQ.h:92:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandGaussQ.h:92:18
     t.method("paren", [](CLHEP::RandGaussQ& a, double arg0, double arg1)->double { return a.operator()(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("mean"), jlcxx::arg("stdDev"));
     t.method("paren", [](CLHEP::RandGaussQ* a, double arg0, double arg1)->double { return a->operator()(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("mean"), jlcxx::arg("stdDev"));
 
     DEBUG_MSG("Adding wrapper for std::string CLHEP::RandGaussQ::name() (" __HERE__ ")");
     // signature to use in the veto list: std::string CLHEP::RandGaussQ::name()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandGaussQ.h:99:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandGaussQ.h:99:15
     t.method("name", [](CLHEP::RandGaussQ const& a)->std::string { return a.name(); }, jlcxx::arg("this"));
     t.method("name", [](CLHEP::RandGaussQ const* a)->std::string { return a->name(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepRandomEngine & CLHEP::RandGaussQ::engine() (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepRandomEngine & CLHEP::RandGaussQ::engine()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandGaussQ.h:100:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandGaussQ.h:100:21
     t.method("engine", [](CLHEP::RandGaussQ& a)->CLHEP::HepRandomEngine & { return a.engine(); }, jlcxx::arg("this"));
     t.method("engine", [](CLHEP::RandGaussQ* a)->CLHEP::HepRandomEngine & { return a->engine(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for std::string CLHEP::RandGaussQ::distributionName() (" __HERE__ ")");
     // signature to use in the veto list: std::string CLHEP::RandGaussQ::distributionName()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandGaussQ.h:102:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandGaussQ.h:102:22
     module_.method("CLHEP!RandGaussQ!distributionName", []()->std::string { return CLHEP::RandGaussQ::distributionName(); });
   }
 

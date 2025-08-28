@@ -17,7 +17,7 @@ struct JlG4ScoringManager: public Wrapper {
 
   JlG4ScoringManager(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4ScoringManager (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:63:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:63:7
     jlcxx::TypeWrapper<G4ScoringManager>  t = jlModule.add_type<G4ScoringManager>("G4ScoringManager");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4ScoringManager>>(new jlcxx::TypeWrapper<G4ScoringManager>(jlModule, t));
   }
@@ -27,63 +27,63 @@ struct JlG4ScoringManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4ScoringManager * G4ScoringManager::GetScoringManager() (" __HERE__ ")");
     // signature to use in the veto list: G4ScoringManager * G4ScoringManager::GetScoringManager()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:67:28
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:67:28
     module_.method("G4ScoringManager!GetScoringManager", []()->G4ScoringManager * { return G4ScoringManager::GetScoringManager(); });
 
     DEBUG_MSG("Adding wrapper for G4ScoringManager * G4ScoringManager::GetScoringManagerIfExist() (" __HERE__ ")");
     // signature to use in the veto list: G4ScoringManager * G4ScoringManager::GetScoringManagerIfExist()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:70:28
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:70:28
     module_.method("G4ScoringManager!GetScoringManagerIfExist", []()->G4ScoringManager * { return G4ScoringManager::GetScoringManagerIfExist(); });
 
     DEBUG_MSG("Adding wrapper for void G4ScoringManager::SetReplicaLevel(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4ScoringManager::SetReplicaLevel(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:77:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:77:15
     module_.method("G4ScoringManager!SetReplicaLevel", [](G4int arg0)->void { G4ScoringManager::SetReplicaLevel(arg0); }, jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4int G4ScoringManager::GetReplicaLevel() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4ScoringManager::GetReplicaLevel()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:78:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:78:16
     module_.method("G4ScoringManager!GetReplicaLevel", []()->G4int { return G4ScoringManager::GetReplicaLevel(); });
 
     DEBUG_MSG("Adding wrapper for void G4ScoringManager::Accumulate(G4VHitsCollection *) (" __HERE__ ")");
     // signature to use in the veto list: void G4ScoringManager::Accumulate(G4VHitsCollection *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:84:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:84:8
     t.method("Accumulate", [](G4ScoringManager& a, G4VHitsCollection * arg0)->void { a.Accumulate(arg0); }, jlcxx::arg("this"), jlcxx::arg("map"));
     t.method("Accumulate", [](G4ScoringManager* a, G4VHitsCollection * arg0)->void { a->Accumulate(arg0); }, jlcxx::arg("this"), jlcxx::arg("map"));
 
     DEBUG_MSG("Adding wrapper for void G4ScoringManager::Merge(const G4ScoringManager *) (" __HERE__ ")");
     // signature to use in the veto list: void G4ScoringManager::Merge(const G4ScoringManager *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:85:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:85:8
     t.method("Merge", [](G4ScoringManager& a, const G4ScoringManager * arg0)->void { a.Merge(arg0); }, jlcxx::arg("this"), jlcxx::arg("scMan"));
     t.method("Merge", [](G4ScoringManager* a, const G4ScoringManager * arg0)->void { a->Merge(arg0); }, jlcxx::arg("this"), jlcxx::arg("scMan"));
 
     DEBUG_MSG("Adding wrapper for G4VScoringMesh * G4ScoringManager::FindMesh(G4VHitsCollection *) (" __HERE__ ")");
     // signature to use in the veto list: G4VScoringMesh * G4ScoringManager::FindMesh(G4VHitsCollection *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:86:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:86:19
     t.method("FindMesh", [](G4ScoringManager& a, G4VHitsCollection * arg0)->G4VScoringMesh * { return a.FindMesh(arg0); }, jlcxx::arg("this"), jlcxx::arg("map"));
     t.method("FindMesh", [](G4ScoringManager* a, G4VHitsCollection * arg0)->G4VScoringMesh * { return a->FindMesh(arg0); }, jlcxx::arg("this"), jlcxx::arg("map"));
 
     DEBUG_MSG("Adding wrapper for G4VScoringMesh * G4ScoringManager::FindMesh(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4VScoringMesh * G4ScoringManager::FindMesh(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:87:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:87:19
     t.method("FindMesh", [](G4ScoringManager& a, const G4String & arg0)->G4VScoringMesh * { return a.FindMesh(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("FindMesh", [](G4ScoringManager* a, const G4String & arg0)->G4VScoringMesh * { return a->FindMesh(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4ScoringManager::List() (" __HERE__ ")");
     // signature to use in the veto list: void G4ScoringManager::List()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:88:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:88:8
     t.method("List", [](G4ScoringManager const& a)->void { a.List(); }, jlcxx::arg("this"));
     t.method("List", [](G4ScoringManager const* a)->void { a->List(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4ScoringManager::Dump() (" __HERE__ ")");
     // signature to use in the veto list: void G4ScoringManager::Dump()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:89:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:89:8
     t.method("Dump", [](G4ScoringManager const& a)->void { a.Dump(); }, jlcxx::arg("this"));
     t.method("Dump", [](G4ScoringManager const* a)->void { a->Dump(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4ScoringManager::DrawMesh(const G4String &, const G4String &, const G4String &, G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4ScoringManager::DrawMesh(const G4String &, const G4String &, const G4String &, G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:90:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:90:8
     t.method("DrawMesh", [](G4ScoringManager& a, const G4String & arg0, const G4String & arg1, const G4String & arg2)->void { a.DrawMesh(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("meshName"), jlcxx::arg("psName"), jlcxx::arg("colorMapName"));
     t.method("DrawMesh", [](G4ScoringManager& a, const G4String & arg0, const G4String & arg1, const G4String & arg2, G4int arg3)->void { a.DrawMesh(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("meshName"), jlcxx::arg("psName"), jlcxx::arg("colorMapName"), jlcxx::arg("axflg"));
     t.method("DrawMesh", [](G4ScoringManager* a, const G4String & arg0, const G4String & arg1, const G4String & arg2)->void { a->DrawMesh(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("meshName"), jlcxx::arg("psName"), jlcxx::arg("colorMapName"));
@@ -91,13 +91,13 @@ struct JlG4ScoringManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4ScoringManager::DrawMesh(const G4String &, const G4String &, G4int, G4int, const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4ScoringManager::DrawMesh(const G4String &, const G4String &, G4int, G4int, const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:92:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:92:8
     t.method("DrawMesh", [](G4ScoringManager& a, const G4String & arg0, const G4String & arg1, G4int arg2, G4int arg3, const G4String & arg4)->void { a.DrawMesh(arg0, arg1, arg2, arg3, arg4); }, jlcxx::arg("this"), jlcxx::arg("meshName"), jlcxx::arg("psName"), jlcxx::arg("idxPlane"), jlcxx::arg("iColumn"), jlcxx::arg("colorMapName"));
     t.method("DrawMesh", [](G4ScoringManager* a, const G4String & arg0, const G4String & arg1, G4int arg2, G4int arg3, const G4String & arg4)->void { a->DrawMesh(arg0, arg1, arg2, arg3, arg4); }, jlcxx::arg("this"), jlcxx::arg("meshName"), jlcxx::arg("psName"), jlcxx::arg("idxPlane"), jlcxx::arg("iColumn"), jlcxx::arg("colorMapName"));
 
     DEBUG_MSG("Adding wrapper for void G4ScoringManager::DumpQuantityToFile(const G4String &, const G4String &, const G4String &, const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4ScoringManager::DumpQuantityToFile(const G4String &, const G4String &, const G4String &, const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:94:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:94:8
     t.method("DumpQuantityToFile", [](G4ScoringManager& a, const G4String & arg0, const G4String & arg1, const G4String & arg2)->void { a.DumpQuantityToFile(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("meshName"), jlcxx::arg("psName"), jlcxx::arg("fileName"));
     t.method("DumpQuantityToFile", [](G4ScoringManager& a, const G4String & arg0, const G4String & arg1, const G4String & arg2, const G4String & arg3)->void { a.DumpQuantityToFile(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("meshName"), jlcxx::arg("psName"), jlcxx::arg("fileName"), jlcxx::arg("option"));
     t.method("DumpQuantityToFile", [](G4ScoringManager* a, const G4String & arg0, const G4String & arg1, const G4String & arg2)->void { a->DumpQuantityToFile(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("meshName"), jlcxx::arg("psName"), jlcxx::arg("fileName"));
@@ -105,7 +105,7 @@ struct JlG4ScoringManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4ScoringManager::DumpAllQuantitiesToFile(const G4String &, const G4String &, const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4ScoringManager::DumpAllQuantitiesToFile(const G4String &, const G4String &, const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:97:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:97:8
     t.method("DumpAllQuantitiesToFile", [](G4ScoringManager& a, const G4String & arg0, const G4String & arg1)->void { a.DumpAllQuantitiesToFile(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("meshName"), jlcxx::arg("fileName"));
     t.method("DumpAllQuantitiesToFile", [](G4ScoringManager& a, const G4String & arg0, const G4String & arg1, const G4String & arg2)->void { a.DumpAllQuantitiesToFile(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("meshName"), jlcxx::arg("fileName"), jlcxx::arg("option"));
     t.method("DumpAllQuantitiesToFile", [](G4ScoringManager* a, const G4String & arg0, const G4String & arg1)->void { a->DumpAllQuantitiesToFile(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("meshName"), jlcxx::arg("fileName"));
@@ -113,73 +113,73 @@ struct JlG4ScoringManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4ScoringManager::ListScoreColorMaps() (" __HERE__ ")");
     // signature to use in the veto list: void G4ScoringManager::ListScoreColorMaps()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:101:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:101:8
     t.method("ListScoreColorMaps", [](G4ScoringManager& a)->void { a.ListScoreColorMaps(); }, jlcxx::arg("this"));
     t.method("ListScoreColorMaps", [](G4ScoringManager* a)->void { a->ListScoreColorMaps(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4ScoringManager::SetCurrentMesh(G4VScoringMesh *) (" __HERE__ ")");
     // signature to use in the veto list: void G4ScoringManager::SetCurrentMesh(G4VScoringMesh *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:103:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:103:15
     t.method("SetCurrentMesh", [](G4ScoringManager& a, G4VScoringMesh * arg0)->void { a.SetCurrentMesh(arg0); }, jlcxx::arg("this"), jlcxx::arg("scm"));
     t.method("SetCurrentMesh", [](G4ScoringManager* a, G4VScoringMesh * arg0)->void { a->SetCurrentMesh(arg0); }, jlcxx::arg("this"), jlcxx::arg("scm"));
 
     DEBUG_MSG("Adding wrapper for G4VScoringMesh * G4ScoringManager::GetCurrentMesh() (" __HERE__ ")");
     // signature to use in the veto list: G4VScoringMesh * G4ScoringManager::GetCurrentMesh()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:104:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:104:26
     t.method("GetCurrentMesh", [](G4ScoringManager const& a)->G4VScoringMesh * { return a.GetCurrentMesh(); }, jlcxx::arg("this"));
     t.method("GetCurrentMesh", [](G4ScoringManager const* a)->G4VScoringMesh * { return a->GetCurrentMesh(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4ScoringManager::CloseCurrentMesh() (" __HERE__ ")");
     // signature to use in the veto list: void G4ScoringManager::CloseCurrentMesh()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:105:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:105:15
     t.method("CloseCurrentMesh", [](G4ScoringManager& a)->void { a.CloseCurrentMesh(); }, jlcxx::arg("this"));
     t.method("CloseCurrentMesh", [](G4ScoringManager* a)->void { a->CloseCurrentMesh(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4ScoringManager::SetVerboseLevel(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4ScoringManager::SetVerboseLevel(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:106:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:106:15
     t.method("SetVerboseLevel", [](G4ScoringManager& a, G4int arg0)->void { a.SetVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("vl"));
     t.method("SetVerboseLevel", [](G4ScoringManager* a, G4int arg0)->void { a->SetVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("vl"));
 
     DEBUG_MSG("Adding wrapper for G4int G4ScoringManager::GetVerboseLevel() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4ScoringManager::GetVerboseLevel()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:116:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:116:16
     t.method("GetVerboseLevel", [](G4ScoringManager const& a)->G4int { return a.GetVerboseLevel(); }, jlcxx::arg("this"));
     t.method("GetVerboseLevel", [](G4ScoringManager const* a)->G4int { return a->GetVerboseLevel(); }, jlcxx::arg("this"));
 
-    DEBUG_MSG("Adding wrapper for size_t G4ScoringManager::GetNumberOfMesh() (" __HERE__ ")");
-    // signature to use in the veto list: size_t G4ScoringManager::GetNumberOfMesh()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:117:22
-    t.method("GetNumberOfMesh", [](G4ScoringManager const& a)->size_t { return a.GetNumberOfMesh(); }, jlcxx::arg("this"));
-    t.method("GetNumberOfMesh", [](G4ScoringManager const* a)->size_t { return a->GetNumberOfMesh(); }, jlcxx::arg("this"));
+    DEBUG_MSG("Adding wrapper for std::size_t G4ScoringManager::GetNumberOfMesh() (" __HERE__ ")");
+    // signature to use in the veto list: std::size_t G4ScoringManager::GetNumberOfMesh()
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:117:22
+    t.method("GetNumberOfMesh", [](G4ScoringManager const& a)->std::size_t { return a.GetNumberOfMesh(); }, jlcxx::arg("this"));
+    t.method("GetNumberOfMesh", [](G4ScoringManager const* a)->std::size_t { return a->GetNumberOfMesh(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4ScoringManager::RegisterScoringMesh(G4VScoringMesh *) (" __HERE__ ")");
     // signature to use in the veto list: void G4ScoringManager::RegisterScoringMesh(G4VScoringMesh *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:118:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:118:15
     t.method("RegisterScoringMesh", [](G4ScoringManager& a, G4VScoringMesh * arg0)->void { a.RegisterScoringMesh(arg0); }, jlcxx::arg("this"), jlcxx::arg("scm"));
     t.method("RegisterScoringMesh", [](G4ScoringManager* a, G4VScoringMesh * arg0)->void { a->RegisterScoringMesh(arg0); }, jlcxx::arg("this"), jlcxx::arg("scm"));
 
     DEBUG_MSG("Adding wrapper for G4VScoringMesh * G4ScoringManager::GetMesh(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4VScoringMesh * G4ScoringManager::GetMesh(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:124:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:124:26
     t.method("GetMesh", [](G4ScoringManager const& a, G4int arg0)->G4VScoringMesh * { return a.GetMesh(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
     t.method("GetMesh", [](G4ScoringManager const* a, G4int arg0)->G4VScoringMesh * { return a->GetMesh(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
 
     DEBUG_MSG("Adding wrapper for const G4String & G4ScoringManager::GetWorldName(G4int) (" __HERE__ ")");
     // signature to use in the veto list: const G4String & G4ScoringManager::GetWorldName(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:125:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:125:26
     t.method("GetWorldName", [](G4ScoringManager const& a, G4int arg0)->const G4String & { return a.GetWorldName(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
     t.method("GetWorldName", [](G4ScoringManager const* a, G4int arg0)->const G4String & { return a->GetWorldName(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
 
     DEBUG_MSG("Adding wrapper for void G4ScoringManager::SetScoreWriter(G4VScoreWriter *) (" __HERE__ ")");
     // signature to use in the veto list: void G4ScoringManager::SetScoreWriter(G4VScoreWriter *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:130:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:130:15
     t.method("SetScoreWriter", [](G4ScoringManager& a, G4VScoreWriter * arg0)->void { a.SetScoreWriter(arg0); }, jlcxx::arg("this"), jlcxx::arg("sw"));
     t.method("SetScoreWriter", [](G4ScoringManager* a, G4VScoreWriter * arg0)->void { a->SetScoreWriter(arg0); }, jlcxx::arg("this"), jlcxx::arg("sw"));
 
     DEBUG_MSG("Adding wrapper for void G4ScoringManager::SetFactor(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4ScoringManager::SetFactor(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:139:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:139:15
     t.method("SetFactor", [](G4ScoringManager& a)->void { a.SetFactor(); }, jlcxx::arg("this"), jlcxx::arg("val"));
     t.method("SetFactor", [](G4ScoringManager& a, G4double arg0)->void { a.SetFactor(arg0); }, jlcxx::arg("this"), jlcxx::arg("val"));
     t.method("SetFactor", [](G4ScoringManager* a)->void { a->SetFactor(); }, jlcxx::arg("this"), jlcxx::arg("val"));
@@ -187,7 +187,7 @@ struct JlG4ScoringManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4double G4ScoringManager::GetFactor() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4ScoringManager::GetFactor()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ScoringManager.hh:144:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ScoringManager.hh:144:19
     t.method("GetFactor", [](G4ScoringManager const& a)->G4double { return a.GetFactor(); }, jlcxx::arg("this"));
     t.method("GetFactor", [](G4ScoringManager const* a)->G4double { return a->GetFactor(); }, jlcxx::arg("this"));
   }

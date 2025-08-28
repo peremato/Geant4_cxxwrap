@@ -18,7 +18,7 @@ struct JlQBBC: public Wrapper {
 
   JlQBBC(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type QBBC (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/QBBC.hh:43:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/QBBC.hh:43:7
     jlcxx::TypeWrapper<QBBC>  t = jlModule.add_type<QBBC>("QBBC",
       jlcxx::julia_base_type<G4VModularPhysicsList>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<QBBC>>(new jlcxx::TypeWrapper<QBBC>(jlModule, t));
@@ -30,7 +30,7 @@ struct JlQBBC: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void QBBC::QBBC(G4int, const G4String &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/QBBC.hh:47:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/QBBC.hh:47:12
     t.constructor<G4int>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("ver")    );
     t.constructor<G4int, const G4String &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("ver"), jlcxx::arg("type")    );
   }

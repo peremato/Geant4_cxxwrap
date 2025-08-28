@@ -18,7 +18,7 @@ struct JlHepGeom_RotateY3D: public Wrapper {
 
   JlHepGeom_RotateY3D(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type HepGeom::RotateY3D (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:453:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:453:9
     jlcxx::TypeWrapper<HepGeom::RotateY3D>  t = jlModule.add_type<HepGeom::RotateY3D>("HepGeom!RotateY3D",
       jlcxx::julia_base_type<HepGeom::Rotate3D>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<HepGeom::RotateY3D>>(new jlcxx::TypeWrapper<HepGeom::RotateY3D>(jlModule, t));
@@ -30,7 +30,7 @@ struct JlHepGeom_RotateY3D: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void HepGeom::RotateY3D::RotateY3D(double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:461:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:461:5
     t.constructor<double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("a")    );
   }
 

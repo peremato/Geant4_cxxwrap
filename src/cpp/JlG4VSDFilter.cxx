@@ -17,7 +17,7 @@ struct JlG4VSDFilter: public Wrapper {
 
   JlG4VSDFilter(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4VSDFilter (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VSDFilter.hh:42:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VSDFilter.hh:42:7
     jlcxx::TypeWrapper<G4VSDFilter>  t = jlModule.add_type<G4VSDFilter>("G4VSDFilter");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4VSDFilter>>(new jlcxx::TypeWrapper<G4VSDFilter>(jlModule, t));
   }

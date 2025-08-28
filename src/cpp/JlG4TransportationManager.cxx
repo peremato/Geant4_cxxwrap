@@ -17,7 +17,7 @@ struct JlG4TransportationManager: public Wrapper {
 
   JlG4TransportationManager(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4TransportationManager (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:53:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:53:7
     jlcxx::TypeWrapper<G4TransportationManager>  t = jlModule.add_type<G4TransportationManager>("G4TransportationManager");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4TransportationManager>>(new jlcxx::TypeWrapper<G4TransportationManager>(jlModule, t));
   }
@@ -27,129 +27,129 @@ struct JlG4TransportationManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4TransportationManager * G4TransportationManager::GetTransportationManager() (" __HERE__ ")");
     // signature to use in the veto list: G4TransportationManager * G4TransportationManager::GetTransportationManager()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:57:38
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:57:38
     module_.method("G4TransportationManager!GetTransportationManager", []()->G4TransportationManager * { return G4TransportationManager::GetTransportationManager(); });
 
     DEBUG_MSG("Adding wrapper for G4TransportationManager * G4TransportationManager::GetInstanceIfExist() (" __HERE__ ")");
     // signature to use in the veto list: G4TransportationManager * G4TransportationManager::GetInstanceIfExist()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:59:38
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:59:38
     module_.method("G4TransportationManager!GetInstanceIfExist", []()->G4TransportationManager * { return G4TransportationManager::GetInstanceIfExist(); });
 
     DEBUG_MSG("Adding wrapper for G4FieldManager * G4TransportationManager::GetFieldManager() (" __HERE__ ")");
     // signature to use in the veto list: G4FieldManager * G4TransportationManager::GetFieldManager()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:64:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:64:29
     t.method("GetFieldManager", [](G4TransportationManager const& a)->G4FieldManager * { return a.GetFieldManager(); }, jlcxx::arg("this"));
     t.method("GetFieldManager", [](G4TransportationManager const* a)->G4FieldManager * { return a->GetFieldManager(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4TransportationManager::SetFieldManager(G4FieldManager *) (" __HERE__ ")");
     // signature to use in the veto list: void G4TransportationManager::SetFieldManager(G4FieldManager *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:65:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:65:11
     t.method("SetFieldManager", [](G4TransportationManager& a, G4FieldManager * arg0)->void { a.SetFieldManager(arg0); }, jlcxx::arg("this"), jlcxx::arg("newFieldManager"));
     t.method("SetFieldManager", [](G4TransportationManager* a, G4FieldManager * arg0)->void { a->SetFieldManager(arg0); }, jlcxx::arg("this"), jlcxx::arg("newFieldManager"));
 
     DEBUG_MSG("Adding wrapper for G4Navigator * G4TransportationManager::GetNavigatorForTracking() (" __HERE__ ")");
     // signature to use in the veto list: G4Navigator * G4TransportationManager::GetNavigatorForTracking()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:68:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:68:26
     t.method("GetNavigatorForTracking", [](G4TransportationManager const& a)->G4Navigator * { return a.GetNavigatorForTracking(); }, jlcxx::arg("this"));
     t.method("GetNavigatorForTracking", [](G4TransportationManager const* a)->G4Navigator * { return a->GetNavigatorForTracking(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4TransportationManager::SetNavigatorForTracking(G4Navigator *) (" __HERE__ ")");
     // signature to use in the veto list: void G4TransportationManager::SetNavigatorForTracking(G4Navigator *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:69:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:69:11
     t.method("SetNavigatorForTracking", [](G4TransportationManager& a, G4Navigator * arg0)->void { a.SetNavigatorForTracking(arg0); }, jlcxx::arg("this"), jlcxx::arg("newNavigator"));
     t.method("SetNavigatorForTracking", [](G4TransportationManager* a, G4Navigator * arg0)->void { a->SetNavigatorForTracking(arg0); }, jlcxx::arg("this"), jlcxx::arg("newNavigator"));
 
     DEBUG_MSG("Adding wrapper for void G4TransportationManager::SetWorldForTracking(G4VPhysicalVolume *) (" __HERE__ ")");
     // signature to use in the veto list: void G4TransportationManager::SetWorldForTracking(G4VPhysicalVolume *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:72:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:72:18
     t.method("SetWorldForTracking", [](G4TransportationManager& a, G4VPhysicalVolume * arg0)->void { a.SetWorldForTracking(arg0); }, jlcxx::arg("this"), jlcxx::arg("theWorld"));
     t.method("SetWorldForTracking", [](G4TransportationManager* a, G4VPhysicalVolume * arg0)->void { a->SetWorldForTracking(arg0); }, jlcxx::arg("this"), jlcxx::arg("theWorld"));
 
-    DEBUG_MSG("Adding wrapper for size_t G4TransportationManager::GetNoActiveNavigators() (" __HERE__ ")");
-    // signature to use in the veto list: size_t G4TransportationManager::GetNoActiveNavigators()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:76:25
-    t.method("GetNoActiveNavigators", [](G4TransportationManager const& a)->size_t { return a.GetNoActiveNavigators(); }, jlcxx::arg("this"));
-    t.method("GetNoActiveNavigators", [](G4TransportationManager const* a)->size_t { return a->GetNoActiveNavigators(); }, jlcxx::arg("this"));
+    DEBUG_MSG("Adding wrapper for std::size_t G4TransportationManager::GetNoActiveNavigators() (" __HERE__ ")");
+    // signature to use in the veto list: std::size_t G4TransportationManager::GetNoActiveNavigators()
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:76:25
+    t.method("GetNoActiveNavigators", [](G4TransportationManager const& a)->std::size_t { return a.GetNoActiveNavigators(); }, jlcxx::arg("this"));
+    t.method("GetNoActiveNavigators", [](G4TransportationManager const* a)->std::size_t { return a->GetNoActiveNavigators(); }, jlcxx::arg("this"));
 
-    DEBUG_MSG("Adding wrapper for size_t G4TransportationManager::GetNoWorlds() (" __HERE__ ")");
-    // signature to use in the veto list: size_t G4TransportationManager::GetNoWorlds()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:80:25
-    t.method("GetNoWorlds", [](G4TransportationManager const& a)->size_t { return a.GetNoWorlds(); }, jlcxx::arg("this"));
-    t.method("GetNoWorlds", [](G4TransportationManager const* a)->size_t { return a->GetNoWorlds(); }, jlcxx::arg("this"));
+    DEBUG_MSG("Adding wrapper for std::size_t G4TransportationManager::GetNoWorlds() (" __HERE__ ")");
+    // signature to use in the veto list: std::size_t G4TransportationManager::GetNoWorlds()
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:80:25
+    t.method("GetNoWorlds", [](G4TransportationManager const& a)->std::size_t { return a.GetNoWorlds(); }, jlcxx::arg("this"));
+    t.method("GetNoWorlds", [](G4TransportationManager const* a)->std::size_t { return a->GetNoWorlds(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4SafetyHelper * G4TransportationManager::GetSafetyHelper() (" __HERE__ ")");
     // signature to use in the veto list: G4SafetyHelper * G4TransportationManager::GetSafetyHelper()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:84:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:84:29
     t.method("GetSafetyHelper", [](G4TransportationManager const& a)->G4SafetyHelper * { return a.GetSafetyHelper(); }, jlcxx::arg("this"));
     t.method("GetSafetyHelper", [](G4TransportationManager const* a)->G4SafetyHelper * { return a->GetSafetyHelper(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4VPhysicalVolume * G4TransportationManager::GetParallelWorld(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4VPhysicalVolume * G4TransportationManager::GetParallelWorld(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:87:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:87:25
     t.method("GetParallelWorld", [](G4TransportationManager& a, const G4String & arg0)->G4VPhysicalVolume * { return a.GetParallelWorld(arg0); }, jlcxx::arg("this"), jlcxx::arg("worldName"));
     t.method("GetParallelWorld", [](G4TransportationManager* a, const G4String & arg0)->G4VPhysicalVolume * { return a->GetParallelWorld(arg0); }, jlcxx::arg("this"), jlcxx::arg("worldName"));
 
     DEBUG_MSG("Adding wrapper for G4VPhysicalVolume * G4TransportationManager::IsWorldExisting(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4VPhysicalVolume * G4TransportationManager::IsWorldExisting(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:91:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:91:25
     t.method("IsWorldExisting", [](G4TransportationManager& a, const G4String & arg0)->G4VPhysicalVolume * { return a.IsWorldExisting(arg0); }, jlcxx::arg("this"), jlcxx::arg("worldName"));
     t.method("IsWorldExisting", [](G4TransportationManager* a, const G4String & arg0)->G4VPhysicalVolume * { return a->IsWorldExisting(arg0); }, jlcxx::arg("this"), jlcxx::arg("worldName"));
 
     DEBUG_MSG("Adding wrapper for G4Navigator * G4TransportationManager::GetNavigator(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4Navigator * G4TransportationManager::GetNavigator(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:95:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:95:19
     t.method("GetNavigator", [](G4TransportationManager& a, const G4String & arg0)->G4Navigator * { return a.GetNavigator(arg0); }, jlcxx::arg("this"), jlcxx::arg("worldName"));
     t.method("GetNavigator", [](G4TransportationManager* a, const G4String & arg0)->G4Navigator * { return a->GetNavigator(arg0); }, jlcxx::arg("this"), jlcxx::arg("worldName"));
 
     DEBUG_MSG("Adding wrapper for G4Navigator * G4TransportationManager::GetNavigator(G4VPhysicalVolume *) (" __HERE__ ")");
     // signature to use in the veto list: G4Navigator * G4TransportationManager::GetNavigator(G4VPhysicalVolume *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:96:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:96:19
     t.method("GetNavigator", [](G4TransportationManager& a, G4VPhysicalVolume * arg0)->G4Navigator * { return a.GetNavigator(arg0); }, jlcxx::arg("this"), jlcxx::arg("aWorld"));
     t.method("GetNavigator", [](G4TransportationManager* a, G4VPhysicalVolume * arg0)->G4Navigator * { return a->GetNavigator(arg0); }, jlcxx::arg("this"), jlcxx::arg("aWorld"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4TransportationManager::RegisterWorld(G4VPhysicalVolume *) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4TransportationManager::RegisterWorld(G4VPhysicalVolume *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:101:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:101:13
     t.method("RegisterWorld", [](G4TransportationManager& a, G4VPhysicalVolume * arg0)->G4bool { return a.RegisterWorld(arg0); }, jlcxx::arg("this"), jlcxx::arg("aWorld"));
     t.method("RegisterWorld", [](G4TransportationManager* a, G4VPhysicalVolume * arg0)->G4bool { return a->RegisterWorld(arg0); }, jlcxx::arg("this"), jlcxx::arg("aWorld"));
 
     DEBUG_MSG("Adding wrapper for void G4TransportationManager::DeRegisterNavigator(G4Navigator *) (" __HERE__ ")");
     // signature to use in the veto list: void G4TransportationManager::DeRegisterNavigator(G4Navigator *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:102:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:102:11
     t.method("DeRegisterNavigator", [](G4TransportationManager& a, G4Navigator * arg0)->void { a.DeRegisterNavigator(arg0); }, jlcxx::arg("this"), jlcxx::arg("aNavigator"));
     t.method("DeRegisterNavigator", [](G4TransportationManager* a, G4Navigator * arg0)->void { a->DeRegisterNavigator(arg0); }, jlcxx::arg("this"), jlcxx::arg("aNavigator"));
 
     DEBUG_MSG("Adding wrapper for G4int G4TransportationManager::ActivateNavigator(G4Navigator *) (" __HERE__ ")");
     // signature to use in the veto list: G4int G4TransportationManager::ActivateNavigator(G4Navigator *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:103:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:103:13
     t.method("ActivateNavigator", [](G4TransportationManager& a, G4Navigator * arg0)->G4int { return a.ActivateNavigator(arg0); }, jlcxx::arg("this"), jlcxx::arg("aNavigator"));
     t.method("ActivateNavigator", [](G4TransportationManager* a, G4Navigator * arg0)->G4int { return a->ActivateNavigator(arg0); }, jlcxx::arg("this"), jlcxx::arg("aNavigator"));
 
     DEBUG_MSG("Adding wrapper for void G4TransportationManager::DeActivateNavigator(G4Navigator *) (" __HERE__ ")");
     // signature to use in the veto list: void G4TransportationManager::DeActivateNavigator(G4Navigator *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:104:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:104:11
     t.method("DeActivateNavigator", [](G4TransportationManager& a, G4Navigator * arg0)->void { a.DeActivateNavigator(arg0); }, jlcxx::arg("this"), jlcxx::arg("aNavigator"));
     t.method("DeActivateNavigator", [](G4TransportationManager* a, G4Navigator * arg0)->void { a->DeActivateNavigator(arg0); }, jlcxx::arg("this"), jlcxx::arg("aNavigator"));
 
     DEBUG_MSG("Adding wrapper for void G4TransportationManager::InactivateAll() (" __HERE__ ")");
     // signature to use in the veto list: void G4TransportationManager::InactivateAll()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:105:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:105:11
     t.method("InactivateAll", [](G4TransportationManager& a)->void { a.InactivateAll(); }, jlcxx::arg("this"));
     t.method("InactivateAll", [](G4TransportationManager* a)->void { a->InactivateAll(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4Navigator * G4TransportationManager::GetFirstTrackingNavigator() (" __HERE__ ")");
     // signature to use in the veto list: G4Navigator * G4TransportationManager::GetFirstTrackingNavigator()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:109:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:109:26
     module_.method("G4TransportationManager!GetFirstTrackingNavigator", []()->G4Navigator * { return G4TransportationManager::GetFirstTrackingNavigator(); });
 
     DEBUG_MSG("Adding wrapper for void G4TransportationManager::SetFirstTrackingNavigator(G4Navigator *) (" __HERE__ ")");
     // signature to use in the veto list: void G4TransportationManager::SetFirstTrackingNavigator(G4Navigator *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:110:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:110:18
     module_.method("G4TransportationManager!SetFirstTrackingNavigator", [](G4Navigator * arg0)->void { G4TransportationManager::SetFirstTrackingNavigator(arg0); }, jlcxx::arg("nav"));
 
     DEBUG_MSG("Adding wrapper for void G4TransportationManager::ClearParallelWorlds() (" __HERE__ ")");
     // signature to use in the veto list: void G4TransportationManager::ClearParallelWorlds()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:118:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:118:11
     t.method("ClearParallelWorlds", [](G4TransportationManager& a)->void { a.ClearParallelWorlds(); }, jlcxx::arg("this"));
     t.method("ClearParallelWorlds", [](G4TransportationManager* a)->void { a->ClearParallelWorlds(); }, jlcxx::arg("this"));
   }

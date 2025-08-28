@@ -17,9 +17,8 @@ struct JlG4Material: public Wrapper {
 
   JlG4Material(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4Material (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:116:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:116:7
     jlcxx::TypeWrapper<G4Material>  t = jlModule.add_type<G4Material>("G4Material");
-    jlcxx::stl::apply_stl<G4Material*>(jlModule);
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4Material>>(new jlcxx::TypeWrapper<G4Material>(jlModule, t));
   }
 
@@ -28,7 +27,7 @@ struct JlG4Material: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4Material::G4Material(const G4String &, G4double, G4double, G4double, G4State, G4double, G4double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:120:3
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:120:3
     t.constructor<const G4String &, G4double, G4double, G4double>(/*finalize=*/jlcxx::finalize_policy::no, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("z"), jlcxx::arg("a"), jlcxx::arg("density")    );
     t.constructor<const G4String &, G4double, G4double, G4double, G4State>(/*finalize=*/jlcxx::finalize_policy::no, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("z"), jlcxx::arg("a"), jlcxx::arg("density"), jlcxx::arg("state")    );
     t.constructor<const G4String &, G4double, G4double, G4double, G4State, G4double>(/*finalize=*/jlcxx::finalize_policy::no, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("z"), jlcxx::arg("a"), jlcxx::arg("density"), jlcxx::arg("state"), jlcxx::arg("temp")    );
@@ -36,7 +35,7 @@ struct JlG4Material: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4Material::G4Material(const G4String &, G4double, G4int, G4State, G4double, G4double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:130:3
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:130:3
     t.constructor<const G4String &, G4double, G4int>(/*finalize=*/jlcxx::finalize_policy::no, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("density"), jlcxx::arg("nComponents")    );
     t.constructor<const G4String &, G4double, G4int, G4State>(/*finalize=*/jlcxx::finalize_policy::no, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("density"), jlcxx::arg("nComponents"), jlcxx::arg("state")    );
     t.constructor<const G4String &, G4double, G4int, G4State, G4double>(/*finalize=*/jlcxx::finalize_policy::no, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("density"), jlcxx::arg("nComponents"), jlcxx::arg("state"), jlcxx::arg("temp")    );
@@ -44,7 +43,7 @@ struct JlG4Material: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4Material::G4Material(const G4String &, G4double, const G4Material *, G4State, G4double, G4double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:138:3
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:138:3
     t.constructor<const G4String &, G4double, const G4Material *>(/*finalize=*/jlcxx::finalize_policy::no, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("density"), jlcxx::arg("baseMaterial")    );
     t.constructor<const G4String &, G4double, const G4Material *, G4State>(/*finalize=*/jlcxx::finalize_policy::no, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("density"), jlcxx::arg("baseMaterial"), jlcxx::arg("state")    );
     t.constructor<const G4String &, G4double, const G4Material *, G4State, G4double>(/*finalize=*/jlcxx::finalize_policy::no, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("density"), jlcxx::arg("baseMaterial"), jlcxx::arg("state"), jlcxx::arg("temp")    );
@@ -52,255 +51,255 @@ struct JlG4Material: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4Material::SetChemicalFormula(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4Material::SetChemicalFormula(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:151:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:151:8
     t.method("SetChemicalFormula", [](G4Material& a, const G4String & arg0)->void { a.SetChemicalFormula(arg0); }, jlcxx::arg("this"), jlcxx::arg("chF"));
     t.method("SetChemicalFormula", [](G4Material* a, const G4String & arg0)->void { a->SetChemicalFormula(arg0); }, jlcxx::arg("this"), jlcxx::arg("chF"));
 
     DEBUG_MSG("Adding wrapper for void G4Material::SetFreeElectronDensity(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4Material::SetFreeElectronDensity(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:152:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:152:8
     t.method("SetFreeElectronDensity", [](G4Material& a, G4double arg0)->void { a.SetFreeElectronDensity(arg0); }, jlcxx::arg("this"), jlcxx::arg("val"));
     t.method("SetFreeElectronDensity", [](G4Material* a, G4double arg0)->void { a->SetFreeElectronDensity(arg0); }, jlcxx::arg("this"), jlcxx::arg("val"));
 
     DEBUG_MSG("Adding wrapper for void G4Material::ComputeDensityEffectOnFly(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4Material::ComputeDensityEffectOnFly(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:153:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:153:8
     t.method("ComputeDensityEffectOnFly", [](G4Material& a, G4bool arg0)->void { a.ComputeDensityEffectOnFly(arg0); }, jlcxx::arg("this"), jlcxx::arg("val"));
     t.method("ComputeDensityEffectOnFly", [](G4Material* a, G4bool arg0)->void { a->ComputeDensityEffectOnFly(arg0); }, jlcxx::arg("this"), jlcxx::arg("val"));
 
     DEBUG_MSG("Adding wrapper for void G4Material::AddElementByNumberOfAtoms(const G4Element *, G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4Material::AddElementByNumberOfAtoms(const G4Element *, G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:159:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:159:8
     t.method("AddElementByNumberOfAtoms", [](G4Material& a, const G4Element * arg0, G4int arg1)->void { a.AddElementByNumberOfAtoms(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("elm"), jlcxx::arg("nAtoms"));
     t.method("AddElementByNumberOfAtoms", [](G4Material* a, const G4Element * arg0, G4int arg1)->void { a->AddElementByNumberOfAtoms(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("elm"), jlcxx::arg("nAtoms"));
 
     DEBUG_MSG("Adding wrapper for void G4Material::AddElement(G4Element *, G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4Material::AddElement(G4Element *, G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:160:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:160:15
     t.method("AddElement", [](G4Material& a, G4Element * arg0, G4int arg1)->void { a.AddElement(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("elm"), jlcxx::arg("nAtoms"));
     t.method("AddElement", [](G4Material* a, G4Element * arg0, G4int arg1)->void { a->AddElement(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("elm"), jlcxx::arg("nAtoms"));
 
     DEBUG_MSG("Adding wrapper for void G4Material::AddElementByMassFraction(const G4Element *, G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4Material::AddElementByMassFraction(const G4Element *, G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:163:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:163:8
     t.method("AddElementByMassFraction", [](G4Material& a, const G4Element * arg0, G4double arg1)->void { a.AddElementByMassFraction(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("elm"), jlcxx::arg("fraction"));
     t.method("AddElementByMassFraction", [](G4Material* a, const G4Element * arg0, G4double arg1)->void { a->AddElementByMassFraction(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("elm"), jlcxx::arg("fraction"));
 
     DEBUG_MSG("Adding wrapper for void G4Material::AddElement(G4Element *, G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4Material::AddElement(G4Element *, G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:164:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:164:15
     t.method("AddElement", [](G4Material& a, G4Element * arg0, G4double arg1)->void { a.AddElement(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("elm"), jlcxx::arg("frac"));
     t.method("AddElement", [](G4Material* a, G4Element * arg0, G4double arg1)->void { a->AddElement(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("elm"), jlcxx::arg("frac"));
 
     DEBUG_MSG("Adding wrapper for void G4Material::AddMaterial(G4Material *, G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4Material::AddMaterial(G4Material *, G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:166:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:166:8
     t.method("AddMaterial", [](G4Material& a, G4Material * arg0, G4double arg1)->void { a.AddMaterial(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("material"), jlcxx::arg("fraction"));
     t.method("AddMaterial", [](G4Material* a, G4Material * arg0, G4double arg1)->void { a->AddMaterial(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("material"), jlcxx::arg("fraction"));
 
     DEBUG_MSG("Adding wrapper for const G4String & G4Material::GetName() (" __HERE__ ")");
     // signature to use in the veto list: const G4String & G4Material::GetName()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:171:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:171:26
     t.method("GetName", [](G4Material const& a)->const G4String & { return a.GetName(); }, jlcxx::arg("this"));
     t.method("GetName", [](G4Material const* a)->const G4String & { return a->GetName(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4String & G4Material::GetChemicalFormula() (" __HERE__ ")");
     // signature to use in the veto list: const G4String & G4Material::GetChemicalFormula()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:172:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:172:26
     t.method("GetChemicalFormula", [](G4Material const& a)->const G4String & { return a.GetChemicalFormula(); }, jlcxx::arg("this"));
     t.method("GetChemicalFormula", [](G4Material const* a)->const G4String & { return a->GetChemicalFormula(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Material::GetFreeElectronDensity() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Material::GetFreeElectronDensity()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:173:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:173:19
     t.method("GetFreeElectronDensity", [](G4Material const& a)->G4double { return a.GetFreeElectronDensity(); }, jlcxx::arg("this"));
     t.method("GetFreeElectronDensity", [](G4Material const* a)->G4double { return a->GetFreeElectronDensity(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Material::GetDensity() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Material::GetDensity()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:174:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:174:19
     t.method("GetDensity", [](G4Material const& a)->G4double { return a.GetDensity(); }, jlcxx::arg("this"));
     t.method("GetDensity", [](G4Material const* a)->G4double { return a->GetDensity(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4State G4Material::GetState() (" __HERE__ ")");
     // signature to use in the veto list: G4State G4Material::GetState()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:175:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:175:18
     t.method("GetState", [](G4Material const& a)->G4State { return a.GetState(); }, jlcxx::arg("this"));
     t.method("GetState", [](G4Material const* a)->G4State { return a->GetState(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Material::GetTemperature() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Material::GetTemperature()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:176:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:176:19
     t.method("GetTemperature", [](G4Material const& a)->G4double { return a.GetTemperature(); }, jlcxx::arg("this"));
     t.method("GetTemperature", [](G4Material const* a)->G4double { return a->GetTemperature(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Material::GetPressure() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Material::GetPressure()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:177:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:177:19
     t.method("GetPressure", [](G4Material const& a)->G4double { return a.GetPressure(); }, jlcxx::arg("this"));
     t.method("GetPressure", [](G4Material const* a)->G4double { return a->GetPressure(); }, jlcxx::arg("this"));
 
-    DEBUG_MSG("Adding wrapper for size_t G4Material::GetNumberOfElements() (" __HERE__ ")");
-    // signature to use in the veto list: size_t G4Material::GetNumberOfElements()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:180:22
-    t.method("GetNumberOfElements", [](G4Material const& a)->size_t { return a.GetNumberOfElements(); }, jlcxx::arg("this"));
-    t.method("GetNumberOfElements", [](G4Material const* a)->size_t { return a->GetNumberOfElements(); }, jlcxx::arg("this"));
+    DEBUG_MSG("Adding wrapper for std::size_t G4Material::GetNumberOfElements() (" __HERE__ ")");
+    // signature to use in the veto list: std::size_t G4Material::GetNumberOfElements()
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:180:22
+    t.method("GetNumberOfElements", [](G4Material const& a)->std::size_t { return a.GetNumberOfElements(); }, jlcxx::arg("this"));
+    t.method("GetNumberOfElements", [](G4Material const* a)->std::size_t { return a->GetNumberOfElements(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4ElementVector * G4Material::GetElementVector() (" __HERE__ ")");
     // signature to use in the veto list: const G4ElementVector * G4Material::GetElementVector()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:183:33
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:183:33
     t.method("GetElementVector", [](G4Material const& a)->const G4ElementVector * { return a.GetElementVector(); }, jlcxx::arg("this"));
     t.method("GetElementVector", [](G4Material const* a)->const G4ElementVector * { return a->GetElementVector(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4double * G4Material::GetFractionVector() (" __HERE__ ")");
     // signature to use in the veto list: const G4double * G4Material::GetFractionVector()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:186:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:186:26
     t.method("GetFractionVector", [](G4Material const& a)->const G4double * { return a.GetFractionVector(); }, jlcxx::arg("this"));
     t.method("GetFractionVector", [](G4Material const* a)->const G4double * { return a->GetFractionVector(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4int * G4Material::GetAtomsVector() (" __HERE__ ")");
     // signature to use in the veto list: const G4int * G4Material::GetAtomsVector()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:189:23
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:189:23
     t.method("GetAtomsVector", [](G4Material const& a)->const G4int * { return a.GetAtomsVector(); }, jlcxx::arg("this"));
     t.method("GetAtomsVector", [](G4Material const* a)->const G4int * { return a->GetAtomsVector(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4Element * G4Material::GetElement(G4int) (" __HERE__ ")");
     // signature to use in the veto list: const G4Element * G4Material::GetElement(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:192:27
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:192:27
     t.method("GetElement", [](G4Material const& a, G4int arg0)->const G4Element * { return a.GetElement(arg0); }, jlcxx::arg("this"), jlcxx::arg("iel"));
     t.method("GetElement", [](G4Material const* a, G4int arg0)->const G4Element * { return a->GetElement(arg0); }, jlcxx::arg("this"), jlcxx::arg("iel"));
 
     DEBUG_MSG("Adding wrapper for const G4double * G4Material::GetVecNbOfAtomsPerVolume() (" __HERE__ ")");
     // signature to use in the veto list: const G4double * G4Material::GetVecNbOfAtomsPerVolume()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:195:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:195:26
     t.method("GetVecNbOfAtomsPerVolume", [](G4Material const& a)->const G4double * { return a.GetVecNbOfAtomsPerVolume(); }, jlcxx::arg("this"));
     t.method("GetVecNbOfAtomsPerVolume", [](G4Material const* a)->const G4double * { return a->GetVecNbOfAtomsPerVolume(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Material::GetTotNbOfAtomsPerVolume() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Material::GetTotNbOfAtomsPerVolume()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:197:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:197:19
     t.method("GetTotNbOfAtomsPerVolume", [](G4Material const& a)->G4double { return a.GetTotNbOfAtomsPerVolume(); }, jlcxx::arg("this"));
     t.method("GetTotNbOfAtomsPerVolume", [](G4Material const* a)->G4double { return a->GetTotNbOfAtomsPerVolume(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Material::GetTotNbOfElectPerVolume() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Material::GetTotNbOfElectPerVolume()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:199:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:199:19
     t.method("GetTotNbOfElectPerVolume", [](G4Material const& a)->G4double { return a.GetTotNbOfElectPerVolume(); }, jlcxx::arg("this"));
     t.method("GetTotNbOfElectPerVolume", [](G4Material const* a)->G4double { return a->GetTotNbOfElectPerVolume(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4double * G4Material::GetAtomicNumDensityVector() (" __HERE__ ")");
     // signature to use in the veto list: const G4double * G4Material::GetAtomicNumDensityVector()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:202:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:202:26
     t.method("GetAtomicNumDensityVector", [](G4Material const& a)->const G4double * { return a.GetAtomicNumDensityVector(); }, jlcxx::arg("this"));
     t.method("GetAtomicNumDensityVector", [](G4Material const* a)->const G4double * { return a->GetAtomicNumDensityVector(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Material::GetElectronDensity() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Material::GetElectronDensity()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:203:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:203:19
     t.method("GetElectronDensity", [](G4Material const& a)->G4double { return a.GetElectronDensity(); }, jlcxx::arg("this"));
     t.method("GetElectronDensity", [](G4Material const* a)->G4double { return a->GetElectronDensity(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Material::GetRadlen() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Material::GetRadlen()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:206:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:206:19
     t.method("GetRadlen", [](G4Material const& a)->G4double { return a.GetRadlen(); }, jlcxx::arg("this"));
     t.method("GetRadlen", [](G4Material const* a)->G4double { return a->GetRadlen(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Material::GetNuclearInterLength() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Material::GetNuclearInterLength()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:209:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:209:19
     t.method("GetNuclearInterLength", [](G4Material const& a)->G4double { return a.GetNuclearInterLength(); }, jlcxx::arg("this"));
     t.method("GetNuclearInterLength", [](G4Material const* a)->G4double { return a->GetNuclearInterLength(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4IonisParamMat * G4Material::GetIonisation() (" __HERE__ ")");
     // signature to use in the veto list: G4IonisParamMat * G4Material::GetIonisation()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:212:27
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:212:27
     t.method("GetIonisation", [](G4Material const& a)->G4IonisParamMat * { return a.GetIonisation(); }, jlcxx::arg("this"));
     t.method("GetIonisation", [](G4Material const* a)->G4IonisParamMat * { return a->GetIonisation(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4SandiaTable * G4Material::GetSandiaTable() (" __HERE__ ")");
     // signature to use in the veto list: G4SandiaTable * G4Material::GetSandiaTable()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:215:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:215:25
     t.method("GetSandiaTable", [](G4Material const& a)->G4SandiaTable * { return a.GetSandiaTable(); }, jlcxx::arg("this"));
     t.method("GetSandiaTable", [](G4Material const* a)->G4SandiaTable * { return a->GetSandiaTable(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4Material * G4Material::GetBaseMaterial() (" __HERE__ ")");
     // signature to use in the veto list: const G4Material * G4Material::GetBaseMaterial()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:218:28
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:218:28
     t.method("GetBaseMaterial", [](G4Material const& a)->const G4Material * { return a.GetBaseMaterial(); }, jlcxx::arg("this"));
     t.method("GetBaseMaterial", [](G4Material const* a)->const G4Material * { return a->GetBaseMaterial(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Material::GetMassOfMolecule() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Material::GetMassOfMolecule()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:224:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:224:19
     t.method("GetMassOfMolecule", [](G4Material const& a)->G4double { return a.GetMassOfMolecule(); }, jlcxx::arg("this"));
     t.method("GetMassOfMolecule", [](G4Material const* a)->G4double { return a->GetMassOfMolecule(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Material::GetZ() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Material::GetZ()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:227:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:227:12
     t.method("GetZ", [](G4Material const& a)->G4double { return a.GetZ(); }, jlcxx::arg("this"));
     t.method("GetZ", [](G4Material const* a)->G4double { return a->GetZ(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Material::GetA() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Material::GetA()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:228:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:228:12
     t.method("GetA", [](G4Material const& a)->G4double { return a.GetA(); }, jlcxx::arg("this"));
     t.method("GetA", [](G4Material const* a)->G4double { return a->GetA(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4Material::SetMaterialPropertiesTable(G4MaterialPropertiesTable *) (" __HERE__ ")");
     // signature to use in the veto list: void G4Material::SetMaterialPropertiesTable(G4MaterialPropertiesTable *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:231:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:231:8
     t.method("SetMaterialPropertiesTable", [](G4Material& a, G4MaterialPropertiesTable * arg0)->void { a.SetMaterialPropertiesTable(arg0); }, jlcxx::arg("this"), jlcxx::arg("anMPT"));
     t.method("SetMaterialPropertiesTable", [](G4Material* a, G4MaterialPropertiesTable * arg0)->void { a->SetMaterialPropertiesTable(arg0); }, jlcxx::arg("this"), jlcxx::arg("anMPT"));
 
     DEBUG_MSG("Adding wrapper for G4MaterialPropertiesTable * G4Material::GetMaterialPropertiesTable() (" __HERE__ ")");
     // signature to use in the veto list: G4MaterialPropertiesTable * G4Material::GetMaterialPropertiesTable()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:233:37
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:233:37
     t.method("GetMaterialPropertiesTable", [](G4Material const& a)->G4MaterialPropertiesTable * { return a.GetMaterialPropertiesTable(); }, jlcxx::arg("this"));
     t.method("GetMaterialPropertiesTable", [](G4Material const* a)->G4MaterialPropertiesTable * { return a->GetMaterialPropertiesTable(); }, jlcxx::arg("this"));
 
-    DEBUG_MSG("Adding wrapper for size_t G4Material::GetIndex() (" __HERE__ ")");
-    // signature to use in the veto list: size_t G4Material::GetIndex()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:239:22
-    t.method("GetIndex", [](G4Material const& a)->size_t { return a.GetIndex(); }, jlcxx::arg("this"));
-    t.method("GetIndex", [](G4Material const* a)->size_t { return a->GetIndex(); }, jlcxx::arg("this"));
+    DEBUG_MSG("Adding wrapper for std::size_t G4Material::GetIndex() (" __HERE__ ")");
+    // signature to use in the veto list: std::size_t G4Material::GetIndex()
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:239:22
+    t.method("GetIndex", [](G4Material const& a)->std::size_t { return a.GetIndex(); }, jlcxx::arg("this"));
+    t.method("GetIndex", [](G4Material const* a)->std::size_t { return a->GetIndex(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4MaterialTable * G4Material::GetMaterialTable() (" __HERE__ ")");
     // signature to use in the veto list: G4MaterialTable * G4Material::GetMaterialTable()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:242:27
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:242:27
     module_.method("G4Material!GetMaterialTable", []()->G4MaterialTable * { return G4Material::GetMaterialTable(); });
 
-    DEBUG_MSG("Adding wrapper for size_t G4Material::GetNumberOfMaterials() (" __HERE__ ")");
-    // signature to use in the veto list: size_t G4Material::GetNumberOfMaterials()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:244:22
-    module_.method("G4Material!GetNumberOfMaterials", []()->size_t { return G4Material::GetNumberOfMaterials(); });
+    DEBUG_MSG("Adding wrapper for std::size_t G4Material::GetNumberOfMaterials() (" __HERE__ ")");
+    // signature to use in the veto list: std::size_t G4Material::GetNumberOfMaterials()
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:244:22
+    module_.method("G4Material!GetNumberOfMaterials", []()->std::size_t { return G4Material::GetNumberOfMaterials(); });
 
     DEBUG_MSG("Adding wrapper for G4Material * G4Material::GetMaterial(const G4String &, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: G4Material * G4Material::GetMaterial(const G4String &, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:247:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:247:22
     module_.method("G4Material!GetMaterial", [](const G4String & arg0)->G4Material * { return G4Material::GetMaterial(arg0); }, jlcxx::arg("name"));
     module_.method("G4Material!GetMaterial", [](const G4String & arg0, G4bool arg1)->G4Material * { return G4Material::GetMaterial(arg0, arg1); }, jlcxx::arg("name"), jlcxx::arg("warning"));
 
     DEBUG_MSG("Adding wrapper for G4Material * G4Material::GetMaterial(G4double, G4double, G4double) (" __HERE__ ")");
     // signature to use in the veto list: G4Material * G4Material::GetMaterial(G4double, G4double, G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:250:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:250:22
     module_.method("G4Material!GetMaterial", [](G4double arg0, G4double arg1, G4double arg2)->G4Material * { return G4Material::GetMaterial(arg0, arg1, arg2); }, jlcxx::arg("z"), jlcxx::arg("a"), jlcxx::arg("dens"));
 
-    DEBUG_MSG("Adding wrapper for G4Material * G4Material::GetMaterial(size_t, G4double) (" __HERE__ ")");
-    // signature to use in the veto list: G4Material * G4Material::GetMaterial(size_t, G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:253:22
-    module_.method("G4Material!GetMaterial", [](size_t arg0, G4double arg1)->G4Material * { return G4Material::GetMaterial(arg0, arg1); }, jlcxx::arg("nComp"), jlcxx::arg("dens"));
+    DEBUG_MSG("Adding wrapper for G4Material * G4Material::GetMaterial(std::size_t, G4double) (" __HERE__ ")");
+    // signature to use in the veto list: G4Material * G4Material::GetMaterial(std::size_t, G4double)
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:253:22
+    module_.method("G4Material!GetMaterial", [](std::size_t arg0, G4double arg1)->G4Material * { return G4Material::GetMaterial(arg0, arg1); }, jlcxx::arg("nComp"), jlcxx::arg("dens"));
 
     DEBUG_MSG("Adding wrapper for void G4Material::SetName(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4Material::SetName(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:260:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:260:15
     t.method("SetName", [](G4Material& a, const G4String & arg0)->void { a.SetName(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
     t.method("SetName", [](G4Material* a, const G4String & arg0)->void { a->SetName(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4Material::IsExtended() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4Material::IsExtended()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:262:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:262:18
     t.method("IsExtended", [](G4Material const& a)->G4bool { return a.IsExtended(); }, jlcxx::arg("this"));
     t.method("IsExtended", [](G4Material const* a)->G4bool { return a->IsExtended(); }, jlcxx::arg("this"));
   }

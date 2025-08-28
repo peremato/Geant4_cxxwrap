@@ -17,7 +17,7 @@ struct JlG4UserLimits: public Wrapper {
 
   JlG4UserLimits(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4UserLimits (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserLimits.hh:52:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserLimits.hh:52:7
     jlcxx::TypeWrapper<G4UserLimits>  t = jlModule.add_type<G4UserLimits>("G4UserLimits");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4UserLimits>>(new jlcxx::TypeWrapper<G4UserLimits>(jlModule, t));
   }
@@ -28,7 +28,7 @@ struct JlG4UserLimits: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4UserLimits::G4UserLimits(G4double, G4double, G4double, G4double, G4double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserLimits.hh:55:3
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserLimits.hh:55:3
     t.constructor<G4double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("ustepMax")    );
     t.constructor<G4double, G4double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("ustepMax"), jlcxx::arg("utrakMax")    );
     t.constructor<G4double, G4double, G4double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("ustepMax"), jlcxx::arg("utrakMax"), jlcxx::arg("utimeMax")    );
@@ -37,7 +37,7 @@ struct JlG4UserLimits: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4UserLimits::G4UserLimits(const G4String &, G4double, G4double, G4double, G4double, G4double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserLimits.hh:58:3
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserLimits.hh:58:3
     t.constructor<const G4String &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("type")    );
     t.constructor<const G4String &, G4double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("type"), jlcxx::arg("ustepMax")    );
     t.constructor<const G4String &, G4double, G4double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("type"), jlcxx::arg("ustepMax"), jlcxx::arg("utrakMax")    );
@@ -47,73 +47,73 @@ struct JlG4UserLimits: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4double G4UserLimits::GetMaxAllowedStep(const G4Track &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4UserLimits::GetMaxAllowedStep(const G4Track &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserLimits.hh:63:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserLimits.hh:63:20
     t.method("GetMaxAllowedStep", [](G4UserLimits& a, const G4Track & arg0)->G4double { return a.GetMaxAllowedStep(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("GetMaxAllowedStep", [](G4UserLimits* a, const G4Track & arg0)->G4double { return a->GetMaxAllowedStep(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4double G4UserLimits::GetUserMaxTrackLength(const G4Track &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4UserLimits::GetUserMaxTrackLength(const G4Track &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserLimits.hh:67:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserLimits.hh:67:20
     t.method("GetUserMaxTrackLength", [](G4UserLimits& a, const G4Track & arg0)->G4double { return a.GetUserMaxTrackLength(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("GetUserMaxTrackLength", [](G4UserLimits* a, const G4Track & arg0)->G4double { return a->GetUserMaxTrackLength(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4double G4UserLimits::GetUserMaxTime(const G4Track &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4UserLimits::GetUserMaxTime(const G4Track &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserLimits.hh:68:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserLimits.hh:68:20
     t.method("GetUserMaxTime", [](G4UserLimits& a, const G4Track & arg0)->G4double { return a.GetUserMaxTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("GetUserMaxTime", [](G4UserLimits* a, const G4Track & arg0)->G4double { return a->GetUserMaxTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4double G4UserLimits::GetUserMinEkine(const G4Track &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4UserLimits::GetUserMinEkine(const G4Track &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserLimits.hh:69:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserLimits.hh:69:20
     t.method("GetUserMinEkine", [](G4UserLimits& a, const G4Track & arg0)->G4double { return a.GetUserMinEkine(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("GetUserMinEkine", [](G4UserLimits* a, const G4Track & arg0)->G4double { return a->GetUserMinEkine(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4double G4UserLimits::GetUserMinRange(const G4Track &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4UserLimits::GetUserMinRange(const G4Track &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserLimits.hh:70:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserLimits.hh:70:20
     t.method("GetUserMinRange", [](G4UserLimits& a, const G4Track & arg0)->G4double { return a.GetUserMinRange(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("GetUserMinRange", [](G4UserLimits* a, const G4Track & arg0)->G4double { return a->GetUserMinRange(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4UserLimits::SetMaxAllowedStep(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4UserLimits::SetMaxAllowedStep(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserLimits.hh:72:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserLimits.hh:72:16
     t.method("SetMaxAllowedStep", [](G4UserLimits& a, G4double arg0)->void { a.SetMaxAllowedStep(arg0); }, jlcxx::arg("this"), jlcxx::arg("ustepMax"));
     t.method("SetMaxAllowedStep", [](G4UserLimits* a, G4double arg0)->void { a->SetMaxAllowedStep(arg0); }, jlcxx::arg("this"), jlcxx::arg("ustepMax"));
 
     DEBUG_MSG("Adding wrapper for void G4UserLimits::SetUserMaxTrackLength(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4UserLimits::SetUserMaxTrackLength(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserLimits.hh:73:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserLimits.hh:73:16
     t.method("SetUserMaxTrackLength", [](G4UserLimits& a, G4double arg0)->void { a.SetUserMaxTrackLength(arg0); }, jlcxx::arg("this"), jlcxx::arg("utrakMax"));
     t.method("SetUserMaxTrackLength", [](G4UserLimits* a, G4double arg0)->void { a->SetUserMaxTrackLength(arg0); }, jlcxx::arg("this"), jlcxx::arg("utrakMax"));
 
     DEBUG_MSG("Adding wrapper for void G4UserLimits::SetUserMaxTime(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4UserLimits::SetUserMaxTime(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserLimits.hh:74:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserLimits.hh:74:16
     t.method("SetUserMaxTime", [](G4UserLimits& a, G4double arg0)->void { a.SetUserMaxTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("utimeMax"));
     t.method("SetUserMaxTime", [](G4UserLimits* a, G4double arg0)->void { a->SetUserMaxTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("utimeMax"));
 
     DEBUG_MSG("Adding wrapper for void G4UserLimits::SetUserMinEkine(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4UserLimits::SetUserMinEkine(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserLimits.hh:75:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserLimits.hh:75:16
     t.method("SetUserMinEkine", [](G4UserLimits& a, G4double arg0)->void { a.SetUserMinEkine(arg0); }, jlcxx::arg("this"), jlcxx::arg("uekinMin"));
     t.method("SetUserMinEkine", [](G4UserLimits* a, G4double arg0)->void { a->SetUserMinEkine(arg0); }, jlcxx::arg("this"), jlcxx::arg("uekinMin"));
 
     DEBUG_MSG("Adding wrapper for void G4UserLimits::SetUserMinRange(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4UserLimits::SetUserMinRange(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserLimits.hh:76:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserLimits.hh:76:16
     t.method("SetUserMinRange", [](G4UserLimits& a, G4double arg0)->void { a.SetUserMinRange(arg0); }, jlcxx::arg("this"), jlcxx::arg("urangMin"));
     t.method("SetUserMinRange", [](G4UserLimits* a, G4double arg0)->void { a->SetUserMinRange(arg0); }, jlcxx::arg("this"), jlcxx::arg("urangMin"));
 
     DEBUG_MSG("Adding wrapper for const G4String & G4UserLimits::GetType() (" __HERE__ ")");
     // signature to use in the veto list: const G4String & G4UserLimits::GetType()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserLimits.hh:78:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserLimits.hh:78:19
     t.method("GetType", [](G4UserLimits const& a)->const G4String & { return a.GetType(); }, jlcxx::arg("this"));
     t.method("GetType", [](G4UserLimits const* a)->const G4String & { return a->GetType(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4UserLimits::SetType(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4UserLimits::SetType(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserLimits.hh:79:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserLimits.hh:79:8
     t.method("SetType", [](G4UserLimits& a, const G4String & arg0)->void { a.SetType(arg0); }, jlcxx::arg("this"), jlcxx::arg("type"));
     t.method("SetType", [](G4UserLimits* a, const G4String & arg0)->void { a->SetType(arg0); }, jlcxx::arg("this"), jlcxx::arg("type"));
   }

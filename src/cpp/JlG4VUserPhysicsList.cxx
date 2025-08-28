@@ -17,7 +17,7 @@ struct JlG4VUserPhysicsList: public Wrapper {
 
   JlG4VUserPhysicsList(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4VUserPhysicsList (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:103:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:103:7
     jlcxx::TypeWrapper<G4VUserPhysicsList>  t = jlModule.add_type<G4VUserPhysicsList>("G4VUserPhysicsList");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4VUserPhysicsList>>(new jlcxx::TypeWrapper<G4VUserPhysicsList>(jlModule, t));
   }
@@ -28,67 +28,67 @@ struct JlG4VUserPhysicsList: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4VUserPhysicsList & G4VUserPhysicsList::operator=(const G4VUserPhysicsList &) (" __HERE__ ")");
     // signature to use in the veto list: G4VUserPhysicsList & G4VUserPhysicsList::operator=(const G4VUserPhysicsList &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:109:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:109:25
     t.method("assign", [](G4VUserPhysicsList& a, const G4VUserPhysicsList & arg0)->G4VUserPhysicsList & { return a.operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("assign", [](G4VUserPhysicsList* a, const G4VUserPhysicsList & arg0)->G4VUserPhysicsList & { return a->operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::ConstructParticle() (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::ConstructParticle()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:113:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:113:18
     t.method("ConstructParticle", [](G4VUserPhysicsList& a)->void { a.ConstructParticle(); }, jlcxx::arg("this"));
     t.method("ConstructParticle", [](G4VUserPhysicsList* a)->void { a->ConstructParticle(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::Construct() (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::Construct()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:117:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:117:10
     t.method("Construct", [](G4VUserPhysicsList& a)->void { a.Construct(); }, jlcxx::arg("this"));
     t.method("Construct", [](G4VUserPhysicsList* a)->void { a->Construct(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::ConstructProcess() (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::ConstructProcess()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:122:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:122:18
     t.method("ConstructProcess", [](G4VUserPhysicsList& a)->void { a.ConstructProcess(); }, jlcxx::arg("this"));
     t.method("ConstructProcess", [](G4VUserPhysicsList* a)->void { a->ConstructProcess(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::SetCuts() (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::SetCuts()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:125:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:125:18
     t.method("SetCuts", [](G4VUserPhysicsList& a)->void { a.SetCuts(); }, jlcxx::arg("this"));
     t.method("SetCuts", [](G4VUserPhysicsList* a)->void { a->SetCuts(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::SetDefaultCutValue(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::SetDefaultCutValue(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:130:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:130:10
     t.method("SetDefaultCutValue", [](G4VUserPhysicsList& a, G4double arg0)->void { a.SetDefaultCutValue(arg0); }, jlcxx::arg("this"), jlcxx::arg("newCutValue"));
     t.method("SetDefaultCutValue", [](G4VUserPhysicsList* a, G4double arg0)->void { a->SetDefaultCutValue(arg0); }, jlcxx::arg("this"), jlcxx::arg("newCutValue"));
 
     DEBUG_MSG("Adding wrapper for G4double G4VUserPhysicsList::GetDefaultCutValue() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4VUserPhysicsList::GetDefaultCutValue()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:131:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:131:14
     t.method("GetDefaultCutValue", [](G4VUserPhysicsList const& a)->G4double { return a.GetDefaultCutValue(); }, jlcxx::arg("this"));
     t.method("GetDefaultCutValue", [](G4VUserPhysicsList const* a)->G4double { return a->GetDefaultCutValue(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::BuildPhysicsTable() (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::BuildPhysicsTable()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:136:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:136:10
     t.method("BuildPhysicsTable", [](G4VUserPhysicsList& a)->void { a.BuildPhysicsTable(); }, jlcxx::arg("this"));
     t.method("BuildPhysicsTable", [](G4VUserPhysicsList* a)->void { a->BuildPhysicsTable(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::PreparePhysicsTable(G4ParticleDefinition *) (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::PreparePhysicsTable(G4ParticleDefinition *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:139:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:139:10
     t.method("PreparePhysicsTable", [](G4VUserPhysicsList& a, G4ParticleDefinition * arg0)->void { a.PreparePhysicsTable(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("PreparePhysicsTable", [](G4VUserPhysicsList* a, G4ParticleDefinition * arg0)->void { a->PreparePhysicsTable(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::BuildPhysicsTable(G4ParticleDefinition *) (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::BuildPhysicsTable(G4ParticleDefinition *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:142:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:142:10
     t.method("BuildPhysicsTable", [](G4VUserPhysicsList& a, G4ParticleDefinition * arg0)->void { a.BuildPhysicsTable(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("BuildPhysicsTable", [](G4VUserPhysicsList* a, G4ParticleDefinition * arg0)->void { a->BuildPhysicsTable(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4VUserPhysicsList::StorePhysicsTable(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VUserPhysicsList::StorePhysicsTable(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:147:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:147:12
     t.method("StorePhysicsTable", [](G4VUserPhysicsList& a)->G4bool { return a.StorePhysicsTable(); }, jlcxx::arg("this"));
     t.method("StorePhysicsTable", [](G4VUserPhysicsList& a, const G4String & arg0)->G4bool { return a.StorePhysicsTable(arg0); }, jlcxx::arg("this"), jlcxx::arg("directory"));
     t.method("StorePhysicsTable", [](G4VUserPhysicsList* a)->G4bool { return a->StorePhysicsTable(); }, jlcxx::arg("this"));
@@ -96,25 +96,25 @@ struct JlG4VUserPhysicsList: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4bool G4VUserPhysicsList::IsPhysicsTableRetrieved() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VUserPhysicsList::IsPhysicsTableRetrieved()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:151:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:151:12
     t.method("IsPhysicsTableRetrieved", [](G4VUserPhysicsList const& a)->G4bool { return a.IsPhysicsTableRetrieved(); }, jlcxx::arg("this"));
     t.method("IsPhysicsTableRetrieved", [](G4VUserPhysicsList const* a)->G4bool { return a->IsPhysicsTableRetrieved(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4VUserPhysicsList::IsStoredInAscii() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VUserPhysicsList::IsStoredInAscii()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:152:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:152:12
     t.method("IsStoredInAscii", [](G4VUserPhysicsList const& a)->G4bool { return a.IsStoredInAscii(); }, jlcxx::arg("this"));
     t.method("IsStoredInAscii", [](G4VUserPhysicsList const* a)->G4bool { return a->IsStoredInAscii(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4String & G4VUserPhysicsList::GetPhysicsTableDirectory() (" __HERE__ ")");
     // signature to use in the veto list: const G4String & G4VUserPhysicsList::GetPhysicsTableDirectory()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:155:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:155:21
     t.method("GetPhysicsTableDirectory", [](G4VUserPhysicsList const& a)->const G4String & { return a.GetPhysicsTableDirectory(); }, jlcxx::arg("this"));
     t.method("GetPhysicsTableDirectory", [](G4VUserPhysicsList const* a)->const G4String & { return a->GetPhysicsTableDirectory(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::SetPhysicsTableRetrieved(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::SetPhysicsTableRetrieved(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:160:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:160:10
     t.method("SetPhysicsTableRetrieved", [](G4VUserPhysicsList& a)->void { a.SetPhysicsTableRetrieved(); }, jlcxx::arg("this"), jlcxx::arg("directory"));
     t.method("SetPhysicsTableRetrieved", [](G4VUserPhysicsList& a, const G4String & arg0)->void { a.SetPhysicsTableRetrieved(arg0); }, jlcxx::arg("this"), jlcxx::arg("directory"));
     t.method("SetPhysicsTableRetrieved", [](G4VUserPhysicsList* a)->void { a->SetPhysicsTableRetrieved(); }, jlcxx::arg("this"), jlcxx::arg("directory"));
@@ -122,31 +122,31 @@ struct JlG4VUserPhysicsList: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::SetStoredInAscii() (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::SetStoredInAscii()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:161:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:161:10
     t.method("SetStoredInAscii", [](G4VUserPhysicsList& a)->void { a.SetStoredInAscii(); }, jlcxx::arg("this"));
     t.method("SetStoredInAscii", [](G4VUserPhysicsList* a)->void { a->SetStoredInAscii(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::ResetPhysicsTableRetrieved() (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::ResetPhysicsTableRetrieved()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:164:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:164:10
     t.method("ResetPhysicsTableRetrieved", [](G4VUserPhysicsList& a)->void { a.ResetPhysicsTableRetrieved(); }, jlcxx::arg("this"));
     t.method("ResetPhysicsTableRetrieved", [](G4VUserPhysicsList* a)->void { a->ResetPhysicsTableRetrieved(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::ResetStoredInAscii() (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::ResetStoredInAscii()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:165:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:165:10
     t.method("ResetStoredInAscii", [](G4VUserPhysicsList& a)->void { a.ResetStoredInAscii(); }, jlcxx::arg("this"));
     t.method("ResetStoredInAscii", [](G4VUserPhysicsList* a)->void { a->ResetStoredInAscii(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::DumpList() (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::DumpList()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:168:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:168:10
     t.method("DumpList", [](G4VUserPhysicsList const& a)->void { a.DumpList(); }, jlcxx::arg("this"));
     t.method("DumpList", [](G4VUserPhysicsList const* a)->void { a->DumpList(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::DumpCutValuesTable(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::DumpCutValuesTable(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:172:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:172:10
     t.method("DumpCutValuesTable", [](G4VUserPhysicsList& a)->void { a.DumpCutValuesTable(); }, jlcxx::arg("this"), jlcxx::arg("flag"));
     t.method("DumpCutValuesTable", [](G4VUserPhysicsList& a, G4int arg0)->void { a.DumpCutValuesTable(arg0); }, jlcxx::arg("this"), jlcxx::arg("flag"));
     t.method("DumpCutValuesTable", [](G4VUserPhysicsList* a)->void { a->DumpCutValuesTable(); }, jlcxx::arg("this"), jlcxx::arg("flag"));
@@ -154,25 +154,25 @@ struct JlG4VUserPhysicsList: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::DumpCutValuesTableIfRequested() (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::DumpCutValuesTableIfRequested()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:176:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:176:10
     t.method("DumpCutValuesTableIfRequested", [](G4VUserPhysicsList& a)->void { a.DumpCutValuesTableIfRequested(); }, jlcxx::arg("this"));
     t.method("DumpCutValuesTableIfRequested", [](G4VUserPhysicsList* a)->void { a->DumpCutValuesTableIfRequested(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::SetVerboseLevel(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::SetVerboseLevel(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:182:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:182:10
     t.method("SetVerboseLevel", [](G4VUserPhysicsList& a, G4int arg0)->void { a.SetVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("value"));
     t.method("SetVerboseLevel", [](G4VUserPhysicsList* a, G4int arg0)->void { a->SetVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding wrapper for G4int G4VUserPhysicsList::GetVerboseLevel() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4VUserPhysicsList::GetVerboseLevel()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:183:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:183:11
     t.method("GetVerboseLevel", [](G4VUserPhysicsList const& a)->G4int { return a.GetVerboseLevel(); }, jlcxx::arg("this"));
     t.method("GetVerboseLevel", [](G4VUserPhysicsList const* a)->G4int { return a->GetVerboseLevel(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::UseCoupledTransportation(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::UseCoupledTransportation(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:185:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:185:10
     t.method("UseCoupledTransportation", [](G4VUserPhysicsList& a)->void { a.UseCoupledTransportation(); }, jlcxx::arg("this"), jlcxx::arg("vl"));
     t.method("UseCoupledTransportation", [](G4VUserPhysicsList& a, G4bool arg0)->void { a.UseCoupledTransportation(arg0); }, jlcxx::arg("this"), jlcxx::arg("vl"));
     t.method("UseCoupledTransportation", [](G4VUserPhysicsList* a)->void { a->UseCoupledTransportation(); }, jlcxx::arg("this"), jlcxx::arg("vl"));
@@ -180,31 +180,31 @@ struct JlG4VUserPhysicsList: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::SetCutsWithDefault() (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::SetCutsWithDefault()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:190:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:190:10
     t.method("SetCutsWithDefault", [](G4VUserPhysicsList& a)->void { a.SetCutsWithDefault(); }, jlcxx::arg("this"));
     t.method("SetCutsWithDefault", [](G4VUserPhysicsList* a)->void { a->SetCutsWithDefault(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::SetCutValue(G4double, const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::SetCutValue(G4double, const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:193:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:193:10
     t.method("SetCutValue", [](G4VUserPhysicsList& a, G4double arg0, const G4String & arg1)->void { a.SetCutValue(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aCut"), jlcxx::arg("pname"));
     t.method("SetCutValue", [](G4VUserPhysicsList* a, G4double arg0, const G4String & arg1)->void { a->SetCutValue(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aCut"), jlcxx::arg("pname"));
 
     DEBUG_MSG("Adding wrapper for G4double G4VUserPhysicsList::GetCutValue(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4VUserPhysicsList::GetCutValue(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:196:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:196:14
     t.method("GetCutValue", [](G4VUserPhysicsList const& a, const G4String & arg0)->G4double { return a.GetCutValue(arg0); }, jlcxx::arg("this"), jlcxx::arg("pname"));
     t.method("GetCutValue", [](G4VUserPhysicsList const* a, const G4String & arg0)->G4double { return a->GetCutValue(arg0); }, jlcxx::arg("this"), jlcxx::arg("pname"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::SetCutValue(G4double, const G4String &, const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::SetCutValue(G4double, const G4String &, const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:199:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:199:10
     t.method("SetCutValue", [](G4VUserPhysicsList& a, G4double arg0, const G4String & arg1, const G4String & arg2)->void { a.SetCutValue(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("aCut"), jlcxx::arg("pname"), jlcxx::arg("rname"));
     t.method("SetCutValue", [](G4VUserPhysicsList* a, G4double arg0, const G4String & arg1, const G4String & arg2)->void { a->SetCutValue(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("aCut"), jlcxx::arg("pname"), jlcxx::arg("rname"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::SetParticleCuts(G4double, G4ParticleDefinition *, G4Region *) (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::SetParticleCuts(G4double, G4ParticleDefinition *, G4Region *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:205:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:205:10
     t.method("SetParticleCuts", [](G4VUserPhysicsList& a, G4double arg0, G4ParticleDefinition * arg1)->void { a.SetParticleCuts(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("cut"), jlcxx::arg("particle"));
     t.method("SetParticleCuts", [](G4VUserPhysicsList& a, G4double arg0, G4ParticleDefinition * arg1, G4Region * arg2)->void { a.SetParticleCuts(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("cut"), jlcxx::arg("particle"), jlcxx::arg("region"));
     t.method("SetParticleCuts", [](G4VUserPhysicsList* a, G4double arg0, G4ParticleDefinition * arg1)->void { a->SetParticleCuts(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("cut"), jlcxx::arg("particle"));
@@ -212,7 +212,7 @@ struct JlG4VUserPhysicsList: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::SetParticleCuts(G4double, const G4String &, G4Region *) (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::SetParticleCuts(G4double, const G4String &, G4Region *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:206:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:206:10
     t.method("SetParticleCuts", [](G4VUserPhysicsList& a, G4double arg0, const G4String & arg1)->void { a.SetParticleCuts(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("cut"), jlcxx::arg("particleName"));
     t.method("SetParticleCuts", [](G4VUserPhysicsList& a, G4double arg0, const G4String & arg1, G4Region * arg2)->void { a.SetParticleCuts(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("cut"), jlcxx::arg("particleName"), jlcxx::arg("region"));
     t.method("SetParticleCuts", [](G4VUserPhysicsList* a, G4double arg0, const G4String & arg1)->void { a->SetParticleCuts(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("cut"), jlcxx::arg("particleName"));
@@ -220,37 +220,37 @@ struct JlG4VUserPhysicsList: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::SetCutsForRegion(G4double, const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::SetCutsForRegion(G4double, const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:209:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:209:10
     t.method("SetCutsForRegion", [](G4VUserPhysicsList& a, G4double arg0, const G4String & arg1)->void { a.SetCutsForRegion(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aCut"), jlcxx::arg("rname"));
     t.method("SetCutsForRegion", [](G4VUserPhysicsList* a, G4double arg0, const G4String & arg1)->void { a->SetCutsForRegion(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aCut"), jlcxx::arg("rname"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::SetApplyCuts(G4bool, const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::SetApplyCuts(G4bool, const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:212:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:212:10
     t.method("SetApplyCuts", [](G4VUserPhysicsList& a, G4bool arg0, const G4String & arg1)->void { a.SetApplyCuts(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("value"), jlcxx::arg("name"));
     t.method("SetApplyCuts", [](G4VUserPhysicsList* a, G4bool arg0, const G4String & arg1)->void { a->SetApplyCuts(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("value"), jlcxx::arg("name"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4VUserPhysicsList::GetApplyCuts(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VUserPhysicsList::GetApplyCuts(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:213:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:213:12
     t.method("GetApplyCuts", [](G4VUserPhysicsList const& a, const G4String & arg0)->G4bool { return a.GetApplyCuts(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
     t.method("GetApplyCuts", [](G4VUserPhysicsList const* a, const G4String & arg0)->G4bool { return a->GetApplyCuts(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::RemoveProcessManager() (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::RemoveProcessManager()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:217:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:217:10
     t.method("RemoveProcessManager", [](G4VUserPhysicsList& a)->void { a.RemoveProcessManager(); }, jlcxx::arg("this"));
     t.method("RemoveProcessManager", [](G4VUserPhysicsList* a)->void { a->RemoveProcessManager(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::RemoveTrackingManager() (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::RemoveTrackingManager()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:221:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:221:10
     t.method("RemoveTrackingManager", [](G4VUserPhysicsList& a)->void { a.RemoveTrackingManager(); }, jlcxx::arg("this"));
     t.method("RemoveTrackingManager", [](G4VUserPhysicsList* a)->void { a->RemoveTrackingManager(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::AddProcessManager(G4ParticleDefinition *, G4ProcessManager *) (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::AddProcessManager(G4ParticleDefinition *, G4ProcessManager *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:224:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:224:10
     t.method("AddProcessManager", [](G4VUserPhysicsList& a, G4ParticleDefinition * arg0)->void { a.AddProcessManager(arg0); }, jlcxx::arg("this"), jlcxx::arg("newParticle"));
     t.method("AddProcessManager", [](G4VUserPhysicsList& a, G4ParticleDefinition * arg0, G4ProcessManager * arg1)->void { a.AddProcessManager(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("newParticle"), jlcxx::arg("newManager"));
     t.method("AddProcessManager", [](G4VUserPhysicsList* a, G4ParticleDefinition * arg0)->void { a->AddProcessManager(arg0); }, jlcxx::arg("this"), jlcxx::arg("newParticle"));
@@ -258,31 +258,31 @@ struct JlG4VUserPhysicsList: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::CheckParticleList() (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::CheckParticleList()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:228:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:228:10
     t.method("CheckParticleList", [](G4VUserPhysicsList& a)->void { a.CheckParticleList(); }, jlcxx::arg("this"));
     t.method("CheckParticleList", [](G4VUserPhysicsList* a)->void { a->CheckParticleList(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::DisableCheckParticleList() (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::DisableCheckParticleList()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:230:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:230:10
     t.method("DisableCheckParticleList", [](G4VUserPhysicsList& a)->void { a.DisableCheckParticleList(); }, jlcxx::arg("this"));
     t.method("DisableCheckParticleList", [](G4VUserPhysicsList* a)->void { a->DisableCheckParticleList(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4VUserPhysicsList::GetInstanceID() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4VUserPhysicsList::GetInstanceID()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:232:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:232:18
     t.method("GetInstanceID", [](G4VUserPhysicsList const& a)->G4int { return a.GetInstanceID(); }, jlcxx::arg("this"));
     t.method("GetInstanceID", [](G4VUserPhysicsList const* a)->G4int { return a->GetInstanceID(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::InitializeWorker() (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::InitializeWorker()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:238:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:238:18
     t.method("InitializeWorker", [](G4VUserPhysicsList& a)->void { a.InitializeWorker(); }, jlcxx::arg("this"));
     t.method("InitializeWorker", [](G4VUserPhysicsList* a)->void { a->InitializeWorker(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserPhysicsList::TerminateWorker() (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserPhysicsList::TerminateWorker()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserPhysicsList.hh:242:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserPhysicsList.hh:242:18
     t.method("TerminateWorker", [](G4VUserPhysicsList& a)->void { a.TerminateWorker(); }, jlcxx::arg("this"));
     t.method("TerminateWorker", [](G4VUserPhysicsList* a)->void { a->TerminateWorker(); }, jlcxx::arg("this"));
   }

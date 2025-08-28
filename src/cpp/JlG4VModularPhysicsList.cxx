@@ -18,7 +18,7 @@ struct JlG4VModularPhysicsList: public Wrapper {
 
   JlG4VModularPhysicsList(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4VModularPhysicsList (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VModularPhysicsList.hh:85:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VModularPhysicsList.hh:85:7
     jlcxx::TypeWrapper<G4VModularPhysicsList>  t = jlModule.add_type<G4VModularPhysicsList>("G4VModularPhysicsList",
       jlcxx::julia_base_type<G4VUserPhysicsList>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4VModularPhysicsList>>(new jlcxx::TypeWrapper<G4VModularPhysicsList>(jlModule, t));
@@ -30,85 +30,85 @@ struct JlG4VModularPhysicsList: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4VModularPhysicsList::ConstructParticle() (" __HERE__ ")");
     // signature to use in the veto list: void G4VModularPhysicsList::ConstructParticle()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VModularPhysicsList.hh:93:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VModularPhysicsList.hh:93:10
     t.method("ConstructParticle", [](G4VModularPhysicsList& a)->void { a.ConstructParticle(); }, jlcxx::arg("this"));
     t.method("ConstructParticle", [](G4VModularPhysicsList* a)->void { a->ConstructParticle(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VModularPhysicsList::ConstructProcess() (" __HERE__ ")");
     // signature to use in the veto list: void G4VModularPhysicsList::ConstructProcess()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VModularPhysicsList.hh:98:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VModularPhysicsList.hh:98:10
     t.method("ConstructProcess", [](G4VModularPhysicsList& a)->void { a.ConstructProcess(); }, jlcxx::arg("this"));
     t.method("ConstructProcess", [](G4VModularPhysicsList* a)->void { a->ConstructProcess(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VModularPhysicsList::RegisterPhysics(G4VPhysicsConstructor *) (" __HERE__ ")");
     // signature to use in the veto list: void G4VModularPhysicsList::RegisterPhysics(G4VPhysicsConstructor *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VModularPhysicsList.hh:101:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VModularPhysicsList.hh:101:10
     t.method("RegisterPhysics", [](G4VModularPhysicsList& a, G4VPhysicsConstructor * arg0)->void { a.RegisterPhysics(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("RegisterPhysics", [](G4VModularPhysicsList* a, G4VPhysicsConstructor * arg0)->void { a->RegisterPhysics(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for const G4VPhysicsConstructor * G4VModularPhysicsList::GetPhysics(G4int) (" __HERE__ ")");
     // signature to use in the veto list: const G4VPhysicsConstructor * G4VModularPhysicsList::GetPhysics(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VModularPhysicsList.hh:103:34
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VModularPhysicsList.hh:103:34
     t.method("GetPhysics", [](G4VModularPhysicsList const& a, G4int arg0)->const G4VPhysicsConstructor * { return a.GetPhysics(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
     t.method("GetPhysics", [](G4VModularPhysicsList const* a, G4int arg0)->const G4VPhysicsConstructor * { return a->GetPhysics(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
 
     DEBUG_MSG("Adding wrapper for const G4VPhysicsConstructor * G4VModularPhysicsList::GetPhysics(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: const G4VPhysicsConstructor * G4VModularPhysicsList::GetPhysics(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VModularPhysicsList.hh:104:34
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VModularPhysicsList.hh:104:34
     t.method("GetPhysics", [](G4VModularPhysicsList const& a, const G4String & arg0)->const G4VPhysicsConstructor * { return a.GetPhysics(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
     t.method("GetPhysics", [](G4VModularPhysicsList const* a, const G4String & arg0)->const G4VPhysicsConstructor * { return a->GetPhysics(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
 
     DEBUG_MSG("Adding wrapper for const G4VPhysicsConstructor * G4VModularPhysicsList::GetPhysicsWithType(G4int) (" __HERE__ ")");
     // signature to use in the veto list: const G4VPhysicsConstructor * G4VModularPhysicsList::GetPhysicsWithType(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VModularPhysicsList.hh:105:34
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VModularPhysicsList.hh:105:34
     t.method("GetPhysicsWithType", [](G4VModularPhysicsList const& a, G4int arg0)->const G4VPhysicsConstructor * { return a.GetPhysicsWithType(arg0); }, jlcxx::arg("this"), jlcxx::arg("physics_type"));
     t.method("GetPhysicsWithType", [](G4VModularPhysicsList const* a, G4int arg0)->const G4VPhysicsConstructor * { return a->GetPhysicsWithType(arg0); }, jlcxx::arg("this"), jlcxx::arg("physics_type"));
 
     DEBUG_MSG("Adding wrapper for void G4VModularPhysicsList::ReplacePhysics(G4VPhysicsConstructor *) (" __HERE__ ")");
     // signature to use in the veto list: void G4VModularPhysicsList::ReplacePhysics(G4VPhysicsConstructor *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VModularPhysicsList.hh:112:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VModularPhysicsList.hh:112:10
     t.method("ReplacePhysics", [](G4VModularPhysicsList& a, G4VPhysicsConstructor * arg0)->void { a.ReplacePhysics(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("ReplacePhysics", [](G4VModularPhysicsList* a, G4VPhysicsConstructor * arg0)->void { a->ReplacePhysics(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4VModularPhysicsList::RemovePhysics(G4VPhysicsConstructor *) (" __HERE__ ")");
     // signature to use in the veto list: void G4VModularPhysicsList::RemovePhysics(G4VPhysicsConstructor *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VModularPhysicsList.hh:115:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VModularPhysicsList.hh:115:10
     t.method("RemovePhysics", [](G4VModularPhysicsList& a, G4VPhysicsConstructor * arg0)->void { a.RemovePhysics(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("RemovePhysics", [](G4VModularPhysicsList* a, G4VPhysicsConstructor * arg0)->void { a->RemovePhysics(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4VModularPhysicsList::RemovePhysics(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4VModularPhysicsList::RemovePhysics(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VModularPhysicsList.hh:116:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VModularPhysicsList.hh:116:10
     t.method("RemovePhysics", [](G4VModularPhysicsList& a, G4int arg0)->void { a.RemovePhysics(arg0); }, jlcxx::arg("this"), jlcxx::arg("type"));
     t.method("RemovePhysics", [](G4VModularPhysicsList* a, G4int arg0)->void { a->RemovePhysics(arg0); }, jlcxx::arg("this"), jlcxx::arg("type"));
 
     DEBUG_MSG("Adding wrapper for void G4VModularPhysicsList::RemovePhysics(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4VModularPhysicsList::RemovePhysics(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VModularPhysicsList.hh:117:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VModularPhysicsList.hh:117:10
     t.method("RemovePhysics", [](G4VModularPhysicsList& a, const G4String & arg0)->void { a.RemovePhysics(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
     t.method("RemovePhysics", [](G4VModularPhysicsList* a, const G4String & arg0)->void { a->RemovePhysics(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
 
     DEBUG_MSG("Adding wrapper for G4int G4VModularPhysicsList::GetInstanceID() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4VModularPhysicsList::GetInstanceID()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VModularPhysicsList.hh:119:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VModularPhysicsList.hh:119:18
     t.method("GetInstanceID", [](G4VModularPhysicsList const& a)->G4int { return a.GetInstanceID(); }, jlcxx::arg("this"));
     t.method("GetInstanceID", [](G4VModularPhysicsList const* a)->G4int { return a->GetInstanceID(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VModularPhysicsList::TerminateWorker() (" __HERE__ ")");
     // signature to use in the veto list: void G4VModularPhysicsList::TerminateWorker()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VModularPhysicsList.hh:121:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VModularPhysicsList.hh:121:10
     t.method("TerminateWorker", [](G4VModularPhysicsList& a)->void { a.TerminateWorker(); }, jlcxx::arg("this"));
     t.method("TerminateWorker", [](G4VModularPhysicsList* a)->void { a->TerminateWorker(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VModularPhysicsList::SetVerboseLevel(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4VModularPhysicsList::SetVerboseLevel(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VModularPhysicsList.hh:128:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VModularPhysicsList.hh:128:10
     t.method("SetVerboseLevel", [](G4VModularPhysicsList& a, G4int arg0)->void { a.SetVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("value"));
     t.method("SetVerboseLevel", [](G4VModularPhysicsList* a, G4int arg0)->void { a->SetVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding wrapper for G4int G4VModularPhysicsList::GetVerboseLevel() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4VModularPhysicsList::GetVerboseLevel()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VModularPhysicsList.hh:129:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VModularPhysicsList.hh:129:11
     t.method("GetVerboseLevel", [](G4VModularPhysicsList const& a)->G4int { return a.GetVerboseLevel(); }, jlcxx::arg("this"));
     t.method("GetVerboseLevel", [](G4VModularPhysicsList const* a)->G4int { return a->GetVerboseLevel(); }, jlcxx::arg("this"));
   }

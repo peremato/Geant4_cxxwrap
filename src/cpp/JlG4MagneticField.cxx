@@ -18,7 +18,7 @@ struct JlG4MagneticField: public Wrapper {
 
   JlG4MagneticField(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4MagneticField (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MagneticField.hh:40:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MagneticField.hh:40:7
     jlcxx::TypeWrapper<G4MagneticField>  t = jlModule.add_type<G4MagneticField>("G4MagneticField",
       jlcxx::julia_base_type<G4Field>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4MagneticField>>(new jlcxx::TypeWrapper<G4MagneticField>(jlModule, t));
@@ -30,19 +30,19 @@ struct JlG4MagneticField: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4MagneticField & G4MagneticField::operator=(const G4MagneticField &) (" __HERE__ ")");
     // signature to use in the veto list: G4MagneticField & G4MagneticField::operator=(const G4MagneticField &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MagneticField.hh:49:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MagneticField.hh:49:22
     t.method("assign", [](G4MagneticField& a, const G4MagneticField & arg0)->G4MagneticField & { return a.operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("assign", [](G4MagneticField* a, const G4MagneticField & arg0)->G4MagneticField & { return a->operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4MagneticField::DoesFieldChangeEnergy() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4MagneticField::DoesFieldChangeEnergy()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MagneticField.hh:52:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MagneticField.hh:52:19
     t.method("DoesFieldChangeEnergy", [](G4MagneticField const& a)->G4bool { return a.DoesFieldChangeEnergy(); }, jlcxx::arg("this"));
     t.method("DoesFieldChangeEnergy", [](G4MagneticField const* a)->G4bool { return a->DoesFieldChangeEnergy(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4MagneticField::GetFieldValue(const G4double[4], G4double *) (" __HERE__ ")");
     // signature to use in the veto list: void G4MagneticField::GetFieldValue(const G4double[4], G4double *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MagneticField.hh:55:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MagneticField.hh:55:10
     t.method("GetFieldValue", [](G4MagneticField const& a, const G4double arg0[4], G4double * arg1)->void { a.GetFieldValue(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("Point"), jlcxx::arg("Bfield"));
     t.method("GetFieldValue", [](G4MagneticField const* a, const G4double arg0[4], G4double * arg1)->void { a->GetFieldValue(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("Point"), jlcxx::arg("Bfield"));
   }

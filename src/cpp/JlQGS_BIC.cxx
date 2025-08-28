@@ -18,7 +18,7 @@ struct JlQGS_BIC: public Wrapper {
 
   JlQGS_BIC(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type QGS_BIC (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/QGS_BIC.hh:45:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/QGS_BIC.hh:45:7
     jlcxx::TypeWrapper<QGS_BIC>  t = jlModule.add_type<QGS_BIC>("QGS_BIC",
       jlcxx::julia_base_type<G4VModularPhysicsList>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<QGS_BIC>>(new jlcxx::TypeWrapper<QGS_BIC>(jlModule, t));
@@ -30,7 +30,7 @@ struct JlQGS_BIC: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void QGS_BIC::QGS_BIC(G4int) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/QGS_BIC.hh:48:3
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/QGS_BIC.hh:48:3
     t.constructor<G4int>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("ver")    );
   }
 

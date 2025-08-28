@@ -17,7 +17,7 @@ struct JlG4HCofThisEvent: public Wrapper {
 
   JlG4HCofThisEvent(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4HCofThisEvent (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4HCofThisEvent.hh:50:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4HCofThisEvent.hh:50:7
     jlcxx::TypeWrapper<G4HCofThisEvent>  t = jlModule.add_type<G4HCofThisEvent>("G4HCofThisEvent");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4HCofThisEvent>>(new jlcxx::TypeWrapper<G4HCofThisEvent>(jlModule, t));
   }
@@ -28,43 +28,43 @@ struct JlG4HCofThisEvent: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4HCofThisEvent::G4HCofThisEvent(G4int) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4HCofThisEvent.hh:55:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4HCofThisEvent.hh:55:14
     t.constructor<G4int>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("cap")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4HCofThisEvent::G4HCofThisEvent(const G4HCofThisEvent &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4HCofThisEvent.hh:57:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4HCofThisEvent.hh:57:5
     t.constructor<const G4HCofThisEvent &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("arg0")    );
 
     DEBUG_MSG("Adding wrapper for G4HCofThisEvent & G4HCofThisEvent::operator=(const G4HCofThisEvent &) (" __HERE__ ")");
     // signature to use in the veto list: G4HCofThisEvent & G4HCofThisEvent::operator=(const G4HCofThisEvent &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4HCofThisEvent.hh:58:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4HCofThisEvent.hh:58:22
     t.method("assign", [](G4HCofThisEvent& a, const G4HCofThisEvent & arg0)->G4HCofThisEvent & { return a.operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("assign", [](G4HCofThisEvent* a, const G4HCofThisEvent & arg0)->G4HCofThisEvent & { return a->operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4HCofThisEvent::AddHitsCollection(G4int, G4VHitsCollection *) (" __HERE__ ")");
     // signature to use in the veto list: void G4HCofThisEvent::AddHitsCollection(G4int, G4VHitsCollection *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4HCofThisEvent.hh:63:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4HCofThisEvent.hh:63:10
     t.method("AddHitsCollection", [](G4HCofThisEvent& a, G4int arg0, G4VHitsCollection * arg1)->void { a.AddHitsCollection(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("HCID"), jlcxx::arg("aHC"));
     t.method("AddHitsCollection", [](G4HCofThisEvent* a, G4int arg0, G4VHitsCollection * arg1)->void { a->AddHitsCollection(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("HCID"), jlcxx::arg("aHC"));
 
     DEBUG_MSG("Adding wrapper for G4VHitsCollection * G4HCofThisEvent::GetHC(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4VHitsCollection * G4HCofThisEvent::GetHC(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4HCofThisEvent.hh:70:31
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4HCofThisEvent.hh:70:31
     t.method("GetHC", [](G4HCofThisEvent& a, G4int arg0)->G4VHitsCollection * { return a.GetHC(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
     t.method("GetHC", [](G4HCofThisEvent* a, G4int arg0)->G4VHitsCollection * { return a->GetHC(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
 
     DEBUG_MSG("Adding wrapper for G4int G4HCofThisEvent::GetNumberOfCollections() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4HCofThisEvent::GetNumberOfCollections()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4HCofThisEvent.hh:74:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4HCofThisEvent.hh:74:18
     t.method("GetNumberOfCollections", [](G4HCofThisEvent& a)->G4int { return a.GetNumberOfCollections(); }, jlcxx::arg("this"));
     t.method("GetNumberOfCollections", [](G4HCofThisEvent* a)->G4int { return a->GetNumberOfCollections(); }, jlcxx::arg("this"));
 
-    DEBUG_MSG("Adding wrapper for size_t G4HCofThisEvent::GetCapacity() (" __HERE__ ")");
-    // signature to use in the veto list: size_t G4HCofThisEvent::GetCapacity()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4HCofThisEvent.hh:83:24
-    t.method("GetCapacity", [](G4HCofThisEvent& a)->size_t { return a.GetCapacity(); }, jlcxx::arg("this"));
-    t.method("GetCapacity", [](G4HCofThisEvent* a)->size_t { return a->GetCapacity(); }, jlcxx::arg("this"));
+    DEBUG_MSG("Adding wrapper for std::size_t G4HCofThisEvent::GetCapacity() (" __HERE__ ")");
+    // signature to use in the veto list: std::size_t G4HCofThisEvent::GetCapacity()
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4HCofThisEvent.hh:83:24
+    t.method("GetCapacity", [](G4HCofThisEvent& a)->std::size_t { return a.GetCapacity(); }, jlcxx::arg("this"));
+    t.method("GetCapacity", [](G4HCofThisEvent* a)->std::size_t { return a->GetCapacity(); }, jlcxx::arg("this"));
   }
 
 private:

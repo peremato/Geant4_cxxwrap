@@ -17,171 +17,171 @@ struct JlGlobal: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4int G4Threading::G4GetNumberOfCores() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4Threading::G4GetNumberOfCores()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Threading.hh:285:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Threading.hh:285:9
     t.method("G4Threading!G4GetNumberOfCores", []()->G4int { return G4Threading::G4GetNumberOfCores(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4Threading::G4GetThreadId() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4Threading::G4GetThreadId()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Threading.hh:286:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Threading.hh:286:9
     t.method("G4Threading!G4GetThreadId", []()->G4int { return G4Threading::G4GetThreadId(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4Threading::IsWorkerThread() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4Threading::IsWorkerThread()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Threading.hh:287:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Threading.hh:287:10
     t.method("G4Threading!IsWorkerThread", []()->G4bool { return G4Threading::IsWorkerThread(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4Threading::IsMasterThread() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4Threading::IsMasterThread()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Threading.hh:288:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Threading.hh:288:10
     t.method("G4Threading!IsMasterThread", []()->G4bool { return G4Threading::IsMasterThread(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4Threading::G4SetThreadId(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4Threading::G4SetThreadId(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Threading.hh:289:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Threading.hh:289:8
     t.method("G4Threading!G4SetThreadId", [](G4int arg0)->void { G4Threading::G4SetThreadId(arg0); }, jlcxx::arg("this"), jlcxx::arg("aNewValue"));
 
     DEBUG_MSG("Adding wrapper for void G4Threading::SetMultithreadedApplication(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4Threading::SetMultithreadedApplication(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Threading.hh:291:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Threading.hh:291:8
     t.method("G4Threading!SetMultithreadedApplication", [](G4bool arg0)->void { G4Threading::SetMultithreadedApplication(arg0); }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4Threading::IsMultithreadedApplication() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4Threading::IsMultithreadedApplication()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Threading.hh:292:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Threading.hh:292:10
     t.method("G4Threading!IsMultithreadedApplication", []()->G4bool { return G4Threading::IsMultithreadedApplication(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4Threading::WorkerThreadLeavesPool() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4Threading::WorkerThreadLeavesPool()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Threading.hh:293:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Threading.hh:293:9
     t.method("G4Threading!WorkerThreadLeavesPool", []()->G4int { return G4Threading::WorkerThreadLeavesPool(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4Threading::WorkerThreadJoinsPool() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4Threading::WorkerThreadJoinsPool()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Threading.hh:294:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Threading.hh:294:9
     t.method("G4Threading!WorkerThreadJoinsPool", []()->G4int { return G4Threading::WorkerThreadJoinsPool(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4Threading::GetNumberOfRunningWorkerThreads() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4Threading::GetNumberOfRunningWorkerThreads()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Threading.hh:295:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Threading.hh:295:9
     t.method("G4Threading!GetNumberOfRunningWorkerThreads", []()->G4int { return G4Threading::GetNumberOfRunningWorkerThreads(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::Hep3Vector CLHEP::rotationXOf(const CLHEP::Hep3Vector &, double) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::Hep3Vector CLHEP::rotationXOf(const CLHEP::Hep3Vector &, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/ThreeVector.h:400:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/ThreeVector.h:400:12
     t.method("CLHEP!rotationXOf", [](const CLHEP::Hep3Vector & arg0, double arg1)->CLHEP::Hep3Vector { return CLHEP::rotationXOf(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("vec"), jlcxx::arg("delta"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::Hep3Vector CLHEP::rotationYOf(const CLHEP::Hep3Vector &, double) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::Hep3Vector CLHEP::rotationYOf(const CLHEP::Hep3Vector &, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/ThreeVector.h:401:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/ThreeVector.h:401:12
     t.method("CLHEP!rotationYOf", [](const CLHEP::Hep3Vector & arg0, double arg1)->CLHEP::Hep3Vector { return CLHEP::rotationYOf(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("vec"), jlcxx::arg("delta"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::Hep3Vector CLHEP::rotationZOf(const CLHEP::Hep3Vector &, double) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::Hep3Vector CLHEP::rotationZOf(const CLHEP::Hep3Vector &, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/ThreeVector.h:402:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/ThreeVector.h:402:12
     t.method("CLHEP!rotationZOf", [](const CLHEP::Hep3Vector & arg0, double arg1)->CLHEP::Hep3Vector { return CLHEP::rotationZOf(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("vec"), jlcxx::arg("delta"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::Hep3Vector CLHEP::rotationOf(const CLHEP::Hep3Vector &, const CLHEP::Hep3Vector &, double) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::Hep3Vector CLHEP::rotationOf(const CLHEP::Hep3Vector &, const CLHEP::Hep3Vector &, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/ThreeVector.h:404:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/ThreeVector.h:404:12
     t.method("CLHEP!rotationOf", [](const CLHEP::Hep3Vector & arg0, const CLHEP::Hep3Vector & arg1, double arg2)->CLHEP::Hep3Vector { return CLHEP::rotationOf(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("vec"), jlcxx::arg("axis"), jlcxx::arg("delta"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::Hep3Vector CLHEP::rotationOf(const CLHEP::Hep3Vector &, const CLHEP::HepAxisAngle &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::Hep3Vector CLHEP::rotationOf(const CLHEP::Hep3Vector &, const CLHEP::HepAxisAngle &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/ThreeVector.h:406:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/ThreeVector.h:406:12
     t.method("CLHEP!rotationOf", [](const CLHEP::Hep3Vector & arg0, const CLHEP::HepAxisAngle & arg1)->CLHEP::Hep3Vector { return CLHEP::rotationOf(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("vec"), jlcxx::arg("ax"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::Hep3Vector CLHEP::rotationOf(const CLHEP::Hep3Vector &, double, double, double) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::Hep3Vector CLHEP::rotationOf(const CLHEP::Hep3Vector &, double, double, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/ThreeVector.h:408:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/ThreeVector.h:408:12
     t.method("CLHEP!rotationOf", [](const CLHEP::Hep3Vector & arg0, double arg1, double arg2, double arg3)->CLHEP::Hep3Vector { return CLHEP::rotationOf(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("vec"), jlcxx::arg("phi"), jlcxx::arg("theta"), jlcxx::arg("psi"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::Hep3Vector CLHEP::rotationOf(const CLHEP::Hep3Vector &, const CLHEP::HepEulerAngles &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::Hep3Vector CLHEP::rotationOf(const CLHEP::Hep3Vector &, const CLHEP::HepEulerAngles &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/ThreeVector.h:410:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/ThreeVector.h:410:12
     t.method("CLHEP!rotationOf", [](const CLHEP::Hep3Vector & arg0, const CLHEP::HepEulerAngles & arg1)->CLHEP::Hep3Vector { return CLHEP::rotationOf(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("vec"), jlcxx::arg("e"));
     module_.set_override_module(jl_base_module);
 
     DEBUG_MSG("Adding wrapper for CLHEP::Hep3Vector CLHEP::operator/(const CLHEP::Hep3Vector &, double) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::Hep3Vector CLHEP::operator/(const CLHEP::Hep3Vector &, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/ThreeVector.h:424:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/ThreeVector.h:424:12
     t.method("/", [](const CLHEP::Hep3Vector & arg0, double arg1)->CLHEP::Hep3Vector { return CLHEP::operator/(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("a"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::Hep3Vector CLHEP::operator+(const CLHEP::Hep3Vector &, const CLHEP::Hep3Vector &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::Hep3Vector CLHEP::operator+(const CLHEP::Hep3Vector &, const CLHEP::Hep3Vector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/ThreeVector.h:427:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/ThreeVector.h:427:19
     t.method("+", [](const CLHEP::Hep3Vector & arg0, const CLHEP::Hep3Vector & arg1)->CLHEP::Hep3Vector { return CLHEP::operator+(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::Hep3Vector CLHEP::operator-(const CLHEP::Hep3Vector &, const CLHEP::Hep3Vector &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::Hep3Vector CLHEP::operator-(const CLHEP::Hep3Vector &, const CLHEP::Hep3Vector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/ThreeVector.h:430:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/ThreeVector.h:430:19
     t.method("-", [](const CLHEP::Hep3Vector & arg0, const CLHEP::Hep3Vector & arg1)->CLHEP::Hep3Vector { return CLHEP::operator-(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::operator*(const CLHEP::Hep3Vector &, const CLHEP::Hep3Vector &) (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::operator*(const CLHEP::Hep3Vector &, const CLHEP::Hep3Vector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/ThreeVector.h:433:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/ThreeVector.h:433:15
     t.method("*", [](const CLHEP::Hep3Vector & arg0, const CLHEP::Hep3Vector & arg1)->double { return CLHEP::operator*(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::Hep3Vector CLHEP::operator*(const CLHEP::Hep3Vector &, double) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::Hep3Vector CLHEP::operator*(const CLHEP::Hep3Vector &, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/ThreeVector.h:436:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/ThreeVector.h:436:19
     t.method("*", [](const CLHEP::Hep3Vector & arg0, double arg1)->CLHEP::Hep3Vector { return CLHEP::operator*(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("a"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::Hep3Vector CLHEP::operator*(double, const CLHEP::Hep3Vector &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::Hep3Vector CLHEP::operator*(double, const CLHEP::Hep3Vector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/ThreeVector.h:437:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/ThreeVector.h:437:19
     t.method("*", [](double arg0, const CLHEP::Hep3Vector & arg1)->CLHEP::Hep3Vector { return CLHEP::operator*(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("a"), jlcxx::arg("arg1"));
 
     module_.unset_override_module();
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepRotation CLHEP::inverseOf(const CLHEP::HepRotation &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepRotation CLHEP::inverseOf(const CLHEP::HepRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Rotation.h:33:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Rotation.h:33:20
     t.method("CLHEP!inverseOf", [](const CLHEP::HepRotation & arg0)->CLHEP::HepRotation { return CLHEP::inverseOf(arg0); }, jlcxx::arg("this"), jlcxx::arg("r"));
     module_.set_override_module(jl_base_module);
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepRotation CLHEP::operator*(const CLHEP::HepRotationX &, const CLHEP::HepRotation &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepRotation CLHEP::operator*(const CLHEP::HepRotationX &, const CLHEP::HepRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Rotation.h:34:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Rotation.h:34:20
     t.method("*", [](const CLHEP::HepRotationX & arg0, const CLHEP::HepRotation & arg1)->CLHEP::HepRotation { return CLHEP::operator*(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("rx"), jlcxx::arg("r"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepRotation CLHEP::operator*(const CLHEP::HepRotationY &, const CLHEP::HepRotation &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepRotation CLHEP::operator*(const CLHEP::HepRotationY &, const CLHEP::HepRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Rotation.h:35:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Rotation.h:35:20
     t.method("*", [](const CLHEP::HepRotationY & arg0, const CLHEP::HepRotation & arg1)->CLHEP::HepRotation { return CLHEP::operator*(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("ry"), jlcxx::arg("r"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepRotation CLHEP::operator*(const CLHEP::HepRotationZ &, const CLHEP::HepRotation &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepRotation CLHEP::operator*(const CLHEP::HepRotationZ &, const CLHEP::HepRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Rotation.h:36:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Rotation.h:36:20
     t.method("*", [](const CLHEP::HepRotationZ & arg0, const CLHEP::HepRotation & arg1)->CLHEP::HepRotation { return CLHEP::operator*(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("rz"), jlcxx::arg("r"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::operator*(const CLHEP::Hep2Vector &, const CLHEP::Hep2Vector &) (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::operator*(const CLHEP::Hep2Vector &, const CLHEP::Hep2Vector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/TwoVector.h:33:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/TwoVector.h:33:15
     t.method("*", [](const CLHEP::Hep2Vector & arg0, const CLHEP::Hep2Vector & arg1)->double { return CLHEP::operator*(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("a"), jlcxx::arg("b"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::Hep2Vector CLHEP::operator*(const CLHEP::Hep2Vector &, double) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::Hep2Vector CLHEP::operator*(const CLHEP::Hep2Vector &, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/TwoVector.h:34:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/TwoVector.h:34:19
     t.method("*", [](const CLHEP::Hep2Vector & arg0, double arg1)->CLHEP::Hep2Vector { return CLHEP::operator*(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("a"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::Hep2Vector CLHEP::operator*(double, const CLHEP::Hep2Vector &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::Hep2Vector CLHEP::operator*(double, const CLHEP::Hep2Vector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/TwoVector.h:35:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/TwoVector.h:35:19
     t.method("*", [](double arg0, const CLHEP::Hep2Vector & arg1)->CLHEP::Hep2Vector { return CLHEP::operator*(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("a"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::Hep2Vector CLHEP::operator/(const CLHEP::Hep2Vector &, double) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::Hep2Vector CLHEP::operator/(const CLHEP::Hep2Vector &, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/TwoVector.h:36:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/TwoVector.h:36:19
     t.method("/", [](const CLHEP::Hep2Vector & arg0, double arg1)->CLHEP::Hep2Vector { return CLHEP::operator/(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("a"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::Hep2Vector CLHEP::operator+(const CLHEP::Hep2Vector &, const CLHEP::Hep2Vector &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::Hep2Vector CLHEP::operator+(const CLHEP::Hep2Vector &, const CLHEP::Hep2Vector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/TwoVector.h:37:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/TwoVector.h:37:19
     t.method("+", [](const CLHEP::Hep2Vector & arg0, const CLHEP::Hep2Vector & arg1)->CLHEP::Hep2Vector { return CLHEP::operator+(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("a"), jlcxx::arg("b"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::Hep2Vector CLHEP::operator-(const CLHEP::Hep2Vector &, const CLHEP::Hep2Vector &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::Hep2Vector CLHEP::operator-(const CLHEP::Hep2Vector &, const CLHEP::Hep2Vector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/TwoVector.h:38:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/TwoVector.h:38:19
     t.method("-", [](const CLHEP::Hep2Vector & arg0, const CLHEP::Hep2Vector & arg1)->CLHEP::Hep2Vector { return CLHEP::operator-(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("a"), jlcxx::arg("b"));
 
     module_.unset_override_module();
@@ -264,145 +264,145 @@ struct JlGlobal: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepBoost CLHEP::inverseOf(const CLHEP::HepBoost &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepBoost CLHEP::inverseOf(const CLHEP::HepBoost &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Boost.h:32:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Boost.h:32:17
     t.method("CLHEP!inverseOf", [](const CLHEP::HepBoost & arg0)->CLHEP::HepBoost { return CLHEP::inverseOf(arg0); }, jlcxx::arg("this"), jlcxx::arg("lt"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepLorentzRotation CLHEP::inverseOf(const CLHEP::HepLorentzRotation &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepLorentzRotation CLHEP::inverseOf(const CLHEP::HepLorentzRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/LorentzRotation.h:34:27
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/LorentzRotation.h:34:27
     t.method("CLHEP!inverseOf", [](const CLHEP::HepLorentzRotation & arg0)->CLHEP::HepLorentzRotation { return CLHEP::inverseOf(arg0); }, jlcxx::arg("this"), jlcxx::arg("lt"));
     module_.set_override_module(jl_base_module);
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepLorentzRotation CLHEP::operator*(const CLHEP::HepRotation &, const CLHEP::HepLorentzRotation &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepLorentzRotation CLHEP::operator*(const CLHEP::HepRotation &, const CLHEP::HepLorentzRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/LorentzRotation.h:35:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/LorentzRotation.h:35:20
     t.method("*", [](const CLHEP::HepRotation & arg0, const CLHEP::HepLorentzRotation & arg1)->CLHEP::HepLorentzRotation { return CLHEP::operator*(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("r"), jlcxx::arg("lt"));
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::operator==(const CLHEP::HepRotation &, const CLHEP::HepLorentzRotation &) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::operator==(const CLHEP::HepRotation &, const CLHEP::HepLorentzRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/LorentzRotation.h:348:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/LorentzRotation.h:348:13
     t.method("==", [](const CLHEP::HepRotation & arg0, const CLHEP::HepLorentzRotation & arg1)->bool { return CLHEP::operator==(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("r"), jlcxx::arg("lt"));
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::operator!=(const CLHEP::HepRotation &, const CLHEP::HepLorentzRotation &) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::operator!=(const CLHEP::HepRotation &, const CLHEP::HepLorentzRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/LorentzRotation.h:350:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/LorentzRotation.h:350:13
     t.method("!=", [](const CLHEP::HepRotation & arg0, const CLHEP::HepLorentzRotation & arg1)->bool { return CLHEP::operator!=(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("r"), jlcxx::arg("lt"));
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::operator<=(const CLHEP::HepRotation &, const CLHEP::HepLorentzRotation &) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::operator<=(const CLHEP::HepRotation &, const CLHEP::HepLorentzRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/LorentzRotation.h:352:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/LorentzRotation.h:352:13
     t.method("<=", [](const CLHEP::HepRotation & arg0, const CLHEP::HepLorentzRotation & arg1)->bool { return CLHEP::operator<=(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("r"), jlcxx::arg("lt"));
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::operator>=(const CLHEP::HepRotation &, const CLHEP::HepLorentzRotation &) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::operator>=(const CLHEP::HepRotation &, const CLHEP::HepLorentzRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/LorentzRotation.h:354:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/LorentzRotation.h:354:13
     t.method(">=", [](const CLHEP::HepRotation & arg0, const CLHEP::HepLorentzRotation & arg1)->bool { return CLHEP::operator>=(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("r"), jlcxx::arg("lt"));
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::operator<(const CLHEP::HepRotation &, const CLHEP::HepLorentzRotation &) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::operator<(const CLHEP::HepRotation &, const CLHEP::HepLorentzRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/LorentzRotation.h:356:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/LorentzRotation.h:356:13
     t.method("<", [](const CLHEP::HepRotation & arg0, const CLHEP::HepLorentzRotation & arg1)->bool { return CLHEP::operator<(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("r"), jlcxx::arg("lt"));
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::operator>(const CLHEP::HepRotation &, const CLHEP::HepLorentzRotation &) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::operator>(const CLHEP::HepRotation &, const CLHEP::HepLorentzRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/LorentzRotation.h:358:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/LorentzRotation.h:358:13
     t.method(">", [](const CLHEP::HepRotation & arg0, const CLHEP::HepLorentzRotation & arg1)->bool { return CLHEP::operator>(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("r"), jlcxx::arg("lt"));
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::operator==(const CLHEP::HepBoost &, const CLHEP::HepLorentzRotation &) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::operator==(const CLHEP::HepBoost &, const CLHEP::HepLorentzRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/LorentzRotation.h:361:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/LorentzRotation.h:361:13
     t.method("==", [](const CLHEP::HepBoost & arg0, const CLHEP::HepLorentzRotation & arg1)->bool { return CLHEP::operator==(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("b"), jlcxx::arg("lt"));
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::operator!=(const CLHEP::HepBoost &, const CLHEP::HepLorentzRotation &) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::operator!=(const CLHEP::HepBoost &, const CLHEP::HepLorentzRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/LorentzRotation.h:363:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/LorentzRotation.h:363:13
     t.method("!=", [](const CLHEP::HepBoost & arg0, const CLHEP::HepLorentzRotation & arg1)->bool { return CLHEP::operator!=(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("b"), jlcxx::arg("lt"));
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::operator<=(const CLHEP::HepBoost &, const CLHEP::HepLorentzRotation &) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::operator<=(const CLHEP::HepBoost &, const CLHEP::HepLorentzRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/LorentzRotation.h:365:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/LorentzRotation.h:365:13
     t.method("<=", [](const CLHEP::HepBoost & arg0, const CLHEP::HepLorentzRotation & arg1)->bool { return CLHEP::operator<=(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("b"), jlcxx::arg("lt"));
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::operator>=(const CLHEP::HepBoost &, const CLHEP::HepLorentzRotation &) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::operator>=(const CLHEP::HepBoost &, const CLHEP::HepLorentzRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/LorentzRotation.h:367:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/LorentzRotation.h:367:13
     t.method(">=", [](const CLHEP::HepBoost & arg0, const CLHEP::HepLorentzRotation & arg1)->bool { return CLHEP::operator>=(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("b"), jlcxx::arg("lt"));
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::operator<(const CLHEP::HepBoost &, const CLHEP::HepLorentzRotation &) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::operator<(const CLHEP::HepBoost &, const CLHEP::HepLorentzRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/LorentzRotation.h:369:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/LorentzRotation.h:369:13
     t.method("<", [](const CLHEP::HepBoost & arg0, const CLHEP::HepLorentzRotation & arg1)->bool { return CLHEP::operator<(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("b"), jlcxx::arg("lt"));
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::operator>(const CLHEP::HepBoost &, const CLHEP::HepLorentzRotation &) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::operator>(const CLHEP::HepBoost &, const CLHEP::HepLorentzRotation &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/LorentzRotation.h:371:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/LorentzRotation.h:371:13
     t.method(">", [](const CLHEP::HepBoost & arg0, const CLHEP::HepLorentzRotation & arg1)->bool { return CLHEP::operator>(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("b"), jlcxx::arg("lt"));
 
     module_.unset_override_module();
 
     DEBUG_MSG("Adding wrapper for G4long G4Poisson(G4double) (" __HERE__ ")");
     // signature to use in the veto list: G4long G4Poisson(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Poisson.hh:50:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Poisson.hh:50:15
     t.method("G4Poisson", [](G4double arg0)->G4long { return G4Poisson(arg0); }, jlcxx::arg("this"), jlcxx::arg("mean"));
 
     DEBUG_MSG("Adding CLHEP!Hep3Vector!ToleranceTicks methods to provide access to the global variable CLHEP::Hep3Vector::ToleranceTicks (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/ThreeVector.h:295:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/ThreeVector.h:295:20
     module_.method("CLHEP!Hep3Vector!ToleranceTicks", []()-> int { return CLHEP::Hep3Vector::ToleranceTicks; });
 
     DEBUG_MSG("Adding CLHEP!HepXHat methods to provide access to the global variable CLHEP::HepXHat (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/ThreeVector.h:419:33
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/ThreeVector.h:419:33
     t.method("CLHEP!HepXHat", []()-> const CLHEP::Hep3Vector& { return CLHEP::HepXHat; }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding CLHEP!HepYHat methods to provide access to the global variable CLHEP::HepYHat (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/ThreeVector.h:419:42
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/ThreeVector.h:419:42
     t.method("CLHEP!HepYHat", []()-> const CLHEP::Hep3Vector& { return CLHEP::HepYHat; }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding CLHEP!HepZHat methods to provide access to the global variable CLHEP::HepZHat (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/ThreeVector.h:419:51
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/ThreeVector.h:419:51
     t.method("CLHEP!HepZHat", []()-> const CLHEP::Hep3Vector& { return CLHEP::HepZHat; }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding CLHEP!HepRotation!IDENTITY methods to provide access to the global variable CLHEP::HepRotation::IDENTITY (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/Rotation.h:366:36
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/Rotation.h:366:36
     module_.method("CLHEP!HepRotation!IDENTITY", []()-> const CLHEP::HepRotation& { return CLHEP::HepRotation::IDENTITY; });
 
     DEBUG_MSG("Adding HepGeom!Transform3D!Identity methods to provide access to the global variable HepGeom::Transform3D::Identity (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:196:38
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:196:38
     module_.method("HepGeom!Transform3D!Identity", []()-> const HepGeom::Transform3D& { return HepGeom::Transform3D::Identity; });
 
     DEBUG_MSG("Adding NTP_Temperature methods to provide access to the global variable NTP_Temperature (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:114:23
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:114:23
     module_.method("NTP_Temperature", []()-> G4double { return NTP_Temperature; });
 
     DEBUG_MSG("Adding CLHEP!Hep2Vector!ZMpvToleranceTicks methods to provide access to the global variable CLHEP::Hep2Vector::ZMpvToleranceTicks (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/TwoVector.h:193:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/TwoVector.h:193:20
     module_.method("CLHEP!Hep2Vector!ZMpvToleranceTicks", []()-> int { return CLHEP::Hep2Vector::ZMpvToleranceTicks; });
 
     DEBUG_MSG("Adding CLHEP!X_HAT2 methods to provide access to the global variable CLHEP::X_HAT2 (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/TwoVector.h:206:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/TwoVector.h:206:25
     module_.method("CLHEP!X_HAT2", []()-> const CLHEP::Hep2Vector& { return CLHEP::X_HAT2; });
 
     DEBUG_MSG("Adding CLHEP!Y_HAT2 methods to provide access to the global variable CLHEP::Y_HAT2 (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/TwoVector.h:207:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/TwoVector.h:207:25
     module_.method("CLHEP!Y_HAT2", []()-> const CLHEP::Hep2Vector& { return CLHEP::Y_HAT2; });
 
     DEBUG_MSG("Adding CLHEP!RandPoissonQ!MAXIMUM_POISSON_DEVIATE methods to provide access to the global variable CLHEP::RandPoissonQ::MAXIMUM_POISSON_DEVIATE (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandPoissonQ.h:108:23
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandPoissonQ.h:108:23
     module_.method("CLHEP!RandPoissonQ!MAXIMUM_POISSON_DEVIATE", []()-> double { return CLHEP::RandPoissonQ::MAXIMUM_POISSON_DEVIATE; });
 
     DEBUG_MSG("Adding G4TransportationManager!kMassNavigatorId methods to provide access to the global variable G4TransportationManager::kMassNavigatorId (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TransportationManager.hh:159:28
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TransportationManager.hh:159:28
     module_.method("G4TransportationManager!kMassNavigatorId", []()-> G4int { return G4TransportationManager::kMassNavigatorId; });
 
     DEBUG_MSG("Adding CLHEP!HepLorentzRotation!IDENTITY methods to provide access to the global variable CLHEP::HepLorentzRotation::IDENTITY (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/LorentzRotation.h:53:43
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/LorentzRotation.h:53:43
     module_.method("CLHEP!HepLorentzRotation!IDENTITY", []()-> const CLHEP::HepLorentzRotation& { return CLHEP::HepLorentzRotation::IDENTITY; });
 
     DEBUG_MSG("Adding G4VisAttributes!fMinLineSegmentsPerCircle methods to provide access to the global variable G4VisAttributes::fMinLineSegmentsPerCircle (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:138:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:138:26
     module_.method("G4VisAttributes!fMinLineSegmentsPerCircle", []()-> G4int { return G4VisAttributes::fMinLineSegmentsPerCircle; });
 
     DEBUG_MSG("Adding G4VisAttributes!fVeryLongTime methods to provide access to the global variable G4VisAttributes::fVeryLongTime (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:141:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:141:29
     module_.method("G4VisAttributes!fVeryLongTime", []()-> G4double { return G4VisAttributes::fVeryLongTime; });
   }
 };

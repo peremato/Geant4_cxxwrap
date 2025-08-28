@@ -17,7 +17,7 @@ struct JlG4TwistedTrd: public Wrapper {
 
   JlG4TwistedTrd(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4TwistedTrd (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTrd.hh:50:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTrd.hh:50:7
     jlcxx::TypeWrapper<G4TwistedTrd>  t = jlModule.add_type<G4TwistedTrd>("G4TwistedTrd");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4TwistedTrd>>(new jlcxx::TypeWrapper<G4TwistedTrd>(jlModule, t));
   }
@@ -27,77 +27,77 @@ struct JlG4TwistedTrd: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4TwistedTrd::G4TwistedTrd(const G4String &, G4double, G4double, G4double, G4double, G4double, G4double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTrd.hh:54:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTrd.hh:54:5
     t.constructor<const G4String &, G4double, G4double, G4double, G4double, G4double, G4double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("pName"), jlcxx::arg("pDx1"), jlcxx::arg("pDx2"), jlcxx::arg("pDy1"), jlcxx::arg("pDy2"), jlcxx::arg("pDz"), jlcxx::arg("pPhiTwist")    );
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTrd::GetX1HalfLength() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTrd::GetX1HalfLength()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTrd.hh:66:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTrd.hh:66:21
     t.method("GetX1HalfLength", [](G4TwistedTrd const& a)->G4double { return a.GetX1HalfLength(); }, jlcxx::arg("this"));
     t.method("GetX1HalfLength", [](G4TwistedTrd const* a)->G4double { return a->GetX1HalfLength(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTrd::GetX2HalfLength() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTrd::GetX2HalfLength()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTrd.hh:67:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTrd.hh:67:21
     t.method("GetX2HalfLength", [](G4TwistedTrd const& a)->G4double { return a.GetX2HalfLength(); }, jlcxx::arg("this"));
     t.method("GetX2HalfLength", [](G4TwistedTrd const* a)->G4double { return a->GetX2HalfLength(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTrd::GetY1HalfLength() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTrd::GetY1HalfLength()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTrd.hh:68:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTrd.hh:68:21
     t.method("GetY1HalfLength", [](G4TwistedTrd const& a)->G4double { return a.GetY1HalfLength(); }, jlcxx::arg("this"));
     t.method("GetY1HalfLength", [](G4TwistedTrd const* a)->G4double { return a->GetY1HalfLength(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTrd::GetY2HalfLength() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTrd::GetY2HalfLength()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTrd.hh:69:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTrd.hh:69:21
     t.method("GetY2HalfLength", [](G4TwistedTrd const& a)->G4double { return a.GetY2HalfLength(); }, jlcxx::arg("this"));
     t.method("GetY2HalfLength", [](G4TwistedTrd const* a)->G4double { return a->GetY2HalfLength(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTrd::GetZHalfLength() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTrd::GetZHalfLength()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTrd.hh:70:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTrd.hh:70:21
     t.method("GetZHalfLength", [](G4TwistedTrd const& a)->G4double { return a.GetZHalfLength(); }, jlcxx::arg("this"));
     t.method("GetZHalfLength", [](G4TwistedTrd const* a)->G4double { return a->GetZHalfLength(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTrd::GetPhiTwist() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTrd::GetPhiTwist()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTrd.hh:71:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTrd.hh:71:21
     t.method("GetPhiTwist", [](G4TwistedTrd const& a)->G4double { return a.GetPhiTwist(); }, jlcxx::arg("this"));
     t.method("GetPhiTwist", [](G4TwistedTrd const* a)->G4double { return a->GetPhiTwist(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4GeometryType G4TwistedTrd::GetEntityType() (" __HERE__ ")");
     // signature to use in the veto list: G4GeometryType G4TwistedTrd::GetEntityType()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTrd.hh:73:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTrd.hh:73:20
     t.method("GetEntityType", [](G4TwistedTrd const& a)->G4GeometryType { return a.GetEntityType(); }, jlcxx::arg("this"));
     t.method("GetEntityType", [](G4TwistedTrd const* a)->G4GeometryType { return a->GetEntityType(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTrd::GetCubicVolume() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTrd::GetCubicVolume()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTrd.hh:75:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTrd.hh:75:14
     t.method("GetCubicVolume", [](G4TwistedTrd& a)->G4double { return a.GetCubicVolume(); }, jlcxx::arg("this"));
     t.method("GetCubicVolume", [](G4TwistedTrd* a)->G4double { return a->GetCubicVolume(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4TwistedTrd::GetSurfaceArea() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4TwistedTrd::GetSurfaceArea()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTrd.hh:76:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTrd.hh:76:14
     t.method("GetSurfaceArea", [](G4TwistedTrd& a)->G4double { return a.GetSurfaceArea(); }, jlcxx::arg("this"));
     t.method("GetSurfaceArea", [](G4TwistedTrd* a)->G4double { return a->GetSurfaceArea(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4VSolid * G4TwistedTrd::Clone() (" __HERE__ ")");
     // signature to use in the veto list: G4VSolid * G4TwistedTrd::Clone()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTrd.hh:78:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTrd.hh:78:15
     t.method("Clone", [](G4TwistedTrd const& a)->G4VSolid * { return a.Clone(); }, jlcxx::arg("this"));
     t.method("Clone", [](G4TwistedTrd const* a)->G4VSolid * { return a->Clone(); }, jlcxx::arg("this"));
 
 
     DEBUG_MSG("Adding wrapper for void G4TwistedTrd::G4TwistedTrd(const G4TwistedTrd &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTrd.hh:87:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTrd.hh:87:5
     t.constructor<const G4TwistedTrd &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("rhs")    );
 
     DEBUG_MSG("Adding wrapper for G4TwistedTrd & G4TwistedTrd::operator=(const G4TwistedTrd &) (" __HERE__ ")");
     // signature to use in the veto list: G4TwistedTrd & G4TwistedTrd::operator=(const G4TwistedTrd &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TwistedTrd.hh:88:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TwistedTrd.hh:88:19
     t.method("assign", [](G4TwistedTrd& a, const G4TwistedTrd & arg0)->G4TwistedTrd & { return a.operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("rhs"));
     t.method("assign", [](G4TwistedTrd* a, const G4TwistedTrd & arg0)->G4TwistedTrd & { return a->operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("rhs"));
   }

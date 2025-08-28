@@ -17,7 +17,7 @@ struct JlG4NistManager: public Wrapper {
 
   JlG4NistManager(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4NistManager (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:75:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:75:7
     jlcxx::TypeWrapper<G4NistManager>  t = jlModule.add_type<G4NistManager>("G4NistManager");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4NistManager>>(new jlcxx::TypeWrapper<G4NistManager>(jlModule, t));
   }
@@ -27,24 +27,24 @@ struct JlG4NistManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4NistManager * G4NistManager::Instance() (" __HERE__ ")");
     // signature to use in the veto list: G4NistManager * G4NistManager::Instance()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:78:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:78:25
     module_.method("G4NistManager!Instance", []()->G4NistManager * { return G4NistManager::Instance(); });
 
-    DEBUG_MSG("Adding wrapper for G4Element * G4NistManager::GetElement(size_t) (" __HERE__ ")");
-    // signature to use in the veto list: G4Element * G4NistManager::GetElement(size_t)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:83:21
-    t.method("GetElement", [](G4NistManager const& a, size_t arg0)->G4Element * { return a.GetElement(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
-    t.method("GetElement", [](G4NistManager const* a, size_t arg0)->G4Element * { return a->GetElement(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
+    DEBUG_MSG("Adding wrapper for G4Element * G4NistManager::GetElement(std::size_t) (" __HERE__ ")");
+    // signature to use in the veto list: G4Element * G4NistManager::GetElement(std::size_t)
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:83:21
+    t.method("GetElement", [](G4NistManager const& a, std::size_t arg0)->G4Element * { return a.GetElement(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
+    t.method("GetElement", [](G4NistManager const* a, std::size_t arg0)->G4Element * { return a->GetElement(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
 
     DEBUG_MSG("Adding wrapper for G4Element * G4NistManager::FindElement(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4Element * G4NistManager::FindElement(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:87:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:87:21
     t.method("FindElement", [](G4NistManager const& a, G4int arg0)->G4Element * { return a.FindElement(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
     t.method("FindElement", [](G4NistManager const* a, G4int arg0)->G4Element * { return a->FindElement(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
 
     DEBUG_MSG("Adding wrapper for G4Element * G4NistManager::FindOrBuildElement(G4int, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: G4Element * G4NistManager::FindOrBuildElement(G4int, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:88:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:88:21
     t.method("FindOrBuildElement", [](G4NistManager& a, G4int arg0)->G4Element * { return a.FindOrBuildElement(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
     t.method("FindOrBuildElement", [](G4NistManager& a, G4int arg0, G4bool arg1)->G4Element * { return a.FindOrBuildElement(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("Z"), jlcxx::arg("isotopes"));
     t.method("FindOrBuildElement", [](G4NistManager* a, G4int arg0)->G4Element * { return a->FindOrBuildElement(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
@@ -52,123 +52,123 @@ struct JlG4NistManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4Element * G4NistManager::FindOrBuildElement(const G4String &, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: G4Element * G4NistManager::FindOrBuildElement(const G4String &, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:92:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:92:21
     t.method("FindOrBuildElement", [](G4NistManager& a, const G4String & arg0)->G4Element * { return a.FindOrBuildElement(arg0); }, jlcxx::arg("this"), jlcxx::arg("symb"));
     t.method("FindOrBuildElement", [](G4NistManager& a, const G4String & arg0, G4bool arg1)->G4Element * { return a.FindOrBuildElement(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("symb"), jlcxx::arg("isotopes"));
     t.method("FindOrBuildElement", [](G4NistManager* a, const G4String & arg0)->G4Element * { return a->FindOrBuildElement(arg0); }, jlcxx::arg("this"), jlcxx::arg("symb"));
     t.method("FindOrBuildElement", [](G4NistManager* a, const G4String & arg0, G4bool arg1)->G4Element * { return a->FindOrBuildElement(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("symb"), jlcxx::arg("isotopes"));
 
-    DEBUG_MSG("Adding wrapper for size_t G4NistManager::GetNumberOfElements() (" __HERE__ ")");
-    // signature to use in the veto list: size_t G4NistManager::GetNumberOfElements()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:96:22
-    t.method("GetNumberOfElements", [](G4NistManager const& a)->size_t { return a.GetNumberOfElements(); }, jlcxx::arg("this"));
-    t.method("GetNumberOfElements", [](G4NistManager const* a)->size_t { return a->GetNumberOfElements(); }, jlcxx::arg("this"));
+    DEBUG_MSG("Adding wrapper for std::size_t G4NistManager::GetNumberOfElements() (" __HERE__ ")");
+    // signature to use in the veto list: std::size_t G4NistManager::GetNumberOfElements()
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:96:22
+    t.method("GetNumberOfElements", [](G4NistManager const& a)->std::size_t { return a.GetNumberOfElements(); }, jlcxx::arg("this"));
+    t.method("GetNumberOfElements", [](G4NistManager const* a)->std::size_t { return a->GetNumberOfElements(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4NistManager::GetZ(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4int G4NistManager::GetZ(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:100:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:100:16
     t.method("GetZ", [](G4NistManager const& a, const G4String & arg0)->G4int { return a.GetZ(arg0); }, jlcxx::arg("this"), jlcxx::arg("symb"));
     t.method("GetZ", [](G4NistManager const* a, const G4String & arg0)->G4int { return a->GetZ(arg0); }, jlcxx::arg("this"), jlcxx::arg("symb"));
 
     DEBUG_MSG("Adding wrapper for G4double G4NistManager::GetAtomicMassAmu(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4NistManager::GetAtomicMassAmu(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:105:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:105:19
     t.method("GetAtomicMassAmu", [](G4NistManager const& a, const G4String & arg0)->G4double { return a.GetAtomicMassAmu(arg0); }, jlcxx::arg("this"), jlcxx::arg("symb"));
     t.method("GetAtomicMassAmu", [](G4NistManager const* a, const G4String & arg0)->G4double { return a->GetAtomicMassAmu(arg0); }, jlcxx::arg("this"), jlcxx::arg("symb"));
 
     DEBUG_MSG("Adding wrapper for G4double G4NistManager::GetAtomicMassAmu(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4NistManager::GetAtomicMassAmu(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:110:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:110:19
     t.method("GetAtomicMassAmu", [](G4NistManager const& a, G4int arg0)->G4double { return a.GetAtomicMassAmu(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
     t.method("GetAtomicMassAmu", [](G4NistManager const* a, G4int arg0)->G4double { return a->GetAtomicMassAmu(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
 
     DEBUG_MSG("Adding wrapper for G4double G4NistManager::GetIsotopeMass(G4int, G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4NistManager::GetIsotopeMass(G4int, G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:114:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:114:19
     t.method("GetIsotopeMass", [](G4NistManager const& a, G4int arg0, G4int arg1)->G4double { return a.GetIsotopeMass(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("Z"), jlcxx::arg("N"));
     t.method("GetIsotopeMass", [](G4NistManager const* a, G4int arg0, G4int arg1)->G4double { return a->GetIsotopeMass(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("Z"), jlcxx::arg("N"));
 
     DEBUG_MSG("Adding wrapper for G4double G4NistManager::GetAtomicMass(G4int, G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4NistManager::GetAtomicMass(G4int, G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:119:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:119:19
     t.method("GetAtomicMass", [](G4NistManager const& a, G4int arg0, G4int arg1)->G4double { return a.GetAtomicMass(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("Z"), jlcxx::arg("N"));
     t.method("GetAtomicMass", [](G4NistManager const* a, G4int arg0, G4int arg1)->G4double { return a->GetAtomicMass(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("Z"), jlcxx::arg("N"));
 
     DEBUG_MSG("Adding wrapper for G4double G4NistManager::GetTotalElectronBindingEnergy(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4NistManager::GetTotalElectronBindingEnergy(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:123:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:123:19
     t.method("GetTotalElectronBindingEnergy", [](G4NistManager const& a, G4int arg0)->G4double { return a.GetTotalElectronBindingEnergy(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
     t.method("GetTotalElectronBindingEnergy", [](G4NistManager const* a, G4int arg0)->G4double { return a->GetTotalElectronBindingEnergy(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
 
     DEBUG_MSG("Adding wrapper for G4int G4NistManager::GetNistFirstIsotopeN(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4int G4NistManager::GetNistFirstIsotopeN(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:127:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:127:16
     t.method("GetNistFirstIsotopeN", [](G4NistManager const& a, G4int arg0)->G4int { return a.GetNistFirstIsotopeN(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
     t.method("GetNistFirstIsotopeN", [](G4NistManager const* a, G4int arg0)->G4int { return a->GetNistFirstIsotopeN(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
 
     DEBUG_MSG("Adding wrapper for G4int G4NistManager::GetNumberOfNistIsotopes(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4int G4NistManager::GetNumberOfNistIsotopes(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:131:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:131:16
     t.method("GetNumberOfNistIsotopes", [](G4NistManager const& a, G4int arg0)->G4int { return a.GetNumberOfNistIsotopes(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
     t.method("GetNumberOfNistIsotopes", [](G4NistManager const* a, G4int arg0)->G4int { return a->GetNumberOfNistIsotopes(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
 
     DEBUG_MSG("Adding wrapper for G4double G4NistManager::GetIsotopeAbundance(G4int, G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4NistManager::GetIsotopeAbundance(G4int, G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:135:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:135:19
     t.method("GetIsotopeAbundance", [](G4NistManager const& a, G4int arg0, G4int arg1)->G4double { return a.GetIsotopeAbundance(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("Z"), jlcxx::arg("N"));
     t.method("GetIsotopeAbundance", [](G4NistManager const* a, G4int arg0, G4int arg1)->G4double { return a->GetIsotopeAbundance(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("Z"), jlcxx::arg("N"));
 
     DEBUG_MSG("Adding wrapper for void G4NistManager::PrintElement(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4NistManager::PrintElement(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:139:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:139:15
     t.method("PrintElement", [](G4NistManager const& a, G4int arg0)->void { a.PrintElement(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
     t.method("PrintElement", [](G4NistManager const* a, G4int arg0)->void { a->PrintElement(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
 
     DEBUG_MSG("Adding wrapper for void G4NistManager::PrintElement(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4NistManager::PrintElement(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:143:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:143:8
     t.method("PrintElement", [](G4NistManager const& a, const G4String & arg0)->void { a.PrintElement(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("PrintElement", [](G4NistManager const* a, const G4String & arg0)->void { a->PrintElement(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4NistManager::PrintG4Element(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4NistManager::PrintG4Element(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:147:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:147:8
     t.method("PrintG4Element", [](G4NistManager const& a, const G4String & arg0)->void { a.PrintG4Element(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("PrintG4Element", [](G4NistManager const* a, const G4String & arg0)->void { a->PrintG4Element(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for const std::vector<G4String> & G4NistManager::GetNistElementNames() (" __HERE__ ")");
     // signature to use in the veto list: const std::vector<G4String> & G4NistManager::GetNistElementNames()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:151:39
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:151:39
     t.method("GetNistElementNames", [](G4NistManager const& a)->const std::vector<G4String> & { return a.GetNistElementNames(); }, jlcxx::arg("this"));
     t.method("GetNistElementNames", [](G4NistManager const* a)->const std::vector<G4String> & { return a->GetNistElementNames(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4NistManager::GetMeanIonisationEnergy(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4NistManager::GetMeanIonisationEnergy(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:155:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:155:19
     t.method("GetMeanIonisationEnergy", [](G4NistManager const& a, G4int arg0)->G4double { return a.GetMeanIonisationEnergy(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
     t.method("GetMeanIonisationEnergy", [](G4NistManager const* a, G4int arg0)->G4double { return a->GetMeanIonisationEnergy(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
 
     DEBUG_MSG("Adding wrapper for G4double G4NistManager::GetNominalDensity(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4NistManager::GetNominalDensity(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:160:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:160:19
     t.method("GetNominalDensity", [](G4NistManager const& a, G4int arg0)->G4double { return a.GetNominalDensity(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
     t.method("GetNominalDensity", [](G4NistManager const* a, G4int arg0)->G4double { return a->GetNominalDensity(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
 
-    DEBUG_MSG("Adding wrapper for G4Material * G4NistManager::GetMaterial(size_t) (" __HERE__ ")");
-    // signature to use in the veto list: G4Material * G4NistManager::GetMaterial(size_t)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:164:22
-    t.method("GetMaterial", [](G4NistManager const& a, size_t arg0)->G4Material * { return a.GetMaterial(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
-    t.method("GetMaterial", [](G4NistManager const* a, size_t arg0)->G4Material * { return a->GetMaterial(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
+    DEBUG_MSG("Adding wrapper for G4Material * G4NistManager::GetMaterial(std::size_t) (" __HERE__ ")");
+    // signature to use in the veto list: G4Material * G4NistManager::GetMaterial(std::size_t)
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:164:22
+    t.method("GetMaterial", [](G4NistManager const& a, std::size_t arg0)->G4Material * { return a.GetMaterial(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
+    t.method("GetMaterial", [](G4NistManager const* a, std::size_t arg0)->G4Material * { return a->GetMaterial(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
 
     DEBUG_MSG("Adding wrapper for G4Material * G4NistManager::FindMaterial(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4Material * G4NistManager::FindMaterial(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:168:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:168:22
     t.method("FindMaterial", [](G4NistManager const& a, const G4String & arg0)->G4Material * { return a.FindMaterial(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
     t.method("FindMaterial", [](G4NistManager const* a, const G4String & arg0)->G4Material * { return a->FindMaterial(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
 
     DEBUG_MSG("Adding wrapper for G4Material * G4NistManager::FindOrBuildMaterial(const G4String &, G4bool, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: G4Material * G4NistManager::FindOrBuildMaterial(const G4String &, G4bool, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:169:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:169:22
     t.method("FindOrBuildMaterial", [](G4NistManager& a, const G4String & arg0)->G4Material * { return a.FindOrBuildMaterial(arg0); }, jlcxx::arg("this"), jlcxx::arg("name"));
     t.method("FindOrBuildMaterial", [](G4NistManager& a, const G4String & arg0, G4bool arg1)->G4Material * { return a.FindOrBuildMaterial(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("isotopes"));
     t.method("FindOrBuildMaterial", [](G4NistManager& a, const G4String & arg0, G4bool arg1, G4bool arg2)->G4Material * { return a.FindOrBuildMaterial(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("isotopes"), jlcxx::arg("warning"));
@@ -178,13 +178,13 @@ struct JlG4NistManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4Material * G4NistManager::FindSimpleMaterial(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4Material * G4NistManager::FindSimpleMaterial(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:174:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:174:22
     t.method("FindSimpleMaterial", [](G4NistManager const& a, G4int arg0)->G4Material * { return a.FindSimpleMaterial(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
     t.method("FindSimpleMaterial", [](G4NistManager const* a, G4int arg0)->G4Material * { return a->FindSimpleMaterial(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
 
     DEBUG_MSG("Adding wrapper for G4Material * G4NistManager::FindOrBuildSimpleMaterial(G4int, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: G4Material * G4NistManager::FindOrBuildSimpleMaterial(G4int, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:175:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:175:22
     t.method("FindOrBuildSimpleMaterial", [](G4NistManager& a, G4int arg0)->G4Material * { return a.FindOrBuildSimpleMaterial(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
     t.method("FindOrBuildSimpleMaterial", [](G4NistManager& a, G4int arg0, G4bool arg1)->G4Material * { return a.FindOrBuildSimpleMaterial(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("Z"), jlcxx::arg("warning"));
     t.method("FindOrBuildSimpleMaterial", [](G4NistManager* a, G4int arg0)->G4Material * { return a->FindOrBuildSimpleMaterial(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
@@ -192,7 +192,7 @@ struct JlG4NistManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4Material * G4NistManager::BuildMaterialWithNewDensity(const G4String &, const G4String &, G4double, G4double, G4double) (" __HERE__ ")");
     // signature to use in the veto list: G4Material * G4NistManager::BuildMaterialWithNewDensity(const G4String &, const G4String &, G4double, G4double, G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:180:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:180:15
     t.method("BuildMaterialWithNewDensity", [](G4NistManager& a, const G4String & arg0, const G4String & arg1)->G4Material * { return a.BuildMaterialWithNewDensity(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("basename"));
     t.method("BuildMaterialWithNewDensity", [](G4NistManager& a, const G4String & arg0, const G4String & arg1, G4double arg2)->G4Material * { return a.BuildMaterialWithNewDensity(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("basename"), jlcxx::arg("density"));
     t.method("BuildMaterialWithNewDensity", [](G4NistManager& a, const G4String & arg0, const G4String & arg1, G4double arg2, G4double arg3)->G4Material * { return a.BuildMaterialWithNewDensity(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("basename"), jlcxx::arg("density"), jlcxx::arg("temp"));
@@ -204,7 +204,7 @@ struct JlG4NistManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4Material * G4NistManager::ConstructNewMaterial(const G4String &, const std::vector<G4String> &, const std::vector<G4int> &, G4double, G4bool, G4State, G4double, G4double) (" __HERE__ ")");
     // signature to use in the veto list: G4Material * G4NistManager::ConstructNewMaterial(const G4String &, const std::vector<G4String> &, const std::vector<G4int> &, G4double, G4bool, G4State, G4double, G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:186:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:186:22
     t.method("ConstructNewMaterial", [](G4NistManager& a, const G4String & arg0, const std::vector<G4String> & arg1, const std::vector<G4int> & arg2, G4double arg3)->G4Material * { return a.ConstructNewMaterial(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("elm"), jlcxx::arg("nbAtoms"), jlcxx::arg("dens"));
     t.method("ConstructNewMaterial", [](G4NistManager& a, const G4String & arg0, const std::vector<G4String> & arg1, const std::vector<G4int> & arg2, G4double arg3, G4bool arg4)->G4Material * { return a.ConstructNewMaterial(arg0, arg1, arg2, arg3, arg4); }, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("elm"), jlcxx::arg("nbAtoms"), jlcxx::arg("dens"), jlcxx::arg("isotopes"));
     t.method("ConstructNewMaterial", [](G4NistManager& a, const G4String & arg0, const std::vector<G4String> & arg1, const std::vector<G4int> & arg2, G4double arg3, G4bool arg4, G4State arg5)->G4Material * { return a.ConstructNewMaterial(arg0, arg1, arg2, arg3, arg4, arg5); }, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("elm"), jlcxx::arg("nbAtoms"), jlcxx::arg("dens"), jlcxx::arg("isotopes"), jlcxx::arg("state"));
@@ -218,7 +218,7 @@ struct JlG4NistManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4Material * G4NistManager::ConstructNewMaterial(const G4String &, const std::vector<G4String> &, const std::vector<G4double> &, G4double, G4bool, G4State, G4double, G4double) (" __HERE__ ")");
     // signature to use in the veto list: G4Material * G4NistManager::ConstructNewMaterial(const G4String &, const std::vector<G4String> &, const std::vector<G4double> &, G4double, G4bool, G4State, G4double, G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:194:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:194:22
     t.method("ConstructNewMaterial", [](G4NistManager& a, const G4String & arg0, const std::vector<G4String> & arg1, const std::vector<G4double> & arg2, G4double arg3)->G4Material * { return a.ConstructNewMaterial(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("elm"), jlcxx::arg("weight"), jlcxx::arg("dens"));
     t.method("ConstructNewMaterial", [](G4NistManager& a, const G4String & arg0, const std::vector<G4String> & arg1, const std::vector<G4double> & arg2, G4double arg3, G4bool arg4)->G4Material * { return a.ConstructNewMaterial(arg0, arg1, arg2, arg3, arg4); }, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("elm"), jlcxx::arg("weight"), jlcxx::arg("dens"), jlcxx::arg("isotopes"));
     t.method("ConstructNewMaterial", [](G4NistManager& a, const G4String & arg0, const std::vector<G4String> & arg1, const std::vector<G4double> & arg2, G4double arg3, G4bool arg4, G4State arg5)->G4Material * { return a.ConstructNewMaterial(arg0, arg1, arg2, arg3, arg4, arg5); }, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("elm"), jlcxx::arg("weight"), jlcxx::arg("dens"), jlcxx::arg("isotopes"), jlcxx::arg("state"));
@@ -232,7 +232,7 @@ struct JlG4NistManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4Material * G4NistManager::ConstructNewGasMaterial(const G4String &, const G4String &, G4double, G4double, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: G4Material * G4NistManager::ConstructNewGasMaterial(const G4String &, const G4String &, G4double, G4double, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:201:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:201:22
     t.method("ConstructNewGasMaterial", [](G4NistManager& a, const G4String & arg0, const G4String & arg1, G4double arg2, G4double arg3)->G4Material * { return a.ConstructNewGasMaterial(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("nameNist"), jlcxx::arg("temp"), jlcxx::arg("pres"));
     t.method("ConstructNewGasMaterial", [](G4NistManager& a, const G4String & arg0, const G4String & arg1, G4double arg2, G4double arg3, G4bool arg4)->G4Material * { return a.ConstructNewGasMaterial(arg0, arg1, arg2, arg3, arg4); }, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("nameNist"), jlcxx::arg("temp"), jlcxx::arg("pres"), jlcxx::arg("isotopes"));
     t.method("ConstructNewGasMaterial", [](G4NistManager* a, const G4String & arg0, const G4String & arg1, G4double arg2, G4double arg3)->G4Material * { return a->ConstructNewGasMaterial(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("nameNist"), jlcxx::arg("temp"), jlcxx::arg("pres"));
@@ -240,7 +240,7 @@ struct JlG4NistManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4Material * G4NistManager::ConstructNewIdealGasMaterial(const G4String &, const std::vector<G4String> &, const std::vector<G4int> &, G4bool, G4double, G4double) (" __HERE__ ")");
     // signature to use in the veto list: G4Material * G4NistManager::ConstructNewIdealGasMaterial(const G4String &, const std::vector<G4String> &, const std::vector<G4int> &, G4bool, G4double, G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:206:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:206:22
     t.method("ConstructNewIdealGasMaterial", [](G4NistManager& a, const G4String & arg0, const std::vector<G4String> & arg1, const std::vector<G4int> & arg2)->G4Material * { return a.ConstructNewIdealGasMaterial(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("elm"), jlcxx::arg("nbAtoms"));
     t.method("ConstructNewIdealGasMaterial", [](G4NistManager& a, const G4String & arg0, const std::vector<G4String> & arg1, const std::vector<G4int> & arg2, G4bool arg3)->G4Material * { return a.ConstructNewIdealGasMaterial(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("elm"), jlcxx::arg("nbAtoms"), jlcxx::arg("isotopes"));
     t.method("ConstructNewIdealGasMaterial", [](G4NistManager& a, const G4String & arg0, const std::vector<G4String> & arg1, const std::vector<G4int> & arg2, G4bool arg3, G4double arg4)->G4Material * { return a.ConstructNewIdealGasMaterial(arg0, arg1, arg2, arg3, arg4); }, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("elm"), jlcxx::arg("nbAtoms"), jlcxx::arg("isotopes"), jlcxx::arg("temp"));
@@ -252,85 +252,85 @@ struct JlG4NistManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4NistManager::SetDensityEffectCalculatorFlag(const G4String &, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4NistManager::SetDensityEffectCalculatorFlag(const G4String &, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:212:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:212:8
     t.method("SetDensityEffectCalculatorFlag", [](G4NistManager& a, const G4String & arg0, G4bool arg1)->void { a.SetDensityEffectCalculatorFlag(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"));
     t.method("SetDensityEffectCalculatorFlag", [](G4NistManager* a, const G4String & arg0, G4bool arg1)->void { a->SetDensityEffectCalculatorFlag(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"));
 
     DEBUG_MSG("Adding wrapper for void G4NistManager::SetDensityEffectCalculatorFlag(G4Material *, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4NistManager::SetDensityEffectCalculatorFlag(G4Material *, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:216:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:216:8
     t.method("SetDensityEffectCalculatorFlag", [](G4NistManager& a, G4Material * arg0, G4bool arg1)->void { a.SetDensityEffectCalculatorFlag(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"));
     t.method("SetDensityEffectCalculatorFlag", [](G4NistManager* a, G4Material * arg0, G4bool arg1)->void { a->SetDensityEffectCalculatorFlag(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"));
 
-    DEBUG_MSG("Adding wrapper for size_t G4NistManager::GetNumberOfMaterials() (" __HERE__ ")");
-    // signature to use in the veto list: size_t G4NistManager::GetNumberOfMaterials()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:220:22
-    t.method("GetNumberOfMaterials", [](G4NistManager const& a)->size_t { return a.GetNumberOfMaterials(); }, jlcxx::arg("this"));
-    t.method("GetNumberOfMaterials", [](G4NistManager const* a)->size_t { return a->GetNumberOfMaterials(); }, jlcxx::arg("this"));
+    DEBUG_MSG("Adding wrapper for std::size_t G4NistManager::GetNumberOfMaterials() (" __HERE__ ")");
+    // signature to use in the veto list: std::size_t G4NistManager::GetNumberOfMaterials()
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:220:22
+    t.method("GetNumberOfMaterials", [](G4NistManager const& a)->std::size_t { return a.GetNumberOfMaterials(); }, jlcxx::arg("this"));
+    t.method("GetNumberOfMaterials", [](G4NistManager const* a)->std::size_t { return a->GetNumberOfMaterials(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4NistManager::GetVerbose() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4NistManager::GetVerbose()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:222:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:222:16
     t.method("GetVerbose", [](G4NistManager const& a)->G4int { return a.GetVerbose(); }, jlcxx::arg("this"));
     t.method("GetVerbose", [](G4NistManager const* a)->G4int { return a->GetVerbose(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4NistManager::SetVerbose(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4NistManager::SetVerbose(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:224:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:224:8
     t.method("SetVerbose", [](G4NistManager& a, G4int arg0)->void { a.SetVerbose(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetVerbose", [](G4NistManager* a, G4int arg0)->void { a->SetVerbose(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4NistManager::PrintG4Material(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4NistManager::PrintG4Material(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:228:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:228:8
     t.method("PrintG4Material", [](G4NistManager const& a, const G4String & arg0)->void { a.PrintG4Material(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("PrintG4Material", [](G4NistManager const* a, const G4String & arg0)->void { a->PrintG4Material(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4NistManager::ListMaterials(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4NistManager::ListMaterials(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:237:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:237:15
     t.method("ListMaterials", [](G4NistManager const& a, const G4String & arg0)->void { a.ListMaterials(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("ListMaterials", [](G4NistManager const* a, const G4String & arg0)->void { a->ListMaterials(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for const std::vector<G4String> & G4NistManager::GetNistMaterialNames() (" __HERE__ ")");
     // signature to use in the veto list: const std::vector<G4String> & G4NistManager::GetNistMaterialNames()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:241:39
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:241:39
     t.method("GetNistMaterialNames", [](G4NistManager const& a)->const std::vector<G4String> & { return a.GetNistMaterialNames(); }, jlcxx::arg("this"));
     t.method("GetNistMaterialNames", [](G4NistManager const* a)->const std::vector<G4String> & { return a->GetNistMaterialNames(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4NistManager::GetZ13(G4double) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4NistManager::GetZ13(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:245:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:245:19
     t.method("GetZ13", [](G4NistManager const& a, G4double arg0)->G4double { return a.GetZ13(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
     t.method("GetZ13", [](G4NistManager const* a, G4double arg0)->G4double { return a->GetZ13(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
 
     DEBUG_MSG("Adding wrapper for G4double G4NistManager::GetZ13(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4NistManager::GetZ13(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:246:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:246:19
     t.method("GetZ13", [](G4NistManager const& a, G4int arg0)->G4double { return a.GetZ13(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
     t.method("GetZ13", [](G4NistManager const* a, G4int arg0)->G4double { return a->GetZ13(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
 
     DEBUG_MSG("Adding wrapper for G4double G4NistManager::GetA27(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4NistManager::GetA27(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:250:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:250:19
     t.method("GetA27", [](G4NistManager const& a, G4int arg0)->G4double { return a.GetA27(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
     t.method("GetA27", [](G4NistManager const* a, G4int arg0)->G4double { return a->GetA27(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
 
     DEBUG_MSG("Adding wrapper for G4double G4NistManager::GetLOGZ(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4NistManager::GetLOGZ(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:254:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:254:19
     t.method("GetLOGZ", [](G4NistManager const& a, G4int arg0)->G4double { return a.GetLOGZ(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
     t.method("GetLOGZ", [](G4NistManager const* a, G4int arg0)->G4double { return a->GetLOGZ(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
 
     DEBUG_MSG("Adding wrapper for G4double G4NistManager::GetLOGAMU(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4NistManager::GetLOGAMU(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:255:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:255:19
     t.method("GetLOGAMU", [](G4NistManager const& a, G4int arg0)->G4double { return a.GetLOGAMU(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
     t.method("GetLOGAMU", [](G4NistManager const* a, G4int arg0)->G4double { return a->GetLOGAMU(arg0); }, jlcxx::arg("this"), jlcxx::arg("Z"));
 
     DEBUG_MSG("Adding wrapper for G4ICRU90StoppingData * G4NistManager::GetICRU90StoppingData() (" __HERE__ ")");
     // signature to use in the veto list: G4ICRU90StoppingData * G4NistManager::GetICRU90StoppingData()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NistManager.hh:257:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NistManager.hh:257:25
     t.method("GetICRU90StoppingData", [](G4NistManager& a)->G4ICRU90StoppingData * { return a.GetICRU90StoppingData(); }, jlcxx::arg("this"));
     t.method("GetICRU90StoppingData", [](G4NistManager* a)->G4ICRU90StoppingData * { return a->GetICRU90StoppingData(); }, jlcxx::arg("this"));
   }

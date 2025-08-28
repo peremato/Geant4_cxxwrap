@@ -18,7 +18,7 @@ struct JlG4DisplacedSolid: public Wrapper {
 
   JlG4DisplacedSolid(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4DisplacedSolid (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:45:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:45:7
     jlcxx::TypeWrapper<G4DisplacedSolid>  t = jlModule.add_type<G4DisplacedSolid>("G4DisplacedSolid",
       jlcxx::julia_base_type<G4VSolid>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4DisplacedSolid>>(new jlcxx::TypeWrapper<G4DisplacedSolid>(jlModule, t));
@@ -29,52 +29,52 @@ struct JlG4DisplacedSolid: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::G4DisplacedSolid(const G4String &, G4VSolid *, G4RotationMatrix *, const G4ThreeVector &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:49:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:49:5
     t.constructor<const G4String &, G4VSolid *, G4RotationMatrix *, const G4ThreeVector &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("pName"), jlcxx::arg("pSolid"), jlcxx::arg("rotMatrix"), jlcxx::arg("transVector")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::G4DisplacedSolid(const G4String &, G4VSolid *, const G4Transform3D &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:54:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:54:5
     t.constructor<const G4String &, G4VSolid *, const G4Transform3D &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("pName"), jlcxx::arg("pSolid"), jlcxx::arg("transform")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::G4DisplacedSolid(const G4String &, G4VSolid *, const G4AffineTransform) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:58:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:58:5
     t.constructor<const G4String &, G4VSolid *, const G4AffineTransform>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("pName"), jlcxx::arg("pSolid"), jlcxx::arg("directTransform")    );
 
     DEBUG_MSG("Adding wrapper for EInside G4DisplacedSolid::Inside(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: EInside G4DisplacedSolid::Inside(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:65:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:65:13
     t.method("Inside", [](G4DisplacedSolid const& a, const G4ThreeVector & arg0)->EInside { return a.Inside(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("Inside", [](G4DisplacedSolid const* a, const G4ThreeVector & arg0)->EInside { return a->Inside(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::BoundingLimits(G4ThreeVector &, G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4DisplacedSolid::BoundingLimits(G4ThreeVector &, G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:67:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:67:10
     t.method("BoundingLimits", [](G4DisplacedSolid const& a, G4ThreeVector & arg0, G4ThreeVector & arg1)->void { a.BoundingLimits(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("pMin"), jlcxx::arg("pMax"));
     t.method("BoundingLimits", [](G4DisplacedSolid const* a, G4ThreeVector & arg0, G4ThreeVector & arg1)->void { a->BoundingLimits(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("pMin"), jlcxx::arg("pMax"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4DisplacedSolid::SurfaceNormal(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4DisplacedSolid::SurfaceNormal(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:74:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:74:19
     t.method("SurfaceNormal", [](G4DisplacedSolid const& a, const G4ThreeVector & arg0)->G4ThreeVector { return a.SurfaceNormal(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("SurfaceNormal", [](G4DisplacedSolid const* a, const G4ThreeVector & arg0)->G4ThreeVector { return a->SurfaceNormal(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for G4double G4DisplacedSolid::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4DisplacedSolid::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:76:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:76:14
     t.method("DistanceToIn", [](G4DisplacedSolid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double { return a.DistanceToIn(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"));
     t.method("DistanceToIn", [](G4DisplacedSolid const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double { return a->DistanceToIn(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"));
 
     DEBUG_MSG("Adding wrapper for G4double G4DisplacedSolid::DistanceToIn(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4DisplacedSolid::DistanceToIn(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:79:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:79:14
     t.method("DistanceToIn", [](G4DisplacedSolid const& a, const G4ThreeVector & arg0)->G4double { return a.DistanceToIn(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("DistanceToIn", [](G4DisplacedSolid const* a, const G4ThreeVector & arg0)->G4double { return a->DistanceToIn(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for G4double G4DisplacedSolid::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4DisplacedSolid::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:81:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:81:14
     t.method("DistanceToOut", [](G4DisplacedSolid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double { return a.DistanceToOut(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"));
     t.method("DistanceToOut", [](G4DisplacedSolid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double { return a.DistanceToOut(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"), jlcxx::arg("calcNorm"));
     t.method("DistanceToOut", [](G4DisplacedSolid const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double { return a.DistanceToOut(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"), jlcxx::arg("calcNorm"), jlcxx::arg("validNorm"));
@@ -86,174 +86,174 @@ struct JlG4DisplacedSolid: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4double G4DisplacedSolid::DistanceToOut(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4DisplacedSolid::DistanceToOut(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:87:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:87:14
     t.method("DistanceToOut", [](G4DisplacedSolid const& a, const G4ThreeVector & arg0)->G4double { return a.DistanceToOut(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("DistanceToOut", [](G4DisplacedSolid const* a, const G4ThreeVector & arg0)->G4double { return a->DistanceToOut(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::ComputeDimensions(G4VPVParameterisation *, const G4int, const G4VPhysicalVolume *) (" __HERE__ ")");
     // signature to use in the veto list: void G4DisplacedSolid::ComputeDimensions(G4VPVParameterisation *, const G4int, const G4VPhysicalVolume *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:90:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:90:10
     t.method("ComputeDimensions", [](G4DisplacedSolid& a, G4VPVParameterisation * arg0, const G4int arg1, const G4VPhysicalVolume * arg2)->void { a.ComputeDimensions(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("n"), jlcxx::arg("pRep"));
     t.method("ComputeDimensions", [](G4DisplacedSolid* a, G4VPVParameterisation * arg0, const G4int arg1, const G4VPhysicalVolume * arg2)->void { a->ComputeDimensions(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("n"), jlcxx::arg("pRep"));
 
     DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::CleanTransformations() (" __HERE__ ")");
     // signature to use in the veto list: void G4DisplacedSolid::CleanTransformations()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:94:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:94:10
     t.method("CleanTransformations", [](G4DisplacedSolid& a)->void { a.CleanTransformations(); }, jlcxx::arg("this"));
     t.method("CleanTransformations", [](G4DisplacedSolid* a)->void { a->CleanTransformations(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4DisplacedSolid::GetCubicVolume() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4DisplacedSolid::GetCubicVolume()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:96:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:96:14
     t.method("GetCubicVolume", [](G4DisplacedSolid& a)->G4double { return a.GetCubicVolume(); }, jlcxx::arg("this"));
     t.method("GetCubicVolume", [](G4DisplacedSolid* a)->G4double { return a->GetCubicVolume(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4DisplacedSolid::GetSurfaceArea() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4DisplacedSolid::GetSurfaceArea()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:97:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:97:14
     t.method("GetSurfaceArea", [](G4DisplacedSolid& a)->G4double { return a.GetSurfaceArea(); }, jlcxx::arg("this"));
     t.method("GetSurfaceArea", [](G4DisplacedSolid* a)->G4double { return a->GetSurfaceArea(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4DisplacedSolid::GetPointOnSurface() (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4DisplacedSolid::GetPointOnSurface()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:99:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:99:19
     t.method("GetPointOnSurface", [](G4DisplacedSolid const& a)->G4ThreeVector { return a.GetPointOnSurface(); }, jlcxx::arg("this"));
     t.method("GetPointOnSurface", [](G4DisplacedSolid const* a)->G4ThreeVector { return a->GetPointOnSurface(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4DisplacedSolid::GetNumOfConstituents() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4DisplacedSolid::GetNumOfConstituents()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:101:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:101:11
     t.method("GetNumOfConstituents", [](G4DisplacedSolid const& a)->G4int { return a.GetNumOfConstituents(); }, jlcxx::arg("this"));
     t.method("GetNumOfConstituents", [](G4DisplacedSolid const* a)->G4int { return a->GetNumOfConstituents(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4DisplacedSolid::IsFaceted() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4DisplacedSolid::IsFaceted()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:102:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:102:12
     t.method("IsFaceted", [](G4DisplacedSolid const& a)->G4bool { return a.IsFaceted(); }, jlcxx::arg("this"));
     t.method("IsFaceted", [](G4DisplacedSolid const* a)->G4bool { return a->IsFaceted(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4GeometryType G4DisplacedSolid::GetEntityType() (" __HERE__ ")");
     // signature to use in the veto list: G4GeometryType G4DisplacedSolid::GetEntityType()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:104:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:104:21
     t.method("GetEntityType", [](G4DisplacedSolid const& a)->G4GeometryType { return a.GetEntityType(); }, jlcxx::arg("this"));
     t.method("GetEntityType", [](G4DisplacedSolid const* a)->G4GeometryType { return a->GetEntityType(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4VSolid * G4DisplacedSolid::Clone() (" __HERE__ ")");
     // signature to use in the veto list: G4VSolid * G4DisplacedSolid::Clone()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:105:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:105:15
     t.method("Clone", [](G4DisplacedSolid const& a)->G4VSolid * { return a.Clone(); }, jlcxx::arg("this"));
     t.method("Clone", [](G4DisplacedSolid const* a)->G4VSolid * { return a->Clone(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4DisplacedSolid * G4DisplacedSolid::GetDisplacedSolidPtr() (" __HERE__ ")");
     // signature to use in the veto list: const G4DisplacedSolid * G4DisplacedSolid::GetDisplacedSolidPtr()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:107:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:107:29
     t.method("GetDisplacedSolidPtr", [](G4DisplacedSolid const& a)->const G4DisplacedSolid * { return a.GetDisplacedSolidPtr(); }, jlcxx::arg("this"));
     t.method("GetDisplacedSolidPtr", [](G4DisplacedSolid const* a)->const G4DisplacedSolid * { return a->GetDisplacedSolidPtr(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4DisplacedSolid * G4DisplacedSolid::GetDisplacedSolidPtr() (" __HERE__ ")");
     // signature to use in the veto list: G4DisplacedSolid * G4DisplacedSolid::GetDisplacedSolidPtr()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:108:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:108:29
     t.method("GetDisplacedSolidPtr", [](G4DisplacedSolid& a)->G4DisplacedSolid * { return a.GetDisplacedSolidPtr(); }, jlcxx::arg("this"));
     t.method("GetDisplacedSolidPtr", [](G4DisplacedSolid* a)->G4DisplacedSolid * { return a->GetDisplacedSolidPtr(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4VSolid * G4DisplacedSolid::GetConstituentMovedSolid() (" __HERE__ ")");
     // signature to use in the veto list: G4VSolid * G4DisplacedSolid::GetConstituentMovedSolid()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:112:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:112:15
     t.method("GetConstituentMovedSolid", [](G4DisplacedSolid const& a)->G4VSolid * { return a.GetConstituentMovedSolid(); }, jlcxx::arg("this"));
     t.method("GetConstituentMovedSolid", [](G4DisplacedSolid const* a)->G4VSolid * { return a->GetConstituentMovedSolid(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4AffineTransform G4DisplacedSolid::GetTransform() (" __HERE__ ")");
     // signature to use in the veto list: G4AffineTransform G4DisplacedSolid::GetTransform()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:114:23
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:114:23
     t.method("GetTransform", [](G4DisplacedSolid const& a)->G4AffineTransform { return a.GetTransform(); }, jlcxx::arg("this"));
     t.method("GetTransform", [](G4DisplacedSolid const* a)->G4AffineTransform { return a->GetTransform(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::SetTransform(G4AffineTransform &) (" __HERE__ ")");
     // signature to use in the veto list: void G4DisplacedSolid::SetTransform(G4AffineTransform &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:115:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:115:16
     t.method("SetTransform", [](G4DisplacedSolid& a, G4AffineTransform & arg0)->void { a.SetTransform(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetTransform", [](G4DisplacedSolid* a, G4AffineTransform & arg0)->void { a->SetTransform(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4AffineTransform G4DisplacedSolid::GetDirectTransform() (" __HERE__ ")");
     // signature to use in the veto list: G4AffineTransform G4DisplacedSolid::GetDirectTransform()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:117:23
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:117:23
     t.method("GetDirectTransform", [](G4DisplacedSolid const& a)->G4AffineTransform { return a.GetDirectTransform(); }, jlcxx::arg("this"));
     t.method("GetDirectTransform", [](G4DisplacedSolid const* a)->G4AffineTransform { return a->GetDirectTransform(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::SetDirectTransform(G4AffineTransform &) (" __HERE__ ")");
     // signature to use in the veto list: void G4DisplacedSolid::SetDirectTransform(G4AffineTransform &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:118:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:118:16
     t.method("SetDirectTransform", [](G4DisplacedSolid& a, G4AffineTransform & arg0)->void { a.SetDirectTransform(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetDirectTransform", [](G4DisplacedSolid* a, G4AffineTransform & arg0)->void { a->SetDirectTransform(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4RotationMatrix G4DisplacedSolid::GetFrameRotation() (" __HERE__ ")");
     // signature to use in the veto list: G4RotationMatrix G4DisplacedSolid::GetFrameRotation()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:121:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:121:22
     t.method("GetFrameRotation", [](G4DisplacedSolid const& a)->G4RotationMatrix { return a.GetFrameRotation(); }, jlcxx::arg("this"));
     t.method("GetFrameRotation", [](G4DisplacedSolid const* a)->G4RotationMatrix { return a->GetFrameRotation(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::SetFrameRotation(const G4RotationMatrix &) (" __HERE__ ")");
     // signature to use in the veto list: void G4DisplacedSolid::SetFrameRotation(const G4RotationMatrix &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:122:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:122:10
     t.method("SetFrameRotation", [](G4DisplacedSolid& a, const G4RotationMatrix & arg0)->void { a.SetFrameRotation(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetFrameRotation", [](G4DisplacedSolid* a, const G4RotationMatrix & arg0)->void { a->SetFrameRotation(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4DisplacedSolid::GetFrameTranslation() (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4DisplacedSolid::GetFrameTranslation()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:124:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:124:19
     t.method("GetFrameTranslation", [](G4DisplacedSolid const& a)->G4ThreeVector { return a.GetFrameTranslation(); }, jlcxx::arg("this"));
     t.method("GetFrameTranslation", [](G4DisplacedSolid const* a)->G4ThreeVector { return a->GetFrameTranslation(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::SetFrameTranslation(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4DisplacedSolid::SetFrameTranslation(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:125:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:125:10
     t.method("SetFrameTranslation", [](G4DisplacedSolid& a, const G4ThreeVector & arg0)->void { a.SetFrameTranslation(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetFrameTranslation", [](G4DisplacedSolid* a, const G4ThreeVector & arg0)->void { a->SetFrameTranslation(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4RotationMatrix G4DisplacedSolid::GetObjectRotation() (" __HERE__ ")");
     // signature to use in the veto list: G4RotationMatrix G4DisplacedSolid::GetObjectRotation()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:128:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:128:22
     t.method("GetObjectRotation", [](G4DisplacedSolid const& a)->G4RotationMatrix { return a.GetObjectRotation(); }, jlcxx::arg("this"));
     t.method("GetObjectRotation", [](G4DisplacedSolid const* a)->G4RotationMatrix { return a->GetObjectRotation(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::SetObjectRotation(const G4RotationMatrix &) (" __HERE__ ")");
     // signature to use in the veto list: void G4DisplacedSolid::SetObjectRotation(const G4RotationMatrix &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:129:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:129:10
     t.method("SetObjectRotation", [](G4DisplacedSolid& a, const G4RotationMatrix & arg0)->void { a.SetObjectRotation(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetObjectRotation", [](G4DisplacedSolid* a, const G4RotationMatrix & arg0)->void { a->SetObjectRotation(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4DisplacedSolid::GetObjectTranslation() (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4DisplacedSolid::GetObjectTranslation()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:131:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:131:19
     t.method("GetObjectTranslation", [](G4DisplacedSolid const& a)->G4ThreeVector { return a.GetObjectTranslation(); }, jlcxx::arg("this"));
     t.method("GetObjectTranslation", [](G4DisplacedSolid const* a)->G4ThreeVector { return a->GetObjectTranslation(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::SetObjectTranslation(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4DisplacedSolid::SetObjectTranslation(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:132:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:132:10
     t.method("SetObjectTranslation", [](G4DisplacedSolid& a, const G4ThreeVector & arg0)->void { a.SetObjectTranslation(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetObjectTranslation", [](G4DisplacedSolid* a, const G4ThreeVector & arg0)->void { a->SetObjectTranslation(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
 
     DEBUG_MSG("Adding wrapper for void G4DisplacedSolid::G4DisplacedSolid(const G4DisplacedSolid &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:142:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:142:5
     t.constructor<const G4DisplacedSolid &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("rhs")    );
 
     DEBUG_MSG("Adding wrapper for G4DisplacedSolid & G4DisplacedSolid::operator=(const G4DisplacedSolid &) (" __HERE__ ")");
     // signature to use in the veto list: G4DisplacedSolid & G4DisplacedSolid::operator=(const G4DisplacedSolid &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:143:23
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:143:23
     t.method("assign", [](G4DisplacedSolid& a, const G4DisplacedSolid & arg0)->G4DisplacedSolid & { return a.operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("rhs"));
     t.method("assign", [](G4DisplacedSolid* a, const G4DisplacedSolid & arg0)->G4DisplacedSolid & { return a->operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("rhs"));
 
     DEBUG_MSG("Adding wrapper for G4Polyhedron * G4DisplacedSolid::CreatePolyhedron() (" __HERE__ ")");
     // signature to use in the veto list: G4Polyhedron * G4DisplacedSolid::CreatePolyhedron()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:147:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:147:19
     t.method("CreatePolyhedron", [](G4DisplacedSolid const& a)->G4Polyhedron * { return a.CreatePolyhedron(); }, jlcxx::arg("this"));
     t.method("CreatePolyhedron", [](G4DisplacedSolid const* a)->G4Polyhedron * { return a->CreatePolyhedron(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4Polyhedron * G4DisplacedSolid::GetPolyhedron() (" __HERE__ ")");
     // signature to use in the veto list: G4Polyhedron * G4DisplacedSolid::GetPolyhedron()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4DisplacedSolid.hh:148:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4DisplacedSolid.hh:148:19
     t.method("GetPolyhedron", [](G4DisplacedSolid const& a)->G4Polyhedron * { return a.GetPolyhedron(); }, jlcxx::arg("this"));
     t.method("GetPolyhedron", [](G4DisplacedSolid const* a)->G4Polyhedron * { return a->GetPolyhedron(); }, jlcxx::arg("this"));
   }

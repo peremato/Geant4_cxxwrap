@@ -17,9 +17,8 @@ struct JlG4VTrajectory: public Wrapper {
 
   JlG4VTrajectory(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4VTrajectory (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VTrajectory.hh:57:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VTrajectory.hh:57:7
     jlcxx::TypeWrapper<G4VTrajectory>  t = jlModule.add_type<G4VTrajectory>("G4VTrajectory");
-    jlcxx::stl::apply_stl<G4VTrajectory*>(jlModule);
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4VTrajectory>>(new jlcxx::TypeWrapper<G4VTrajectory>(jlModule, t));
   }
 
@@ -29,7 +28,7 @@ struct JlG4VTrajectory: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4bool G4VTrajectory::operator==(const G4VTrajectory &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VTrajectory::operator==(const G4VTrajectory &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VTrajectory.hh:65:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VTrajectory.hh:65:10
     t.method("==", [](G4VTrajectory const& a, const G4VTrajectory & arg0)->G4bool { return a.operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
     t.method("==", [](G4VTrajectory const* a, const G4VTrajectory & arg0)->G4bool { return a->operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
 
@@ -37,79 +36,79 @@ struct JlG4VTrajectory: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4VTrajectory * G4VTrajectory::CloneForMaster() (" __HERE__ ")");
     // signature to use in the veto list: G4VTrajectory * G4VTrajectory::CloneForMaster()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VTrajectory.hh:70:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VTrajectory.hh:70:26
     t.method("CloneForMaster", [](G4VTrajectory const& a)->G4VTrajectory * { return a.CloneForMaster(); }, jlcxx::arg("this"));
     t.method("CloneForMaster", [](G4VTrajectory const* a)->G4VTrajectory * { return a->CloneForMaster(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4VTrajectory::GetTrackID() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4VTrajectory::GetTrackID()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VTrajectory.hh:73:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VTrajectory.hh:73:17
     t.method("GetTrackID", [](G4VTrajectory const& a)->G4int { return a.GetTrackID(); }, jlcxx::arg("this"));
     t.method("GetTrackID", [](G4VTrajectory const* a)->G4int { return a->GetTrackID(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4VTrajectory::GetParentID() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4VTrajectory::GetParentID()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VTrajectory.hh:74:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VTrajectory.hh:74:17
     t.method("GetParentID", [](G4VTrajectory const& a)->G4int { return a.GetParentID(); }, jlcxx::arg("this"));
     t.method("GetParentID", [](G4VTrajectory const* a)->G4int { return a->GetParentID(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4String G4VTrajectory::GetParticleName() (" __HERE__ ")");
     // signature to use in the veto list: G4String G4VTrajectory::GetParticleName()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VTrajectory.hh:75:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VTrajectory.hh:75:20
     t.method("GetParticleName", [](G4VTrajectory const& a)->G4String { return a.GetParticleName(); }, jlcxx::arg("this"));
     t.method("GetParticleName", [](G4VTrajectory const* a)->G4String { return a->GetParticleName(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4VTrajectory::GetCharge() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4VTrajectory::GetCharge()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VTrajectory.hh:78:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VTrajectory.hh:78:20
     t.method("GetCharge", [](G4VTrajectory const& a)->G4double { return a.GetCharge(); }, jlcxx::arg("this"));
     t.method("GetCharge", [](G4VTrajectory const* a)->G4double { return a->GetCharge(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4VTrajectory::GetPDGEncoding() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4VTrajectory::GetPDGEncoding()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VTrajectory.hh:81:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VTrajectory.hh:81:17
     t.method("GetPDGEncoding", [](G4VTrajectory const& a)->G4int { return a.GetPDGEncoding(); }, jlcxx::arg("this"));
     t.method("GetPDGEncoding", [](G4VTrajectory const* a)->G4int { return a->GetPDGEncoding(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4VTrajectory::GetInitialMomentum() (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4VTrajectory::GetInitialMomentum()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VTrajectory.hh:84:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VTrajectory.hh:84:25
     t.method("GetInitialMomentum", [](G4VTrajectory const& a)->G4ThreeVector { return a.GetInitialMomentum(); }, jlcxx::arg("this"));
     t.method("GetInitialMomentum", [](G4VTrajectory const* a)->G4ThreeVector { return a->GetInitialMomentum(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4VTrajectory::GetPointEntries() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4VTrajectory::GetPointEntries()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VTrajectory.hh:87:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VTrajectory.hh:87:17
     t.method("GetPointEntries", [](G4VTrajectory const& a)->G4int { return a.GetPointEntries(); }, jlcxx::arg("this"));
     t.method("GetPointEntries", [](G4VTrajectory const* a)->G4int { return a->GetPointEntries(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4VTrajectoryPoint * G4VTrajectory::GetPoint(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4VTrajectoryPoint * G4VTrajectory::GetPoint(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VTrajectory.hh:90:31
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VTrajectory.hh:90:31
     t.method("GetPoint", [](G4VTrajectory const& a, G4int arg0)->G4VTrajectoryPoint * { return a.GetPoint(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
     t.method("GetPoint", [](G4VTrajectory const* a, G4int arg0)->G4VTrajectoryPoint * { return a->GetPoint(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
 
     DEBUG_MSG("Adding wrapper for void G4VTrajectory::DrawTrajectory() (" __HERE__ ")");
     // signature to use in the veto list: void G4VTrajectory::DrawTrajectory()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VTrajectory.hh:101:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VTrajectory.hh:101:16
     t.method("DrawTrajectory", [](G4VTrajectory const& a)->void { a.DrawTrajectory(); }, jlcxx::arg("this"));
     t.method("DrawTrajectory", [](G4VTrajectory const* a)->void { a->DrawTrajectory(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for std::vector<G4AttValue> * G4VTrajectory::CreateAttValues() (" __HERE__ ")");
     // signature to use in the veto list: std::vector<G4AttValue> * G4VTrajectory::CreateAttValues()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VTrajectory.hh:117:36
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VTrajectory.hh:117:36
     t.method("CreateAttValues", [](G4VTrajectory const& a)->std::vector<G4AttValue> * { return a.CreateAttValues(); }, jlcxx::arg("this"));
     t.method("CreateAttValues", [](G4VTrajectory const* a)->std::vector<G4AttValue> * { return a->CreateAttValues(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VTrajectory::AppendStep(const G4Step *) (" __HERE__ ")");
     // signature to use in the veto list: void G4VTrajectory::AppendStep(const G4Step *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VTrajectory.hh:120:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VTrajectory.hh:120:16
     t.method("AppendStep", [](G4VTrajectory& a, const G4Step * arg0)->void { a.AppendStep(arg0); }, jlcxx::arg("this"), jlcxx::arg("aStep"));
     t.method("AppendStep", [](G4VTrajectory* a, const G4Step * arg0)->void { a->AppendStep(arg0); }, jlcxx::arg("this"), jlcxx::arg("aStep"));
 
     DEBUG_MSG("Adding wrapper for void G4VTrajectory::MergeTrajectory(G4VTrajectory *) (" __HERE__ ")");
     // signature to use in the veto list: void G4VTrajectory::MergeTrajectory(G4VTrajectory *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VTrajectory.hh:121:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VTrajectory.hh:121:16
     t.method("MergeTrajectory", [](G4VTrajectory& a, G4VTrajectory * arg0)->void { a.MergeTrajectory(arg0); }, jlcxx::arg("this"), jlcxx::arg("secondTrajectory"));
     t.method("MergeTrajectory", [](G4VTrajectory* a, G4VTrajectory * arg0)->void { a->MergeTrajectory(arg0); }, jlcxx::arg("this"), jlcxx::arg("secondTrajectory"));
   }

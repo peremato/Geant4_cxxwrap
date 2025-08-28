@@ -18,7 +18,7 @@ struct JlHepGeom_Scale3D: public Wrapper {
 
   JlHepGeom_Scale3D(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type HepGeom::Scale3D (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:721:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:721:9
     jlcxx::TypeWrapper<HepGeom::Scale3D>  t = jlModule.add_type<HepGeom::Scale3D>("HepGeom!Scale3D",
       jlcxx::julia_base_type<HepGeom::Transform3D>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<HepGeom::Scale3D>>(new jlcxx::TypeWrapper<HepGeom::Scale3D>(jlModule, t));
@@ -30,12 +30,12 @@ struct JlHepGeom_Scale3D: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void HepGeom::Scale3D::Scale3D(double, double, double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:730:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:730:5
     t.constructor<double, double, double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("x"), jlcxx::arg("y"), jlcxx::arg("z")    );
 
 
     DEBUG_MSG("Adding wrapper for void HepGeom::Scale3D::Scale3D(double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Geometry/Transform3D.h:735:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Geometry/Transform3D.h:735:5
     t.constructor<double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("sc")    );
   }
 

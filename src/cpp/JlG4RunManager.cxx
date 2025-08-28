@@ -17,7 +17,7 @@ struct JlG4RunManager: public Wrapper {
 
   JlG4RunManager(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4RunManager (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:137:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:137:7
     jlcxx::TypeWrapper<G4RunManager>  t = jlModule.add_type<G4RunManager>("G4RunManager");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4RunManager>>(new jlcxx::TypeWrapper<G4RunManager>(jlModule, t));
   }
@@ -28,12 +28,12 @@ struct JlG4RunManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4RunManager * G4RunManager::GetRunManager() (" __HERE__ ")");
     // signature to use in the veto list: G4RunManager * G4RunManager::GetRunManager()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:146:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:146:26
     module_.method("G4RunManager!GetRunManager", []()->G4RunManager * { return G4RunManager::GetRunManager(); });
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::BeamOn(G4int, const char *, G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::BeamOn(G4int, const char *, G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:167:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:167:18
     t.method("BeamOn", [](G4RunManager& a, G4int arg0)->void { a.BeamOn(arg0); }, jlcxx::arg("this"), jlcxx::arg("n_event"));
     t.method("BeamOn", [](G4RunManager& a, G4int arg0, const char * arg1)->void { a.BeamOn(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("n_event"), jlcxx::arg("macroFile"));
     t.method("BeamOn", [](G4RunManager& a, G4int arg0, const char * arg1, G4int arg2)->void { a.BeamOn(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("n_event"), jlcxx::arg("macroFile"), jlcxx::arg("n_select"));
@@ -43,13 +43,13 @@ struct JlG4RunManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::Initialize() (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::Initialize()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:180:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:180:18
     t.method("Initialize", [](G4RunManager& a)->void { a.Initialize(); }, jlcxx::arg("this"));
     t.method("Initialize", [](G4RunManager* a)->void { a->Initialize(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::DefineWorldVolume(G4VPhysicalVolume *, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::DefineWorldVolume(G4VPhysicalVolume *, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:188:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:188:18
     t.method("DefineWorldVolume", [](G4RunManager& a, G4VPhysicalVolume * arg0)->void { a.DefineWorldVolume(arg0); }, jlcxx::arg("this"), jlcxx::arg("worldVol"));
     t.method("DefineWorldVolume", [](G4RunManager& a, G4VPhysicalVolume * arg0, G4bool arg1)->void { a.DefineWorldVolume(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("worldVol"), jlcxx::arg("topologyIsChanged"));
     t.method("DefineWorldVolume", [](G4RunManager* a, G4VPhysicalVolume * arg0)->void { a->DefineWorldVolume(arg0); }, jlcxx::arg("this"), jlcxx::arg("worldVol"));
@@ -57,7 +57,7 @@ struct JlG4RunManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::AbortRun(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::AbortRun(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:197:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:197:18
     t.method("AbortRun", [](G4RunManager& a)->void { a.AbortRun(); }, jlcxx::arg("this"), jlcxx::arg("softAbort"));
     t.method("AbortRun", [](G4RunManager& a, G4bool arg0)->void { a.AbortRun(arg0); }, jlcxx::arg("this"), jlcxx::arg("softAbort"));
     t.method("AbortRun", [](G4RunManager* a)->void { a->AbortRun(); }, jlcxx::arg("this"), jlcxx::arg("softAbort"));
@@ -65,37 +65,37 @@ struct JlG4RunManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::AbortEvent() (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::AbortEvent()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:202:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:202:18
     t.method("AbortEvent", [](G4RunManager& a)->void { a.AbortEvent(); }, jlcxx::arg("this"));
     t.method("AbortEvent", [](G4RunManager* a)->void { a->AbortEvent(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::InitializeGeometry() (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::InitializeGeometry()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:209:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:209:18
     t.method("InitializeGeometry", [](G4RunManager& a)->void { a.InitializeGeometry(); }, jlcxx::arg("this"));
     t.method("InitializeGeometry", [](G4RunManager* a)->void { a->InitializeGeometry(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::InitializePhysics() (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::InitializePhysics()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:210:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:210:18
     t.method("InitializePhysics", [](G4RunManager& a)->void { a.InitializePhysics(); }, jlcxx::arg("this"));
     t.method("InitializePhysics", [](G4RunManager* a)->void { a->InitializePhysics(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4RunManager::ConfirmBeamOnCondition() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4RunManager::ConfirmBeamOnCondition()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:227:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:227:20
     t.method("ConfirmBeamOnCondition", [](G4RunManager& a)->G4bool { return a.ConfirmBeamOnCondition(); }, jlcxx::arg("this"));
     t.method("ConfirmBeamOnCondition", [](G4RunManager* a)->G4bool { return a->ConfirmBeamOnCondition(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::RunInitialization() (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::RunInitialization()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:228:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:228:18
     t.method("RunInitialization", [](G4RunManager& a)->void { a.RunInitialization(); }, jlcxx::arg("this"));
     t.method("RunInitialization", [](G4RunManager* a)->void { a->RunInitialization(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::DoEventLoop(G4int, const char *, G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::DoEventLoop(G4int, const char *, G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:229:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:229:18
     t.method("DoEventLoop", [](G4RunManager& a, G4int arg0)->void { a.DoEventLoop(arg0); }, jlcxx::arg("this"), jlcxx::arg("n_event"));
     t.method("DoEventLoop", [](G4RunManager& a, G4int arg0, const char * arg1)->void { a.DoEventLoop(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("n_event"), jlcxx::arg("macroFile"));
     t.method("DoEventLoop", [](G4RunManager& a, G4int arg0, const char * arg1, G4int arg2)->void { a.DoEventLoop(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("n_event"), jlcxx::arg("macroFile"), jlcxx::arg("n_select"));
@@ -105,13 +105,13 @@ struct JlG4RunManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::RunTermination() (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::RunTermination()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:230:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:230:18
     t.method("RunTermination", [](G4RunManager& a)->void { a.RunTermination(); }, jlcxx::arg("this"));
     t.method("RunTermination", [](G4RunManager* a)->void { a->RunTermination(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::InitializeEventLoop(G4int, const char *, G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::InitializeEventLoop(G4int, const char *, G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:233:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:233:18
     t.method("InitializeEventLoop", [](G4RunManager& a, G4int arg0)->void { a.InitializeEventLoop(arg0); }, jlcxx::arg("this"), jlcxx::arg("n_event"));
     t.method("InitializeEventLoop", [](G4RunManager& a, G4int arg0, const char * arg1)->void { a.InitializeEventLoop(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("n_event"), jlcxx::arg("macroFile"));
     t.method("InitializeEventLoop", [](G4RunManager& a, G4int arg0, const char * arg1, G4int arg2)->void { a.InitializeEventLoop(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("n_event"), jlcxx::arg("macroFile"), jlcxx::arg("n_select"));
@@ -121,55 +121,55 @@ struct JlG4RunManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::ProcessOneEvent(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::ProcessOneEvent(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:235:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:235:18
     t.method("ProcessOneEvent", [](G4RunManager& a, G4int arg0)->void { a.ProcessOneEvent(arg0); }, jlcxx::arg("this"), jlcxx::arg("i_event"));
     t.method("ProcessOneEvent", [](G4RunManager* a, G4int arg0)->void { a->ProcessOneEvent(arg0); }, jlcxx::arg("this"), jlcxx::arg("i_event"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::TerminateOneEvent() (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::TerminateOneEvent()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:236:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:236:18
     t.method("TerminateOneEvent", [](G4RunManager& a)->void { a.TerminateOneEvent(); }, jlcxx::arg("this"));
     t.method("TerminateOneEvent", [](G4RunManager* a)->void { a->TerminateOneEvent(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::TerminateEventLoop() (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::TerminateEventLoop()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:237:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:237:18
     t.method("TerminateEventLoop", [](G4RunManager& a)->void { a.TerminateEventLoop(); }, jlcxx::arg("this"));
     t.method("TerminateEventLoop", [](G4RunManager* a)->void { a->TerminateEventLoop(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4Event * G4RunManager::GenerateEvent(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4Event * G4RunManager::GenerateEvent(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:247:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:247:22
     t.method("GenerateEvent", [](G4RunManager& a, G4int arg0)->G4Event * { return a.GenerateEvent(arg0); }, jlcxx::arg("this"), jlcxx::arg("i_event"));
     t.method("GenerateEvent", [](G4RunManager* a, G4int arg0)->G4Event * { return a->GenerateEvent(arg0); }, jlcxx::arg("this"), jlcxx::arg("i_event"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::AnalyzeEvent(G4Event *) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::AnalyzeEvent(G4Event *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:248:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:248:18
     t.method("AnalyzeEvent", [](G4RunManager& a, G4Event * arg0)->void { a.AnalyzeEvent(arg0); }, jlcxx::arg("this"), jlcxx::arg("anEvent"));
     t.method("AnalyzeEvent", [](G4RunManager* a, G4Event * arg0)->void { a->AnalyzeEvent(arg0); }, jlcxx::arg("this"), jlcxx::arg("anEvent"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetNumberOfThreads(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetNumberOfThreads(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:252:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:252:18
     t.method("SetNumberOfThreads", [](G4RunManager& a, G4int arg0)->void { a.SetNumberOfThreads(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetNumberOfThreads", [](G4RunManager* a, G4int arg0)->void { a->SetNumberOfThreads(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4int G4RunManager::GetNumberOfThreads() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4RunManager::GetNumberOfThreads()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:253:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:253:19
     t.method("GetNumberOfThreads", [](G4RunManager const& a)->G4int { return a.GetNumberOfThreads(); }, jlcxx::arg("this"));
     t.method("GetNumberOfThreads", [](G4RunManager const* a)->G4int { return a->GetNumberOfThreads(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::DumpRegion(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::DumpRegion(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:256:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:256:10
     t.method("DumpRegion", [](G4RunManager const& a, const G4String & arg0)->void { a.DumpRegion(arg0); }, jlcxx::arg("this"), jlcxx::arg("rname"));
     t.method("DumpRegion", [](G4RunManager const* a, const G4String & arg0)->void { a->DumpRegion(arg0); }, jlcxx::arg("this"), jlcxx::arg("rname"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::DumpRegion(G4Region *) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::DumpRegion(G4Region *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:260:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:260:10
     t.method("DumpRegion", [](G4RunManager const& a)->void { a.DumpRegion(); }, jlcxx::arg("this"), jlcxx::arg("region"));
     t.method("DumpRegion", [](G4RunManager const& a, G4Region * arg0)->void { a.DumpRegion(arg0); }, jlcxx::arg("this"), jlcxx::arg("region"));
     t.method("DumpRegion", [](G4RunManager const* a)->void { a->DumpRegion(); }, jlcxx::arg("this"), jlcxx::arg("region"));
@@ -177,7 +177,7 @@ struct JlG4RunManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::GeometryHasBeenModified(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::GeometryHasBeenModified(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:268:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:268:10
     t.method("GeometryHasBeenModified", [](G4RunManager& a)->void { a.GeometryHasBeenModified(); }, jlcxx::arg("this"), jlcxx::arg("prop"));
     t.method("GeometryHasBeenModified", [](G4RunManager& a, G4bool arg0)->void { a.GeometryHasBeenModified(arg0); }, jlcxx::arg("this"), jlcxx::arg("prop"));
     t.method("GeometryHasBeenModified", [](G4RunManager* a)->void { a->GeometryHasBeenModified(); }, jlcxx::arg("this"), jlcxx::arg("prop"));
@@ -185,7 +185,7 @@ struct JlG4RunManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::ReinitializeGeometry(G4bool, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::ReinitializeGeometry(G4bool, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:279:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:279:10
     t.method("ReinitializeGeometry", [](G4RunManager& a)->void { a.ReinitializeGeometry(); }, jlcxx::arg("this"), jlcxx::arg("destroyFirst"), jlcxx::arg("prop"));
     t.method("ReinitializeGeometry", [](G4RunManager& a, G4bool arg0)->void { a.ReinitializeGeometry(arg0); }, jlcxx::arg("this"), jlcxx::arg("destroyFirst"));
     t.method("ReinitializeGeometry", [](G4RunManager& a, G4bool arg0, G4bool arg1)->void { a.ReinitializeGeometry(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("destroyFirst"), jlcxx::arg("prop"));
@@ -195,43 +195,43 @@ struct JlG4RunManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::PhysicsHasBeenModified() (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::PhysicsHasBeenModified()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:286:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:286:17
     t.method("PhysicsHasBeenModified", [](G4RunManager& a)->void { a.PhysicsHasBeenModified(); }, jlcxx::arg("this"));
     t.method("PhysicsHasBeenModified", [](G4RunManager* a)->void { a->PhysicsHasBeenModified(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::CutOffHasBeenModified() (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::CutOffHasBeenModified()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:288:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:288:17
     t.method("CutOffHasBeenModified", [](G4RunManager& a)->void { a.CutOffHasBeenModified(); }, jlcxx::arg("this"));
     t.method("CutOffHasBeenModified", [](G4RunManager* a)->void { a->CutOffHasBeenModified(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::ReOptimizeMotherOf(G4VPhysicalVolume *) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::ReOptimizeMotherOf(G4VPhysicalVolume *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:299:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:299:10
     t.method("ReOptimizeMotherOf", [](G4RunManager& a, G4VPhysicalVolume * arg0)->void { a.ReOptimizeMotherOf(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("ReOptimizeMotherOf", [](G4RunManager* a, G4VPhysicalVolume * arg0)->void { a->ReOptimizeMotherOf(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::ReOptimize(G4LogicalVolume *) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::ReOptimize(G4LogicalVolume *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:302:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:302:10
     t.method("ReOptimize", [](G4RunManager& a, G4LogicalVolume * arg0)->void { a.ReOptimize(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("ReOptimize", [](G4RunManager* a, G4LogicalVolume * arg0)->void { a->ReOptimize(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetGeometryToBeOptimized(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetGeometryToBeOptimized(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:304:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:304:17
     t.method("SetGeometryToBeOptimized", [](G4RunManager& a, G4bool arg0)->void { a.SetGeometryToBeOptimized(arg0); }, jlcxx::arg("this"), jlcxx::arg("vl"));
     t.method("SetGeometryToBeOptimized", [](G4RunManager* a, G4bool arg0)->void { a->SetGeometryToBeOptimized(arg0); }, jlcxx::arg("this"), jlcxx::arg("vl"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4RunManager::GetGeometryToBeOptimized() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4RunManager::GetGeometryToBeOptimized()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:312:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:312:19
     t.method("GetGeometryToBeOptimized", [](G4RunManager& a)->G4bool { return a.GetGeometryToBeOptimized(); }, jlcxx::arg("this"));
     t.method("GetGeometryToBeOptimized", [](G4RunManager* a)->G4bool { return a->GetGeometryToBeOptimized(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::GeometryDirectlyUpdated(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::GeometryDirectlyUpdated(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:314:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:314:10
     t.method("GeometryDirectlyUpdated", [](G4RunManager& a)->void { a.GeometryDirectlyUpdated(); }, jlcxx::arg("this"), jlcxx::arg("val"));
     t.method("GeometryDirectlyUpdated", [](G4RunManager& a, G4bool arg0)->void { a.GeometryDirectlyUpdated(arg0); }, jlcxx::arg("this"), jlcxx::arg("val"));
     t.method("GeometryDirectlyUpdated", [](G4RunManager* a)->void { a->GeometryDirectlyUpdated(); }, jlcxx::arg("this"), jlcxx::arg("val"));
@@ -239,174 +239,174 @@ struct JlG4RunManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4bool G4RunManager::IfGeometryHasBeenDestroyed() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4RunManager::IfGeometryHasBeenDestroyed()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:319:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:319:19
     module_.method("G4RunManager!IfGeometryHasBeenDestroyed", []()->G4bool { return G4RunManager::IfGeometryHasBeenDestroyed(); });
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::ConstructScoringWorlds() (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::ConstructScoringWorlds()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:321:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:321:18
     t.method("ConstructScoringWorlds", [](G4RunManager& a)->void { a.ConstructScoringWorlds(); }, jlcxx::arg("this"));
     t.method("ConstructScoringWorlds", [](G4RunManager* a)->void { a->ConstructScoringWorlds(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::rndmSaveThisRun() (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::rndmSaveThisRun()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:323:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:323:18
     t.method("rndmSaveThisRun", [](G4RunManager& a)->void { a.rndmSaveThisRun(); }, jlcxx::arg("this"));
     t.method("rndmSaveThisRun", [](G4RunManager* a)->void { a->rndmSaveThisRun(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::rndmSaveThisEvent() (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::rndmSaveThisEvent()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:324:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:324:18
     t.method("rndmSaveThisEvent", [](G4RunManager& a)->void { a.rndmSaveThisEvent(); }, jlcxx::arg("this"));
     t.method("rndmSaveThisEvent", [](G4RunManager* a)->void { a->rndmSaveThisEvent(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::RestoreRandomNumberStatus(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::RestoreRandomNumberStatus(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:325:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:325:18
     t.method("RestoreRandomNumberStatus", [](G4RunManager& a, const G4String & arg0)->void { a.RestoreRandomNumberStatus(arg0); }, jlcxx::arg("this"), jlcxx::arg("fileN"));
     t.method("RestoreRandomNumberStatus", [](G4RunManager* a, const G4String & arg0)->void { a->RestoreRandomNumberStatus(arg0); }, jlcxx::arg("this"), jlcxx::arg("fileN"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::RestoreRndmEachEvent(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::RestoreRndmEachEvent(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:326:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:326:18
     t.method("RestoreRndmEachEvent", [](G4RunManager& a, G4bool arg0)->void { a.RestoreRndmEachEvent(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("RestoreRndmEachEvent", [](G4RunManager* a, G4bool arg0)->void { a->RestoreRndmEachEvent(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetUserInitialization(G4VUserDetectorConstruction *) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetUserInitialization(G4VUserDetectorConstruction *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:342:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:342:18
     t.method("SetUserInitialization", [](G4RunManager& a, G4VUserDetectorConstruction * arg0)->void { a.SetUserInitialization(arg0); }, jlcxx::arg("this"), jlcxx::arg("userInit"));
     t.method("SetUserInitialization", [](G4RunManager* a, G4VUserDetectorConstruction * arg0)->void { a->SetUserInitialization(arg0); }, jlcxx::arg("this"), jlcxx::arg("userInit"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetUserInitialization(G4VUserPhysicsList *) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetUserInitialization(G4VUserPhysicsList *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:343:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:343:18
     t.method("SetUserInitialization", [](G4RunManager& a, G4VUserPhysicsList * arg0)->void { a.SetUserInitialization(arg0); }, jlcxx::arg("this"), jlcxx::arg("userInit"));
     t.method("SetUserInitialization", [](G4RunManager* a, G4VUserPhysicsList * arg0)->void { a->SetUserInitialization(arg0); }, jlcxx::arg("this"), jlcxx::arg("userInit"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetUserInitialization(G4VUserActionInitialization *) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetUserInitialization(G4VUserActionInitialization *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:344:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:344:18
     t.method("SetUserInitialization", [](G4RunManager& a, G4VUserActionInitialization * arg0)->void { a.SetUserInitialization(arg0); }, jlcxx::arg("this"), jlcxx::arg("userInit"));
     t.method("SetUserInitialization", [](G4RunManager* a, G4VUserActionInitialization * arg0)->void { a->SetUserInitialization(arg0); }, jlcxx::arg("this"), jlcxx::arg("userInit"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetUserInitialization(G4UserWorkerInitialization *) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetUserInitialization(G4UserWorkerInitialization *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:345:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:345:18
     t.method("SetUserInitialization", [](G4RunManager& a, G4UserWorkerInitialization * arg0)->void { a.SetUserInitialization(arg0); }, jlcxx::arg("this"), jlcxx::arg("userInit"));
     t.method("SetUserInitialization", [](G4RunManager* a, G4UserWorkerInitialization * arg0)->void { a->SetUserInitialization(arg0); }, jlcxx::arg("this"), jlcxx::arg("userInit"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetUserAction(G4UserRunAction *) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetUserAction(G4UserRunAction *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:347:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:347:18
     t.method("SetUserAction", [](G4RunManager& a, G4UserRunAction * arg0)->void { a.SetUserAction(arg0); }, jlcxx::arg("this"), jlcxx::arg("userAction"));
     t.method("SetUserAction", [](G4RunManager* a, G4UserRunAction * arg0)->void { a->SetUserAction(arg0); }, jlcxx::arg("this"), jlcxx::arg("userAction"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetUserAction(G4VUserPrimaryGeneratorAction *) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetUserAction(G4VUserPrimaryGeneratorAction *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:348:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:348:18
     t.method("SetUserAction", [](G4RunManager& a, G4VUserPrimaryGeneratorAction * arg0)->void { a.SetUserAction(arg0); }, jlcxx::arg("this"), jlcxx::arg("userAction"));
     t.method("SetUserAction", [](G4RunManager* a, G4VUserPrimaryGeneratorAction * arg0)->void { a->SetUserAction(arg0); }, jlcxx::arg("this"), jlcxx::arg("userAction"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetUserAction(G4UserEventAction *) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetUserAction(G4UserEventAction *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:349:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:349:18
     t.method("SetUserAction", [](G4RunManager& a, G4UserEventAction * arg0)->void { a.SetUserAction(arg0); }, jlcxx::arg("this"), jlcxx::arg("userAction"));
     t.method("SetUserAction", [](G4RunManager* a, G4UserEventAction * arg0)->void { a->SetUserAction(arg0); }, jlcxx::arg("this"), jlcxx::arg("userAction"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetUserAction(G4UserStackingAction *) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetUserAction(G4UserStackingAction *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:350:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:350:18
     t.method("SetUserAction", [](G4RunManager& a, G4UserStackingAction * arg0)->void { a.SetUserAction(arg0); }, jlcxx::arg("this"), jlcxx::arg("userAction"));
     t.method("SetUserAction", [](G4RunManager* a, G4UserStackingAction * arg0)->void { a->SetUserAction(arg0); }, jlcxx::arg("this"), jlcxx::arg("userAction"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetUserAction(G4UserTrackingAction *) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetUserAction(G4UserTrackingAction *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:351:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:351:18
     t.method("SetUserAction", [](G4RunManager& a, G4UserTrackingAction * arg0)->void { a.SetUserAction(arg0); }, jlcxx::arg("this"), jlcxx::arg("userAction"));
     t.method("SetUserAction", [](G4RunManager* a, G4UserTrackingAction * arg0)->void { a->SetUserAction(arg0); }, jlcxx::arg("this"), jlcxx::arg("userAction"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetUserAction(G4UserSteppingAction *) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetUserAction(G4UserSteppingAction *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:352:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:352:18
     t.method("SetUserAction", [](G4RunManager& a, G4UserSteppingAction * arg0)->void { a.SetUserAction(arg0); }, jlcxx::arg("this"), jlcxx::arg("userAction"));
     t.method("SetUserAction", [](G4RunManager* a, G4UserSteppingAction * arg0)->void { a->SetUserAction(arg0); }, jlcxx::arg("this"), jlcxx::arg("userAction"));
 
     DEBUG_MSG("Adding wrapper for const G4VUserDetectorConstruction * G4RunManager::GetUserDetectorConstruction() (" __HERE__ ")");
     // signature to use in the veto list: const G4VUserDetectorConstruction * G4RunManager::GetUserDetectorConstruction()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:355:47
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:355:47
     t.method("GetUserDetectorConstruction", [](G4RunManager const& a)->const G4VUserDetectorConstruction * { return a.GetUserDetectorConstruction(); }, jlcxx::arg("this"));
     t.method("GetUserDetectorConstruction", [](G4RunManager const* a)->const G4VUserDetectorConstruction * { return a->GetUserDetectorConstruction(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4VUserPhysicsList * G4RunManager::GetUserPhysicsList() (" __HERE__ ")");
     // signature to use in the veto list: const G4VUserPhysicsList * G4RunManager::GetUserPhysicsList()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:359:38
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:359:38
     t.method("GetUserPhysicsList", [](G4RunManager const& a)->const G4VUserPhysicsList * { return a.GetUserPhysicsList(); }, jlcxx::arg("this"));
     t.method("GetUserPhysicsList", [](G4RunManager const* a)->const G4VUserPhysicsList * { return a->GetUserPhysicsList(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4VUserActionInitialization * G4RunManager::GetUserActionInitialization() (" __HERE__ ")");
     // signature to use in the veto list: const G4VUserActionInitialization * G4RunManager::GetUserActionInitialization()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:360:47
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:360:47
     t.method("GetUserActionInitialization", [](G4RunManager const& a)->const G4VUserActionInitialization * { return a.GetUserActionInitialization(); }, jlcxx::arg("this"));
     t.method("GetUserActionInitialization", [](G4RunManager const* a)->const G4VUserActionInitialization * { return a->GetUserActionInitialization(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4VUserActionInitialization * G4RunManager::GetNonConstUserActionInitialization() (" __HERE__ ")");
     // signature to use in the veto list: G4VUserActionInitialization * G4RunManager::GetNonConstUserActionInitialization()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:364:41
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:364:41
     t.method("GetNonConstUserActionInitialization", [](G4RunManager const& a)->G4VUserActionInitialization * { return a.GetNonConstUserActionInitialization(); }, jlcxx::arg("this"));
     t.method("GetNonConstUserActionInitialization", [](G4RunManager const* a)->G4VUserActionInitialization * { return a->GetNonConstUserActionInitialization(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4UserWorkerInitialization * G4RunManager::GetUserWorkerInitialization() (" __HERE__ ")");
     // signature to use in the veto list: const G4UserWorkerInitialization * G4RunManager::GetUserWorkerInitialization()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:368:46
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:368:46
     t.method("GetUserWorkerInitialization", [](G4RunManager const& a)->const G4UserWorkerInitialization * { return a.GetUserWorkerInitialization(); }, jlcxx::arg("this"));
     t.method("GetUserWorkerInitialization", [](G4RunManager const* a)->const G4UserWorkerInitialization * { return a->GetUserWorkerInitialization(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4UserRunAction * G4RunManager::GetUserRunAction() (" __HERE__ ")");
     // signature to use in the veto list: const G4UserRunAction * G4RunManager::GetUserRunAction()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:376:35
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:376:35
     t.method("GetUserRunAction", [](G4RunManager const& a)->const G4UserRunAction * { return a.GetUserRunAction(); }, jlcxx::arg("this"));
     t.method("GetUserRunAction", [](G4RunManager const* a)->const G4UserRunAction * { return a->GetUserRunAction(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4VUserPrimaryGeneratorAction * G4RunManager::GetUserPrimaryGeneratorAction() (" __HERE__ ")");
     // signature to use in the veto list: const G4VUserPrimaryGeneratorAction * G4RunManager::GetUserPrimaryGeneratorAction()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:377:49
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:377:49
     t.method("GetUserPrimaryGeneratorAction", [](G4RunManager const& a)->const G4VUserPrimaryGeneratorAction * { return a.GetUserPrimaryGeneratorAction(); }, jlcxx::arg("this"));
     t.method("GetUserPrimaryGeneratorAction", [](G4RunManager const* a)->const G4VUserPrimaryGeneratorAction * { return a->GetUserPrimaryGeneratorAction(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4UserEventAction * G4RunManager::GetUserEventAction() (" __HERE__ ")");
     // signature to use in the veto list: const G4UserEventAction * G4RunManager::GetUserEventAction()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:381:37
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:381:37
     t.method("GetUserEventAction", [](G4RunManager const& a)->const G4UserEventAction * { return a.GetUserEventAction(); }, jlcxx::arg("this"));
     t.method("GetUserEventAction", [](G4RunManager const* a)->const G4UserEventAction * { return a->GetUserEventAction(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4UserStackingAction * G4RunManager::GetUserStackingAction() (" __HERE__ ")");
     // signature to use in the veto list: const G4UserStackingAction * G4RunManager::GetUserStackingAction()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:382:40
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:382:40
     t.method("GetUserStackingAction", [](G4RunManager const& a)->const G4UserStackingAction * { return a.GetUserStackingAction(); }, jlcxx::arg("this"));
     t.method("GetUserStackingAction", [](G4RunManager const* a)->const G4UserStackingAction * { return a->GetUserStackingAction(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4UserTrackingAction * G4RunManager::GetUserTrackingAction() (" __HERE__ ")");
     // signature to use in the veto list: const G4UserTrackingAction * G4RunManager::GetUserTrackingAction()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:383:40
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:383:40
     t.method("GetUserTrackingAction", [](G4RunManager const& a)->const G4UserTrackingAction * { return a.GetUserTrackingAction(); }, jlcxx::arg("this"));
     t.method("GetUserTrackingAction", [](G4RunManager const* a)->const G4UserTrackingAction * { return a->GetUserTrackingAction(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4UserSteppingAction * G4RunManager::GetUserSteppingAction() (" __HERE__ ")");
     // signature to use in the veto list: const G4UserSteppingAction * G4RunManager::GetUserSteppingAction()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:384:40
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:384:40
     t.method("GetUserSteppingAction", [](G4RunManager const& a)->const G4UserSteppingAction * { return a.GetUserSteppingAction(); }, jlcxx::arg("this"));
     t.method("GetUserSteppingAction", [](G4RunManager const* a)->const G4UserSteppingAction * { return a->GetUserSteppingAction(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetNumberOfAdditionalWaitingStacks(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetNumberOfAdditionalWaitingStacks(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:390:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:390:17
     t.method("SetNumberOfAdditionalWaitingStacks", [](G4RunManager& a, G4int arg0)->void { a.SetNumberOfAdditionalWaitingStacks(arg0); }, jlcxx::arg("this"), jlcxx::arg("iAdd"));
     t.method("SetNumberOfAdditionalWaitingStacks", [](G4RunManager* a, G4int arg0)->void { a->SetNumberOfAdditionalWaitingStacks(arg0); }, jlcxx::arg("this"), jlcxx::arg("iAdd"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetDefaultClassification(G4TrackStatus, G4ClassificationOfNewTrack, G4ExceptionSeverity) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetDefaultClassification(G4TrackStatus, G4ClassificationOfNewTrack, G4ExceptionSeverity)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:399:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:399:17
     t.method("SetDefaultClassification", [](G4RunManager& a, G4TrackStatus arg0, G4ClassificationOfNewTrack arg1)->void { a.SetDefaultClassification(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("ts"), jlcxx::arg("val"));
     t.method("SetDefaultClassification", [](G4RunManager& a, G4TrackStatus arg0, G4ClassificationOfNewTrack arg1, G4ExceptionSeverity arg2)->void { a.SetDefaultClassification(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("ts"), jlcxx::arg("val"), jlcxx::arg("es"));
     t.method("SetDefaultClassification", [](G4RunManager* a, G4TrackStatus arg0, G4ClassificationOfNewTrack arg1)->void { a->SetDefaultClassification(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("ts"), jlcxx::arg("val"));
@@ -414,7 +414,7 @@ struct JlG4RunManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetDefaultClassification(const G4ParticleDefinition *, G4ClassificationOfNewTrack, G4ExceptionSeverity) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetDefaultClassification(const G4ParticleDefinition *, G4ClassificationOfNewTrack, G4ExceptionSeverity)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:403:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:403:17
     t.method("SetDefaultClassification", [](G4RunManager& a, const G4ParticleDefinition * arg0, G4ClassificationOfNewTrack arg1)->void { a.SetDefaultClassification(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("pd"), jlcxx::arg("val"));
     t.method("SetDefaultClassification", [](G4RunManager& a, const G4ParticleDefinition * arg0, G4ClassificationOfNewTrack arg1, G4ExceptionSeverity arg2)->void { a.SetDefaultClassification(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("pd"), jlcxx::arg("val"), jlcxx::arg("es"));
     t.method("SetDefaultClassification", [](G4RunManager* a, const G4ParticleDefinition * arg0, G4ClassificationOfNewTrack arg1)->void { a->SetDefaultClassification(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("pd"), jlcxx::arg("val"));
@@ -422,235 +422,235 @@ struct JlG4RunManager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for const G4String & G4RunManager::GetVersionString() (" __HERE__ ")");
     // signature to use in the veto list: const G4String & G4RunManager::GetVersionString()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:409:28
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:409:28
     t.method("GetVersionString", [](G4RunManager const& a)->const G4String & { return a.GetVersionString(); }, jlcxx::arg("this"));
     t.method("GetVersionString", [](G4RunManager const* a)->const G4String & { return a->GetVersionString(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetPrimaryTransformer(G4PrimaryTransformer *) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetPrimaryTransformer(G4PrimaryTransformer *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:411:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:411:17
     t.method("SetPrimaryTransformer", [](G4RunManager& a, G4PrimaryTransformer * arg0)->void { a.SetPrimaryTransformer(arg0); }, jlcxx::arg("this"), jlcxx::arg("pt"));
     t.method("SetPrimaryTransformer", [](G4RunManager* a, G4PrimaryTransformer * arg0)->void { a->SetPrimaryTransformer(arg0); }, jlcxx::arg("this"), jlcxx::arg("pt"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::StoreRandomNumberStatusToG4Event(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::StoreRandomNumberStatusToG4Event(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:421:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:421:17
     t.method("StoreRandomNumberStatusToG4Event", [](G4RunManager& a, G4int arg0)->void { a.StoreRandomNumberStatusToG4Event(arg0); }, jlcxx::arg("this"), jlcxx::arg("vl"));
     t.method("StoreRandomNumberStatusToG4Event", [](G4RunManager* a, G4int arg0)->void { a->StoreRandomNumberStatusToG4Event(arg0); }, jlcxx::arg("this"), jlcxx::arg("vl"));
 
     DEBUG_MSG("Adding wrapper for G4int G4RunManager::GetFlagRandomNumberStatusToG4Event() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4RunManager::GetFlagRandomNumberStatusToG4Event()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:427:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:427:18
     t.method("GetFlagRandomNumberStatusToG4Event", [](G4RunManager const& a)->G4int { return a.GetFlagRandomNumberStatusToG4Event(); }, jlcxx::arg("this"));
     t.method("GetFlagRandomNumberStatusToG4Event", [](G4RunManager const* a)->G4int { return a->GetFlagRandomNumberStatusToG4Event(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetRandomNumberStore(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetRandomNumberStore(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:432:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:432:17
     t.method("SetRandomNumberStore", [](G4RunManager& a, G4bool arg0)->void { a.SetRandomNumberStore(arg0); }, jlcxx::arg("this"), jlcxx::arg("flag"));
     t.method("SetRandomNumberStore", [](G4RunManager* a, G4bool arg0)->void { a->SetRandomNumberStore(arg0); }, jlcxx::arg("this"), jlcxx::arg("flag"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4RunManager::GetRandomNumberStore() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4RunManager::GetRandomNumberStore()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:433:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:433:19
     t.method("GetRandomNumberStore", [](G4RunManager const& a)->G4bool { return a.GetRandomNumberStore(); }, jlcxx::arg("this"));
     t.method("GetRandomNumberStore", [](G4RunManager const* a)->G4bool { return a->GetRandomNumberStore(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetRandomNumberStoreDir(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetRandomNumberStoreDir(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:434:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:434:17
     t.method("SetRandomNumberStoreDir", [](G4RunManager& a, const G4String & arg0)->void { a.SetRandomNumberStoreDir(arg0); }, jlcxx::arg("this"), jlcxx::arg("dir"));
     t.method("SetRandomNumberStoreDir", [](G4RunManager* a, const G4String & arg0)->void { a->SetRandomNumberStoreDir(arg0); }, jlcxx::arg("this"), jlcxx::arg("dir"));
 
     DEBUG_MSG("Adding wrapper for const G4String & G4RunManager::GetRandomNumberStoreDir() (" __HERE__ ")");
     // signature to use in the veto list: const G4String & G4RunManager::GetRandomNumberStoreDir()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:453:28
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:453:28
     t.method("GetRandomNumberStoreDir", [](G4RunManager const& a)->const G4String & { return a.GetRandomNumberStoreDir(); }, jlcxx::arg("this"));
     t.method("GetRandomNumberStoreDir", [](G4RunManager const* a)->const G4String & { return a->GetRandomNumberStoreDir(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4String & G4RunManager::GetRandomNumberStatusForThisRun() (" __HERE__ ")");
     // signature to use in the veto list: const G4String & G4RunManager::GetRandomNumberStatusForThisRun()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:454:28
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:454:28
     t.method("GetRandomNumberStatusForThisRun", [](G4RunManager const& a)->const G4String & { return a.GetRandomNumberStatusForThisRun(); }, jlcxx::arg("this"));
     t.method("GetRandomNumberStatusForThisRun", [](G4RunManager const* a)->const G4String & { return a->GetRandomNumberStatusForThisRun(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4String & G4RunManager::GetRandomNumberStatusForThisEvent() (" __HERE__ ")");
     // signature to use in the veto list: const G4String & G4RunManager::GetRandomNumberStatusForThisEvent()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:458:28
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:458:28
     t.method("GetRandomNumberStatusForThisEvent", [](G4RunManager const& a)->const G4String & { return a.GetRandomNumberStatusForThisEvent(); }, jlcxx::arg("this"));
     t.method("GetRandomNumberStatusForThisEvent", [](G4RunManager const* a)->const G4String & { return a->GetRandomNumberStatusForThisEvent(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetRandomNumberStorePerEvent(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetRandomNumberStorePerEvent(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:466:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:466:17
     t.method("SetRandomNumberStorePerEvent", [](G4RunManager& a, G4bool arg0)->void { a.SetRandomNumberStorePerEvent(arg0); }, jlcxx::arg("this"), jlcxx::arg("flag"));
     t.method("SetRandomNumberStorePerEvent", [](G4RunManager* a, G4bool arg0)->void { a->SetRandomNumberStorePerEvent(arg0); }, jlcxx::arg("this"), jlcxx::arg("flag"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4RunManager::GetRandomNumberStorePerEvent() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4RunManager::GetRandomNumberStorePerEvent()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:467:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:467:19
     t.method("GetRandomNumberStorePerEvent", [](G4RunManager const& a)->G4bool { return a.GetRandomNumberStorePerEvent(); }, jlcxx::arg("this"));
     t.method("GetRandomNumberStorePerEvent", [](G4RunManager const* a)->G4bool { return a->GetRandomNumberStorePerEvent(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetVerboseLevel(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetVerboseLevel(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:469:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:469:17
     t.method("SetVerboseLevel", [](G4RunManager& a, G4int arg0)->void { a.SetVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("vl"));
     t.method("SetVerboseLevel", [](G4RunManager* a, G4int arg0)->void { a->SetVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("vl"));
 
     DEBUG_MSG("Adding wrapper for G4int G4RunManager::GetVerboseLevel() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4RunManager::GetVerboseLevel()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:474:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:474:18
     t.method("GetVerboseLevel", [](G4RunManager const& a)->G4int { return a.GetVerboseLevel(); }, jlcxx::arg("this"));
     t.method("GetVerboseLevel", [](G4RunManager const* a)->G4int { return a->GetVerboseLevel(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4RunManager::GetPrintProgress() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4RunManager::GetPrintProgress()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:475:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:475:18
     t.method("GetPrintProgress", [](G4RunManager& a)->G4int { return a.GetPrintProgress(); }, jlcxx::arg("this"));
     t.method("GetPrintProgress", [](G4RunManager* a)->G4int { return a->GetPrintProgress(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetPrintProgress(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetPrintProgress(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:476:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:476:17
     t.method("SetPrintProgress", [](G4RunManager& a, G4int arg0)->void { a.SetPrintProgress(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
     t.method("SetPrintProgress", [](G4RunManager* a, G4int arg0)->void { a->SetPrintProgress(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetNumberOfEventsToBeStored(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetNumberOfEventsToBeStored(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:482:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:482:17
     t.method("SetNumberOfEventsToBeStored", [](G4RunManager& a, G4int arg0)->void { a.SetNumberOfEventsToBeStored(arg0); }, jlcxx::arg("this"), jlcxx::arg("val"));
     t.method("SetNumberOfEventsToBeStored", [](G4RunManager* a, G4int arg0)->void { a->SetNumberOfEventsToBeStored(arg0); }, jlcxx::arg("this"), jlcxx::arg("val"));
 
     DEBUG_MSG("Adding wrapper for const G4Run * G4RunManager::GetCurrentRun() (" __HERE__ ")");
     // signature to use in the veto list: const G4Run * G4RunManager::GetCurrentRun()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:486:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:486:25
     t.method("GetCurrentRun", [](G4RunManager const& a)->const G4Run * { return a.GetCurrentRun(); }, jlcxx::arg("this"));
     t.method("GetCurrentRun", [](G4RunManager const* a)->const G4Run * { return a->GetCurrentRun(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4Run * G4RunManager::GetNonConstCurrentRun() (" __HERE__ ")");
     // signature to use in the veto list: G4Run * G4RunManager::GetNonConstCurrentRun()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:487:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:487:19
     t.method("GetNonConstCurrentRun", [](G4RunManager const& a)->G4Run * { return a.GetNonConstCurrentRun(); }, jlcxx::arg("this"));
     t.method("GetNonConstCurrentRun", [](G4RunManager const* a)->G4Run * { return a->GetNonConstCurrentRun(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4Event * G4RunManager::GetCurrentEvent() (" __HERE__ ")");
     // signature to use in the veto list: const G4Event * G4RunManager::GetCurrentEvent()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:491:27
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:491:27
     t.method("GetCurrentEvent", [](G4RunManager const& a)->const G4Event * { return a.GetCurrentEvent(); }, jlcxx::arg("this"));
     t.method("GetCurrentEvent", [](G4RunManager const* a)->const G4Event * { return a->GetCurrentEvent(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4Event * G4RunManager::GetPreviousEvent(G4int) (" __HERE__ ")");
     // signature to use in the veto list: const G4Event * G4RunManager::GetPreviousEvent(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:498:27
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:498:27
     t.method("GetPreviousEvent", [](G4RunManager const& a, G4int arg0)->const G4Event * { return a.GetPreviousEvent(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
     t.method("GetPreviousEvent", [](G4RunManager const* a, G4int arg0)->const G4Event * { return a->GetPreviousEvent(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetRunIDCounter(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetRunIDCounter(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:512:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:512:17
     t.method("SetRunIDCounter", [](G4RunManager& a, G4int arg0)->void { a.SetRunIDCounter(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
     t.method("SetRunIDCounter", [](G4RunManager* a, G4int arg0)->void { a->SetRunIDCounter(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
 
     DEBUG_MSG("Adding wrapper for G4int G4RunManager::GetNumberOfParallelWorld() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4RunManager::GetNumberOfParallelWorld()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:514:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:514:18
     t.method("GetNumberOfParallelWorld", [](G4RunManager const& a)->G4int { return a.GetNumberOfParallelWorld(); }, jlcxx::arg("this"));
     t.method("GetNumberOfParallelWorld", [](G4RunManager const* a)->G4int { return a->GetNumberOfParallelWorld(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetNumberOfEventsToBeProcessed(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetNumberOfEventsToBeProcessed(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:515:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:515:17
     t.method("SetNumberOfEventsToBeProcessed", [](G4RunManager& a, G4int arg0)->void { a.SetNumberOfEventsToBeProcessed(arg0); }, jlcxx::arg("this"), jlcxx::arg("val"));
     t.method("SetNumberOfEventsToBeProcessed", [](G4RunManager* a, G4int arg0)->void { a->SetNumberOfEventsToBeProcessed(arg0); }, jlcxx::arg("this"), jlcxx::arg("val"));
 
     DEBUG_MSG("Adding wrapper for G4int G4RunManager::GetNumberOfEventsToBeProcessed() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4RunManager::GetNumberOfEventsToBeProcessed()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:516:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:516:18
     t.method("GetNumberOfEventsToBeProcessed", [](G4RunManager const& a)->G4int { return a.GetNumberOfEventsToBeProcessed(); }, jlcxx::arg("this"));
     t.method("GetNumberOfEventsToBeProcessed", [](G4RunManager const* a)->G4int { return a->GetNumberOfEventsToBeProcessed(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4RunManager::GetNumberOfSelectEvents() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4RunManager::GetNumberOfSelectEvents()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:517:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:517:18
     t.method("GetNumberOfSelectEvents", [](G4RunManager const& a)->G4int { return a.GetNumberOfSelectEvents(); }, jlcxx::arg("this"));
     t.method("GetNumberOfSelectEvents", [](G4RunManager const* a)->G4int { return a->GetNumberOfSelectEvents(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4String & G4RunManager::GetSelectMacro() (" __HERE__ ")");
     // signature to use in the veto list: const G4String & G4RunManager::GetSelectMacro()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:518:28
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:518:28
     t.method("GetSelectMacro", [](G4RunManager const& a)->const G4String & { return a.GetSelectMacro(); }, jlcxx::arg("this"));
     t.method("GetSelectMacro", [](G4RunManager const* a)->const G4String & { return a->GetSelectMacro(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4RunManager::RMType G4RunManager::GetRunManagerType() (" __HERE__ ")");
     // signature to use in the veto list: G4RunManager::RMType G4RunManager::GetRunManagerType()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:530:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:530:19
     t.method("GetRunManagerType", [](G4RunManager const& a)->G4RunManager::RMType { return a.GetRunManagerType(); }, jlcxx::arg("this"));
     t.method("GetRunManagerType", [](G4RunManager const* a)->G4RunManager::RMType { return a->GetRunManagerType(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::RegisterSubEventType(G4int, G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::RegisterSubEventType(G4int, G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:534:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:534:18
     t.method("RegisterSubEventType", [](G4RunManager& a, G4int arg0, G4int arg1)->void { a.RegisterSubEventType(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"));
     t.method("RegisterSubEventType", [](G4RunManager* a, G4int arg0, G4int arg1)->void { a->RegisterSubEventType(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::MergeTrajectories(const G4SubEvent *, const G4Event *) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::MergeTrajectories(const G4SubEvent *, const G4Event *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:539:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:539:18
     t.method("MergeTrajectories", [](G4RunManager& a, const G4SubEvent * arg0, const G4Event * arg1)->void { a.MergeTrajectories(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"));
     t.method("MergeTrajectories", [](G4RunManager* a, const G4SubEvent * arg0, const G4Event * arg1)->void { a->MergeTrajectories(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::UpdateScoringForSubEvent(const G4SubEvent *, const G4Event *) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::UpdateScoringForSubEvent(const G4SubEvent *, const G4Event *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:544:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:544:18
     t.method("UpdateScoringForSubEvent", [](G4RunManager& a, const G4SubEvent * arg0, const G4Event * arg1)->void { a.UpdateScoringForSubEvent(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"));
     t.method("UpdateScoringForSubEvent", [](G4RunManager* a, const G4SubEvent * arg0, const G4Event * arg1)->void { a->UpdateScoringForSubEvent(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"));
 
     DEBUG_MSG("Adding wrapper for const G4SubEvent * G4RunManager::GetSubEvent(G4int, G4bool &, G4long &, G4long &, G4long &, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: const G4SubEvent * G4RunManager::GetSubEvent(G4int, G4bool &, G4long &, G4long &, G4long &, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:549:31
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:549:31
     t.method("GetSubEvent", [](G4RunManager& a, G4int arg0, G4bool & arg1, G4long & arg2, G4long & arg3, G4long & arg4, G4bool arg5)->const G4SubEvent * { return a.GetSubEvent(arg0, arg1, arg2, arg3, arg4, arg5); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"), jlcxx::arg("arg2"), jlcxx::arg("arg3"), jlcxx::arg("arg4"), jlcxx::arg("arg5"));
     t.method("GetSubEvent", [](G4RunManager* a, G4int arg0, G4bool & arg1, G4long & arg2, G4long & arg3, G4long & arg4, G4bool arg5)->const G4SubEvent * { return a->GetSubEvent(arg0, arg1, arg2, arg3, arg4, arg5); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"), jlcxx::arg("arg2"), jlcxx::arg("arg3"), jlcxx::arg("arg4"), jlcxx::arg("arg5"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SubEventFinished(const G4SubEvent *, const G4Event *) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SubEventFinished(const G4SubEvent *, const G4Event *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:556:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:556:18
     t.method("SubEventFinished", [](G4RunManager& a, const G4SubEvent * arg0, const G4Event * arg1)->void { a.SubEventFinished(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"));
     t.method("SubEventFinished", [](G4RunManager* a, const G4SubEvent * arg0, const G4Event * arg1)->void { a->SubEventFinished(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("arg0"), jlcxx::arg("arg1"));
 
     DEBUG_MSG("Adding wrapper for G4int G4RunManager::GetSubEventType() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4RunManager::GetSubEventType()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:561:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:561:19
     t.method("GetSubEventType", [](G4RunManager const& a)->G4int { return a.GetSubEventType(); }, jlcxx::arg("this"));
     t.method("GetSubEventType", [](G4RunManager const* a)->G4int { return a->GetSubEventType(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::SetSubEventType(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::SetSubEventType(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:567:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:567:18
     t.method("SetSubEventType", [](G4RunManager& a, G4int arg0)->void { a.SetSubEventType(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetSubEventType", [](G4RunManager* a, G4int arg0)->void { a->SetSubEventType(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
-    DEBUG_MSG("Adding wrapper for size_t G4RunManager::GetMaxNTrack() (" __HERE__ ")");
-    // signature to use in the veto list: size_t G4RunManager::GetMaxNTrack()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:572:25
-    t.method("GetMaxNTrack", [](G4RunManager const& a)->size_t { return a.GetMaxNTrack(); }, jlcxx::arg("this"));
-    t.method("GetMaxNTrack", [](G4RunManager const* a)->size_t { return a->GetMaxNTrack(); }, jlcxx::arg("this"));
+    DEBUG_MSG("Adding wrapper for std::size_t G4RunManager::GetMaxNTrack() (" __HERE__ ")");
+    // signature to use in the veto list: std::size_t G4RunManager::GetMaxNTrack()
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:572:25
+    t.method("GetMaxNTrack", [](G4RunManager const& a)->std::size_t { return a.GetMaxNTrack(); }, jlcxx::arg("this"));
+    t.method("GetMaxNTrack", [](G4RunManager const* a)->std::size_t { return a->GetMaxNTrack(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::TrajectoriesToBeMerged(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::TrajectoriesToBeMerged(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:574:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:574:18
     t.method("TrajectoriesToBeMerged", [](G4RunManager& a, G4bool arg0)->void { a.TrajectoriesToBeMerged(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("TrajectoriesToBeMerged", [](G4RunManager* a, G4bool arg0)->void { a->TrajectoriesToBeMerged(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::ReportEventDeletion(const G4Event *) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::ReportEventDeletion(const G4Event *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:580:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:580:18
     t.method("ReportEventDeletion", [](G4RunManager& a, const G4Event * arg0)->void { a.ReportEventDeletion(arg0); }, jlcxx::arg("this"), jlcxx::arg("evt"));
     t.method("ReportEventDeletion", [](G4RunManager* a, const G4Event * arg0)->void { a->ReportEventDeletion(arg0); }, jlcxx::arg("this"), jlcxx::arg("evt"));
 
     DEBUG_MSG("Adding wrapper for void G4RunManager::ResetNavigatorAtInitialization(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4RunManager::ResetNavigatorAtInitialization(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:585:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:585:17
     t.method("ResetNavigatorAtInitialization", [](G4RunManager& a)->void { a.ResetNavigatorAtInitialization(); }, jlcxx::arg("this"), jlcxx::arg("val"));
     t.method("ResetNavigatorAtInitialization", [](G4RunManager& a, G4bool arg0)->void { a.ResetNavigatorAtInitialization(arg0); }, jlcxx::arg("this"), jlcxx::arg("val"));
     t.method("ResetNavigatorAtInitialization", [](G4RunManager* a)->void { a->ResetNavigatorAtInitialization(); }, jlcxx::arg("this"), jlcxx::arg("val"));

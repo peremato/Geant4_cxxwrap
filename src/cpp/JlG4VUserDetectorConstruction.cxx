@@ -17,7 +17,7 @@ struct JlG4VUserDetectorConstruction: public Wrapper {
 
   JlG4VUserDetectorConstruction(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4VUserDetectorConstruction (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserDetectorConstruction.hh:50:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserDetectorConstruction.hh:50:7
     jlcxx::TypeWrapper<G4VUserDetectorConstruction>  t = jlModule.add_type<G4VUserDetectorConstruction>("G4VUserDetectorConstruction");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4VUserDetectorConstruction>>(new jlcxx::TypeWrapper<G4VUserDetectorConstruction>(jlModule, t));
   }
@@ -27,43 +27,43 @@ struct JlG4VUserDetectorConstruction: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4VPhysicalVolume * G4VUserDetectorConstruction::Construct() (" __HERE__ ")");
     // signature to use in the veto list: G4VPhysicalVolume * G4VUserDetectorConstruction::Construct()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserDetectorConstruction.hh:56:32
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserDetectorConstruction.hh:56:32
     t.method("Construct", [](G4VUserDetectorConstruction& a)->G4VPhysicalVolume * { return a.Construct(); }, jlcxx::arg("this"));
     t.method("Construct", [](G4VUserDetectorConstruction* a)->G4VPhysicalVolume * { return a->Construct(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserDetectorConstruction::ConstructSDandField() (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserDetectorConstruction::ConstructSDandField()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserDetectorConstruction.hh:60:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserDetectorConstruction.hh:60:18
     t.method("ConstructSDandField", [](G4VUserDetectorConstruction& a)->void { a.ConstructSDandField(); }, jlcxx::arg("this"));
     t.method("ConstructSDandField", [](G4VUserDetectorConstruction* a)->void { a->ConstructSDandField(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserDetectorConstruction::CloneSD() (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserDetectorConstruction::CloneSD()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserDetectorConstruction.hh:62:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserDetectorConstruction.hh:62:18
     t.method("CloneSD", [](G4VUserDetectorConstruction& a)->void { a.CloneSD(); }, jlcxx::arg("this"));
     t.method("CloneSD", [](G4VUserDetectorConstruction* a)->void { a->CloneSD(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserDetectorConstruction::CloneF() (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserDetectorConstruction::CloneF()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserDetectorConstruction.hh:63:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserDetectorConstruction.hh:63:18
     t.method("CloneF", [](G4VUserDetectorConstruction& a)->void { a.CloneF(); }, jlcxx::arg("this"));
     t.method("CloneF", [](G4VUserDetectorConstruction* a)->void { a->CloneF(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4VUserDetectorConstruction::ConstructParallelGeometries() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4VUserDetectorConstruction::ConstructParallelGeometries()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserDetectorConstruction.hh:67:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserDetectorConstruction.hh:67:11
     t.method("ConstructParallelGeometries", [](G4VUserDetectorConstruction& a)->G4int { return a.ConstructParallelGeometries(); }, jlcxx::arg("this"));
     t.method("ConstructParallelGeometries", [](G4VUserDetectorConstruction* a)->G4int { return a->ConstructParallelGeometries(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VUserDetectorConstruction::ConstructParallelSD() (" __HERE__ ")");
     // signature to use in the veto list: void G4VUserDetectorConstruction::ConstructParallelSD()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserDetectorConstruction.hh:68:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserDetectorConstruction.hh:68:10
     t.method("ConstructParallelSD", [](G4VUserDetectorConstruction& a)->void { a.ConstructParallelSD(); }, jlcxx::arg("this"));
     t.method("ConstructParallelSD", [](G4VUserDetectorConstruction* a)->void { a->ConstructParallelSD(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4VUserDetectorConstruction::GetNumberOfParallelWorld() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4VUserDetectorConstruction::GetNumberOfParallelWorld()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VUserDetectorConstruction.hh:70:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VUserDetectorConstruction.hh:70:11
     t.method("GetNumberOfParallelWorld", [](G4VUserDetectorConstruction const& a)->G4int { return a.GetNumberOfParallelWorld(); }, jlcxx::arg("this"));
     t.method("GetNumberOfParallelWorld", [](G4VUserDetectorConstruction const* a)->G4int { return a->GetNumberOfParallelWorld(); }, jlcxx::arg("this"));
   }

@@ -17,7 +17,7 @@ struct JlG4VTrajectoryPoint: public Wrapper {
 
   JlG4VTrajectoryPoint(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4VTrajectoryPoint (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VTrajectoryPoint.hh:50:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VTrajectoryPoint.hh:50:7
     jlcxx::TypeWrapper<G4VTrajectoryPoint>  t = jlModule.add_type<G4VTrajectoryPoint>("G4VTrajectoryPoint");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4VTrajectoryPoint>>(new jlcxx::TypeWrapper<G4VTrajectoryPoint>(jlModule, t));
   }
@@ -28,7 +28,7 @@ struct JlG4VTrajectoryPoint: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4bool G4VTrajectoryPoint::operator==(const G4VTrajectoryPoint &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VTrajectoryPoint::operator==(const G4VTrajectoryPoint &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VTrajectoryPoint.hh:58:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VTrajectoryPoint.hh:58:10
     t.method("==", [](G4VTrajectoryPoint const& a, const G4VTrajectoryPoint & arg0)->G4bool { return a.operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
     t.method("==", [](G4VTrajectoryPoint const* a, const G4VTrajectoryPoint & arg0)->G4bool { return a->operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
 
@@ -36,19 +36,19 @@ struct JlG4VTrajectoryPoint: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for const G4ThreeVector G4VTrajectoryPoint::GetPosition() (" __HERE__ ")");
     // signature to use in the veto list: const G4ThreeVector G4VTrajectoryPoint::GetPosition()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VTrajectoryPoint.hh:61:31
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VTrajectoryPoint.hh:61:31
     t.method("GetPosition", [](G4VTrajectoryPoint const& a)->const G4ThreeVector { return a.GetPosition(); }, jlcxx::arg("this"));
     t.method("GetPosition", [](G4VTrajectoryPoint const* a)->const G4ThreeVector { return a->GetPosition(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const std::vector<G4ThreeVector> * G4VTrajectoryPoint::GetAuxiliaryPoints() (" __HERE__ ")");
     // signature to use in the veto list: const std::vector<G4ThreeVector> * G4VTrajectoryPoint::GetAuxiliaryPoints()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VTrajectoryPoint.hh:68:45
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VTrajectoryPoint.hh:68:45
     t.method("GetAuxiliaryPoints", [](G4VTrajectoryPoint const& a)->const std::vector<G4ThreeVector> * { return a.GetAuxiliaryPoints(); }, jlcxx::arg("this"));
     t.method("GetAuxiliaryPoints", [](G4VTrajectoryPoint const* a)->const std::vector<G4ThreeVector> * { return a->GetAuxiliaryPoints(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for std::vector<G4AttValue> * G4VTrajectoryPoint::CreateAttValues() (" __HERE__ ")");
     // signature to use in the veto list: std::vector<G4AttValue> * G4VTrajectoryPoint::CreateAttValues()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VTrajectoryPoint.hh:86:36
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VTrajectoryPoint.hh:86:36
     t.method("CreateAttValues", [](G4VTrajectoryPoint const& a)->std::vector<G4AttValue> * { return a.CreateAttValues(); }, jlcxx::arg("this"));
     t.method("CreateAttValues", [](G4VTrajectoryPoint const* a)->std::vector<G4AttValue> * { return a->CreateAttValues(); }, jlcxx::arg("this"));
   }

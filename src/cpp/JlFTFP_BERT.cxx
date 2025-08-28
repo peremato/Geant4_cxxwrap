@@ -18,7 +18,7 @@ struct JlFTFP_BERT: public Wrapper {
 
   JlFTFP_BERT(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type FTFP_BERT (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/FTFP_BERT.hh:46:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/FTFP_BERT.hh:46:7
     jlcxx::TypeWrapper<FTFP_BERT>  t = jlModule.add_type<FTFP_BERT>("FTFP_BERT",
       jlcxx::julia_base_type<G4VModularPhysicsList>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<FTFP_BERT>>(new jlcxx::TypeWrapper<FTFP_BERT>(jlModule, t));
@@ -30,7 +30,7 @@ struct JlFTFP_BERT: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void FTFP_BERT::FTFP_BERT(G4int) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/FTFP_BERT.hh:49:3
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/FTFP_BERT.hh:49:3
     t.constructor<G4int>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("ver")    );
   }
 

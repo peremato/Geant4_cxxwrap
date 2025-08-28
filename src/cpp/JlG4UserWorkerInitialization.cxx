@@ -17,7 +17,7 @@ struct JlG4UserWorkerInitialization: public Wrapper {
 
   JlG4UserWorkerInitialization(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4UserWorkerInitialization (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserWorkerInitialization.hh:65:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserWorkerInitialization.hh:65:7
     jlcxx::TypeWrapper<G4UserWorkerInitialization>  t = jlModule.add_type<G4UserWorkerInitialization>("G4UserWorkerInitialization");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4UserWorkerInitialization>>(new jlcxx::TypeWrapper<G4UserWorkerInitialization>(jlModule, t));
   }
@@ -28,31 +28,31 @@ struct JlG4UserWorkerInitialization: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4UserWorkerInitialization::WorkerInitialize() (" __HERE__ ")");
     // signature to use in the veto list: void G4UserWorkerInitialization::WorkerInitialize()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserWorkerInitialization.hh:73:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserWorkerInitialization.hh:73:18
     t.method("WorkerInitialize", [](G4UserWorkerInitialization const& a)->void { a.WorkerInitialize(); }, jlcxx::arg("this"));
     t.method("WorkerInitialize", [](G4UserWorkerInitialization const* a)->void { a->WorkerInitialize(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4UserWorkerInitialization::WorkerStart() (" __HERE__ ")");
     // signature to use in the veto list: void G4UserWorkerInitialization::WorkerStart()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserWorkerInitialization.hh:79:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserWorkerInitialization.hh:79:18
     t.method("WorkerStart", [](G4UserWorkerInitialization const& a)->void { a.WorkerStart(); }, jlcxx::arg("this"));
     t.method("WorkerStart", [](G4UserWorkerInitialization const* a)->void { a->WorkerStart(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4UserWorkerInitialization::WorkerRunStart() (" __HERE__ ")");
     // signature to use in the veto list: void G4UserWorkerInitialization::WorkerRunStart()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserWorkerInitialization.hh:85:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserWorkerInitialization.hh:85:18
     t.method("WorkerRunStart", [](G4UserWorkerInitialization const& a)->void { a.WorkerRunStart(); }, jlcxx::arg("this"));
     t.method("WorkerRunStart", [](G4UserWorkerInitialization const* a)->void { a->WorkerRunStart(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4UserWorkerInitialization::WorkerRunEnd() (" __HERE__ ")");
     // signature to use in the veto list: void G4UserWorkerInitialization::WorkerRunEnd()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserWorkerInitialization.hh:89:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserWorkerInitialization.hh:89:18
     t.method("WorkerRunEnd", [](G4UserWorkerInitialization const& a)->void { a.WorkerRunEnd(); }, jlcxx::arg("this"));
     t.method("WorkerRunEnd", [](G4UserWorkerInitialization const* a)->void { a->WorkerRunEnd(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4UserWorkerInitialization::WorkerStop() (" __HERE__ ")");
     // signature to use in the veto list: void G4UserWorkerInitialization::WorkerStop()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserWorkerInitialization.hh:93:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserWorkerInitialization.hh:93:18
     t.method("WorkerStop", [](G4UserWorkerInitialization const& a)->void { a.WorkerStop(); }, jlcxx::arg("this"));
     t.method("WorkerStop", [](G4UserWorkerInitialization const* a)->void { a->WorkerStop(); }, jlcxx::arg("this"));
   }

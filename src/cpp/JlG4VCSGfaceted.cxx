@@ -18,7 +18,7 @@ struct JlG4VCSGfaceted: public Wrapper {
 
   JlG4VCSGfaceted(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4VCSGfaceted (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VCSGfaceted.hh:43:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VCSGfaceted.hh:43:7
     jlcxx::TypeWrapper<G4VCSGfaceted>  t = jlModule.add_type<G4VCSGfaceted>("G4VCSGfaceted",
       jlcxx::julia_base_type<G4VSolid>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4VCSGfaceted>>(new jlcxx::TypeWrapper<G4VCSGfaceted>(jlModule, t));
@@ -31,37 +31,37 @@ struct JlG4VCSGfaceted: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4VCSGfaceted & G4VCSGfaceted::operator=(const G4VCSGfaceted &) (" __HERE__ ")");
     // signature to use in the veto list: G4VCSGfaceted & G4VCSGfaceted::operator=(const G4VCSGfaceted &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VCSGfaceted.hh:51:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VCSGfaceted.hh:51:20
     t.method("assign", [](G4VCSGfaceted& a, const G4VCSGfaceted & arg0)->G4VCSGfaceted & { return a.operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("source"));
     t.method("assign", [](G4VCSGfaceted* a, const G4VCSGfaceted & arg0)->G4VCSGfaceted & { return a->operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("source"));
 
     DEBUG_MSG("Adding wrapper for EInside G4VCSGfaceted::Inside(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: EInside G4VCSGfaceted::Inside(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VCSGfaceted.hh:58:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VCSGfaceted.hh:58:13
     t.method("Inside", [](G4VCSGfaceted const& a, const G4ThreeVector & arg0)->EInside { return a.Inside(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("Inside", [](G4VCSGfaceted const* a, const G4ThreeVector & arg0)->EInside { return a->Inside(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4VCSGfaceted::SurfaceNormal(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4VCSGfaceted::SurfaceNormal(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VCSGfaceted.hh:60:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VCSGfaceted.hh:60:19
     t.method("SurfaceNormal", [](G4VCSGfaceted const& a, const G4ThreeVector & arg0)->G4ThreeVector { return a.SurfaceNormal(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("SurfaceNormal", [](G4VCSGfaceted const* a, const G4ThreeVector & arg0)->G4ThreeVector { return a->SurfaceNormal(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for G4double G4VCSGfaceted::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4VCSGfaceted::DistanceToIn(const G4ThreeVector &, const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VCSGfaceted.hh:62:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VCSGfaceted.hh:62:14
     t.method("DistanceToIn", [](G4VCSGfaceted const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double { return a.DistanceToIn(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"));
     t.method("DistanceToIn", [](G4VCSGfaceted const* a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double { return a->DistanceToIn(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"));
 
     DEBUG_MSG("Adding wrapper for G4double G4VCSGfaceted::DistanceToIn(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4VCSGfaceted::DistanceToIn(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VCSGfaceted.hh:64:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VCSGfaceted.hh:64:14
     t.method("DistanceToIn", [](G4VCSGfaceted const& a, const G4ThreeVector & arg0)->G4double { return a.DistanceToIn(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("DistanceToIn", [](G4VCSGfaceted const* a, const G4ThreeVector & arg0)->G4double { return a->DistanceToIn(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for G4double G4VCSGfaceted::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4VCSGfaceted::DistanceToOut(const G4ThreeVector &, const G4ThreeVector &, const G4bool, G4bool *, G4ThreeVector *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VCSGfaceted.hh:65:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VCSGfaceted.hh:65:14
     t.method("DistanceToOut", [](G4VCSGfaceted const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1)->G4double { return a.DistanceToOut(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"));
     t.method("DistanceToOut", [](G4VCSGfaceted const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2)->G4double { return a.DistanceToOut(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"), jlcxx::arg("calcNorm"));
     t.method("DistanceToOut", [](G4VCSGfaceted const& a, const G4ThreeVector & arg0, const G4ThreeVector & arg1, const G4bool arg2, G4bool * arg3)->G4double { return a.DistanceToOut(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("p"), jlcxx::arg("v"), jlcxx::arg("calcNorm"), jlcxx::arg("validNorm"));
@@ -73,85 +73,85 @@ struct JlG4VCSGfaceted: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4double G4VCSGfaceted::DistanceToOut(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4VCSGfaceted::DistanceToOut(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VCSGfaceted.hh:70:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VCSGfaceted.hh:70:14
     t.method("DistanceToOut", [](G4VCSGfaceted const& a, const G4ThreeVector & arg0)->G4double { return a.DistanceToOut(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("DistanceToOut", [](G4VCSGfaceted const* a, const G4ThreeVector & arg0)->G4double { return a->DistanceToOut(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for G4GeometryType G4VCSGfaceted::GetEntityType() (" __HERE__ ")");
     // signature to use in the veto list: G4GeometryType G4VCSGfaceted::GetEntityType()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VCSGfaceted.hh:72:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VCSGfaceted.hh:72:20
     t.method("GetEntityType", [](G4VCSGfaceted const& a)->G4GeometryType { return a.GetEntityType(); }, jlcxx::arg("this"));
     t.method("GetEntityType", [](G4VCSGfaceted const* a)->G4GeometryType { return a->GetEntityType(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4Polyhedron * G4VCSGfaceted::CreatePolyhedron() (" __HERE__ ")");
     // signature to use in the veto list: G4Polyhedron * G4VCSGfaceted::CreatePolyhedron()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VCSGfaceted.hh:76:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VCSGfaceted.hh:76:19
     t.method("CreatePolyhedron", [](G4VCSGfaceted const& a)->G4Polyhedron * { return a.CreatePolyhedron(); }, jlcxx::arg("this"));
     t.method("CreatePolyhedron", [](G4VCSGfaceted const* a)->G4Polyhedron * { return a->CreatePolyhedron(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4Polyhedron * G4VCSGfaceted::GetPolyhedron() (" __HERE__ ")");
     // signature to use in the veto list: G4Polyhedron * G4VCSGfaceted::GetPolyhedron()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VCSGfaceted.hh:82:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VCSGfaceted.hh:82:19
     t.method("GetPolyhedron", [](G4VCSGfaceted const& a)->G4Polyhedron * { return a.GetPolyhedron(); }, jlcxx::arg("this"));
     t.method("GetPolyhedron", [](G4VCSGfaceted const* a)->G4Polyhedron * { return a->GetPolyhedron(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4VCSGfaceted::GetCubVolStatistics() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4VCSGfaceted::GetCubVolStatistics()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VCSGfaceted.hh:84:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VCSGfaceted.hh:84:11
     t.method("GetCubVolStatistics", [](G4VCSGfaceted const& a)->G4int { return a.GetCubVolStatistics(); }, jlcxx::arg("this"));
     t.method("GetCubVolStatistics", [](G4VCSGfaceted const* a)->G4int { return a->GetCubVolStatistics(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4VCSGfaceted::GetCubVolEpsilon() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4VCSGfaceted::GetCubVolEpsilon()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VCSGfaceted.hh:85:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VCSGfaceted.hh:85:14
     t.method("GetCubVolEpsilon", [](G4VCSGfaceted const& a)->G4double { return a.GetCubVolEpsilon(); }, jlcxx::arg("this"));
     t.method("GetCubVolEpsilon", [](G4VCSGfaceted const* a)->G4double { return a->GetCubVolEpsilon(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VCSGfaceted::SetCubVolStatistics(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4VCSGfaceted::SetCubVolStatistics(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VCSGfaceted.hh:86:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VCSGfaceted.hh:86:10
     t.method("SetCubVolStatistics", [](G4VCSGfaceted& a, G4int arg0)->void { a.SetCubVolStatistics(arg0); }, jlcxx::arg("this"), jlcxx::arg("st"));
     t.method("SetCubVolStatistics", [](G4VCSGfaceted* a, G4int arg0)->void { a->SetCubVolStatistics(arg0); }, jlcxx::arg("this"), jlcxx::arg("st"));
 
     DEBUG_MSG("Adding wrapper for void G4VCSGfaceted::SetCubVolEpsilon(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4VCSGfaceted::SetCubVolEpsilon(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VCSGfaceted.hh:87:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VCSGfaceted.hh:87:10
     t.method("SetCubVolEpsilon", [](G4VCSGfaceted& a, G4double arg0)->void { a.SetCubVolEpsilon(arg0); }, jlcxx::arg("this"), jlcxx::arg("ep"));
     t.method("SetCubVolEpsilon", [](G4VCSGfaceted* a, G4double arg0)->void { a->SetCubVolEpsilon(arg0); }, jlcxx::arg("this"), jlcxx::arg("ep"));
 
     DEBUG_MSG("Adding wrapper for G4int G4VCSGfaceted::GetAreaStatistics() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4VCSGfaceted::GetAreaStatistics()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VCSGfaceted.hh:88:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VCSGfaceted.hh:88:11
     t.method("GetAreaStatistics", [](G4VCSGfaceted const& a)->G4int { return a.GetAreaStatistics(); }, jlcxx::arg("this"));
     t.method("GetAreaStatistics", [](G4VCSGfaceted const* a)->G4int { return a->GetAreaStatistics(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4VCSGfaceted::GetAreaAccuracy() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4VCSGfaceted::GetAreaAccuracy()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VCSGfaceted.hh:89:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VCSGfaceted.hh:89:14
     t.method("GetAreaAccuracy", [](G4VCSGfaceted const& a)->G4double { return a.GetAreaAccuracy(); }, jlcxx::arg("this"));
     t.method("GetAreaAccuracy", [](G4VCSGfaceted const* a)->G4double { return a->GetAreaAccuracy(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VCSGfaceted::SetAreaStatistics(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4VCSGfaceted::SetAreaStatistics(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VCSGfaceted.hh:90:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VCSGfaceted.hh:90:10
     t.method("SetAreaStatistics", [](G4VCSGfaceted& a, G4int arg0)->void { a.SetAreaStatistics(arg0); }, jlcxx::arg("this"), jlcxx::arg("st"));
     t.method("SetAreaStatistics", [](G4VCSGfaceted* a, G4int arg0)->void { a->SetAreaStatistics(arg0); }, jlcxx::arg("this"), jlcxx::arg("st"));
 
     DEBUG_MSG("Adding wrapper for void G4VCSGfaceted::SetAreaAccuracy(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4VCSGfaceted::SetAreaAccuracy(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VCSGfaceted.hh:91:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VCSGfaceted.hh:91:10
     t.method("SetAreaAccuracy", [](G4VCSGfaceted& a, G4double arg0)->void { a.SetAreaAccuracy(arg0); }, jlcxx::arg("this"), jlcxx::arg("ep"));
     t.method("SetAreaAccuracy", [](G4VCSGfaceted* a, G4double arg0)->void { a->SetAreaAccuracy(arg0); }, jlcxx::arg("this"), jlcxx::arg("ep"));
 
     DEBUG_MSG("Adding wrapper for G4double G4VCSGfaceted::GetCubicVolume() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4VCSGfaceted::GetCubicVolume()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VCSGfaceted.hh:93:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VCSGfaceted.hh:93:14
     t.method("GetCubicVolume", [](G4VCSGfaceted& a)->G4double { return a.GetCubicVolume(); }, jlcxx::arg("this"));
     t.method("GetCubicVolume", [](G4VCSGfaceted* a)->G4double { return a->GetCubicVolume(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4VCSGfaceted::GetSurfaceArea() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4VCSGfaceted::GetSurfaceArea()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VCSGfaceted.hh:96:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VCSGfaceted.hh:96:14
     t.method("GetSurfaceArea", [](G4VCSGfaceted& a)->G4double { return a.GetSurfaceArea(); }, jlcxx::arg("this"));
     t.method("GetSurfaceArea", [](G4VCSGfaceted* a)->G4double { return a->GetSurfaceArea(); }, jlcxx::arg("this"));
   }

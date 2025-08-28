@@ -17,7 +17,7 @@ struct JlG4Physics2DVector: public Wrapper {
 
   JlG4Physics2DVector(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4Physics2DVector (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Physics2DVector.hh:47:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Physics2DVector.hh:47:7
     jlcxx::TypeWrapper<G4Physics2DVector>  t = jlModule.add_type<G4Physics2DVector>("G4Physics2DVector");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4Physics2DVector>>(new jlcxx::TypeWrapper<G4Physics2DVector>(jlModule, t));
   }

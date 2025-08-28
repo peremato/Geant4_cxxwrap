@@ -17,7 +17,7 @@ struct JlG4LVData: public Wrapper {
 
   JlG4LVData(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4LVData (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalVolume.hh:128:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalVolume.hh:128:7
     jlcxx::TypeWrapper<G4LVData>  t = jlModule.add_type<G4LVData>("G4LVData");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4LVData>>(new jlcxx::TypeWrapper<G4LVData>(jlModule, t));
   }
@@ -28,18 +28,18 @@ struct JlG4LVData: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4LVData::initialize() (" __HERE__ ")");
     // signature to use in the veto list: void G4LVData::initialize()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalVolume.hh:136:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalVolume.hh:136:10
     t.method("initialize", [](G4LVData& a)->void { a.initialize(); }, jlcxx::arg("this"));
     t.method("initialize", [](G4LVData* a)->void { a->initialize(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding fSolid methods  to provide read access to the field fSolid (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalVolume.hh:148:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalVolume.hh:148:15
     // signature to use in the veto list: G4LVData::fSolid
     t.method("fSolid", [](const G4LVData& a) -> G4VSolid * { return a.fSolid; }, jlcxx::arg("this"));
     t.method("fSolid", [](G4LVData& a) -> G4VSolid * { return a.fSolid; }, jlcxx::arg("this"));
     t.method("fSolid", [](const G4LVData* a) -> G4VSolid * { return a->fSolid; }, jlcxx::arg("this"));
     t.method("fSolid", [](G4LVData* a) -> G4VSolid * { return a->fSolid; }, jlcxx::arg("this"));
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalVolume.hh:148:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalVolume.hh:148:15
     // signature to use in the veto list: G4LVData::fSolid
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding fSolid! methods to provide write access to the field fSolid (" __HERE__ ")");
@@ -49,13 +49,13 @@ struct JlG4LVData: public Wrapper {
     t.method("fSolid!", [](G4LVData* a, G4VSolid * val) -> G4VSolid * { return a->fSolid = val; }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding fSensitiveDetector methods  to provide read access to the field fSensitiveDetector (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalVolume.hh:150:27
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalVolume.hh:150:27
     // signature to use in the veto list: G4LVData::fSensitiveDetector
     t.method("fSensitiveDetector", [](const G4LVData& a) -> G4VSensitiveDetector * { return a.fSensitiveDetector; }, jlcxx::arg("this"));
     t.method("fSensitiveDetector", [](G4LVData& a) -> G4VSensitiveDetector * { return a.fSensitiveDetector; }, jlcxx::arg("this"));
     t.method("fSensitiveDetector", [](const G4LVData* a) -> G4VSensitiveDetector * { return a->fSensitiveDetector; }, jlcxx::arg("this"));
     t.method("fSensitiveDetector", [](G4LVData* a) -> G4VSensitiveDetector * { return a->fSensitiveDetector; }, jlcxx::arg("this"));
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalVolume.hh:150:27
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalVolume.hh:150:27
     // signature to use in the veto list: G4LVData::fSensitiveDetector
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding fSensitiveDetector! methods to provide write access to the field fSensitiveDetector (" __HERE__ ")");
@@ -65,13 +65,13 @@ struct JlG4LVData: public Wrapper {
     t.method("fSensitiveDetector!", [](G4LVData* a, G4VSensitiveDetector * val) -> G4VSensitiveDetector * { return a->fSensitiveDetector = val; }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding fFieldManager methods  to provide read access to the field fFieldManager (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalVolume.hh:152:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalVolume.hh:152:21
     // signature to use in the veto list: G4LVData::fFieldManager
     t.method("fFieldManager", [](const G4LVData& a) -> G4FieldManager * { return a.fFieldManager; }, jlcxx::arg("this"));
     t.method("fFieldManager", [](G4LVData& a) -> G4FieldManager * { return a.fFieldManager; }, jlcxx::arg("this"));
     t.method("fFieldManager", [](const G4LVData* a) -> G4FieldManager * { return a->fFieldManager; }, jlcxx::arg("this"));
     t.method("fFieldManager", [](G4LVData* a) -> G4FieldManager * { return a->fFieldManager; }, jlcxx::arg("this"));
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalVolume.hh:152:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalVolume.hh:152:21
     // signature to use in the veto list: G4LVData::fFieldManager
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding fFieldManager! methods to provide write access to the field fFieldManager (" __HERE__ ")");
@@ -81,13 +81,13 @@ struct JlG4LVData: public Wrapper {
     t.method("fFieldManager!", [](G4LVData* a, G4FieldManager * val) -> G4FieldManager * { return a->fFieldManager = val; }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding fMaterial methods  to provide read access to the field fMaterial (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalVolume.hh:154:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalVolume.hh:154:17
     // signature to use in the veto list: G4LVData::fMaterial
     t.method("fMaterial", [](const G4LVData& a) -> G4Material * { return a.fMaterial; }, jlcxx::arg("this"));
     t.method("fMaterial", [](G4LVData& a) -> G4Material * { return a.fMaterial; }, jlcxx::arg("this"));
     t.method("fMaterial", [](const G4LVData* a) -> G4Material * { return a->fMaterial; }, jlcxx::arg("this"));
     t.method("fMaterial", [](G4LVData* a) -> G4Material * { return a->fMaterial; }, jlcxx::arg("this"));
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalVolume.hh:154:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalVolume.hh:154:17
     // signature to use in the veto list: G4LVData::fMaterial
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding fMaterial! methods to provide write access to the field fMaterial (" __HERE__ ")");
@@ -97,13 +97,13 @@ struct JlG4LVData: public Wrapper {
     t.method("fMaterial!", [](G4LVData* a, G4Material * val) -> G4Material * { return a->fMaterial = val; }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding fMass methods  to provide read access to the field fMass (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalVolume.hh:156:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalVolume.hh:156:14
     // signature to use in the veto list: G4LVData::fMass
     t.method("fMass", [](const G4LVData& a) -> G4double { return a.fMass; }, jlcxx::arg("this"));
     t.method("fMass", [](G4LVData& a) -> G4double { return a.fMass; }, jlcxx::arg("this"));
     t.method("fMass", [](const G4LVData* a) -> G4double { return a->fMass; }, jlcxx::arg("this"));
     t.method("fMass", [](G4LVData* a) -> G4double { return a->fMass; }, jlcxx::arg("this"));
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalVolume.hh:156:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalVolume.hh:156:14
     // signature to use in the veto list: G4LVData::fMass
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding fMass! methods to provide write access to the field fMass (" __HERE__ ")");
@@ -113,13 +113,13 @@ struct JlG4LVData: public Wrapper {
     t.method("fMass!", [](G4LVData* a, G4double val) -> G4double { return a->fMass = val; }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding fCutsCouple methods  to provide read access to the field fCutsCouple (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalVolume.hh:158:27
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalVolume.hh:158:27
     // signature to use in the veto list: G4LVData::fCutsCouple
     t.method("fCutsCouple", [](const G4LVData& a) -> G4MaterialCutsCouple * { return a.fCutsCouple; }, jlcxx::arg("this"));
     t.method("fCutsCouple", [](G4LVData& a) -> G4MaterialCutsCouple * { return a.fCutsCouple; }, jlcxx::arg("this"));
     t.method("fCutsCouple", [](const G4LVData* a) -> G4MaterialCutsCouple * { return a->fCutsCouple; }, jlcxx::arg("this"));
     t.method("fCutsCouple", [](G4LVData* a) -> G4MaterialCutsCouple * { return a->fCutsCouple; }, jlcxx::arg("this"));
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4LogicalVolume.hh:158:27
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4LogicalVolume.hh:158:27
     // signature to use in the veto list: G4LVData::fCutsCouple
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding fCutsCouple! methods to provide write access to the field fCutsCouple (" __HERE__ ")");

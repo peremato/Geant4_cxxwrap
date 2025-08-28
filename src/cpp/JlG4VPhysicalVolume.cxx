@@ -17,7 +17,7 @@ struct JlG4VPhysicalVolume: public Wrapper {
 
   JlG4VPhysicalVolume(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4VPhysicalVolume (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:78:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:78:7
     jlcxx::TypeWrapper<G4VPhysicalVolume>  t = jlModule.add_type<G4VPhysicalVolume>("G4VPhysicalVolume");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4VPhysicalVolume>>(new jlcxx::TypeWrapper<G4VPhysicalVolume>(jlModule, t));
   }
@@ -29,7 +29,7 @@ struct JlG4VPhysicalVolume: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4bool G4VPhysicalVolume::operator==(const G4VPhysicalVolume &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VPhysicalVolume::operator==(const G4VPhysicalVolume &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:107:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:107:19
     t.method("==", [](G4VPhysicalVolume const& a, const G4VPhysicalVolume & arg0)->G4bool { return a.operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("==", [](G4VPhysicalVolume const* a, const G4VPhysicalVolume & arg0)->G4bool { return a->operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
@@ -37,169 +37,169 @@ struct JlG4VPhysicalVolume: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4RotationMatrix * G4VPhysicalVolume::GetObjectRotation() (" __HERE__ ")");
     // signature to use in the veto list: G4RotationMatrix * G4VPhysicalVolume::GetObjectRotation()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:117:23
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:117:23
     t.method("GetObjectRotation", [](G4VPhysicalVolume const& a)->G4RotationMatrix * { return a.GetObjectRotation(); }, jlcxx::arg("this"));
     t.method("GetObjectRotation", [](G4VPhysicalVolume const* a)->G4RotationMatrix * { return a->GetObjectRotation(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4RotationMatrix G4VPhysicalVolume::GetObjectRotationValue() (" __HERE__ ")");
     // signature to use in the veto list: G4RotationMatrix G4VPhysicalVolume::GetObjectRotationValue()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:118:23
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:118:23
     t.method("GetObjectRotationValue", [](G4VPhysicalVolume const& a)->G4RotationMatrix { return a.GetObjectRotationValue(); }, jlcxx::arg("this"));
     t.method("GetObjectRotationValue", [](G4VPhysicalVolume const* a)->G4RotationMatrix { return a->GetObjectRotationValue(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4VPhysicalVolume::GetObjectTranslation() (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4VPhysicalVolume::GetObjectTranslation()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:119:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:119:20
     t.method("GetObjectTranslation", [](G4VPhysicalVolume const& a)->G4ThreeVector { return a.GetObjectTranslation(); }, jlcxx::arg("this"));
     t.method("GetObjectTranslation", [](G4VPhysicalVolume const* a)->G4ThreeVector { return a->GetObjectTranslation(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4RotationMatrix * G4VPhysicalVolume::GetFrameRotation() (" __HERE__ ")");
     // signature to use in the veto list: const G4RotationMatrix * G4VPhysicalVolume::GetFrameRotation()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:121:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:121:29
     t.method("GetFrameRotation", [](G4VPhysicalVolume const& a)->const G4RotationMatrix * { return a.GetFrameRotation(); }, jlcxx::arg("this"));
     t.method("GetFrameRotation", [](G4VPhysicalVolume const* a)->const G4RotationMatrix * { return a->GetFrameRotation(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4VPhysicalVolume::GetFrameTranslation() (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4VPhysicalVolume::GetFrameTranslation()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:122:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:122:19
     t.method("GetFrameTranslation", [](G4VPhysicalVolume const& a)->G4ThreeVector { return a.GetFrameTranslation(); }, jlcxx::arg("this"));
     t.method("GetFrameTranslation", [](G4VPhysicalVolume const* a)->G4ThreeVector { return a->GetFrameTranslation(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4ThreeVector G4VPhysicalVolume::GetTranslation() (" __HERE__ ")");
     // signature to use in the veto list: const G4ThreeVector G4VPhysicalVolume::GetTranslation()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:128:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:128:25
     t.method("GetTranslation", [](G4VPhysicalVolume const& a)->const G4ThreeVector { return a.GetTranslation(); }, jlcxx::arg("this"));
     t.method("GetTranslation", [](G4VPhysicalVolume const* a)->const G4ThreeVector { return a->GetTranslation(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4RotationMatrix * G4VPhysicalVolume::GetRotation() (" __HERE__ ")");
     // signature to use in the veto list: const G4RotationMatrix * G4VPhysicalVolume::GetRotation()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:129:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:129:29
     t.method("GetRotation", [](G4VPhysicalVolume const& a)->const G4RotationMatrix * { return a.GetRotation(); }, jlcxx::arg("this"));
     t.method("GetRotation", [](G4VPhysicalVolume const* a)->const G4RotationMatrix * { return a->GetRotation(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VPhysicalVolume::SetTranslation(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4VPhysicalVolume::SetTranslation(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:135:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:135:10
     t.method("SetTranslation", [](G4VPhysicalVolume& a, const G4ThreeVector & arg0)->void { a.SetTranslation(arg0); }, jlcxx::arg("this"), jlcxx::arg("v"));
     t.method("SetTranslation", [](G4VPhysicalVolume* a, const G4ThreeVector & arg0)->void { a->SetTranslation(arg0); }, jlcxx::arg("this"), jlcxx::arg("v"));
 
     DEBUG_MSG("Adding wrapper for G4RotationMatrix * G4VPhysicalVolume::GetRotation() (" __HERE__ ")");
     // signature to use in the veto list: G4RotationMatrix * G4VPhysicalVolume::GetRotation()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:136:23
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:136:23
     t.method("GetRotation", [](G4VPhysicalVolume& a)->G4RotationMatrix * { return a.GetRotation(); }, jlcxx::arg("this"));
     t.method("GetRotation", [](G4VPhysicalVolume* a)->G4RotationMatrix * { return a->GetRotation(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VPhysicalVolume::SetRotation(G4RotationMatrix *) (" __HERE__ ")");
     // signature to use in the veto list: void G4VPhysicalVolume::SetRotation(G4RotationMatrix *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:137:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:137:10
     t.method("SetRotation", [](G4VPhysicalVolume& a, G4RotationMatrix * arg0)->void { a.SetRotation(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetRotation", [](G4VPhysicalVolume* a, G4RotationMatrix * arg0)->void { a->SetRotation(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4LogicalVolume * G4VPhysicalVolume::GetLogicalVolume() (" __HERE__ ")");
     // signature to use in the veto list: G4LogicalVolume * G4VPhysicalVolume::GetLogicalVolume()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:142:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:142:29
     t.method("GetLogicalVolume", [](G4VPhysicalVolume const& a)->G4LogicalVolume * { return a.GetLogicalVolume(); }, jlcxx::arg("this"));
     t.method("GetLogicalVolume", [](G4VPhysicalVolume const* a)->G4LogicalVolume * { return a->GetLogicalVolume(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VPhysicalVolume::SetLogicalVolume(G4LogicalVolume *) (" __HERE__ ")");
     // signature to use in the veto list: void G4VPhysicalVolume::SetLogicalVolume(G4LogicalVolume *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:144:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:144:17
     t.method("SetLogicalVolume", [](G4VPhysicalVolume& a, G4LogicalVolume * arg0)->void { a.SetLogicalVolume(arg0); }, jlcxx::arg("this"), jlcxx::arg("pLogical"));
     t.method("SetLogicalVolume", [](G4VPhysicalVolume* a, G4LogicalVolume * arg0)->void { a->SetLogicalVolume(arg0); }, jlcxx::arg("this"), jlcxx::arg("pLogical"));
 
     DEBUG_MSG("Adding wrapper for G4LogicalVolume * G4VPhysicalVolume::GetMotherLogical() (" __HERE__ ")");
     // signature to use in the veto list: G4LogicalVolume * G4VPhysicalVolume::GetMotherLogical()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:147:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:147:29
     t.method("GetMotherLogical", [](G4VPhysicalVolume const& a)->G4LogicalVolume * { return a.GetMotherLogical(); }, jlcxx::arg("this"));
     t.method("GetMotherLogical", [](G4VPhysicalVolume const* a)->G4LogicalVolume * { return a->GetMotherLogical(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VPhysicalVolume::SetMotherLogical(G4LogicalVolume *) (" __HERE__ ")");
     // signature to use in the veto list: void G4VPhysicalVolume::SetMotherLogical(G4LogicalVolume *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:149:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:149:17
     t.method("SetMotherLogical", [](G4VPhysicalVolume& a, G4LogicalVolume * arg0)->void { a.SetMotherLogical(arg0); }, jlcxx::arg("this"), jlcxx::arg("pMother"));
     t.method("SetMotherLogical", [](G4VPhysicalVolume* a, G4LogicalVolume * arg0)->void { a->SetMotherLogical(arg0); }, jlcxx::arg("this"), jlcxx::arg("pMother"));
 
     DEBUG_MSG("Adding wrapper for const G4String & G4VPhysicalVolume::GetName() (" __HERE__ ")");
     // signature to use in the veto list: const G4String & G4VPhysicalVolume::GetName()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:152:28
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:152:28
     t.method("GetName", [](G4VPhysicalVolume const& a)->const G4String & { return a.GetName(); }, jlcxx::arg("this"));
     t.method("GetName", [](G4VPhysicalVolume const* a)->const G4String & { return a->GetName(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VPhysicalVolume::SetName(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4VPhysicalVolume::SetName(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:154:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:154:10
     t.method("SetName", [](G4VPhysicalVolume& a, const G4String & arg0)->void { a.SetName(arg0); }, jlcxx::arg("this"), jlcxx::arg("pName"));
     t.method("SetName", [](G4VPhysicalVolume* a, const G4String & arg0)->void { a->SetName(arg0); }, jlcxx::arg("this"), jlcxx::arg("pName"));
 
     DEBUG_MSG("Adding wrapper for G4int G4VPhysicalVolume::GetMultiplicity() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4VPhysicalVolume::GetMultiplicity()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:157:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:157:19
     t.method("GetMultiplicity", [](G4VPhysicalVolume const& a)->G4int { return a.GetMultiplicity(); }, jlcxx::arg("this"));
     t.method("GetMultiplicity", [](G4VPhysicalVolume const* a)->G4int { return a->GetMultiplicity(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for EVolume G4VPhysicalVolume::VolumeType() (" __HERE__ ")");
     // signature to use in the veto list: EVolume G4VPhysicalVolume::VolumeType()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:163:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:163:21
     t.method("VolumeType", [](G4VPhysicalVolume const& a)->EVolume { return a.VolumeType(); }, jlcxx::arg("this"));
     t.method("VolumeType", [](G4VPhysicalVolume const* a)->EVolume { return a->VolumeType(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4VPhysicalVolume::IsMany() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VPhysicalVolume::IsMany()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:165:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:165:20
     t.method("IsMany", [](G4VPhysicalVolume const& a)->G4bool { return a.IsMany(); }, jlcxx::arg("this"));
     t.method("IsMany", [](G4VPhysicalVolume const* a)->G4bool { return a->IsMany(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4VPhysicalVolume::GetCopyNo() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4VPhysicalVolume::GetCopyNo()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:167:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:167:19
     t.method("GetCopyNo", [](G4VPhysicalVolume const& a)->G4int { return a.GetCopyNo(); }, jlcxx::arg("this"));
     t.method("GetCopyNo", [](G4VPhysicalVolume const* a)->G4int { return a->GetCopyNo(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VPhysicalVolume::SetCopyNo(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4VPhysicalVolume::SetCopyNo(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:169:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:169:19
     t.method("SetCopyNo", [](G4VPhysicalVolume& a, G4int arg0)->void { a.SetCopyNo(arg0); }, jlcxx::arg("this"), jlcxx::arg("CopyNo"));
     t.method("SetCopyNo", [](G4VPhysicalVolume* a, G4int arg0)->void { a->SetCopyNo(arg0); }, jlcxx::arg("this"), jlcxx::arg("CopyNo"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4VPhysicalVolume::IsReplicated() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VPhysicalVolume::IsReplicated()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:171:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:171:20
     t.method("IsReplicated", [](G4VPhysicalVolume const& a)->G4bool { return a.IsReplicated(); }, jlcxx::arg("this"));
     t.method("IsReplicated", [](G4VPhysicalVolume const* a)->G4bool { return a->IsReplicated(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4VPhysicalVolume::IsParameterised() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VPhysicalVolume::IsParameterised()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:174:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:174:20
     t.method("IsParameterised", [](G4VPhysicalVolume const& a)->G4bool { return a.IsParameterised(); }, jlcxx::arg("this"));
     t.method("IsParameterised", [](G4VPhysicalVolume const* a)->G4bool { return a->IsParameterised(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4VPVParameterisation * G4VPhysicalVolume::GetParameterisation() (" __HERE__ ")");
     // signature to use in the veto list: G4VPVParameterisation * G4VPhysicalVolume::GetParameterisation()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:177:36
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:177:36
     t.method("GetParameterisation", [](G4VPhysicalVolume const& a)->G4VPVParameterisation * { return a.GetParameterisation(); }, jlcxx::arg("this"));
     t.method("GetParameterisation", [](G4VPhysicalVolume const* a)->G4VPVParameterisation * { return a->GetParameterisation(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VPhysicalVolume::GetReplicationData(EAxis &, G4int &, G4double &, G4double &, G4bool &) (" __HERE__ ")");
     // signature to use in the veto list: void G4VPhysicalVolume::GetReplicationData(EAxis &, G4int &, G4double &, G4double &, G4bool &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:180:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:180:18
     t.method("GetReplicationData", [](G4VPhysicalVolume const& a, EAxis & arg0, G4int & arg1, G4double & arg2, G4double & arg3, G4bool & arg4)->void { a.GetReplicationData(arg0, arg1, arg2, arg3, arg4); }, jlcxx::arg("this"), jlcxx::arg("axis"), jlcxx::arg("nReplicas"), jlcxx::arg("width"), jlcxx::arg("offset"), jlcxx::arg("consuming"));
     t.method("GetReplicationData", [](G4VPhysicalVolume const* a, EAxis & arg0, G4int & arg1, G4double & arg2, G4double & arg3, G4bool & arg4)->void { a->GetReplicationData(arg0, arg1, arg2, arg3, arg4); }, jlcxx::arg("this"), jlcxx::arg("axis"), jlcxx::arg("nReplicas"), jlcxx::arg("width"), jlcxx::arg("offset"), jlcxx::arg("consuming"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4VPhysicalVolume::IsRegularStructure() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VPhysicalVolume::IsRegularStructure()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:186:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:186:20
     t.method("IsRegularStructure", [](G4VPhysicalVolume const& a)->G4bool { return a.IsRegularStructure(); }, jlcxx::arg("this"));
     t.method("IsRegularStructure", [](G4VPhysicalVolume const* a)->G4bool { return a->IsRegularStructure(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4VPhysicalVolume::GetRegularStructureId() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4VPhysicalVolume::GetRegularStructureId()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:188:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:188:19
     t.method("GetRegularStructureId", [](G4VPhysicalVolume const& a)->G4int { return a.GetRegularStructureId(); }, jlcxx::arg("this"));
     t.method("GetRegularStructureId", [](G4VPhysicalVolume const* a)->G4int { return a->GetRegularStructureId(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4VPhysicalVolume::CheckOverlaps(G4int, G4double, G4bool, G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4VPhysicalVolume::CheckOverlaps(G4int, G4double, G4bool, G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:193:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:193:20
     t.method("CheckOverlaps", [](G4VPhysicalVolume& a)->G4bool { return a.CheckOverlaps(); }, jlcxx::arg("this"));
     t.method("CheckOverlaps", [](G4VPhysicalVolume& a, G4int arg0)->G4bool { return a.CheckOverlaps(arg0); }, jlcxx::arg("this"), jlcxx::arg("res"));
     t.method("CheckOverlaps", [](G4VPhysicalVolume& a, G4int arg0, G4double arg1)->G4bool { return a.CheckOverlaps(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("res"), jlcxx::arg("tol"));
@@ -213,18 +213,18 @@ struct JlG4VPhysicalVolume: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4int G4VPhysicalVolume::GetInstanceID() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4VPhysicalVolume::GetInstanceID()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:208:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:208:18
     t.method("GetInstanceID", [](G4VPhysicalVolume const& a)->G4int { return a.GetInstanceID(); }, jlcxx::arg("this"));
     t.method("GetInstanceID", [](G4VPhysicalVolume const* a)->G4int { return a->GetInstanceID(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4VPhysicalVolume::Clean() (" __HERE__ ")");
     // signature to use in the veto list: void G4VPhysicalVolume::Clean()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:214:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:214:17
     module_.method("G4VPhysicalVolume!Clean", []()->void { G4VPhysicalVolume::Clean(); });
 
     DEBUG_MSG("Adding wrapper for EVolume G4VPhysicalVolume::DeduceVolumeType() (" __HERE__ ")");
     // signature to use in the veto list: EVolume G4VPhysicalVolume::DeduceVolumeType()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VPhysicalVolume.hh:217:20
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VPhysicalVolume.hh:217:20
     t.method("DeduceVolumeType", [](G4VPhysicalVolume const& a)->EVolume { return a.DeduceVolumeType(); }, jlcxx::arg("this"));
     t.method("DeduceVolumeType", [](G4VPhysicalVolume const* a)->EVolume { return a->DeduceVolumeType(); }, jlcxx::arg("this"));
   }

@@ -17,7 +17,7 @@ struct JlG4SPSPosDistribution: public Wrapper {
 
   JlG4SPSPosDistribution(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4SPSPosDistribution (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:59:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:59:7
     jlcxx::TypeWrapper<G4SPSPosDistribution>  t = jlModule.add_type<G4SPSPosDistribution>("G4SPSPosDistribution");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4SPSPosDistribution>>(new jlcxx::TypeWrapper<G4SPSPosDistribution>(jlModule, t));
   }
@@ -28,247 +28,247 @@ struct JlG4SPSPosDistribution: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4SPSPosDistribution::SetPosDisType(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSPosDistribution::SetPosDisType(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:71:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:71:10
     t.method("SetPosDisType", [](G4SPSPosDistribution& a, const G4String & arg0)->void { a.SetPosDisType(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetPosDisType", [](G4SPSPosDistribution* a, const G4String & arg0)->void { a->SetPosDisType(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSPosDistribution::SetPosDisShape(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSPosDistribution::SetPosDisShape(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:75:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:75:10
     t.method("SetPosDisShape", [](G4SPSPosDistribution& a, const G4String & arg0)->void { a.SetPosDisShape(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetPosDisShape", [](G4SPSPosDistribution* a, const G4String & arg0)->void { a->SetPosDisShape(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSPosDistribution::SetCentreCoords(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSPosDistribution::SetCentreCoords(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:80:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:80:10
     t.method("SetCentreCoords", [](G4SPSPosDistribution& a, const G4ThreeVector & arg0)->void { a.SetCentreCoords(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetCentreCoords", [](G4SPSPosDistribution* a, const G4ThreeVector & arg0)->void { a->SetCentreCoords(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSPosDistribution::SetPosRot1(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSPosDistribution::SetPosRot1(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:83:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:83:10
     t.method("SetPosRot1", [](G4SPSPosDistribution& a, const G4ThreeVector & arg0)->void { a.SetPosRot1(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetPosRot1", [](G4SPSPosDistribution* a, const G4ThreeVector & arg0)->void { a->SetPosRot1(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSPosDistribution::SetPosRot2(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSPosDistribution::SetPosRot2(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:87:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:87:10
     t.method("SetPosRot2", [](G4SPSPosDistribution& a, const G4ThreeVector & arg0)->void { a.SetPosRot2(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetPosRot2", [](G4SPSPosDistribution* a, const G4ThreeVector & arg0)->void { a->SetPosRot2(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSPosDistribution::SetHalfX(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSPosDistribution::SetHalfX(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:92:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:92:10
     t.method("SetHalfX", [](G4SPSPosDistribution& a, G4double arg0)->void { a.SetHalfX(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetHalfX", [](G4SPSPosDistribution* a, G4double arg0)->void { a->SetHalfX(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSPosDistribution::SetHalfY(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSPosDistribution::SetHalfY(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:95:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:95:10
     t.method("SetHalfY", [](G4SPSPosDistribution& a, G4double arg0)->void { a.SetHalfY(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetHalfY", [](G4SPSPosDistribution* a, G4double arg0)->void { a->SetHalfY(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSPosDistribution::SetHalfZ(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSPosDistribution::SetHalfZ(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:98:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:98:10
     t.method("SetHalfZ", [](G4SPSPosDistribution& a, G4double arg0)->void { a.SetHalfZ(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetHalfZ", [](G4SPSPosDistribution* a, G4double arg0)->void { a->SetHalfZ(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSPosDistribution::SetRadius(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSPosDistribution::SetRadius(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:101:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:101:10
     t.method("SetRadius", [](G4SPSPosDistribution& a, G4double arg0)->void { a.SetRadius(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetRadius", [](G4SPSPosDistribution* a, G4double arg0)->void { a->SetRadius(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSPosDistribution::SetRadius0(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSPosDistribution::SetRadius0(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:104:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:104:10
     t.method("SetRadius0", [](G4SPSPosDistribution& a, G4double arg0)->void { a.SetRadius0(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetRadius0", [](G4SPSPosDistribution* a, G4double arg0)->void { a->SetRadius0(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSPosDistribution::SetBeamSigmaInR(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSPosDistribution::SetBeamSigmaInR(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:107:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:107:10
     t.method("SetBeamSigmaInR", [](G4SPSPosDistribution& a, G4double arg0)->void { a.SetBeamSigmaInR(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetBeamSigmaInR", [](G4SPSPosDistribution* a, G4double arg0)->void { a->SetBeamSigmaInR(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSPosDistribution::SetBeamSigmaInX(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSPosDistribution::SetBeamSigmaInX(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:110:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:110:10
     t.method("SetBeamSigmaInX", [](G4SPSPosDistribution& a, G4double arg0)->void { a.SetBeamSigmaInX(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetBeamSigmaInX", [](G4SPSPosDistribution* a, G4double arg0)->void { a->SetBeamSigmaInX(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSPosDistribution::SetBeamSigmaInY(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSPosDistribution::SetBeamSigmaInY(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:113:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:113:10
     t.method("SetBeamSigmaInY", [](G4SPSPosDistribution& a, G4double arg0)->void { a.SetBeamSigmaInY(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetBeamSigmaInY", [](G4SPSPosDistribution* a, G4double arg0)->void { a->SetBeamSigmaInY(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSPosDistribution::SetParAlpha(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSPosDistribution::SetParAlpha(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:116:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:116:10
     t.method("SetParAlpha", [](G4SPSPosDistribution& a, G4double arg0)->void { a.SetParAlpha(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetParAlpha", [](G4SPSPosDistribution* a, G4double arg0)->void { a->SetParAlpha(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSPosDistribution::SetParTheta(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSPosDistribution::SetParTheta(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:119:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:119:10
     t.method("SetParTheta", [](G4SPSPosDistribution& a, G4double arg0)->void { a.SetParTheta(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetParTheta", [](G4SPSPosDistribution* a, G4double arg0)->void { a->SetParTheta(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSPosDistribution::SetParPhi(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSPosDistribution::SetParPhi(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:122:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:122:10
     t.method("SetParPhi", [](G4SPSPosDistribution& a, G4double arg0)->void { a.SetParPhi(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetParPhi", [](G4SPSPosDistribution* a, G4double arg0)->void { a->SetParPhi(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSPosDistribution::ConfineSourceToVolume(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSPosDistribution::ConfineSourceToVolume(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:125:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:125:10
     t.method("ConfineSourceToVolume", [](G4SPSPosDistribution& a, const G4String & arg0)->void { a.ConfineSourceToVolume(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("ConfineSourceToVolume", [](G4SPSPosDistribution* a, const G4String & arg0)->void { a->ConfineSourceToVolume(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSPosDistribution::SetBiasRndm(G4SPSRandomGenerator *) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSPosDistribution::SetBiasRndm(G4SPSRandomGenerator *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:128:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:128:10
     t.method("SetBiasRndm", [](G4SPSPosDistribution& a, G4SPSRandomGenerator * arg0)->void { a.SetBiasRndm(arg0); }, jlcxx::arg("this"), jlcxx::arg("a"));
     t.method("SetBiasRndm", [](G4SPSPosDistribution* a, G4SPSRandomGenerator * arg0)->void { a->SetBiasRndm(arg0); }, jlcxx::arg("this"), jlcxx::arg("a"));
 
     DEBUG_MSG("Adding wrapper for void G4SPSPosDistribution::SetVerbosity(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4SPSPosDistribution::SetVerbosity(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:131:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:131:10
     t.method("SetVerbosity", [](G4SPSPosDistribution& a, G4int arg0)->void { a.SetVerbosity(arg0); }, jlcxx::arg("this"), jlcxx::arg("a"));
     t.method("SetVerbosity", [](G4SPSPosDistribution* a, G4int arg0)->void { a->SetVerbosity(arg0); }, jlcxx::arg("this"), jlcxx::arg("a"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4SPSPosDistribution::GenerateOne() (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4SPSPosDistribution::GenerateOne()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:134:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:134:19
     t.method("GenerateOne", [](G4SPSPosDistribution& a)->G4ThreeVector { return a.GenerateOne(); }, jlcxx::arg("this"));
     t.method("GenerateOne", [](G4SPSPosDistribution* a)->G4ThreeVector { return a->GenerateOne(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4String & G4SPSPosDistribution::GetPosDisType() (" __HERE__ ")");
     // signature to use in the veto list: const G4String & G4SPSPosDistribution::GetPosDisType()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:137:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:137:21
     t.method("GetPosDisType", [](G4SPSPosDistribution const& a)->const G4String & { return a.GetPosDisType(); }, jlcxx::arg("this"));
     t.method("GetPosDisType", [](G4SPSPosDistribution const* a)->const G4String & { return a->GetPosDisType(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4String & G4SPSPosDistribution::GetPosDisShape() (" __HERE__ ")");
     // signature to use in the veto list: const G4String & G4SPSPosDistribution::GetPosDisShape()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:138:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:138:21
     t.method("GetPosDisShape", [](G4SPSPosDistribution const& a)->const G4String & { return a.GetPosDisShape(); }, jlcxx::arg("this"));
     t.method("GetPosDisShape", [](G4SPSPosDistribution const* a)->const G4String & { return a->GetPosDisShape(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4ThreeVector & G4SPSPosDistribution::GetCentreCoords() (" __HERE__ ")");
     // signature to use in the veto list: const G4ThreeVector & G4SPSPosDistribution::GetCentreCoords()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:139:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:139:26
     t.method("GetCentreCoords", [](G4SPSPosDistribution const& a)->const G4ThreeVector & { return a.GetCentreCoords(); }, jlcxx::arg("this"));
     t.method("GetCentreCoords", [](G4SPSPosDistribution const* a)->const G4ThreeVector & { return a->GetCentreCoords(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSPosDistribution::GetHalfX() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSPosDistribution::GetHalfX()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:140:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:140:14
     t.method("GetHalfX", [](G4SPSPosDistribution const& a)->G4double { return a.GetHalfX(); }, jlcxx::arg("this"));
     t.method("GetHalfX", [](G4SPSPosDistribution const* a)->G4double { return a->GetHalfX(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSPosDistribution::GetHalfY() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSPosDistribution::GetHalfY()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:141:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:141:14
     t.method("GetHalfY", [](G4SPSPosDistribution const& a)->G4double { return a.GetHalfY(); }, jlcxx::arg("this"));
     t.method("GetHalfY", [](G4SPSPosDistribution const* a)->G4double { return a->GetHalfY(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSPosDistribution::GetHalfZ() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSPosDistribution::GetHalfZ()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:142:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:142:14
     t.method("GetHalfZ", [](G4SPSPosDistribution const& a)->G4double { return a.GetHalfZ(); }, jlcxx::arg("this"));
     t.method("GetHalfZ", [](G4SPSPosDistribution const* a)->G4double { return a->GetHalfZ(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSPosDistribution::GetRadius() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSPosDistribution::GetRadius()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:143:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:143:14
     t.method("GetRadius", [](G4SPSPosDistribution const& a)->G4double { return a.GetRadius(); }, jlcxx::arg("this"));
     t.method("GetRadius", [](G4SPSPosDistribution const* a)->G4double { return a->GetRadius(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSPosDistribution::GetRadius0() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSPosDistribution::GetRadius0()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:144:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:144:21
     t.method("GetRadius0", [](G4SPSPosDistribution const& a)->G4double { return a.GetRadius0(); }, jlcxx::arg("this"));
     t.method("GetRadius0", [](G4SPSPosDistribution const* a)->G4double { return a->GetRadius0(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSPosDistribution::GetParAlpha() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSPosDistribution::GetParAlpha()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:145:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:145:21
     t.method("GetParAlpha", [](G4SPSPosDistribution const& a)->G4double { return a.GetParAlpha(); }, jlcxx::arg("this"));
     t.method("GetParAlpha", [](G4SPSPosDistribution const* a)->G4double { return a->GetParAlpha(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSPosDistribution::GetParTheta() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSPosDistribution::GetParTheta()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:146:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:146:21
     t.method("GetParTheta", [](G4SPSPosDistribution const& a)->G4double { return a.GetParTheta(); }, jlcxx::arg("this"));
     t.method("GetParTheta", [](G4SPSPosDistribution const* a)->G4double { return a->GetParTheta(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4SPSPosDistribution::GetParPhi() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4SPSPosDistribution::GetParPhi()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:147:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:147:21
     t.method("GetParPhi", [](G4SPSPosDistribution const& a)->G4double { return a.GetParPhi(); }, jlcxx::arg("this"));
     t.method("GetParPhi", [](G4SPSPosDistribution const* a)->G4double { return a->GetParPhi(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4ThreeVector & G4SPSPosDistribution::GetRotx() (" __HERE__ ")");
     // signature to use in the veto list: const G4ThreeVector & G4SPSPosDistribution::GetRotx()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:148:33
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:148:33
     t.method("GetRotx", [](G4SPSPosDistribution const& a)->const G4ThreeVector & { return a.GetRotx(); }, jlcxx::arg("this"));
     t.method("GetRotx", [](G4SPSPosDistribution const* a)->const G4ThreeVector & { return a->GetRotx(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4ThreeVector & G4SPSPosDistribution::GetRoty() (" __HERE__ ")");
     // signature to use in the veto list: const G4ThreeVector & G4SPSPosDistribution::GetRoty()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:149:33
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:149:33
     t.method("GetRoty", [](G4SPSPosDistribution const& a)->const G4ThreeVector & { return a.GetRoty(); }, jlcxx::arg("this"));
     t.method("GetRoty", [](G4SPSPosDistribution const* a)->const G4ThreeVector & { return a->GetRoty(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4ThreeVector & G4SPSPosDistribution::GetRotz() (" __HERE__ ")");
     // signature to use in the veto list: const G4ThreeVector & G4SPSPosDistribution::GetRotz()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:150:33
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:150:33
     t.method("GetRotz", [](G4SPSPosDistribution const& a)->const G4ThreeVector & { return a.GetRotz(); }, jlcxx::arg("this"));
     t.method("GetRotz", [](G4SPSPosDistribution const* a)->const G4ThreeVector & { return a->GetRotz(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4SPSPosDistribution::GetConfined() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4SPSPosDistribution::GetConfined()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:151:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:151:19
     t.method("GetConfined", [](G4SPSPosDistribution const& a)->G4bool { return a.GetConfined(); }, jlcxx::arg("this"));
     t.method("GetConfined", [](G4SPSPosDistribution const* a)->G4bool { return a->GetConfined(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4String & G4SPSPosDistribution::GetConfineVolume() (" __HERE__ ")");
     // signature to use in the veto list: const G4String & G4SPSPosDistribution::GetConfineVolume()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:152:28
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:152:28
     t.method("GetConfineVolume", [](G4SPSPosDistribution const& a)->const G4String & { return a.GetConfineVolume(); }, jlcxx::arg("this"));
     t.method("GetConfineVolume", [](G4SPSPosDistribution const* a)->const G4String & { return a->GetConfineVolume(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4ThreeVector & G4SPSPosDistribution::GetSideRefVec1() (" __HERE__ ")");
     // signature to use in the veto list: const G4ThreeVector & G4SPSPosDistribution::GetSideRefVec1()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:154:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:154:26
     t.method("GetSideRefVec1", [](G4SPSPosDistribution const& a)->const G4ThreeVector & { return a.GetSideRefVec1(); }, jlcxx::arg("this"));
     t.method("GetSideRefVec1", [](G4SPSPosDistribution const* a)->const G4ThreeVector & { return a->GetSideRefVec1(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4ThreeVector & G4SPSPosDistribution::GetSideRefVec2() (" __HERE__ ")");
     // signature to use in the veto list: const G4ThreeVector & G4SPSPosDistribution::GetSideRefVec2()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:155:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:155:26
     t.method("GetSideRefVec2", [](G4SPSPosDistribution const& a)->const G4ThreeVector & { return a.GetSideRefVec2(); }, jlcxx::arg("this"));
     t.method("GetSideRefVec2", [](G4SPSPosDistribution const* a)->const G4ThreeVector & { return a->GetSideRefVec2(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4ThreeVector & G4SPSPosDistribution::GetSideRefVec3() (" __HERE__ ")");
     // signature to use in the veto list: const G4ThreeVector & G4SPSPosDistribution::GetSideRefVec3()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:156:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:156:26
     t.method("GetSideRefVec3", [](G4SPSPosDistribution const& a)->const G4ThreeVector & { return a.GetSideRefVec3(); }, jlcxx::arg("this"));
     t.method("GetSideRefVec3", [](G4SPSPosDistribution const* a)->const G4ThreeVector & { return a->GetSideRefVec3(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4String & G4SPSPosDistribution::GetSourcePosType() (" __HERE__ ")");
     // signature to use in the veto list: const G4String & G4SPSPosDistribution::GetSourcePosType()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:157:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:157:21
     t.method("GetSourcePosType", [](G4SPSPosDistribution const& a)->const G4String & { return a.GetSourcePosType(); }, jlcxx::arg("this"));
     t.method("GetSourcePosType", [](G4SPSPosDistribution const* a)->const G4String & { return a->GetSourcePosType(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4ThreeVector & G4SPSPosDistribution::GetParticlePos() (" __HERE__ ")");
     // signature to use in the veto list: const G4ThreeVector & G4SPSPosDistribution::GetParticlePos()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SPSPosDistribution.hh:158:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SPSPosDistribution.hh:158:26
     t.method("GetParticlePos", [](G4SPSPosDistribution const& a)->const G4ThreeVector & { return a.GetParticlePos(); }, jlcxx::arg("this"));
     t.method("GetParticlePos", [](G4SPSPosDistribution const* a)->const G4ThreeVector & { return a->GetParticlePos(); }, jlcxx::arg("this"));
   }

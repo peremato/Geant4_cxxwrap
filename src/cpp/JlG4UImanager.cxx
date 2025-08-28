@@ -18,7 +18,7 @@ struct JlG4UImanager: public Wrapper {
 
   JlG4UImanager(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4UImanager (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:57:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:57:7
     jlcxx::TypeWrapper<G4UImanager>  t = jlModule.add_type<G4UImanager>("G4UImanager",
       jlcxx::julia_base_type<G4VStateDependent>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4UImanager>>(new jlcxx::TypeWrapper<G4UImanager>(jlModule, t));
@@ -29,41 +29,41 @@ struct JlG4UImanager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4UImanager * G4UImanager::GetUIpointer() (" __HERE__ ")");
     // signature to use in the veto list: G4UImanager * G4UImanager::GetUIpointer()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:62:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:62:25
     module_.method("G4UImanager!GetUIpointer", []()->G4UImanager * { return G4UImanager::GetUIpointer(); });
 
     DEBUG_MSG("Adding wrapper for G4UImanager * G4UImanager::GetMasterUIpointer() (" __HERE__ ")");
     // signature to use in the veto list: G4UImanager * G4UImanager::GetMasterUIpointer()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:63:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:63:25
     module_.method("G4UImanager!GetMasterUIpointer", []()->G4UImanager * { return G4UImanager::GetMasterUIpointer(); });
 
     DEBUG_MSG("Adding wrapper for G4String G4UImanager::GetCurrentValues(const char *) (" __HERE__ ")");
     // signature to use in the veto list: G4String G4UImanager::GetCurrentValues(const char *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:76:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:76:14
     t.method("GetCurrentValues", [](G4UImanager& a, const char * arg0)->G4String { return a.GetCurrentValues(arg0); }, jlcxx::arg("this"), jlcxx::arg("aCommand"));
     t.method("GetCurrentValues", [](G4UImanager* a, const char * arg0)->G4String { return a->GetCurrentValues(arg0); }, jlcxx::arg("this"), jlcxx::arg("aCommand"));
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::AddNewCommand(G4UIcommand *) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::AddNewCommand(G4UIcommand *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:79:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:79:10
     t.method("AddNewCommand", [](G4UImanager& a, G4UIcommand * arg0)->void { a.AddNewCommand(arg0); }, jlcxx::arg("this"), jlcxx::arg("newCommand"));
     t.method("AddNewCommand", [](G4UImanager* a, G4UIcommand * arg0)->void { a->AddNewCommand(arg0); }, jlcxx::arg("this"), jlcxx::arg("newCommand"));
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::RemoveCommand(G4UIcommand *) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::RemoveCommand(G4UIcommand *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:83:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:83:10
     t.method("RemoveCommand", [](G4UImanager& a, G4UIcommand * arg0)->void { a.RemoveCommand(arg0); }, jlcxx::arg("this"), jlcxx::arg("aCommand"));
     t.method("RemoveCommand", [](G4UImanager* a, G4UIcommand * arg0)->void { a->RemoveCommand(arg0); }, jlcxx::arg("this"), jlcxx::arg("aCommand"));
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::ExecuteMacroFile(const char *) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::ExecuteMacroFile(const char *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:86:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:86:10
     t.method("ExecuteMacroFile", [](G4UImanager& a, const char * arg0)->void { a.ExecuteMacroFile(arg0); }, jlcxx::arg("this"), jlcxx::arg("fileName"));
     t.method("ExecuteMacroFile", [](G4UImanager* a, const char * arg0)->void { a->ExecuteMacroFile(arg0); }, jlcxx::arg("this"), jlcxx::arg("fileName"));
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::Loop(const char *, const char *, G4double, G4double, G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::Loop(const char *, const char *, G4double, G4double, G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:89:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:89:10
     t.method("Loop", [](G4UImanager& a, const char * arg0, const char * arg1, G4double arg2, G4double arg3)->void { a.Loop(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("macroFile"), jlcxx::arg("variableName"), jlcxx::arg("initialValue"), jlcxx::arg("finalValue"));
     t.method("Loop", [](G4UImanager& a, const char * arg0, const char * arg1, G4double arg2, G4double arg3, G4double arg4)->void { a.Loop(arg0, arg1, arg2, arg3, arg4); }, jlcxx::arg("this"), jlcxx::arg("macroFile"), jlcxx::arg("variableName"), jlcxx::arg("initialValue"), jlcxx::arg("finalValue"), jlcxx::arg("stepSize"));
     t.method("Loop", [](G4UImanager* a, const char * arg0, const char * arg1, G4double arg2, G4double arg3)->void { a->Loop(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("macroFile"), jlcxx::arg("variableName"), jlcxx::arg("initialValue"), jlcxx::arg("finalValue"));
@@ -71,31 +71,31 @@ struct JlG4UImanager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::Foreach(const char *, const char *, const char *) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::Foreach(const char *, const char *, const char *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:94:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:94:10
     t.method("Foreach", [](G4UImanager& a, const char * arg0, const char * arg1, const char * arg2)->void { a.Foreach(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("macroFile"), jlcxx::arg("variableName"), jlcxx::arg("candidates"));
     t.method("Foreach", [](G4UImanager* a, const char * arg0, const char * arg1, const char * arg2)->void { a->Foreach(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("macroFile"), jlcxx::arg("variableName"), jlcxx::arg("candidates"));
 
     DEBUG_MSG("Adding wrapper for G4int G4UImanager::ApplyCommand(const char *) (" __HERE__ ")");
     // signature to use in the veto list: G4int G4UImanager::ApplyCommand(const char *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:104:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:104:11
     t.method("ApplyCommand", [](G4UImanager& a, const char * arg0)->G4int { return a.ApplyCommand(arg0); }, jlcxx::arg("this"), jlcxx::arg("aCommand"));
     t.method("ApplyCommand", [](G4UImanager* a, const char * arg0)->G4int { return a->ApplyCommand(arg0); }, jlcxx::arg("this"), jlcxx::arg("aCommand"));
 
     DEBUG_MSG("Adding wrapper for G4UIcommand * G4UImanager::FindCommand(const char *) (" __HERE__ ")");
     // signature to use in the veto list: G4UIcommand * G4UImanager::FindCommand(const char *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:111:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:111:18
     t.method("FindCommand", [](G4UImanager& a, const char * arg0)->G4UIcommand * { return a.FindCommand(arg0); }, jlcxx::arg("this"), jlcxx::arg("aCommand"));
     t.method("FindCommand", [](G4UImanager* a, const char * arg0)->G4UIcommand * { return a->FindCommand(arg0); }, jlcxx::arg("this"), jlcxx::arg("aCommand"));
 
     DEBUG_MSG("Adding wrapper for G4UIcommand * G4UImanager::FindCommand(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4UIcommand * G4UImanager::FindCommand(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:112:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:112:18
     t.method("FindCommand", [](G4UImanager& a, const G4String & arg0)->G4UIcommand * { return a.FindCommand(arg0); }, jlcxx::arg("this"), jlcxx::arg("aCommand"));
     t.method("FindCommand", [](G4UImanager* a, const G4String & arg0)->G4UIcommand * { return a->FindCommand(arg0); }, jlcxx::arg("this"), jlcxx::arg("aCommand"));
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::StoreHistory(const char *) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::StoreHistory(const char *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:116:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:116:10
     t.method("StoreHistory", [](G4UImanager& a)->void { a.StoreHistory(); }, jlcxx::arg("this"), jlcxx::arg("fileName"));
     t.method("StoreHistory", [](G4UImanager& a, const char * arg0)->void { a.StoreHistory(arg0); }, jlcxx::arg("this"), jlcxx::arg("fileName"));
     t.method("StoreHistory", [](G4UImanager* a)->void { a->StoreHistory(); }, jlcxx::arg("this"), jlcxx::arg("fileName"));
@@ -103,7 +103,7 @@ struct JlG4UImanager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::StoreHistory(G4bool, const char *) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::StoreHistory(G4bool, const char *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:117:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:117:10
     t.method("StoreHistory", [](G4UImanager& a, G4bool arg0)->void { a.StoreHistory(arg0); }, jlcxx::arg("this"), jlcxx::arg("historySwitch"));
     t.method("StoreHistory", [](G4UImanager& a, G4bool arg0, const char * arg1)->void { a.StoreHistory(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("historySwitch"), jlcxx::arg("fileName"));
     t.method("StoreHistory", [](G4UImanager* a, G4bool arg0)->void { a->StoreHistory(arg0); }, jlcxx::arg("this"), jlcxx::arg("historySwitch"));
@@ -111,37 +111,37 @@ struct JlG4UImanager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::ListCommands(const char *) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::ListCommands(const char *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:121:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:121:10
     t.method("ListCommands", [](G4UImanager& a, const char * arg0)->void { a.ListCommands(arg0); }, jlcxx::arg("this"), jlcxx::arg("direc"));
     t.method("ListCommands", [](G4UImanager* a, const char * arg0)->void { a->ListCommands(arg0); }, jlcxx::arg("this"), jlcxx::arg("direc"));
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::SetAlias(const char *) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::SetAlias(const char *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:126:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:126:10
     t.method("SetAlias", [](G4UImanager& a, const char * arg0)->void { a.SetAlias(arg0); }, jlcxx::arg("this"), jlcxx::arg("aliasLine"));
     t.method("SetAlias", [](G4UImanager* a, const char * arg0)->void { a->SetAlias(arg0); }, jlcxx::arg("this"), jlcxx::arg("aliasLine"));
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::RemoveAlias(const char *) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::RemoveAlias(const char *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:129:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:129:10
     t.method("RemoveAlias", [](G4UImanager& a, const char * arg0)->void { a.RemoveAlias(arg0); }, jlcxx::arg("this"), jlcxx::arg("aliasName"));
     t.method("RemoveAlias", [](G4UImanager* a, const char * arg0)->void { a->RemoveAlias(arg0); }, jlcxx::arg("this"), jlcxx::arg("aliasName"));
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::ListAlias() (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::ListAlias()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:132:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:132:10
     t.method("ListAlias", [](G4UImanager& a)->void { a.ListAlias(); }, jlcxx::arg("this"));
     t.method("ListAlias", [](G4UImanager* a)->void { a->ListAlias(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4String G4UImanager::SolveAlias(const char *) (" __HERE__ ")");
     // signature to use in the veto list: G4String G4UImanager::SolveAlias(const char *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:135:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:135:14
     t.method("SolveAlias", [](G4UImanager& a, const char * arg0)->G4String { return a.SolveAlias(arg0); }, jlcxx::arg("this"), jlcxx::arg("aCmd"));
     t.method("SolveAlias", [](G4UImanager* a, const char * arg0)->G4String { return a->SolveAlias(arg0); }, jlcxx::arg("this"), jlcxx::arg("aCmd"));
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::CreateHTML(const char *) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::CreateHTML(const char *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:138:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:138:10
     t.method("CreateHTML", [](G4UImanager& a)->void { a.CreateHTML(); }, jlcxx::arg("this"), jlcxx::arg("dir"));
     t.method("CreateHTML", [](G4UImanager& a, const char * arg0)->void { a.CreateHTML(arg0); }, jlcxx::arg("this"), jlcxx::arg("dir"));
     t.method("CreateHTML", [](G4UImanager* a)->void { a->CreateHTML(); }, jlcxx::arg("this"), jlcxx::arg("dir"));
@@ -149,25 +149,25 @@ struct JlG4UImanager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::LoopS(const char *) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::LoopS(const char *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:142:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:142:10
     t.method("LoopS", [](G4UImanager& a, const char * arg0)->void { a.LoopS(arg0); }, jlcxx::arg("this"), jlcxx::arg("valueList"));
     t.method("LoopS", [](G4UImanager* a, const char * arg0)->void { a->LoopS(arg0); }, jlcxx::arg("this"), jlcxx::arg("valueList"));
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::ForeachS(const char *) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::ForeachS(const char *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:143:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:143:10
     t.method("ForeachS", [](G4UImanager& a, const char * arg0)->void { a.ForeachS(arg0); }, jlcxx::arg("this"), jlcxx::arg("valueList"));
     t.method("ForeachS", [](G4UImanager* a, const char * arg0)->void { a->ForeachS(arg0); }, jlcxx::arg("this"), jlcxx::arg("valueList"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4UImanager::Notify(G4ApplicationState) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4UImanager::Notify(G4ApplicationState)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:146:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:146:12
     t.method("Notify", [](G4UImanager& a, G4ApplicationState arg0)->G4bool { return a.Notify(arg0); }, jlcxx::arg("this"), jlcxx::arg("requestedState"));
     t.method("Notify", [](G4UImanager* a, G4ApplicationState arg0)->G4bool { return a->Notify(arg0); }, jlcxx::arg("this"), jlcxx::arg("requestedState"));
 
     DEBUG_MSG("Adding wrapper for G4String G4UImanager::GetCurrentStringValue(const char *, G4int, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: G4String G4UImanager::GetCurrentStringValue(const char *, G4int, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:156:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:156:14
     t.method("GetCurrentStringValue", [](G4UImanager& a, const char * arg0)->G4String { return a.GetCurrentStringValue(arg0); }, jlcxx::arg("this"), jlcxx::arg("aCommand"));
     t.method("GetCurrentStringValue", [](G4UImanager& a, const char * arg0, G4int arg1)->G4String { return a.GetCurrentStringValue(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aCommand"), jlcxx::arg("parameterNumber"));
     t.method("GetCurrentStringValue", [](G4UImanager& a, const char * arg0, G4int arg1, G4bool arg2)->G4String { return a.GetCurrentStringValue(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("aCommand"), jlcxx::arg("parameterNumber"), jlcxx::arg("reGet"));
@@ -177,7 +177,7 @@ struct JlG4UImanager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4int G4UImanager::GetCurrentIntValue(const char *, G4int, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: G4int G4UImanager::GetCurrentIntValue(const char *, G4int, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:158:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:158:11
     t.method("GetCurrentIntValue", [](G4UImanager& a, const char * arg0)->G4int { return a.GetCurrentIntValue(arg0); }, jlcxx::arg("this"), jlcxx::arg("aCommand"));
     t.method("GetCurrentIntValue", [](G4UImanager& a, const char * arg0, G4int arg1)->G4int { return a.GetCurrentIntValue(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aCommand"), jlcxx::arg("parameterNumber"));
     t.method("GetCurrentIntValue", [](G4UImanager& a, const char * arg0, G4int arg1, G4bool arg2)->G4int { return a.GetCurrentIntValue(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("aCommand"), jlcxx::arg("parameterNumber"), jlcxx::arg("reGet"));
@@ -187,7 +187,7 @@ struct JlG4UImanager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4double G4UImanager::GetCurrentDoubleValue(const char *, G4int, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4UImanager::GetCurrentDoubleValue(const char *, G4int, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:159:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:159:14
     t.method("GetCurrentDoubleValue", [](G4UImanager& a, const char * arg0)->G4double { return a.GetCurrentDoubleValue(arg0); }, jlcxx::arg("this"), jlcxx::arg("aCommand"));
     t.method("GetCurrentDoubleValue", [](G4UImanager& a, const char * arg0, G4int arg1)->G4double { return a.GetCurrentDoubleValue(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aCommand"), jlcxx::arg("parameterNumber"));
     t.method("GetCurrentDoubleValue", [](G4UImanager& a, const char * arg0, G4int arg1, G4bool arg2)->G4double { return a.GetCurrentDoubleValue(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("aCommand"), jlcxx::arg("parameterNumber"), jlcxx::arg("reGet"));
@@ -197,7 +197,7 @@ struct JlG4UImanager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4String G4UImanager::GetCurrentStringValue(const char *, const char *, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: G4String G4UImanager::GetCurrentStringValue(const char *, const char *, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:161:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:161:14
     t.method("GetCurrentStringValue", [](G4UImanager& a, const char * arg0, const char * arg1)->G4String { return a.GetCurrentStringValue(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aCommand"), jlcxx::arg("aParameterName"));
     t.method("GetCurrentStringValue", [](G4UImanager& a, const char * arg0, const char * arg1, G4bool arg2)->G4String { return a.GetCurrentStringValue(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("aCommand"), jlcxx::arg("aParameterName"), jlcxx::arg("reGet"));
     t.method("GetCurrentStringValue", [](G4UImanager* a, const char * arg0, const char * arg1)->G4String { return a->GetCurrentStringValue(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aCommand"), jlcxx::arg("aParameterName"));
@@ -205,7 +205,7 @@ struct JlG4UImanager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4int G4UImanager::GetCurrentIntValue(const char *, const char *, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: G4int G4UImanager::GetCurrentIntValue(const char *, const char *, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:163:11
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:163:11
     t.method("GetCurrentIntValue", [](G4UImanager& a, const char * arg0, const char * arg1)->G4int { return a.GetCurrentIntValue(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aCommand"), jlcxx::arg("aParameterName"));
     t.method("GetCurrentIntValue", [](G4UImanager& a, const char * arg0, const char * arg1, G4bool arg2)->G4int { return a.GetCurrentIntValue(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("aCommand"), jlcxx::arg("aParameterName"), jlcxx::arg("reGet"));
     t.method("GetCurrentIntValue", [](G4UImanager* a, const char * arg0, const char * arg1)->G4int { return a->GetCurrentIntValue(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aCommand"), jlcxx::arg("aParameterName"));
@@ -213,7 +213,7 @@ struct JlG4UImanager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4double G4UImanager::GetCurrentDoubleValue(const char *, const char *, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4UImanager::GetCurrentDoubleValue(const char *, const char *, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:164:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:164:14
     t.method("GetCurrentDoubleValue", [](G4UImanager& a, const char * arg0, const char * arg1)->G4double { return a.GetCurrentDoubleValue(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aCommand"), jlcxx::arg("aParameterName"));
     t.method("GetCurrentDoubleValue", [](G4UImanager& a, const char * arg0, const char * arg1, G4bool arg2)->G4double { return a.GetCurrentDoubleValue(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("aCommand"), jlcxx::arg("aParameterName"), jlcxx::arg("reGet"));
     t.method("GetCurrentDoubleValue", [](G4UImanager* a, const char * arg0, const char * arg1)->G4double { return a->GetCurrentDoubleValue(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("aCommand"), jlcxx::arg("aParameterName"));
@@ -221,127 +221,127 @@ struct JlG4UImanager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::SetPauseAtBeginOfEvent(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::SetPauseAtBeginOfEvent(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:171:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:171:17
     t.method("SetPauseAtBeginOfEvent", [](G4UImanager& a, G4bool arg0)->void { a.SetPauseAtBeginOfEvent(arg0); }, jlcxx::arg("this"), jlcxx::arg("vl"));
     t.method("SetPauseAtBeginOfEvent", [](G4UImanager* a, G4bool arg0)->void { a->SetPauseAtBeginOfEvent(arg0); }, jlcxx::arg("this"), jlcxx::arg("vl"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4UImanager::GetPauseAtBeginOfEvent() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4UImanager::GetPauseAtBeginOfEvent()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:172:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:172:19
     t.method("GetPauseAtBeginOfEvent", [](G4UImanager const& a)->G4bool { return a.GetPauseAtBeginOfEvent(); }, jlcxx::arg("this"));
     t.method("GetPauseAtBeginOfEvent", [](G4UImanager const* a)->G4bool { return a->GetPauseAtBeginOfEvent(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::SetPauseAtEndOfEvent(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::SetPauseAtEndOfEvent(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:173:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:173:17
     t.method("SetPauseAtEndOfEvent", [](G4UImanager& a, G4bool arg0)->void { a.SetPauseAtEndOfEvent(arg0); }, jlcxx::arg("this"), jlcxx::arg("vl"));
     t.method("SetPauseAtEndOfEvent", [](G4UImanager* a, G4bool arg0)->void { a->SetPauseAtEndOfEvent(arg0); }, jlcxx::arg("this"), jlcxx::arg("vl"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4UImanager::GetPauseAtEndOfEvent() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4UImanager::GetPauseAtEndOfEvent()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:174:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:174:19
     t.method("GetPauseAtEndOfEvent", [](G4UImanager const& a)->G4bool { return a.GetPauseAtEndOfEvent(); }, jlcxx::arg("this"));
     t.method("GetPauseAtEndOfEvent", [](G4UImanager const* a)->G4bool { return a->GetPauseAtEndOfEvent(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::SetVerboseLevel(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::SetVerboseLevel(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:191:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:191:17
     t.method("SetVerboseLevel", [](G4UImanager& a, G4int arg0)->void { a.SetVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("val"));
     t.method("SetVerboseLevel", [](G4UImanager* a, G4int arg0)->void { a->SetVerboseLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("val"));
 
     DEBUG_MSG("Adding wrapper for G4int G4UImanager::GetVerboseLevel() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4UImanager::GetVerboseLevel()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:192:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:192:18
     t.method("GetVerboseLevel", [](G4UImanager const& a)->G4int { return a.GetVerboseLevel(); }, jlcxx::arg("this"));
     t.method("GetVerboseLevel", [](G4UImanager const* a)->G4int { return a->GetVerboseLevel(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4UImanager::GetNumberOfHistory() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4UImanager::GetNumberOfHistory()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:193:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:193:18
     t.method("GetNumberOfHistory", [](G4UImanager const& a)->G4int { return a.GetNumberOfHistory(); }, jlcxx::arg("this"));
     t.method("GetNumberOfHistory", [](G4UImanager const* a)->G4int { return a->GetNumberOfHistory(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4String G4UImanager::GetPreviousCommand(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4String G4UImanager::GetPreviousCommand(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:194:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:194:21
     t.method("GetPreviousCommand", [](G4UImanager const& a, G4int arg0)->G4String { return a.GetPreviousCommand(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
     t.method("GetPreviousCommand", [](G4UImanager const* a, G4int arg0)->G4String { return a->GetPreviousCommand(arg0); }, jlcxx::arg("this"), jlcxx::arg("i"));
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::SetMaxHistSize(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::SetMaxHistSize(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:202:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:202:17
     t.method("SetMaxHistSize", [](G4UImanager& a, G4int arg0)->void { a.SetMaxHistSize(arg0); }, jlcxx::arg("this"), jlcxx::arg("mx"));
     t.method("SetMaxHistSize", [](G4UImanager* a, G4int arg0)->void { a->SetMaxHistSize(arg0); }, jlcxx::arg("this"), jlcxx::arg("mx"));
 
     DEBUG_MSG("Adding wrapper for G4int G4UImanager::GetMaxHistSize() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4UImanager::GetMaxHistSize()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:203:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:203:18
     t.method("GetMaxHistSize", [](G4UImanager const& a)->G4int { return a.GetMaxHistSize(); }, jlcxx::arg("this"));
     t.method("GetMaxHistSize", [](G4UImanager const* a)->G4int { return a->GetMaxHistSize(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::SetMacroSearchPath(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::SetMacroSearchPath(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:205:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:205:17
     t.method("SetMacroSearchPath", [](G4UImanager& a, const G4String & arg0)->void { a.SetMacroSearchPath(arg0); }, jlcxx::arg("this"), jlcxx::arg("path"));
     t.method("SetMacroSearchPath", [](G4UImanager* a, const G4String & arg0)->void { a->SetMacroSearchPath(arg0); }, jlcxx::arg("this"), jlcxx::arg("path"));
 
     DEBUG_MSG("Adding wrapper for const G4String & G4UImanager::GetMacroSearchPath() (" __HERE__ ")");
     // signature to use in the veto list: const G4String & G4UImanager::GetMacroSearchPath()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:206:28
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:206:28
     t.method("GetMacroSearchPath", [](G4UImanager const& a)->const G4String & { return a.GetMacroSearchPath(); }, jlcxx::arg("this"));
     t.method("GetMacroSearchPath", [](G4UImanager const* a)->const G4String & { return a->GetMacroSearchPath(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::ParseMacroSearchPath() (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::ParseMacroSearchPath()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:207:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:207:10
     t.method("ParseMacroSearchPath", [](G4UImanager& a)->void { a.ParseMacroSearchPath(); }, jlcxx::arg("this"));
     t.method("ParseMacroSearchPath", [](G4UImanager* a)->void { a->ParseMacroSearchPath(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4String G4UImanager::FindMacroPath(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4String G4UImanager::FindMacroPath(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:208:14
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:208:14
     t.method("FindMacroPath", [](G4UImanager const& a, const G4String & arg0)->G4String { return a.FindMacroPath(arg0); }, jlcxx::arg("this"), jlcxx::arg("fname"));
     t.method("FindMacroPath", [](G4UImanager const* a, const G4String & arg0)->G4String { return a->FindMacroPath(arg0); }, jlcxx::arg("this"), jlcxx::arg("fname"));
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::SetMasterUIManager(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::SetMasterUIManager(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:210:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:210:17
     t.method("SetMasterUIManager", [](G4UImanager& a, G4bool arg0)->void { a.SetMasterUIManager(arg0); }, jlcxx::arg("this"), jlcxx::arg("val"));
     t.method("SetMasterUIManager", [](G4UImanager* a, G4bool arg0)->void { a->SetMasterUIManager(arg0); }, jlcxx::arg("this"), jlcxx::arg("val"));
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::SetIgnoreCmdNotFound(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::SetIgnoreCmdNotFound(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:219:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:219:17
     t.method("SetIgnoreCmdNotFound", [](G4UImanager& a, G4bool arg0)->void { a.SetIgnoreCmdNotFound(arg0); }, jlcxx::arg("this"), jlcxx::arg("val"));
     t.method("SetIgnoreCmdNotFound", [](G4UImanager* a, G4bool arg0)->void { a->SetIgnoreCmdNotFound(arg0); }, jlcxx::arg("this"), jlcxx::arg("val"));
 
     DEBUG_MSG("Adding wrapper for std::vector<G4String> * G4UImanager::GetCommandStack() (" __HERE__ ")");
     // signature to use in the veto list: std::vector<G4String> * G4UImanager::GetCommandStack()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:221:28
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:221:28
     t.method("GetCommandStack", [](G4UImanager& a)->std::vector<G4String> * { return a.GetCommandStack(); }, jlcxx::arg("this"));
     t.method("GetCommandStack", [](G4UImanager* a)->std::vector<G4String> * { return a->GetCommandStack(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::SetUpForAThread(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::SetUpForAThread(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:225:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:225:10
     t.method("SetUpForAThread", [](G4UImanager& a, G4int arg0)->void { a.SetUpForAThread(arg0); }, jlcxx::arg("this"), jlcxx::arg("tId"));
     t.method("SetUpForAThread", [](G4UImanager* a, G4int arg0)->void { a->SetUpForAThread(arg0); }, jlcxx::arg("this"), jlcxx::arg("tId"));
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::SetUpForSpecialThread(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::SetUpForSpecialThread(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:227:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:227:10
     t.method("SetUpForSpecialThread", [](G4UImanager& a, const G4String & arg0)->void { a.SetUpForSpecialThread(arg0); }, jlcxx::arg("this"), jlcxx::arg("aPrefix"));
     t.method("SetUpForSpecialThread", [](G4UImanager* a, const G4String & arg0)->void { a->SetUpForSpecialThread(arg0); }, jlcxx::arg("this"), jlcxx::arg("aPrefix"));
 
     DEBUG_MSG("Adding wrapper for G4int G4UImanager::GetThreadID() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4UImanager::GetThreadID()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:229:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:229:18
     t.method("GetThreadID", [](G4UImanager const& a)->G4int { return a.GetThreadID(); }, jlcxx::arg("this"));
     t.method("GetThreadID", [](G4UImanager const* a)->G4int { return a->GetThreadID(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::SetCoutFileName(const G4String &, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::SetCoutFileName(const G4String &, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:231:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:231:10
     t.method("SetCoutFileName", [](G4UImanager& a)->void { a.SetCoutFileName(); }, jlcxx::arg("this"), jlcxx::arg("fileN"), jlcxx::arg("ifAppend"));
     t.method("SetCoutFileName", [](G4UImanager& a, const G4String & arg0)->void { a.SetCoutFileName(arg0); }, jlcxx::arg("this"), jlcxx::arg("fileN"));
     t.method("SetCoutFileName", [](G4UImanager& a, const G4String & arg0, G4bool arg1)->void { a.SetCoutFileName(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("fileN"), jlcxx::arg("ifAppend"));
@@ -351,7 +351,7 @@ struct JlG4UImanager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::SetCerrFileName(const G4String &, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::SetCerrFileName(const G4String &, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:232:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:232:10
     t.method("SetCerrFileName", [](G4UImanager& a)->void { a.SetCerrFileName(); }, jlcxx::arg("this"), jlcxx::arg("fileN"), jlcxx::arg("ifAppend"));
     t.method("SetCerrFileName", [](G4UImanager& a, const G4String & arg0)->void { a.SetCerrFileName(arg0); }, jlcxx::arg("this"), jlcxx::arg("fileN"));
     t.method("SetCerrFileName", [](G4UImanager& a, const G4String & arg0, G4bool arg1)->void { a.SetCerrFileName(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("fileN"), jlcxx::arg("ifAppend"));
@@ -361,7 +361,7 @@ struct JlG4UImanager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::SetThreadPrefixString(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::SetThreadPrefixString(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:233:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:233:10
     t.method("SetThreadPrefixString", [](G4UImanager& a)->void { a.SetThreadPrefixString(); }, jlcxx::arg("this"), jlcxx::arg("prefix"));
     t.method("SetThreadPrefixString", [](G4UImanager& a, const G4String & arg0)->void { a.SetThreadPrefixString(arg0); }, jlcxx::arg("this"), jlcxx::arg("prefix"));
     t.method("SetThreadPrefixString", [](G4UImanager* a)->void { a->SetThreadPrefixString(); }, jlcxx::arg("this"), jlcxx::arg("prefix"));
@@ -369,7 +369,7 @@ struct JlG4UImanager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::SetThreadUseBuffer(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::SetThreadUseBuffer(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:234:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:234:10
     t.method("SetThreadUseBuffer", [](G4UImanager& a)->void { a.SetThreadUseBuffer(); }, jlcxx::arg("this"), jlcxx::arg("flg"));
     t.method("SetThreadUseBuffer", [](G4UImanager& a, G4bool arg0)->void { a.SetThreadUseBuffer(arg0); }, jlcxx::arg("this"), jlcxx::arg("flg"));
     t.method("SetThreadUseBuffer", [](G4UImanager* a)->void { a->SetThreadUseBuffer(); }, jlcxx::arg("this"), jlcxx::arg("flg"));
@@ -377,7 +377,7 @@ struct JlG4UImanager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::SetThreadIgnore(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::SetThreadIgnore(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:235:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:235:10
     t.method("SetThreadIgnore", [](G4UImanager& a)->void { a.SetThreadIgnore(); }, jlcxx::arg("this"), jlcxx::arg("tid"));
     t.method("SetThreadIgnore", [](G4UImanager& a, G4int arg0)->void { a.SetThreadIgnore(arg0); }, jlcxx::arg("this"), jlcxx::arg("tid"));
     t.method("SetThreadIgnore", [](G4UImanager* a)->void { a->SetThreadIgnore(); }, jlcxx::arg("this"), jlcxx::arg("tid"));
@@ -385,7 +385,7 @@ struct JlG4UImanager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::SetThreadIgnoreInit(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::SetThreadIgnoreInit(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:236:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:236:10
     t.method("SetThreadIgnoreInit", [](G4UImanager& a)->void { a.SetThreadIgnoreInit(); }, jlcxx::arg("this"), jlcxx::arg("flg"));
     t.method("SetThreadIgnoreInit", [](G4UImanager& a, G4bool arg0)->void { a.SetThreadIgnoreInit(arg0); }, jlcxx::arg("this"), jlcxx::arg("flg"));
     t.method("SetThreadIgnoreInit", [](G4UImanager* a)->void { a->SetThreadIgnoreInit(); }, jlcxx::arg("this"), jlcxx::arg("flg"));
@@ -393,29 +393,29 @@ struct JlG4UImanager: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::UseDoublePrecisionStr(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::UseDoublePrecisionStr(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:239:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:239:17
     module_.method("G4UImanager!UseDoublePrecisionStr", [](G4bool arg0)->void { G4UImanager::UseDoublePrecisionStr(arg0); }, jlcxx::arg("val"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4UImanager::DoublePrecisionStr() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4UImanager::DoublePrecisionStr()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:240:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:240:19
     module_.method("G4UImanager!DoublePrecisionStr", []()->G4bool { return G4UImanager::DoublePrecisionStr(); });
 
     DEBUG_MSG("Adding wrapper for G4int G4UImanager::GetLastReturnCode() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4UImanager::GetLastReturnCode()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:242:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:242:18
     t.method("GetLastReturnCode", [](G4UImanager const& a)->G4int { return a.GetLastReturnCode(); }, jlcxx::arg("this"));
     t.method("GetLastReturnCode", [](G4UImanager const* a)->G4int { return a->GetLastReturnCode(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for bool G4UImanager::IsLastCommandOutputTreated() (" __HERE__ ")");
     // signature to use in the veto list: bool G4UImanager::IsLastCommandOutputTreated()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:244:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:244:17
     t.method("IsLastCommandOutputTreated", [](G4UImanager& a)->bool { return a.IsLastCommandOutputTreated(); }, jlcxx::arg("this"));
     t.method("IsLastCommandOutputTreated", [](G4UImanager* a)->bool { return a->IsLastCommandOutputTreated(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4UImanager::SetLastCommandOutputTreated() (" __HERE__ ")");
     // signature to use in the veto list: void G4UImanager::SetLastCommandOutputTreated()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UImanager.hh:245:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UImanager.hh:245:17
     t.method("SetLastCommandOutputTreated", [](G4UImanager& a)->void { a.SetLastCommandOutputTreated(); }, jlcxx::arg("this"));
     t.method("SetLastCommandOutputTreated", [](G4UImanager* a)->void { a->SetLastCommandOutputTreated(); }, jlcxx::arg("this"));
   }

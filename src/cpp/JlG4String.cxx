@@ -18,10 +18,9 @@ struct JlG4String: public Wrapper {
 
   JlG4String(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4String (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4String.hh:61:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4String.hh:61:7
     jlcxx::TypeWrapper<G4String>  t = jlModule.add_type<G4String>("G4String",
       jlcxx::julia_base_type<std::string>());
-    jlcxx::stl::apply_stl<G4String>(jlModule);
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4String>>(new jlcxx::TypeWrapper<G4String>(jlModule, t));
   }
 

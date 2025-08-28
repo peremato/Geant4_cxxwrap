@@ -17,7 +17,7 @@ struct JlG4NavigationHistory: public Wrapper {
 
   JlG4NavigationHistory(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4NavigationHistory (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NavigationHistory.hh:52:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NavigationHistory.hh:52:7
     jlcxx::TypeWrapper<G4NavigationHistory>  t = jlModule.add_type<G4NavigationHistory>("G4NavigationHistory");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4NavigationHistory>>(new jlcxx::TypeWrapper<G4NavigationHistory>(jlModule, t));
   }
@@ -28,102 +28,102 @@ struct JlG4NavigationHistory: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4NavigationHistory::G4NavigationHistory(const G4NavigationHistory &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NavigationHistory.hh:66:3
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NavigationHistory.hh:66:3
     t.constructor<const G4NavigationHistory &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("h")    );
 
     DEBUG_MSG("Adding wrapper for G4NavigationHistory & G4NavigationHistory::operator=(const G4NavigationHistory &) (" __HERE__ ")");
     // signature to use in the veto list: G4NavigationHistory & G4NavigationHistory::operator=(const G4NavigationHistory &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NavigationHistory.hh:69:31
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NavigationHistory.hh:69:31
     t.method("assign", [](G4NavigationHistory& a, const G4NavigationHistory & arg0)->G4NavigationHistory & { return a.operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("h"));
     t.method("assign", [](G4NavigationHistory* a, const G4NavigationHistory & arg0)->G4NavigationHistory & { return a->operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("h"));
 
     DEBUG_MSG("Adding wrapper for void G4NavigationHistory::Reset() (" __HERE__ ")");
     // signature to use in the veto list: void G4NavigationHistory::Reset()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NavigationHistory.hh:72:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NavigationHistory.hh:72:15
     t.method("Reset", [](G4NavigationHistory& a)->void { a.Reset(); }, jlcxx::arg("this"));
     t.method("Reset", [](G4NavigationHistory* a)->void { a->Reset(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4NavigationHistory::Clear() (" __HERE__ ")");
     // signature to use in the veto list: void G4NavigationHistory::Clear()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NavigationHistory.hh:76:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NavigationHistory.hh:76:15
     t.method("Clear", [](G4NavigationHistory& a)->void { a.Clear(); }, jlcxx::arg("this"));
     t.method("Clear", [](G4NavigationHistory* a)->void { a->Clear(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4NavigationHistory::SetFirstEntry(G4VPhysicalVolume *) (" __HERE__ ")");
     // signature to use in the veto list: void G4NavigationHistory::SetFirstEntry(G4VPhysicalVolume *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NavigationHistory.hh:80:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NavigationHistory.hh:80:15
     t.method("SetFirstEntry", [](G4NavigationHistory& a, G4VPhysicalVolume * arg0)->void { a.SetFirstEntry(arg0); }, jlcxx::arg("this"), jlcxx::arg("pVol"));
     t.method("SetFirstEntry", [](G4NavigationHistory* a, G4VPhysicalVolume * arg0)->void { a->SetFirstEntry(arg0); }, jlcxx::arg("this"), jlcxx::arg("pVol"));
 
     DEBUG_MSG("Adding wrapper for const G4AffineTransform & G4NavigationHistory::GetTopTransform() (" __HERE__ ")");
     // signature to use in the veto list: const G4AffineTransform & G4NavigationHistory::GetTopTransform()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NavigationHistory.hh:84:35
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NavigationHistory.hh:84:35
     t.method("GetTopTransform", [](G4NavigationHistory const& a)->const G4AffineTransform & { return a.GetTopTransform(); }, jlcxx::arg("this"));
     t.method("GetTopTransform", [](G4NavigationHistory const* a)->const G4AffineTransform & { return a->GetTopTransform(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4AffineTransform * G4NavigationHistory::GetPtrTopTransform() (" __HERE__ ")");
     // signature to use in the veto list: const G4AffineTransform * G4NavigationHistory::GetPtrTopTransform()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NavigationHistory.hh:87:35
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NavigationHistory.hh:87:35
     t.method("GetPtrTopTransform", [](G4NavigationHistory const& a)->const G4AffineTransform * { return a.GetPtrTopTransform(); }, jlcxx::arg("this"));
     t.method("GetPtrTopTransform", [](G4NavigationHistory const* a)->const G4AffineTransform * { return a->GetPtrTopTransform(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4NavigationHistory::GetTopReplicaNo() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4NavigationHistory::GetTopReplicaNo()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NavigationHistory.hh:90:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NavigationHistory.hh:90:16
     t.method("GetTopReplicaNo", [](G4NavigationHistory const& a)->G4int { return a.GetTopReplicaNo(); }, jlcxx::arg("this"));
     t.method("GetTopReplicaNo", [](G4NavigationHistory const* a)->G4int { return a->GetTopReplicaNo(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for EVolume G4NavigationHistory::GetTopVolumeType() (" __HERE__ ")");
     // signature to use in the veto list: EVolume G4NavigationHistory::GetTopVolumeType()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NavigationHistory.hh:93:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NavigationHistory.hh:93:18
     t.method("GetTopVolumeType", [](G4NavigationHistory const& a)->EVolume { return a.GetTopVolumeType(); }, jlcxx::arg("this"));
     t.method("GetTopVolumeType", [](G4NavigationHistory const* a)->EVolume { return a->GetTopVolumeType(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4VPhysicalVolume * G4NavigationHistory::GetTopVolume() (" __HERE__ ")");
     // signature to use in the veto list: G4VPhysicalVolume * G4NavigationHistory::GetTopVolume()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NavigationHistory.hh:96:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NavigationHistory.hh:96:29
     t.method("GetTopVolume", [](G4NavigationHistory const& a)->G4VPhysicalVolume * { return a.GetTopVolume(); }, jlcxx::arg("this"));
     t.method("GetTopVolume", [](G4NavigationHistory const* a)->G4VPhysicalVolume * { return a->GetTopVolume(); }, jlcxx::arg("this"));
 
-    DEBUG_MSG("Adding wrapper for size_t G4NavigationHistory::GetDepth() (" __HERE__ ")");
-    // signature to use in the veto list: size_t G4NavigationHistory::GetDepth()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NavigationHistory.hh:99:22
-    t.method("GetDepth", [](G4NavigationHistory const& a)->size_t { return a.GetDepth(); }, jlcxx::arg("this"));
-    t.method("GetDepth", [](G4NavigationHistory const* a)->size_t { return a->GetDepth(); }, jlcxx::arg("this"));
+    DEBUG_MSG("Adding wrapper for std::size_t G4NavigationHistory::GetDepth() (" __HERE__ ")");
+    // signature to use in the veto list: std::size_t G4NavigationHistory::GetDepth()
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NavigationHistory.hh:99:22
+    t.method("GetDepth", [](G4NavigationHistory const& a)->std::size_t { return a.GetDepth(); }, jlcxx::arg("this"));
+    t.method("GetDepth", [](G4NavigationHistory const* a)->std::size_t { return a->GetDepth(); }, jlcxx::arg("this"));
 
-    DEBUG_MSG("Adding wrapper for size_t G4NavigationHistory::GetMaxDepth() (" __HERE__ ")");
-    // signature to use in the veto list: size_t G4NavigationHistory::GetMaxDepth()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NavigationHistory.hh:102:22
-    t.method("GetMaxDepth", [](G4NavigationHistory const& a)->size_t { return a.GetMaxDepth(); }, jlcxx::arg("this"));
-    t.method("GetMaxDepth", [](G4NavigationHistory const* a)->size_t { return a->GetMaxDepth(); }, jlcxx::arg("this"));
+    DEBUG_MSG("Adding wrapper for std::size_t G4NavigationHistory::GetMaxDepth() (" __HERE__ ")");
+    // signature to use in the veto list: std::size_t G4NavigationHistory::GetMaxDepth()
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NavigationHistory.hh:102:22
+    t.method("GetMaxDepth", [](G4NavigationHistory const& a)->std::size_t { return a.GetMaxDepth(); }, jlcxx::arg("this"));
+    t.method("GetMaxDepth", [](G4NavigationHistory const* a)->std::size_t { return a->GetMaxDepth(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const G4AffineTransform & G4NavigationHistory::GetTransform(G4int) (" __HERE__ ")");
     // signature to use in the veto list: const G4AffineTransform & G4NavigationHistory::GetTransform(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NavigationHistory.hh:106:35
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NavigationHistory.hh:106:35
     t.method("GetTransform", [](G4NavigationHistory const& a, G4int arg0)->const G4AffineTransform & { return a.GetTransform(arg0); }, jlcxx::arg("this"), jlcxx::arg("n"));
     t.method("GetTransform", [](G4NavigationHistory const* a, G4int arg0)->const G4AffineTransform & { return a->GetTransform(arg0); }, jlcxx::arg("this"), jlcxx::arg("n"));
 
     DEBUG_MSG("Adding wrapper for G4int G4NavigationHistory::GetReplicaNo(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4int G4NavigationHistory::GetReplicaNo(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NavigationHistory.hh:109:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NavigationHistory.hh:109:16
     t.method("GetReplicaNo", [](G4NavigationHistory const& a, G4int arg0)->G4int { return a.GetReplicaNo(arg0); }, jlcxx::arg("this"), jlcxx::arg("n"));
     t.method("GetReplicaNo", [](G4NavigationHistory const* a, G4int arg0)->G4int { return a->GetReplicaNo(arg0); }, jlcxx::arg("this"), jlcxx::arg("n"));
 
     DEBUG_MSG("Adding wrapper for EVolume G4NavigationHistory::GetVolumeType(G4int) (" __HERE__ ")");
     // signature to use in the veto list: EVolume G4NavigationHistory::GetVolumeType(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NavigationHistory.hh:112:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NavigationHistory.hh:112:18
     t.method("GetVolumeType", [](G4NavigationHistory const& a, G4int arg0)->EVolume { return a.GetVolumeType(arg0); }, jlcxx::arg("this"), jlcxx::arg("n"));
     t.method("GetVolumeType", [](G4NavigationHistory const* a, G4int arg0)->EVolume { return a->GetVolumeType(arg0); }, jlcxx::arg("this"), jlcxx::arg("n"));
 
     DEBUG_MSG("Adding wrapper for G4VPhysicalVolume * G4NavigationHistory::GetVolume(G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4VPhysicalVolume * G4NavigationHistory::GetVolume(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NavigationHistory.hh:115:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NavigationHistory.hh:115:29
     t.method("GetVolume", [](G4NavigationHistory const& a, G4int arg0)->G4VPhysicalVolume * { return a.GetVolume(arg0); }, jlcxx::arg("this"), jlcxx::arg("n"));
     t.method("GetVolume", [](G4NavigationHistory const* a, G4int arg0)->G4VPhysicalVolume * { return a->GetVolume(arg0); }, jlcxx::arg("this"), jlcxx::arg("n"));
 
     DEBUG_MSG("Adding wrapper for void G4NavigationHistory::NewLevel(G4VPhysicalVolume *, EVolume, G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4NavigationHistory::NewLevel(G4VPhysicalVolume *, EVolume, G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NavigationHistory.hh:118:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NavigationHistory.hh:118:15
     t.method("NewLevel", [](G4NavigationHistory& a, G4VPhysicalVolume * arg0)->void { a.NewLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("pNewMother"));
     t.method("NewLevel", [](G4NavigationHistory& a, G4VPhysicalVolume * arg0, EVolume arg1)->void { a.NewLevel(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("pNewMother"), jlcxx::arg("vType"));
     t.method("NewLevel", [](G4NavigationHistory& a, G4VPhysicalVolume * arg0, EVolume arg1, G4int arg2)->void { a.NewLevel(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("pNewMother"), jlcxx::arg("vType"), jlcxx::arg("nReplica"));
@@ -133,13 +133,13 @@ struct JlG4NavigationHistory: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4NavigationHistory::BackLevel() (" __HERE__ ")");
     // signature to use in the veto list: void G4NavigationHistory::BackLevel()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NavigationHistory.hh:123:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NavigationHistory.hh:123:15
     t.method("BackLevel", [](G4NavigationHistory& a)->void { a.BackLevel(); }, jlcxx::arg("this"));
     t.method("BackLevel", [](G4NavigationHistory* a)->void { a->BackLevel(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4NavigationHistory::BackLevel(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4NavigationHistory::BackLevel(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4NavigationHistory.hh:127:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4NavigationHistory.hh:127:15
     t.method("BackLevel", [](G4NavigationHistory& a, G4int arg0)->void { a.BackLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("n"));
     t.method("BackLevel", [](G4NavigationHistory* a, G4int arg0)->void { a->BackLevel(arg0); }, jlcxx::arg("this"), jlcxx::arg("n"));
   }

@@ -17,9 +17,8 @@ struct JlG4GDMLAuxStructType: public Wrapper {
 
   JlG4GDMLAuxStructType(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4GDMLAuxStructType (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLAuxStructType.hh:36:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLAuxStructType.hh:36:8
     jlcxx::TypeWrapper<G4GDMLAuxStructType>  t = jlModule.add_type<G4GDMLAuxStructType>("G4GDMLAuxStructType");
-    jlcxx::stl::apply_stl<G4GDMLAuxStructType>(jlModule);
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4GDMLAuxStructType>>(new jlcxx::TypeWrapper<G4GDMLAuxStructType>(jlModule, t));
   }
 
@@ -28,13 +27,13 @@ struct JlG4GDMLAuxStructType: public Wrapper {
     t.template constructor<>(/*finalize=*/jlcxx::finalize_policy::yes    );
 
     DEBUG_MSG("Adding type methods  to provide read access to the field type (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLAuxStructType.hh:38:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLAuxStructType.hh:38:12
     // signature to use in the veto list: G4GDMLAuxStructType::type
     t.method("type", [](const G4GDMLAuxStructType& a) -> const G4String& { return a.type; }, jlcxx::arg("this"));
     t.method("type", [](G4GDMLAuxStructType& a) -> G4String& { return a.type; }, jlcxx::arg("this"));
     t.method("type", [](const G4GDMLAuxStructType* a) -> const G4String& { return a->type; }, jlcxx::arg("this"));
     t.method("type", [](G4GDMLAuxStructType* a) -> G4String& { return a->type; }, jlcxx::arg("this"));
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLAuxStructType.hh:38:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLAuxStructType.hh:38:12
     // signature to use in the veto list: G4GDMLAuxStructType::type
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding type! methods to provide write access to the field type (" __HERE__ ")");
@@ -44,13 +43,13 @@ struct JlG4GDMLAuxStructType: public Wrapper {
     t.method("type!", [](G4GDMLAuxStructType* a, const G4String& val) -> G4String& { return a->type = val; }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding value methods  to provide read access to the field value (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLAuxStructType.hh:39:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLAuxStructType.hh:39:12
     // signature to use in the veto list: G4GDMLAuxStructType::value
     t.method("value", [](const G4GDMLAuxStructType& a) -> const G4String& { return a.value; }, jlcxx::arg("this"));
     t.method("value", [](G4GDMLAuxStructType& a) -> G4String& { return a.value; }, jlcxx::arg("this"));
     t.method("value", [](const G4GDMLAuxStructType* a) -> const G4String& { return a->value; }, jlcxx::arg("this"));
     t.method("value", [](G4GDMLAuxStructType* a) -> G4String& { return a->value; }, jlcxx::arg("this"));
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLAuxStructType.hh:39:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLAuxStructType.hh:39:12
     // signature to use in the veto list: G4GDMLAuxStructType::value
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding value! methods to provide write access to the field value (" __HERE__ ")");
@@ -60,13 +59,13 @@ struct JlG4GDMLAuxStructType: public Wrapper {
     t.method("value!", [](G4GDMLAuxStructType* a, const G4String& val) -> G4String& { return a->value = val; }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding unit methods  to provide read access to the field unit (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLAuxStructType.hh:40:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLAuxStructType.hh:40:12
     // signature to use in the veto list: G4GDMLAuxStructType::unit
     t.method("unit", [](const G4GDMLAuxStructType& a) -> const G4String& { return a.unit; }, jlcxx::arg("this"));
     t.method("unit", [](G4GDMLAuxStructType& a) -> G4String& { return a.unit; }, jlcxx::arg("this"));
     t.method("unit", [](const G4GDMLAuxStructType* a) -> const G4String& { return a->unit; }, jlcxx::arg("this"));
     t.method("unit", [](G4GDMLAuxStructType* a) -> G4String& { return a->unit; }, jlcxx::arg("this"));
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLAuxStructType.hh:40:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLAuxStructType.hh:40:12
     // signature to use in the veto list: G4GDMLAuxStructType::unit
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding unit! methods to provide write access to the field unit (" __HERE__ ")");
@@ -76,13 +75,13 @@ struct JlG4GDMLAuxStructType: public Wrapper {
     t.method("unit!", [](G4GDMLAuxStructType* a, const G4String& val) -> G4String& { return a->unit = val; }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding auxList methods  to provide read access to the field auxList (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLAuxStructType.hh:41:37
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLAuxStructType.hh:41:37
     // signature to use in the veto list: G4GDMLAuxStructType::auxList
     t.method("auxList", [](const G4GDMLAuxStructType& a) -> std::vector<G4GDMLAuxStructType> * { return a.auxList; }, jlcxx::arg("this"));
     t.method("auxList", [](G4GDMLAuxStructType& a) -> std::vector<G4GDMLAuxStructType> * { return a.auxList; }, jlcxx::arg("this"));
     t.method("auxList", [](const G4GDMLAuxStructType* a) -> std::vector<G4GDMLAuxStructType> * { return a->auxList; }, jlcxx::arg("this"));
     t.method("auxList", [](G4GDMLAuxStructType* a) -> std::vector<G4GDMLAuxStructType> * { return a->auxList; }, jlcxx::arg("this"));
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GDMLAuxStructType.hh:41:37
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GDMLAuxStructType.hh:41:37
     // signature to use in the veto list: G4GDMLAuxStructType::auxList
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding auxList! methods to provide write access to the field auxList (" __HERE__ ")");

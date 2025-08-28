@@ -18,7 +18,7 @@ struct JlLBE: public Wrapper {
 
   JlLBE(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type LBE (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/LBE.hh:58:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/LBE.hh:58:7
     jlcxx::TypeWrapper<LBE>  t = jlModule.add_type<LBE>("LBE",
       jlcxx::julia_base_type<G4VModularPhysicsList>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<LBE>>(new jlcxx::TypeWrapper<LBE>(jlModule, t));
@@ -30,12 +30,12 @@ struct JlLBE: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void LBE::LBE(G4int) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/LBE.hh:61:3
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/LBE.hh:61:3
     t.constructor<G4int>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("ver")    );
 
     DEBUG_MSG("Adding wrapper for void LBE::SetCuts() (" __HERE__ ")");
     // signature to use in the veto list: void LBE::SetCuts()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/LBE.hh:69:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/LBE.hh:69:16
     t.method("SetCuts", [](LBE& a)->void { a.SetCuts(); }, jlcxx::arg("this"));
     t.method("SetCuts", [](LBE* a)->void { a->SetCuts(); }, jlcxx::arg("this"));
   }

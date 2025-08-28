@@ -17,7 +17,7 @@ struct JlG4MaterialPropertiesTable: public Wrapper {
 
   JlG4MaterialPropertiesTable(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4MaterialPropertiesTable (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:59:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:59:7
     jlcxx::TypeWrapper<G4MaterialPropertiesTable>  t = jlModule.add_type<G4MaterialPropertiesTable>("G4MaterialPropertiesTable");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4MaterialPropertiesTable>>(new jlcxx::TypeWrapper<G4MaterialPropertiesTable>(jlModule, t));
   }
@@ -28,7 +28,7 @@ struct JlG4MaterialPropertiesTable: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4MaterialPropertiesTable::AddConstProperty(const G4String &, G4double, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4MaterialPropertiesTable::AddConstProperty(const G4String &, G4double, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:66:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:66:8
     t.method("AddConstProperty", [](G4MaterialPropertiesTable& a, const G4String & arg0, G4double arg1)->void { a.AddConstProperty(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("key"), jlcxx::arg("propertyValue"));
     t.method("AddConstProperty", [](G4MaterialPropertiesTable& a, const G4String & arg0, G4double arg1, G4bool arg2)->void { a.AddConstProperty(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("key"), jlcxx::arg("propertyValue"), jlcxx::arg("createNewKey"));
     t.method("AddConstProperty", [](G4MaterialPropertiesTable* a, const G4String & arg0, G4double arg1)->void { a->AddConstProperty(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("key"), jlcxx::arg("propertyValue"));
@@ -36,7 +36,7 @@ struct JlG4MaterialPropertiesTable: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4MaterialPropertyVector * G4MaterialPropertiesTable::AddProperty(const G4String &, const std::vector<G4double> &, const std::vector<G4double> &, G4bool, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: G4MaterialPropertyVector * G4MaterialPropertiesTable::AddProperty(const G4String &, const std::vector<G4double> &, const std::vector<G4double> &, G4bool, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:71:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:71:29
     t.method("AddProperty", [](G4MaterialPropertiesTable& a, const G4String & arg0, const std::vector<G4double> & arg1, const std::vector<G4double> & arg2)->G4MaterialPropertyVector * { return a.AddProperty(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("key"), jlcxx::arg("photonEnergies"), jlcxx::arg("propertyValues"));
     t.method("AddProperty", [](G4MaterialPropertiesTable& a, const G4String & arg0, const std::vector<G4double> & arg1, const std::vector<G4double> & arg2, G4bool arg3)->G4MaterialPropertyVector * { return a.AddProperty(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("key"), jlcxx::arg("photonEnergies"), jlcxx::arg("propertyValues"), jlcxx::arg("createNewKey"));
     t.method("AddProperty", [](G4MaterialPropertiesTable& a, const G4String & arg0, const std::vector<G4double> & arg1, const std::vector<G4double> & arg2, G4bool arg3, G4bool arg4)->G4MaterialPropertyVector * { return a.AddProperty(arg0, arg1, arg2, arg3, arg4); }, jlcxx::arg("this"), jlcxx::arg("key"), jlcxx::arg("photonEnergies"), jlcxx::arg("propertyValues"), jlcxx::arg("createNewKey"), jlcxx::arg("spline"));
@@ -46,7 +46,7 @@ struct JlG4MaterialPropertiesTable: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4MaterialPropertiesTable::AddProperty(const G4String &, G4MaterialPropertyVector *, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4MaterialPropertiesTable::AddProperty(const G4String &, G4MaterialPropertyVector *, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:82:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:82:8
     t.method("AddProperty", [](G4MaterialPropertiesTable& a, const G4String & arg0, G4MaterialPropertyVector * arg1)->void { a.AddProperty(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("key"), jlcxx::arg("opv"));
     t.method("AddProperty", [](G4MaterialPropertiesTable& a, const G4String & arg0, G4MaterialPropertyVector * arg1, G4bool arg2)->void { a.AddProperty(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("key"), jlcxx::arg("opv"), jlcxx::arg("createNewKey"));
     t.method("AddProperty", [](G4MaterialPropertiesTable* a, const G4String & arg0, G4MaterialPropertyVector * arg1)->void { a->AddProperty(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("key"), jlcxx::arg("opv"));
@@ -54,7 +54,7 @@ struct JlG4MaterialPropertiesTable: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4MaterialPropertiesTable::AddProperty(const char *, G4MaterialPropertyVector *, G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4MaterialPropertiesTable::AddProperty(const char *, G4MaterialPropertyVector *, G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:83:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:83:8
     t.method("AddProperty", [](G4MaterialPropertiesTable& a, const char * arg0, G4MaterialPropertyVector * arg1)->void { a.AddProperty(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("key"), jlcxx::arg("opv"));
     t.method("AddProperty", [](G4MaterialPropertiesTable& a, const char * arg0, G4MaterialPropertyVector * arg1, G4bool arg2)->void { a.AddProperty(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("key"), jlcxx::arg("opv"), jlcxx::arg("createNewKey"));
     t.method("AddProperty", [](G4MaterialPropertiesTable* a, const char * arg0, G4MaterialPropertyVector * arg1)->void { a->AddProperty(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("key"), jlcxx::arg("opv"));
@@ -62,133 +62,133 @@ struct JlG4MaterialPropertiesTable: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4MaterialPropertiesTable::AddProperty(const G4String &, const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4MaterialPropertiesTable::AddProperty(const G4String &, const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:88:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:88:8
     t.method("AddProperty", [](G4MaterialPropertiesTable& a, const G4String & arg0, const G4String & arg1)->void { a.AddProperty(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("key"), jlcxx::arg("mat"));
     t.method("AddProperty", [](G4MaterialPropertiesTable* a, const G4String & arg0, const G4String & arg1)->void { a->AddProperty(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("key"), jlcxx::arg("mat"));
 
     DEBUG_MSG("Adding wrapper for void G4MaterialPropertiesTable::RemoveConstProperty(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4MaterialPropertiesTable::RemoveConstProperty(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:91:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:91:8
     t.method("RemoveConstProperty", [](G4MaterialPropertiesTable& a, const G4String & arg0)->void { a.RemoveConstProperty(arg0); }, jlcxx::arg("this"), jlcxx::arg("key"));
     t.method("RemoveConstProperty", [](G4MaterialPropertiesTable* a, const G4String & arg0)->void { a->RemoveConstProperty(arg0); }, jlcxx::arg("this"), jlcxx::arg("key"));
 
     DEBUG_MSG("Adding wrapper for void G4MaterialPropertiesTable::RemoveConstProperty(const char *) (" __HERE__ ")");
     // signature to use in the veto list: void G4MaterialPropertiesTable::RemoveConstProperty(const char *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:92:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:92:8
     t.method("RemoveConstProperty", [](G4MaterialPropertiesTable& a, const char * arg0)->void { a.RemoveConstProperty(arg0); }, jlcxx::arg("this"), jlcxx::arg("key"));
     t.method("RemoveConstProperty", [](G4MaterialPropertiesTable* a, const char * arg0)->void { a->RemoveConstProperty(arg0); }, jlcxx::arg("this"), jlcxx::arg("key"));
 
     DEBUG_MSG("Adding wrapper for void G4MaterialPropertiesTable::RemoveProperty(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: void G4MaterialPropertiesTable::RemoveProperty(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:95:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:95:8
     t.method("RemoveProperty", [](G4MaterialPropertiesTable& a, const G4String & arg0)->void { a.RemoveProperty(arg0); }, jlcxx::arg("this"), jlcxx::arg("key"));
     t.method("RemoveProperty", [](G4MaterialPropertiesTable* a, const G4String & arg0)->void { a->RemoveProperty(arg0); }, jlcxx::arg("this"), jlcxx::arg("key"));
 
     DEBUG_MSG("Adding wrapper for void G4MaterialPropertiesTable::RemoveProperty(const char *) (" __HERE__ ")");
     // signature to use in the veto list: void G4MaterialPropertiesTable::RemoveProperty(const char *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:96:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:96:8
     t.method("RemoveProperty", [](G4MaterialPropertiesTable& a, const char * arg0)->void { a.RemoveProperty(arg0); }, jlcxx::arg("this"), jlcxx::arg("key"));
     t.method("RemoveProperty", [](G4MaterialPropertiesTable* a, const char * arg0)->void { a->RemoveProperty(arg0); }, jlcxx::arg("this"), jlcxx::arg("key"));
 
     DEBUG_MSG("Adding wrapper for G4double G4MaterialPropertiesTable::GetConstProperty(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4MaterialPropertiesTable::GetConstProperty(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:101:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:101:12
     t.method("GetConstProperty", [](G4MaterialPropertiesTable const& a, const G4String & arg0)->G4double { return a.GetConstProperty(arg0); }, jlcxx::arg("this"), jlcxx::arg("key"));
     t.method("GetConstProperty", [](G4MaterialPropertiesTable const* a, const G4String & arg0)->G4double { return a->GetConstProperty(arg0); }, jlcxx::arg("this"), jlcxx::arg("key"));
 
     DEBUG_MSG("Adding wrapper for G4double G4MaterialPropertiesTable::GetConstProperty(const char *) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4MaterialPropertiesTable::GetConstProperty(const char *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:102:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:102:12
     t.method("GetConstProperty", [](G4MaterialPropertiesTable const& a, const char * arg0)->G4double { return a.GetConstProperty(arg0); }, jlcxx::arg("this"), jlcxx::arg("key"));
     t.method("GetConstProperty", [](G4MaterialPropertiesTable const* a, const char * arg0)->G4double { return a->GetConstProperty(arg0); }, jlcxx::arg("this"), jlcxx::arg("key"));
 
     DEBUG_MSG("Adding wrapper for G4double G4MaterialPropertiesTable::GetConstProperty(const G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4double G4MaterialPropertiesTable::GetConstProperty(const G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:103:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:103:12
     t.method("GetConstProperty", [](G4MaterialPropertiesTable const& a, const G4int arg0)->G4double { return a.GetConstProperty(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
     t.method("GetConstProperty", [](G4MaterialPropertiesTable const* a, const G4int arg0)->G4double { return a->GetConstProperty(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4MaterialPropertiesTable::ConstPropertyExists(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4MaterialPropertiesTable::ConstPropertyExists(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:109:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:109:10
     t.method("ConstPropertyExists", [](G4MaterialPropertiesTable const& a, const G4String & arg0)->G4bool { return a.ConstPropertyExists(arg0); }, jlcxx::arg("this"), jlcxx::arg("key"));
     t.method("ConstPropertyExists", [](G4MaterialPropertiesTable const* a, const G4String & arg0)->G4bool { return a->ConstPropertyExists(arg0); }, jlcxx::arg("this"), jlcxx::arg("key"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4MaterialPropertiesTable::ConstPropertyExists(const char *) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4MaterialPropertiesTable::ConstPropertyExists(const char *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:110:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:110:10
     t.method("ConstPropertyExists", [](G4MaterialPropertiesTable const& a, const char * arg0)->G4bool { return a.ConstPropertyExists(arg0); }, jlcxx::arg("this"), jlcxx::arg("key"));
     t.method("ConstPropertyExists", [](G4MaterialPropertiesTable const* a, const char * arg0)->G4bool { return a->ConstPropertyExists(arg0); }, jlcxx::arg("this"), jlcxx::arg("key"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4MaterialPropertiesTable::ConstPropertyExists(const G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4MaterialPropertiesTable::ConstPropertyExists(const G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:111:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:111:10
     t.method("ConstPropertyExists", [](G4MaterialPropertiesTable const& a, const G4int arg0)->G4bool { return a.ConstPropertyExists(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
     t.method("ConstPropertyExists", [](G4MaterialPropertiesTable const* a, const G4int arg0)->G4bool { return a->ConstPropertyExists(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
 
     DEBUG_MSG("Adding wrapper for G4MaterialPropertyVector * G4MaterialPropertiesTable::GetProperty(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4MaterialPropertyVector * G4MaterialPropertiesTable::GetProperty(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:116:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:116:29
     t.method("GetProperty", [](G4MaterialPropertiesTable const& a, const G4String & arg0)->G4MaterialPropertyVector * { return a.GetProperty(arg0); }, jlcxx::arg("this"), jlcxx::arg("key"));
     t.method("GetProperty", [](G4MaterialPropertiesTable const* a, const G4String & arg0)->G4MaterialPropertyVector * { return a->GetProperty(arg0); }, jlcxx::arg("this"), jlcxx::arg("key"));
 
     DEBUG_MSG("Adding wrapper for G4MaterialPropertyVector * G4MaterialPropertiesTable::GetProperty(const G4int) (" __HERE__ ")");
     // signature to use in the veto list: G4MaterialPropertyVector * G4MaterialPropertiesTable::GetProperty(const G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:117:29
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:117:29
     t.method("GetProperty", [](G4MaterialPropertiesTable const& a, const G4int arg0)->G4MaterialPropertyVector * { return a.GetProperty(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
     t.method("GetProperty", [](G4MaterialPropertiesTable const* a, const G4int arg0)->G4MaterialPropertyVector * { return a->GetProperty(arg0); }, jlcxx::arg("this"), jlcxx::arg("index"));
 
     DEBUG_MSG("Adding wrapper for void G4MaterialPropertiesTable::AddEntry(const G4String &, G4double, G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4MaterialPropertiesTable::AddEntry(const G4String &, G4double, G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:120:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:120:8
     t.method("AddEntry", [](G4MaterialPropertiesTable& a, const G4String & arg0, G4double arg1, G4double arg2)->void { a.AddEntry(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("key"), jlcxx::arg("aPhotonEnergy"), jlcxx::arg("aPropertyValue"));
     t.method("AddEntry", [](G4MaterialPropertiesTable* a, const G4String & arg0, G4double arg1, G4double arg2)->void { a->AddEntry(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("key"), jlcxx::arg("aPhotonEnergy"), jlcxx::arg("aPropertyValue"));
 
     DEBUG_MSG("Adding wrapper for void G4MaterialPropertiesTable::AddEntry(const char *, G4double, G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4MaterialPropertiesTable::AddEntry(const char *, G4double, G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:121:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:121:8
     t.method("AddEntry", [](G4MaterialPropertiesTable& a, const char * arg0, G4double arg1, G4double arg2)->void { a.AddEntry(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("key"), jlcxx::arg("aPhotonEnergy"), jlcxx::arg("aPropertyValue"));
     t.method("AddEntry", [](G4MaterialPropertiesTable* a, const char * arg0, G4double arg1, G4double arg2)->void { a->AddEntry(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("key"), jlcxx::arg("aPhotonEnergy"), jlcxx::arg("aPropertyValue"));
 
     DEBUG_MSG("Adding wrapper for G4int G4MaterialPropertiesTable::GetConstPropertyIndex(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4int G4MaterialPropertiesTable::GetConstPropertyIndex(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:126:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:126:9
     t.method("GetConstPropertyIndex", [](G4MaterialPropertiesTable const& a, const G4String & arg0)->G4int { return a.GetConstPropertyIndex(arg0); }, jlcxx::arg("this"), jlcxx::arg("key"));
     t.method("GetConstPropertyIndex", [](G4MaterialPropertiesTable const* a, const G4String & arg0)->G4int { return a->GetConstPropertyIndex(arg0); }, jlcxx::arg("this"), jlcxx::arg("key"));
 
     DEBUG_MSG("Adding wrapper for G4int G4MaterialPropertiesTable::GetPropertyIndex(const G4String &) (" __HERE__ ")");
     // signature to use in the veto list: G4int G4MaterialPropertiesTable::GetPropertyIndex(const G4String &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:131:9
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:131:9
     t.method("GetPropertyIndex", [](G4MaterialPropertiesTable const& a, const G4String & arg0)->G4int { return a.GetPropertyIndex(arg0); }, jlcxx::arg("this"), jlcxx::arg("key"));
     t.method("GetPropertyIndex", [](G4MaterialPropertiesTable const* a, const G4String & arg0)->G4int { return a->GetPropertyIndex(arg0); }, jlcxx::arg("this"), jlcxx::arg("key"));
 
     DEBUG_MSG("Adding wrapper for void G4MaterialPropertiesTable::DumpTable() (" __HERE__ ")");
     // signature to use in the veto list: void G4MaterialPropertiesTable::DumpTable()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:134:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:134:8
     t.method("DumpTable", [](G4MaterialPropertiesTable const& a)->void { a.DumpTable(); }, jlcxx::arg("this"));
     t.method("DumpTable", [](G4MaterialPropertiesTable const* a)->void { a->DumpTable(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const std::vector<G4String> & G4MaterialPropertiesTable::GetMaterialPropertyNames() (" __HERE__ ")");
     // signature to use in the veto list: const std::vector<G4String> & G4MaterialPropertiesTable::GetMaterialPropertyNames()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:137:32
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:137:32
     t.method("GetMaterialPropertyNames", [](G4MaterialPropertiesTable const& a)->const std::vector<G4String> & { return a.GetMaterialPropertyNames(); }, jlcxx::arg("this"));
     t.method("GetMaterialPropertyNames", [](G4MaterialPropertiesTable const* a)->const std::vector<G4String> & { return a->GetMaterialPropertyNames(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const std::vector<G4String> & G4MaterialPropertiesTable::GetMaterialConstPropertyNames() (" __HERE__ ")");
     // signature to use in the veto list: const std::vector<G4String> & G4MaterialPropertiesTable::GetMaterialConstPropertyNames()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:138:32
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:138:32
     t.method("GetMaterialConstPropertyNames", [](G4MaterialPropertiesTable const& a)->const std::vector<G4String> & { return a.GetMaterialConstPropertyNames(); }, jlcxx::arg("this"));
     t.method("GetMaterialConstPropertyNames", [](G4MaterialPropertiesTable const* a)->const std::vector<G4String> & { return a->GetMaterialConstPropertyNames(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const std::vector<G4MaterialPropertyVector *> & G4MaterialPropertiesTable::GetProperties() (" __HERE__ ")");
     // signature to use in the veto list: const std::vector<G4MaterialPropertyVector *> & G4MaterialPropertiesTable::GetProperties()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:140:49
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:140:49
     t.method("GetProperties", [](G4MaterialPropertiesTable const& a)->const std::vector<G4MaterialPropertyVector *> & { return a.GetProperties(); }, jlcxx::arg("this"));
     t.method("GetProperties", [](G4MaterialPropertiesTable const* a)->const std::vector<G4MaterialPropertyVector *> & { return a->GetProperties(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const std::vector<std::pair<G4double,G4bool>> & G4MaterialPropertiesTable::GetConstProperties() (" __HERE__ ")");
     // signature to use in the veto list: const std::vector<std::pair<G4double,G4bool>> & G4MaterialPropertiesTable::GetConstProperties()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MaterialPropertiesTable.hh:141:51
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MaterialPropertiesTable.hh:141:51
     t.method("GetConstProperties", [](G4MaterialPropertiesTable const& a)->const std::vector<std::pair<G4double,G4bool>> & { return a.GetConstProperties(); }, jlcxx::arg("this"));
     t.method("GetConstProperties", [](G4MaterialPropertiesTable const* a)->const std::vector<std::pair<G4double,G4bool>> & { return a->GetConstProperties(); }, jlcxx::arg("this"));
   }

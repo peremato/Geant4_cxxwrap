@@ -17,7 +17,7 @@ struct JlCLHEP_HepRandomEngine: public Wrapper {
 
   JlCLHEP_HepRandomEngine(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type CLHEP::HepRandomEngine (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandomEngine.h:53:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandomEngine.h:53:7
     jlcxx::TypeWrapper<CLHEP::HepRandomEngine>  t = jlModule.add_type<CLHEP::HepRandomEngine>("CLHEP!HepRandomEngine");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<CLHEP::HepRandomEngine>>(new jlcxx::TypeWrapper<CLHEP::HepRandomEngine>(jlModule, t));
   }
@@ -28,13 +28,13 @@ struct JlCLHEP_HepRandomEngine: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::HepRandomEngine::operator==(const CLHEP::HepRandomEngine &) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::HepRandomEngine::operator==(const CLHEP::HepRandomEngine &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandomEngine.h:61:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandomEngine.h:61:15
     t.method("==", [](CLHEP::HepRandomEngine& a, const CLHEP::HepRandomEngine & arg0)->bool { return a.operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("engine"));
     t.method("==", [](CLHEP::HepRandomEngine* a, const CLHEP::HepRandomEngine & arg0)->bool { return a->operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("engine"));
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::HepRandomEngine::operator!=(const CLHEP::HepRandomEngine &) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::HepRandomEngine::operator!=(const CLHEP::HepRandomEngine &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandomEngine.h:62:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandomEngine.h:62:15
     t.method("!=", [](CLHEP::HepRandomEngine& a, const CLHEP::HepRandomEngine & arg0)->bool { return a.operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("engine"));
     t.method("!=", [](CLHEP::HepRandomEngine* a, const CLHEP::HepRandomEngine & arg0)->bool { return a->operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("engine"));
 
@@ -42,31 +42,31 @@ struct JlCLHEP_HepRandomEngine: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for double CLHEP::HepRandomEngine::flat() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::HepRandomEngine::flat()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandomEngine.h:65:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandomEngine.h:65:18
     t.method("flat", [](CLHEP::HepRandomEngine& a)->double { return a.flat(); }, jlcxx::arg("this"));
     t.method("flat", [](CLHEP::HepRandomEngine* a)->double { return a->flat(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void CLHEP::HepRandomEngine::flatArray(const int, double *) (" __HERE__ ")");
     // signature to use in the veto list: void CLHEP::HepRandomEngine::flatArray(const int, double *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandomEngine.h:69:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandomEngine.h:69:16
     t.method("flatArray", [](CLHEP::HepRandomEngine& a, const int arg0, double * arg1)->void { a.flatArray(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("size"), jlcxx::arg("vect"));
     t.method("flatArray", [](CLHEP::HepRandomEngine* a, const int arg0, double * arg1)->void { a->flatArray(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("size"), jlcxx::arg("vect"));
 
     DEBUG_MSG("Adding wrapper for void CLHEP::HepRandomEngine::setSeed(long, int) (" __HERE__ ")");
     // signature to use in the veto list: void CLHEP::HepRandomEngine::setSeed(long, int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandomEngine.h:72:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandomEngine.h:72:16
     t.method("setSeed", [](CLHEP::HepRandomEngine& a, long arg0, int arg1)->void { a.setSeed(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("seed"), jlcxx::arg("arg1"));
     t.method("setSeed", [](CLHEP::HepRandomEngine* a, long arg0, int arg1)->void { a->setSeed(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("seed"), jlcxx::arg("arg1"));
 
     DEBUG_MSG("Adding wrapper for void CLHEP::HepRandomEngine::setSeeds(const long *, int) (" __HERE__ ")");
     // signature to use in the veto list: void CLHEP::HepRandomEngine::setSeeds(const long *, int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandomEngine.h:75:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandomEngine.h:75:16
     t.method("setSeeds", [](CLHEP::HepRandomEngine& a, const long * arg0, int arg1)->void { a.setSeeds(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("seeds"), jlcxx::arg("arg1"));
     t.method("setSeeds", [](CLHEP::HepRandomEngine* a, const long * arg0, int arg1)->void { a->setSeeds(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("seeds"), jlcxx::arg("arg1"));
 
     DEBUG_MSG("Adding wrapper for void CLHEP::HepRandomEngine::saveStatus(const char[]) (" __HERE__ ")");
     // signature to use in the veto list: void CLHEP::HepRandomEngine::saveStatus(const char[])
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandomEngine.h:79:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandomEngine.h:79:16
     t.method("saveStatus", [](CLHEP::HepRandomEngine const& a)->void { a.saveStatus(); }, jlcxx::arg("this"), jlcxx::arg("filename"));
     t.method("saveStatus", [](CLHEP::HepRandomEngine const& a, const char arg0[])->void { a.saveStatus(arg0); }, jlcxx::arg("this"), jlcxx::arg("filename"));
     t.method("saveStatus", [](CLHEP::HepRandomEngine const* a)->void { a->saveStatus(); }, jlcxx::arg("this"), jlcxx::arg("filename"));
@@ -74,7 +74,7 @@ struct JlCLHEP_HepRandomEngine: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void CLHEP::HepRandomEngine::restoreStatus(const char[]) (" __HERE__ ")");
     // signature to use in the veto list: void CLHEP::HepRandomEngine::restoreStatus(const char[])
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandomEngine.h:83:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandomEngine.h:83:16
     t.method("restoreStatus", [](CLHEP::HepRandomEngine& a)->void { a.restoreStatus(); }, jlcxx::arg("this"), jlcxx::arg("filename"));
     t.method("restoreStatus", [](CLHEP::HepRandomEngine& a, const char arg0[])->void { a.restoreStatus(arg0); }, jlcxx::arg("this"), jlcxx::arg("filename"));
     t.method("restoreStatus", [](CLHEP::HepRandomEngine* a)->void { a->restoreStatus(); }, jlcxx::arg("this"), jlcxx::arg("filename"));
@@ -82,47 +82,47 @@ struct JlCLHEP_HepRandomEngine: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void CLHEP::HepRandomEngine::showStatus() (" __HERE__ ")");
     // signature to use in the veto list: void CLHEP::HepRandomEngine::showStatus()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandomEngine.h:87:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandomEngine.h:87:16
     t.method("showStatus", [](CLHEP::HepRandomEngine const& a)->void { a.showStatus(); }, jlcxx::arg("this"));
     t.method("showStatus", [](CLHEP::HepRandomEngine const* a)->void { a->showStatus(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for std::string CLHEP::HepRandomEngine::name() (" __HERE__ ")");
     // signature to use in the veto list: std::string CLHEP::HepRandomEngine::name()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandomEngine.h:90:23
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandomEngine.h:90:23
     t.method("name", [](CLHEP::HepRandomEngine const& a)->std::string { return a.name(); }, jlcxx::arg("this"));
     t.method("name", [](CLHEP::HepRandomEngine const* a)->std::string { return a->name(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for std::string CLHEP::HepRandomEngine::beginTag() (" __HERE__ ")");
     // signature to use in the veto list: std::string CLHEP::HepRandomEngine::beginTag()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandomEngine.h:97:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandomEngine.h:97:22
     module_.method("CLHEP!HepRandomEngine!beginTag", []()->std::string { return CLHEP::HepRandomEngine::beginTag(); });
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepRandomEngine * CLHEP::HepRandomEngine::newEngine(const std::vector<unsigned long> &) (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepRandomEngine * CLHEP::HepRandomEngine::newEngine(const std::vector<unsigned long> &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandomEngine.h:104:27
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandomEngine.h:104:27
     module_.method("CLHEP!HepRandomEngine!newEngine", [](const std::vector<unsigned long> & arg0)->CLHEP::HepRandomEngine * { return CLHEP::HepRandomEngine::newEngine(arg0); }, jlcxx::arg("v"));
 
     DEBUG_MSG("Adding wrapper for std::vector<unsigned long> CLHEP::HepRandomEngine::put() (" __HERE__ ")");
     // signature to use in the veto list: std::vector<unsigned long> CLHEP::HepRandomEngine::put()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandomEngine.h:107:38
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandomEngine.h:107:38
     t.method("put", [](CLHEP::HepRandomEngine const& a)->std::vector<unsigned long> { return a.put(); }, jlcxx::arg("this"));
     t.method("put", [](CLHEP::HepRandomEngine const* a)->std::vector<unsigned long> { return a->put(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for bool CLHEP::HepRandomEngine::getState(const std::vector<unsigned long> &) (" __HERE__ ")");
     // signature to use in the veto list: bool CLHEP::HepRandomEngine::getState(const std::vector<unsigned long> &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandomEngine.h:109:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandomEngine.h:109:16
     t.method("getState", [](CLHEP::HepRandomEngine& a, const std::vector<unsigned long> & arg0)->bool { return a.getState(arg0); }, jlcxx::arg("this"), jlcxx::arg("v"));
     t.method("getState", [](CLHEP::HepRandomEngine* a, const std::vector<unsigned long> & arg0)->bool { return a->getState(arg0); }, jlcxx::arg("this"), jlcxx::arg("v"));
 
     DEBUG_MSG("Adding wrapper for long CLHEP::HepRandomEngine::getSeed() (" __HERE__ ")");
     // signature to use in the veto list: long CLHEP::HepRandomEngine::getSeed()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandomEngine.h:112:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandomEngine.h:112:8
     t.method("getSeed", [](CLHEP::HepRandomEngine const& a)->long { return a.getSeed(); }, jlcxx::arg("this"));
     t.method("getSeed", [](CLHEP::HepRandomEngine const* a)->long { return a->getSeed(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for const long * CLHEP::HepRandomEngine::getSeeds() (" __HERE__ ")");
     // signature to use in the veto list: const long * CLHEP::HepRandomEngine::getSeeds()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandomEngine.h:115:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandomEngine.h:115:15
     t.method("getSeeds", [](CLHEP::HepRandomEngine const& a)->const long * { return a.getSeeds(); }, jlcxx::arg("this"));
     t.method("getSeeds", [](CLHEP::HepRandomEngine const* a)->const long * { return a->getSeeds(); }, jlcxx::arg("this"));
   }

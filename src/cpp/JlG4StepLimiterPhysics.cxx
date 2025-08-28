@@ -18,7 +18,7 @@ struct JlG4StepLimiterPhysics: public Wrapper {
 
   JlG4StepLimiterPhysics(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4StepLimiterPhysics (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepLimiterPhysics.hh:42:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepLimiterPhysics.hh:42:7
     jlcxx::TypeWrapper<G4StepLimiterPhysics>  t = jlModule.add_type<G4StepLimiterPhysics>("G4StepLimiterPhysics",
       jlcxx::julia_base_type<G4VPhysicsConstructor>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4StepLimiterPhysics>>(new jlcxx::TypeWrapper<G4StepLimiterPhysics>(jlModule, t));
@@ -30,30 +30,30 @@ struct JlG4StepLimiterPhysics: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4StepLimiterPhysics::G4StepLimiterPhysics(const G4String &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepLimiterPhysics.hh:46:3
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepLimiterPhysics.hh:46:3
     t.constructor<const G4String &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("name")    );
 
     DEBUG_MSG("Adding wrapper for void G4StepLimiterPhysics::ConstructParticle() (" __HERE__ ")");
     // signature to use in the veto list: void G4StepLimiterPhysics::ConstructParticle()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepLimiterPhysics.hh:52:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepLimiterPhysics.hh:52:16
     t.method("ConstructParticle", [](G4StepLimiterPhysics& a)->void { a.ConstructParticle(); }, jlcxx::arg("this"));
     t.method("ConstructParticle", [](G4StepLimiterPhysics* a)->void { a->ConstructParticle(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4StepLimiterPhysics::ConstructProcess() (" __HERE__ ")");
     // signature to use in the veto list: void G4StepLimiterPhysics::ConstructProcess()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepLimiterPhysics.hh:57:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepLimiterPhysics.hh:57:16
     t.method("ConstructProcess", [](G4StepLimiterPhysics& a)->void { a.ConstructProcess(); }, jlcxx::arg("this"));
     t.method("ConstructProcess", [](G4StepLimiterPhysics* a)->void { a->ConstructProcess(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4StepLimiterPhysics::SetApplyToAll(G4bool) (" __HERE__ ")");
     // signature to use in the veto list: void G4StepLimiterPhysics::SetApplyToAll(G4bool)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepLimiterPhysics.hh:61:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepLimiterPhysics.hh:61:10
     t.method("SetApplyToAll", [](G4StepLimiterPhysics& a, G4bool arg0)->void { a.SetApplyToAll(arg0); }, jlcxx::arg("this"), jlcxx::arg("option"));
     t.method("SetApplyToAll", [](G4StepLimiterPhysics* a, G4bool arg0)->void { a->SetApplyToAll(arg0); }, jlcxx::arg("this"), jlcxx::arg("option"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4StepLimiterPhysics::GetApplyToAll() (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4StepLimiterPhysics::GetApplyToAll()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepLimiterPhysics.hh:62:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepLimiterPhysics.hh:62:10
     t.method("GetApplyToAll", [](G4StepLimiterPhysics const& a)->G4bool { return a.GetApplyToAll(); }, jlcxx::arg("this"));
     t.method("GetApplyToAll", [](G4StepLimiterPhysics const* a)->G4bool { return a->GetApplyToAll(); }, jlcxx::arg("this"));
   }

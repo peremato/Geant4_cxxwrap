@@ -18,7 +18,7 @@ struct JlCLHEP_RandExponential: public Wrapper {
 
   JlCLHEP_RandExponential(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type CLHEP::RandExponential (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandExponential.h:34:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandExponential.h:34:7
     jlcxx::TypeWrapper<CLHEP::RandExponential>  t = jlModule.add_type<CLHEP::RandExponential>("CLHEP!RandExponential",
       jlcxx::julia_base_type<CLHEP::HepRandom>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<CLHEP::RandExponential>>(new jlcxx::TypeWrapper<CLHEP::RandExponential>(jlModule, t));
@@ -29,99 +29,99 @@ struct JlCLHEP_RandExponential: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void CLHEP::RandExponential::RandExponential(CLHEP::HepRandomEngine &, double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandExponential.h:38:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandExponential.h:38:10
     t.constructor<CLHEP::HepRandomEngine &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("anEngine")    );
     t.constructor<CLHEP::HepRandomEngine &, double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("anEngine"), jlcxx::arg("mean")    );
 
 
     DEBUG_MSG("Adding wrapper for void CLHEP::RandExponential::RandExponential(CLHEP::HepRandomEngine *, double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandExponential.h:39:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandExponential.h:39:10
     t.constructor<CLHEP::HepRandomEngine *>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("anEngine")    );
     t.constructor<CLHEP::HepRandomEngine *, double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("anEngine"), jlcxx::arg("mean")    );
 
     DEBUG_MSG("Adding wrapper for double CLHEP::RandExponential::shoot() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::RandExponential::shoot()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandExponential.h:54:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandExponential.h:54:18
     module_.method("CLHEP!RandExponential!shoot", []()->double { return CLHEP::RandExponential::shoot(); });
 
     DEBUG_MSG("Adding wrapper for double CLHEP::RandExponential::shoot(double) (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::RandExponential::shoot(double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandExponential.h:56:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandExponential.h:56:18
     module_.method("CLHEP!RandExponential!shoot", [](double arg0)->double { return CLHEP::RandExponential::shoot(arg0); }, jlcxx::arg("mean"));
 
     DEBUG_MSG("Adding wrapper for void CLHEP::RandExponential::shootArray(const int, double *, double) (" __HERE__ ")");
     // signature to use in the veto list: void CLHEP::RandExponential::shootArray(const int, double *, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandExponential.h:58:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandExponential.h:58:16
     module_.method("CLHEP!RandExponential!shootArray", [](const int arg0, double * arg1)->void { CLHEP::RandExponential::shootArray(arg0, arg1); }, jlcxx::arg("size"), jlcxx::arg("vect"));
     module_.method("CLHEP!RandExponential!shootArray", [](const int arg0, double * arg1, double arg2)->void { CLHEP::RandExponential::shootArray(arg0, arg1, arg2); }, jlcxx::arg("size"), jlcxx::arg("vect"), jlcxx::arg("mean"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::RandExponential::shoot(CLHEP::HepRandomEngine *) (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::RandExponential::shoot(CLHEP::HepRandomEngine *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandExponential.h:64:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandExponential.h:64:25
     module_.method("CLHEP!RandExponential!shoot", [](CLHEP::HepRandomEngine * arg0)->double { return CLHEP::RandExponential::shoot(arg0); }, jlcxx::arg("anEngine"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::RandExponential::shoot(CLHEP::HepRandomEngine *, double) (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::RandExponential::shoot(CLHEP::HepRandomEngine *, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandExponential.h:66:25
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandExponential.h:66:25
     module_.method("CLHEP!RandExponential!shoot", [](CLHEP::HepRandomEngine * arg0, double arg1)->double { return CLHEP::RandExponential::shoot(arg0, arg1); }, jlcxx::arg("anEngine"), jlcxx::arg("mean"));
 
     DEBUG_MSG("Adding wrapper for void CLHEP::RandExponential::shootArray(CLHEP::HepRandomEngine *, const int, double *, double) (" __HERE__ ")");
     // signature to use in the veto list: void CLHEP::RandExponential::shootArray(CLHEP::HepRandomEngine *, const int, double *, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandExponential.h:68:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandExponential.h:68:16
     module_.method("CLHEP!RandExponential!shootArray", [](CLHEP::HepRandomEngine * arg0, const int arg1, double * arg2)->void { CLHEP::RandExponential::shootArray(arg0, arg1, arg2); }, jlcxx::arg("anEngine"), jlcxx::arg("size"), jlcxx::arg("vect"));
     module_.method("CLHEP!RandExponential!shootArray", [](CLHEP::HepRandomEngine * arg0, const int arg1, double * arg2, double arg3)->void { CLHEP::RandExponential::shootArray(arg0, arg1, arg2, arg3); }, jlcxx::arg("anEngine"), jlcxx::arg("size"), jlcxx::arg("vect"), jlcxx::arg("mean"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::RandExponential::fire() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::RandExponential::fire()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandExponential.h:74:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandExponential.h:74:17
     t.method("fire", [](CLHEP::RandExponential& a)->double { return a.fire(); }, jlcxx::arg("this"));
     t.method("fire", [](CLHEP::RandExponential* a)->double { return a->fire(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::RandExponential::fire(double) (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::RandExponential::fire(double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandExponential.h:76:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandExponential.h:76:17
     t.method("fire", [](CLHEP::RandExponential& a, double arg0)->double { return a.fire(arg0); }, jlcxx::arg("this"), jlcxx::arg("mean"));
     t.method("fire", [](CLHEP::RandExponential* a, double arg0)->double { return a->fire(arg0); }, jlcxx::arg("this"), jlcxx::arg("mean"));
 
     DEBUG_MSG("Adding wrapper for void CLHEP::RandExponential::fireArray(const int, double *) (" __HERE__ ")");
     // signature to use in the veto list: void CLHEP::RandExponential::fireArray(const int, double *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandExponential.h:78:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandExponential.h:78:8
     t.method("fireArray", [](CLHEP::RandExponential& a, const int arg0, double * arg1)->void { a.fireArray(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("size"), jlcxx::arg("vect"));
     t.method("fireArray", [](CLHEP::RandExponential* a, const int arg0, double * arg1)->void { a->fireArray(arg0, arg1); }, jlcxx::arg("this"), jlcxx::arg("size"), jlcxx::arg("vect"));
 
     DEBUG_MSG("Adding wrapper for void CLHEP::RandExponential::fireArray(const int, double *, double) (" __HERE__ ")");
     // signature to use in the veto list: void CLHEP::RandExponential::fireArray(const int, double *, double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandExponential.h:79:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandExponential.h:79:8
     t.method("fireArray", [](CLHEP::RandExponential& a, const int arg0, double * arg1, double arg2)->void { a.fireArray(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("size"), jlcxx::arg("vect"), jlcxx::arg("mean"));
     t.method("fireArray", [](CLHEP::RandExponential* a, const int arg0, double * arg1, double arg2)->void { a->fireArray(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("size"), jlcxx::arg("vect"), jlcxx::arg("mean"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::RandExponential::operator()() (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::RandExponential::operator()()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandExponential.h:81:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandExponential.h:81:10
     t.method("paren", [](CLHEP::RandExponential& a)->double { return a.operator()(); }, jlcxx::arg("this"));
     t.method("paren", [](CLHEP::RandExponential* a)->double { return a->operator()(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for double CLHEP::RandExponential::operator()(double) (" __HERE__ ")");
     // signature to use in the veto list: double CLHEP::RandExponential::operator()(double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandExponential.h:82:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandExponential.h:82:10
     t.method("paren", [](CLHEP::RandExponential& a, double arg0)->double { return a.operator()(arg0); }, jlcxx::arg("this"), jlcxx::arg("mean"));
     t.method("paren", [](CLHEP::RandExponential* a, double arg0)->double { return a->operator()(arg0); }, jlcxx::arg("this"), jlcxx::arg("mean"));
 
     DEBUG_MSG("Adding wrapper for std::string CLHEP::RandExponential::name() (" __HERE__ ")");
     // signature to use in the veto list: std::string CLHEP::RandExponential::name()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandExponential.h:89:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandExponential.h:89:15
     t.method("name", [](CLHEP::RandExponential const& a)->std::string { return a.name(); }, jlcxx::arg("this"));
     t.method("name", [](CLHEP::RandExponential const* a)->std::string { return a->name(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for CLHEP::HepRandomEngine & CLHEP::RandExponential::engine() (" __HERE__ ")");
     // signature to use in the veto list: CLHEP::HepRandomEngine & CLHEP::RandExponential::engine()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandExponential.h:90:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandExponential.h:90:21
     t.method("engine", [](CLHEP::RandExponential& a)->CLHEP::HepRandomEngine & { return a.engine(); }, jlcxx::arg("this"));
     t.method("engine", [](CLHEP::RandExponential* a)->CLHEP::HepRandomEngine & { return a->engine(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for std::string CLHEP::RandExponential::distributionName() (" __HERE__ ")");
     // signature to use in the veto list: std::string CLHEP::RandExponential::distributionName()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Random/RandExponential.h:92:22
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Random/RandExponential.h:92:22
     module_.method("CLHEP!RandExponential!distributionName", []()->std::string { return CLHEP::RandExponential::distributionName(); });
   }
 

@@ -17,7 +17,7 @@ struct JlG4Colour: public Wrapper {
 
   JlG4Colour(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4Colour (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:88:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:88:7
     jlcxx::TypeWrapper<G4Colour>  t = jlModule.add_type<G4Colour>("G4Colour");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4Colour>>(new jlcxx::TypeWrapper<G4Colour>(jlModule, t));
   }
@@ -28,7 +28,7 @@ struct JlG4Colour: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4Colour::G4Colour(G4double, G4double, G4double, G4double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:94:3
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:94:3
     t.constructor<G4double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("r_")    );
     t.constructor<G4double, G4double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("r_"), jlcxx::arg("g_")    );
     t.constructor<G4double, G4double, G4double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("r_"), jlcxx::arg("g_"), jlcxx::arg("b_")    );
@@ -36,19 +36,19 @@ struct JlG4Colour: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4Colour::G4Colour(G4ThreeVector) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:97:3
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:97:3
     t.constructor<G4ThreeVector>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("arg0")    );
     module_.set_override_module(jl_base_module);
 
     DEBUG_MSG("Adding wrapper for G4bool G4Colour::operator!=(const G4Colour &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4Colour::operator!=(const G4Colour &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:104:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:104:10
     t.method("!=", [](G4Colour const& a, const G4Colour & arg0)->G4bool { return a.operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("c"));
     t.method("!=", [](G4Colour const* a, const G4Colour & arg0)->G4bool { return a->operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("c"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4Colour::operator==(const G4Colour &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4Colour::operator==(const G4Colour &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:105:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:105:10
     t.method("==", [](G4Colour const& a, const G4Colour & arg0)->G4bool { return a.operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("c"));
     t.method("==", [](G4Colour const* a, const G4Colour & arg0)->G4bool { return a->operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("c"));
 
@@ -56,137 +56,137 @@ struct JlG4Colour: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for G4Colour & G4Colour::operator+=(const G4Colour &) (" __HERE__ ")");
     // signature to use in the veto list: G4Colour & G4Colour::operator+=(const G4Colour &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:107:13
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:107:13
     t.method("add!", [](G4Colour& a, const G4Colour & arg0)->G4Colour & { return a.operator+=(arg0); }, jlcxx::arg("this"), jlcxx::arg("rhs"));
     t.method("add!", [](G4Colour* a, const G4Colour & arg0)->G4Colour & { return a->operator+=(arg0); }, jlcxx::arg("this"), jlcxx::arg("rhs"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Colour::GetRed() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Colour::GetRed()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:113:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:113:12
     t.method("GetRed", [](G4Colour const& a)->G4double { return a.GetRed(); }, jlcxx::arg("this"));
     t.method("GetRed", [](G4Colour const* a)->G4double { return a->GetRed(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Colour::GetGreen() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Colour::GetGreen()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:114:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:114:12
     t.method("GetGreen", [](G4Colour const& a)->G4double { return a.GetGreen(); }, jlcxx::arg("this"));
     t.method("GetGreen", [](G4Colour const* a)->G4double { return a->GetGreen(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Colour::GetBlue() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Colour::GetBlue()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:115:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:115:12
     t.method("GetBlue", [](G4Colour const& a)->G4double { return a.GetBlue(); }, jlcxx::arg("this"));
     t.method("GetBlue", [](G4Colour const* a)->G4double { return a->GetBlue(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4Colour::GetAlpha() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4Colour::GetAlpha()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:116:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:116:12
     t.method("GetAlpha", [](G4Colour const& a)->G4double { return a.GetAlpha(); }, jlcxx::arg("this"));
     t.method("GetAlpha", [](G4Colour const* a)->G4double { return a->GetAlpha(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4Colour::SetRed(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4Colour::SetRed(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:118:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:118:8
     t.method("SetRed", [](G4Colour& a, G4double arg0)->void { a.SetRed(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetRed", [](G4Colour* a, G4double arg0)->void { a->SetRed(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4Colour::SetGreen(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4Colour::SetGreen(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:119:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:119:8
     t.method("SetGreen", [](G4Colour& a, G4double arg0)->void { a.SetGreen(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetGreen", [](G4Colour* a, G4double arg0)->void { a->SetGreen(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4Colour::SetBlue(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4Colour::SetBlue(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:120:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:120:8
     t.method("SetBlue", [](G4Colour& a, G4double arg0)->void { a.SetBlue(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetBlue", [](G4Colour* a, G4double arg0)->void { a->SetBlue(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for void G4Colour::SetAlpha(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4Colour::SetAlpha(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:121:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:121:8
     t.method("SetAlpha", [](G4Colour& a, G4double arg0)->void { a.SetAlpha(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("SetAlpha", [](G4Colour* a, G4double arg0)->void { a->SetAlpha(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
 
     DEBUG_MSG("Adding wrapper for G4Colour G4Colour::White() (" __HERE__ ")");
     // signature to use in the veto list: G4Colour G4Colour::White()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:123:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:123:19
     module_.method("G4Colour!White", []()->G4Colour { return G4Colour::White(); });
 
     DEBUG_MSG("Adding wrapper for G4Colour G4Colour::Gray() (" __HERE__ ")");
     // signature to use in the veto list: G4Colour G4Colour::Gray()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:124:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:124:19
     module_.method("G4Colour!Gray", []()->G4Colour { return G4Colour::Gray(); });
 
     DEBUG_MSG("Adding wrapper for G4Colour G4Colour::Grey() (" __HERE__ ")");
     // signature to use in the veto list: G4Colour G4Colour::Grey()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:125:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:125:19
     module_.method("G4Colour!Grey", []()->G4Colour { return G4Colour::Grey(); });
 
     DEBUG_MSG("Adding wrapper for G4Colour G4Colour::Black() (" __HERE__ ")");
     // signature to use in the veto list: G4Colour G4Colour::Black()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:126:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:126:19
     module_.method("G4Colour!Black", []()->G4Colour { return G4Colour::Black(); });
 
     DEBUG_MSG("Adding wrapper for G4Colour G4Colour::Brown() (" __HERE__ ")");
     // signature to use in the veto list: G4Colour G4Colour::Brown()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:127:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:127:19
     module_.method("G4Colour!Brown", []()->G4Colour { return G4Colour::Brown(); });
 
     DEBUG_MSG("Adding wrapper for G4Colour G4Colour::Red() (" __HERE__ ")");
     // signature to use in the veto list: G4Colour G4Colour::Red()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:128:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:128:19
     module_.method("G4Colour!Red", []()->G4Colour { return G4Colour::Red(); });
 
     DEBUG_MSG("Adding wrapper for G4Colour G4Colour::Green() (" __HERE__ ")");
     // signature to use in the veto list: G4Colour G4Colour::Green()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:129:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:129:19
     module_.method("G4Colour!Green", []()->G4Colour { return G4Colour::Green(); });
 
     DEBUG_MSG("Adding wrapper for G4Colour G4Colour::Blue() (" __HERE__ ")");
     // signature to use in the veto list: G4Colour G4Colour::Blue()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:130:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:130:19
     module_.method("G4Colour!Blue", []()->G4Colour { return G4Colour::Blue(); });
 
     DEBUG_MSG("Adding wrapper for G4Colour G4Colour::Cyan() (" __HERE__ ")");
     // signature to use in the veto list: G4Colour G4Colour::Cyan()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:131:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:131:19
     module_.method("G4Colour!Cyan", []()->G4Colour { return G4Colour::Cyan(); });
 
     DEBUG_MSG("Adding wrapper for G4Colour G4Colour::Magenta() (" __HERE__ ")");
     // signature to use in the veto list: G4Colour G4Colour::Magenta()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:132:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:132:19
     module_.method("G4Colour!Magenta", []()->G4Colour { return G4Colour::Magenta(); });
 
     DEBUG_MSG("Adding wrapper for G4Colour G4Colour::Yellow() (" __HERE__ ")");
     // signature to use in the veto list: G4Colour G4Colour::Yellow()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:133:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:133:19
     module_.method("G4Colour!Yellow", []()->G4Colour { return G4Colour::Yellow(); });
 
     DEBUG_MSG("Adding wrapper for G4bool G4Colour::GetColour(const G4String &, G4Colour &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4Colour::GetColour(const G4String &, G4Colour &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:135:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:135:17
     module_.method("G4Colour!GetColour", [](const G4String & arg0, G4Colour & arg1)->G4bool { return G4Colour::GetColour(arg0, arg1); }, jlcxx::arg("key"), jlcxx::arg("result"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4Colour::GetColor(const G4String &, G4Colour &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4Colour::GetColor(const G4String &, G4Colour &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:136:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:136:17
     module_.method("G4Colour!GetColor", [](const G4String & arg0, G4Colour & arg1)->G4bool { return G4Colour::GetColor(arg0, arg1); }, jlcxx::arg("key"), jlcxx::arg("result"));
 
     DEBUG_MSG("Adding wrapper for void G4Colour::AddToMap(const G4String &, const G4Colour &) (" __HERE__ ")");
     // signature to use in the veto list: void G4Colour::AddToMap(const G4String &, const G4Colour &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:153:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:153:15
     module_.method("G4Colour!AddToMap", [](const G4String & arg0, const G4Colour & arg1)->void { G4Colour::AddToMap(arg0, arg1); }, jlcxx::arg("key"), jlcxx::arg("colour"));
 
     DEBUG_MSG("Adding wrapper for void G4Colour::InitialiseColourMap() (" __HERE__ ")");
     // signature to use in the veto list: void G4Colour::InitialiseColourMap()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:157:15
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:157:15
     module_.method("G4Colour!InitialiseColourMap", []()->void { G4Colour::InitialiseColourMap(); });
     module_.set_override_module(jl_base_module);
 
     DEBUG_MSG("Adding wrapper for G4bool G4Colour::operator<(const G4Colour &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4Colour::operator<(const G4Colour &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Colour.hh:160:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Colour.hh:160:10
     t.method("<", [](G4Colour const& a, const G4Colour & arg0)->G4bool { return a.operator<(arg0); }, jlcxx::arg("this"), jlcxx::arg("rhs"));
     t.method("<", [](G4Colour const* a, const G4Colour & arg0)->G4bool { return a->operator<(arg0); }, jlcxx::arg("this"), jlcxx::arg("rhs"));
 

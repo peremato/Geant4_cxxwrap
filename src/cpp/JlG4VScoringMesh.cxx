@@ -17,7 +17,7 @@ struct JlG4VScoringMesh: public Wrapper {
 
   JlG4VScoringMesh(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4VScoringMesh (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VScoringMesh.hh:54:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VScoringMesh.hh:54:7
     jlcxx::TypeWrapper<G4VScoringMesh>  t = jlModule.add_type<G4VScoringMesh>("G4VScoringMesh");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4VScoringMesh>>(new jlcxx::TypeWrapper<G4VScoringMesh>(jlModule, t));
   }

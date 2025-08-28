@@ -17,7 +17,7 @@ struct JlCLHEP_HepLorentzVector: public Wrapper {
 
   JlCLHEP_HepLorentzVector(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type CLHEP::HepLorentzVector (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/LorentzVector.h:67:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/LorentzVector.h:67:7
     jlcxx::TypeWrapper<CLHEP::HepLorentzVector>  t = jlModule.add_type<CLHEP::HepLorentzVector>("CLHEP!HepLorentzVector");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<CLHEP::HepLorentzVector>>(new jlcxx::TypeWrapper<CLHEP::HepLorentzVector>(jlModule, t));
   }

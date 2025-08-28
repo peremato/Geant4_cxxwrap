@@ -17,9 +17,8 @@ struct JlG4ExtrudedSolid_ZSection: public Wrapper {
 
   JlG4ExtrudedSolid_ZSection(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4ExtrudedSolid::ZSection (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ExtrudedSolid.hh:76:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ExtrudedSolid.hh:76:12
     jlcxx::TypeWrapper<G4ExtrudedSolid::ZSection>  t = jlModule.add_type<G4ExtrudedSolid::ZSection>("G4ExtrudedSolid!ZSection");
-    jlcxx::stl::apply_stl<G4ExtrudedSolid::ZSection>(jlModule);
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4ExtrudedSolid::ZSection>>(new jlcxx::TypeWrapper<G4ExtrudedSolid::ZSection>(jlModule, t));
   }
 
@@ -29,17 +28,17 @@ struct JlG4ExtrudedSolid_ZSection: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4ExtrudedSolid::ZSection::ZSection(G4double, const G4TwoVector &, G4double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ExtrudedSolid.hh:79:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ExtrudedSolid.hh:79:7
     t.constructor<G4double, const G4TwoVector &, G4double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("z"), jlcxx::arg("offset"), jlcxx::arg("scale")    );
 
     DEBUG_MSG("Adding fZ methods  to provide read access to the field fZ (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ExtrudedSolid.hh:82:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ExtrudedSolid.hh:82:19
     // signature to use in the veto list: G4ExtrudedSolid::ZSection::fZ
     t.method("fZ", [](const G4ExtrudedSolid::ZSection& a) -> G4double { return a.fZ; }, jlcxx::arg("this"));
     t.method("fZ", [](G4ExtrudedSolid::ZSection& a) -> G4double { return a.fZ; }, jlcxx::arg("this"));
     t.method("fZ", [](const G4ExtrudedSolid::ZSection* a) -> G4double { return a->fZ; }, jlcxx::arg("this"));
     t.method("fZ", [](G4ExtrudedSolid::ZSection* a) -> G4double { return a->fZ; }, jlcxx::arg("this"));
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ExtrudedSolid.hh:82:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ExtrudedSolid.hh:82:19
     // signature to use in the veto list: G4ExtrudedSolid::ZSection::fZ
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding fZ! methods to provide write access to the field fZ (" __HERE__ ")");
@@ -49,13 +48,13 @@ struct JlG4ExtrudedSolid_ZSection: public Wrapper {
     t.method("fZ!", [](G4ExtrudedSolid::ZSection* a, G4double val) -> G4double { return a->fZ = val; }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding fOffset methods  to provide read access to the field fOffset (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ExtrudedSolid.hh:83:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ExtrudedSolid.hh:83:19
     // signature to use in the veto list: G4ExtrudedSolid::ZSection::fOffset
     t.method("fOffset", [](const G4ExtrudedSolid::ZSection& a) -> const G4TwoVector& { return a.fOffset; }, jlcxx::arg("this"));
     t.method("fOffset", [](G4ExtrudedSolid::ZSection& a) -> G4TwoVector& { return a.fOffset; }, jlcxx::arg("this"));
     t.method("fOffset", [](const G4ExtrudedSolid::ZSection* a) -> const G4TwoVector& { return a->fOffset; }, jlcxx::arg("this"));
     t.method("fOffset", [](G4ExtrudedSolid::ZSection* a) -> G4TwoVector& { return a->fOffset; }, jlcxx::arg("this"));
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ExtrudedSolid.hh:83:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ExtrudedSolid.hh:83:19
     // signature to use in the veto list: G4ExtrudedSolid::ZSection::fOffset
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding fOffset! methods to provide write access to the field fOffset (" __HERE__ ")");
@@ -65,13 +64,13 @@ struct JlG4ExtrudedSolid_ZSection: public Wrapper {
     t.method("fOffset!", [](G4ExtrudedSolid::ZSection* a, const G4TwoVector& val) -> G4TwoVector& { return a->fOffset = val; }, jlcxx::arg("this"), jlcxx::arg("value"));
 
     DEBUG_MSG("Adding fScale methods  to provide read access to the field fScale (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ExtrudedSolid.hh:84:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ExtrudedSolid.hh:84:19
     // signature to use in the veto list: G4ExtrudedSolid::ZSection::fScale
     t.method("fScale", [](const G4ExtrudedSolid::ZSection& a) -> G4double { return a.fScale; }, jlcxx::arg("this"));
     t.method("fScale", [](G4ExtrudedSolid::ZSection& a) -> G4double { return a.fScale; }, jlcxx::arg("this"));
     t.method("fScale", [](const G4ExtrudedSolid::ZSection* a) -> G4double { return a->fScale; }, jlcxx::arg("this"));
     t.method("fScale", [](G4ExtrudedSolid::ZSection* a) -> G4double { return a->fScale; }, jlcxx::arg("this"));
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ExtrudedSolid.hh:84:19
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ExtrudedSolid.hh:84:19
     // signature to use in the veto list: G4ExtrudedSolid::ZSection::fScale
     // with ! suffix to veto the setter only.
     DEBUG_MSG("Adding fScale! methods to provide write access to the field fScale (" __HERE__ ")");

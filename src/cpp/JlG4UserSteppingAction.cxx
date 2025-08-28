@@ -17,7 +17,7 @@ struct JlG4UserSteppingAction: public Wrapper {
 
   JlG4UserSteppingAction(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4UserSteppingAction (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserSteppingAction.hh:44:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserSteppingAction.hh:44:7
     jlcxx::TypeWrapper<G4UserSteppingAction>  t = jlModule.add_type<G4UserSteppingAction>("G4UserSteppingAction");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4UserSteppingAction>>(new jlcxx::TypeWrapper<G4UserSteppingAction>(jlModule, t));
   }
@@ -28,13 +28,13 @@ struct JlG4UserSteppingAction: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4UserSteppingAction::SetSteppingManagerPointer(G4SteppingManager *) (" __HERE__ ")");
     // signature to use in the veto list: void G4UserSteppingAction::SetSteppingManagerPointer(G4SteppingManager *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserSteppingAction.hh:54:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserSteppingAction.hh:54:16
     t.method("SetSteppingManagerPointer", [](G4UserSteppingAction& a, G4SteppingManager * arg0)->void { a.SetSteppingManagerPointer(arg0); }, jlcxx::arg("this"), jlcxx::arg("pValue"));
     t.method("SetSteppingManagerPointer", [](G4UserSteppingAction* a, G4SteppingManager * arg0)->void { a->SetSteppingManagerPointer(arg0); }, jlcxx::arg("this"), jlcxx::arg("pValue"));
 
     DEBUG_MSG("Adding wrapper for void G4UserSteppingAction::UserSteppingAction(const G4Step *) (" __HERE__ ")");
     // signature to use in the veto list: void G4UserSteppingAction::UserSteppingAction(const G4Step *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4UserSteppingAction.hh:55:16
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4UserSteppingAction.hh:55:16
     t.method("UserSteppingAction", [](G4UserSteppingAction& a, const G4Step * arg0)->void { a.UserSteppingAction(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
     t.method("UserSteppingAction", [](G4UserSteppingAction* a, const G4Step * arg0)->void { a->UserSteppingAction(arg0); }, jlcxx::arg("this"), jlcxx::arg("arg0"));
   }

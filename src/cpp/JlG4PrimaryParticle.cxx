@@ -17,7 +17,7 @@ struct JlG4PrimaryParticle: public Wrapper {
 
   JlG4PrimaryParticle(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4PrimaryParticle (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:66:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:66:7
     jlcxx::TypeWrapper<G4PrimaryParticle>  t = jlModule.add_type<G4PrimaryParticle>("G4PrimaryParticle");
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4PrimaryParticle>>(new jlcxx::TypeWrapper<G4PrimaryParticle>(jlModule, t));
   }
@@ -28,55 +28,55 @@ struct JlG4PrimaryParticle: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::G4PrimaryParticle(G4int) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:71:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:71:5
     t.constructor<G4int>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("Pcode")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::G4PrimaryParticle(G4int, G4double, G4double, G4double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:72:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:72:5
     t.constructor<G4int, G4double, G4double, G4double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("Pcode"), jlcxx::arg("px"), jlcxx::arg("py"), jlcxx::arg("pz")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::G4PrimaryParticle(G4int, G4double, G4double, G4double, G4double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:73:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:73:5
     t.constructor<G4int, G4double, G4double, G4double, G4double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("Pcode"), jlcxx::arg("px"), jlcxx::arg("py"), jlcxx::arg("pz"), jlcxx::arg("E")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::G4PrimaryParticle(const G4ParticleDefinition *) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:74:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:74:5
     t.constructor<const G4ParticleDefinition *>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("Gcode")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::G4PrimaryParticle(const G4ParticleDefinition *, G4double, G4double, G4double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:75:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:75:5
     t.constructor<const G4ParticleDefinition *, G4double, G4double, G4double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("Gcode"), jlcxx::arg("px"), jlcxx::arg("py"), jlcxx::arg("pz")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::G4PrimaryParticle(const G4ParticleDefinition *, G4double, G4double, G4double, G4double) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:76:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:76:5
     t.constructor<const G4ParticleDefinition *, G4double, G4double, G4double, G4double>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("Gcode"), jlcxx::arg("px"), jlcxx::arg("py"), jlcxx::arg("pz"), jlcxx::arg("E")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::G4PrimaryParticle(const G4PrimaryParticle &) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:85:5
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:85:5
     t.constructor<const G4PrimaryParticle &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("right")    );
 
     DEBUG_MSG("Adding wrapper for G4PrimaryParticle & G4PrimaryParticle::operator=(const G4PrimaryParticle &) (" __HERE__ ")");
     // signature to use in the veto list: G4PrimaryParticle & G4PrimaryParticle::operator=(const G4PrimaryParticle &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:86:24
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:86:24
     t.method("assign", [](G4PrimaryParticle& a, const G4PrimaryParticle & arg0)->G4PrimaryParticle & { return a.operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
     t.method("assign", [](G4PrimaryParticle* a, const G4PrimaryParticle & arg0)->G4PrimaryParticle & { return a->operator=(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
     module_.set_override_module(jl_base_module);
 
     DEBUG_MSG("Adding wrapper for G4bool G4PrimaryParticle::operator==(const G4PrimaryParticle &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4PrimaryParticle::operator==(const G4PrimaryParticle &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:90:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:90:12
     t.method("==", [](G4PrimaryParticle const& a, const G4PrimaryParticle & arg0)->G4bool { return a.operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
     t.method("==", [](G4PrimaryParticle const* a, const G4PrimaryParticle & arg0)->G4bool { return a->operator==(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
 
     DEBUG_MSG("Adding wrapper for G4bool G4PrimaryParticle::operator!=(const G4PrimaryParticle &) (" __HERE__ ")");
     // signature to use in the veto list: G4bool G4PrimaryParticle::operator!=(const G4PrimaryParticle &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:91:12
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:91:12
     t.method("!=", [](G4PrimaryParticle const& a, const G4PrimaryParticle & arg0)->G4bool { return a.operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
     t.method("!=", [](G4PrimaryParticle const* a, const G4PrimaryParticle & arg0)->G4bool { return a->operator!=(arg0); }, jlcxx::arg("this"), jlcxx::arg("right"));
 
@@ -84,247 +84,247 @@ struct JlG4PrimaryParticle: public Wrapper {
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::Print() (" __HERE__ ")");
     // signature to use in the veto list: void G4PrimaryParticle::Print()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:98:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:98:10
     t.method("Print", [](G4PrimaryParticle const& a)->void { a.Print(); }, jlcxx::arg("this"));
     t.method("Print", [](G4PrimaryParticle const* a)->void { a->Print(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4int G4PrimaryParticle::GetPDGcode() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4PrimaryParticle::GetPDGcode()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:109:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:109:18
     t.method("GetPDGcode", [](G4PrimaryParticle const& a)->G4int { return a.GetPDGcode(); }, jlcxx::arg("this"));
     t.method("GetPDGcode", [](G4PrimaryParticle const* a)->G4int { return a->GetPDGcode(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::SetPDGcode(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4PrimaryParticle::SetPDGcode(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:110:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:110:10
     t.method("SetPDGcode", [](G4PrimaryParticle& a, G4int arg0)->void { a.SetPDGcode(arg0); }, jlcxx::arg("this"), jlcxx::arg("Pcode"));
     t.method("SetPDGcode", [](G4PrimaryParticle* a, G4int arg0)->void { a->SetPDGcode(arg0); }, jlcxx::arg("this"), jlcxx::arg("Pcode"));
 
     DEBUG_MSG("Adding wrapper for G4ParticleDefinition * G4PrimaryParticle::GetG4code() (" __HERE__ ")");
     // signature to use in the veto list: G4ParticleDefinition * G4PrimaryParticle::GetG4code()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:111:34
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:111:34
     t.method("GetG4code", [](G4PrimaryParticle const& a)->G4ParticleDefinition * { return a.GetG4code(); }, jlcxx::arg("this"));
     t.method("GetG4code", [](G4PrimaryParticle const* a)->G4ParticleDefinition * { return a->GetG4code(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::SetG4code(const G4ParticleDefinition *) (" __HERE__ ")");
     // signature to use in the veto list: void G4PrimaryParticle::SetG4code(const G4ParticleDefinition *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:112:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:112:17
     t.method("SetG4code", [](G4PrimaryParticle& a, const G4ParticleDefinition * arg0)->void { a.SetG4code(arg0); }, jlcxx::arg("this"), jlcxx::arg("Gcode"));
     t.method("SetG4code", [](G4PrimaryParticle* a, const G4ParticleDefinition * arg0)->void { a->SetG4code(arg0); }, jlcxx::arg("this"), jlcxx::arg("Gcode"));
 
     DEBUG_MSG("Adding wrapper for const G4ParticleDefinition * G4PrimaryParticle::GetParticleDefinition() (" __HERE__ ")");
     // signature to use in the veto list: const G4ParticleDefinition * G4PrimaryParticle::GetParticleDefinition()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:113:40
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:113:40
     t.method("GetParticleDefinition", [](G4PrimaryParticle const& a)->const G4ParticleDefinition * { return a.GetParticleDefinition(); }, jlcxx::arg("this"));
     t.method("GetParticleDefinition", [](G4PrimaryParticle const* a)->const G4ParticleDefinition * { return a->GetParticleDefinition(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::SetParticleDefinition(const G4ParticleDefinition *) (" __HERE__ ")");
     // signature to use in the veto list: void G4PrimaryParticle::SetParticleDefinition(const G4ParticleDefinition *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:114:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:114:10
     t.method("SetParticleDefinition", [](G4PrimaryParticle& a, const G4ParticleDefinition * arg0)->void { a.SetParticleDefinition(arg0); }, jlcxx::arg("this"), jlcxx::arg("pdef"));
     t.method("SetParticleDefinition", [](G4PrimaryParticle* a, const G4ParticleDefinition * arg0)->void { a->SetParticleDefinition(arg0); }, jlcxx::arg("this"), jlcxx::arg("pdef"));
 
     DEBUG_MSG("Adding wrapper for G4double G4PrimaryParticle::GetMass() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4PrimaryParticle::GetMass()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:115:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:115:21
     t.method("GetMass", [](G4PrimaryParticle const& a)->G4double { return a.GetMass(); }, jlcxx::arg("this"));
     t.method("GetMass", [](G4PrimaryParticle const* a)->G4double { return a->GetMass(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::SetMass(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4PrimaryParticle::SetMass(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:116:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:116:17
     t.method("SetMass", [](G4PrimaryParticle& a, G4double arg0)->void { a.SetMass(arg0); }, jlcxx::arg("this"), jlcxx::arg("mas"));
     t.method("SetMass", [](G4PrimaryParticle* a, G4double arg0)->void { a->SetMass(arg0); }, jlcxx::arg("this"), jlcxx::arg("mas"));
 
     DEBUG_MSG("Adding wrapper for G4double G4PrimaryParticle::GetCharge() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4PrimaryParticle::GetCharge()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:117:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:117:21
     t.method("GetCharge", [](G4PrimaryParticle const& a)->G4double { return a.GetCharge(); }, jlcxx::arg("this"));
     t.method("GetCharge", [](G4PrimaryParticle const* a)->G4double { return a->GetCharge(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::SetCharge(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4PrimaryParticle::SetCharge(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:118:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:118:17
     t.method("SetCharge", [](G4PrimaryParticle& a, G4double arg0)->void { a.SetCharge(arg0); }, jlcxx::arg("this"), jlcxx::arg("chg"));
     t.method("SetCharge", [](G4PrimaryParticle* a, G4double arg0)->void { a->SetCharge(arg0); }, jlcxx::arg("this"), jlcxx::arg("chg"));
 
     DEBUG_MSG("Adding wrapper for G4double G4PrimaryParticle::GetKineticEnergy() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4PrimaryParticle::GetKineticEnergy()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:119:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:119:21
     t.method("GetKineticEnergy", [](G4PrimaryParticle const& a)->G4double { return a.GetKineticEnergy(); }, jlcxx::arg("this"));
     t.method("GetKineticEnergy", [](G4PrimaryParticle const* a)->G4double { return a->GetKineticEnergy(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::SetKineticEnergy(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4PrimaryParticle::SetKineticEnergy(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:120:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:120:17
     t.method("SetKineticEnergy", [](G4PrimaryParticle& a, G4double arg0)->void { a.SetKineticEnergy(arg0); }, jlcxx::arg("this"), jlcxx::arg("eKin"));
     t.method("SetKineticEnergy", [](G4PrimaryParticle* a, G4double arg0)->void { a->SetKineticEnergy(arg0); }, jlcxx::arg("this"), jlcxx::arg("eKin"));
 
     DEBUG_MSG("Adding wrapper for const G4ThreeVector & G4PrimaryParticle::GetMomentumDirection() (" __HERE__ ")");
     // signature to use in the veto list: const G4ThreeVector & G4PrimaryParticle::GetMomentumDirection()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:121:33
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:121:33
     t.method("GetMomentumDirection", [](G4PrimaryParticle const& a)->const G4ThreeVector & { return a.GetMomentumDirection(); }, jlcxx::arg("this"));
     t.method("GetMomentumDirection", [](G4PrimaryParticle const* a)->const G4ThreeVector & { return a->GetMomentumDirection(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::SetMomentumDirection(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4PrimaryParticle::SetMomentumDirection(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:122:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:122:17
     t.method("SetMomentumDirection", [](G4PrimaryParticle& a, const G4ThreeVector & arg0)->void { a.SetMomentumDirection(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
     t.method("SetMomentumDirection", [](G4PrimaryParticle* a, const G4ThreeVector & arg0)->void { a->SetMomentumDirection(arg0); }, jlcxx::arg("this"), jlcxx::arg("p"));
 
     DEBUG_MSG("Adding wrapper for G4double G4PrimaryParticle::GetTotalMomentum() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4PrimaryParticle::GetTotalMomentum()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:123:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:123:21
     t.method("GetTotalMomentum", [](G4PrimaryParticle const& a)->G4double { return a.GetTotalMomentum(); }, jlcxx::arg("this"));
     t.method("GetTotalMomentum", [](G4PrimaryParticle const* a)->G4double { return a->GetTotalMomentum(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::Set4Momentum(G4double, G4double, G4double, G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4PrimaryParticle::Set4Momentum(G4double, G4double, G4double, G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:124:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:124:10
     t.method("Set4Momentum", [](G4PrimaryParticle& a, G4double arg0, G4double arg1, G4double arg2, G4double arg3)->void { a.Set4Momentum(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("px"), jlcxx::arg("py"), jlcxx::arg("pz"), jlcxx::arg("E"));
     t.method("Set4Momentum", [](G4PrimaryParticle* a, G4double arg0, G4double arg1, G4double arg2, G4double arg3)->void { a->Set4Momentum(arg0, arg1, arg2, arg3); }, jlcxx::arg("this"), jlcxx::arg("px"), jlcxx::arg("py"), jlcxx::arg("pz"), jlcxx::arg("E"));
 
     DEBUG_MSG("Adding wrapper for G4double G4PrimaryParticle::GetTotalEnergy() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4PrimaryParticle::GetTotalEnergy()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:125:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:125:21
     t.method("GetTotalEnergy", [](G4PrimaryParticle const& a)->G4double { return a.GetTotalEnergy(); }, jlcxx::arg("this"));
     t.method("GetTotalEnergy", [](G4PrimaryParticle const* a)->G4double { return a->GetTotalEnergy(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::SetTotalEnergy(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4PrimaryParticle::SetTotalEnergy(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:126:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:126:17
     t.method("SetTotalEnergy", [](G4PrimaryParticle& a, G4double arg0)->void { a.SetTotalEnergy(arg0); }, jlcxx::arg("this"), jlcxx::arg("eTot"));
     t.method("SetTotalEnergy", [](G4PrimaryParticle* a, G4double arg0)->void { a->SetTotalEnergy(arg0); }, jlcxx::arg("this"), jlcxx::arg("eTot"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4PrimaryParticle::GetMomentum() (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4PrimaryParticle::GetMomentum()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:127:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:127:26
     t.method("GetMomentum", [](G4PrimaryParticle const& a)->G4ThreeVector { return a.GetMomentum(); }, jlcxx::arg("this"));
     t.method("GetMomentum", [](G4PrimaryParticle const* a)->G4ThreeVector { return a->GetMomentum(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::SetMomentum(G4double, G4double, G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4PrimaryParticle::SetMomentum(G4double, G4double, G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:128:10
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:128:10
     t.method("SetMomentum", [](G4PrimaryParticle& a, G4double arg0, G4double arg1, G4double arg2)->void { a.SetMomentum(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("px"), jlcxx::arg("py"), jlcxx::arg("pz"));
     t.method("SetMomentum", [](G4PrimaryParticle* a, G4double arg0, G4double arg1, G4double arg2)->void { a->SetMomentum(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("px"), jlcxx::arg("py"), jlcxx::arg("pz"));
 
     DEBUG_MSG("Adding wrapper for G4double G4PrimaryParticle::GetPx() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4PrimaryParticle::GetPx()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:129:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:129:21
     t.method("GetPx", [](G4PrimaryParticle const& a)->G4double { return a.GetPx(); }, jlcxx::arg("this"));
     t.method("GetPx", [](G4PrimaryParticle const* a)->G4double { return a->GetPx(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4PrimaryParticle::GetPy() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4PrimaryParticle::GetPy()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:130:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:130:21
     t.method("GetPy", [](G4PrimaryParticle const& a)->G4double { return a.GetPy(); }, jlcxx::arg("this"));
     t.method("GetPy", [](G4PrimaryParticle const* a)->G4double { return a->GetPy(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4PrimaryParticle::GetPz() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4PrimaryParticle::GetPz()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:131:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:131:21
     t.method("GetPz", [](G4PrimaryParticle const& a)->G4double { return a.GetPz(); }, jlcxx::arg("this"));
     t.method("GetPz", [](G4PrimaryParticle const* a)->G4double { return a->GetPz(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4PrimaryParticle * G4PrimaryParticle::GetNext() (" __HERE__ ")");
     // signature to use in the veto list: G4PrimaryParticle * G4PrimaryParticle::GetNext()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:132:31
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:132:31
     t.method("GetNext", [](G4PrimaryParticle const& a)->G4PrimaryParticle * { return a.GetNext(); }, jlcxx::arg("this"));
     t.method("GetNext", [](G4PrimaryParticle const* a)->G4PrimaryParticle * { return a->GetNext(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::SetNext(G4PrimaryParticle *) (" __HERE__ ")");
     // signature to use in the veto list: void G4PrimaryParticle::SetNext(G4PrimaryParticle *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:133:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:133:17
     t.method("SetNext", [](G4PrimaryParticle& a, G4PrimaryParticle * arg0)->void { a.SetNext(arg0); }, jlcxx::arg("this"), jlcxx::arg("np"));
     t.method("SetNext", [](G4PrimaryParticle* a, G4PrimaryParticle * arg0)->void { a->SetNext(arg0); }, jlcxx::arg("this"), jlcxx::arg("np"));
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::ClearNext() (" __HERE__ ")");
     // signature to use in the veto list: void G4PrimaryParticle::ClearNext()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:134:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:134:17
     t.method("ClearNext", [](G4PrimaryParticle& a)->void { a.ClearNext(); }, jlcxx::arg("this"));
     t.method("ClearNext", [](G4PrimaryParticle* a)->void { a->ClearNext(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4PrimaryParticle * G4PrimaryParticle::GetDaughter() (" __HERE__ ")");
     // signature to use in the veto list: G4PrimaryParticle * G4PrimaryParticle::GetDaughter()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:135:31
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:135:31
     t.method("GetDaughter", [](G4PrimaryParticle const& a)->G4PrimaryParticle * { return a.GetDaughter(); }, jlcxx::arg("this"));
     t.method("GetDaughter", [](G4PrimaryParticle const* a)->G4PrimaryParticle * { return a->GetDaughter(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::SetDaughter(G4PrimaryParticle *) (" __HERE__ ")");
     // signature to use in the veto list: void G4PrimaryParticle::SetDaughter(G4PrimaryParticle *)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:136:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:136:17
     t.method("SetDaughter", [](G4PrimaryParticle& a, G4PrimaryParticle * arg0)->void { a.SetDaughter(arg0); }, jlcxx::arg("this"), jlcxx::arg("np"));
     t.method("SetDaughter", [](G4PrimaryParticle* a, G4PrimaryParticle * arg0)->void { a->SetDaughter(arg0); }, jlcxx::arg("this"), jlcxx::arg("np"));
 
     DEBUG_MSG("Adding wrapper for G4int G4PrimaryParticle::GetTrackID() (" __HERE__ ")");
     // signature to use in the veto list: G4int G4PrimaryParticle::GetTrackID()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:137:18
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:137:18
     t.method("GetTrackID", [](G4PrimaryParticle const& a)->G4int { return a.GetTrackID(); }, jlcxx::arg("this"));
     t.method("GetTrackID", [](G4PrimaryParticle const* a)->G4int { return a->GetTrackID(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::SetTrackID(G4int) (" __HERE__ ")");
     // signature to use in the veto list: void G4PrimaryParticle::SetTrackID(G4int)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:138:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:138:17
     t.method("SetTrackID", [](G4PrimaryParticle& a, G4int arg0)->void { a.SetTrackID(arg0); }, jlcxx::arg("this"), jlcxx::arg("id"));
     t.method("SetTrackID", [](G4PrimaryParticle* a, G4int arg0)->void { a->SetTrackID(arg0); }, jlcxx::arg("this"), jlcxx::arg("id"));
 
     DEBUG_MSG("Adding wrapper for G4ThreeVector G4PrimaryParticle::GetPolarization() (" __HERE__ ")");
     // signature to use in the veto list: G4ThreeVector G4PrimaryParticle::GetPolarization()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:139:26
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:139:26
     t.method("GetPolarization", [](G4PrimaryParticle const& a)->G4ThreeVector { return a.GetPolarization(); }, jlcxx::arg("this"));
     t.method("GetPolarization", [](G4PrimaryParticle const* a)->G4ThreeVector { return a->GetPolarization(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::SetPolarization(const G4ThreeVector &) (" __HERE__ ")");
     // signature to use in the veto list: void G4PrimaryParticle::SetPolarization(const G4ThreeVector &)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:140:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:140:17
     t.method("SetPolarization", [](G4PrimaryParticle& a, const G4ThreeVector & arg0)->void { a.SetPolarization(arg0); }, jlcxx::arg("this"), jlcxx::arg("pol"));
     t.method("SetPolarization", [](G4PrimaryParticle* a, const G4ThreeVector & arg0)->void { a->SetPolarization(arg0); }, jlcxx::arg("this"), jlcxx::arg("pol"));
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::SetPolarization(G4double, G4double, G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4PrimaryParticle::SetPolarization(G4double, G4double, G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:141:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:141:17
     t.method("SetPolarization", [](G4PrimaryParticle& a, G4double arg0, G4double arg1, G4double arg2)->void { a.SetPolarization(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("px"), jlcxx::arg("py"), jlcxx::arg("pz"));
     t.method("SetPolarization", [](G4PrimaryParticle* a, G4double arg0, G4double arg1, G4double arg2)->void { a->SetPolarization(arg0, arg1, arg2); }, jlcxx::arg("this"), jlcxx::arg("px"), jlcxx::arg("py"), jlcxx::arg("pz"));
 
     DEBUG_MSG("Adding wrapper for G4double G4PrimaryParticle::GetPolX() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4PrimaryParticle::GetPolX()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:142:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:142:21
     t.method("GetPolX", [](G4PrimaryParticle const& a)->G4double { return a.GetPolX(); }, jlcxx::arg("this"));
     t.method("GetPolX", [](G4PrimaryParticle const* a)->G4double { return a->GetPolX(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4PrimaryParticle::GetPolY() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4PrimaryParticle::GetPolY()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:143:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:143:21
     t.method("GetPolY", [](G4PrimaryParticle const& a)->G4double { return a.GetPolY(); }, jlcxx::arg("this"));
     t.method("GetPolY", [](G4PrimaryParticle const* a)->G4double { return a->GetPolY(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4PrimaryParticle::GetPolZ() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4PrimaryParticle::GetPolZ()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:144:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:144:21
     t.method("GetPolZ", [](G4PrimaryParticle const& a)->G4double { return a.GetPolZ(); }, jlcxx::arg("this"));
     t.method("GetPolZ", [](G4PrimaryParticle const* a)->G4double { return a->GetPolZ(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for G4double G4PrimaryParticle::GetWeight() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4PrimaryParticle::GetWeight()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:145:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:145:21
     t.method("GetWeight", [](G4PrimaryParticle const& a)->G4double { return a.GetWeight(); }, jlcxx::arg("this"));
     t.method("GetWeight", [](G4PrimaryParticle const* a)->G4double { return a->GetWeight(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::SetWeight(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4PrimaryParticle::SetWeight(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:146:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:146:17
     t.method("SetWeight", [](G4PrimaryParticle& a, G4double arg0)->void { a.SetWeight(arg0); }, jlcxx::arg("this"), jlcxx::arg("w"));
     t.method("SetWeight", [](G4PrimaryParticle* a, G4double arg0)->void { a->SetWeight(arg0); }, jlcxx::arg("this"), jlcxx::arg("w"));
 
     DEBUG_MSG("Adding wrapper for G4double G4PrimaryParticle::GetProperTime() (" __HERE__ ")");
     // signature to use in the veto list: G4double G4PrimaryParticle::GetProperTime()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:147:21
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:147:21
     t.method("GetProperTime", [](G4PrimaryParticle const& a)->G4double { return a.GetProperTime(); }, jlcxx::arg("this"));
     t.method("GetProperTime", [](G4PrimaryParticle const* a)->G4double { return a->GetProperTime(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4PrimaryParticle::SetProperTime(G4double) (" __HERE__ ")");
     // signature to use in the veto list: void G4PrimaryParticle::SetProperTime(G4double)
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4PrimaryParticle.hh:148:17
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4PrimaryParticle.hh:148:17
     t.method("SetProperTime", [](G4PrimaryParticle& a, G4double arg0)->void { a.SetProperTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("t"));
     t.method("SetProperTime", [](G4PrimaryParticle* a, G4double arg0)->void { a->SetProperTime(arg0); }, jlcxx::arg("this"), jlcxx::arg("t"));
   }

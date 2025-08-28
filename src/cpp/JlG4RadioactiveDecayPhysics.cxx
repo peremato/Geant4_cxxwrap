@@ -18,7 +18,7 @@ struct JlG4RadioactiveDecayPhysics: public Wrapper {
 
   JlG4RadioactiveDecayPhysics(jlcxx::Module& jlModule): Wrapper(jlModule){
     DEBUG_MSG("Adding wrapper for type G4RadioactiveDecayPhysics (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RadioactiveDecayPhysics.hh:36:7
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RadioactiveDecayPhysics.hh:36:7
     jlcxx::TypeWrapper<G4RadioactiveDecayPhysics>  t = jlModule.add_type<G4RadioactiveDecayPhysics>("G4RadioactiveDecayPhysics",
       jlcxx::julia_base_type<G4VPhysicsConstructor>());
     type_ = std::unique_ptr<jlcxx::TypeWrapper<G4RadioactiveDecayPhysics>>(new jlcxx::TypeWrapper<G4RadioactiveDecayPhysics>(jlModule, t));
@@ -30,24 +30,24 @@ struct JlG4RadioactiveDecayPhysics: public Wrapper {
 
 
     DEBUG_MSG("Adding wrapper for void G4RadioactiveDecayPhysics::G4RadioactiveDecayPhysics(G4int) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RadioactiveDecayPhysics.hh:39:3
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RadioactiveDecayPhysics.hh:39:3
     t.constructor<G4int>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("verbose")    );
 
 
     DEBUG_MSG("Adding wrapper for void G4RadioactiveDecayPhysics::G4RadioactiveDecayPhysics(const G4String &, G4int) (" __HERE__ ")");
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RadioactiveDecayPhysics.hh:40:3
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RadioactiveDecayPhysics.hh:40:3
     t.constructor<const G4String &>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("name")    );
     t.constructor<const G4String &, G4int>(/*finalize=*/jlcxx::finalize_policy::yes, jlcxx::arg("this"), jlcxx::arg("name"), jlcxx::arg("verbose")    );
 
     DEBUG_MSG("Adding wrapper for void G4RadioactiveDecayPhysics::ConstructParticle() (" __HERE__ ")");
     // signature to use in the veto list: void G4RadioactiveDecayPhysics::ConstructParticle()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RadioactiveDecayPhysics.hh:44:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RadioactiveDecayPhysics.hh:44:8
     t.method("ConstructParticle", [](G4RadioactiveDecayPhysics& a)->void { a.ConstructParticle(); }, jlcxx::arg("this"));
     t.method("ConstructParticle", [](G4RadioactiveDecayPhysics* a)->void { a->ConstructParticle(); }, jlcxx::arg("this"));
 
     DEBUG_MSG("Adding wrapper for void G4RadioactiveDecayPhysics::ConstructProcess() (" __HERE__ ")");
     // signature to use in the veto list: void G4RadioactiveDecayPhysics::ConstructProcess()
-    // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RadioactiveDecayPhysics.hh:49:8
+    // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RadioactiveDecayPhysics.hh:49:8
     t.method("ConstructProcess", [](G4RadioactiveDecayPhysics& a)->void { a.ConstructProcess(); }, jlcxx::arg("this"));
     t.method("ConstructProcess", [](G4RadioactiveDecayPhysics* a)->void { a->ConstructProcess(); }, jlcxx::arg("this"));
   }

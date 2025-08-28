@@ -501,8 +501,8 @@ std::shared_ptr<Wrapper> newJlGlobal(jlcxx::Module&);
 extern "C" JLCXX_API const char* cxxwrap_version_string();
 
 //Check the code is compiled with a compatible version of libcxxwrap:
-static_assert(1000*1000*JLCXX_VERSION_MAJOR  + 1000 * JLCXX_VERSION_MINOR + JLCXX_VERSION_PATCH >= 12000
-  && 1000 * 1000 * JLCXX_VERSION_MAJOR  + 1000 * JLCXX_VERSION_MINOR + JLCXX_VERSION_PATCH < 14000,
+static_assert(1000*1000*JLCXX_VERSION_MAJOR  + 1000 * JLCXX_VERSION_MINOR + JLCXX_VERSION_PATCH >= 14000
+  && 1000 * 1000 * JLCXX_VERSION_MAJOR  + 1000 * JLCXX_VERSION_MINOR + JLCXX_VERSION_PATCH < 15000,
   "The code was generated with WrapIt! for "
   "a different CxxWrap version (controlled with the cxxwrap_version parameter).");
 
@@ -535,15 +535,15 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
   throw_if_version_incompatibility();
 
 
-  DEBUG_MSG("Adding anonymous enum defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Threading.hh:276:3 (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Threading.hh:276:3
+  DEBUG_MSG("Adding anonymous enum defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Threading.hh:276:3 (" __HERE__ ")");
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Threading.hh:276:3
   jlModule.set_const("G4Threading!SEQUENTIAL_ID", static_cast<int>(G4Threading::SEQUENTIAL_ID));
   jlModule.set_const("G4Threading!MASTER_ID", static_cast<int>(G4Threading::MASTER_ID));
   jlModule.set_const("G4Threading!WORKER_ID", static_cast<int>(G4Threading::WORKER_ID));
   jlModule.set_const("G4Threading!GENERICTHREAD_ID", static_cast<int>(G4Threading::GENERICTHREAD_ID));
 
-  DEBUG_MSG("Adding anonymous enum defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/ThreeVector.h:42:3 (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/ThreeVector.h:42:3
+  DEBUG_MSG("Adding anonymous enum defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/ThreeVector.h:42:3 (" __HERE__ ")");
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/ThreeVector.h:42:3
   jlModule.set_const("CLHEP!Hep3Vector!X", static_cast<int>(CLHEP::Hep3Vector::X));
   jlModule.set_const("CLHEP!Hep3Vector!Y", static_cast<int>(CLHEP::Hep3Vector::Y));
   jlModule.set_const("CLHEP!Hep3Vector!Z", static_cast<int>(CLHEP::Hep3Vector::Z));
@@ -551,7 +551,7 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
   jlModule.set_const("CLHEP!Hep3Vector!SIZE", static_cast<int>(CLHEP::Hep3Vector::SIZE));
 
   DEBUG_MSG("Adding wrapper for enum EVolume (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/geomdefs.hh:82:6
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/geomdefs.hh:82:6
   jlModule.add_bits<EVolume>("EVolume", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("kNormal", kNormal);
   jlModule.set_const("kReplica", kReplica);
@@ -559,7 +559,7 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
   jlModule.set_const("kExternal", kExternal);
 
   DEBUG_MSG("Adding wrapper for enum EAxis (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/geomdefs.hh:53:6
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/geomdefs.hh:53:6
   jlModule.add_bits<EAxis>("EAxis", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("kXAxis", kXAxis);
   jlModule.set_const("kYAxis", kYAxis);
@@ -570,7 +570,7 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
   jlModule.set_const("kUndefined", kUndefined);
 
   DEBUG_MSG("Adding wrapper for enum G4State (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4Material.hh:106:6
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4Material.hh:106:6
   jlModule.add_bits<G4State>("G4State", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("kStateUndefined", kStateUndefined);
   jlModule.set_const("kStateSolid", kStateSolid);
@@ -578,7 +578,7 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
   jlModule.set_const("kStateGas", kStateGas);
 
   DEBUG_MSG("Adding wrapper for enum G4StepStatus (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4StepStatus.hh:39:6
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4StepStatus.hh:39:6
   jlModule.add_bits<G4StepStatus>("G4StepStatus", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("fWorldBoundary", fWorldBoundary);
   jlModule.set_const("fGeomBoundary", fGeomBoundary);
@@ -590,14 +590,14 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
   jlModule.set_const("fUndefined", fUndefined);
 
   DEBUG_MSG("Adding wrapper for enum G4SteppingControl (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SteppingControl.hh:40:6
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SteppingControl.hh:40:6
   jlModule.add_bits<G4SteppingControl>("G4SteppingControl", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("NormalCondition", NormalCondition);
   jlModule.set_const("AvoidHitInvocation", AvoidHitInvocation);
   jlModule.set_const("Debug", Debug);
 
   DEBUG_MSG("Adding wrapper for enum G4TrackStatus (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4TrackStatus.hh:40:6
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4TrackStatus.hh:40:6
   jlModule.add_bits<G4TrackStatus>("G4TrackStatus", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("fAlive", fAlive);
   jlModule.set_const("fStopButAlive", fStopButAlive);
@@ -608,7 +608,7 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
   jlModule.set_const("fPostponeToNextEvent", fPostponeToNextEvent);
 
   DEBUG_MSG("Adding wrapper for enum G4ApplicationState (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ApplicationState.hh:82:6
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ApplicationState.hh:82:6
   jlModule.add_bits<G4ApplicationState>("G4ApplicationState", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("G4State_PreInit", G4State_PreInit);
   jlModule.set_const("G4State_Init", G4State_Init);
@@ -618,15 +618,15 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
   jlModule.set_const("G4State_Quit", G4State_Quit);
   jlModule.set_const("G4State_Abort", G4State_Abort);
 
-  DEBUG_MSG("Adding anonymous enum defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/TwoVector.h:48:3 (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/CLHEP/Vector/TwoVector.h:48:3
+  DEBUG_MSG("Adding anonymous enum defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/TwoVector.h:48:3 (" __HERE__ ")");
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/CLHEP/Vector/TwoVector.h:48:3
   jlModule.set_const("CLHEP!Hep2Vector!X", static_cast<int>(CLHEP::Hep2Vector::X));
   jlModule.set_const("CLHEP!Hep2Vector!Y", static_cast<int>(CLHEP::Hep2Vector::Y));
   jlModule.set_const("CLHEP!Hep2Vector!NUM_COORDINATES", static_cast<int>(CLHEP::Hep2Vector::NUM_COORDINATES));
   jlModule.set_const("CLHEP!Hep2Vector!SIZE", static_cast<int>(CLHEP::Hep2Vector::SIZE));
 
   DEBUG_MSG("Adding wrapper for enum G4ExceptionSeverity (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ExceptionSeverity.hh:65:6
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ExceptionSeverity.hh:65:6
   jlModule.add_bits<G4ExceptionSeverity>("G4ExceptionSeverity", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("FatalException", FatalException);
   jlModule.set_const("FatalErrorInArgument", FatalErrorInArgument);
@@ -636,7 +636,7 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
   jlModule.set_const("IgnoreTheIssue", IgnoreTheIssue);
 
   DEBUG_MSG("Adding wrapper for enum G4ClassificationOfNewTrack (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ClassificationOfNewTrack.hh:41:6
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ClassificationOfNewTrack.hh:41:6
   jlModule.add_bits<G4ClassificationOfNewTrack>("G4ClassificationOfNewTrack", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("fUrgent", fUrgent);
   jlModule.set_const("fWaiting", fWaiting);
@@ -670,14 +670,14 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
   jlModule.set_const("fSubEvent_F", fSubEvent_F);
 
   DEBUG_MSG("Adding wrapper for enum EInside (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/geomdefs.hh:66:6
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/geomdefs.hh:66:6
   jlModule.add_bits<EInside>("EInside", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("kOutside", kOutside);
   jlModule.set_const("kSurface", kSurface);
   jlModule.set_const("kInside", kInside);
 
   DEBUG_MSG("Adding wrapper for enum G4ProcessType (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessType.hh:37:6
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessType.hh:37:6
   jlModule.add_bits<G4ProcessType>("G4ProcessType", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("fNotDefined", fNotDefined);
   jlModule.set_const("fTransportation", fTransportation);
@@ -694,13 +694,13 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
   jlModule.set_const("fUCN", fUCN);
 
   DEBUG_MSG("Adding wrapper for enum G4GPILSelection (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4GPILSelection.hh:40:6
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4GPILSelection.hh:40:6
   jlModule.add_bits<G4GPILSelection>("G4GPILSelection", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("CandidateForSelection", CandidateForSelection);
   jlModule.set_const("NotCandidateForSelection", NotCandidateForSelection);
 
   DEBUG_MSG("Adding wrapper for enum G4ForceCondition (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ForceCondition.hh:40:6
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ForceCondition.hh:40:6
   jlModule.add_bits<G4ForceCondition>("G4ForceCondition", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("InActivated", InActivated);
   jlModule.set_const("Forced", Forced);
@@ -710,13 +710,13 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
   jlModule.set_const("StronglyForced", StronglyForced);
 
   DEBUG_MSG("Adding wrapper for enum G4ProcessVectorTypeIndex (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:71:6
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:71:6
   jlModule.add_bits<G4ProcessVectorTypeIndex>("G4ProcessVectorTypeIndex", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("typeGPIL", typeGPIL);
   jlModule.set_const("typeDoIt", typeDoIt);
 
   DEBUG_MSG("Adding wrapper for enum G4ProcessVectorDoItIndex (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:76:6
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:76:6
   jlModule.add_bits<G4ProcessVectorDoItIndex>("G4ProcessVectorDoItIndex", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("idxAll", idxAll);
   jlModule.set_const("idxAtRest", idxAtRest);
@@ -725,18 +725,18 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
   jlModule.set_const("NDoit", NDoit);
 
   DEBUG_MSG("Adding wrapper for enum G4ProcessVectorOrdering (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:87:6
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:87:6
   jlModule.add_bits<G4ProcessVectorOrdering>("G4ProcessVectorOrdering", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("ordInActive", ordInActive);
   jlModule.set_const("ordDefault", ordDefault);
   jlModule.set_const("ordLast", ordLast);
 
-  DEBUG_MSG("Adding anonymous enum defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:291:5 (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4ProcessManager.hh:291:5
+  DEBUG_MSG("Adding anonymous enum defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:291:5 (" __HERE__ ")");
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4ProcessManager.hh:291:5
   jlModule.set_const("G4ProcessManager!SizeOfProcVectorArray", static_cast<int>(G4ProcessManager::SizeOfProcVectorArray));
 
   DEBUG_MSG("Adding wrapper for enum G4RunManager::RMType (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4RunManager.hh:521:10
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4RunManager.hh:521:10
   jlModule.add_bits<G4RunManager::RMType>("G4RunManager!RMType", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("G4RunManager!sequentialRM", G4RunManager::sequentialRM);
   jlModule.set_const("G4RunManager!masterRM", G4RunManager::masterRM);
@@ -745,7 +745,7 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
   jlModule.set_const("G4RunManager!subEventWorkerRM", G4RunManager::subEventWorkerRM);
 
   DEBUG_MSG("Adding wrapper for enum G4MTRunManager::WorkerActionRequest (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4MTRunManager.hh:159:16
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4MTRunManager.hh:159:16
   jlModule.add_bits<G4MTRunManager::WorkerActionRequest>("G4MTRunManager!WorkerActionRequest", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("G4MTRunManager!WorkerActionRequest!UNDEFINED", G4MTRunManager::WorkerActionRequest::UNDEFINED);
   jlModule.set_const("G4MTRunManager!WorkerActionRequest!NEXTITERATION", G4MTRunManager::WorkerActionRequest::NEXTITERATION);
@@ -753,7 +753,7 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
   jlModule.set_const("G4MTRunManager!WorkerActionRequest!ENDWORKER", G4MTRunManager::WorkerActionRequest::ENDWORKER);
 
   DEBUG_MSG("Adding wrapper for enum G4OpticalProcessIndex (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalParameters.hh:63:6
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalParameters.hh:63:6
   jlModule.add_bits<G4OpticalProcessIndex>("G4OpticalProcessIndex", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("kCerenkov", kCerenkov);
   jlModule.set_const("kScintillation", kScintillation);
@@ -766,7 +766,7 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
   jlModule.set_const("kNoProcess", kNoProcess);
 
   DEBUG_MSG("Adding wrapper for enum G4OpticalSurfaceFinish (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:52:6
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:52:6
   jlModule.add_bits<G4OpticalSurfaceFinish>("G4OpticalSurfaceFinish", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("polished", polished);
   jlModule.set_const("polishedfrontpainted", polishedfrontpainted);
@@ -809,7 +809,7 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
   jlModule.set_const("Detector_LUT", Detector_LUT);
 
   DEBUG_MSG("Adding wrapper for enum G4OpticalSurfaceModel (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpticalSurface.hh:106:6
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpticalSurface.hh:106:6
   jlModule.add_bits<G4OpticalSurfaceModel>("G4OpticalSurfaceModel", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("glisur", glisur);
   jlModule.set_const("unified", unified);
@@ -818,7 +818,7 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
   jlModule.set_const("dichroic", dichroic);
 
   DEBUG_MSG("Adding wrapper for enum G4SurfaceType (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4SurfaceProperty.hh:58:6
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4SurfaceProperty.hh:58:6
   jlModule.add_bits<G4SurfaceType>("G4SurfaceType", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("dielectric_metal", dielectric_metal);
   jlModule.set_const("dielectric_dielectric", dielectric_dielectric);
@@ -830,7 +830,7 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
   jlModule.set_const("coated", coated);
 
   DEBUG_MSG("Adding wrapper for enum G4OpBoundaryProcessStatus (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4OpBoundaryProcess.hh:72:6
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4OpBoundaryProcess.hh:72:6
   jlModule.add_bits<G4OpBoundaryProcessStatus>("G4OpBoundaryProcessStatus", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("Undefined", Undefined);
   jlModule.set_const("Transmission", Transmission);
@@ -877,14 +877,14 @@ JLCXX_MODULE define_julia_module(jlcxx::Module& jlModule){
   jlModule.set_const("CoatedDielectricFrustratedTransmission", CoatedDielectricFrustratedTransmission);
 
   DEBUG_MSG("Adding wrapper for enum G4VisAttributes::LineStyle (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:75:8
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:75:8
   jlModule.add_bits<G4VisAttributes::LineStyle>("G4VisAttributes!LineStyle", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("G4VisAttributes!unbroken", G4VisAttributes::unbroken);
   jlModule.set_const("G4VisAttributes!dashed", G4VisAttributes::dashed);
   jlModule.set_const("G4VisAttributes!dotted", G4VisAttributes::dotted);
 
   DEBUG_MSG("Adding wrapper for enum G4VisAttributes::ForcedDrawingStyle (" __HERE__ ")");
-  // defined in /Users/mato/.julia/artifacts/c08a070cdc1b892bb33db4924fdac1694e77d3a1/include/Geant4/G4VisAttributes.hh:76:8
+  // defined in /Users/mato/.julia/artifacts/40f6fc0de669f0d3e0a749c73a29fe79804135d5/include/Geant4/G4VisAttributes.hh:76:8
   jlModule.add_bits<G4VisAttributes::ForcedDrawingStyle>("G4VisAttributes!ForcedDrawingStyle", jlcxx::julia_type("CppEnum"));
   jlModule.set_const("G4VisAttributes!wireframe", G4VisAttributes::wireframe);
   jlModule.set_const("G4VisAttributes!solid", G4VisAttributes::solid);
